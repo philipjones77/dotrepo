@@ -1,0 +1,23 @@
+[include]
+    path = ~/.dotrepo/git/gitconfig.shared
+[user]
+    name = philipjones77
+    email = philip.a.jonesmn@gmail.com
+[credential "https://github.com"]
+    helper =
+    helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+    helper =
+    helper = !/usr/bin/gh auth git-credential
+[core]
+    editor = code --wait
+    autocrlf = input
+[diff]
+    tool = vscode
+[merge]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff "$LOCAL" "$REMOTE"
+[mergetool "vscode"]
+    cmd = code --wait --merge "$REMOTE" "$LOCAL" "$BASE" "$MERGED"
+    keepBackup = false

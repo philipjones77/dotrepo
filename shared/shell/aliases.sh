@@ -1,0 +1,15 @@
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias gs='git status -sb'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gl='git pull'
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias croot='cd ~/projects'
+alias dotrepo='cd ~/.dotrepo'
+alias reload='exec "$SHELL" -l'

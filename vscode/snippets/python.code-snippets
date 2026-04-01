@@ -1,0 +1,22 @@
+{
+  "Python main entrypoint": {
+    "prefix": "mainpy",
+    "body": [
+      "def main() -> None:",
+      "    ${1:pass}",
+      "",
+      "",
+      "if __name__ == \"__main__\":",
+      "    main()"
+    ],
+    "description": "Create a typed Python entrypoint"
+  },
+  "Pytest function": {
+    "prefix": "pytestfn",
+    "body": [
+      "def test_${1:name}() -> None:",
+      "    ${2:assert True}"
+    ],
+    "description": "Create a basic pytest test function"
+  }
+}

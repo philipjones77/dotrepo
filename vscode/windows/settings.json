@@ -1,0 +1,12 @@
+{
+  "workbench.colorCustomizations": {},
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "geminicodeassist.project": "ecstatic-pursuit-xhd2v",
+  "lldb.suppressUpdateNotifications": true,
+  "explorer.confirmDelete": false,
+  "python.defaultInterpreterPath": "C:/Users/phili/anaconda3/envs/jax-win/python.exe",
+  "python.terminal.activateEnvironment": true,
+  "python.condaPath": "C:/Users/phili/anaconda3/Scripts/conda.exe",
+  "terminal.integrated.defaultProfile.windows": "PowerShell"
+}

@@ -1,0 +1,2 @@
+# No global npm packages are currently tracked on this machine.
+# Add one package name per line when you start using npm globally.

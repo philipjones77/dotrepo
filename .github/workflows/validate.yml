@@ -1,0 +1,39 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      - name: Validate JSON
+        run: |
+          while IFS= read -r file; do
+            jq empty "$file"
+          done < <(find . -type f -name '*.json' | sort)
+
+      - name: Validate shell scripts
+        run: |
+          bash -n bootstrap/install.sh
+          bash -n node/install-globals.sh
+          bash -n python/wsl/create-venv.sh
+
+      - name: Validate PowerShell syntax
+        run: |
+          files=(
+            "bootstrap/install.ps1"
+            "node/install-globals.ps1"
+            "python/windows/create-venv.ps1"
+            "windows/powershell/Microsoft.PowerShell_profile.ps1"
+          )
+          for file in "${files[@]}"; do
+            pwsh -NoProfile -Command "[System.Management.Automation.Language.Parser]::ParseFile('${file}', [ref] \$null, [ref] \$null) | Out-Null"
+          done

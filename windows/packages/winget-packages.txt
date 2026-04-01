@@ -1,0 +1,8 @@
+# Optional baseline package list for rebuilding the Windows toolchain.
+Git.Git
+GitHub.cli
+Microsoft.VisualStudioCode
+Microsoft.WindowsTerminal
+Microsoft.PowerShell
+Anaconda.Anaconda3
+Docker.DockerDesktop

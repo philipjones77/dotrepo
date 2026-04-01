@@ -1,0 +1,10 @@
+name: jax
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - ipykernel
+  - gmsh
+  - pip:
+      - -r requirements.txt

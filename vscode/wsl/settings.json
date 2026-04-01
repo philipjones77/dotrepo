@@ -1,0 +1,9 @@
+{
+  "terminal.integrated.cwd": "/home/phili/projects",
+  "security.allowedUNCHosts": [
+    "wsl.localhost"
+  ],
+  "python.defaultInterpreterPath": "/home/phili/miniforge3/envs/jax/bin/python",
+  "python.terminal.activateEnvironment": true,
+  "python.condaPath": "/home/phili/miniforge3/bin/conda"
+}

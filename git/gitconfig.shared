@@ -1,0 +1,21 @@
+[init]
+    defaultBranch = main
+[push]
+    autoSetupRemote = true
+[pull]
+    rebase = false
+[fetch]
+    prune = true
+[rerere]
+    enabled = true
+[core]
+    excludesfile = ~/.dotrepo/git/gitignore_global
+[merge]
+    conflictstyle = zdiff3
+[diff]
+    colorMoved = default
+[filter "lfs"]
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true

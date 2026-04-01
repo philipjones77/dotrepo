@@ -104,6 +104,7 @@
         "source": "VSDebugConsole"
       },
       {
+        "commandline": "wsl.exe -d Ubuntu --cd ~",
         "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
         "hidden": false,
         "name": "Ubuntu",
@@ -136,6 +137,7 @@
         "startingDirectory": "C:\\Users\\phili"
       },
       {
+        "commandline": "wsl.exe -d Ubuntu --cd ~",
         "guid": "{9b357e20-cddf-5b40-81fd-5ab785bc747a}",
         "hidden": false,
         "name": "Ubuntu",

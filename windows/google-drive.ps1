@@ -12,10 +12,22 @@ $exe = $roots | Where-Object { Test-Path -LiteralPath $_ } | ForEach-Object {
     Get-ChildItem -LiteralPath $_ -Filter GoogleDriveFS.exe -Recurse -ErrorAction SilentlyContinue
 } | Sort-Object LastWriteTime -Descending | Select-Object -First 1
 if (!$exe) { throw 'Google Drive desktop is missing. Run with -Install.' }
-New-Item -Path 'HKCU:\Software\Google\DriveFS' -Force | Out-Null
+if (!(Test-Path 'HKCU:\Software\Google\DriveFS')) {
+    New-Item -Path 'HKCU:\Software\Google\DriveFS' | Out-Null
+}
 New-ItemProperty -Path 'HKCU:\Software\Google\DriveFS' -Name AutoStartOnLogin -PropertyType DWord -Value 1 -Force | Out-Null
 if (!(Get-Process GoogleDriveFS -ErrorAction SilentlyContinue)) {
-    Start-Process -FilePath $exe.FullName -WindowStyle Hidden
+    $startInfo = New-Object System.Diagnostics.ProcessStartInfo
+    $startInfo.FileName = $exe.FullName
+    $startInfo.UseShellExecute = $false
+    $startInfo.CreateNoWindow = $true
+    # Conda's CA bundle can fail Schannel chain building in desktop apps.
+    # Use Drive's normal certificate trust without changing the caller's env.
+    if ($env:__CONDA_OPENSSL_CERT_FILE_SET) {
+        $startInfo.EnvironmentVariables.Remove('SSL_CERT_FILE')
+        $startInfo.EnvironmentVariables.Remove('__CONDA_OPENSSL_CERT_FILE_SET')
+    }
+    [System.Diagnostics.Process]::Start($startInfo) | Out-Null
 }
 Write-Host "Google Drive desktop: $($exe.FullName)"
 Write-Host 'Automatic launch at Windows login is enabled. Sign in once to mount your Drive.'

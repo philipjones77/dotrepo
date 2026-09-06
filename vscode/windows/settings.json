@@ -1,12 +1,32 @@
 {
-    "workbench.colorCustomizations":  {
-
-                                      },
-    "gitlens.ai.model":  "vscode",
-    "gitlens.ai.vscode.model":  "copilot:gpt-4.1",
-    "lldb.suppressUpdateNotifications":  true,
-    "explorer.confirmDelete":  false,
-    "python.defaultInterpreterPath":  "${env:USERPROFILE}/.virtualenvs/jax-win/Scripts/python.exe",
-    "python.terminal.activateEnvironment":  true,
-    "terminal.integrated.defaultProfile.windows":  "PowerShell"
+  "workbench.editorAssociations": {
+    "*.pdf": "pdf.preview",
+    "*.png": "imagePreview.previewEditor",
+    "*.jpg": "imagePreview.previewEditor",
+    "*.jpe": "imagePreview.previewEditor",
+    "*.jpeg": "imagePreview.previewEditor",
+    "*.bmp": "imagePreview.previewEditor",
+    "*.gif": "imagePreview.previewEditor",
+    "*.ico": "imagePreview.previewEditor",
+    "*.webp": "imagePreview.previewEditor",
+    "*.avif": "imagePreview.previewEditor",
+    "*.svg": "imagePreview.previewEditor",
+    "*.md": "vscode.markdown.preview.editor"
+  },
+  "workbench.diffEditorAssociations": {
+    "*.md": "default"
+  },
+  "workbench.colorCustomizations": {},
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "lldb.suppressUpdateNotifications": true,
+  "explorer.confirmDelete": false,
+  "python.defaultInterpreterPath": "${env:USERPROFILE}/anaconda3/envs/jax-win/python.exe",
+  "python.condaPath": "${env:USERPROFILE}/anaconda3/Scripts/conda.exe",
+  "python.terminal.activateEnvironment": true,
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.automationProfile.windows": {
+    "path": "${env:ProgramFiles}/PowerShell/7/pwsh.exe",
+    "args": ["-NoLogo"]
+  }
 }

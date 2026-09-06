@@ -7,7 +7,7 @@ The environment has six execution targets: machine 1 Windows, machine 1 WSL, mac
 | Target | Shell/config | Google Drive | Authentication |
 | --- | --- | --- | --- |
 | Each Windows host | PowerShell plus shared repository policy | Google Drive for desktop; automatic login launch | Independent Git SSH key and Google sign-in |
-| Each WSL Ubuntu | Bash/Zsh source `shared/shell/init.sh` | Read-only rclone at `~/mnt/gdrive` | Independent SSH key and rclone authorization |
+| Each WSL Ubuntu | Bash baseline through `shared/shell/init.sh` | rclone at `~/mnt/gdrive`; read-only default, local writable opt-in | Independent SSH key and rclone authorization |
 | Colab | Notebook runtime and project requirements | `google.colab.drive.mount('/content/drive')` | Interactive Google authorization; temporary runtime |
 | GitHub Actions | Defined Windows/Ubuntu validation jobs | No personal Drive mount | Scoped GitHub token; project secrets only if required |
 
@@ -36,9 +36,11 @@ From the command center, run `scripts/dotrepo.ps1 -Action drive -Platform all` t
 
 On WSL, run `bash wsl/mounts/install.sh`. The shared shell initializer starts `wsl/mounts/gdrive.sh` asynchronously; a lock prevents duplicate starts. A WSL session can have a different mount namespace from systemd, so this runs in the interactive session rather than assuming a systemd mount is visible. `start`, `status`, and `stop` are available on the helper. Existing mounts are preserved. Credentials stay in the user's private rclone configuration.
 
-The remote can be selected in `~/.config/dotrepo/gdrive.env` with `DOTREPO_GDRIVE_REMOTE='remote-name:'` and the path with `DOTREPO_GDRIVE_PATH="$HOME/mnt/gdrive"`. The existing local convention is `philip.a.jonesmngoogle:`. This read-only mount does not upload changes; Windows Drive and intentional rclone copy commands handle writes. Mounts require a network connection.
+The remote can be selected in `~/.config/dotrepo/gdrive.env` with `DOTREPO_GDRIVE_REMOTE='remote-name:'` and the path with `DOTREPO_GDRIVE_PATH="$HOME/mnt/gdrive"`. The existing local convention is `philip.a.jonesmngoogle:`. The default is read-only. This machine preserves writable access through the explicit local setting `DOTREPO_GDRIVE_READ_ONLY=0`; new writable mounts use `writes` caching with 2 GiB and one-hour eviction targets. Open files and pending uploads can exceed those targets. Existing mounts keep their current settings until restarted. Mounts require a network connection.
 
-The shared shell baseline is provisional until we inspect the preferred second machine. Existing local shell files are backed up before applying it.
+Windows Google Drive for desktop and WSL rclone are the two standard access paths. `/mnt/g` is optional compatibility for projects that use the Windows view; WSL rclone works independently. Legacy scripts under `cloud/google-drive` delegate to the canonical platform helpers. Environment setup starts no mounts; the shared initializer owns the single opted-in WSL hook. See [Drive configuration](../cloud/google-drive/README.md).
+
+This machine's existing Bash has been inspected and is the standard: Ubuntu's colored user/path prompt, appended history, window-size checks, completion, and Miniforge activation. Machine-specific Linux-first PATH handling, scientific project paths, R libraries, and gcloud integration belong in `~/.config/dotrepo/shell.local.sh`. Existing local shell files are backed up before applying the baseline. The second machine still needs inspection before its local exceptions are reconciled.
 
 This machine's WSL login shell is now `/bin/bash`. On another machine, select Bash explicitly with `chsh -s /bin/bash` after inspecting its current setup. Existing Zsh users can still source the same shared initialization through the tracked `.zshrc`.
 

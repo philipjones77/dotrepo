@@ -46,6 +46,39 @@ link_file() {
   log "Linked ${target}"
 }
 
+merge_vscode_settings() {
+  local source="$1" target="$2" merged
+  merged=$(mktemp)
+  if ! python3 - "$source" "$target" > "$merged" <<'PY'
+import json
+from pathlib import Path
+import sys
+
+def merge(current, tracked):
+    for key, value in tracked.items():
+        if isinstance(value, dict) and isinstance(current.get(key), dict):
+            merge(current[key], value)
+        else:
+            current[key] = value
+    return current
+
+source, target = map(Path, sys.argv[1:])
+current = json.loads(target.read_text(encoding='utf-8-sig')) if target.exists() else {}
+tracked = json.loads(source.read_text(encoding='utf-8-sig'))
+if not isinstance(current, dict) or not isinstance(tracked, dict):
+    raise ValueError('VS Code settings must be JSON objects')
+print(json.dumps(merge(current, tracked), indent=2))
+PY
+  then
+    rm -- "$merged"
+    return 1
+  fi
+  backup_user_target "$target"
+  install -m 644 "$merged" "$target"
+  rm -- "$merged"
+  log "Merged tracked settings into ${target}"
+}
+
 install_system_file() {
   local source="$1"
   local target="$2"
@@ -97,7 +130,7 @@ link_file "${repo_root}/wsl/home/.zshrc" "$HOME/.zshrc"
 link_file "${repo_root}/wsl/home/.profile" "$HOME/.profile"
 link_file "${repo_root}/git/gitconfig.wsl" "$HOME/.gitconfig"
 link_file "${repo_root}/ssh/config" "$HOME/.ssh/config"
-link_file "${repo_root}/vscode/wsl/settings.json" "$HOME/.vscode-server/data/Machine/settings.json"
+merge_vscode_settings "${repo_root}/vscode/wsl/settings.json" "$HOME/.vscode-server/data/Machine/settings.json"
 
 # Preserve existing distro-specific boot/network/user settings.
 if [ ! -f /etc/wsl.conf ]; then

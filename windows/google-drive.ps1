@@ -21,6 +21,7 @@ if (!(Get-Process GoogleDriveFS -ErrorAction SilentlyContinue)) {
     $startInfo.FileName = $exe.FullName
     $startInfo.UseShellExecute = $false
     $startInfo.CreateNoWindow = $true
+    $startInfo.WindowStyle = [System.Diagnostics.ProcessWindowStyle]::Hidden
     # Conda's CA bundle can fail Schannel chain building in desktop apps.
     # Use Drive's normal certificate trust without changing the caller's env.
     if ($env:__CONDA_OPENSSL_CERT_FILE_SET) {
@@ -31,4 +32,4 @@ if (!(Get-Process GoogleDriveFS -ErrorAction SilentlyContinue)) {
 }
 Write-Host "Google Drive desktop: $($exe.FullName)"
 Write-Host 'Automatic launch at Windows login is enabled. Sign in once to mount your Drive.'
-Write-Host 'WSL uses its independently authenticated, read-only rclone mount at ~/mnt/gdrive.'
+Write-Host 'WSL uses its independently authenticated rclone mount at ~/mnt/gdrive; access mode is configured separately.'

@@ -1,7 +1,26 @@
 {
+    "workbench.editorAssociations": {
+        "*.pdf": "pdf.preview",
+        "*.png": "imagePreview.previewEditor",
+        "*.jpg": "imagePreview.previewEditor",
+        "*.jpe": "imagePreview.previewEditor",
+        "*.jpeg": "imagePreview.previewEditor",
+        "*.bmp": "imagePreview.previewEditor",
+        "*.gif": "imagePreview.previewEditor",
+        "*.ico": "imagePreview.previewEditor",
+        "*.webp": "imagePreview.previewEditor",
+        "*.avif": "imagePreview.previewEditor",
+        "*.svg": "imagePreview.previewEditor",
+        "*.md": "vscode.markdown.preview.editor"
+    },
+    "workbench.diffEditorAssociations": {
+        "*.md": "default"
+    },
     "security.allowedUNCHosts":  [
                                      "wsl.localhost"
                                  ],
-    "python.defaultInterpreterPath":  "${env:HOME}/.virtualenvs/jax-wsl/bin/python",
-    "python.terminal.activateEnvironment":  true
+    "python.defaultInterpreterPath":  "${env:HOME}/miniforge3/envs/jax/bin/python",
+    "python.condaPath": "${env:HOME}/miniforge3/bin/conda",
+    "python.terminal.activateEnvironment":  true,
+    "terminal.integrated.defaultProfile.linux": "bash"
 }

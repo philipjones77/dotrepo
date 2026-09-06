@@ -21,7 +21,6 @@ github.remotehub
 github.vscode-pull-request-github
 goessner.mdmath
 google.colab
-google.geminicodeassist
 hbenl.vscode-test-explorer
 james-yu.latex-workshop
 jeff-hykin.better-cpp-syntax

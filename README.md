@@ -2,7 +2,7 @@
 
 This repository defines, installs, and checks the developer environment on Windows and WSL. It is the command center for shared configuration, platform differences, software inventories, and GitHub Actions validation.
 
-The full scope is two Windows/WSL machines plus Colab and GitHub Actions. See [the environment topology](docs/topology.md) for how shell settings, Google Drive, identities and project environments fit together. `colab/setup.py` mounts Drive and records a notebook runtime; the second machine's preferred Bash setup will be incorporated after inspection.
+The full scope is two Windows/WSL machines plus Colab and GitHub Actions. See [the environment topology](docs/topology.md) for how shell settings, Google Drive, identities and project environments fit together. The inspected Ubuntu Bash setup is the shared terminal baseline; `colab/setup.py` mounts Drive and records a notebook runtime.
 
 The goal is **consistent behavior with explicit platform differences**. Windows and WSL may use separate Git identities and separate SSH keys. Hardware limits, credentials, licensed software, and project dependencies are not forced to be identical.
 
@@ -80,6 +80,40 @@ Start with [the environment contract](docs/environment.md), [GitHub workflow sta
 
 Projects may run on both platforms. See [Windows/WSL project conventions](docs/projects.md), and run `scripts/dotrepo.ps1 -Action projects -Platform all` to inspect both sets of checkouts without changing them.
 
+## Roadmap and local audits
+
+The implementation plan in [docs/usefulness-plan.md](docs/usefulness-plan.md)
+covers machine audits, project templates, Codex/Claude/ChatGPT setup, GitHub
+standards, optional-tool detection, and drift checks across Windows and WSL.
+
+The repo purpose and operating model are defined in
+[docs/project-overview.md](docs/project-overview.md). AI session-sharing and
+web-tool guidance live in
+[docs/ai-session-methodology.md](docs/ai-session-methodology.md), with shared
+AI/GitHub standards in
+[docs/ai-github-standards.md](docs/ai-github-standards.md).
+Cloud, Colab, Google Cloud, Docker, and container standards live in
+[docs/cloud-container-standards.md](docs/cloud-container-standards.md).
+The setup matrix and status model are in
+[docs/machine-environment-setup.md](docs/machine-environment-setup.md) and
+[status/setup-status.md](status/setup-status.md).
+
+Current read-only audits:
+
+```powershell
+.\bootstrap\audit.ps1
+.\cloud\docker\audit.ps1
+.\cloud\google\audit.ps1
+.\cloud\google-drive\audit.ps1
+```
+
+```bash
+./bootstrap/audit.sh
+./cloud/docker/audit.sh
+./cloud/google/audit.sh
+./cloud/google-drive/audit.sh
+```
+
 ## Validation and CI
 
 Create isolated validation environments once:
@@ -104,12 +138,18 @@ The doctor separately checks this machine's tools, canonical checkout, installed
 
 ## Change and update procedure
 
+Use the [Windows/WSL maintenance runbook](docs/windows-wsl-maintenance.md) to
+replicate setup and repairs on another machine. The
+[2026-09-06 maintenance report](docs/maintenance-2026-09-06.md) records verified
+updates, disk savings, remaining checks and recovery information without private
+machine logs or credentials.
+
 1. Edit the shared policy, platform configuration, or package definitions in this repo.
 2. Validate locally and run tests. Explain intentional Windows/WSL differences.
 3. Review through GitHub and require both CI jobs before merging.
 4. Pull on each machine, rerun bootstrap, then doctor. Restart affected applications.
 5. Capture inventories before and after larger package upgrades; compare machine snapshots.
 
-Installed inventories are evidence, not desired-state lock files. Current Node and scientific package definitions are existing baselines, not a claim that they are the newest versions. Ubuntu APT updates do not update Conda, pip environments, extensions, Snap packages, or MATLAB. Upgrade each package manager deliberately and test the relevant workloads.
+Installed inventories are evidence, not desired-state lock files. The reviewed shared Node baseline is 24.20.0 LTS; scientific package definitions remain workload-specific baselines. Ubuntu APT updates do not update Conda, pip environments, extensions, Snap packages, or MATLAB. Upgrade each package manager deliberately and test the relevant workloads.
 
-Private keys, local overrides, machine reports, and inventory snapshots stay outside version control. No automatic cloud synchronization or background machine management is installed.
+Private keys, local overrides, raw machine reports, and inventory snapshots stay outside version control. Reviewed, sanitized maintenance summaries belong in `docs/`. No automatic cloud synchronization or background machine management is installed.

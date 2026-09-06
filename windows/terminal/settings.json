@@ -28,7 +28,7 @@
   ],
   "copyFormatting": "none",
   "copyOnSelect": false,
-  "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+  "defaultProfile": "{477b0dd5-2331-4e8a-a5a5-47287f296431}",
   "keybindings": [
     {
       "id": "User.copy.644BA8F2",
@@ -55,6 +55,12 @@
   "profiles": {
     "defaults": {},
     "list": [
+      {
+        "commandline": "wsl.exe -d Ubuntu --cd ~ --exec bash --login",
+        "guid": "{477b0dd5-2331-4e8a-a5a5-47287f296431}",
+        "hidden": false,
+        "name": "Ubuntu Bash"
+      },
       {
         "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
         "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",

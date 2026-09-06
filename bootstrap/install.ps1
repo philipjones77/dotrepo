@@ -76,6 +76,112 @@ function Set-TrackedItem {
     }
 }
 
+function Get-PowerShellProfilePaths {
+    param([string]$DocumentsPath = [Environment]::GetFolderPath('MyDocuments'))
+
+    if ([string]::IsNullOrWhiteSpace($DocumentsPath)) {
+        throw 'Windows did not provide a Documents folder for PowerShell profiles.'
+    }
+    Join-Path $DocumentsPath 'PowerShell\Microsoft.PowerShell_profile.ps1'
+    Join-Path $DocumentsPath 'WindowsPowerShell\Microsoft.PowerShell_profile.ps1'
+    Join-Path $DocumentsPath 'PowerShell\Microsoft.VSCode_profile.ps1'
+    Join-Path $DocumentsPath 'WindowsPowerShell\Microsoft.VSCode_profile.ps1'
+}
+
+function Read-JsonSettings {
+    param([string]$Path)
+
+    # Both applications accept JSON comments and trailing commas. Preserve quoted strings.
+    $text = Get-Content -Raw -LiteralPath $Path
+    $text = [regex]::Replace($text, '"(?:\\.|[^"\\])*"|//[^\r\n]*|/\*[\s\S]*?\*/', {
+        param($match)
+        if ($match.Value.StartsWith('"')) { $match.Value } else { ' ' }
+    })
+    $text = [regex]::Replace($text, '"(?:\\.|[^"\\])*"|,\s*(?=[}\]])', {
+        param($match)
+        if ($match.Value.StartsWith('"')) { $match.Value } else { '' }
+    })
+    $settings = $text | ConvertFrom-Json
+    if ($settings -isnot [PSCustomObject]) {
+        throw "Expected a JSON object in $Path"
+    }
+    return $settings
+}
+
+function Merge-JsonObject {
+    param([PSCustomObject]$Existing, [PSCustomObject]$Tracked)
+
+    foreach ($property in $Tracked.PSObject.Properties) {
+        $current = $Existing.PSObject.Properties[$property.Name]
+        $value = $property.Value
+        if ($current -and $current.Value -is [PSCustomObject] -and $value -is [PSCustomObject]) {
+            $value = Merge-JsonObject -Existing $current.Value -Tracked $value
+        }
+        $Existing | Add-Member -NotePropertyName $property.Name -NotePropertyValue $value -Force
+    }
+    return $Existing
+}
+
+function Merge-TerminalSettings {
+    param([PSCustomObject]$Existing, [PSCustomObject]$Tracked)
+
+    # Keep local shortcuts, colors, and other preferences; initialize missing keys only.
+    foreach ($property in $Tracked.PSObject.Properties) {
+        if ($property.Name -eq 'profiles') { continue }
+        if ($property.Name -eq 'defaultProfile' -or -not $Existing.PSObject.Properties[$property.Name]) {
+            $Existing | Add-Member -NotePropertyName $property.Name -NotePropertyValue $property.Value -Force
+        }
+    }
+    if ($Tracked.profiles) {
+        if (-not $Existing.profiles) {
+            $Existing | Add-Member -NotePropertyName profiles -NotePropertyValue ([PSCustomObject]@{}) -Force
+        }
+        foreach ($property in $Tracked.profiles.PSObject.Properties) {
+            if ($property.Name -ne 'list' -and -not $Existing.profiles.PSObject.Properties[$property.Name]) {
+                $Existing.profiles | Add-Member -NotePropertyName $property.Name -NotePropertyValue $property.Value
+            }
+        }
+        $profiles = @($Existing.profiles.list | Where-Object { $null -ne $_ })
+        foreach ($profile in $Tracked.profiles.list) {
+            $match = $profiles | Where-Object {
+                if ($profile.guid) { $_.guid -eq $profile.guid }
+                else { $_.name -eq $profile.name -and $_.source -eq $profile.source }
+            } | Select-Object -First 1
+            if ($match) {
+                Merge-JsonObject -Existing $match -Tracked $profile | Out-Null
+            } else {
+                $profiles += $profile
+            }
+        }
+        $Existing.profiles | Add-Member -NotePropertyName list -NotePropertyValue $profiles -Force
+    }
+    return $Existing
+}
+
+function Set-MergedJsonSettings {
+    param([string]$Source, [string]$Target, [switch]$Terminal)
+
+    # Parse and serialize before moving anything, so invalid settings stay untouched.
+    $tracked = Read-JsonSettings -Path $Source
+    $existingItem = Get-Item -LiteralPath $Target -Force -ErrorAction SilentlyContinue
+    $existing = if ($existingItem) { Read-JsonSettings -Path $Target } else { [PSCustomObject]@{} }
+    $before = $existing | ConvertTo-Json -Depth 100
+    $merged = if ($Terminal) {
+        Merge-TerminalSettings -Existing $existing -Tracked $tracked
+    } else {
+        Merge-JsonObject -Existing $existing -Tracked $tracked
+    }
+    $json = $merged | ConvertTo-Json -Depth 100
+    if ($existingItem -and -not $existingItem.LinkType -and $before -ceq $json) {
+        Write-Log "Settings already applied to $Target"
+        return
+    }
+    New-Item -ItemType Directory -Path (Split-Path $Target -Parent) -Force | Out-Null
+    Backup-ItemPath -Target $Target
+    [IO.File]::WriteAllText($Target, $json.Replace("`r`n", "`n") + "`n", [Text.UTF8Encoding]::new($false))
+    Write-Log "Merged tracked settings into $Target"
+}
+
 function Install-VSCodeExtensions {
     param([string]$ExtensionsFile)
 
@@ -99,7 +205,7 @@ function Install-VSCodeExtensions {
     }
 }
 
-$PowerShellProfileDir = Join-Path $HOME "Documents\PowerShell"
+$PowerShellProfilePaths = @(Get-PowerShellProfilePaths)
 $GitConfigTarget = Join-Path $HOME ".gitconfig"
 $SshDir = Join-Path $HOME ".ssh"
 $SshConfigTarget = Join-Path $SshDir "config"
@@ -119,18 +225,17 @@ if (-not $TerminalTarget) {
 }
 
 New-Item -ItemType Directory -Path $SshDir -Force | Out-Null
-New-Item -ItemType Directory -Path $PowerShellProfileDir -Force | Out-Null
-
-Set-TrackedItem -Source (Join-Path $RepoRoot "windows\powershell\Microsoft.PowerShell_profile.ps1") -Target (Join-Path $PowerShellProfileDir "Microsoft.PowerShell_profile.ps1")
-Set-TrackedItem -Source (Join-Path $RepoRoot "windows\powershell\Microsoft.PowerShell_profile.ps1") -Target (Join-Path $HOME "Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1")
-Set-TrackedItem -Source (Join-Path $RepoRoot "windows\terminal\settings.json") -Target $TerminalTarget
+foreach ($profilePath in $PowerShellProfilePaths) {
+    Set-TrackedItem -Source (Join-Path $RepoRoot "windows\powershell\Microsoft.PowerShell_profile.ps1") -Target $profilePath
+}
+Set-MergedJsonSettings -Source (Join-Path $RepoRoot "windows\terminal\settings.json") -Target $TerminalTarget -Terminal
 if ($WslProfile -ne 'preserve' -or !(Test-Path -LiteralPath $WslConfigTarget)) {
     $profileFile = if ($WslProfile -eq 'memory-32gb') { 'memory-32gb.wslconfig' } else { '.wslconfig' }
     Set-TrackedItem -Source (Join-Path $RepoRoot "windows\wsl\$profileFile") -Target $WslConfigTarget
 }
 Set-TrackedItem -Source (Join-Path $RepoRoot "git\gitconfig.windows") -Target $GitConfigTarget
 Set-TrackedItem -Source (Join-Path $RepoRoot "ssh\config") -Target $SshConfigTarget
-Set-TrackedItem -Source (Join-Path $RepoRoot "vscode\windows\settings.json") -Target $CodeSettingsTarget
+Set-MergedJsonSettings -Source (Join-Path $RepoRoot "vscode\windows\settings.json") -Target $CodeSettingsTarget
 Set-TrackedItem -Source (Join-Path $RepoRoot "vscode\keybindings.json") -Target $CodeKeybindingsTarget
 Set-TrackedItem -Source (Join-Path $RepoRoot "vscode\snippets") -Target $CodeSnippetsTarget
 

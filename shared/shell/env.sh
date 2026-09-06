@@ -18,3 +18,10 @@ done
 
 export PATH
 export R_LIBS_USER="${R_LIBS_USER:-$HOME/.local/lib/R/site-library}"
+
+export DOTREPO_AUTO_MOUNT_GOOGLE_DRIVE="${DOTREPO_AUTO_MOUNT_GOOGLE_DRIVE:-1}"
+export DOTREPO_GDRIVE_WINDOWS_DRIVE="${DOTREPO_GDRIVE_WINDOWS_DRIVE:-G}"
+export DOTREPO_GDRIVE_WSL_DRVFS="${DOTREPO_GDRIVE_WSL_DRVFS:-/mnt/g}"
+export DOTREPO_GDRIVE_RCLONE_MOUNT="${DOTREPO_GDRIVE_RCLONE_MOUNT:-${DOTREPO_GDRIVE_PATH:-$HOME/mnt/gdrive}}"
+
+# Environment setup has no mount side effects. init.sh owns opted-in startup.

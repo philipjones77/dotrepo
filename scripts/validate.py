@@ -1,6 +1,7 @@
 """Validate version-controlled configuration; run on Windows and Linux."""
 import ast
 import json
+import os
 from pathlib import Path
 import re
 import shutil
@@ -52,6 +53,11 @@ def validate():
     if (ROOT / 'node/.nvmrc').read_text().strip() != (ROOT / policy['node_version_file']).read_text().strip():
         errors.append('Node version files disagree')
     ps = shutil.which('pwsh') or shutil.which('powershell') or shutil.which('powershell.exe')
+    if not ps and os.environ.get('WSL_DISTRO_NAME'):
+        # The Bash baseline keeps Linux tools first and may omit Windows PATH entries.
+        interop_ps = Path('/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe')
+        if interop_ps.is_file():
+            ps = str(interop_ps)
     ps_script = str(ROOT / 'scripts/validate.ps1')
     extra = []
     file_list = None

@@ -12,3 +12,6 @@ wsl/snapshots/
 __pycache__/
 reports/
 *.local.*
+
+# Generated local audit output.
+.local/

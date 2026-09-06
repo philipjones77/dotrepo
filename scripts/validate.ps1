@@ -1,12 +1,20 @@
+param([string]$FileList)
 $ErrorActionPreference = 'Stop'
 $repoRoot = Split-Path $PSScriptRoot -Parent
 $failed = $false
-foreach ($relative in (& git -C $repoRoot ls-files --cached --others --exclude-standard '*.ps1')) {
+if ($FileList) {
+    $paths = @(Get-Content -LiteralPath $FileList -Raw | ConvertFrom-Json)
+} else {
+    $relativePaths = @(& git -C $repoRoot ls-files --cached --others --exclude-standard '*.ps1')
+    if ($LASTEXITCODE -ne 0) { throw 'Git could not enumerate PowerShell files.' }
+    $paths = @($relativePaths | ForEach-Object { Join-Path $repoRoot $_ })
+}
+foreach ($path in $paths) {
     $tokens = $null
     $parseErrors = $null
-    [System.Management.Automation.Language.Parser]::ParseFile((Join-Path $repoRoot $relative), [ref]$tokens, [ref]$parseErrors) | Out-Null
+    [System.Management.Automation.Language.Parser]::ParseFile($path, [ref]$tokens, [ref]$parseErrors) | Out-Null
     if ($parseErrors.Count) {
-        $parseErrors | ForEach-Object { Write-Host "$relative : $_" }
+        $parseErrors | ForEach-Object { Write-Host "$path : $_" }
         $failed = $true
     }
 }

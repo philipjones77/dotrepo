@@ -6,6 +6,7 @@ import re
 import shutil
 import subprocess
 import sys
+import tempfile
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -46,11 +47,24 @@ def validate():
         errors.append('Node version files disagree')
     ps = shutil.which('pwsh') or shutil.which('powershell') or shutil.which('powershell.exe')
     ps_script = str(ROOT / 'scripts/validate.ps1')
+    extra = []
+    file_list = None
     if ps and ps.lower().endswith('.exe') and sys.platform != 'win32':
         ps_script = subprocess.check_output(['wslpath', '-w', ps_script], text=True).strip()
+        windows_root = subprocess.check_output(['wslpath', '-w', str(ROOT)], text=True).strip()
+        # Native Git enumerates the Linux-owned checkout. PowerShell reads files only.
+        (ROOT / 'reports').mkdir(exist_ok=True)
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.json', dir=ROOT / 'reports', delete=False) as stream:
+            json.dump([windows_root + '\\' + name.replace('/', '\\') for name in files if name.endswith('.ps1')], stream)
+            file_list = Path(stream.name)
+        extra = ['-FileList', subprocess.check_output(['wslpath', '-w', str(file_list)], text=True).strip()]
     if ps:
-        if subprocess.run([ps, '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', ps_script]).returncode:
-            errors.append('PowerShell validation failed')
+        try:
+            if subprocess.run([ps, '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', ps_script, *extra]).returncode:
+                errors.append('PowerShell validation failed')
+        finally:
+            if file_list:
+                file_list.unlink(missing_ok=True)
     else:
         errors.append('PowerShell is required for complete repository validation')
     print('\n'.join(errors) if errors else 'Repository validation passed.')

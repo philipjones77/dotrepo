@@ -54,6 +54,15 @@ and VS Code host profiles use the actual Windows Documents location, including
 redirection. Installation does not change execution policy. Add `-InstallTools`
 only when the tracked extension/npm manifests have been reviewed for that host.
 
+## Windows editor paths on different hosts
+
+Use ignored `vscode/windows/settings.local.json` for host-specific editor paths,
+such as an existing Miniconda interpreter or Windows PowerShell when PowerShell 7
+is not installed. Windows bootstrap merges these overrides after the shared
+settings, and doctor checks the same effective configuration. Nested overrides
+preserve other tracked keys. Invalid override JSON stops installation before
+moving the editor settings. Keep this file local; do not copy another host's paths.
+
 ## Google Drive on both platforms
 
 Run `windows/google-drive.ps1 -Install`, sign in through Google Drive for desktop,

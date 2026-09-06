@@ -1,0 +1,16 @@
+{
+  "captured_at": "2026-09-06T22:36:56.410306+00:00",
+  "platform": "windows",
+  "counts": {
+    "desktop_records": 298,
+    "store_records": 155,
+    "conda": [
+      {
+        "name": "base",
+        "packages": 129,
+        "manual_sources": 0
+      }
+    ]
+  },
+  "coverage": "Current user and standard Conda installations; review manual sources and other project-local environments separately."
+}

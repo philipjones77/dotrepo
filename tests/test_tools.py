@@ -14,6 +14,32 @@ doctor = importlib.util.module_from_spec(DOCTOR_SPEC)
 DOCTOR_SPEC.loader.exec_module(doctor)
 
 class ToolTests(unittest.TestCase):
+    def test_windows_editor_installer_applies_local_override(self):
+        self.run_bootstrap_functions('''
+$BackupRoot = Join-Path $Fixture 'backups'
+Set-MergedJsonSettings -Source (Join-Path $Fixture 'settings.json') -Target (Join-Path $Fixture 'live.json')
+$actual = Get-Content -Raw (Join-Path $Fixture 'live.json') | ConvertFrom-Json
+if ($actual.automation.path -ne 'powershell' -or $actual.automation.args[0] -ne '-NoLogo' -or $actual.viewer -ne 'pdf' -or $actual.custom -ne 'keep') { throw 'Local override or unrelated settings were lost' }
+''', files={
+            'settings.json': '{"automation":{"path":"pwsh","args":["-NoLogo"]},"viewer":"pdf"}',
+            'settings.local.json': '{"automation":{"path":"powershell"}}',
+            'live.json': '{"custom":"keep"}',
+        })
+
+    def test_local_editor_override_keeps_unrelated_tracked_checks(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            tracked = root / 'settings.json'
+            live = root / 'live.json'
+            tracked.write_text('{"automation":{"path":"pwsh","args":["-NoLogo"]},"viewer":"pdf"}')
+            (root / 'settings.local.json').write_text('{"automation":{"path":"powershell"}}')
+            live.write_text('{"automation":{"path":"powershell","args":["-NoLogo"]},"viewer":"pdf"}')
+            self.assertTrue(doctor.check_settings(live, tracked))
+            live.write_text('{"automation":{"path":"powershell","args":[]},"viewer":"pdf"}')
+            self.assertFalse(doctor.check_settings(live, tracked))
+            (root / 'settings.local.json').write_text('{invalid')
+            self.assertFalse(doctor.check_settings(live, tracked))
+
     def run_bootstrap_functions(self, body, files=None):
         """Load function definitions only; never execute the workstation installer."""
         engines = list(dict.fromkeys(filter(None, (shutil.which('pwsh'), shutil.which('powershell')))))

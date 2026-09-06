@@ -163,6 +163,12 @@ function Set-MergedJsonSettings {
 
     # Parse and serialize before moving anything, so invalid settings stay untouched.
     $tracked = Read-JsonSettings -Path $Source
+    if (-not $Terminal) {
+        $localSettings = [IO.Path]::ChangeExtension($Source, '.local.json')
+        if (Test-Path -LiteralPath $localSettings) {
+            $tracked = Merge-JsonObject -Existing $tracked -Tracked (Read-JsonSettings -Path $localSettings)
+        }
+    }
     $existingItem = Get-Item -LiteralPath $Target -Force -ErrorAction SilentlyContinue
     $existing = if ($existingItem) { Read-JsonSettings -Path $Target } else { [PSCustomObject]@{} }
     $before = $existing | ConvertTo-Json -Depth 100

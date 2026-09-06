@@ -45,7 +45,17 @@ def contains_settings(live, tracked):
 
 def check_settings(live, tracked):
     try:
-        return contains_settings(read_json_settings(live), read_json_settings(tracked))
+        expected = read_json_settings(tracked)
+        local = tracked.with_suffix('.local.json')
+        if local.is_file():
+            def merge(current, override):
+                for key, value in override.items():
+                    if isinstance(value, dict) and isinstance(current.get(key), dict):
+                        merge(current[key], value)
+                    else:
+                        current[key] = value
+            merge(expected, read_json_settings(local))
+        return contains_settings(read_json_settings(live), expected)
     except (OSError, ValueError):
         return False
 
@@ -99,7 +109,7 @@ def main(argv=None):
         live, tracked = Path.home() / target, ROOT / source
         if source.startswith('vscode/'):
             passed = check_settings(live, tracked)
-            detail = f'Tracked keys from {source}; additional local settings are preserved'
+            detail = f'Tracked keys from {source}, including any settings.local.json override; additional local settings are preserved'
         else:
             passed = live.is_file() and live.read_bytes().replace(b'\r\n', b'\n') == tracked.read_bytes().replace(b'\r\n', b'\n')
             detail = f'Compare with {source}'

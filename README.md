@@ -1,5 +1,8 @@
 # dotrepo
 
+To reproduce the current source computer on the other machine, use the
+[Windows and WSL source inventory and target setup steps](machines/source-2026-09-06/README.md).
+
 This repository defines, installs, and checks the developer environment on Windows and WSL. It is the command center for shared configuration, platform differences, software inventories, and GitHub Actions validation.
 
 The full scope is two Windows/WSL machines plus Colab and GitHub Actions. See [the environment topology](docs/topology.md) for how shell settings, Google Drive, identities and project environments fit together. The inspected Ubuntu Bash setup is the shared terminal baseline; `colab/setup.py` mounts Drive and records a notebook runtime.

@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "description": "Copy to a project as .dev-environment.json and fill in its tested commands. Empty commands mean not yet specified.",
+  "platforms": {
+    "windows": {"supported": true, "setup": [], "test": [], "notes": "Use native Windows environments under C:/dev/PROJECT."},
+    "wsl": {"supported": true, "setup": [], "test": [], "notes": "Use native Linux environments under ~/projects/PROJECT."},
+    "colab": {"supported": false, "setup": [], "test": [], "notes": "Enable only after a notebook/GPU runtime has been tested."}
+  }
+}

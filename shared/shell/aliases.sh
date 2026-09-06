@@ -10,6 +10,6 @@ alias gl='git pull'
 
 alias ..='cd ..'
 alias ...='cd ../..'
-alias croot='cd ~/projects'
+alias croot='cd "${PROJECTS_HOME:-$HOME/projects}"'
 alias dotrepo='cd ~/.dotrepo'
 alias reload='exec "$SHELL" -l'

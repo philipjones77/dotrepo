@@ -1,4 +1,5 @@
 $env:DOTREPO = Join-Path $HOME ".dotrepo"
+if (!$env:PROJECTS_HOME) { $env:PROJECTS_HOME = 'C:\dev' }
 
 function Add-PathEntry {
     param([string]$Candidate)
@@ -24,6 +25,7 @@ function Add-PathEntry {
 function ll { Get-ChildItem -Force }
 function la { Get-ChildItem -Force }
 function gs { git status -sb }
+function croot { Set-Location -LiteralPath $env:PROJECTS_HOME }
 function reload-profile { . $PROFILE }
 
 function mkcd {
@@ -52,5 +54,3 @@ if (Test-Path $condaExe) {
 if (Get-Command fnm -ErrorAction SilentlyContinue) {
     fnm env --use-on-cd --shell powershell | Out-String | Invoke-Expression
 }
-
-Set-Location $HOME

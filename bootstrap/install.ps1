@@ -1,8 +1,22 @@
+param(
+    [ValidateSet('preserve', 'default', 'memory-32gb')][string]$WslProfile = 'preserve',
+    [switch]$InstallTools
+)
 $ErrorActionPreference = "Stop"
 
 $RepoRoot = (Resolve-Path (Join-Path $PSScriptRoot "..")).Path
 $Timestamp = Get-Date -Format "yyyyMMdd-HHmmss"
 $BackupRoot = Join-Path $HOME ".dotrepo-backups\$Timestamp"
+$canonical = Join-Path $HOME '.dotrepo'
+if (Test-Path -LiteralPath $canonical) {
+    $item = Get-Item -LiteralPath $canonical -Force
+    $actual = if ($item.Target) { [string](@($item.Target)[0]) } else { $item.FullName }
+    if ([IO.Path]::GetFullPath($actual).TrimEnd('\') -ne $RepoRoot.TrimEnd('\')) {
+        throw "Another checkout exists at $canonical. Run its bootstrap or relocate it explicitly first."
+    }
+} else {
+    New-Item -ItemType Junction -Path $canonical -Target $RepoRoot | Out-Null
+}
 
 function Write-Log {
     param([string]$Message)
@@ -20,7 +34,11 @@ function Backup-ItemPath {
     $backupPath = Join-Path $BackupRoot $relative
     $backupDir = Split-Path $backupPath -Parent
     New-Item -ItemType Directory -Path $backupDir -Force | Out-Null
-    Move-Item -Path $Target -Destination $backupPath -Force
+    $resolvedTarget = [IO.Path]::GetFullPath($Target)
+    if (!$resolvedTarget.StartsWith($HOME.TrimEnd('\') + '\', [StringComparison]::OrdinalIgnoreCase)) {
+        throw "Backup target is outside the user home: $Target"
+    }
+    Move-Item -LiteralPath $Target -Destination $backupPath -Force
     Write-Log "Backed up $Target -> $backupPath"
 }
 
@@ -31,6 +49,11 @@ function Set-TrackedItem {
     )
 
     $targetDir = Split-Path $Target -Parent
+    $existing = Get-Item -LiteralPath $Target -Force -ErrorAction SilentlyContinue
+    if ($existing -and $existing.LinkType -eq 'SymbolicLink' -and [string](@($existing.Target)[0]) -eq $Source) {
+        Write-Log "Already linked $Target"
+        return
+    }
     if ($targetDir) {
         New-Item -ItemType Directory -Path $targetDir -Force | Out-Null
     }
@@ -67,9 +90,10 @@ function Install-VSCodeExtensions {
         if ($extension -and -not $extension.StartsWith("#")) {
             try {
                 & $codeCmd --install-extension $extension --force | Out-Null
+                if ($LASTEXITCODE -ne 0) { throw "Extension install failed: $extension" }
             }
             catch {
-                Write-Log "Extension install failed: $extension"
+                throw
             }
         }
     }
@@ -98,18 +122,24 @@ New-Item -ItemType Directory -Path $SshDir -Force | Out-Null
 New-Item -ItemType Directory -Path $PowerShellProfileDir -Force | Out-Null
 
 Set-TrackedItem -Source (Join-Path $RepoRoot "windows\powershell\Microsoft.PowerShell_profile.ps1") -Target (Join-Path $PowerShellProfileDir "Microsoft.PowerShell_profile.ps1")
+Set-TrackedItem -Source (Join-Path $RepoRoot "windows\powershell\Microsoft.PowerShell_profile.ps1") -Target (Join-Path $HOME "Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1")
 Set-TrackedItem -Source (Join-Path $RepoRoot "windows\terminal\settings.json") -Target $TerminalTarget
-Set-TrackedItem -Source (Join-Path $RepoRoot "windows\wsl\.wslconfig") -Target $WslConfigTarget
+if ($WslProfile -ne 'preserve' -or !(Test-Path -LiteralPath $WslConfigTarget)) {
+    $profileFile = if ($WslProfile -eq 'memory-32gb') { 'memory-32gb.wslconfig' } else { '.wslconfig' }
+    Set-TrackedItem -Source (Join-Path $RepoRoot "windows\wsl\$profileFile") -Target $WslConfigTarget
+}
 Set-TrackedItem -Source (Join-Path $RepoRoot "git\gitconfig.windows") -Target $GitConfigTarget
 Set-TrackedItem -Source (Join-Path $RepoRoot "ssh\config") -Target $SshConfigTarget
 Set-TrackedItem -Source (Join-Path $RepoRoot "vscode\windows\settings.json") -Target $CodeSettingsTarget
 Set-TrackedItem -Source (Join-Path $RepoRoot "vscode\keybindings.json") -Target $CodeKeybindingsTarget
 Set-TrackedItem -Source (Join-Path $RepoRoot "vscode\snippets") -Target $CodeSnippetsTarget
 
-Install-VSCodeExtensions -ExtensionsFile (Join-Path $RepoRoot "vscode\windows\extensions.txt")
+if ($InstallTools) {
+    Install-VSCodeExtensions -ExtensionsFile (Join-Path $RepoRoot "vscode\windows\extensions.txt")
 
 if (Test-Path (Join-Path $RepoRoot "node\install-globals.ps1")) {
     & (Join-Path $RepoRoot "node\install-globals.ps1")
+}
 }
 
 Write-Log "Windows bootstrap complete"

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "platforms": {
+    "windows": {
+      "supported": true,
+      "setup": ["python -m venv .venv-windows", ".venv-windows/Scripts/python -m pip install -r scripts/requirements.txt"],
+      "test": [".venv-windows/Scripts/python scripts/validate.py", ".venv-windows/Scripts/python -m unittest discover -s tests -v"],
+      "notes": "Windows validation uses Windows PowerShell or pwsh. Machine setup is a separate explicit install action."
+    },
+    "wsl": {
+      "supported": true,
+      "setup": ["python3 -m venv .venv-wsl", ".venv-wsl/bin/python -m pip install -r scripts/requirements.txt"],
+      "test": [".venv-wsl/bin/python scripts/validate.py", ".venv-wsl/bin/python -m unittest discover -s tests -v"],
+      "notes": "Full validation needs pwsh or Windows PowerShell interop. Use ~/projects/dotrepo."
+    },
+    "colab": {
+      "supported": false,
+      "setup": [],
+      "test": [],
+      "notes": "colab/setup.py supplies Drive mounting and inventory only; no live Colab validation has run."
+    }
+  }
+}

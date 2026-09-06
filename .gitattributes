@@ -1,2 +1,7 @@
-# Keep the Linux collector runnable after a Windows checkout.
-wsl/capture-status.sh text eol=lf
+* text=auto
+*.sh text eol=lf
+*.py text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.ps1 text eol=lf
+wsl/home/* text eol=lf

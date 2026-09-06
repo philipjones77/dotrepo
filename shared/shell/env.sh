@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 export DOTREPO="${DOTREPO:-$HOME/.dotrepo}"
+export PROJECTS_HOME="${PROJECTS_HOME:-$HOME/projects}"
 
 prepend_path() {
   case ":$PATH:" in

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "repository": "philipjones77/dotrepo",
+  "canonical_checkout": "~/.dotrepo",
+  "github_transport": "ssh",
+  "ssh_key": "~/.ssh/id_ed25519_github",
+  "platforms": ["windows", "wsl"],
+  "hosted_environments": ["colab", "github-actions"],
+  "expected_machine_count": 2,
+  "preferred_wsl_shell": "/bin/bash",
+  "project_roots": {"windows": "C:/dev", "wsl": "~/projects"},
+  "required_commands": ["git", "ssh", "python"],
+  "optional_commands": ["node", "R", "matlab", "gh", "code"],
+  "node_version_file": "node/.node-version",
+  "python_environments": {
+    "windows": "python/windows/environment.yml",
+    "wsl": "python/wsl/environment.yml"
+  },
+  "wsl_profiles": {
+    "default": "windows/wsl/.wslconfig",
+    "memory-32gb": "windows/wsl/memory-32gb.wslconfig"
+  }
+}

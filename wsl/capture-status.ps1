@@ -1,5 +1,6 @@
 param(
     [string]$Distribution = 'Ubuntu',
+    [string]$LinuxRepoPath,
     [string]$OutputDirectory = (Join-Path $PSScriptRoot ('snapshots\' + (Get-Date -Format 'yyyyMMdd-HHmmss')))
 )
 $ErrorActionPreference = 'Stop'
@@ -23,8 +24,14 @@ if (Test-Path -LiteralPath "$env:USERPROFILE\.wslconfig") {
 }
 $linuxPath = & wsl.exe -d $Distribution --exec wslpath -a -u $OutputDirectory.Replace('\', '/')
 if ($LASTEXITCODE -ne 0) { throw 'Cannot resolve snapshot path inside WSL.' }
-$collectorPath = & wsl.exe -d $Distribution --exec wslpath -a -u ((Join-Path $PSScriptRoot 'capture-status.sh').Replace('\', '/'))
-if ($LASTEXITCODE -ne 0) { throw 'Cannot resolve collector path inside WSL.' }
+if (!$LinuxRepoPath) {
+    $linuxHome = & wsl.exe -d $Distribution --exec printenv HOME
+    if ($LASTEXITCODE -ne 0) { throw 'Cannot resolve WSL home.' }
+    $LinuxRepoPath = $linuxHome.Trim() + '/projects/dotrepo'
+}
+$collectorPath = $LinuxRepoPath.TrimEnd('/') + '/wsl/capture-status.sh'
+& wsl.exe -d $Distribution --exec test -f $collectorPath
+if ($LASTEXITCODE -ne 0) { throw "Native collector is missing: $collectorPath. Update the WSL clone first." }
 & wsl.exe -d $Distribution --exec bash $collectorPath.Trim() $linuxPath.Trim()
 if ($LASTEXITCODE -ne 0) { throw "Linux capture failed. Partial report: $OutputDirectory" }
 Save-WslOutput 'kernel-current.txt' @('-d', $Distribution, '-u', 'root', '--exec', 'journalctl', '-k', '-b', '--no-pager')

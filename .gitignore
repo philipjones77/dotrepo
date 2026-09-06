@@ -7,3 +7,8 @@ Thumbs.db
 
 # Local status captures may contain machine paths and private package sources.
 wsl/snapshots/
+.venv/
+.venv-*/
+__pycache__/
+reports/
+*.local.*

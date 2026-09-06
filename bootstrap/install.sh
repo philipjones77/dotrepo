@@ -3,6 +3,14 @@ set -euo pipefail
 
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 backup_root="${HOME}/.dotrepo-backups/$(date +%Y%m%d-%H%M%S)"
+if [ -e "$HOME/.dotrepo" ] || [ -L "$HOME/.dotrepo" ]; then
+  if [ "$(readlink -f "$HOME/.dotrepo")" != "$repo_root" ]; then
+    printf 'Another checkout exists at ~/.dotrepo; run its bootstrap or relocate it explicitly.\n' >&2
+    exit 1
+  fi
+else
+  ln -s "$repo_root" "$HOME/.dotrepo"
+fi
 
 log() {
   printf '[dotrepo] %s\n' "$*"
@@ -76,6 +84,7 @@ install_vscode_extensions() {
 
     if ! code --install-extension "$extension" --force >/dev/null 2>&1; then
       log "Extension install failed: ${extension}"
+      return 1
     fi
   done < "$extensions_file"
 }
@@ -90,11 +99,19 @@ link_file "${repo_root}/git/gitconfig.wsl" "$HOME/.gitconfig"
 link_file "${repo_root}/ssh/config" "$HOME/.ssh/config"
 link_file "${repo_root}/vscode/wsl/settings.json" "$HOME/.vscode-server/data/Machine/settings.json"
 
-install_system_file "${repo_root}/wsl/etc/wsl.conf" "/etc/wsl.conf"
+# Preserve existing distro-specific boot/network/user settings.
+if [ ! -f /etc/wsl.conf ]; then
+  temp_config=$(mktemp)
+  trap 'rm -f "$temp_config"' EXIT
+  printf '[boot]\nsystemd=true\n\n[user]\ndefault=%s\n' "$(id -un)" > "$temp_config"
+  install_system_file "$temp_config" /etc/wsl.conf
+fi
+if [ "${1:-}" = '--install-tools' ]; then
 install_vscode_extensions "${repo_root}/vscode/wsl/extensions.txt"
 
-if [ -x "${repo_root}/node/install-globals.sh" ]; then
-  "${repo_root}/node/install-globals.sh"
+if [ -f "${repo_root}/node/install-globals.sh" ]; then
+  bash "${repo_root}/node/install-globals.sh"
+fi
 fi
 
 log "WSL bootstrap complete"

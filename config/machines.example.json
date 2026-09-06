@@ -1,0 +1,7 @@
+{
+  "machines": [
+    {"id": "machine-1", "windows_checkout": "C:/dev/dotrepo", "wsl_distribution": "Ubuntu", "wsl_checkout": "~/projects/dotrepo", "wsl_profile": "memory-32gb"},
+    {"id": "machine-2", "windows_checkout": null, "wsl_distribution": null, "wsl_checkout": null, "wsl_profile": null}
+  ],
+  "note": "Example inventory only. Fill in a config/machines.local.json on each machine; second-machine values require inspection. No remote provisioning is performed."
+}

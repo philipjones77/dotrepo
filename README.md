@@ -1,190 +1,115 @@
 # dotrepo
 
-Cross-platform dotfiles and reproducible developer environment for this computer: WSL Ubuntu, Windows PowerShell, Anaconda on Windows, Miniforge on WSL, and VS Code on both sides.
+This repository defines, installs, and checks the developer environment on Windows and WSL. It is the command center for shared configuration, platform differences, software inventories, and GitHub Actions validation.
 
-## What This Repo Tracks
+The full scope is two Windows/WSL machines plus Colab and GitHub Actions. See [the environment topology](docs/topology.md) for how shell settings, Google Drive, identities and project environments fit together. `colab/setup.py` mounts Drive and records a notebook runtime; the second machine's preferred Bash setup will be incorporated after inspection.
 
-- WSL shell startup files, aliases, PATH rules, and `/etc/wsl.conf`
-- Windows PowerShell profile, Windows Terminal settings, and `.wslconfig`
-- Git global config for WSL and Windows, including the current identities on each side
-- SSH client config templates only; private keys stay manual
-- VS Code settings for Windows and WSL Remote, plus keybindings, snippets, and extension inventories
-- Python environment definitions for `jax` on WSL and `jax-win` on Windows
-- Node version files and tracked global npm package list
-- Bootstrap installers for WSL and Windows
+The goal is **consistent behavior with explicit platform differences**. Windows and WSL may use separate Git identities and separate SSH keys. Hardware limits, credentials, licensed software, and project dependencies are not forced to be identical.
 
-## Layout
+## Commands from this repository
 
-```text
-dotrepo/
-|-- bootstrap/
-|-- git/
-|-- node/
-|-- python/
-|   |-- windows/
-|   `-- wsl/
-|-- shared/shell/
-|-- ssh/
-|-- vscode/
-|   |-- snippets/
-|   |-- windows/
-|   `-- wsl/
-|-- windows/
-|   |-- packages/
-|   |-- powershell/
-|   |-- terminal/
-|   `-- wsl/
-`-- wsl/
-    |-- etc/
-    `-- home/
-```
-
-## Clone And Install On A New Machine
-
-Clone the repo separately on each side. WSL and Windows have different home directories, so each side should have its own checkout.
-
-### WSL
-
-```bash
-git clone https://github.com/philipjones77/dotrepo.git ~/.dotrepo
-~/.dotrepo/bootstrap/install.sh
-```
-
-### Windows
+Run PowerShell commands from the repository root. They work from a checkout such as `C:\dev\dotrepo`.
 
 ```powershell
-git clone https://github.com/philipjones77/dotrepo.git $HOME\.dotrepo
-& $HOME\.dotrepo\bootstrap\install.ps1
+# Read-only machine checks; reports missing configuration with a nonzero exit.
+.\scripts\dotrepo.ps1 -Action doctor -Platform all
+
+# Apply tracked configuration with timestamped backups.
+.\scripts\dotrepo.ps1 -Action install -Platform windows
+.\scripts\dotrepo.ps1 -Action install -Platform wsl
+
+# Explicit hardware profile: 16 GB RAM limit and 24 GB swap on a 32 GB host.
+.\scripts\dotrepo.ps1 -Action install -Platform windows -WslProfile memory-32gb
+
+# Generate a separate SSH key on each platform, prompting for a passphrase.
+.\scripts\dotrepo.ps1 -Action ssh -Platform windows
+.\scripts\dotrepo.ps1 -Action ssh -Platform wsl
+
+# Once public keys are registered and GitHub host keys trusted:
+.\scripts\dotrepo.ps1 -Action doctor -Platform all -Network
+
+# Save a Windows health report and a detailed WSL inventory.
+.\scripts\dotrepo.ps1 -Action capture -Platform all
 ```
 
-What the installers do:
+Choose a distribution with `-Distribution Ubuntu`. WSL commands run from the native `~/projects/dotrepo` clone by default. Use `-WslRepoPath` only for an explicit alternate clone. The dispatcher stops if the native clone is missing or outdated; update it before running commands. Use Linux-native storage for Python environments, builds, datasets, and other heavy workloads. The dispatcher is sequential so installation and capture do not compete for the WSL VM.
 
-- Back up any existing tracked files into `~/.dotrepo-backups/<timestamp>/` or `$HOME\.dotrepo-backups\<timestamp>\`
-- Link the tracked shell, Git, SSH, and VS Code files into place
-- Install `/etc/wsl.conf` on WSL
-- Install `.wslconfig`, PowerShell profile, Windows Terminal settings, and local VS Code files on Windows
-- Attempt to install the tracked VS Code extensions for each side
-
-## Python Environment Reproducibility
-
-### WSL
-
-Tracked files:
-
-- `python/wsl/requirements.txt`
-- `python/wsl/environment.yml`
-- `python/wsl/create-venv.sh`
-
-Create a venv:
+From inside WSL:
 
 ```bash
-~/.dotrepo/python/wsl/create-venv.sh
+bash scripts/dotrepo.sh doctor
+bash scripts/dotrepo.sh install
+bash scripts/dotrepo.sh ssh
+bash scripts/dotrepo.sh doctor --network
 ```
 
-Create or update the conda or mamba env:
+`install` applies configuration only. Add `-InstallTools` on Windows or `--install-tools` in WSL to install tracked VS Code extensions and global npm packages. Python environments are created separately using `python/windows/create-venv.ps1` or `bash python/wsl/create-venv.sh`; Conda definitions live beside them. R and MATLAB are inventoried, not automatically installed or licensed.
+
+## First setup
+
+Prerequisites: Git, OpenSSH, Python 3.10+, PowerShell on Windows, Bash and Python on WSL. Install WSL/Ubuntu before dispatching WSL commands. Clone separately on each platform for best filesystem performance:
 
 ```bash
-mamba env create -f ~/.dotrepo/python/wsl/environment.yml
-mamba env update -f ~/.dotrepo/python/wsl/environment.yml --prune
+mkdir -p ~/projects
+git clone git@github.com:philipjones77/dotrepo.git ~/projects/dotrepo
+cd ~/projects/dotrepo
+bash scripts/dotrepo.sh install
 ```
 
-### Windows
+If SSH is not configured yet, obtain the checkout through HTTPS once, run the SSH setup script, register its public key in the appropriate GitHub account, and verify the host fingerprint. GitHub Git URLs are rewritten to SSH after bootstrap. APIs and Actions use their own authentication; see [SSH](ssh/README.md).
 
-Tracked files:
+Installers create `~/.dotrepo` as a link/junction to the checkout when absent. They stop if that name already refers to a different checkout. Existing configuration is backed up under `~/.dotrepo-backups/<timestamp>/`. Windows copies files when symlinks are unavailable; rerun installation to refresh those copies. Existing `.wslconfig` is preserved unless a profile is selected. Existing `/etc/wsl.conf` is preserved. Restart WSL manually after changing its configuration, after saving work.
 
-- `python/windows/requirements.txt`
-- `python/windows/environment.yml`
-- `python/windows/create-venv.ps1`
+## Structure and ownership
 
-Create a venv:
+| Directory | Purpose |
+| --- | --- |
+| `config/` | Shared environment policy and platform/profile references |
+| `scripts/` | Cross-platform entry points, repository validation, machine doctor |
+| `bootstrap/` | Native installers, backups, canonical checkout registration |
+| `git/`, `ssh/` | Git behavior, separate platform identities, SSH client policy |
+| `shared/`, `windows/`, `wsl/home/` | Shared shell behavior and platform configuration |
+| `python/`, `node/` | Reviewed environment definitions and install helpers |
+| `vscode/` | Editor settings and extension manifests |
+| `wsl/` | Software inventories, snapshot comparison, migration and compaction |
+| `.github/` | Windows/Linux CI and dependency-update configuration |
+| `tests/` | Behavioral regression tests for the management tools |
+| `docs/` | Environment contract and operational procedures |
+
+Start with [the environment contract](docs/environment.md), [GitHub workflow standards](docs/github.md), and [WSL migration](wsl/README.md).
+
+Projects may run on both platforms. See [Windows/WSL project conventions](docs/projects.md), and run `scripts/dotrepo.ps1 -Action projects -Platform all` to inspect both sets of checkouts without changing them.
+
+## Validation and CI
+
+Create isolated validation environments once:
 
 ```powershell
-& $HOME\.dotrepo\python\windows\create-venv.ps1
+python -m venv .venv-windows
+.\.venv-windows\Scripts\python -m pip install -r scripts/requirements.txt
+.\scripts\dotrepo.ps1 -Action validate
+.\.venv-windows\Scripts\python -m unittest discover -s tests -v
 ```
-
-Create or update the conda env:
-
-```powershell
-conda env create -f $HOME\.dotrepo\python\windows\environment.yml
-conda env update -f $HOME\.dotrepo\python\windows\environment.yml --prune
-```
-
-## VS Code Sync
-
-Tracked files:
-
-- `vscode/windows/settings.json`
-- `vscode/wsl/settings.json`
-- `vscode/keybindings.json`
-- `vscode/snippets/python.code-snippets`
-- `vscode/windows/extensions.txt`
-- `vscode/wsl/extensions.txt`
-
-Machine-specific interpreter paths currently tracked:
-
-- Windows: `C:/Users/phili/anaconda3/envs/jax-win/python.exe`
-- WSL: `/home/phili/miniforge3/envs/jax/bin/python`
-
-Re-running the platform bootstrap script reapplies the tracked settings and extensions.
-
-## Node Reproducibility
-
-This machine currently tracks Node `18.19.1`.
-
-Tracked files:
-
-- `node/.node-version`
-- `node/.nvmrc`
-- `node/global-packages.txt`
-
-After installing `fnm` or `nvm`, install the tracked version and globals:
 
 ```bash
-fnm install "$(cat ~/.dotrepo/node/.node-version)"
-~/.dotrepo/node/install-globals.sh
+python3 -m venv .venv-wsl
+.venv-wsl/bin/python -m pip install -r scripts/requirements.txt
+bash scripts/dotrepo.sh validate
+.venv-wsl/bin/python -m unittest discover -s tests -v
 ```
 
-```powershell
-fnm install (Get-Content $HOME\.dotrepo\node\.node-version)
-& $HOME\.dotrepo\node\install-globals.ps1
-```
+Complete repository validation requires PowerShell (`pwsh` on Linux, or Windows PowerShell interop in WSL). CI runs the same validator and tests on Windows and Ubuntu. It checks configuration syntax, policy references, Node version agreement, shell syntax on Linux, PowerShell parser errors, and workflow permissions/pins/timeouts. It does not provision a workstation, validate proprietary licenses, or prove every scientific workload works.
 
-## SSH
+The doctor separately checks this machine's tools, canonical checkout, installed Git/SSH/shell configuration and optional SSH access. A green CI run does not mean a machine is configured correctly. Doctor is read-only and does not install missing applications.
 
-`ssh/config` is tracked, but private keys are not.
+## Change and update procedure
 
-1. Add your private key manually under `~/.ssh/` or `$HOME\.ssh\`.
-2. Add the public key to GitHub.
-3. Re-run the bootstrap script so the tracked config is linked into place.
+1. Edit the shared policy, platform configuration, or package definitions in this repo.
+2. Validate locally and run tests. Explain intentional Windows/WSL differences.
+3. Review through GitHub and require both CI jobs before merging.
+4. Pull on each machine, rerun bootstrap, then doctor. Restart affected applications.
+5. Capture inventories before and after larger package upgrades; compare machine snapshots.
 
-The tracked config expects `~/.ssh/id_ed25519_github`.
+Installed inventories are evidence, not desired-state lock files. Current Node and scientific package definitions are existing baselines, not a claim that they are the newest versions. Ubuntu APT updates do not update Conda, pip environments, extensions, Snap packages, or MATLAB. Upgrade each package manager deliberately and test the relevant workloads.
 
-## WSL Health And Machine Comparison
-
-See [WSL capture, comparison, and migration](wsl/README.md) for software inventories,
-full distribution export/import, and disk compaction. Run `wsl/capture-status.ps1`
-on each Windows machine to record the live WSL setup and installed libraries.
-
-## Updating The Repo
-
-- Edit the tracked file in the repo, not the symlinked target.
-- Re-run the relevant bootstrap script after changes.
-- For Python, update `requirements.txt` and `environment.yml` together.
-- For VS Code, update the settings file and the extension list together.
-- For shell or PowerShell changes, open a fresh terminal after reinstalling.
-
-## Adding New Settings Safely
-
-- Keep secrets out of git. Never commit private keys, tokens, SSH agent sockets, or `.env` files.
-- Prefer templates for credentials and machine-only paths when they are likely to vary.
-- If a setting only applies to one side, keep it under `windows/` or `wsl/` instead of forcing it into a shared file.
-- When changing a tracked target, let the bootstrap script back up the existing live file before replacing it.
-
-## Notes About This Machine
-
-- WSL distro: `Ubuntu`
-- WSL default user: `phili`
-- WSL conda root: `/home/phili/miniforge3`
-- Windows conda root: `C:\Users\phili\anaconda3`
-- `.wslconfig` is sized for a 16 GB / 20-thread host
-- `winget` was not available in PATH when this repo was generated, so `windows/packages/winget-packages.txt` is tracked as a baseline package list rather than an exported manifest
+Private keys, local overrides, machine reports, and inventory snapshots stay outside version control. No automatic cloud synchronization or background machine management is installed.

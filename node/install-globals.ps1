@@ -18,3 +18,4 @@ if (-not $Packages) {
 }
 
 & npm install -g $Packages
+if ($LASTEXITCODE -ne 0) { throw 'Global npm package installation failed.' }

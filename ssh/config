@@ -1,5 +1,6 @@
-Host github.com
-  HostName github.com
+Include ~/.ssh/config.local
+
+Host github.com gist.github.com
   User git
   IdentityFile ~/.ssh/id_ed25519_github
   AddKeysToAgent yes

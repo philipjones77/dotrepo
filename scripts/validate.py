@@ -21,6 +21,12 @@ def validate():
         try:
             if path.suffix in {'.json', '.code-snippets'}:
                 json.loads(path.read_text(encoding='utf-8-sig'))
+            elif path.suffix == '.ipynb':
+                notebook = json.loads(path.read_text(encoding='utf-8-sig'))
+                assert notebook['nbformat'] == 4, 'Expected notebook format 4'
+                for cell in notebook['cells']:
+                    if cell['cell_type'] == 'code':
+                        ast.parse(''.join(cell['source']), filename=name)
             elif path.suffix in {'.yml', '.yaml'}:
                 doc = yaml.load(path.read_text(), Loader=yaml.BaseLoader)
                 if name.startswith('.github/workflows/'):

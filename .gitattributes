@@ -1,0 +1,2 @@
+# Keep the Linux collector runnable after a Windows checkout.
+wsl/capture-status.sh text eol=lf

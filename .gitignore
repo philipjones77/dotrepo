@@ -4,3 +4,6 @@ Thumbs.db
 # Local machine-only overrides or backups created outside bootstrap.
 *.bak
 *.orig
+
+# Local status captures may contain machine paths and private package sources.
+wsl/snapshots/

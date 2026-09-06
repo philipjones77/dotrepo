@@ -1,0 +1,8 @@
+# Profile for a 32 GB Windows host running memory-heavy Linux jobs.
+# Install as %USERPROFILE%\.wslconfig; restart WSL to apply.
+[wsl2]
+memory=16GB
+swap=24GB
+
+[experimental]
+autoMemoryReclaim=gradual

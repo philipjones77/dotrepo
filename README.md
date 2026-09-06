@@ -159,6 +159,12 @@ fnm install (Get-Content $HOME\.dotrepo\node\.node-version)
 
 The tracked config expects `~/.ssh/id_ed25519_github`.
 
+## WSL Health And Machine Comparison
+
+See [WSL capture, comparison, and migration](wsl/README.md) for software inventories,
+full distribution export/import, and disk compaction. Run `wsl/capture-status.ps1`
+on each Windows machine to record the live WSL setup and installed libraries.
+
 ## Updating The Repo
 
 - Edit the tracked file in the repo, not the symlinked target.

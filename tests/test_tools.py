@@ -8,6 +8,24 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 
 class ToolTests(unittest.TestCase):
+    def test_powershell_file_list_checks_individual_files(self):
+        import json
+        import shutil
+        ps = shutil.which('pwsh') or shutil.which('powershell')
+        if not ps:
+            self.skipTest('Native PowerShell is not installed')
+        with tempfile.TemporaryDirectory() as temp:
+            directory = Path(temp)
+            paths = [directory / 'first.ps1', directory / 'second.ps1']
+            for path in paths:
+                path.write_text("Write-Output 'valid'\n")
+            manifest = directory / 'files.json'
+            manifest.write_text(json.dumps([str(p) for p in paths]))
+            command = [ps, '-NoProfile', '-ExecutionPolicy', 'Bypass', '-File', str(ROOT / 'scripts/validate.ps1'), '-FileList', str(manifest)]
+            self.assertEqual(subprocess.run(command, capture_output=True).returncode, 0)
+            paths[1].write_text('function Broken {\n')
+            self.assertNotEqual(subprocess.run(command, capture_output=True).returncode, 0)
+
     def test_compare_reports_added_removed_and_changed_packages(self):
         with tempfile.TemporaryDirectory() as temp:
             a, b = Path(temp) / 'a', Path(temp) / 'b'

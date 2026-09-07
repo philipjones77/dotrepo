@@ -26,5 +26,6 @@
   "terminal.integrated.sendKeybindingsToShell": false,
   "terminal.integrated.commandsToSkipShell": [
     "workbench.action.terminal.paste"
-  ]
+  ],
+  "terminal.integrated.cwd": "${env:HOME}"
 }

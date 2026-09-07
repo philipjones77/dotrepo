@@ -19,6 +19,28 @@ starting in `/home/phili`. Confirmed from `/etc/os-release` and
 `wsl --list --verbose` on September 7, 2026. The machine-readable distribution
 record is [wsl-native/distribution.json](wsl-native/distribution.json).
 
+Ubuntu Windows Terminal profiles explicitly launch with `--cd /home/phili`.
+WSL VS Code terminals use `terminal.integrated.cwd = ${env:HOME}`. This applies
+to new terminals; existing sessions keep their current directory.
+
+### Google Drive mount
+
+The source's rclone remote **`gdrive:`** is mounted at
+**`/home/phili/mnt/gdrive`**, currently **read-only** (`fuse.rclone`). A directory
+listing check passed. Windows can access it through
+`\\wsl.localhost\Ubuntu\home\phili\mnt\gdrive` while the WSL mount is active.
+
+The marker `~/.config/dotrepo/gdrive.enabled` enables the shared shell's mount
+startup hook. Local `~/.config/dotrepo/gdrive.env` explicitly selects `gdrive:`,
+`$HOME/mnt/gdrive` and read-only mode, matching the live source mount. The
+helper is `wsl/mounts/gdrive.sh`; use `bash ~/.dotrepo/wsl/mounts/gdrive.sh status`
+to inspect it. This records shell-triggered startup, not an independently
+verified Windows-login service.
+
+See [the mount inventory](wsl-native/google-drive-mount.json). The target must
+configure its own rclone authorization. Tokens and rclone credentials are not
+committed, and the other computer's writable mount is a separate configuration.
+
 ## Windows Python
 
 The default is now **standard CPython 3.13.15, independent of Anaconda**, managed

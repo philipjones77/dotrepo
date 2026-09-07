@@ -1,0 +1,12 @@
+{
+  "remote": "gdrive:",
+  "mount_path": "/home/phili/mnt/gdrive",
+  "filesystem": "fuse.rclone",
+  "read_only": true,
+  "directory_check": "passed",
+  "shell_startup_enabled": true,
+  "startup_marker": "~/.config/dotrepo/gdrive.enabled",
+  "local_settings": "~/.config/dotrepo/gdrive.env",
+  "helper": "wsl/mounts/gdrive.sh",
+  "credentials_in_repository": false
+}

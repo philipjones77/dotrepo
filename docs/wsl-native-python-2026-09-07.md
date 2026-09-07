@@ -84,12 +84,11 @@ The unused duplicate `~/.virtualenvs/jax-wsl` and the old Conda
 `~/miniforge3/envs/jax` were removed after inventory, validation and process
 checks. Ubuntu's system Python is retained for operating-system tools.
 
-**Miniforge is not yet removed.** An active `data77` experiment used its base
-interpreter, then another experiment started from the same installation.
-Do not remove that tree while these workloads or their launchers still use it.
-Move job launch commands to the tested standard environment and verify the
-actual workload before final removal. Existing shell sessions can also retain
-old activation state; open new terminals after applying dotrepo.
+**Miniforge is removed.** The user authorized stopping its two remaining data77
+experiments. Their processes were stopped, Miniforge and its configuration were
+deleted, and the standard environments passed post-removal checks. Use the
+non-Conda `data77-bayesian` launcher for future runs. Existing shell sessions
+can retain old activation state; open new terminals after applying dotrepo.
 
 The older non-Conda `~/.virtualenvs/jax` is retained because it has additional
 PyMC, TensorFlow, GPflow and randomfields77 packages. It is **not the validated
@@ -107,7 +106,7 @@ separately when cloning; the remote does not contain it or account credentials.
 Current shareable inventory is under
 [`machines/source-2026-09-07/wsl-native`](../machines/source-2026-09-07/wsl-native/).
 The earlier `wsl/` snapshot is historical. The new snapshot deliberately still
-records the retained Conda base installation and the legacy virtualenv.
+records no Conda environments and retains the legacy non-Conda virtualenv.
 
 ## Reconstructing the standard environments
 

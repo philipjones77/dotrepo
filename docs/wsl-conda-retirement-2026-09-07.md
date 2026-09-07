@@ -1,10 +1,12 @@
 # WSL Conda retirement: source machine
 
-The user's required final state is **no Conda installation in WSL**. This is
-not yet fully achieved: the old named Conda environments were removed, but
-`~/miniforge3` base is still used by running data77 experiments. At the latest
-check, Python process IDs 115063 and 237504 used that installation directly.
-These IDs are diagnostic history, not instructions to terminate those PIDs later.
+**Conda removal is complete on this WSL source installation.** At the user's
+explicit request, stopped the two data77 experiments using Miniforge and their
+timeout wrappers (115063/115061 and 237504/237502). Verified no remaining
+process executable or loaded-library mapping used Miniforge, then removed
+`/home/phili/miniforge3` and `/home/phili/.conda`. No other Conda installation
+was found in the searched native home, opt and usr/local installation locations.
+Mounted external data is outside this installation audit.
 
 The standard environments `py313`, `jax-native` and `matrix-compare` are already
 ordinary CPython virtualenvs. The retained legacy `~/.virtualenvs/jax` is also
@@ -32,13 +34,16 @@ and the sampling path. That backend did not honor the intended preflight-only
 boundary, so only the validation process was terminated. This is not a claim
 that a complete inference run or numerical equivalence test finished.
 
-The user's existing experiments were not terminated, and Miniforge was not
-deleted underneath them. Completion requires letting these runs finish or
-explicit authorization to stop them. Before removal, recheck all process
-executables, arguments and loaded-library references to the Miniforge tree,
-including newly launched jobs; verify the absolute directory is precisely
-`/home/phili/miniforge3`. Then remove the installation, refresh inventories and
-verify new shell and experiment commands use standard CPython.
+After the user explicitly authorized stopping the experiments, the two Conda
+runs were stopped before removal. They were not restarted automatically.
+Their source and scientific output files were preserved.
+
+After removal, pip check passed in py313, jax-native and matrix-compare.
+The full jax-native GPU validation passed: JIT, differentiation, dense/sparse
+operations, FFT, Optax, Flax, Diffrax, PyTorch CUDA, FLINT/Arb, HDF5 and plotting.
+The current machine capture now reports `conda: []`; obsolete current Conda
+inventory files were removed. Existing shells can retain stale environment
+variables and should be reopened.
 
 Historical Conda inventories remain evidence of the old machine state, not a
 recommendation to recreate Conda on another machine.

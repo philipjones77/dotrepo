@@ -1,8 +1,8 @@
 # dotrepo
 
 [WSL Conda retirement](docs/wsl-conda-retirement-2026-09-07.md): the final target
-is entirely non-Conda; automatic Conda startup and the WSL recreation recipe
-are removed. Two running source experiments still require the old installation.
+is now achieved: Conda startup, the recreation recipe and Miniforge are removed.
+The user authorized stopping the two experiments that still used Miniforge.
 
 The [WSL matrix/operator comparison setup](docs/wsl-matrix-comparison-2026-09-07.md)
 records the latest source software audit, available numerical structures,

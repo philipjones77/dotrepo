@@ -20,7 +20,12 @@
   },
   "wolfram": {
     "version": "14.3.0",
-    "kernel_calculation": "passed"
+    "kernel_calculation": "passed",
+    "installed_update": "15.0.1",
+    "update_location": "/usr/local/Wolfram/Wolfram/15.0",
+    "local_documentation": "/usr/share/Wolfram/Documentation/15.0",
+    "update_activation": "required: existing WSL mathpass rejected, kernel exit 62",
+    "default_version": "14.3.0 retained pending successful update activation"
   },
   "R": {
     "version": "4.6.1",

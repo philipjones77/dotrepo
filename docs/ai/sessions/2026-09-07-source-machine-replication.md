@@ -15,6 +15,10 @@ is now verified: a fresh R2026a Update 5 batch launch passed license, arithmetic
 and FFT checks and listed 67 products. Individual toolbox workloads remain
 untested. License files and account details are not committed.
 
+The [Wolfram WSL update](../../wolfram-wsl-2026-09-07.md) installed 15.0.1
+and local documentation. Its kernel rejects the existing WSL license file;
+activation and switching the default commands from 14.3 remain pending.
+
 Date: 2026-09-06–2026-09-07 (America/Chicago)
 Repo: dotrepo
 Branch: main

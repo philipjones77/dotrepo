@@ -49,6 +49,7 @@ Ecdat	0.4.7	NA
 ellipsis	0.3.3	NA
 evaluate	1.0.5	NA
 evd	2.3-7.1	NA
+expm	1.0-1	NA
 fansi	1.0.7	NA
 farver	2.1.2	NA
 fastGHQuad	1.0.1	NA
@@ -146,6 +147,7 @@ png	0.1-9	NA
 polyclip	1.10-7	NA
 polynom	1.4-1	NA
 pool	1.0.5	NA
+pracma	2.4.6	NA
 praise	1.0.0	NA
 prettyunits	1.2.0	NA
 processx	3.9.0	NA
@@ -182,6 +184,7 @@ roxygen2	8.1.0	NA
 RPostgreSQL	0.7-8	NA
 rprojroot	2.1.1	NA
 rSPDE	2.6.0	NA
+RSpectra	0.16-2	NA
 rstatix	1.1.0	NA
 rstudioapi	0.19.0	NA
 rversions	3.0.0	NA

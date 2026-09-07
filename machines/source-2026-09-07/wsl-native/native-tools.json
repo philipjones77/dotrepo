@@ -30,8 +30,25 @@
   },
   "R": {
     "version": "4.6.1",
-    "visible_unique_packages": 280,
+    "visible_unique_packages": 283,
     "package_load_failures": 0
+  },
+  "node_tooling": {
+    "node": "24.20.0",
+    "npm": "12.0.2",
+    "corepack": "0.36.0",
+    "uv": "0.12.10"
+  },
+  "matrix_compare": {
+    "environment": "~/.virtualenvs/matrix-compare",
+    "python": "3.13.15",
+    "packages": 165,
+    "jax": "0.11.1",
+    "comparison_groups_passed": 13,
+    "jupyter_gpu_kernel": "passed",
+    "pip_check": "passed",
+    "native_cpp_comparison": "passed: Eigen, Armadillo, LAPACKE",
+    "r_comparison": "passed: dense/sparse solve, eigenvalues, exponential, pseudoinverse"
   },
   "flint_native": {
     "version": "3.0.1",

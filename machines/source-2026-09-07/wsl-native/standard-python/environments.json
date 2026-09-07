@@ -10,6 +10,11 @@
     "packages": 293
   },
   {
+    "name": "matrix-compare",
+    "python": "3.13.15",
+    "packages": 165
+  },
+  {
     "name": "py313",
     "python": "3.13.15",
     "packages": 139

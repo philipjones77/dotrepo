@@ -1,9 +1,9 @@
 {
-  "captured_at": "2026-09-07T14:36:18.494056+00:00",
+  "captured_at": "2026-09-07T16:17:34.389663+00:00",
   "platform": "wsl",
   "counts": {
-    "apt_manual": 147,
-    "apt_installed": 1342,
+    "apt_manual": 156,
+    "apt_installed": 1356,
     "conda": [
       {
         "name": "base",
@@ -21,6 +21,11 @@
         "name": "jax-native",
         "python": "3.12.13",
         "packages": 293
+      },
+      {
+        "name": "matrix-compare",
+        "python": "3.13.15",
+        "packages": 165
       },
       {
         "name": "py313",

@@ -14,7 +14,7 @@
   "node_version_file": "node/.node-version",
   "python_environments": {
     "windows": "machines/source-2026-09-07/windows/standard-python/environments.json",
-    "wsl": "python/wsl/environment.yml"
+    "wsl": "machines/source-2026-09-07/wsl-native/standard-python/environments.json"
   },
   "wsl_profiles": {
     "default": "windows/wsl/.wslconfig",

@@ -2,7 +2,7 @@
 set -euo pipefail
 
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
-env_dir="${1:-$HOME/.virtualenvs/jax-native}"
+env_dir="${1:?Pass an explicit environment directory; review the recorded requirements before restoring.}"
 python_bin="${PYTHON_BIN:-3.12.13}"
 projects_home="${PROJECTS_HOME:-$HOME/projects}"
 

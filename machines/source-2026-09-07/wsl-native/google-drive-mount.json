@@ -2,11 +2,23 @@
   "remote": "gdrive:",
   "mount_path": "/home/phili/mnt/gdrive",
   "filesystem": "fuse.rclone",
-  "read_only": true,
+  "read_only": false,
   "directory_check": "passed",
   "shell_startup_enabled": true,
   "startup_marker": "~/.config/dotrepo/gdrive.enabled",
   "local_settings": "~/.config/dotrepo/gdrive.env",
   "helper": "wsl/mounts/gdrive.sh",
-  "credentials_in_repository": false
+  "credentials_in_repository": false,
+  "write_read_delete_check": "passed; cloud sync not verified",
+  "windows_drive": {
+    "letter": "G:",
+    "mount_path": "/mnt/g",
+    "files_path": "/mnt/g/My Drive",
+    "read_only": false,
+    "startup": "fstab systemd automount",
+    "uid": 1001,
+    "gid": 1001,
+    "write_read_delete_check": "passed",
+    "reboot_tested": false
+  }
 }

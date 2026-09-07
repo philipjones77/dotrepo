@@ -19,7 +19,7 @@
   "security.allowedUNCHosts": [
     "wsl.localhost"
   ],
-  "python.defaultInterpreterPath": "${env:HOME}/.virtualenvs/jax-native/bin/python",
+  "python.defaultInterpreterPath": "${env:HOME}/.virtualenvs/py313/bin/python",
   "python.terminal.activateEnvironment": true,
   "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.rightClickBehavior": "copyPaste",

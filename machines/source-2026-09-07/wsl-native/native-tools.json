@@ -48,7 +48,8 @@
     "jupyter_gpu_kernel": "passed",
     "pip_check": "passed",
     "native_cpp_comparison": "passed: Eigen, Armadillo, LAPACKE",
-    "r_comparison": "passed: dense/sparse solve, eigenvalues, exponential, pseudoinverse"
+    "r_comparison": "passed: dense/sparse solve, eigenvalues, exponential, pseudoinverse",
+    "installation_status": "Historical validation; environment removed at user request. See wsl-mounts-and-environments report."
   },
   "flint_native": {
     "version": "3.0.1",
@@ -67,6 +68,7 @@
       "failure": "Existing incomplete-gamma dynamic while-loop reverse differentiation"
     },
     "integralfunctionsjax_tests_passed": 14,
-    "toposmpljax_tests_passed": 6
+    "toposmpljax_tests_passed": 6,
+    "installation_status": "Historical validation; environment removed at user request. See wsl-mounts-and-environments report."
   }
 }

@@ -26,13 +26,13 @@ to new terminals; existing sessions keep their current directory.
 ### Google Drive mount
 
 The source's rclone remote **`gdrive:`** is mounted at
-**`/home/phili/mnt/gdrive`**, currently **read-only** (`fuse.rclone`). A directory
-listing check passed. Windows can access it through
+**`/home/phili/mnt/gdrive`**, currently **read/write** (`fuse.rclone`). A temporary
+file write/read/delete check passed. Windows can access it through
 `\\wsl.localhost\Ubuntu\home\phili\mnt\gdrive` while the WSL mount is active.
 
 The marker `~/.config/dotrepo/gdrive.enabled` enables the shared shell's mount
 startup hook. Local `~/.config/dotrepo/gdrive.env` explicitly selects `gdrive:`,
-`$HOME/mnt/gdrive` and read-only mode, matching the live source mount. The
+`$HOME/mnt/gdrive` and `DOTREPO_GDRIVE_READ_ONLY=0`, matching the live source mount. The
 helper is `wsl/mounts/gdrive.sh`; use `bash ~/.dotrepo/wsl/mounts/gdrive.sh status`
 to inspect it. This records shell-triggered startup, not an independently
 verified Windows-login service.
@@ -40,6 +40,13 @@ verified Windows-login service.
 See [the mount inventory](wsl-native/google-drive-mount.json). The target must
 configure its own rclone authorization. Tokens and rclone credentials are not
 committed, and the other computer's writable mount is a separate configuration.
+
+Windows Drive for desktop's **G:** drive also mounts read/write in WSL at
+`/mnt/g` on access through an `/etc/fstab` systemd automount. Its files are at
+`/mnt/g/My Drive`. A temporary file write/read/delete check passed there too.
+See [the current mount and environment follow-up](../../docs/wsl-mounts-and-environments-2026-09-07.md)
+for the exact source configuration and the removal of `jax-native` and
+`matrix-compare`. Their older validation reports describe historical installs.
 
 ## Windows Python
 

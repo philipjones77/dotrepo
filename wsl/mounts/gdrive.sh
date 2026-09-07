@@ -14,6 +14,7 @@ mount_dir=${DOTREPO_GDRIVE_PATH:-${DOTREPO_GDRIVE_RCLONE_MOUNT:-$HOME/mnt/gdrive
 read_only=${DOTREPO_GDRIVE_READ_ONLY:-1}
 cache_max_size=${DOTREPO_GDRIVE_CACHE_MAX_SIZE:-2G}
 cache_max_age=${DOTREPO_GDRIVE_CACHE_MAX_AGE:-1h}
+daemon_wait=${DOTREPO_GDRIVE_DAEMON_WAIT:-90s}
 case "$action" in
   status)
     findmnt --mountpoint "$mount_dir" -o TARGET,SOURCE,FSTYPE,OPTIONS
@@ -22,7 +23,7 @@ case "$action" in
   stop)
     # Wait for a pending start to finish before deciding whether to unmount.
     exec 9>"$state_dir/gdrive.lock"
-    flock -w 40 9
+    flock -w 120 9
     if mountpoint -q "$mount_dir"; then
       fusermount3 -u "$mount_dir"
     fi
@@ -41,7 +42,7 @@ esac
 command -v rclone >/dev/null
 command -v fusermount3 >/dev/null
 exec 9>"$state_dir/gdrive.lock"
-flock -w 40 9
+flock -w 120 9
 if ! mountpoint -q "$mount_dir"; then
   rclone listremotes | grep -Fxq "${remote%%:*}:" || { echo "Configure rclone remote ${remote%%:*} first." >&2; exit 1; }
   mkdir -p "$mount_dir" "$HOME/.cache/rclone"
@@ -53,7 +54,7 @@ if ! mountpoint -q "$mount_dir"; then
     --vfs-cache-max-size "$cache_max_size" --vfs-cache-max-age "$cache_max_age" \
     --vfs-cache-poll-interval 1m \
     --buffer-size 16M --dir-cache-time 5m --cache-dir "$HOME/.cache/rclone" \
-    --daemon --daemon-wait 30s --log-file "$state_dir/gdrive.log" --log-level INFO 9>&-
+    --daemon --daemon-wait "$daemon_wait" --log-file "$state_dir/gdrive.log" --log-level INFO 9>&-
 fi
 flock -u 9
 exec 9>&-

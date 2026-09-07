@@ -43,8 +43,10 @@ were disabled and no broad Norton exclusions were added.
 
 ## Windows software follow-up
 
-Installation and verification of the remaining Windows applications is still in
-progress. Windows App Runtime 1.5 updated to 1.5.9, and Defender intelligence
+The reviewed Windows app installations and compiler checks have completed.
+Armoury Crate's first-run choice and hardware-service verification, account
+activation checks and the deferred Docker work remain as described below.
+Windows App Runtime 1.5 updated to 1.5.9, and Defender intelligence
 KB2267602 1.459.95.0 installed successfully without requiring a reboot.
 All 73 recorded Windows R entries now match or exceed the source versions and
 pass a fresh native R check. `translations` is data, rather than a loadable
@@ -97,8 +99,15 @@ driver and NVIDIA App packages were excluded. The NVIDIA driver remained 616.56
 before and after installation. `nvcc` reports 13.3.73. A newly compiled CUDA
 program ran successfully on the RTX 4070 Laptop GPU and checked all 4097 output
 values; all 40 Visual Studio component IDs also remained registered.
-TeX Live's repository signature check passed and its manager was updated;
-the full 1661-package update is still running.
+TeX Live 2026's manager and all 1661 package operations completed successfully,
+including format, font and ConTeXt cache rebuilds. At 12:53 CDT, actual
+pdfLaTeX, XeLaTeX and LuaLaTeX builds all passed with resolved Biber
+bibliographies, verified PDF text and nonempty SyncTeX output. The test used
+spaces in both the directory and document names. Latexmk reports 4.88 and Biber
+2.22. A fresh environment used the saved native GPG setting to verify the
+Illinois CTAN repository, which reported no updates available. The automatic
+mirror selector initially chose a lagging MIT mirror; that mirror was not used
+to downgrade or replace any installed packages.
 
 PowerShell 7.6.5 and Google Cloud SDK 583.0.0 are working standalone installations,
 despite not appearing as ordinary WinGet installations. Node 24.20.0 matches
@@ -122,7 +131,7 @@ registered Store component now reports 26153.809.4.0. The original disabled
 login-startup preference was preserved. When repeating this recovery, check
 OneDrive again after Office deployment.
 
-The other computer's ASUS app suite also needs restoration. This target is an
+The other computer's applicable ASUS apps were restored. This target is a
 ROG Zephyrus M16 GU604VI: its ASUS System Control Interface 3.1.70.0 already
 matches the current model support download, and its Armoury Crate Control
 Interface 1.2.0.2 is newer than the listed 1.2.0.1. MyASUS 4.0.73.0 is installed
@@ -151,6 +160,8 @@ After installation and compiler checks, four owned installer downloads (CUDA,
 Docker Desktop, Rtools and Git) were removed from the private recovery folder,
 releasing 3.45 GiB of archive storage. Installed tools, package-manager caches,
 the retained Windows.old data and WSL disks were preserved.
+The temporary installer keep-awake helper stopped after the final checks,
+restoring normal sleep behavior. The Google Drive mount anchor remains running.
 
 ## Repeating the TeX Live verifier repair
 
@@ -177,8 +188,14 @@ existing VS Code processes require restarting to inherit that change. Use an
 administrator PowerShell for updates to a machine-wide TeX Live installation:
 
 ```powershell
-tlmgr --verify-repo=all update --self
-tlmgr --verify-repo=all update --all
+$texRepository = 'https://ctan.math.illinois.edu/systems/texlive/tlnet'
+tlmgr --repository $texRepository --verify-repo=all update --self
+tlmgr --repository $texRepository --verify-repo=all update --all
+tlmgr --repository $texRepository --verify-repo=all update --list
 ```
 
-The current full package update must finish before starting another updater.
+The explicit repository avoids a lagging automatically selected mirror observed
+during this recovery. It does not change the saved repository setting. If a
+mirror reports that its database is older than the installed release, wait for
+it to synchronize or choose another current CTAN mirror; retain signature
+verification. Run only one package updater at a time.

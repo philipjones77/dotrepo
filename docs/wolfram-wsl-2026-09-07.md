@@ -42,3 +42,6 @@ The GUI needed additional Ubuntu libraries: `libxkbcommon-x11-0`,
 `libxcb-render-util0`, `libxcb-xkb1` and their dependency `libxcb-util1`.
 The activation launch uses XCB and software rendering locally to avoid the
 initial WSL graphics errors; no global graphics environment was changed.
+The Wolfram Product Activation window was confirmed visible through WSLg.
+Installed `wslu` and `desktop-file-utils` so browser links can use Windows
+through `wslview`; the browser alternative now resolves to that helper.

@@ -19,6 +19,19 @@ The old Python 3.12 environment is retained only as a rollback backup at
 It is not a normal active environment. The history below describes migration
 before the final rename.
 
+## PyTensor and PyMC validation
+
+PyTensor **3.3.1** works in the tested `jax313` configuration with Python
+**3.13.15**, NumPy **2.5.3**, Numba **0.67.0** and PyMC **6.3.1**.
+The validation compiled a sum-of-squares expression with
+`pytensor.function(..., mode='NUMBA')` and verified the numerical result.
+It also compiled a PyMC Normal model's log probability and verified a finite
+value at its initial point. A Numba-compiled LAPACK solve matched NumPy.
+
+The same checks passed in `jax314` on Python **3.14.7**, with the same listed
+library versions. These are representative compilation/runtime checks, not a
+full PyTensor/PyMC regression suite or a long-running inference validation.
+
 The user requested migrating `~/.virtualenvs/jax` from Python 3.12.3 to standard
 CPython 3.13.15. The replacement preserves the current package versions and
 editable project links, including TensorFlow and GPflow. It is independent of

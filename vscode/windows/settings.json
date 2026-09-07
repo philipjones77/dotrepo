@@ -22,7 +22,6 @@
   "lldb.suppressUpdateNotifications": true,
   "explorer.confirmDelete": false,
   "python.defaultInterpreterPath": "${env:USERPROFILE}/.virtualenvs/py313/Scripts/python.exe",
-  "python.condaPath": "${env:USERPROFILE}/anaconda3/Scripts/conda.exe",
   "python.terminal.activateEnvironment": true,
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.automationProfile.windows": {

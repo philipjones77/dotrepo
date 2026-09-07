@@ -22,7 +22,6 @@ the previous environment was retained in a private backup.
 | `~/.virtualenvs/py315` | 3.15.0rc2 | Separate standard CPython preview environment |
 | `~/.virtualenvs/jax-win` | 3.14.7 | Additional existing scientific environment discovered by the expanded inventory; 151 packages; preserved, not workload-tested here |
 | `.venv-windows` in dotrepo | 3.13.15 | Repository validation and test environment |
-| Miniconda `base` | 3.13.13 | Preserved legacy installation; no longer the default |
 
 The new environments passed Python/SSL/SQLite and pip dependency checks. They
 have pip 26.2.1; py313/py314 have PyYAML 6.0.3. PyYAML's Python 3.15 Windows wheel
@@ -31,10 +30,15 @@ py315 intentionally contains pip, wheel and packaging only. Rtools is a separate
 toolchain and does not satisfy that MSVC requirement.
 
 The initially created Conda py314/py315 environments were removed after the
-standard CPython replacements passed verification. Legacy base packages were
-not changed because the Anaconda defaults operation required terms acceptance;
-replacing the active Windows Python with standard CPython superseded that update.
-No Anaconda terms were accepted on the user's behalf.
+standard CPython replacements passed verification. At the user's subsequent
+request, Windows Miniconda was uninstalled and its remaining installation folder
+removed. WinGet no longer lists it. All standard environments, including the
+separately discovered jax-win, use uv-managed CPython. VS Code's obsolete Conda
+path and Anaconda Terminal entries were removed, and Cloud SDK was verified
+using the standard Python interpreter. WSL Miniforge is a separate installation
+and remains available for existing scientific environments. The user's final
+decision was to cancel full Windows Anaconda: **do not install Anaconda or
+Miniconda on Windows as part of this setup**. Keep standard CPython as the default.
 
 Create the three standard environments on a target with uv installed:
 
@@ -48,7 +52,7 @@ deactivate
 
 The helper refuses existing destination directories. It uses uv-managed CPython,
 not whichever Python happens to be on PATH. Review existing target environments
-before installation. [Observed package inventories](windows/venv/environments.json)
+before installation. [Observed package inventories](windows/standard-python/environments.json)
 and sibling `*-packages.json` files record the installed state; the creation
 helper requests current compatible packages and is not an exact dependency lock.
 The source `jax-win` environment is inventoried separately and is not created by
@@ -90,6 +94,21 @@ into the actual WSL extension directory using the remote server CLI, in addition
 to the existing Windows extension. The captured extension files record the full
 host-specific lists. Apply the tracked settings and target-specific overrides
 with the platform bootstrap; existing tabs/windows need a reload.
+
+A fresh isolated VS Code integration run passed PDF preview, Markdown preview,
+image preview, source line navigation and Markdown text diff. Its integrated
+PowerShell terminal loaded the normal profile and successfully ran PowerShell
+7.6.5, Python 3.13.15, Git 2.55.0.windows.5 and WinGet 1.29.290, then exited zero.
+The Codex/Claude file-link repair integrity checks passed on Windows and WSL.
+These tests verify viewer routing and supported repair state; they do not claim
+every possible AI-generated link is valid.
+
+Norton Antivirus and Firewall services were running during these checks, and the
+actual PowerShell 7 executable has a valid Microsoft signature. The tested
+commands completed without termination. No blanket PowerShell/Git/WinGet
+exclusions were added, and no vendor false-positive report was sent. This does
+not guarantee Norton will allow every future command; retain the precise command
+and a fresh detection record if a block recurs.
 
 Installing native Linux PowerShell enabled previously skipped helper tests and
 exposed a Windows-only path separator in the backup guard. The guard now uses

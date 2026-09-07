@@ -4,10 +4,6 @@
     {
       "Packages": [
         {
-          "PackageIdentifier": "Anaconda.Miniconda3",
-          "Version": "py313_26.3.2-2"
-        },
-        {
           "PackageIdentifier": "Anthropic.Claude",
           "Version": "1.44121.2.0"
         },

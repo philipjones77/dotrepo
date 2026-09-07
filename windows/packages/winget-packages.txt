@@ -4,5 +4,5 @@ GitHub.cli
 Microsoft.VisualStudioCode
 Microsoft.WindowsTerminal
 Microsoft.PowerShell
-Anaconda.Anaconda3
+astral-sh.uv
 Docker.DockerDesktop

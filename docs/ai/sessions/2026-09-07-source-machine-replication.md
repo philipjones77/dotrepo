@@ -9,7 +9,12 @@ Primary tool: Codex
 Later September 7 work is recorded in the [updated source setup](../../../machines/source-2026-09-07/README.md):
 standard Windows CPython replaces Miniconda as the default, JAX CPU was tested,
 native WSL PowerShell was installed, and R/Rtools, TeX collections, SumatraPDF
-and editor extensions were verified. Read that newer report before using the
+and editor extensions were verified. Windows Miniconda was subsequently removed;
+standard CPython remains the default and WSL Miniforge remains installed. The
+user explicitly cancelled the proposed full Windows Anaconda installation;
+do not reinstall Anaconda or Miniconda when continuing this setup. Fresh
+VS Code viewer and PowerShell 7 execution tests passed with Norton services running.
+Read that newer report before using the
 earlier environment state below.
 
 ## Goal

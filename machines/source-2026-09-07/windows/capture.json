@@ -1,16 +1,10 @@
 {
-  "captured_at": "2026-09-07T13:02:46.543464+00:00",
+  "captured_at": "2026-09-07T13:11:55.906154+00:00",
   "platform": "windows",
   "counts": {
-    "desktop_records": 302,
+    "desktop_records": 300,
     "store_records": 155,
-    "conda": [
-      {
-        "name": "base",
-        "packages": 129,
-        "manual_sources": 0
-      }
-    ],
+    "conda": [],
     "venv": [
       {
         "name": "jax-win",

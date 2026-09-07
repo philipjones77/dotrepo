@@ -1316,20 +1316,6 @@
     "architecture": "x64"
   },
   {
-    "name": "Miniconda3 py313_26.3.2-2 (Python 3.13.13 64-bit)",
-    "version": "py313_26.3.2-2",
-    "publisher": "Anaconda, Inc.",
-    "scope": "user",
-    "architecture": "x64"
-  },
-  {
-    "name": "Miniconda3 py313_26.3.2-2 (Python 3.13.13 64-bit)",
-    "version": "py313_26.3.2-2",
-    "publisher": "Anaconda, Inc.",
-    "scope": "user",
-    "architecture": "x86"
-  },
-  {
     "name": "NPP Development",
     "version": "12.8",
     "publisher": "NVIDIA Corporation",

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "packaging",
+    "version": "26.3"
+  },
+  {
+    "name": "pip",
+    "version": "26.2.1"
+  },
+  {
+    "name": "wheel",
+    "version": "0.48.0"
+  }
+]

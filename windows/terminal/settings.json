@@ -130,20 +130,6 @@
         "source": "Windows.Terminal.Wsl"
       },
       {
-        "commandline": "pwsh.exe -NoExit -Command \"& 'C:\\Users\\phili\\anaconda3\\shell\\condabin\\conda-hook.ps1' ; conda activate 'C:\\Users\\phili\\anaconda3' \"",
-        "guid": "{eed49005-877d-5de2-94d5-5ce5e370f8c3}",
-        "icon": "C:\\Users\\phili\\anaconda3\\Menu\\anaconda_powershell_prompt.ico",
-        "name": "Anaconda PowerShell Prompt (anaconda3)",
-        "startingDirectory": "C:\\Users\\phili"
-      },
-      {
-        "commandline": "%WINDIR%\\System32\\cmd.exe \"/K\" C:\\Users\\phili\\anaconda3\\Scripts\\activate.bat C:\\Users\\phili\\anaconda3",
-        "guid": "{e78b37b4-0017-568b-9279-1abde5e14cde}",
-        "icon": "C:\\Users\\phili\\anaconda3\\Menu\\anaconda_prompt.ico",
-        "name": "Anaconda Prompt (anaconda3)",
-        "startingDirectory": "C:\\Users\\phili"
-      },
-      {
         "commandline": "wsl.exe -d Ubuntu --user phili --cd ~ --exec bash --login",
         "guid": "{9b357e20-cddf-5b40-81fd-5ab785bc747a}",
         "hidden": false,

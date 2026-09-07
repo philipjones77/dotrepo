@@ -1,0 +1,178 @@
+# Session Capsule: Source machine maintenance and target replication
+
+Date: 2026-09-06–2026-09-07 (America/Chicago)
+Repo: dotrepo
+Branch: main
+Machine: PhilipSecond / Windows 11 / WSL 2 Ubuntu 24.04
+Primary tool: Codex
+
+## Goal
+
+Maintain Windows and WSL, preserve 24 GB swap, make VS Code PDF/Markdown/image
+links work, investigate Norton blocking PowerShell installers, and reproduce
+this computer's applications and configuration on the other computer. The user
+explicitly clarified: **this machine is the source; the other is the target.**
+The user requested that the inventory and this session handoff be pushed to GitHub.
+
+## Current Status
+
+Source inventory and editor fixes were pushed to main in
+`724c8d58076c19a4e6a1d77f452c2d824dab753d`. Both source checkouts (Windows and
+native WSL) were synchronized to that commit. This source session has not accessed
+or changed the target. This is a portable session summary, following the repository's
+[session methodology](../../ai-session-methodology.md).
+
+While publishing this capsule, remote commit `2fde13e` arrived with the other
+computer's [Windows recovery report](../../recovery-2026-09-06.md). That separate
+session restored parts of Windows and preserved the target's Ubuntu disk, but
+reported Ubuntu import/boot and remaining applications incomplete. Read that
+report before target work: recover its existing disk and environments first.
+It records a 16 GB RAM target with an 8 GB WSL memory cap and 4 GB swap, unlike
+this source's 24 GB swap. Reconcile that difference with the user's requested
+24 GB swap after checking target free disk space. The remote recovery changes
+were retained when integrating this capsule.
+
+The [source catalog and target instructions](../../../machines/source-2026-09-06/README.md)
+contain 43 WinGet package IDs, 298 desktop/component records, 155 current-user
+Store packages, 91 Windows and 30 WSL VS Code extensions, 1,109 APT packages
+(63 marked manual), three Conda environment inventories and 72 R packages.
+
+The September 7 follow-up checked the same source computer, PhilipSecond:
+
+- All 43 WinGet IDs in the manifest were already installed; none needed installing.
+- WSL 2.7.13 was already current. Strict APT index refresh and the actual
+  no-removal upgrade completed with zero pending upgrades; dpkg audit was clean.
+  Snap reported all snaps current.
+- WSL swap was active at 25,769,803,776 bytes (24 GiB); configuration has
+  `memory=16GB`, `swap=24GB`, and gradual memory reclaim on this 32 GB RAM source.
+- Claude now registers version **1.44121.2.0**, resolving the pending registration
+  noted in the September 6 snapshot. Keep the dated snapshot as historical evidence.
+- Google Cloud SDK is 583.0.0. WinGet labels its installed version Unknown and
+  offers that same version; executable verification confirms it is installed.
+- The remaining WinGet offer is the Miniconda Python 3.14 distribution replacement.
+  It was not applied: the source uses Python 3.13.13 with an already updated
+  Conda base, and a distribution replacement could disrupt that environment.
+
+Earlier source maintenance installed PowerShell 7.6.5, CUDA 13.3 and other Windows
+updates, updated the Windows and WSL Conda base environments, and installed Node
+24.20.0 with npm 11.19.0 and corepack 0.35.0 on both platforms. The scientific
+JAX environment was inventoried rather than blanket-upgraded. See the source
+catalog for exact observed versions and installation ownership.
+
+## Files Changed
+
+- `machines/source-2026-09-06/`: source manifests, application lists, target setup
+  steps, manual/licensed installers and known reproduction gaps.
+- `scripts/capture-software.py`: shareable software capture, excluding credentials
+  and local package-source paths; records eligible GitHub repository identities.
+- `bootstrap/install.ps1`: merges ignored editor `settings.local.json` overrides.
+- `scripts/doctor.py`: checks the effective tracked-plus-local editor settings.
+- `tests/test_capture_software.py`, `tests/test_tools.py`: capture and override tests.
+- `docs/windows-wsl-maintenance.md`, `README.md`: setup guidance and inventory link.
+- This capsule: continuation context and September 7 verification results.
+
+Machine-local editor paths, raw logs, trusted certificate bundles and backups
+remain outside Git. Reconstruct local settings for the target's actual paths.
+
+## Commands Run
+
+Representative verification commands (run from the appropriate native checkout):
+
+```text
+python scripts/validate.py
+python -m unittest discover -s tests -v
+conda env create --name <temporary-check-name> --file <captured-environment.yml> --dry-run --json
+git diff --cached --check
+git push origin main
+git ls-remote origin refs/heads/main
+winget export --output <private-output.json> --source winget
+winget upgrade --include-unknown --disable-interactivity
+gcloud version --format=json
+wsl --update
+apt-get update -o APT::Update::Error-Mode=any
+apt-get --simulate --no-remove upgrade
+apt-get --no-remove upgrade -y
+dpkg --audit
+snap refresh
+swapon --show --bytes
+```
+
+## Tests And Verification
+
+- Repository validation passed on Windows and WSL.
+- Windows: 15 unit tests passed. WSL: eight passed, seven native-PowerShell
+  tests skipped because native Linux PowerShell was unavailable.
+- WSL base and jax Conda dry-run solves passed. These do not validate subsequent
+  pip downloads, editable package restoration or scientific/GPU workloads.
+- Windows Conda dry run stopped at Anaconda's terms acceptance requirement;
+  its solve remains unverified. The user must review the applicable terms.
+- Source VS Code file-opening integration checks passed for PDF, image,
+  Markdown preview, source-file line navigation and Markdown text diff in an
+  isolated window. Recheck with the target's installed extensions.
+- Standalone Windows PowerShell and an isolated VS Code PowerShell terminal
+  ran successfully after the reported Norton event. This is not proof that
+  Norton will allow every future command.
+
+## Decisions
+
+- Use the current source inventory, not the other machine's older app list.
+- Preserve platform-native Python/Node installations and scientific environments.
+- Record exact observed versions, but explain that unavailable catalog versions,
+  hardware, account licensing and manual sources prevent a guaranteed disk clone.
+- Keep separate SSH keys and cloud logins on each platform and machine.
+- Do not copy blanket PowerShell/Git/WinGet exclusions into Norton.
+- No automatic reboot or target operation was performed in the final follow-up.
+
+## Blockers And Remaining Work
+
+- Target access from this session is still needed. Verify its hostname before applying installation
+  steps; the source session remained on PhilipSecond when asked to install again.
+- Norton Behavioral Protection reported `IDP.Generic - Command line detection`
+  at September 6, 5:15 PM, terminating a PowerShell/Git/WinGet process tree and
+  deleting a PowerShell policy-test temporary file. Executable signatures were
+  checked; Norton definitions/program were updated and later installers completed.
+  A false positive is suspected, not established. No vendor report was submitted
+  and no blanket exclusions were added. Review a fresh event's exact command if
+  blocking recurs. Norton had requested a reboot; reboot completion is unverified.
+- `fftlog-lss==0.1.2` was installed from a temporary local directory; its original
+  source/wheel is still needed. Other editable scientific repositories and commits
+  are in the Conda manual manifests. Their installed metadata differs between
+  environments, so workload validation is required after reconstruction.
+- Restore personal/project data separately, install licensed apps through the
+  user's accounts and choose GPU/OEM drivers for the target hardware.
+- Review R package provenance; the observed R list is not a complete restore lockfile.
+
+## Next Steps
+
+1. On the target, inspect hostname, git status and remotes; preserve local edits,
+   then pull main in Windows. Follow the separate recovery report to restore
+   Ubuntu before inspecting and updating its native WSL checkout.
+2. Read the source catalog, compare target inventories, and install missing Windows
+   apps and Ubuntu packages using its instructions. Recheck current updates.
+3. Restore the Conda environments and manual sources, configure target-local
+   editor paths, apply dotrepo settings and install the captured extensions.
+4. Check RAM before applying WSL limits; preserve the requested 24 GB swap.
+5. Reauthorize licensed/cloud apps, verify Norton behavior and file links, and run
+   doctor plus relevant scientific/GPU workload checks. Record actual target results.
+
+## Resume Prompt
+
+```text
+Continue dotrepo on main. Read docs/ai/sessions/2026-09-07-source-machine-replication.md
+and machines/source-2026-09-06/README.md first. PhilipSecond was the source;
+the other computer is the target. Verify which machine this session controls.
+The source inventory and maintenance are recorded. A separate target session
+reported partial Windows recovery in docs/recovery-2026-09-06.md; read it and
+recover the preserved Ubuntu disk before attempting Linux installation work.
+Compare the target with the source manifests, install missing apps,
+update WSL/Ubuntu, restore native environments and editor settings, and verify
+24 GB swap, Norton behavior and PDF/Markdown/image links. Preserve existing data,
+credentials and scientific environments. Record gaps and update this capsule
+with the actual results, then push the authorized repository changes.
+```
+
+## Links
+
+- [Source inventory commit](https://github.com/philipjones77/dotrepo/commit/724c8d58076c19a4e6a1d77f452c2d824dab753d)
+- [Maintenance runbook](../../windows-wsl-maintenance.md)
+- No issue, PR or shareable chat snapshot was created in this session.

@@ -6,3 +6,6 @@ Microsoft.WindowsTerminal
 Microsoft.PowerShell
 astral-sh.uv
 Docker.DockerDesktop
+# LaTeX toolchain; reviewed versions and target steps: docs/latex-toolchain.md.
+EclipseAdoptium.Temurin.21.JRE
+SumatraPDF.SumatraPDF

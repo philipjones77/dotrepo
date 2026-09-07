@@ -1,6 +1,6 @@
 # Setup Status
 
-Last updated: 2026-09-06
+Last updated: 2026-09-07
 
 This file records the status of standards and verification owned by dotrepo.
 Generated machine-specific audit outputs should stay in `.local/status/` unless
@@ -15,6 +15,7 @@ observations below are not current-version guarantees.
 | --- | --- | --- |
 | Windows bootstrap | ok | Existing installer plus new read-only audit script |
 | WSL bootstrap | ok | Existing installer plus new read-only audit script |
+| Optional LaTeX toolchain | ok | Reviewed `config/latex-toolchain.json`, `scripts/latex-toolchain.py` check/install helper, and [target instructions](../docs/latex-toolchain.md); target bootstrap and thesis build remain machine-specific verification |
 | Related repo inventory | planned | Human-readable `docs/related-repos.md` exists; machine-readable `projects/inventory.yml` still needed |
 | AI session sharing | ok | Methodology and templates added |
 | ChatGPT web project setup | ok | Template added; per-project application pending |

@@ -4,6 +4,11 @@ The [WSL matrix/operator comparison setup](docs/wsl-matrix-comparison-2026-09-07
 records the latest source software audit, available numerical structures,
 comparison libraries and validation commands.
 
+For a second machine that builds the thesis, use the optional
+[LaTeX toolchain setup](docs/latex-toolchain.md): reviewed fonts, Java/editor
+versions, and the compatible WSL glossary backend, with checksum-verified
+user-level installation and a read-only check.
+
 The [native WSL Python and scientific-tool update](docs/wsl-native-python-2026-09-07.md)
 records the tested non-Conda JAX GPU environment, R update, native AI CLIs,
 and the remaining cleanup boundaries.

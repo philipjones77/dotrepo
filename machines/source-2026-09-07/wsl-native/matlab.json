@@ -73,8 +73,10 @@
   ],
   "requested_toolboxes": 64,
   "missing_toolboxes": [],
-  "activation": "required",
-  "batch_test": "failed: MathWorks Licensing Error 1 (-1.2)",
+  "activation": "verified 2026-09-07: fresh batch launch and MATLAB license test passed",
+  "batch_test": "passed: arithmetic, matrix solve, FFT; fresh launch exit 0; 67 runtime products",
+  "toolbox_runtime_tests": "individual toolbox license checkouts and workloads not tested",
+  "startup_warning": "Unable to locate a personal folder for $documents/MATLAB (nonfatal)",
   "vscode_extension": {
     "id": "mathworks.language-matlab",
     "version": "1.3.13"

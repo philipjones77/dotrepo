@@ -4,7 +4,7 @@ The [native WSL Python and scientific-tool update](docs/wsl-native-python-2026-0
 records the tested non-Conda JAX GPU environment, R update, native AI CLIs,
 and the remaining cleanup boundaries.
 The [Linux MATLAB setup](docs/matlab-wsl-2026-09-07.md) includes all 64 toolboxes;
-MathWorks account activation is still required on the source computer.
+source activation and a fresh Linux MATLAB batch launch are verified.
 
 The [latest source setup and inventory](machines/source-2026-09-07/README.md)
 includes standard Windows CPython 3.13/3.14/3.15, JAX, PowerShell, R/Rtools,

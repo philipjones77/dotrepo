@@ -5,20 +5,23 @@ MATLAB R2026a Update 5 is installed natively in Ubuntu WSL at
 using the official Ubuntu 24.04 dependency list. No Windows MATLAB installation
 was made by this continuation.
 
-The core installation completed and `matlab -help` works. The initial batch
-calculation stopped with **MathWorks Licensing Error 1: unable to find a
-license**. The MathWorks Product Activation and Login windows were confirmed
-open through WSLg. Sign in there and select an entitled license; installation
-alone does not establish that any product can run.
+Activation was completed through the WSLg MathWorks sign-in window on
+2026-09-07. MATLAB R2026a Update 5 now starts successfully in Ubuntu WSL.
+The initial batch test passed arithmetic and a matrix solve; a separate fresh
+launch passed the MATLAB license test, arithmetic and an FFT assertion without
+another sign-in prompt. Both processes exited successfully.
 
 At the user's request, all **64 named toolboxes** in MathWorks' R2026a product
 catalog were installed. The installer also selected Simulink and
 Fixed-Point Designer as dependencies. The installer returned exit 0, and
 `mpm list` verified **67 products total**, with none of the 64 requested
-toolboxes missing. The final batch check still returned Licensing Error 1;
-runtime and toolbox entitlement checks remain pending activation.
+toolboxes missing. After activation, MATLAB's runtime inventory also listed
+67 products. Individual toolbox license checkouts and workloads have not been
+tested; installed products do not establish entitlement to every toolbox.
 The [installed product inventory](../machines/source-2026-09-07/wsl-native/matlab.json)
-records the exact product list and this limitation.
+records the exact product list and verification scope. Startup reports a
+nonfatal warning about the personal `$documents/MATLAB` folder; calculations
+and fresh batch startup still pass.
 
 ## Launch and editor integration
 

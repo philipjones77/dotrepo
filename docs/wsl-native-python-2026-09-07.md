@@ -138,7 +138,7 @@ record the final editable versions; requirements files cover ordinary packages.
 checkouts, rather than recreating the older `jax-wsl` environment.
 
 The follow-up [Linux MATLAB installation](matlab-wsl-2026-09-07.md) records
-MATLAB R2026a, its toolbox installation and the remaining activation step.
+MATLAB R2026a, its toolbox installation and successful activation and batch tests.
 
 ## Installation references
 

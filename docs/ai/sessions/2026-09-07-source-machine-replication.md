@@ -10,7 +10,10 @@ Use that report and the `wsl-native` inventory before following historical
 Conda restore instructions below. FFTLog has been recovered as a local wheel;
 it still needs separate transfer when replicating to another machine.
 The subsequent [Linux MATLAB installation](../../matlab-wsl-2026-09-07.md)
-tracks the user's request for MATLAB and all toolboxes, including activation.
+tracks the user's request for MATLAB and all toolboxes. Source WSL activation
+is now verified: a fresh R2026a Update 5 batch launch passed license, arithmetic
+and FFT checks and listed 67 products. Individual toolbox workloads remain
+untested. License files and account details are not committed.
 
 Date: 2026-09-06–2026-09-07 (America/Chicago)
 Repo: dotrepo

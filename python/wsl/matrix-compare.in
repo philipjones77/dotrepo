@@ -1,0 +1,17 @@
+# Resolve into an ordinary CPython virtualenv; capture exact working pins afterward.
+numpy
+scipy
+sympy
+mpmath
+python-flint
+pylops
+pyamg
+sparse
+tensorly
+jax[cuda13]
+lineax
+matfree
+traceax
+ipykernel
+matplotlib
+scikit-sparse

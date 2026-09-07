@@ -1,5 +1,9 @@
 # dotrepo
 
+The [WSL matrix/operator comparison setup](docs/wsl-matrix-comparison-2026-09-07.md)
+records the latest source software audit, available numerical structures,
+comparison libraries and validation commands.
+
 The [native WSL Python and scientific-tool update](docs/wsl-native-python-2026-09-07.md)
 records the tested non-Conda JAX GPU environment, R update, native AI CLIs,
 and the remaining cleanup boundaries.

@@ -1,5 +1,7 @@
 # Session Capsule: Source machine maintenance and target replication
 
+Latest software/structure inventory: [WSL matrix and operator comparisons](../../wsl-matrix-comparison-2026-09-07.md).
+
 Latest continuation: [native WSL Python and scientific tools](../../wsl-native-python-2026-09-07.md).
 The source now has tested standard CPython replacements (`py313`, `jax-native`),
 native Claude/Codex/Gemini/Google Cloud CLIs and updated R packages. Miniforge

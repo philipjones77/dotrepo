@@ -1,5 +1,9 @@
 # PhilipSecond: native WSL Python and scientific tools
 
+Follow-up: [matrix/operator comparison software and current structures](wsl-matrix-comparison-2026-09-07.md)
+adds the tested `matrix-compare` CPython/JAX environment, updates Node tooling,
+adds R/native comparison libraries and refreshes the machine inventory.
+
 This is the source computer, Ubuntu 24.04 on WSL2. The other computer was not
 changed. Its recovery update through `fdea38d` was pulled before this report.
 
@@ -67,7 +71,7 @@ constraint; scikit-sparse 0.5.0 was built against Ubuntu SuiteSparse.
 - Wolfram 14.3 Linux kernel returned its version and evaluated `2+2` to `4`.
   The [15.0.1 update](wolfram-wsl-2026-09-07.md) is now installed with local
   documentation, activated and tested; 15.0.1 is now the default.
-  This verifies the existing licensed kernel, not a new GUI installation.
+  The updated kernel and default launchers are verified; see that report for GUI settings.
 - Native FLINT 3.0.1 development headers include Arb. A compiled C program
   linked FLINT/MPFR/GMP and computed a 128-bit pi enclosure successfully.
   `python-flint` 0.8.0 is also installed in both new virtualenvs.

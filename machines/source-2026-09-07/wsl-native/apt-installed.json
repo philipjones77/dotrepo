@@ -335,6 +335,11 @@
     "architecture": "amd64"
   },
   {
+    "name": "desktop-file-utils",
+    "version": "0.27-2build1",
+    "architecture": "amd64"
+  },
+  {
     "name": "dhcpcd-base",
     "version": "1:10.0.6-1ubuntu3.2",
     "architecture": "amd64"
@@ -3295,6 +3300,16 @@
     "architecture": "amd64"
   },
   {
+    "name": "liblapacke-dev:amd64",
+    "version": "3.12.0-3build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liblapacke:amd64",
+    "version": "3.12.0-3build1.1",
+    "architecture": "amd64"
+  },
+  {
     "name": "liblatex-tounicode-perl",
     "version": "0.54-2",
     "architecture": "all"
@@ -4735,6 +4750,16 @@
     "architecture": "amd64"
   },
   {
+    "name": "libtmglib-dev:amd64",
+    "version": "3.12.0-3build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtmglib3:amd64",
+    "version": "3.12.0-3build1.1",
+    "architecture": "amd64"
+  },
+  {
     "name": "libtool",
     "version": "2.4.7-7build1",
     "architecture": "all"
@@ -4990,6 +5015,11 @@
     "architecture": "amd64"
   },
   {
+    "name": "libxcb-cursor0:amd64",
+    "version": "0.1.4-1build1",
+    "architecture": "amd64"
+  },
+  {
     "name": "libxcb-dri3-0:amd64",
     "version": "1.15-1ubuntu2",
     "architecture": "amd64"
@@ -5000,6 +5030,21 @@
     "architecture": "amd64"
   },
   {
+    "name": "libxcb-icccm4:amd64",
+    "version": "0.4.1-1.1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxcb-image0:amd64",
+    "version": "0.4.0-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxcb-keysyms1:amd64",
+    "version": "0.4.0-1build4",
+    "architecture": "amd64"
+  },
+  {
     "name": "libxcb-present0:amd64",
     "version": "1.15-1ubuntu2",
     "architecture": "amd64"
@@ -5007,6 +5052,11 @@
   {
     "name": "libxcb-randr0:amd64",
     "version": "1.15-1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxcb-render-util0:amd64",
+    "version": "0.3.9-1build4",
     "architecture": "amd64"
   },
   {
@@ -5030,7 +5080,17 @@
     "architecture": "amd64"
   },
   {
+    "name": "libxcb-util1:amd64",
+    "version": "0.4.0-1build3",
+    "architecture": "amd64"
+  },
+  {
     "name": "libxcb-xfixes0:amd64",
+    "version": "1.15-1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxcb-xkb1:amd64",
     "version": "1.15-1ubuntu2",
     "architecture": "amd64"
   },
@@ -5107,6 +5167,11 @@
   {
     "name": "libxinerama1:amd64",
     "version": "2:1.1.4-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxkbcommon-x11-0:amd64",
+    "version": "1.6.0-1build1",
     "architecture": "amd64"
   },
   {
@@ -6576,7 +6641,7 @@
   },
   {
     "name": "wolframscript",
-    "version": "14.3.0+20250702878",
+    "version": "15.0.1+202607021139",
     "architecture": "amd64"
   },
   {
@@ -6587,6 +6652,11 @@
   {
     "name": "wsl-setup",
     "version": "0.5.10~24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "wslu",
+    "version": "3.2.3-0ubuntu3",
     "architecture": "amd64"
   },
   {

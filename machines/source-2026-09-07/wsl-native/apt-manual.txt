@@ -70,6 +70,7 @@ libhidapi-libusb0
 libibverbs1
 libice6
 libjpeg-dev
+liblapacke-dev
 libmosquitto1
 libmosquittopp1
 libmpfr-dev
@@ -98,6 +99,12 @@ libudunits2-dev
 libuhd4.6.0-dpdk
 libuuid1
 libuv1-dev
+libxcb-cursor0
+libxcb-icccm4
+libxcb-image0
+libxcb-keysyms1
+libxcb-render-util0
+libxcb-xkb1
 libxcomposite1
 libxcursor1
 libxdamage1
@@ -105,6 +112,7 @@ libxfixes3
 libxfont2
 libxft2
 libxinerama1
+libxkbcommon-x11-0
 libxml2-dev
 libxrandr2
 libxt6t64
@@ -142,6 +150,7 @@ unzip
 util-linux
 wget
 wolframscript
+wslu
 x11-xkb-utils
 zlib1g
 zsh

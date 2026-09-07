@@ -30,14 +30,17 @@ function Backup-ItemPath {
         return
     }
 
-    $relative = $Target.TrimStart("\") -replace ":", ""
+    $resolvedTarget = [IO.Path]::GetFullPath($Target)
+    $separator = [IO.Path]::DirectorySeparatorChar
+    $homePrefix = [IO.Path]::GetFullPath($HOME).TrimEnd($separator) + $separator
+    $comparison = if ($separator -eq '\') { [StringComparison]::OrdinalIgnoreCase } else { [StringComparison]::Ordinal }
+    if (!$resolvedTarget.StartsWith($homePrefix, $comparison)) {
+        throw "Backup target is outside the user home: $Target"
+    }
+    $relative = $resolvedTarget.TrimStart([char[]]'\/') -replace ':', ''
     $backupPath = Join-Path $BackupRoot $relative
     $backupDir = Split-Path $backupPath -Parent
     New-Item -ItemType Directory -Path $backupDir -Force | Out-Null
-    $resolvedTarget = [IO.Path]::GetFullPath($Target)
-    if (!$resolvedTarget.StartsWith($HOME.TrimEnd('\') + '\', [StringComparison]::OrdinalIgnoreCase)) {
-        throw "Backup target is outside the user home: $Target"
-    }
     Move-Item -LiteralPath $Target -Destination $backupPath -Force
     Write-Log "Backed up $Target -> $backupPath"
 }

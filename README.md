@@ -1,5 +1,9 @@
 # dotrepo
 
+The [latest source setup and inventory](machines/source-2026-09-07/README.md)
+includes standard Windows CPython 3.13/3.14/3.15, JAX, PowerShell, R/Rtools,
+TeX Live and SumatraPDF, with verification results and target instructions.
+
 To reproduce the current source computer on the other machine, use the
 [Windows and WSL source inventory and target setup steps](machines/source-2026-09-06/README.md).
 The [September 7 session handoff](docs/ai/sessions/2026-09-07-source-machine-replication.md)

@@ -1,0 +1,6362 @@
+[
+  {
+    "name": "adduser",
+    "version": "3.137ubuntu1",
+    "architecture": "all"
+  },
+  {
+    "name": "adwaita-icon-theme",
+    "version": "46.0-1",
+    "architecture": "all"
+  },
+  {
+    "name": "alsa-topology-conf",
+    "version": "1.2.5.1-2",
+    "architecture": "all"
+  },
+  {
+    "name": "alsa-ucm-conf",
+    "version": "1.2.10-1ubuntu5.14",
+    "architecture": "all"
+  },
+  {
+    "name": "apparmor",
+    "version": "4.0.1really4.0.1-0ubuntu0.24.04.7",
+    "architecture": "amd64"
+  },
+  {
+    "name": "apport",
+    "version": "2.28.3-0ubuntu0.1",
+    "architecture": "all"
+  },
+  {
+    "name": "apport-core-dump-handler",
+    "version": "2.28.3-0ubuntu0.1",
+    "architecture": "all"
+  },
+  {
+    "name": "apport-symptoms",
+    "version": "0.25",
+    "architecture": "all"
+  },
+  {
+    "name": "appstream",
+    "version": "1.0.2-1build6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "apt",
+    "version": "2.8.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "apt-utils",
+    "version": "2.8.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "at-spi2-common",
+    "version": "2.52.0-1build1",
+    "architecture": "all"
+  },
+  {
+    "name": "at-spi2-core",
+    "version": "2.52.0-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "autoconf",
+    "version": "2.71-3",
+    "architecture": "all"
+  },
+  {
+    "name": "automake",
+    "version": "1:1.16.5-1.3ubuntu1",
+    "architecture": "all"
+  },
+  {
+    "name": "autotools-dev",
+    "version": "20220109.1",
+    "architecture": "all"
+  },
+  {
+    "name": "base-files",
+    "version": "13ubuntu10.4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "base-passwd",
+    "version": "3.6.3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "bash",
+    "version": "5.2.21-2ubuntu4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "bash-completion",
+    "version": "1:2.11-8",
+    "architecture": "all"
+  },
+  {
+    "name": "bc",
+    "version": "1.07.1-3ubuntu4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "biber",
+    "version": "2.19-2",
+    "architecture": "all"
+  },
+  {
+    "name": "binutils",
+    "version": "2.42-4ubuntu2.10",
+    "architecture": "amd64"
+  },
+  {
+    "name": "binutils-common:amd64",
+    "version": "2.42-4ubuntu2.10",
+    "architecture": "amd64"
+  },
+  {
+    "name": "binutils-x86-64-linux-gnu",
+    "version": "2.42-4ubuntu2.10",
+    "architecture": "amd64"
+  },
+  {
+    "name": "bsdextrautils",
+    "version": "2.39.3-9ubuntu6.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "bsdutils",
+    "version": "1:2.39.3-9ubuntu6.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "build-essential",
+    "version": "12.10ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "byobu",
+    "version": "6.11-0ubuntu1.1",
+    "architecture": "all"
+  },
+  {
+    "name": "bzip2",
+    "version": "1.0.8-5.1ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "bzip2-doc",
+    "version": "1.0.8-5.1ubuntu0.1",
+    "architecture": "all"
+  },
+  {
+    "name": "ca-certificates",
+    "version": "20260601~24.04.1",
+    "architecture": "all"
+  },
+  {
+    "name": "ca-certificates-java",
+    "version": "20240118",
+    "architecture": "all"
+  },
+  {
+    "name": "cloud-guest-utils",
+    "version": "0.33-1",
+    "architecture": "all"
+  },
+  {
+    "name": "cloud-init",
+    "version": "26.1-0ubuntu1~24.04.1",
+    "architecture": "all"
+  },
+  {
+    "name": "cmake",
+    "version": "3.28.3-1build7",
+    "architecture": "amd64"
+  },
+  {
+    "name": "cmake-data",
+    "version": "3.28.3-1build7",
+    "architecture": "all"
+  },
+  {
+    "name": "command-not-found",
+    "version": "23.04.0",
+    "architecture": "all"
+  },
+  {
+    "name": "console-setup",
+    "version": "1.226ubuntu1.1",
+    "architecture": "all"
+  },
+  {
+    "name": "console-setup-linux",
+    "version": "1.226ubuntu1.1",
+    "architecture": "all"
+  },
+  {
+    "name": "coreutils",
+    "version": "9.4-3ubuntu6.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "cpp",
+    "version": "4:13.2.0-7ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "cpp-13",
+    "version": "13.3.0-6ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "cpp-13-x86-64-linux-gnu",
+    "version": "13.3.0-6ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "cpp-x86-64-linux-gnu",
+    "version": "4:13.2.0-7ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "cron",
+    "version": "3.0pl1-184ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "cron-daemon-common",
+    "version": "3.0pl1-184ubuntu2",
+    "architecture": "all"
+  },
+  {
+    "name": "cups-bsd",
+    "version": "2.4.7-1.2ubuntu7.14",
+    "architecture": "amd64"
+  },
+  {
+    "name": "cups-client",
+    "version": "2.4.7-1.2ubuntu7.14",
+    "architecture": "amd64"
+  },
+  {
+    "name": "cups-common",
+    "version": "2.4.7-1.2ubuntu7.14",
+    "architecture": "all"
+  },
+  {
+    "name": "curl",
+    "version": "8.5.0-2ubuntu10.13",
+    "architecture": "amd64"
+  },
+  {
+    "name": "dash",
+    "version": "0.5.12-6ubuntu5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "dbus",
+    "version": "1.14.10-4ubuntu4.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "dbus-bin",
+    "version": "1.14.10-4ubuntu4.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "dbus-daemon",
+    "version": "1.14.10-4ubuntu4.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "dbus-session-bus-common",
+    "version": "1.14.10-4ubuntu4.1",
+    "architecture": "all"
+  },
+  {
+    "name": "dbus-system-bus-common",
+    "version": "1.14.10-4ubuntu4.1",
+    "architecture": "all"
+  },
+  {
+    "name": "dbus-user-session",
+    "version": "1.14.10-4ubuntu4.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "dbus-x11",
+    "version": "1.14.10-4ubuntu4.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "dconf-gsettings-backend:amd64",
+    "version": "0.40.0-4ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "dconf-service",
+    "version": "0.40.0-4ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "debconf",
+    "version": "1.5.86ubuntu1",
+    "architecture": "all"
+  },
+  {
+    "name": "debconf-i18n",
+    "version": "1.5.86ubuntu1",
+    "architecture": "all"
+  },
+  {
+    "name": "debianutils",
+    "version": "5.17build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "default-jre",
+    "version": "2:1.21-75+exp1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "default-jre-headless",
+    "version": "2:1.21-75+exp1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "default-libmysqlclient-dev:amd64",
+    "version": "1.1.0build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "dhcpcd-base",
+    "version": "1:10.0.6-1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "diffutils",
+    "version": "1:3.10-1ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "dirmngr",
+    "version": "2.4.4-2ubuntu17.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "distro-info",
+    "version": "1.7build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "distro-info-data",
+    "version": "0.72-0ubuntu0.24.04.1",
+    "architecture": "all"
+  },
+  {
+    "name": "dmsetup",
+    "version": "2:1.02.185-3ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "dpkg",
+    "version": "1.22.6ubuntu6.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "dpkg-dev",
+    "version": "1.22.6ubuntu6.6",
+    "architecture": "all"
+  },
+  {
+    "name": "dvisvgm",
+    "version": "3.2.1+ds-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "e2fsprogs",
+    "version": "1.47.0-2.4~exp1ubuntu4.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "e2fsprogs-l10n",
+    "version": "1.47.0-2.4~exp1ubuntu4.1",
+    "architecture": "all"
+  },
+  {
+    "name": "eatmydata",
+    "version": "131-1ubuntu1",
+    "architecture": "all"
+  },
+  {
+    "name": "ed",
+    "version": "1.20.1-1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "eject",
+    "version": "2.39.3-9ubuntu6.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "ethtool",
+    "version": "1:6.7-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "fakeroot",
+    "version": "1.33-1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "fdisk",
+    "version": "2.39.3-9ubuntu6.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "file",
+    "version": "1:5.45-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "findutils",
+    "version": "4.9.0-5build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "fontconfig",
+    "version": "2.15.0-1.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "fontconfig-config",
+    "version": "2.15.0-1.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "fonts-dejavu-core",
+    "version": "2.37-8",
+    "architecture": "all"
+  },
+  {
+    "name": "fonts-dejavu-extra",
+    "version": "2.37-8",
+    "architecture": "all"
+  },
+  {
+    "name": "fonts-dejavu-mono",
+    "version": "2.37-8",
+    "architecture": "all"
+  },
+  {
+    "name": "fonts-droid-fallback",
+    "version": "1:6.0.1r16-1.1build1",
+    "architecture": "all"
+  },
+  {
+    "name": "fonts-lato",
+    "version": "2.015-1",
+    "architecture": "all"
+  },
+  {
+    "name": "fonts-lmodern",
+    "version": "2.005-1",
+    "architecture": "all"
+  },
+  {
+    "name": "fonts-noto-mono",
+    "version": "20201225-2",
+    "architecture": "all"
+  },
+  {
+    "name": "fonts-texgyre",
+    "version": "20180621-6",
+    "architecture": "all"
+  },
+  {
+    "name": "fonts-texgyre-math",
+    "version": "20180621-6",
+    "architecture": "all"
+  },
+  {
+    "name": "fonts-ubuntu",
+    "version": "0.869+git20240321-0ubuntu1",
+    "architecture": "all"
+  },
+  {
+    "name": "fonts-urw-base35",
+    "version": "20200910-8",
+    "architecture": "all"
+  },
+  {
+    "name": "fuse3",
+    "version": "3.14.0-5build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "g++",
+    "version": "4:13.2.0-7ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "g++-13",
+    "version": "13.3.0-6ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "g++-13-x86-64-linux-gnu",
+    "version": "13.3.0-6ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "g++-x86-64-linux-gnu",
+    "version": "4:13.2.0-7ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gawk",
+    "version": "1:5.2.1-2ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gcc",
+    "version": "4:13.2.0-7ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gcc-13",
+    "version": "13.3.0-6ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gcc-13-base:amd64",
+    "version": "13.3.0-6ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gcc-13-x86-64-linux-gnu",
+    "version": "13.3.0-6ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gcc-14-base:amd64",
+    "version": "14.2.0-4ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gcc-x86-64-linux-gnu",
+    "version": "4:13.2.0-7ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gdal-data",
+    "version": "3.8.4+dfsg-3ubuntu3",
+    "architecture": "all"
+  },
+  {
+    "name": "gdal-plugins:amd64",
+    "version": "3.8.4+dfsg-3ubuntu3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gdisk",
+    "version": "1.0.10-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gettext-base",
+    "version": "0.21-14ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gfortran",
+    "version": "4:13.2.0-7ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gfortran-13",
+    "version": "13.3.0-6ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gfortran-13-x86-64-linux-gnu",
+    "version": "13.3.0-6ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gfortran-x86-64-linux-gnu",
+    "version": "4:13.2.0-7ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gh",
+    "version": "2.100.0",
+    "architecture": "amd64"
+  },
+  {
+    "name": "ghostscript",
+    "version": "10.02.1~dfsg1-0ubuntu7.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gir1.2-freedesktop-dev:amd64",
+    "version": "1.80.1-1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gir1.2-freedesktop:amd64",
+    "version": "1.80.1-1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gir1.2-girepository-2.0:amd64",
+    "version": "1.80.1-1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gir1.2-glib-2.0-dev:amd64",
+    "version": "2.80.0-6ubuntu3.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gir1.2-glib-2.0:amd64",
+    "version": "2.80.0-6ubuntu3.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gir1.2-harfbuzz-0.0:amd64",
+    "version": "8.3.0-2build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gir1.2-packagekitglib-1.0",
+    "version": "1.2.8-2ubuntu1.5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "git",
+    "version": "1:2.43.0-1ubuntu7.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "git-lfs",
+    "version": "3.4.1-1ubuntu0.4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "git-man",
+    "version": "1:2.43.0-1ubuntu7.3",
+    "architecture": "all"
+  },
+  {
+    "name": "gnupg",
+    "version": "2.4.4-2ubuntu17.6",
+    "architecture": "all"
+  },
+  {
+    "name": "gnupg-l10n",
+    "version": "2.4.4-2ubuntu17.6",
+    "architecture": "all"
+  },
+  {
+    "name": "gnupg-utils",
+    "version": "2.4.4-2ubuntu17.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gpg",
+    "version": "2.4.4-2ubuntu17.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gpg-agent",
+    "version": "2.4.4-2ubuntu17.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gpg-wks-client",
+    "version": "2.4.4-2ubuntu17.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gpgconf",
+    "version": "2.4.4-2ubuntu17.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gpgsm",
+    "version": "2.4.4-2ubuntu17.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gpgv",
+    "version": "2.4.4-2ubuntu17.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "grep",
+    "version": "3.11-4build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "groff-base",
+    "version": "1.23.0-3build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gsettings-desktop-schemas",
+    "version": "46.1-0ubuntu1",
+    "architecture": "all"
+  },
+  {
+    "name": "gtk-update-icon-cache",
+    "version": "3.24.41-4ubuntu1.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gv",
+    "version": "1:3.7.4-2build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "gzip",
+    "version": "1.12-1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "hdf5-helpers",
+    "version": "1.10.10+repack-3.1ubuntu4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "hicolor-icon-theme",
+    "version": "0.17-2",
+    "architecture": "all"
+  },
+  {
+    "name": "hostname",
+    "version": "3.23+nmu2ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "humanity-icon-theme",
+    "version": "0.6.16",
+    "architecture": "all"
+  },
+  {
+    "name": "ibverbs-providers:amd64",
+    "version": "50.0-2ubuntu0.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "icu-devtools",
+    "version": "74.2-1ubuntu3.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "info",
+    "version": "7.1-3build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "init",
+    "version": "1.66ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "init-system-helpers",
+    "version": "1.66ubuntu1",
+    "architecture": "all"
+  },
+  {
+    "name": "install-info",
+    "version": "7.1-3build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "iproute2",
+    "version": "6.1.0-1ubuntu6.4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "iputils-ping",
+    "version": "3:20240117-1ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "iso-codes",
+    "version": "4.16.0-1",
+    "architecture": "all"
+  },
+  {
+    "name": "java-common",
+    "version": "0.75+exp1",
+    "architecture": "all"
+  },
+  {
+    "name": "javascript-common",
+    "version": "11+nmu1",
+    "architecture": "all"
+  },
+  {
+    "name": "kbd",
+    "version": "2.6.4-2ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "keyboard-configuration",
+    "version": "1.226ubuntu1.1",
+    "architecture": "all"
+  },
+  {
+    "name": "keyboxd",
+    "version": "2.4.4-2ubuntu17.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "kmod",
+    "version": "31+20240202-2ubuntu7.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "krb5-locales",
+    "version": "1.20.1-6ubuntu2.8",
+    "architecture": "all"
+  },
+  {
+    "name": "landscape-client",
+    "version": "24.02-0ubuntu5.7",
+    "architecture": "amd64"
+  },
+  {
+    "name": "landscape-common",
+    "version": "24.02-0ubuntu5.7",
+    "architecture": "amd64"
+  },
+  {
+    "name": "latexmk",
+    "version": "1:4.83-1",
+    "architecture": "all"
+  },
+  {
+    "name": "less",
+    "version": "590-2ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libabsl-dev:amd64",
+    "version": "20220623.1-3.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libabsl20220623t64:amd64",
+    "version": "20220623.1-3.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libacl1:amd64",
+    "version": "2.3.2-1build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libaec-dev:amd64",
+    "version": "1.1.2-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libaec0:amd64",
+    "version": "1.1.2-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libalgorithm-c3-perl",
+    "version": "0.11-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libalgorithm-diff-perl",
+    "version": "1.201-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libalgorithm-diff-xs-perl:amd64",
+    "version": "0.04-8build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libalgorithm-merge-perl",
+    "version": "0.08-5",
+    "architecture": "all"
+  },
+  {
+    "name": "libamd-comgr2:amd64",
+    "version": "6.0+git20231212.4510c28+dfsg-3build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libamdhip64-5",
+    "version": "5.7.1-3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libaom-dev:amd64",
+    "version": "3.8.2-2ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libaom3:amd64",
+    "version": "3.8.2-2ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libapache-pom-java",
+    "version": "29-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libapparmor1:amd64",
+    "version": "4.0.1really4.0.1-0ubuntu0.24.04.7",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libappstream5:amd64",
+    "version": "1.0.2-1build6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libapt-pkg6.0t64:amd64",
+    "version": "2.8.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libarchive13t64:amd64",
+    "version": "3.7.2-2ubuntu0.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libargon2-1:amd64",
+    "version": "0~20190702+dfsg-4build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libarmadillo-dev",
+    "version": "1:12.6.7+dfsg-1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libarmadillo12",
+    "version": "1:12.6.7+dfsg-1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libarpack2-dev:amd64",
+    "version": "3.9.1-1.1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libarpack2t64:amd64",
+    "version": "3.9.1-1.1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libasan8:amd64",
+    "version": "14.2.0-4ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libasound2-data",
+    "version": "1.2.11-1ubuntu0.3",
+    "architecture": "all"
+  },
+  {
+    "name": "libasound2t64:amd64",
+    "version": "1.2.11-1ubuntu0.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libassuan0:amd64",
+    "version": "2.5.6-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libatk-bridge2.0-0t64:amd64",
+    "version": "2.52.0-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libatk-wrapper-java",
+    "version": "0.40.0-3build2",
+    "architecture": "all"
+  },
+  {
+    "name": "libatk-wrapper-java-jni:amd64",
+    "version": "0.40.0-3build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libatk1.0-0t64:amd64",
+    "version": "2.52.0-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libatm1t64:amd64",
+    "version": "1:2.5.1-5.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libatomic1:amd64",
+    "version": "14.2.0-4ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libatspi2.0-0t64:amd64",
+    "version": "2.52.0-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libattr1:amd64",
+    "version": "1:2.5.2-1ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libaudit-common",
+    "version": "1:3.1.2-2.1build1.1",
+    "architecture": "all"
+  },
+  {
+    "name": "libaudit1:amd64",
+    "version": "1:3.1.2-2.1build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libauthen-sasl-perl",
+    "version": "2.1700-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libautovivification-perl:amd64",
+    "version": "0.18-2build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libavahi-client3:amd64",
+    "version": "0.8-13ubuntu6.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libavahi-common-data:amd64",
+    "version": "0.8-13ubuntu6.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libavahi-common3:amd64",
+    "version": "0.8-13ubuntu6.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libb-hooks-endofscope-perl",
+    "version": "0.28-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libb-hooks-op-check-perl:amd64",
+    "version": "0.22-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libbibtex-parser-perl",
+    "version": "1.04+dfsg-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libbinutils:amd64",
+    "version": "2.42-4ubuntu2.10",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libbit-vector-perl:amd64",
+    "version": "7.4-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libblas-dev:amd64",
+    "version": "3.12.0-3build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libblas3:amd64",
+    "version": "3.12.0-3build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libblkid-dev:amd64",
+    "version": "2.39.3-9ubuntu6.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libblkid1:amd64",
+    "version": "2.39.3-9ubuntu6.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libblosc-dev:amd64",
+    "version": "1.21.5+ds-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libblosc1:amd64",
+    "version": "1.21.5+ds-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-all-dev",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-atomic-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-atomic1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-atomic1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-chrono-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-chrono1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-chrono1.83.0t64:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-container-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-container1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-container1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-context-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-context1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-context1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-coroutine-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-coroutine1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-coroutine1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-date-time-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-date-time1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-date-time1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-exception-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-exception1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-fiber-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-fiber1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-fiber1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-filesystem-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-filesystem1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-filesystem1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-graph-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-graph-parallel-dev",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-graph-parallel1.83-dev",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-graph-parallel1.83.0",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-graph1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-graph1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-iostreams-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-iostreams1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-iostreams1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-json-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-json1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-json1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-locale-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-locale1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-locale1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-log-dev",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-log1.83-dev",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-log1.83.0",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-math-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-math1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-math1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-mpi-dev",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-mpi-python-dev",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-mpi-python1.83-dev",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-mpi-python1.83.0",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-mpi1.83-dev",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-mpi1.83.0",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-nowide-dev",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-nowide1.83-dev",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-nowide1.83.0",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-numpy-dev",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-numpy1.83-dev",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-numpy1.83.0",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-program-options-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-program-options1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-program-options1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-python-dev",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-python1.83-dev",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-python1.83.0",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-random-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-random1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-random1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-regex-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-regex1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-regex1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-serialization-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-serialization1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-serialization1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-stacktrace-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-stacktrace1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-stacktrace1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-system-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-system1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-system1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-test-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-test1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-test1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-thread-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-thread1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-thread1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-timer-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-timer1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-timer1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-tools-dev",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-type-erasure-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-type-erasure1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-type-erasure1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-url-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-url1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-url1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-wave-dev:amd64",
+    "version": "1.83.0.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-wave1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost-wave1.83.0:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost1.83-dev:amd64",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libboost1.83-tools-dev",
+    "version": "1.83.0-2.1ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libbpf1:amd64",
+    "version": "1:1.3.0-2build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libbrotli-dev:amd64",
+    "version": "1.1.0-2build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libbrotli1:amd64",
+    "version": "1.1.0-2build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libbsd0:amd64",
+    "version": "0.12.1-1build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libbtparse2",
+    "version": "0.89-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libbusiness-isbn-data-perl",
+    "version": "20240229.001-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libbusiness-isbn-perl",
+    "version": "3.009-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libbusiness-ismn-perl",
+    "version": "1.204-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libbusiness-issn-perl",
+    "version": "1.005-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libbz2-1.0:amd64",
+    "version": "1.0.8-5.1ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libbz2-dev:amd64",
+    "version": "1.0.8-5.1ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libc-bin",
+    "version": "2.39-0ubuntu8.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libc-dev-bin",
+    "version": "2.39-0ubuntu8.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libc-devtools",
+    "version": "2.39-0ubuntu8.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libc6-dev:amd64",
+    "version": "2.39-0ubuntu8.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libc6:amd64",
+    "version": "2.39-0ubuntu8.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcaf-openmpi-3t64:amd64",
+    "version": "2.10.2+ds-2.1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcairo-gobject2:amd64",
+    "version": "1.18.0-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcairo2:amd64",
+    "version": "1.18.0-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcap-ng0:amd64",
+    "version": "0.8.4-2build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcap2-bin",
+    "version": "1:2.66-5ubuntu2.4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcap2:amd64",
+    "version": "1:2.66-5ubuntu2.4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcarp-clan-perl",
+    "version": "6.08-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libcbor0.10:amd64",
+    "version": "0.10.2-1.2ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcc1-0:amd64",
+    "version": "14.2.0-4ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcfitsio-dev:amd64",
+    "version": "4.3.1-1.1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcfitsio-doc",
+    "version": "4.3.1-1.1build2",
+    "architecture": "all"
+  },
+  {
+    "name": "libcfitsio10t64:amd64",
+    "version": "4.3.1-1.1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libclass-accessor-perl",
+    "version": "0.51-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libclass-c3-perl",
+    "version": "0.35-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libclass-c3-xs-perl",
+    "version": "0.15-1build6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libclass-data-inheritable-perl",
+    "version": "0.08-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libclass-inspector-perl",
+    "version": "1.36-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libclass-method-modifiers-perl",
+    "version": "2.15-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libclass-singleton-perl",
+    "version": "1.6-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libclass-xsaccessor-perl",
+    "version": "1.19-4build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libclone-perl:amd64",
+    "version": "0.46-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcoarrays-dev:amd64",
+    "version": "2.10.2+ds-2.1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcoarrays-openmpi-dev:amd64",
+    "version": "2.10.2+ds-2.1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcolord2:amd64",
+    "version": "1.4.7-1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcom-err2:amd64",
+    "version": "1.47.0-2.4~exp1ubuntu4.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcommon-sense-perl:amd64",
+    "version": "3.75-3build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcommons-logging-java",
+    "version": "1.3.0-1ubuntu1",
+    "architecture": "all"
+  },
+  {
+    "name": "libcommons-parent-java",
+    "version": "56-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libcrypt-dev:amd64",
+    "version": "1:4.4.36-4build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcrypt-rc4-perl",
+    "version": "2.02-5",
+    "architecture": "all"
+  },
+  {
+    "name": "libcrypt1:amd64",
+    "version": "1:4.4.36-4build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcryptsetup12:amd64",
+    "version": "2:2.7.0-1ubuntu4.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libctf-nobfd0:amd64",
+    "version": "2.42-4ubuntu2.10",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libctf0:amd64",
+    "version": "2.42-4ubuntu2.10",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcups2t64:amd64",
+    "version": "2.4.7-1.2ubuntu7.14",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcurl3t64-gnutls:amd64",
+    "version": "8.5.0-2ubuntu10.13",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcurl4-openssl-dev:amd64",
+    "version": "8.5.0-2ubuntu10.13",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcurl4t64:amd64",
+    "version": "8.5.0-2ubuntu10.13",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdata-compare-perl",
+    "version": "1.29-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libdata-dump-perl",
+    "version": "1.25-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libdata-optlist-perl",
+    "version": "0.114-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libdata-uniqid-perl",
+    "version": "0.12-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libdate-calc-perl",
+    "version": "6.4-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libdate-calc-xs-perl:amd64",
+    "version": "6.4-2build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdate-manip-perl",
+    "version": "6.95-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libdate-simple-perl",
+    "version": "3.0300-3build6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdatetime-calendar-julian-perl",
+    "version": "0.107-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libdatetime-format-builder-perl",
+    "version": "0.8300-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libdatetime-format-strptime-perl",
+    "version": "1.7900-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libdatetime-locale-perl",
+    "version": "1:1.37-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libdatetime-perl",
+    "version": "2:1.65-1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdatetime-timezone-perl",
+    "version": "1:2.62-1+2024a",
+    "architecture": "all"
+  },
+  {
+    "name": "libdatrie1:amd64",
+    "version": "0.2.13-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdav1d-dev:amd64",
+    "version": "1.4.1-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdav1d7:amd64",
+    "version": "1.4.1-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdb5.3t64:amd64",
+    "version": "5.3.28+dfsg2-7",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdbus-1-3:amd64",
+    "version": "1.14.10-4ubuntu4.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdconf1:amd64",
+    "version": "0.40.0-4ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libde265-0:amd64",
+    "version": "1.0.15-1ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libde265-dev:amd64",
+    "version": "1.0.15-1ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdebconfclient0:amd64",
+    "version": "0.271ubuntu3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdeflate-dev:amd64",
+    "version": "1.19-1build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdeflate0:amd64",
+    "version": "1.19-1build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdevel-callchecker-perl:amd64",
+    "version": "0.008-2build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdevel-caller-perl:amd64",
+    "version": "2.07-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdevel-globaldestruction-perl",
+    "version": "0.14-4",
+    "architecture": "all"
+  },
+  {
+    "name": "libdevel-lexalias-perl",
+    "version": "0.05-3build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdevel-stacktrace-perl",
+    "version": "2.0500-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libdevmapper1.02.1:amd64",
+    "version": "2:1.02.185-3ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdigest-perl-md5-perl",
+    "version": "1.9-5",
+    "architecture": "all"
+  },
+  {
+    "name": "libdist-checkconflicts-perl",
+    "version": "0.11-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libdlib-data",
+    "version": "19.24+dfsg-1.1build1",
+    "architecture": "all"
+  },
+  {
+    "name": "libdlib-dev:amd64",
+    "version": "19.24+dfsg-1.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdlib19.1t64:amd64",
+    "version": "19.24+dfsg-1.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdpkg-perl",
+    "version": "1.22.6ubuntu6.6",
+    "architecture": "all"
+  },
+  {
+    "name": "libdrm-amdgpu1:amd64",
+    "version": "2.4.125-1ubuntu0.1~24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdrm-common",
+    "version": "2.4.125-1ubuntu0.1~24.04.2",
+    "architecture": "all"
+  },
+  {
+    "name": "libdrm-intel1:amd64",
+    "version": "2.4.125-1ubuntu0.1~24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdrm2:amd64",
+    "version": "2.4.125-1ubuntu0.1~24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libduktape207:amd64",
+    "version": "2.7.0+tests-0ubuntu3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdw1t64:amd64",
+    "version": "0.190-1.1ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libdynaloader-functions-perl",
+    "version": "0.003-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libeatmydata1:amd64",
+    "version": "131-1ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libedit2:amd64",
+    "version": "3.1-20230828-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libegl-mesa0:amd64",
+    "version": "25.2.8-0ubuntu0.24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libegl1:amd64",
+    "version": "1.7.0-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libeigen3-dev",
+    "version": "3.4.0-4build0.1",
+    "architecture": "all"
+  },
+  {
+    "name": "libelf1t64:amd64",
+    "version": "0.190-1.1ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libemail-date-format-perl",
+    "version": "1.008-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libencode-eucjpascii-perl",
+    "version": "0.03-1build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libencode-eucjpms-perl",
+    "version": "0.07-3build13",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libencode-hanextra-perl",
+    "version": "0.23-6build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libencode-jis2k-perl",
+    "version": "0.05-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libencode-locale-perl",
+    "version": "1.05-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libencode-perl:amd64",
+    "version": "3.21-1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libepoxy0:amd64",
+    "version": "1.5.10-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liberror-perl",
+    "version": "0.17029-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libestr0:amd64",
+    "version": "0.1.11-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libeval-closure-perl",
+    "version": "0.14-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libevent-2.1-7t64:amd64",
+    "version": "2.1.12-stable-9ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libevent-core-2.1-7t64:amd64",
+    "version": "2.1.12-stable-9ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libevent-dev",
+    "version": "2.1.12-stable-9ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libevent-extra-2.1-7t64:amd64",
+    "version": "2.1.12-stable-9ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libevent-openssl-2.1-7t64:amd64",
+    "version": "2.1.12-stable-9ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libevent-pthreads-2.1-7t64:amd64",
+    "version": "2.1.12-stable-9ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libexception-class-perl",
+    "version": "1.45-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libexpat1-dev:amd64",
+    "version": "2.6.1-2ubuntu0.4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libexpat1:amd64",
+    "version": "2.6.1-2ubuntu0.4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libexporter-tiny-perl",
+    "version": "1.006002-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libext2fs2t64:amd64",
+    "version": "1.47.0-2.4~exp1ubuntu4.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfabric1:amd64",
+    "version": "1.17.0-3build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfakeroot:amd64",
+    "version": "1.33-1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfastjson4:amd64",
+    "version": "1.2304.0-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfdisk1:amd64",
+    "version": "2.39.3-9ubuntu6.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libffi-dev:amd64",
+    "version": "3.4.6-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libffi8:amd64",
+    "version": "3.4.6-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfftw3-bin",
+    "version": "3.3.10-1ubuntu3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfftw3-dev:amd64",
+    "version": "3.3.10-1ubuntu3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfftw3-double3:amd64",
+    "version": "3.3.10-1ubuntu3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfftw3-long3:amd64",
+    "version": "3.3.10-1ubuntu3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfftw3-quad3:amd64",
+    "version": "3.3.10-1ubuntu3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfftw3-single3:amd64",
+    "version": "3.3.10-1ubuntu3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfido2-1:amd64",
+    "version": "1.14.0-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfile-basedir-perl",
+    "version": "0.09-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libfile-desktopentry-perl",
+    "version": "0.22-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libfile-fcntllock-perl",
+    "version": "0.22-4ubuntu5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfile-find-rule-perl",
+    "version": "0.34-3ubuntu0.24.04.1",
+    "architecture": "all"
+  },
+  {
+    "name": "libfile-listing-perl",
+    "version": "6.16-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libfile-mimeinfo-perl",
+    "version": "0.34-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libfile-sharedir-perl",
+    "version": "1.118-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libfile-slurper-perl",
+    "version": "0.014-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libflint-dev",
+    "version": "3.0.1-3.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libflint18t64:amd64",
+    "version": "3.0.1-3.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfont-afm-perl",
+    "version": "1.20-4",
+    "architecture": "all"
+  },
+  {
+    "name": "libfontbox-java",
+    "version": "1:1.8.16-5",
+    "architecture": "all"
+  },
+  {
+    "name": "libfontconfig-dev:amd64",
+    "version": "2.15.0-1.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfontconfig1-dev:amd64",
+    "version": "2.15.0-1.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfontconfig1:amd64",
+    "version": "2.15.0-1.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfontenc1:amd64",
+    "version": "1:1.1.8-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfreetype-dev:amd64",
+    "version": "2.13.2+dfsg-1ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfreetype6:amd64",
+    "version": "2.13.2+dfsg-1ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfreexl-dev:amd64",
+    "version": "2.0.0-1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfreexl1:amd64",
+    "version": "2.0.0-1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfribidi-dev:amd64",
+    "version": "1.0.13-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfribidi0:amd64",
+    "version": "1.0.13-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfuse3-3:amd64",
+    "version": "3.14.0-5build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfyba-dev:amd64",
+    "version": "4.1.1-11build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libfyba0t64:amd64",
+    "version": "4.1.1-11build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgbm1:amd64",
+    "version": "25.2.8-0ubuntu0.24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgcc-13-dev:amd64",
+    "version": "13.3.0-6ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgcc-s1:amd64",
+    "version": "14.2.0-4ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgcrypt20:amd64",
+    "version": "1.10.3-2ubuntu0.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgd3:amd64",
+    "version": "2.3.3-9ubuntu5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgdal-dev",
+    "version": "3.8.4+dfsg-3ubuntu3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgdal34t64:amd64",
+    "version": "3.8.4+dfsg-3ubuntu3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgdbm-compat4t64:amd64",
+    "version": "1.23-5.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgdbm6t64:amd64",
+    "version": "1.23-5.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgdk-pixbuf-2.0-0:amd64",
+    "version": "2.42.10+dfsg-3ubuntu3.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgdk-pixbuf2.0-bin",
+    "version": "2.42.10+dfsg-3ubuntu3.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgdk-pixbuf2.0-common",
+    "version": "2.42.10+dfsg-3ubuntu3.3",
+    "architecture": "all"
+  },
+  {
+    "name": "libgeos-c1t64:amd64",
+    "version": "3.12.1-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgeos-dev",
+    "version": "3.12.1-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgeos3.12.1t64:amd64",
+    "version": "3.12.1-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgeotiff-dev:amd64",
+    "version": "1.7.1-5build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgeotiff5:amd64",
+    "version": "1.7.1-5build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgfortran-13-dev:amd64",
+    "version": "13.3.0-6ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgfortran5:amd64",
+    "version": "14.2.0-4ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgif-dev:amd64",
+    "version": "5.2.2-1ubuntu1.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgif7:amd64",
+    "version": "5.2.2-1ubuntu1.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgirepository-1.0-1:amd64",
+    "version": "1.80.1-1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgirepository-2.0-0:amd64",
+    "version": "2.80.0-6ubuntu3.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgl1-mesa-dri:amd64",
+    "version": "25.2.8-0ubuntu0.24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgl1:amd64",
+    "version": "1.7.0-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgles2:amd64",
+    "version": "1.7.0-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libglib2.0-0t64:amd64",
+    "version": "2.80.0-6ubuntu3.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libglib2.0-bin",
+    "version": "2.80.0-6ubuntu3.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libglib2.0-data",
+    "version": "2.80.0-6ubuntu3.8",
+    "architecture": "all"
+  },
+  {
+    "name": "libglib2.0-dev-bin",
+    "version": "2.80.0-6ubuntu3.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libglib2.0-dev:amd64",
+    "version": "2.80.0-6ubuntu3.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libglvnd0:amd64",
+    "version": "1.7.0-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libglx-mesa0:amd64",
+    "version": "25.2.8-0ubuntu0.24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libglx0:amd64",
+    "version": "1.7.0-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgmp-dev:amd64",
+    "version": "2:6.3.0+dfsg-2ubuntu6.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgmp10:amd64",
+    "version": "2:6.3.0+dfsg-2ubuntu6.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgmpxx4ldbl:amd64",
+    "version": "2:6.3.0+dfsg-2ubuntu6.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgnutls30t64:amd64",
+    "version": "3.8.3-1.1ubuntu3.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgomp1:amd64",
+    "version": "14.2.0-4ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgpg-error-l10n",
+    "version": "1.47-3build2.1",
+    "architecture": "all"
+  },
+  {
+    "name": "libgpg-error0:amd64",
+    "version": "1.47-3build2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgpm2:amd64",
+    "version": "1.20.7-11",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgprofng0:amd64",
+    "version": "2.42-4ubuntu2.10",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgraphite2-3:amd64",
+    "version": "1.3.14-2ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgraphite2-dev:amd64",
+    "version": "1.3.14-2ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgs-common",
+    "version": "10.02.1~dfsg1-0ubuntu7.8",
+    "architecture": "all"
+  },
+  {
+    "name": "libgs10-common",
+    "version": "10.02.1~dfsg1-0ubuntu7.8",
+    "architecture": "all"
+  },
+  {
+    "name": "libgs10:amd64",
+    "version": "10.02.1~dfsg1-0ubuntu7.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgssapi-krb5-2:amd64",
+    "version": "1.20.1-6ubuntu2.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgstreamer1.0-0:amd64",
+    "version": "1.24.2-1ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgtk-3-0t64:amd64",
+    "version": "3.24.41-4ubuntu1.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgtk-3-bin",
+    "version": "3.24.41-4ubuntu1.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libgtk-3-common",
+    "version": "3.24.41-4ubuntu1.3",
+    "architecture": "all"
+  },
+  {
+    "name": "libgumbo2:amd64",
+    "version": "0.12.0+dfsg-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libharfbuzz-cairo0:amd64",
+    "version": "8.3.0-2build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libharfbuzz-dev:amd64",
+    "version": "8.3.0-2build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libharfbuzz-gobject0:amd64",
+    "version": "8.3.0-2build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libharfbuzz-icu0:amd64",
+    "version": "8.3.0-2build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libharfbuzz-subset0:amd64",
+    "version": "8.3.0-2build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libharfbuzz0b:amd64",
+    "version": "8.3.0-2build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libhdf4-0-alt:amd64",
+    "version": "4.2.16-4build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libhdf4-alt-dev",
+    "version": "4.2.16-4build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libhdf5-103-1t64:amd64",
+    "version": "1.10.10+repack-3.1ubuntu4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libhdf5-cpp-103-1t64:amd64",
+    "version": "1.10.10+repack-3.1ubuntu4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libhdf5-dev",
+    "version": "1.10.10+repack-3.1ubuntu4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libhdf5-fortran-102t64:amd64",
+    "version": "1.10.10+repack-3.1ubuntu4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libhdf5-hl-100t64:amd64",
+    "version": "1.10.10+repack-3.1ubuntu4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libhdf5-hl-cpp-100t64:amd64",
+    "version": "1.10.10+repack-3.1ubuntu4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libhdf5-hl-fortran-100t64:amd64",
+    "version": "1.10.10+repack-3.1ubuntu4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libheif-dev:amd64",
+    "version": "1.17.6-1ubuntu4.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libheif-plugin-aomdec:amd64",
+    "version": "1.17.6-1ubuntu4.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libheif-plugin-aomenc:amd64",
+    "version": "1.17.6-1ubuntu4.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libheif-plugin-libde265:amd64",
+    "version": "1.17.6-1ubuntu4.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libheif1:amd64",
+    "version": "1.17.6-1ubuntu4.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libhogweed6t64:amd64",
+    "version": "3.9.1-2.2build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libhsa-runtime64-1",
+    "version": "5.7.1-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libhsakmt1:amd64",
+    "version": "5.7.0-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libhtml-form-perl",
+    "version": "6.11-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libhtml-format-perl",
+    "version": "2.16-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libhtml-parser-perl:amd64",
+    "version": "3.81-1ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libhtml-tagset-perl",
+    "version": "3.20-6",
+    "architecture": "all"
+  },
+  {
+    "name": "libhtml-tree-perl",
+    "version": "5.07-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libhttp-cookies-perl",
+    "version": "6.11-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libhttp-daemon-perl",
+    "version": "6.16-1ubuntu0.24.04.1",
+    "architecture": "all"
+  },
+  {
+    "name": "libhttp-date-perl",
+    "version": "6.06-1ubuntu0.24.04.1",
+    "architecture": "all"
+  },
+  {
+    "name": "libhttp-message-perl",
+    "version": "6.45-1ubuntu1",
+    "architecture": "all"
+  },
+  {
+    "name": "libhttp-negotiate-perl",
+    "version": "6.01-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libhwasan0:amd64",
+    "version": "14.2.0-4ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libhwloc-dev:amd64",
+    "version": "2.10.0-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libhwloc-plugins:amd64",
+    "version": "2.10.0-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libhwloc15:amd64",
+    "version": "2.10.0-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libibverbs-dev:amd64",
+    "version": "50.0-2ubuntu0.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libibverbs1:amd64",
+    "version": "50.0-2ubuntu0.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libice6:amd64",
+    "version": "2:1.0.10-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libicu-dev:amd64",
+    "version": "74.2-1ubuntu3.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libicu74:amd64",
+    "version": "74.2-1ubuntu3.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libidn12:amd64",
+    "version": "1.42-1ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libidn2-0:amd64",
+    "version": "2.3.7-2build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libijs-0.35:amd64",
+    "version": "0.35-15.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libio-html-perl",
+    "version": "1.004-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libio-socket-ssl-perl",
+    "version": "2.085-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libio-string-perl",
+    "version": "1.08-4",
+    "architecture": "all"
+  },
+  {
+    "name": "libio-stringy-perl",
+    "version": "2.111-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libipc-run3-perl",
+    "version": "0.049-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libipc-shareable-perl",
+    "version": "1.13-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libipc-system-simple-perl",
+    "version": "1.30-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libisl23:amd64",
+    "version": "0.26-3build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libitm1:amd64",
+    "version": "14.2.0-4ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libjansson4:amd64",
+    "version": "2.14-2build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libjbig-dev:amd64",
+    "version": "2.1-6.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libjbig0:amd64",
+    "version": "2.1-6.1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libjbig2dec0:amd64",
+    "version": "0.20-1ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libjcode-pm-perl",
+    "version": "2.06-1.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libjpeg-dev:amd64",
+    "version": "8c-2ubuntu11",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libjpeg-turbo8-dev:amd64",
+    "version": "2.1.5-2ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libjpeg-turbo8:amd64",
+    "version": "2.1.5-2ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libjpeg8-dev:amd64",
+    "version": "8c-2ubuntu11",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libjpeg8:amd64",
+    "version": "8c-2ubuntu11",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libjs-jquery",
+    "version": "3.6.1+dfsg+~3.5.14-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libjs-jquery-ui",
+    "version": "1.13.2+dfsg-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libjs-sphinxdoc",
+    "version": "7.2.6-6",
+    "architecture": "all"
+  },
+  {
+    "name": "libjs-underscore",
+    "version": "1.13.4~dfsg+~1.11.4-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libjson-c-dev:amd64",
+    "version": "0.17-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libjson-c5:amd64",
+    "version": "0.17-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libjson-perl",
+    "version": "4.10000-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libjson-xs-perl",
+    "version": "4.040-0ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libjsoncpp25:amd64",
+    "version": "1.9.5-6build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libk5crypto3:amd64",
+    "version": "1.20.1-6ubuntu2.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libkeyutils1:amd64",
+    "version": "1.6.3-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libkml-dev:amd64",
+    "version": "1.3.0-12build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libkmlbase1t64:amd64",
+    "version": "1.3.0-12build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libkmlconvenience1t64:amd64",
+    "version": "1.3.0-12build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libkmldom1t64:amd64",
+    "version": "1.3.0-12build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libkmlengine1t64:amd64",
+    "version": "1.3.0-12build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libkmlregionator1t64:amd64",
+    "version": "1.3.0-12build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libkmlxsd1t64:amd64",
+    "version": "1.3.0-12build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libkmod2:amd64",
+    "version": "31+20240202-2ubuntu7.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libkpathsea6:amd64",
+    "version": "2023.20230311.66589-9build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libkrb5-3:amd64",
+    "version": "1.20.1-6ubuntu2.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libkrb5support0:amd64",
+    "version": "1.20.1-6ubuntu2.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libksba8:amd64",
+    "version": "1.6.6-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liblapack-dev:amd64",
+    "version": "3.12.0-3build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liblapack3:amd64",
+    "version": "3.12.0-3build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liblatex-tounicode-perl",
+    "version": "0.54-2",
+    "architecture": "all"
+  },
+  {
+    "name": "liblcms2-2:amd64",
+    "version": "2.14-2ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libldap-common",
+    "version": "2.6.10+dfsg-0ubuntu0.24.04.1",
+    "architecture": "all"
+  },
+  {
+    "name": "libldap2:amd64",
+    "version": "2.6.10+dfsg-0ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liblerc-dev:amd64",
+    "version": "4.0.0+ds-4ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liblerc4:amd64",
+    "version": "4.0.0+ds-4ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liblingua-translit-perl",
+    "version": "0.29-2",
+    "architecture": "all"
+  },
+  {
+    "name": "liblist-allutils-perl",
+    "version": "0.19-1",
+    "architecture": "all"
+  },
+  {
+    "name": "liblist-moreutils-perl",
+    "version": "0.430-2",
+    "architecture": "all"
+  },
+  {
+    "name": "liblist-moreutils-xs-perl",
+    "version": "0.430-3build5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liblist-someutils-perl",
+    "version": "0.59-1",
+    "architecture": "all"
+  },
+  {
+    "name": "liblist-someutils-xs-perl:amd64",
+    "version": "0.58-3build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liblist-utilsby-perl",
+    "version": "0.12-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libllvm17t64:amd64",
+    "version": "1:17.0.6-9ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libllvm20:amd64",
+    "version": "1:20.1.2-0ubuntu1~24.04.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liblocale-gettext-perl",
+    "version": "1.07-6ubuntu5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liblog-dispatch-perl",
+    "version": "2.71-1",
+    "architecture": "all"
+  },
+  {
+    "name": "liblog-log4perl-perl",
+    "version": "1.57-1",
+    "architecture": "all"
+  },
+  {
+    "name": "liblsan0:amd64",
+    "version": "14.2.0-4ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libltdl-dev:amd64",
+    "version": "2.4.7-7build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libltdl7:amd64",
+    "version": "2.4.7-7build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liblwp-mediatypes-perl",
+    "version": "6.04-2",
+    "architecture": "all"
+  },
+  {
+    "name": "liblwp-protocol-https-perl",
+    "version": "6.13-1",
+    "architecture": "all"
+  },
+  {
+    "name": "liblz4-1:amd64",
+    "version": "1.9.4-1build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liblz4-dev:amd64",
+    "version": "1.9.4-1build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liblzma-dev:amd64",
+    "version": "5.6.1+really5.4.5-1ubuntu0.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liblzma5:amd64",
+    "version": "5.6.1+really5.4.5-1ubuntu0.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liblzo2-2:amd64",
+    "version": "2.10-2build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libmagic-mgc",
+    "version": "1:5.45-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libmagic1t64:amd64",
+    "version": "1:5.45-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libmail-sendmail-perl",
+    "version": "0.80-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libmailtools-perl",
+    "version": "2.21-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libmd0:amd64",
+    "version": "1.1.0-2build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libmime-charset-perl",
+    "version": "1.013.1-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libmime-lite-perl",
+    "version": "3.033-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libmime-types-perl",
+    "version": "2.26-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libminizip-dev:amd64",
+    "version": "1:1.3.dfsg-3.1ubuntu2.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libminizip1t64:amd64",
+    "version": "1:1.3.dfsg-3.1ubuntu2.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libmnl0:amd64",
+    "version": "1.0.5-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libmodule-implementation-perl",
+    "version": "0.09-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libmodule-runtime-perl",
+    "version": "0.016-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libmotif-common",
+    "version": "2.3.8-3.1build1",
+    "architecture": "all"
+  },
+  {
+    "name": "libmount-dev:amd64",
+    "version": "2.39.3-9ubuntu6.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libmount1:amd64",
+    "version": "2.39.3-9ubuntu6.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libmpc3:amd64",
+    "version": "1.3.1-1build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libmpfr-dev:amd64",
+    "version": "4.2.1-1build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libmpfr6:amd64",
+    "version": "4.2.1-1build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libmro-compat-perl",
+    "version": "0.15-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libmujs3:amd64",
+    "version": "1.3.3-3build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libmunge2:amd64",
+    "version": "0.5.15-4ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libmysqlclient-dev",
+    "version": "8.0.46-0ubuntu0.24.04.4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libmysqlclient21:amd64",
+    "version": "8.0.46-0ubuntu0.24.04.4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnamespace-autoclean-perl",
+    "version": "0.29-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libnamespace-clean-perl",
+    "version": "0.27-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libncurses-dev:amd64",
+    "version": "6.4+20240113-1ubuntu2.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libncurses6:amd64",
+    "version": "6.4+20240113-1ubuntu2.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libncursesw6:amd64",
+    "version": "6.4+20240113-1ubuntu2.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnet-dbus-perl",
+    "version": "1.2.0-2build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnet-http-perl",
+    "version": "6.23-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libnet-smtp-ssl-perl",
+    "version": "1.04-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libnet-ssleay-perl:amd64",
+    "version": "1.94-1build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnetcdf-dev",
+    "version": "1:4.9.2-5ubuntu4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnetcdf19t64:amd64",
+    "version": "1:4.9.2-5ubuntu4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnetplan1:amd64",
+    "version": "1.1.2-8ubuntu1~24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnettle8t64:amd64",
+    "version": "3.9.1-2.2build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnewt0.52:amd64",
+    "version": "0.52.24-2ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnghttp2-14:amd64",
+    "version": "1.59.0-1ubuntu0.4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnl-3-200:amd64",
+    "version": "3.7.0-0.3build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnl-3-dev:amd64",
+    "version": "3.7.0-0.3build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnl-route-3-200:amd64",
+    "version": "3.7.0-0.3build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnl-route-3-dev:amd64",
+    "version": "3.7.0-0.3build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnpth0t64:amd64",
+    "version": "1.6-3.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnspr4:amd64",
+    "version": "2:4.35-1.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnss-systemd:amd64",
+    "version": "255.4-1ubuntu8.17",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnss3:amd64",
+    "version": "2:3.98-1ubuntu0.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnuma-dev:amd64",
+    "version": "2.0.18-1ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnuma1:amd64",
+    "version": "2.0.18-1ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libnumber-compare-perl",
+    "version": "0.03-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libodbc2:amd64",
+    "version": "2.3.12-1ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libodbccr2:amd64",
+    "version": "2.3.12-1ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libodbcinst2:amd64",
+    "version": "2.3.12-1ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libogdi-dev",
+    "version": "4.1.1+ds-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libogdi4.1:amd64",
+    "version": "4.1.1+ds-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libole-storage-lite-perl",
+    "version": "0.22-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libopencv-core-dev:amd64",
+    "version": "4.6.0+dfsg-13.1ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libopencv-core406t64:amd64",
+    "version": "4.6.0+dfsg-13.1ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libopenjp2-7-dev:amd64",
+    "version": "2.5.0-2ubuntu0.5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libopenjp2-7:amd64",
+    "version": "2.5.0-2ubuntu0.5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libopenmpi-dev:amd64",
+    "version": "4.1.6-7ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libopenmpi3t64:amd64",
+    "version": "4.1.6-7ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libp11-kit0:amd64",
+    "version": "0.25.3-4ubuntu2.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpackage-stash-perl",
+    "version": "0.40-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libpackage-stash-xs-perl:amd64",
+    "version": "0.30-1build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpackagekit-glib2-18:amd64",
+    "version": "1.2.8-2ubuntu1.5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpadwalker-perl",
+    "version": "2.5-1build6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpam-cap:amd64",
+    "version": "1:2.66-5ubuntu2.4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpam-modules-bin",
+    "version": "1.5.3-5ubuntu5.7",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpam-modules:amd64",
+    "version": "1.5.3-5ubuntu5.7",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpam-runtime",
+    "version": "1.5.3-5ubuntu5.7",
+    "architecture": "all"
+  },
+  {
+    "name": "libpam-systemd:amd64",
+    "version": "255.4-1ubuntu8.17",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpam0g:amd64",
+    "version": "1.5.3-5ubuntu5.7",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpango-1.0-0:amd64",
+    "version": "1.52.1+ds-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpangocairo-1.0-0:amd64",
+    "version": "1.52.1+ds-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpangoft2-1.0-0:amd64",
+    "version": "1.52.1+ds-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpaper-utils",
+    "version": "1.1.29build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpaper1:amd64",
+    "version": "1.1.29build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libparams-classify-perl:amd64",
+    "version": "0.015-2build5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libparams-util-perl",
+    "version": "1.102-2build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libparams-validate-perl:amd64",
+    "version": "1.31-2build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libparams-validationcompiler-perl",
+    "version": "0.31-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libparse-recdescent-perl",
+    "version": "1.967015+dfsg-4",
+    "architecture": "all"
+  },
+  {
+    "name": "libpciaccess0:amd64",
+    "version": "0.17-3ubuntu0.24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpcre2-16-0:amd64",
+    "version": "10.42-4ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpcre2-32-0:amd64",
+    "version": "10.42-4ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpcre2-8-0:amd64",
+    "version": "10.42-4ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpcre2-dev:amd64",
+    "version": "10.42-4ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpcre2-posix3:amd64",
+    "version": "10.42-4ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpcsclite1:amd64",
+    "version": "2.0.3-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpdfbox-java",
+    "version": "1:1.8.16-5",
+    "architecture": "all"
+  },
+  {
+    "name": "libperl5.38t64:amd64",
+    "version": "5.38.2-3.2ubuntu0.4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libperlio-utf8-strict-perl",
+    "version": "0.010-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpipeline1:amd64",
+    "version": "1.5.7-2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpixman-1-0:amd64",
+    "version": "0.42.2-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpkgconf3:amd64",
+    "version": "1.8.1-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpmix-dev:amd64",
+    "version": "5.0.1-4.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpmix2t64:amd64",
+    "version": "5.0.1-4.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpng-dev:amd64",
+    "version": "1.6.43-5ubuntu0.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpng-tools",
+    "version": "1.6.43-5ubuntu0.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpng16-16t64:amd64",
+    "version": "1.6.43-5ubuntu0.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpolkit-agent-1-0:amd64",
+    "version": "124-2ubuntu1.24.04.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpolkit-gobject-1-0:amd64",
+    "version": "124-2ubuntu1.24.04.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpoppler-dev:amd64",
+    "version": "24.02.0-1ubuntu9.9",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpoppler-private-dev:amd64",
+    "version": "24.02.0-1ubuntu9.9",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpoppler134:amd64",
+    "version": "24.02.0-1ubuntu9.9",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpopt0:amd64",
+    "version": "1.19+dfsg-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpotrace0:amd64",
+    "version": "1.16-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpq-dev",
+    "version": "16.15-0ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpq5:amd64",
+    "version": "16.15-0ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libproc2-0:amd64",
+    "version": "2:4.0.4-4ubuntu3.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libproj-dev:amd64",
+    "version": "9.4.0-1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libproj25:amd64",
+    "version": "9.4.0-1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpsl5t64:amd64",
+    "version": "0.21.2-1.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpsm-infinipath1",
+    "version": "3.3+20.604758e7-6.3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpsm2-2",
+    "version": "11.2.185-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libptexenc1:amd64",
+    "version": "2023.20230311.66589-9build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpthread-stubs0-dev:amd64",
+    "version": "0.4-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpython3-dev:amd64",
+    "version": "3.12.3-0ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpython3-stdlib:amd64",
+    "version": "3.12.3-0ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpython3.12-dev:amd64",
+    "version": "3.12.3-1ubuntu0.16",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpython3.12-minimal:amd64",
+    "version": "3.12.3-1ubuntu0.16",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpython3.12-stdlib:amd64",
+    "version": "3.12.3-1ubuntu0.16",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libpython3.12t64:amd64",
+    "version": "3.12.3-1ubuntu0.16",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libqhull-dev:amd64",
+    "version": "2020.2-6build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libqhull-r8.0:amd64",
+    "version": "2020.2-6build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libqhull8.0:amd64",
+    "version": "2020.2-6build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libqhullcpp8.0:amd64",
+    "version": "2020.2-6build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libquadmath0:amd64",
+    "version": "14.2.0-4ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "librdmacm1t64:amd64",
+    "version": "50.0-2ubuntu0.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libreadline-dev:amd64",
+    "version": "8.2-4build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libreadline8t64:amd64",
+    "version": "8.2-4build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libreadonly-perl",
+    "version": "2.050-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libref-util-perl",
+    "version": "0.204-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libref-util-xs-perl",
+    "version": "0.117-2build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libregexp-common-perl",
+    "version": "2017060201-3",
+    "architecture": "all"
+  },
+  {
+    "name": "librhash0:amd64",
+    "version": "1.4.3-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "librole-tiny-perl",
+    "version": "2.002004-1",
+    "architecture": "all"
+  },
+  {
+    "name": "librsvg2-2:amd64",
+    "version": "2.58.0+dfsg-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "librsvg2-common:amd64",
+    "version": "2.58.0+dfsg-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "librtmp1:amd64",
+    "version": "2.4+20151223.gitfa8646d.1-2build7",
+    "architecture": "amd64"
+  },
+  {
+    "name": "librttopo-dev:amd64",
+    "version": "1.1.0-3build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "librttopo1:amd64",
+    "version": "1.1.0-3build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libruby3.2:amd64",
+    "version": "3.2.3-1ubuntu0.24.04.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libruby:amd64",
+    "version": "1:3.2~ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsasl2-2:amd64",
+    "version": "2.1.28+dfsg1-5ubuntu3.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsasl2-modules-db:amd64",
+    "version": "2.1.28+dfsg1-5ubuntu3.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsasl2-modules:amd64",
+    "version": "2.1.28+dfsg1-5ubuntu3.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libseccomp2:amd64",
+    "version": "2.5.5-1ubuntu3.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libselinux1-dev:amd64",
+    "version": "3.5-2ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libselinux1:amd64",
+    "version": "3.5-2ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsemanage-common",
+    "version": "3.5-1build5",
+    "architecture": "all"
+  },
+  {
+    "name": "libsemanage2:amd64",
+    "version": "3.5-1build5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsensors-config",
+    "version": "1:3.6.0-9build1",
+    "architecture": "all"
+  },
+  {
+    "name": "libsensors5:amd64",
+    "version": "1:3.6.0-9build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsepol-dev:amd64",
+    "version": "3.5-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsepol2:amd64",
+    "version": "3.5-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsframe1:amd64",
+    "version": "2.42-4ubuntu2.10",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsharpyuv-dev:amd64",
+    "version": "1.3.2-0.4build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsharpyuv0:amd64",
+    "version": "1.3.2-0.4build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsigsegv2:amd64",
+    "version": "2.14-1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libslang2:amd64",
+    "version": "2.3.3-3build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsm6:amd64",
+    "version": "2:1.2.3-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsmartcols1:amd64",
+    "version": "2.39.3-9ubuntu6.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsnappy1v5:amd64",
+    "version": "1.1.10-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsodium23:amd64",
+    "version": "1.0.18-1ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsombok3:amd64",
+    "version": "2.4.0-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsort-key-perl",
+    "version": "1.33-3build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libspatialite-dev:amd64",
+    "version": "5.1.0-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libspatialite8t64:amd64",
+    "version": "5.1.0-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libspecio-perl",
+    "version": "0.48-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libspreadsheet-parseexcel-perl",
+    "version": "0.6600-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libspreadsheet-writeexcel-perl",
+    "version": "2.40-4",
+    "architecture": "all"
+  },
+  {
+    "name": "libsqlite3-0:amd64",
+    "version": "3.45.1-1ubuntu2.7",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsqlite3-dev:amd64",
+    "version": "3.45.1-1ubuntu2.7",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libss2:amd64",
+    "version": "1.47.0-2.4~exp1ubuntu4.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libssh-4:amd64",
+    "version": "0.10.6-2ubuntu0.5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libssl-dev:amd64",
+    "version": "3.0.13-0ubuntu3.15",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libssl3t64:amd64",
+    "version": "3.0.13-0ubuntu3.15",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libstdc++-13-dev:amd64",
+    "version": "13.3.0-6ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libstdc++6:amd64",
+    "version": "14.2.0-4ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libstemmer0d:amd64",
+    "version": "2.2.0-4build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libstring-crc32-perl",
+    "version": "2.100-2build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsub-exporter-perl",
+    "version": "0.990-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libsub-exporter-progressive-perl",
+    "version": "0.001013-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libsub-identify-perl",
+    "version": "0.14-3build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsub-install-perl",
+    "version": "0.929-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libsub-name-perl:amd64",
+    "version": "0.27-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsub-quote-perl",
+    "version": "2.006008-1ubuntu1",
+    "architecture": "all"
+  },
+  {
+    "name": "libsuperlu-dev:amd64",
+    "version": "6.0.1+dfsg1-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsuperlu6:amd64",
+    "version": "6.0.1+dfsg1-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsynctex2:amd64",
+    "version": "2023.20230311.66589-9build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsys-hostname-long-perl",
+    "version": "1.5-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libsystemd-shared:amd64",
+    "version": "255.4-1ubuntu8.17",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsystemd0:amd64",
+    "version": "255.4-1ubuntu8.17",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libsz2:amd64",
+    "version": "1.1.2-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtasn1-6:amd64",
+    "version": "4.19.0-3ubuntu0.24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtbb-dev:amd64",
+    "version": "2021.11.0-2ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtbb12:amd64",
+    "version": "2021.11.0-2ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtbbbind-2-5:amd64",
+    "version": "2021.11.0-2ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtbbmalloc2:amd64",
+    "version": "2021.11.0-2ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtcl8.6:amd64",
+    "version": "8.6.14+dfsg-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libteckit0:amd64",
+    "version": "2.5.12+ds1-1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtexlua53-5:amd64",
+    "version": "2023.20230311.66589-9build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtext-bibtex-perl",
+    "version": "0.89-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtext-charwidth-perl:amd64",
+    "version": "0.04-11build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtext-csv-perl",
+    "version": "2.04-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libtext-csv-xs-perl:amd64",
+    "version": "1.53-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtext-glob-perl",
+    "version": "0.11-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libtext-iconv-perl:amd64",
+    "version": "1.7-8build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtext-roman-perl",
+    "version": "3.5-4",
+    "architecture": "all"
+  },
+  {
+    "name": "libtext-wrapi18n-perl",
+    "version": "0.06-10",
+    "architecture": "all"
+  },
+  {
+    "name": "libthai-data",
+    "version": "0.1.29-2build1",
+    "architecture": "all"
+  },
+  {
+    "name": "libthai0:amd64",
+    "version": "0.1.29-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtie-cycle-perl",
+    "version": "1.228-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libtie-ixhash-perl",
+    "version": "1.23-4",
+    "architecture": "all"
+  },
+  {
+    "name": "libtiff-dev:amd64",
+    "version": "4.5.1+git230720-4ubuntu2.5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtiff5-dev:amd64",
+    "version": "4.5.1+git230720-4ubuntu2.5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtiff6:amd64",
+    "version": "4.5.1+git230720-4ubuntu2.5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtiffxx6:amd64",
+    "version": "4.5.1+git230720-4ubuntu2.5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtimedate-perl",
+    "version": "2.3300-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libtinfo6:amd64",
+    "version": "6.4+20240113-1ubuntu2.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtirpc-common",
+    "version": "1.3.4+ds-1.1build1",
+    "architecture": "all"
+  },
+  {
+    "name": "libtirpc-dev:amd64",
+    "version": "1.3.4+ds-1.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtirpc3t64:amd64",
+    "version": "1.3.4+ds-1.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtk8.6:amd64",
+    "version": "8.6.14-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtool",
+    "version": "2.4.7-7build1",
+    "architecture": "all"
+  },
+  {
+    "name": "libtry-tiny-perl",
+    "version": "0.31-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libtsan2:amd64",
+    "version": "14.2.0-4ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libtypes-serialiser-perl",
+    "version": "1.01-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libubsan1:amd64",
+    "version": "14.2.0-4ubuntu2~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libuchardet0:amd64",
+    "version": "0.0.8-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libucx0:amd64",
+    "version": "1.16.0+ds-5ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libudev1:amd64",
+    "version": "255.4-1ubuntu8.17",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libudunits2-0",
+    "version": "2.2.28-7build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libudunits2-data",
+    "version": "2.2.28-7build1",
+    "architecture": "all"
+  },
+  {
+    "name": "libudunits2-dev",
+    "version": "2.2.28-7build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libunicode-linebreak-perl",
+    "version": "0.0.20190101-1build7",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libunicode-map-perl",
+    "version": "0.112-13build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libunistring5:amd64",
+    "version": "1.1-2build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libunwind8:amd64",
+    "version": "1.6.2-3build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liburi-perl",
+    "version": "5.27-1",
+    "architecture": "all"
+  },
+  {
+    "name": "liburiparser-dev",
+    "version": "0.9.7+dfsg-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "liburiparser1:amd64",
+    "version": "0.9.7+dfsg-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libutempter0:amd64",
+    "version": "1.2.1-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libuuid1:amd64",
+    "version": "2.39.3-9ubuntu6.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libuv1-dev:amd64",
+    "version": "1.48.0-1.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libuv1t64:amd64",
+    "version": "1.48.0-1.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libvariable-magic-perl",
+    "version": "0.63-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libvulkan1:amd64",
+    "version": "1.3.275.0-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libwayland-client0:amd64",
+    "version": "1.22.0-2.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libwayland-cursor0:amd64",
+    "version": "1.22.0-2.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libwayland-egl1:amd64",
+    "version": "1.22.0-2.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libwebp-dev:amd64",
+    "version": "1.3.2-0.4build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libwebp7:amd64",
+    "version": "1.3.2-0.4build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libwebpdecoder3:amd64",
+    "version": "1.3.2-0.4build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libwebpdemux2:amd64",
+    "version": "1.3.2-0.4build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libwebpmux3:amd64",
+    "version": "1.3.2-0.4build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libwoff1:amd64",
+    "version": "1.0.2-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libwww-perl",
+    "version": "6.76-1ubuntu0.1",
+    "architecture": "all"
+  },
+  {
+    "name": "libwww-robotrules-perl",
+    "version": "6.02-1",
+    "architecture": "all"
+  },
+  {
+    "name": "libx11-6:amd64",
+    "version": "2:1.8.7-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libx11-data",
+    "version": "2:1.8.7-1build1",
+    "architecture": "all"
+  },
+  {
+    "name": "libx11-dev:amd64",
+    "version": "2:1.8.7-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libx11-protocol-perl",
+    "version": "0.56-9",
+    "architecture": "all"
+  },
+  {
+    "name": "libx11-xcb1:amd64",
+    "version": "2:1.8.7-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libx265-199:amd64",
+    "version": "3.5-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libx265-dev:amd64",
+    "version": "3.5-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxau-dev:amd64",
+    "version": "1:1.0.9-1build6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxau6:amd64",
+    "version": "1:1.0.9-1build6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxaw7:amd64",
+    "version": "2:1.0.14-1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxcb-dri3-0:amd64",
+    "version": "1.15-1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxcb-glx0:amd64",
+    "version": "1.15-1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxcb-present0:amd64",
+    "version": "1.15-1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxcb-randr0:amd64",
+    "version": "1.15-1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxcb-render0:amd64",
+    "version": "1.15-1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxcb-shape0:amd64",
+    "version": "1.15-1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxcb-shm0:amd64",
+    "version": "1.15-1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxcb-sync1:amd64",
+    "version": "1.15-1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxcb-xfixes0:amd64",
+    "version": "1.15-1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxcb1-dev:amd64",
+    "version": "1.15-1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxcb1:amd64",
+    "version": "1.15-1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxcomposite1:amd64",
+    "version": "1:0.4.5-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxcursor1:amd64",
+    "version": "1:1.2.1-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxdamage1:amd64",
+    "version": "1:1.1.6-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxdmcp-dev:amd64",
+    "version": "1:1.1.3-0ubuntu6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxdmcp6:amd64",
+    "version": "1:1.1.3-0ubuntu6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxerces-c-dev:amd64",
+    "version": "3.2.4+debian-1.2ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxerces-c3.2t64:amd64",
+    "version": "3.2.4+debian-1.2ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxext6:amd64",
+    "version": "2:1.3.4-1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxfixes3:amd64",
+    "version": "1:6.0.0-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxft2:amd64",
+    "version": "2.3.6-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxi6:amd64",
+    "version": "2:1.8.1-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxinerama1:amd64",
+    "version": "2:1.1.4-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxkbcommon0:amd64",
+    "version": "1.6.0-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxkbfile1:amd64",
+    "version": "1:1.1.0-1build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxm4:amd64",
+    "version": "2.3.8-3.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxml-libxml-perl",
+    "version": "2.0207+dfsg+really+2.0134-1build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxml-libxml-simple-perl",
+    "version": "1.01-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libxml-libxslt-perl:amd64",
+    "version": "2.002001-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxml-namespacesupport-perl",
+    "version": "1.12-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libxml-parser-perl",
+    "version": "2.47-1ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxml-sax-base-perl",
+    "version": "1.09-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libxml-sax-expat-perl",
+    "version": "0.51-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libxml-sax-perl",
+    "version": "1.02+dfsg-3",
+    "architecture": "all"
+  },
+  {
+    "name": "libxml-twig-perl",
+    "version": "1:3.52-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libxml-writer-perl",
+    "version": "0.900-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libxml-xpathengine-perl",
+    "version": "0.14-2",
+    "architecture": "all"
+  },
+  {
+    "name": "libxml2-dev:amd64",
+    "version": "2.9.14+dfsg-1.3ubuntu3.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxml2:amd64",
+    "version": "2.9.14+dfsg-1.3ubuntu3.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxmlb2:amd64",
+    "version": "0.3.24-1~ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxmu6:amd64",
+    "version": "2:1.1.3-3build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxmuu1:amd64",
+    "version": "2:1.1.3-3build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxnvctrl0:amd64",
+    "version": "510.47.03-0ubuntu4.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxpm4:amd64",
+    "version": "1:3.5.17-1ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxrandr2:amd64",
+    "version": "2:1.5.2-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxrender1:amd64",
+    "version": "1:0.9.10-1.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxshmfence1:amd64",
+    "version": "1.3-1build5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxslt1.1:amd64",
+    "version": "1.1.39-0exp1ubuntu0.24.04.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxss1:amd64",
+    "version": "1:1.2.3-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxstring-perl:amd64",
+    "version": "0.005-2build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxt6t64:amd64",
+    "version": "1:1.2.1-1.2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxtables12:amd64",
+    "version": "1.8.10-3ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxtst6:amd64",
+    "version": "2:1.2.3-1.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxv1:amd64",
+    "version": "2:1.0.11-1.1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxxf86dga1:amd64",
+    "version": "2:1.1.5-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxxf86vm1:amd64",
+    "version": "1:1.1.4-1build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libxxhash0:amd64",
+    "version": "0.8.2-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libyaml-0-2:amd64",
+    "version": "0.2.5-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libzstd-dev:amd64",
+    "version": "1.5.5+dfsg2-2build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libzstd1:amd64",
+    "version": "1.5.5+dfsg2-2build1.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libzzip-0-13t64:amd64",
+    "version": "0.13.72+dfsg.1-1.2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "linux-libc-dev:amd64",
+    "version": "6.8.0-139.139",
+    "architecture": "amd64"
+  },
+  {
+    "name": "littler",
+    "version": "0.3.23-1.2404.0",
+    "architecture": "all"
+  },
+  {
+    "name": "lmodern",
+    "version": "2.005-1",
+    "architecture": "all"
+  },
+  {
+    "name": "locales",
+    "version": "2.39-0ubuntu8.8",
+    "architecture": "all"
+  },
+  {
+    "name": "login",
+    "version": "1:4.13+dfsg1-4ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "logrotate",
+    "version": "3.21.0-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "logsave",
+    "version": "1.47.0-2.4~exp1ubuntu4.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "lsb-release",
+    "version": "12.0-2",
+    "architecture": "all"
+  },
+  {
+    "name": "lshw",
+    "version": "02.19.git.2021.06.19.996aaad9c7-2ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "lsof",
+    "version": "4.95.0-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "lto-disabled-list",
+    "version": "47",
+    "architecture": "all"
+  },
+  {
+    "name": "m4",
+    "version": "1.4.19-4build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "make",
+    "version": "4.3-4.1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "man-db",
+    "version": "2.12.0-4build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "manpages",
+    "version": "6.7-2",
+    "architecture": "all"
+  },
+  {
+    "name": "manpages-dev",
+    "version": "6.7-2",
+    "architecture": "all"
+  },
+  {
+    "name": "mawk",
+    "version": "1.3.4.20240123-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "media-types",
+    "version": "10.1.0",
+    "architecture": "all"
+  },
+  {
+    "name": "mesa-libgallium:amd64",
+    "version": "25.2.8-0ubuntu0.24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "mesa-vulkan-drivers:amd64",
+    "version": "25.2.8-0ubuntu0.24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "motd-news-config",
+    "version": "13ubuntu10.4",
+    "architecture": "all"
+  },
+  {
+    "name": "mount",
+    "version": "2.39.3-9ubuntu6.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "mpi-default-bin",
+    "version": "1.15build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "mpi-default-dev",
+    "version": "1.15build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "mupdf-tools",
+    "version": "1.23.10+ds1-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "mysql-common",
+    "version": "5.8+1.1.0build1",
+    "architecture": "all"
+  },
+  {
+    "name": "nano",
+    "version": "7.2-2ubuntu0.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "ncurses-base",
+    "version": "6.4+20240113-1ubuntu2.2",
+    "architecture": "all"
+  },
+  {
+    "name": "ncurses-bin",
+    "version": "6.4+20240113-1ubuntu2.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "netbase",
+    "version": "6.4",
+    "architecture": "all"
+  },
+  {
+    "name": "netcat-openbsd",
+    "version": "1.226-1ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "netplan-generator",
+    "version": "1.1.2-8ubuntu1~24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "netplan.io",
+    "version": "1.1.2-8ubuntu1~24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "networkd-dispatcher",
+    "version": "2.2.4-1",
+    "architecture": "all"
+  },
+  {
+    "name": "ocl-icd-libopencl1:amd64",
+    "version": "2.3.2-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "openjdk-21-jre-headless:amd64",
+    "version": "21.0.12+8-1~24.04",
+    "architecture": "amd64"
+  },
+  {
+    "name": "openjdk-21-jre:amd64",
+    "version": "21.0.12+8-1~24.04",
+    "architecture": "amd64"
+  },
+  {
+    "name": "openmpi-bin",
+    "version": "4.1.6-7ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "openmpi-common",
+    "version": "4.1.6-7ubuntu2",
+    "architecture": "all"
+  },
+  {
+    "name": "openssh-client",
+    "version": "1:9.6p1-3ubuntu13.19",
+    "architecture": "amd64"
+  },
+  {
+    "name": "openssl",
+    "version": "3.0.13-0ubuntu3.15",
+    "architecture": "amd64"
+  },
+  {
+    "name": "packagekit",
+    "version": "1.2.8-2ubuntu1.5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "packagekit-tools",
+    "version": "1.2.8-2ubuntu1.5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "packages-microsoft-prod",
+    "version": "1.2-ubuntu24.04",
+    "architecture": "all"
+  },
+  {
+    "name": "passwd",
+    "version": "1:4.13+dfsg1-4ubuntu3.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "pastebinit",
+    "version": "1.6.2-1",
+    "architecture": "all"
+  },
+  {
+    "name": "patch",
+    "version": "2.7.6-7build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "pci.ids",
+    "version": "0.0~2024.03.31-1ubuntu0.1",
+    "architecture": "all"
+  },
+  {
+    "name": "perl",
+    "version": "5.38.2-3.2ubuntu0.4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "perl-base",
+    "version": "5.38.2-3.2ubuntu0.4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "perl-modules-5.38",
+    "version": "5.38.2-3.2ubuntu0.4",
+    "architecture": "all"
+  },
+  {
+    "name": "perl-openssl-defaults:amd64",
+    "version": "7build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "pinentry-curses",
+    "version": "1.2.1-3ubuntu5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "pkg-config:amd64",
+    "version": "1.8.1-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "pkgconf-bin",
+    "version": "1.8.1-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "pkgconf:amd64",
+    "version": "1.8.1-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "polkitd",
+    "version": "124-2ubuntu1.24.04.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "poppler-data",
+    "version": "0.4.12-1",
+    "architecture": "all"
+  },
+  {
+    "name": "poppler-utils",
+    "version": "24.02.0-1ubuntu9.9",
+    "architecture": "amd64"
+  },
+  {
+    "name": "powershell",
+    "version": "7.6.5-1.deb",
+    "architecture": "amd64"
+  },
+  {
+    "name": "preview-latex-style",
+    "version": "13.2-1",
+    "architecture": "all"
+  },
+  {
+    "name": "procps",
+    "version": "2:4.0.4-4ubuntu3.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "proj-bin",
+    "version": "9.4.0-1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "proj-data",
+    "version": "9.4.0-1build2",
+    "architecture": "all"
+  },
+  {
+    "name": "psmisc",
+    "version": "23.7-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "publicsuffix",
+    "version": "20231001.0357-0.1",
+    "architecture": "all"
+  },
+  {
+    "name": "pybind11-dev",
+    "version": "2.11.1-2",
+    "architecture": "all"
+  },
+  {
+    "name": "python-apt-common",
+    "version": "2.7.7ubuntu5.2",
+    "architecture": "all"
+  },
+  {
+    "name": "python-babel-localedata",
+    "version": "2.10.3-3build1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3",
+    "version": "3.12.3-0ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-apport",
+    "version": "2.28.3-0ubuntu0.1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-apt",
+    "version": "2.7.7ubuntu5.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-attr",
+    "version": "23.2.0-2",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-automat",
+    "version": "22.10.0-2",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-babel",
+    "version": "2.10.3-3build1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-bcrypt",
+    "version": "3.2.2-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-blinker",
+    "version": "1.7.0-1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-certifi",
+    "version": "2023.11.17-1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-cffi-backend:amd64",
+    "version": "1.16.0-2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-chardet",
+    "version": "5.2.0+dfsg-1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-click",
+    "version": "8.1.6-2",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-colorama",
+    "version": "0.4.6-4",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-commandnotfound",
+    "version": "23.04.0",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-configobj",
+    "version": "5.0.8-3",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-constantly",
+    "version": "23.10.4-1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-cryptography",
+    "version": "41.0.7-4ubuntu0.4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-dbus",
+    "version": "1.3.2-5build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-debconf",
+    "version": "1.5.86ubuntu1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-dev",
+    "version": "3.12.3-0ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-distro",
+    "version": "1.9.0-1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-distro-info",
+    "version": "1.7build1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-distupgrade",
+    "version": "1:24.04.28",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-gdbm:amd64",
+    "version": "3.12.3-0ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-gi",
+    "version": "3.48.2-1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-hamcrest",
+    "version": "2.1.0-1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-httplib2",
+    "version": "0.20.4-3ubuntu0.1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-hyperlink",
+    "version": "21.0.0-5",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-idna",
+    "version": "3.6-2ubuntu0.2",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-incremental",
+    "version": "22.10.0-1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-jinja2",
+    "version": "3.1.2-1ubuntu1.3",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-json-pointer",
+    "version": "2.0-0ubuntu1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-jsonpatch",
+    "version": "1.32-3",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-jsonschema",
+    "version": "4.10.3-2ubuntu1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-jwt",
+    "version": "2.7.0-1ubuntu0.1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-launchpadlib",
+    "version": "1.11.0-6",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-lazr.restfulclient",
+    "version": "0.14.6-1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-lazr.uri",
+    "version": "1.0.6-3",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-markdown-it",
+    "version": "3.0.0-2",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-markupsafe",
+    "version": "2.1.5-1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-mdurl",
+    "version": "0.1.2-1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-minimal",
+    "version": "3.12.3-0ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-netifaces:amd64",
+    "version": "0.11.0-2build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-netplan",
+    "version": "1.1.2-8ubuntu1~24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-newt:amd64",
+    "version": "0.52.24-2ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-oauthlib",
+    "version": "3.2.2-1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-openssl",
+    "version": "23.2.0-1ubuntu0.1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-packaging",
+    "version": "24.0-1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-pip",
+    "version": "24.0+dfsg-1ubuntu1.3",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-pip-whl",
+    "version": "24.0+dfsg-1ubuntu1.3",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-pkg-resources",
+    "version": "68.1.2-2ubuntu1.2",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-problem-report",
+    "version": "2.28.3-0ubuntu0.1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-pyasn1",
+    "version": "0.4.8-4ubuntu0.3",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-pyasn1-modules",
+    "version": "0.2.8-1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-pycurl",
+    "version": "7.45.3-1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-pygments",
+    "version": "2.17.2+dfsg-1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-pyparsing",
+    "version": "3.1.1-1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-pyrsistent:amd64",
+    "version": "0.20.0-1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-requests",
+    "version": "2.31.0+dfsg-1ubuntu1.1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-rich",
+    "version": "13.7.1-1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-serial",
+    "version": "3.5-2",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-service-identity",
+    "version": "24.1.0-1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-setuptools",
+    "version": "68.1.2-2ubuntu1.2",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-setuptools-whl",
+    "version": "68.1.2-2ubuntu1.2",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-six",
+    "version": "1.16.0-4",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-software-properties",
+    "version": "0.99.49.4",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-systemd",
+    "version": "235-1build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-twisted",
+    "version": "24.3.0-1ubuntu0.2",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-typing-extensions",
+    "version": "4.10.0-1",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-tz",
+    "version": "2024.1-2",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-update-manager",
+    "version": "1:24.04.12",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-urllib3",
+    "version": "2.0.7-1ubuntu0.7",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-venv",
+    "version": "3.12.3-0ubuntu2.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-wadllib",
+    "version": "1.3.6-5",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-wheel",
+    "version": "0.42.0-2",
+    "architecture": "all"
+  },
+  {
+    "name": "python3-yaml",
+    "version": "6.0.1-2build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3-zope.interface",
+    "version": "6.1-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3.12",
+    "version": "3.12.3-1ubuntu0.16",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3.12-dev",
+    "version": "3.12.3-1ubuntu0.16",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3.12-minimal",
+    "version": "3.12.3-1ubuntu0.16",
+    "architecture": "amd64"
+  },
+  {
+    "name": "python3.12-venv",
+    "version": "3.12.3-1ubuntu0.16",
+    "architecture": "amd64"
+  },
+  {
+    "name": "r-base",
+    "version": "4.6.1-6.2404.0",
+    "architecture": "all"
+  },
+  {
+    "name": "r-base-core",
+    "version": "4.6.1-6.2404.0",
+    "architecture": "amd64"
+  },
+  {
+    "name": "r-base-dev",
+    "version": "4.6.1-6.2404.0",
+    "architecture": "all"
+  },
+  {
+    "name": "r-base-html",
+    "version": "4.6.1-6.2404.0",
+    "architecture": "all"
+  },
+  {
+    "name": "r-cran-boot",
+    "version": "1.3-32-1.2404.0",
+    "architecture": "all"
+  },
+  {
+    "name": "r-cran-class",
+    "version": "7.3-24-1.2404.0",
+    "architecture": "amd64"
+  },
+  {
+    "name": "r-cran-cluster",
+    "version": "2.1.8.2-1.2404.0",
+    "architecture": "amd64"
+  },
+  {
+    "name": "r-cran-codetools",
+    "version": "0.2-20-1.2404.0",
+    "architecture": "all"
+  },
+  {
+    "name": "r-cran-foreign",
+    "version": "0.8.91-1.2404.0",
+    "architecture": "amd64"
+  },
+  {
+    "name": "r-cran-kernsmooth",
+    "version": "2.23-27-1.2404.0",
+    "architecture": "amd64"
+  },
+  {
+    "name": "r-cran-lattice",
+    "version": "0.23-1-1.2404.0",
+    "architecture": "amd64"
+  },
+  {
+    "name": "r-cran-littler",
+    "version": "0.3.23-1.2404.0",
+    "architecture": "amd64"
+  },
+  {
+    "name": "r-cran-mass",
+    "version": "7.3-66-1.2404.0",
+    "architecture": "amd64"
+  },
+  {
+    "name": "r-cran-matrix",
+    "version": "1.7-6-1.2404.0",
+    "architecture": "amd64"
+  },
+  {
+    "name": "r-cran-mgcv",
+    "version": "1.9-4-1.2404.0",
+    "architecture": "amd64"
+  },
+  {
+    "name": "r-cran-nlme",
+    "version": "3.1.171-1.2404.0",
+    "architecture": "amd64"
+  },
+  {
+    "name": "r-cran-nnet",
+    "version": "7.3-21-1.2404.0",
+    "architecture": "amd64"
+  },
+  {
+    "name": "r-cran-rpart",
+    "version": "4.1.27-1.2404.0",
+    "architecture": "amd64"
+  },
+  {
+    "name": "r-cran-spatial",
+    "version": "7.3-17-1.2404.0",
+    "architecture": "amd64"
+  },
+  {
+    "name": "r-cran-survival",
+    "version": "3.8-11-1.2404.0",
+    "architecture": "amd64"
+  },
+  {
+    "name": "r-doc-html",
+    "version": "4.6.1-6.2404.0",
+    "architecture": "all"
+  },
+  {
+    "name": "r-recommended",
+    "version": "4.6.1-6.2404.0",
+    "architecture": "all"
+  },
+  {
+    "name": "rake",
+    "version": "13.0.6-3",
+    "architecture": "all"
+  },
+  {
+    "name": "rclone",
+    "version": "1.60.1+dfsg-3ubuntu0.24.04.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "readline-common",
+    "version": "8.2-4build1",
+    "architecture": "all"
+  },
+  {
+    "name": "rpcsvc-proto",
+    "version": "1.4.2-0ubuntu7",
+    "architecture": "amd64"
+  },
+  {
+    "name": "rsync",
+    "version": "3.2.7-1ubuntu1.5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "rsyslog",
+    "version": "8.2312.0-3ubuntu9.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "ruby",
+    "version": "1:3.2~ubuntu1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "ruby-net-telnet",
+    "version": "0.2.0-1",
+    "architecture": "all"
+  },
+  {
+    "name": "ruby-rubygems",
+    "version": "3.4.20-1",
+    "architecture": "all"
+  },
+  {
+    "name": "ruby-sdbm:amd64",
+    "version": "1.0.0-5build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "ruby-webrick",
+    "version": "1.8.1-1ubuntu0.2",
+    "architecture": "all"
+  },
+  {
+    "name": "ruby-xmlrpc",
+    "version": "0.3.2-2",
+    "architecture": "all"
+  },
+  {
+    "name": "ruby3.2",
+    "version": "3.2.3-1ubuntu0.24.04.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "rubygems-integration",
+    "version": "1.18",
+    "architecture": "all"
+  },
+  {
+    "name": "run-one",
+    "version": "1.17-0ubuntu2",
+    "architecture": "all"
+  },
+  {
+    "name": "sed",
+    "version": "4.9-2ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "sensible-utils",
+    "version": "0.0.22",
+    "architecture": "all"
+  },
+  {
+    "name": "session-migration",
+    "version": "0.3.9build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "sgml-base",
+    "version": "1.31",
+    "architecture": "all"
+  },
+  {
+    "name": "shared-mime-info",
+    "version": "2.4-4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "show-motd",
+    "version": "3.12",
+    "architecture": "all"
+  },
+  {
+    "name": "snapd",
+    "version": "2.76.3+ubuntu24.04",
+    "architecture": "amd64"
+  },
+  {
+    "name": "software-properties-common",
+    "version": "0.99.49.4",
+    "architecture": "all"
+  },
+  {
+    "name": "squashfs-tools",
+    "version": "1:4.6.1-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "sudo",
+    "version": "1.9.15p5-3ubuntu5.24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "systemd",
+    "version": "255.4-1ubuntu8.17",
+    "architecture": "amd64"
+  },
+  {
+    "name": "systemd-dev",
+    "version": "255.4-1ubuntu8.17",
+    "architecture": "all"
+  },
+  {
+    "name": "systemd-hwe-hwdb",
+    "version": "255.1.7",
+    "architecture": "all"
+  },
+  {
+    "name": "systemd-resolved",
+    "version": "255.4-1ubuntu8.17",
+    "architecture": "amd64"
+  },
+  {
+    "name": "systemd-sysv",
+    "version": "255.4-1ubuntu8.17",
+    "architecture": "amd64"
+  },
+  {
+    "name": "systemd-timesyncd",
+    "version": "255.4-1ubuntu8.17",
+    "architecture": "amd64"
+  },
+  {
+    "name": "sysvinit-utils",
+    "version": "3.08-6ubuntu3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "t1utils",
+    "version": "1.41-4build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "tar",
+    "version": "1.35+dfsg-3ubuntu0.4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "tcl",
+    "version": "8.6.14build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "tcl8.6",
+    "version": "8.6.14+dfsg-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "teckit",
+    "version": "2.5.12+ds1-1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "tex-common",
+    "version": "6.18",
+    "architecture": "all"
+  },
+  {
+    "name": "tex-gyre",
+    "version": "20180621-6",
+    "architecture": "all"
+  },
+  {
+    "name": "texlive-base",
+    "version": "2023.20240207-1",
+    "architecture": "all"
+  },
+  {
+    "name": "texlive-bibtex-extra",
+    "version": "2023.20240207-1",
+    "architecture": "all"
+  },
+  {
+    "name": "texlive-binaries",
+    "version": "2023.20230311.66589-9build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "texlive-fonts-recommended",
+    "version": "2023.20240207-1",
+    "architecture": "all"
+  },
+  {
+    "name": "texlive-latex-base",
+    "version": "2023.20240207-1",
+    "architecture": "all"
+  },
+  {
+    "name": "texlive-latex-extra",
+    "version": "2023.20240207-1",
+    "architecture": "all"
+  },
+  {
+    "name": "texlive-latex-recommended",
+    "version": "2023.20240207-1",
+    "architecture": "all"
+  },
+  {
+    "name": "texlive-luatex",
+    "version": "2023.20240207-1",
+    "architecture": "all"
+  },
+  {
+    "name": "texlive-pictures",
+    "version": "2023.20240207-1",
+    "architecture": "all"
+  },
+  {
+    "name": "texlive-plain-generic",
+    "version": "2023.20240207-1",
+    "architecture": "all"
+  },
+  {
+    "name": "texlive-xetex",
+    "version": "2023.20240207-1",
+    "architecture": "all"
+  },
+  {
+    "name": "time",
+    "version": "1.9-0.2build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "tipa",
+    "version": "2:1.3-21",
+    "architecture": "all"
+  },
+  {
+    "name": "tk",
+    "version": "8.6.14build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "tk8.6",
+    "version": "8.6.14-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "tmux",
+    "version": "3.4-1ubuntu0.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "tzdata",
+    "version": "2026c-0ubuntu0.24.04.1",
+    "architecture": "all"
+  },
+  {
+    "name": "ubuntu-keyring",
+    "version": "2023.11.28.1",
+    "architecture": "all"
+  },
+  {
+    "name": "ubuntu-minimal",
+    "version": "1.539.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "ubuntu-mono",
+    "version": "24.04-0ubuntu1",
+    "architecture": "all"
+  },
+  {
+    "name": "ubuntu-pro-client",
+    "version": "37.2ubuntu~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "ubuntu-pro-client-l10n",
+    "version": "37.2ubuntu~24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "ubuntu-release-upgrader-core",
+    "version": "1:24.04.28",
+    "architecture": "all"
+  },
+  {
+    "name": "ubuntu-wsl",
+    "version": "1.539.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "ucf",
+    "version": "3.0043+nmu1",
+    "architecture": "all"
+  },
+  {
+    "name": "udev",
+    "version": "255.4-1ubuntu8.17",
+    "architecture": "amd64"
+  },
+  {
+    "name": "unattended-upgrades",
+    "version": "2.9.1+nmu4ubuntu1",
+    "architecture": "all"
+  },
+  {
+    "name": "unixodbc-common",
+    "version": "2.3.12-1ubuntu0.24.04.1",
+    "architecture": "all"
+  },
+  {
+    "name": "unixodbc-dev:amd64",
+    "version": "2.3.12-1ubuntu0.24.04.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "unzip",
+    "version": "6.0-28ubuntu4.1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "update-manager-core",
+    "version": "1:24.04.12",
+    "architecture": "all"
+  },
+  {
+    "name": "update-motd",
+    "version": "3.12",
+    "architecture": "all"
+  },
+  {
+    "name": "usb.ids",
+    "version": "2024.03.18-1",
+    "architecture": "all"
+  },
+  {
+    "name": "util-linux",
+    "version": "2.39.3-9ubuntu6.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "uuid-dev:amd64",
+    "version": "2.39.3-9ubuntu6.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "uuid-runtime",
+    "version": "2.39.3-9ubuntu6.6",
+    "architecture": "amd64"
+  },
+  {
+    "name": "vim",
+    "version": "2:9.1.0016-1ubuntu7.20",
+    "architecture": "amd64"
+  },
+  {
+    "name": "vim-common",
+    "version": "2:9.1.0016-1ubuntu7.20",
+    "architecture": "all"
+  },
+  {
+    "name": "vim-runtime",
+    "version": "2:9.1.0016-1ubuntu7.20",
+    "architecture": "all"
+  },
+  {
+    "name": "vim-tiny",
+    "version": "2:9.1.0016-1ubuntu7.20",
+    "architecture": "amd64"
+  },
+  {
+    "name": "wget",
+    "version": "1.21.4-1ubuntu4.5",
+    "architecture": "amd64"
+  },
+  {
+    "name": "whiptail",
+    "version": "0.52.24-2ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "wolframscript",
+    "version": "14.3.0+20250702878",
+    "architecture": "amd64"
+  },
+  {
+    "name": "wsl-pro-service",
+    "version": "0.1.18~24.04.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "wsl-setup",
+    "version": "0.5.10~24.04.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "x11-common",
+    "version": "1:7.7+23ubuntu3",
+    "architecture": "all"
+  },
+  {
+    "name": "x11-utils",
+    "version": "7.7+6build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "x11-xserver-utils",
+    "version": "7.7+10build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "x11proto-dev",
+    "version": "2023.2-1",
+    "architecture": "all"
+  },
+  {
+    "name": "xauth",
+    "version": "1:1.1.2-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "xaw3dg:amd64",
+    "version": "1.5+F-1.1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "xdg-user-dirs",
+    "version": "0.18-1build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "xdg-utils",
+    "version": "1.1.3-4.1ubuntu3",
+    "architecture": "all"
+  },
+  {
+    "name": "xfonts-encodings",
+    "version": "1:1.0.5-0ubuntu2",
+    "architecture": "all"
+  },
+  {
+    "name": "xfonts-utils",
+    "version": "1:7.7+6build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "xkb-data",
+    "version": "2.41-2ubuntu1.1",
+    "architecture": "all"
+  },
+  {
+    "name": "xml-core",
+    "version": "0.19",
+    "architecture": "all"
+  },
+  {
+    "name": "xorg-sgml-doctools",
+    "version": "1:1.11-1.1",
+    "architecture": "all"
+  },
+  {
+    "name": "xpdf",
+    "version": "3.04+git20240202-1build3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "xtrans-dev",
+    "version": "1.4.0-1",
+    "architecture": "all"
+  },
+  {
+    "name": "xxd",
+    "version": "2:9.1.0016-1ubuntu7.20",
+    "architecture": "amd64"
+  },
+  {
+    "name": "xz-utils",
+    "version": "5.6.1+really5.4.5-1ubuntu0.3",
+    "architecture": "amd64"
+  },
+  {
+    "name": "zip",
+    "version": "3.0-13ubuntu0.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "zlib1g-dev:amd64",
+    "version": "1:1.3.dfsg-3.1ubuntu2.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "zlib1g:amd64",
+    "version": "1:1.3.dfsg-3.1ubuntu2.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "zsh",
+    "version": "5.9-6ubuntu2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "zsh-common",
+    "version": "5.9-6ubuntu2",
+    "architecture": "all"
+  },
+  {
+    "name": "zutty",
+    "version": "0.14.8.20231210+dfsg1-1",
+    "architecture": "amd64"
+  }
+]

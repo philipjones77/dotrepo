@@ -1,0 +1,200 @@
+{
+  "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+  "Sources": [
+    {
+      "Packages": [
+        {
+          "PackageIdentifier": "Anaconda.Miniconda3",
+          "Version": "py313_26.3.2-2"
+        },
+        {
+          "PackageIdentifier": "Anthropic.Claude",
+          "Version": "1.44121.2.0"
+        },
+        {
+          "PackageIdentifier": "Git.Git",
+          "Version": "2.55.0.5"
+        },
+        {
+          "PackageIdentifier": "GitHub.cli",
+          "Version": "2.100.0"
+        },
+        {
+          "PackageIdentifier": "Google.Antigravity",
+          "Version": "2.12.2"
+        },
+        {
+          "PackageIdentifier": "Google.AntigravityIDE",
+          "Version": "2.5.5"
+        },
+        {
+          "PackageIdentifier": "Google.CloudSDK",
+          "Version": "Unknown"
+        },
+        {
+          "PackageIdentifier": "Google.GoogleDrive",
+          "Version": "130.0.2.0"
+        },
+        {
+          "PackageIdentifier": "Microsoft.365Copilot",
+          "Version": "19.2609.33021.0"
+        },
+        {
+          "PackageIdentifier": "Microsoft.AppInstaller",
+          "Version": "1.29.290.0"
+        },
+        {
+          "PackageIdentifier": "Microsoft.CLRTypesSQLServer.2019",
+          "Version": "15.0.2000.5"
+        },
+        {
+          "PackageIdentifier": "Microsoft.DirectX",
+          "Version": "9.29.1974.0"
+        },
+        {
+          "PackageIdentifier": "Microsoft.DotNet.AspNetCore.8",
+          "Version": "8.0.30"
+        },
+        {
+          "PackageIdentifier": "Microsoft.DotNet.AspNetCore.9",
+          "Version": "9.0.19"
+        },
+        {
+          "PackageIdentifier": "Microsoft.DotNet.DesktopRuntime.8",
+          "Version": "8.0.30"
+        },
+        {
+          "PackageIdentifier": "Microsoft.DotNet.Native.Runtime",
+          "Version": "2.2.28604.0"
+        },
+        {
+          "PackageIdentifier": "Microsoft.DotNet.Runtime.8",
+          "Version": "8.0.30"
+        },
+        {
+          "PackageIdentifier": "Microsoft.DotNet.Runtime.9",
+          "Version": "9.0.19"
+        },
+        {
+          "PackageIdentifier": "Microsoft.DotNet.SDK.9",
+          "Version": "9.0.317"
+        },
+        {
+          "PackageIdentifier": "Microsoft.Edge",
+          "Version": "152.0.4191.66"
+        },
+        {
+          "PackageIdentifier": "Microsoft.GameInput",
+          "Version": "3.4.218"
+        },
+        {
+          "PackageIdentifier": "Microsoft.OneDrive",
+          "Version": "26.153.0809.0004"
+        },
+        {
+          "PackageIdentifier": "Microsoft.Outlook",
+          "Version": "1.2026.812.100"
+        },
+        {
+          "PackageIdentifier": "Microsoft.PowerShell",
+          "Version": "7.6.5.0"
+        },
+        {
+          "PackageIdentifier": "Microsoft.Teams",
+          "Version": "26198.304.4946.9672"
+        },
+        {
+          "PackageIdentifier": "Microsoft.UI.Xaml.2.8",
+          "Version": "8.2511.26001.0"
+        },
+        {
+          "PackageIdentifier": "Microsoft.VCLibs.14",
+          "Version": "14.0.33519.0"
+        },
+        {
+          "PackageIdentifier": "Microsoft.VCLibs.Desktop.14",
+          "Version": "14.0.33728.0"
+        },
+        {
+          "PackageIdentifier": "Microsoft.VCRedist.2015+.x64",
+          "Version": "14.51.36247.0"
+        },
+        {
+          "PackageIdentifier": "Microsoft.VCRedist.2015+.x86",
+          "Version": "14.51.36247.0"
+        },
+        {
+          "PackageIdentifier": "Microsoft.VisualStudio.2022.Community",
+          "Version": "> 17.14.39"
+        },
+        {
+          "PackageIdentifier": "Microsoft.VisualStudioCode",
+          "Version": "1.136.1"
+        },
+        {
+          "PackageIdentifier": "Microsoft.WSL",
+          "Version": "2.7.13.0"
+        },
+        {
+          "PackageIdentifier": "Microsoft.WindowsAppRuntime.1.1",
+          "Version": "1.1.5"
+        },
+        {
+          "PackageIdentifier": "Microsoft.WindowsAppRuntime.1.5",
+          "Version": "1.5.9"
+        },
+        {
+          "PackageIdentifier": "Microsoft.WindowsAppRuntime.1.6",
+          "Version": "1.6.9"
+        },
+        {
+          "PackageIdentifier": "Microsoft.WindowsAppRuntime.1.7",
+          "Version": "1.7.9"
+        },
+        {
+          "PackageIdentifier": "Microsoft.WindowsAppRuntime.1.8",
+          "Version": "> 1.8.10"
+        },
+        {
+          "PackageIdentifier": "Microsoft.WindowsAppRuntime.2",
+          "Version": "2.4.0.0"
+        },
+        {
+          "PackageIdentifier": "Microsoft.WindowsPCHealthCheck",
+          "Version": "4.0.2410.23001"
+        },
+        {
+          "PackageIdentifier": "Microsoft.WindowsTerminal",
+          "Version": "1.24.11911.0"
+        },
+        {
+          "PackageIdentifier": "Nvidia.CUDA",
+          "Version": "13.3"
+        },
+        {
+          "PackageIdentifier": "Nvidia.PhysX",
+          "Version": "9.26.0703"
+        },
+        {
+          "PackageIdentifier": "RProject.R",
+          "Version": "4.6.1"
+        },
+        {
+          "PackageIdentifier": "RProject.Rtools",
+          "Version": "4.5.6768"
+        },
+        {
+          "PackageIdentifier": "SumatraPDF.SumatraPDF",
+          "Version": "3.6.1"
+        }
+      ],
+      "SourceDetails": {
+        "Argument": "https://cdn.winget.microsoft.com/cache",
+        "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+        "Name": "winget",
+        "Type": "Microsoft.PreIndexed.Package"
+      }
+    }
+  ],
+  "WinGetVersion": "1.29.290"
+}

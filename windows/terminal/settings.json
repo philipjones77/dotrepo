@@ -62,10 +62,10 @@
         "name": "Ubuntu Bash"
       },
       {
-        "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "commandline": "pwsh.exe",
         "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
         "hidden": false,
-        "name": "Windows PowerShell"
+        "name": "PowerShell 7"
       },
       {
         "commandline": "%SystemRoot%\\System32\\cmd.exe",
@@ -130,7 +130,7 @@
         "source": "Windows.Terminal.Wsl"
       },
       {
-        "commandline": "%WINDIR%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -ExecutionPolicy ByPass -NoExit -Command \"& 'C:\\Users\\phili\\anaconda3\\shell\\condabin\\conda-hook.ps1' ; conda activate 'C:\\Users\\phili\\anaconda3' \"",
+        "commandline": "pwsh.exe -NoExit -Command \"& 'C:\\Users\\phili\\anaconda3\\shell\\condabin\\conda-hook.ps1' ; conda activate 'C:\\Users\\phili\\anaconda3' \"",
         "guid": "{eed49005-877d-5de2-94d5-5ce5e370f8c3}",
         "icon": "C:\\Users\\phili\\anaconda3\\Menu\\anaconda_powershell_prompt.ico",
         "name": "Anaconda PowerShell Prompt (anaconda3)",
@@ -154,7 +154,8 @@
         "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
         "hidden": false,
         "name": "PowerShell",
-        "source": "Windows.Terminal.PowershellCore"
+        "source": "Windows.Terminal.PowershellCore",
+        "commandline": "pwsh.exe"
       }
     ]
   },

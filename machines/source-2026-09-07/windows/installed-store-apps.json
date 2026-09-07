@@ -1,0 +1,777 @@
+[
+  {
+    "Name": "1527c705-839a-4832-9118-54d4Bd6a0c89",
+    "Version": "10.0.19640.1000",
+    "PackageFamilyName": "1527c705-839a-4832-9118-54d4Bd6a0c89_cw5n1h2txyewy"
+  },
+  {
+    "Name": "ASUSAmbientHAL64",
+    "Version": "1.0.0.3",
+    "PackageFamilyName": "ASUSAmbientHAL64_ecvjzhf6c4w7r"
+  },
+  {
+    "Name": "AdvancedMicroDevicesInc-2.AMDRadeonSoftware",
+    "Version": "10.25.20179.0",
+    "PackageFamilyName": "AdvancedMicroDevicesInc-2.AMDRadeonSoftware_0a9344xs7nr4m"
+  },
+  {
+    "Name": "B9ECED6F.ASUSPCAssistant",
+    "Version": "4.0.73.0",
+    "PackageFamilyName": "B9ECED6F.ASUSPCAssistant_qmba6cd70vzyy"
+  },
+  {
+    "Name": "B9ECED6F.ArmouryCrate",
+    "Version": "6.5.14.0",
+    "PackageFamilyName": "B9ECED6F.ArmouryCrate_qmba6cd70vzyy"
+  },
+  {
+    "Name": "B9ECED6F.Glidex",
+    "Version": "4.2.1.0",
+    "PackageFamilyName": "B9ECED6F.Glidex_qmba6cd70vzyy"
+  },
+  {
+    "Name": "B9ECED6F.ScreenPadMaster",
+    "Version": "4.0.29.0",
+    "PackageFamilyName": "B9ECED6F.ScreenPadMaster_qmba6cd70vzyy"
+  },
+  {
+    "Name": "Claude",
+    "Version": "1.44121.2.0",
+    "PackageFamilyName": "Claude_pzs8sxrjxfjjc"
+  },
+  {
+    "Name": "Clipchamp.Clipchamp",
+    "Version": "4.5.10920.0",
+    "PackageFamilyName": "Clipchamp.Clipchamp_yxz26nhyzhsrt"
+  },
+  {
+    "Name": "DolbyLaboratories.DolbyAccess",
+    "Version": "3.27.11680.0",
+    "PackageFamilyName": "DolbyLaboratories.DolbyAccess_rz1tebttyb220"
+  },
+  {
+    "Name": "DolbyLaboratories.DolbyDigitalPlusDecoderOEM",
+    "Version": "1.2.591.0",
+    "PackageFamilyName": "DolbyLaboratories.DolbyDigitalPlusDecoderOEM_rz1tebttyb220"
+  },
+  {
+    "Name": "E2A4F912-2574-4A75-9BB0-0D023378592B",
+    "Version": "10.0.19640.1000",
+    "PackageFamilyName": "E2A4F912-2574-4A75-9BB0-0D023378592B_cw5n1h2txyewy"
+  },
+  {
+    "Name": "F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE",
+    "Version": "10.0.26100.1",
+    "PackageFamilyName": "F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE_cw5n1h2txyewy"
+  },
+  {
+    "Name": "MSTeams",
+    "Version": "26198.304.4946.9672",
+    "PackageFamilyName": "MSTeams_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.AAD.BrokerPlugin",
+    "Version": "1000.19580.1000.2",
+    "PackageFamilyName": "Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.AIFabric.CBS.1.6",
+    "Version": "1.6.951.100",
+    "PackageFamilyName": "Microsoft.AIFabric.CBS.1.6_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.AVCEncoderVideoExtension",
+    "Version": "1.1.23.0",
+    "PackageFamilyName": "Microsoft.AVCEncoderVideoExtension_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.AccountsControl",
+    "Version": "10.0.26100.1",
+    "PackageFamilyName": "Microsoft.AccountsControl_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.ApplicationCompatibilityEnhancements",
+    "Version": "1.2511.9.0",
+    "PackageFamilyName": "Microsoft.ApplicationCompatibilityEnhancements_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.AsyncTextService",
+    "Version": "10.0.26100.1",
+    "PackageFamilyName": "Microsoft.AsyncTextService_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.BingNews",
+    "Version": "1.0.2.0",
+    "PackageFamilyName": "Microsoft.BingNews_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.BingSearch",
+    "Version": "1.1.43.0",
+    "PackageFamilyName": "Microsoft.BingSearch_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.BingWeather",
+    "Version": "4.54.63045.0",
+    "PackageFamilyName": "Microsoft.BingWeather_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.BioEnrollment",
+    "Version": "10.0.19587.1000",
+    "PackageFamilyName": "Microsoft.BioEnrollment_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.Copilot",
+    "Version": "152.0.4191.66",
+    "PackageFamilyName": "Microsoft.Copilot_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.CredDialogHost",
+    "Version": "10.0.19595.1001",
+    "PackageFamilyName": "Microsoft.CredDialogHost_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.DesktopAppInstaller",
+    "Version": "1.29.290.0",
+    "PackageFamilyName": "Microsoft.DesktopAppInstaller_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.DirectXRuntime",
+    "Version": "9.29.1974.0",
+    "PackageFamilyName": "Microsoft.DirectXRuntime_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.DirectXRuntime",
+    "Version": "9.29.1974.0",
+    "PackageFamilyName": "Microsoft.DirectXRuntime_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.ECApp",
+    "Version": "10.0.26100.9278",
+    "PackageFamilyName": "Microsoft.ECApp_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.GamingApp",
+    "Version": "2608.1001.17.0",
+    "PackageFamilyName": "Microsoft.GamingApp_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.GamingServices",
+    "Version": "38.116.6003.0",
+    "PackageFamilyName": "Microsoft.GamingServices_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.GetHelp",
+    "Version": "10.2409.42162.0",
+    "PackageFamilyName": "Microsoft.GetHelp_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.HEIFImageExtension",
+    "Version": "1.2.48.0",
+    "PackageFamilyName": "Microsoft.HEIFImageExtension_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.HEVCVideoExtension",
+    "Version": "2.5.33.0",
+    "PackageFamilyName": "Microsoft.HEVCVideoExtension_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.LockApp",
+    "Version": "10.0.26100.9278",
+    "PackageFamilyName": "Microsoft.LockApp_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.MicrosoftEdge.Stable",
+    "Version": "152.0.4191.53",
+    "PackageFamilyName": "Microsoft.MicrosoftEdge.Stable_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.MicrosoftEdgeDevToolsClient",
+    "Version": "1000.25128.1000.0",
+    "PackageFamilyName": "Microsoft.MicrosoftEdgeDevToolsClient_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.MicrosoftOfficeHub",
+    "Version": "19.2609.33021.0",
+    "PackageFamilyName": "Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.MicrosoftSolitaireCollection",
+    "Version": "4.26.7290.0",
+    "PackageFamilyName": "Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.MicrosoftStickyNotes",
+    "Version": "4.0.6104.0",
+    "PackageFamilyName": "Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.NET.Native.Framework.2.2",
+    "Version": "2.2.29512.0",
+    "PackageFamilyName": "Microsoft.NET.Native.Framework.2.2_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.NET.Native.Framework.2.2",
+    "Version": "2.2.29512.0",
+    "PackageFamilyName": "Microsoft.NET.Native.Framework.2.2_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.NET.Native.Runtime.2.2",
+    "Version": "2.2.28604.0",
+    "PackageFamilyName": "Microsoft.NET.Native.Runtime.2.2_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.NET.Native.Runtime.2.2",
+    "Version": "2.2.28604.0",
+    "PackageFamilyName": "Microsoft.NET.Native.Runtime.2.2_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Office.ActionsServer",
+    "Version": "16.0.20326.20132",
+    "PackageFamilyName": "Microsoft.Office.ActionsServer_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.OfficePushNotificationUtility",
+    "Version": "16.0.20326.20132",
+    "PackageFamilyName": "Microsoft.OfficePushNotificationUtility_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.OneDriveSync",
+    "Version": "26153.809.4.0",
+    "PackageFamilyName": "Microsoft.OneDriveSync_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.OutlookForWindows",
+    "Version": "1.2026.812.100",
+    "PackageFamilyName": "Microsoft.OutlookForWindows_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Paint",
+    "Version": "11.2605.81.0",
+    "PackageFamilyName": "Microsoft.Paint_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.PowerAutomateDesktop",
+    "Version": "1.0.2122.0",
+    "PackageFamilyName": "Microsoft.PowerAutomateDesktop_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.PowerShell",
+    "Version": "7.6.5.0",
+    "PackageFamilyName": "Microsoft.PowerShell_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.RawImageExtension",
+    "Version": "2.5.24.0",
+    "PackageFamilyName": "Microsoft.RawImageExtension_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.ScreenSketch",
+    "Version": "11.2605.38.0",
+    "PackageFamilyName": "Microsoft.ScreenSketch_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.SecHealthUI",
+    "Version": "1000.29628.1000.0",
+    "PackageFamilyName": "Microsoft.SecHealthUI_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Services.Store.Engagement",
+    "Version": "10.0.23012.0",
+    "PackageFamilyName": "Microsoft.Services.Store.Engagement_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Services.Store.Engagement",
+    "Version": "10.0.23012.0",
+    "PackageFamilyName": "Microsoft.Services.Store.Engagement_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.StartExperiencesApp",
+    "Version": "1.380.2.0",
+    "PackageFamilyName": "Microsoft.StartExperiencesApp_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.StorePurchaseApp",
+    "Version": "22607.1401.4.0",
+    "PackageFamilyName": "Microsoft.StorePurchaseApp_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Todos",
+    "Version": "0.176.7601.0",
+    "PackageFamilyName": "Microsoft.Todos_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.8",
+    "Version": "8.2501.31001.0",
+    "PackageFamilyName": "Microsoft.UI.Xaml.2.8_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.2.8",
+    "Version": "8.2511.26001.0",
+    "PackageFamilyName": "Microsoft.UI.Xaml.2.8_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.UI.Xaml.CBS",
+    "Version": "9.2603.18001.0",
+    "PackageFamilyName": "Microsoft.UI.Xaml.CBS_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VCLibs.110.00.UWPDesktop",
+    "Version": "11.0.61135.0",
+    "PackageFamilyName": "Microsoft.VCLibs.110.00.UWPDesktop_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VCLibs.110.00.UWPDesktop",
+    "Version": "11.0.61135.0",
+    "PackageFamilyName": "Microsoft.VCLibs.110.00.UWPDesktop_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VCLibs.120.00.UWPDesktop",
+    "Version": "12.0.40653.0",
+    "PackageFamilyName": "Microsoft.VCLibs.120.00.UWPDesktop_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VCLibs.120.00.UWPDesktop",
+    "Version": "12.0.40653.0",
+    "PackageFamilyName": "Microsoft.VCLibs.120.00.UWPDesktop_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VCLibs.140.00",
+    "Version": "14.0.33519.0",
+    "PackageFamilyName": "Microsoft.VCLibs.140.00_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VCLibs.140.00",
+    "Version": "14.0.33519.0",
+    "PackageFamilyName": "Microsoft.VCLibs.140.00_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VCLibs.140.00.UWPDesktop",
+    "Version": "14.0.33728.0",
+    "PackageFamilyName": "Microsoft.VCLibs.140.00.UWPDesktop_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VCLibs.140.00.UWPDesktop",
+    "Version": "14.0.33728.0",
+    "PackageFamilyName": "Microsoft.VCLibs.140.00.UWPDesktop_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VP9VideoExtensions",
+    "Version": "1.2.20.0",
+    "PackageFamilyName": "Microsoft.VP9VideoExtensions_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.VisualStudioCode",
+    "Version": "1.0.136.1",
+    "PackageFamilyName": "Microsoft.VisualStudioCode_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WebMediaExtensions",
+    "Version": "2.1.51.0",
+    "PackageFamilyName": "Microsoft.WebMediaExtensions_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WebpImageExtension",
+    "Version": "1.2.31.0",
+    "PackageFamilyName": "Microsoft.WebpImageExtension_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WidgetsPlatformRuntime",
+    "Version": "1.6.19.0",
+    "PackageFamilyName": "Microsoft.WidgetsPlatformRuntime_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Win32WebViewHost",
+    "Version": "10.0.26100.1",
+    "PackageFamilyName": "Microsoft.Win32WebViewHost_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.Windows.Apprep.ChxApp",
+    "Version": "1000.25128.1000.0",
+    "PackageFamilyName": "Microsoft.Windows.Apprep.ChxApp_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.Windows.AugLoop.CBS",
+    "Version": "1.1126.2131.0",
+    "PackageFamilyName": "Microsoft.Windows.AugLoop.CBS_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Windows.CapturePicker",
+    "Version": "10.0.19580.1000",
+    "PackageFamilyName": "Microsoft.Windows.CapturePicker_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.Windows.CloudExperienceHost",
+    "Version": "10.0.26100.1",
+    "PackageFamilyName": "Microsoft.Windows.CloudExperienceHost_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.Windows.ContentDeliveryManager",
+    "Version": "10.0.26100.1",
+    "PackageFamilyName": "Microsoft.Windows.ContentDeliveryManager_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.Windows.DevHome",
+    "Version": "0.2100.858.0",
+    "PackageFamilyName": "Microsoft.Windows.DevHome_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Windows.NarratorQuickStart",
+    "Version": "10.0.26100.1",
+    "PackageFamilyName": "Microsoft.Windows.NarratorQuickStart_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Windows.OOBENetworkCaptivePortal",
+    "Version": "10.0.26569.1000",
+    "PackageFamilyName": "Microsoft.Windows.OOBENetworkCaptivePortal_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.Windows.OOBENetworkConnectionFlow",
+    "Version": "10.0.26569.1000",
+    "PackageFamilyName": "Microsoft.Windows.OOBENetworkConnectionFlow_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.Windows.ParentalControls",
+    "Version": "1000.25128.1000.0",
+    "PackageFamilyName": "Microsoft.Windows.ParentalControls_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.Windows.PeopleExperienceHost",
+    "Version": "10.0.26100.1",
+    "PackageFamilyName": "Microsoft.Windows.PeopleExperienceHost_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.Windows.Photos",
+    "Version": "2026.11080.24002.0",
+    "PackageFamilyName": "Microsoft.Windows.Photos_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Windows.PinningConfirmationDialog",
+    "Version": "1000.25140.1001.0",
+    "PackageFamilyName": "Microsoft.Windows.PinningConfirmationDialog_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.Windows.PrintQueueActionCenter",
+    "Version": "1.0.2.0",
+    "PackageFamilyName": "Microsoft.Windows.PrintQueueActionCenter_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.Windows.ShellExperienceHost",
+    "Version": "10.0.26100.8115",
+    "PackageFamilyName": "Microsoft.Windows.ShellExperienceHost_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.Windows.StartMenuExperienceHost",
+    "Version": "10.0.26100.4768",
+    "PackageFamilyName": "Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.Windows.XGpuEjectDialog",
+    "Version": "10.0.26100.1",
+    "PackageFamilyName": "Microsoft.Windows.XGpuEjectDialog_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.WindowsAlarms",
+    "Version": "1.1.158.0",
+    "PackageFamilyName": "Microsoft.WindowsAlarms_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.1",
+    "Version": "1005.616.1651.0",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.1.1_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.1",
+    "Version": "1005.616.1651.0",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.1.1_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.5",
+    "Version": "5001.373.1736.0",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.1.5_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.5",
+    "Version": "5001.373.1736.0",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.1.5_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.6",
+    "Version": "6000.519.329.0",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.1.6_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.6",
+    "Version": "6000.519.329.0",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.1.6_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.7",
+    "Version": "7000.785.2325.0",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.1.7_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.7",
+    "Version": "7000.785.2325.0",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.1.7_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.8",
+    "Version": "8000.879.2017.0",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.1.8_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.8",
+    "Version": "8000.921.1539.0",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.1.8_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.8",
+    "Version": "8000.946.1701.0",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.1.8_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.1.8",
+    "Version": "8000.946.1701.0",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.1.8_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.2",
+    "Version": "2.2.0.0",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.2_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.2",
+    "Version": "2.3.0.0",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.2_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.2",
+    "Version": "2.3.1.0",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.2_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.2",
+    "Version": "2.4.0.0",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.2_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.2",
+    "Version": "2.4.0.0",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.2_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.CBS.1.6",
+    "Version": "6000.900.156.100",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.CBS.1.6_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsAppRuntime.CBS.2",
+    "Version": "2.2.0.100",
+    "PackageFamilyName": "Microsoft.WindowsAppRuntime.CBS.2_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsCalculator",
+    "Version": "11.2607.0.0",
+    "PackageFamilyName": "Microsoft.WindowsCalculator_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsCamera",
+    "Version": "2026.2607.1.0",
+    "PackageFamilyName": "Microsoft.WindowsCamera_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsFeedbackHub",
+    "Version": "2.2607.302.0",
+    "PackageFamilyName": "Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsNotepad",
+    "Version": "11.2607.14.0",
+    "PackageFamilyName": "Microsoft.WindowsNotepad_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsSoundRecorder",
+    "Version": "1.1.127.0",
+    "PackageFamilyName": "Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsStore",
+    "Version": "22607.1401.8.0",
+    "PackageFamilyName": "Microsoft.WindowsStore_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.WindowsTerminal",
+    "Version": "1.24.11911.0",
+    "PackageFamilyName": "Microsoft.WindowsTerminal_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Winget.Source",
+    "Version": "2026.907.1215.16",
+    "PackageFamilyName": "Microsoft.Winget.Source_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.Xbox.TCUI",
+    "Version": "1.24.10001.0",
+    "PackageFamilyName": "Microsoft.Xbox.TCUI_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.XboxGameCallableUI",
+    "Version": "1000.25128.1000.0",
+    "PackageFamilyName": "Microsoft.XboxGameCallableUI_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Microsoft.XboxGamingOverlay",
+    "Version": "7.326.8061.0",
+    "PackageFamilyName": "Microsoft.XboxGamingOverlay_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.XboxIdentityProvider",
+    "Version": "12.130.16001.0",
+    "PackageFamilyName": "Microsoft.XboxIdentityProvider_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.XboxSpeechToTextOverlay",
+    "Version": "1.97.17002.0",
+    "PackageFamilyName": "Microsoft.XboxSpeechToTextOverlay_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.YourPhone",
+    "Version": "0.26071.164.0",
+    "PackageFamilyName": "Microsoft.YourPhone_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "Microsoft.ZuneMusic",
+    "Version": "11.2607.16.0",
+    "PackageFamilyName": "Microsoft.ZuneMusic_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "MicrosoftCorporationII.MicrosoftFamily",
+    "Version": "0.2.40.0",
+    "PackageFamilyName": "MicrosoftCorporationII.MicrosoftFamily_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "MicrosoftCorporationII.QuickAssist",
+    "Version": "2.0.29.0",
+    "PackageFamilyName": "MicrosoftCorporationII.QuickAssist_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "MicrosoftCorporationII.WinAppRuntime.Main.1.8",
+    "Version": "8000.946.1701.0",
+    "PackageFamilyName": "MicrosoftCorporationII.WinAppRuntime.Main.1.8_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "MicrosoftCorporationII.WinAppRuntime.Singleton",
+    "Version": "8002.4.0.0",
+    "PackageFamilyName": "MicrosoftCorporationII.WinAppRuntime.Singleton_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "MicrosoftCorporationII.WindowsSubsystemForLinux",
+    "Version": "2.7.13.0",
+    "PackageFamilyName": "MicrosoftCorporationII.WindowsSubsystemForLinux_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "MicrosoftWindows.61869720.Voiess",
+    "Version": "1000.26100.9278.0",
+    "PackageFamilyName": "MicrosoftWindows.61869720.Voiess_cw5n1h2txyewy"
+  },
+  {
+    "Name": "MicrosoftWindows.61869721.Livtop",
+    "Version": "1000.26100.9278.0",
+    "PackageFamilyName": "MicrosoftWindows.61869721.Livtop_cw5n1h2txyewy"
+  },
+  {
+    "Name": "MicrosoftWindows.61869722.Speion",
+    "Version": "1000.26100.9278.0",
+    "PackageFamilyName": "MicrosoftWindows.61869722.Speion_cw5n1h2txyewy"
+  },
+  {
+    "Name": "MicrosoftWindows.61869836.InpApp",
+    "Version": "1000.26100.9278.0",
+    "PackageFamilyName": "MicrosoftWindows.61869836.InpApp_cw5n1h2txyewy"
+  },
+  {
+    "Name": "MicrosoftWindows.Client.CBS",
+    "Version": "1000.26100.360.0",
+    "PackageFamilyName": "MicrosoftWindows.Client.CBS_cw5n1h2txyewy"
+  },
+  {
+    "Name": "MicrosoftWindows.Client.Core",
+    "Version": "1000.26100.133.0",
+    "PackageFamilyName": "MicrosoftWindows.Client.Core_cw5n1h2txyewy"
+  },
+  {
+    "Name": "MicrosoftWindows.Client.CoreAI",
+    "Version": "1000.26100.9278.0",
+    "PackageFamilyName": "MicrosoftWindows.Client.CoreAI_cw5n1h2txyewy"
+  },
+  {
+    "Name": "MicrosoftWindows.Client.FileExp",
+    "Version": "1000.26100.10.0",
+    "PackageFamilyName": "MicrosoftWindows.Client.FileExp_cw5n1h2txyewy"
+  },
+  {
+    "Name": "MicrosoftWindows.Client.OOBE",
+    "Version": "1000.26100.55.0",
+    "PackageFamilyName": "MicrosoftWindows.Client.OOBE_cw5n1h2txyewy"
+  },
+  {
+    "Name": "MicrosoftWindows.Client.Photon",
+    "Version": "1000.26100.10.0",
+    "PackageFamilyName": "MicrosoftWindows.Client.Photon_cw5n1h2txyewy"
+  },
+  {
+    "Name": "MicrosoftWindows.Client.WebExperience",
+    "Version": "526.21100.40.0",
+    "PackageFamilyName": "MicrosoftWindows.Client.WebExperience_cw5n1h2txyewy"
+  },
+  {
+    "Name": "MicrosoftWindows.CrossDevice",
+    "Version": "0.26071.84.0",
+    "PackageFamilyName": "MicrosoftWindows.CrossDevice_cw5n1h2txyewy"
+  },
+  {
+    "Name": "MicrosoftWindows.UndockedDevKit",
+    "Version": "10.0.26100.1",
+    "PackageFamilyName": "MicrosoftWindows.UndockedDevKit_cw5n1h2txyewy"
+  },
+  {
+    "Name": "NVIDIACorp.NVIDIAControlPanel",
+    "Version": "8.1.969.0",
+    "PackageFamilyName": "NVIDIACorp.NVIDIAControlPanel_56jybvy8sckqj"
+  },
+  {
+    "Name": "OpenAI.Codex",
+    "Version": "26.901.5280.0",
+    "PackageFamilyName": "OpenAI.Codex_2p2nqsd0c76g0"
+  },
+  {
+    "Name": "RealtekSemiconductorCorp.RealtekAudioControl",
+    "Version": "2.53.389.0",
+    "PackageFamilyName": "RealtekSemiconductorCorp.RealtekAudioControl_dt26b99r8h8gj"
+  },
+  {
+    "Name": "Windows.CBSPreview",
+    "Version": "10.0.19580.1000",
+    "PackageFamilyName": "Windows.CBSPreview_cw5n1h2txyewy"
+  },
+  {
+    "Name": "Windows.PrintDialog",
+    "Version": "6.2.3.0",
+    "PackageFamilyName": "Windows.PrintDialog_cw5n1h2txyewy"
+  },
+  {
+    "Name": "aimgr",
+    "Version": "0.20.61.0",
+    "PackageFamilyName": "aimgr_8wekyb3d8bbwe"
+  },
+  {
+    "Name": "c5e2524a-ea46-4f67-841f-6a9465d9d515",
+    "Version": "10.0.26100.1",
+    "PackageFamilyName": "c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy"
+  },
+  {
+    "Name": "windows.immersivecontrolpanel",
+    "Version": "10.0.8.1000",
+    "PackageFamilyName": "windows.immersivecontrolpanel_cw5n1h2txyewy"
+  }
+]

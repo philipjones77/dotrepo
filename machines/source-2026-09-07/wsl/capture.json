@@ -1,0 +1,21 @@
+{
+  "captured_at": "2026-09-07T13:02:24.613410+00:00",
+  "platform": "wsl",
+  "counts": {
+    "apt_manual": 71,
+    "apt_installed": 1272,
+    "conda": [
+      {
+        "name": "base",
+        "packages": 317,
+        "manual_sources": 3
+      },
+      {
+        "name": "jax",
+        "packages": 444,
+        "manual_sources": 4
+      }
+    ]
+  },
+  "coverage": "Current user and standard Conda installations; review manual sources and other project-local environments separately."
+}

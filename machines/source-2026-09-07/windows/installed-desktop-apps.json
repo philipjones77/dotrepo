@@ -1,0 +1,2116 @@
+[
+  {
+    "name": "${{arpDisplayName}}",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "${{arpDisplayName}}",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "AI Noise Cancelation Audio Software",
+    "version": "4.0.3",
+    "publisher": "ASUSTek Computer Inc.",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "AMD Install Manager",
+    "version": "26.10.26223.2118",
+    "publisher": "Advanced Micro Devices, Inc.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "ASUS AURA Display Component",
+    "version": "1.2.40.0",
+    "publisher": "ASUSTek COMPUTER INC. ",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "ASUS AURA Display Component",
+    "version": "1.2.40.0",
+    "publisher": "ASUSTek COMPUTER INC. ",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "ASUS AURA Headset Component",
+    "version": "1.3.87.0",
+    "publisher": "ASUSTek COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "ASUS AURA Headset Component",
+    "version": "1.3.87.0",
+    "publisher": "ASUSTek COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "ASUS Aac_GmAcc HAL",
+    "version": "1.0.12.0",
+    "publisher": "ASUSTek COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "ASUS Aac_GmAcc HAL",
+    "version": "1.0.12.0",
+    "publisher": "ASUSTek COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "ASUS Aac_NBDT HAL",
+    "version": "2.5.52.0",
+    "publisher": "ASUSTek COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "ASUS Aac_NBDT HAL",
+    "version": "2.5.52.0",
+    "publisher": "ASUSTek COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "ASUS Ambient HAL",
+    "version": "7.20.0.0",
+    "publisher": "ASUSTeK COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "ASUS Ambient HAL",
+    "version": "7.20.0.0",
+    "publisher": "ASUSTeK COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "ASUS Aura SDK",
+    "version": "3.07.05",
+    "publisher": "ASUSTeK COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "ASUS Framework Service",
+    "version": "4.2.4.13",
+    "publisher": "ASUSTeK Computer Inc.",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "ASUS Hotplug Controller",
+    "version": "3.0.2",
+    "publisher": "ASUSTek COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "ASUS Keyboard HAL",
+    "version": "1.3.2.0",
+    "publisher": "ASUSTek COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "ASUS Keyboard HAL",
+    "version": "1.3.2.0",
+    "publisher": "ASUSTek COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "ASUS MB Peripheral Products",
+    "version": "1.0.40",
+    "publisher": "ASUSTeK Computer Inc.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "ASUS MB Peripheral Products",
+    "version": "1.0.40",
+    "publisher": "ASUSTeK Computer Inc.",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "ASUS MS Control",
+    "version": "2.0.2",
+    "publisher": "ASUS",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "ASUS Monitor Control",
+    "version": "1.0.18",
+    "publisher": "ASUSTek COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "ASUS Mouse HAL",
+    "version": "1.2.1.18",
+    "publisher": "ASUSTek COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "ASUS Mouse HAL",
+    "version": "1.2.1.18",
+    "publisher": "ASUSTek COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "ASUS Smart Display Control",
+    "version": "3.0.0",
+    "publisher": "ASUSTek COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "ASUS Update Helper",
+    "version": "1.3.107.159",
+    "publisher": "ASUSTeK Computer Inc.",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "AURA Service",
+    "version": "3.10.10",
+    "publisher": "ASUSTeK COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "AURA lighting effect add-on",
+    "version": "0.0.55",
+    "publisher": "ASUSTek COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "AURA lighting effect add-on x64",
+    "version": "0.0.55",
+    "publisher": "ASUSTek COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Antigravity 2.12.2",
+    "version": "2.12.2",
+    "publisher": "Google",
+    "scope": "user",
+    "architecture": "x64"
+  },
+  {
+    "name": "Antigravity 2.12.2",
+    "version": "2.12.2",
+    "publisher": "Google",
+    "scope": "user",
+    "architecture": "x86"
+  },
+  {
+    "name": "Antigravity IDE (User)",
+    "version": "2.5.5",
+    "publisher": "Google",
+    "scope": "user",
+    "architecture": "x64"
+  },
+  {
+    "name": "Antigravity IDE (User)",
+    "version": "2.5.5",
+    "publisher": "Google",
+    "scope": "user",
+    "architecture": "x86"
+  },
+  {
+    "name": "Armoury Crate Service",
+    "version": "6.5.7.0",
+    "publisher": "ASUSTeK COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CRT Development",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUBLAS Development",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUBLAS Development",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUBLAS Runtime",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUBLAS Runtime",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUDA CCCL",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUDA CCCL",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUDA Documentation",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUDA Documentation",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUDA Profiler API",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUDA Profiler API",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUDA Profiler Tools",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUDART Runtime",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUDART Runtime",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUDART TileIR",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUFFT Development",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUFFT Development",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUPTI",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUPTI",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CURAND Development",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CURAND Development",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CURAND Runtime",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CURAND Runtime",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUSOLVER Development",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUSOLVER Development",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUSOLVER Runtime",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUSOLVER Runtime",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUSPARSE Development",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUSPARSE Development",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUSPARSE Runtime",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "CUSPARSE Runtime",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "ClickOnce Bootstrapper Package for Microsoft .NET Framework",
+    "version": "4.8.09256",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Compute Sanitizer",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Compute Sanitizer",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Copilot",
+    "version": "152.0.4191.66",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Demo Suite",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "DiagnosticsHub_CollectionService",
+    "version": "17.14.36412",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Disassembler",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Disassembler",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Entity Framework 6.5.0 Tools  for Visual Studio 2022",
+    "version": "6.5.0.0",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "GameSDK Service",
+    "version": "1.0.5.0",
+    "publisher": "ASUSTek COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Git",
+    "version": "2.55.0.5",
+    "publisher": "The Git Development Community",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "GitHub CLI",
+    "version": "2.100.0",
+    "publisher": "GitHub, Inc.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "GlideX Service Installer",
+    "version": "4.2.1.0",
+    "publisher": "ASUSTeK COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Google Cloud SDK",
+    "version": "",
+    "publisher": "Google LLC",
+    "scope": "user",
+    "architecture": "x64"
+  },
+  {
+    "name": "Google Cloud SDK",
+    "version": "",
+    "publisher": "Google LLC",
+    "scope": "user",
+    "architecture": "x86"
+  },
+  {
+    "name": "Google Drive",
+    "version": "130.0.2.0",
+    "publisher": "Google LLC",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "IntelliTraceProfilerProxy",
+    "version": "15.0.21225.01",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "IntelliTraceProfilerProxy",
+    "version": "15.0.21225.01",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET 8.0 Templates 8.0.424 (x64)",
+    "version": "32.15.49180",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET 9.0 Templates 9.0.317 (x64)",
+    "version": "36.15.65369",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET AppHost Pack - 8.0.30 (x64)",
+    "version": "64.120.56788",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET AppHost Pack - 8.0.30 (x64_arm64)",
+    "version": "64.120.56788",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET AppHost Pack - 8.0.30 (x64_x86)",
+    "version": "64.120.56788",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET AppHost Pack - 9.0.19 (x64)",
+    "version": "72.76.56792",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET AppHost Pack - 9.0.19 (x64_arm64)",
+    "version": "72.76.56792",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET AppHost Pack - 9.0.19 (x64_x86)",
+    "version": "72.76.56792",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET Framework 4.7.2 Targeting Pack",
+    "version": "4.7.03062",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Framework 4.7.2 Targeting Pack (ENU)",
+    "version": "4.7.03062",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Framework 4.8 SDK",
+    "version": "4.8.03928",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Framework 4.8 Targeting Pack",
+    "version": "4.8.03761",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Framework 4.8 Targeting Pack (ENU)",
+    "version": "4.8.03761",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Framework Cumulative Intellisense Pack for Visual Studio (ENU)",
+    "version": "4.8.09037",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Host - 8.0.30 (x64)",
+    "version": "64.120.56788",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET Host - 8.0.30 (x86)",
+    "version": "64.120.56788",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Host - 9.0.19 (x64)",
+    "version": "72.76.56792",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET Host - 9.0.19 (x86)",
+    "version": "72.76.56792",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Host FX Resolver - 8.0.30 (x64)",
+    "version": "64.120.56788",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET Host FX Resolver - 8.0.30 (x86)",
+    "version": "64.120.56788",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Host FX Resolver - 9.0.18 (x86)",
+    "version": "72.72.55158",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Host FX Resolver - 9.0.19 (x64)",
+    "version": "72.76.56792",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET Host FX Resolver - 9.0.19 (x86)",
+    "version": "72.76.56792",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Runtime - 8.0.30 (x64)",
+    "version": "64.120.56788",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET Runtime - 8.0.30 (x64)",
+    "version": "8.0.30.36317",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Runtime - 8.0.30 (x86)",
+    "version": "64.120.56788",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Runtime - 9.0.18 (x86)",
+    "version": "9.0.18.36215",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Runtime - 9.0.18 (x86)",
+    "version": "72.72.55158",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Runtime - 9.0.19 (x64)",
+    "version": "72.76.56792",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET Runtime - 9.0.19 (x64)",
+    "version": "9.0.19.36317",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Runtime - 9.0.19 (x86)",
+    "version": "72.76.56792",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET SDK 9.0.317 (x64)",
+    "version": "9.3.1726.37113",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET SDK 9.0.317 (x64) from Visual Studio",
+    "version": "9.3.1726.37113",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET Standard Targeting Pack - 2.1.0 (x64)",
+    "version": "24.0.28113",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET Targeting Pack - 8.0.30 (x64)",
+    "version": "64.120.56788",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET Targeting Pack - 8.0.30 (x86)",
+    "version": "64.120.56788",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Targeting Pack - 9.0.19 (x64)",
+    "version": "72.76.56792",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft .NET Targeting Pack - 9.0.19 (x86)",
+    "version": "72.76.56792",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft .NET Toolset 9.0.317 (x64)",
+    "version": "36.15.32601",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft 365 - en-us",
+    "version": "16.0.20326.20132",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft ASP.NET Core 8.0.30 - Shared Framework (x64)",
+    "version": "8.0.30.26373",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft ASP.NET Core 8.0.30 - Shared Framework (x86)",
+    "version": "8.0.30.26373",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft ASP.NET Core 8.0.30 Shared Framework (x64)",
+    "version": "8.0.30.26373",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft ASP.NET Core 8.0.30 Shared Framework (x86)",
+    "version": "8.0.30.26373",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft ASP.NET Core 8.0.30 Targeting Pack (x64)",
+    "version": "8.0.30.26373",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft ASP.NET Core 8.0.30 Targeting Pack (x86)",
+    "version": "8.0.30.26373",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft ASP.NET Core 9.0.18 - Shared Framework (x64)",
+    "version": "9.0.18.26323",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft ASP.NET Core 9.0.18 Shared Framework (x64)",
+    "version": "9.0.18.26323",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft ASP.NET Core 9.0.19 - Shared Framework (x86)",
+    "version": "9.0.19.26370",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft ASP.NET Core 9.0.19 Shared Framework (x64)",
+    "version": "9.0.19.26370",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft ASP.NET Core 9.0.19 Shared Framework (x86)",
+    "version": "9.0.19.26370",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft ASP.NET Core 9.0.19 Targeting Pack (x64)",
+    "version": "9.0.19.26370",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft ASP.NET Core 9.0.19 Targeting Pack (x86)",
+    "version": "9.0.19.26370",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft Edge",
+    "version": "152.0.4191.66",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft Edge WebView2 Runtime",
+    "version": "152.0.4191.66",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft GameInput",
+    "version": "3.4.218.0",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft OneDrive",
+    "version": "26.153.0809.0004",
+    "publisher": "Microsoft Corporation",
+    "scope": "user",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft OneDrive",
+    "version": "26.153.0809.0004",
+    "publisher": "Microsoft Corporation",
+    "scope": "user",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft OneNote - en-us",
+    "version": "16.0.20326.20132",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft System CLR Types for SQL Server 2019",
+    "version": "15.0.2000.5",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft TestPlatform SDK Local Feed",
+    "version": "17.10.0.9037153",
+    "publisher": "Microsoft",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft Visual C++ 2022 X64 Additional Runtime - 14.51.36247",
+    "version": "14.51.36247",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.51.36247",
+    "version": "14.51.36247",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft Visual C++ 2022 X86 Additional Runtime - 14.51.36247",
+    "version": "14.51.36247",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.51.36247",
+    "version": "14.51.36247",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft Visual C++ v14 Redistributable (x64) - 14.51.36247",
+    "version": "14.51.36247.0",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft Visual C++ v14 Redistributable (x86) - 14.51.36247",
+    "version": "14.51.36247.0",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft Visual Studio Code (User)",
+    "version": "1.136.1",
+    "publisher": "Microsoft Corporation",
+    "scope": "user",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft Visual Studio Code (User)",
+    "version": "1.136.1",
+    "publisher": "Microsoft Corporation",
+    "scope": "user",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft Visual Studio Installer",
+    "version": "4.4.38.63497",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft Visual Studio Setup Configuration",
+    "version": "3.12.2140.44225",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft Visual Studio Setup WMI Provider",
+    "version": "3.12.2140.44225",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft Windows Application Compatibility Fix Database",
+    "version": "",
+    "publisher": "",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft Windows Desktop Runtime - 8.0.30 (x64)",
+    "version": "64.120.56881",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft Windows Desktop Runtime - 8.0.30 (x64)",
+    "version": "8.0.30.36323",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft Windows Desktop Runtime - 8.0.30 (x86)",
+    "version": "8.0.30.36323",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft Windows Desktop Runtime - 8.0.30 (x86)",
+    "version": "64.120.56881",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft Windows Desktop Runtime - 9.0.19 (x64)",
+    "version": "72.76.56849",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft Windows Desktop Runtime - 9.0.19 (x86)",
+    "version": "72.76.56849",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft Windows Desktop Targeting Pack - 8.0.30 (x64)",
+    "version": "64.120.56881",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft Windows Desktop Targeting Pack - 8.0.30 (x86)",
+    "version": "64.120.56881",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft Windows Desktop Targeting Pack - 9.0.19 (x64)",
+    "version": "72.76.56849",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft Windows Desktop Targeting Pack - 9.0.19 (x86)",
+    "version": "72.76.56849",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Microsoft.NET.Sdk.Android.Manifest-9.0.100 (x64)",
+    "version": "35.0.78",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Sdk.Android.Manifest-9.0.100 (x64)",
+    "version": "35.0.7",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Sdk.Aspire.Manifest-8.0.100 (x64)",
+    "version": "64.136.23253",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Sdk.MacCatalyst.Manifest-9.0.100 (x64)",
+    "version": "18.0.9617",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Sdk.MacCatalyst.Manifest-9.0.100 (x64)",
+    "version": "26.0.9752",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Sdk.Maui.Manifest-9.0.100 (x64)",
+    "version": "9.0.0",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Sdk.Maui.Manifest-9.0.100 (x64)",
+    "version": "9.0.111",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Sdk.iOS.Manifest-9.0.100 (x64)",
+    "version": "18.0.9617",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Sdk.iOS.Manifest-9.0.100 (x64)",
+    "version": "26.0.9752",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Sdk.macOS.Manifest-9.0.100 (x64)",
+    "version": "26.0.9752",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Sdk.macOS.Manifest-9.0.100 (x64)",
+    "version": "15.0.9617",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Sdk.tvOS.Manifest-9.0.100 (x64)",
+    "version": "26.0.9752",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Sdk.tvOS.Manifest-9.0.100 (x64)",
+    "version": "18.0.9617",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Workload.Emscripten.Current.Manifest (x64)",
+    "version": "72.56.56611",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Workload.Emscripten.net6.Manifest (x64)",
+    "version": "72.56.56611",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Workload.Emscripten.net7.Manifest (x64)",
+    "version": "72.56.56611",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Workload.Emscripten.net8.Manifest (x64)",
+    "version": "72.56.56611",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Workload.Mono.Toolchain.Current.Manifest (x64)",
+    "version": "72.0.56792",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Workload.Mono.Toolchain.net6.Manifest (x64)",
+    "version": "72.0.56792",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Workload.Mono.Toolchain.net7.Manifest (x64)",
+    "version": "72.0.56792",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Microsoft.NET.Workload.Mono.Toolchain.net8.Manifest (x64)",
+    "version": "72.0.56792",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Miniconda3 py313_26.3.2-2 (Python 3.13.13 64-bit)",
+    "version": "py313_26.3.2-2",
+    "publisher": "Anaconda, Inc.",
+    "scope": "user",
+    "architecture": "x64"
+  },
+  {
+    "name": "Miniconda3 py313_26.3.2-2 (Python 3.13.13 64-bit)",
+    "version": "py313_26.3.2-2",
+    "publisher": "Anaconda, Inc.",
+    "scope": "user",
+    "architecture": "x86"
+  },
+  {
+    "name": "NPP Development",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NPP Development",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NPP Runtime",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NPP Runtime",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVFATBIN Runtime",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVFATBIN Runtime",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA AIUser Container",
+    "version": "1.51",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA App 11.0.9.251",
+    "version": "11.0.9.251",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA App driver settings",
+    "version": "1.0",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA Backend",
+    "version": "11.0.9.251",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA CUDA Development 12.8",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA CUDA Development 13.3",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA CUDA Documentation 12.8",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA CUDA Documentation 13.3",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA CUDA Runtime 12.8",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA CUDA Runtime 13.3",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA CUDA Toolkit 12.8",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA CUDA Toolkit 13.3",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA CUDA Visual Studio Integration 12.8",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA CUDA Visual Studio Integration 13.3",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA Container",
+    "version": "1.51",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA FrameView SDK 1.9.12728.38614306",
+    "version": "1.9.12728.38614306",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA Graphics Driver 616.56",
+    "version": "616.56",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA HD Audio Driver 1.4.6.3",
+    "version": "1.4.6.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA Install Application",
+    "version": "2.1002.463.0",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA LocalSystem Container",
+    "version": "1.51",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA MessageBus 3 for NvApp",
+    "version": "3.21",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA Nsight Compute 2026.2.1",
+    "version": "26.2.1.0",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA Nsight Systems 2024.6.2",
+    "version": "24.6.2.225",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA Nsight Systems 2025.6.3",
+    "version": "25.6.3.343",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA Nsight Systems 2026.1.3",
+    "version": "26.1.3.425",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA Nsight Visual Studio Edition 2026.2.0.26084",
+    "version": "26.2.0.26084",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA NvDLISR",
+    "version": "1.0",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA PhysX System Software 9.26.0703",
+    "version": "9.26.0703",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA Platform Controllers and Framework",
+    "version": "615.34",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA Session Container",
+    "version": "1.51",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA ShadowPlay 11.0.9.500",
+    "version": "11.0.9.500",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA Telemetry Client",
+    "version": "19.8.1.0",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA User Container",
+    "version": "1.51",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA Virtual Audio 4.92.0.0",
+    "version": "4.92.0.0",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVIDIA Watchdog Plugin for NvContainer",
+    "version": "1.51",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVJITLINK Runtime",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVJITLINK Runtime",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVJPEG Development",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVJPEG Development",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVJPEG Runtime",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVJPEG Runtime",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVML Development",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVML Development",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVRTC Development",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVRTC Development",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVRTC Runtime",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVRTC Runtime",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVTX Development",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVTX Development",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "NVVM Development",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Norton 360",
+    "version": "26.8.11125.2681",
+    "publisher": "Gen Digital Inc.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Norton Driver Updater",
+    "version": "26.9.6768.8210",
+    "publisher": "Gen Digital Inc.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Norton Utilities Ultimate",
+    "version": "26.9.18896.9446",
+    "publisher": "Gen Digital Inc.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "OPENCL Runtime",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "OPENCL Runtime",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Occupancy Calculator",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Occupancy Calculator",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Office 16 Click-to-Run Extensibility Component",
+    "version": "16.0.20326.20072",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "R for Windows 4.6.1",
+    "version": "4.6.1",
+    "publisher": "R Core Team",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "ROG Live Service",
+    "version": "3.5.6.0",
+    "publisher": "ASUSTek COMPUTER INC.",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Rtools 4.5 (6768-6492)",
+    "version": "4.5.6768",
+    "publisher": "The R Foundation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "SumatraPDF",
+    "version": "3.6.1",
+    "publisher": "Krzysztof Kowalczyk",
+    "scope": "user",
+    "architecture": "x64"
+  },
+  {
+    "name": "SumatraPDF",
+    "version": "3.6.1",
+    "publisher": "Krzysztof Kowalczyk",
+    "scope": "user",
+    "architecture": "x86"
+  },
+  {
+    "name": "VS Immersive Activate Helper",
+    "version": "17.0.157.0",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "VS JIT Debugger",
+    "version": "17.0.157.0",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Visual Profiler",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Visual Studio Community 2022",
+    "version": "17.14.39",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "Windows PC Health Check",
+    "version": "4.0.2410.23001",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "Windows Subsystem for Linux",
+    "version": "2.7.13.0",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "ctadvisor",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "cuobjdump",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "cuobjdump",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "cuxxfilt",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "cuxxfilt",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "icecap_collection_neutral",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "icecap_collection_x64",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "icecap_collectionresources",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "icecap_collectionresourcesx64",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "libnvptxcompiler Development",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "nvcc",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "nvcc",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "nvprune",
+    "version": "12.8",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "nvprune",
+    "version": "13.3",
+    "publisher": "NVIDIA Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "vcpp_crt.redist.clickonce",
+    "version": "14.44.35211",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_BlendMsi",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_CoreEditorFonts",
+    "version": "17.7.40001",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_FileTracker_Singleton",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_SQLClickOnceBootstrappermsi",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_clickoncebootstrappermsi",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_clickoncebootstrappermsires",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_clickoncesigntoolmsi",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_communitymsires",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_communitysharedmsi",
+    "version": "17.14.36025",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_communityx64msi",
+    "version": "17.14.36025",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "vs_devenvsharedmsi",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_devenx64vmsi",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "vs_filehandler_amd64",
+    "version": "17.14.36024",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_filehandler_x86",
+    "version": "17.14.36024",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_githubprotocolhandlermsi",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_minshellinteropsharedmsi",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_minshellinteropx64msi",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "vs_minshellmsires",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_minshellsharedmsi",
+    "version": "17.14.36024",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_minshellx64msi",
+    "version": "17.14.36301",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x64"
+  },
+  {
+    "name": "vs_tipsmsi",
+    "version": "17.14.36015",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  },
+  {
+    "name": "vs_vswebprotocolselectormsi",
+    "version": "17.14.36323",
+    "publisher": "Microsoft Corporation",
+    "scope": "machine",
+    "architecture": "x86"
+  }
+]

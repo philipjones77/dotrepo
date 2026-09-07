@@ -167,7 +167,18 @@ def windows(output):
         for index, prefix in enumerate(json.loads(command([conda, 'env', 'list', '--json']))['envs']):
             name = 'base' if Path(prefix) == conda.parent.parent else Path(prefix).name
             envs.append(environment(Path(prefix), conda, output / 'conda', name))
-    return {'desktop_records': len(unique), 'store_records': len(appx), 'conda': envs}
+    venvs = []
+    for config in sorted((Path.home() / '.virtualenvs').glob('*/pyvenv.cfg')):
+        prefix = config.parent
+        interpreter = prefix / 'Scripts/python.exe'
+        if not interpreter.is_file():
+            continue
+        packages = json.loads(command([interpreter, '-m', 'pip', 'list', '--format=json']))
+        version = command([interpreter, '-c', 'import platform; print(platform.python_version())'])
+        save(output / 'venv' / f'{prefix.name}-packages.json', packages)
+        venvs.append({'name': prefix.name, 'python': version, 'packages': len(packages)})
+    save(output / 'venv/environments.json', venvs)
+    return {'desktop_records': len(unique), 'store_records': len(appx), 'conda': envs, 'venv': venvs}
 
 
 def linux(output):

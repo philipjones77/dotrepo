@@ -1,6 +1,6 @@
 param(
     [string]$Path = "$HOME\.virtualenvs\jax-win",
-    [string]$PythonExe = "$HOME\anaconda3\python.exe"
+    [string]$PythonExe = "$HOME\.virtualenvs\py313\Scripts\python.exe"
 )
 
 $ErrorActionPreference = "Stop"

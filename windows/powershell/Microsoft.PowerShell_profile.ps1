@@ -27,6 +27,14 @@ function Add-PathEntry {
     (Join-Path $env:LOCALAPPDATA "Programs\Microsoft VS Code\bin"),
     (Join-Path $env:ProgramFiles "GitHub CLI")
 ) | ForEach-Object { Add-PathEntry $_ }
+$rRoot = Join-Path $env:ProgramFiles 'R'
+if (Test-Path $rRoot) {
+    $rInstallation = Get-ChildItem -LiteralPath $rRoot -Directory |
+        Where-Object Name -Match '^R-\d+\.\d+\.\d+$' |
+        Sort-Object { [version]($_.Name -replace '^R-', '') } -Descending |
+        Select-Object -First 1
+    if ($rInstallation) { Add-PathEntry (Join-Path $rInstallation.FullName 'bin') }
+}
 if ($script:dotrepoCondaRoot) {
     Add-PathEntry (Join-Path $script:dotrepoCondaRoot 'Scripts')
     Add-PathEntry (Join-Path $script:dotrepoCondaRoot 'condabin')
@@ -50,6 +58,11 @@ function mkcd {
 
 function venv-win {
     param([string]$Path = ".venv")
+    $standardPython = Join-Path $HOME '.virtualenvs\py313\Scripts\python.exe'
+    if (Test-Path $standardPython) {
+        & $standardPython -m venv $Path
+        return
+    }
     if ($script:dotrepoCondaRoot) {
         $pythonExe = Join-Path $script:dotrepoCondaRoot 'python.exe'
         & $pythonExe -m venv $Path
@@ -62,7 +75,17 @@ function venv-win {
 if ($script:dotrepoCondaRoot) {
     $condaExe = Join-Path $script:dotrepoCondaRoot 'Scripts\conda.exe'
     (& $condaExe "shell.powershell" "hook") | Out-String | Invoke-Expression
-    conda activate base
+    if (-not (Test-Path (Join-Path $HOME '.virtualenvs\py313\Scripts\python.exe'))) {
+        conda activate base
+    }
+}
+
+$standardActivation = Join-Path $HOME '.virtualenvs\py313\Scripts\Activate.ps1'
+if ((Test-Path $standardActivation) -and -not $env:VIRTUAL_ENV) {
+    if (Get-Command conda -ErrorAction SilentlyContinue) {
+        while ([int]$env:CONDA_SHLVL -gt 0) { conda deactivate }
+    }
+    . $standardActivation
 }
 
 if (Get-Command fnm -ErrorAction SilentlyContinue) {

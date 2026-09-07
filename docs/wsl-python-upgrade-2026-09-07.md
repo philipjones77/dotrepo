@@ -1,6 +1,19 @@
 # WSL Python library upgrade — PhilipSecond, September 7, 2026
 
-## Latest follow-up: Numba restored
+## Latest follow-up: Numba with NumPy 2.5.3
+
+The user requested testing Numba with NumPy 2.5.3. Stable Numba 0.67.0 supports
+NumPy 2.5; the old PyTensor constraint was resolved by updating PyTensor to
+3.3.1 and PyMC to 6.3.1. `jax` now contains **Numba 0.67.0, llvmlite 0.49.0,
+NumPy 2.5.3 and JAX 0.11.1**. A temporary standalone environment passed a
+Numba-compiled LAPACK solve, PyTensor NUMBA evaluation and compiled PyMC model
+log probability. The same checks passed after installation into `jax`.
+Its dependency check reports only the existing GPflow/NumPy conflict.
+The default `py313` environment was unchanged.
+
+See [Numba 0.67 release notes](https://numba.readthedocs.io/en/latest/release/0.67.0-notes.html).
+
+## Earlier follow-up: Numba restored
 
 The user subsequently requested Numba back. `jax` now has **Numba 0.65.1,
 NumPy 2.4.6 and JAX 0.11.1**. The NumPy downgrade is required by this stable

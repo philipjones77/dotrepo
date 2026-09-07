@@ -335,7 +335,7 @@
   },
   {
     "name": "llvmlite",
-    "version": "0.47.0"
+    "version": "0.49.0"
   },
   {
     "name": "logical-unification",
@@ -395,7 +395,7 @@
   },
   {
     "name": "numba",
-    "version": "0.65.1"
+    "version": "0.67.0"
   },
   {
     "name": "numcodecs",
@@ -403,7 +403,7 @@
   },
   {
     "name": "numpy",
-    "version": "2.4.6"
+    "version": "2.5.3"
   },
   {
     "name": "numpyro",
@@ -563,7 +563,7 @@
   },
   {
     "name": "pymc",
-    "version": "6.0.1"
+    "version": "6.3.1"
   },
   {
     "name": "pyparsing",
@@ -571,7 +571,7 @@
   },
   {
     "name": "pytensor",
-    "version": "3.0.4"
+    "version": "3.3.1"
   },
   {
     "name": "pytest",

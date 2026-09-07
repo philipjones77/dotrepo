@@ -9,5 +9,6 @@ See the [current follow-up](../../../../docs/wsl-mounts-and-environments-2026-09
 for the earlier removal history. The later
 [Python upgrade report](../../../../docs/wsl-python-upgrade-2026-09-07.md)
 records JAX 0.11.1 in both retained environments and their validation limits.
-After restoring Numba 0.65.1, `jax` uses NumPy 2.4.6; `py313` retains NumPy
-2.5.3. This does not establish full other-computer package parity.
+Both use NumPy 2.5.3. `jax` now uses Numba 0.67.0 with updated PyTensor/PyMC;
+`py313` remains without Numba. This does not establish full other-computer
+package parity.

@@ -1,5 +1,15 @@
 # WSL Python library upgrade — PhilipSecond, September 7, 2026
 
+## Latest follow-up: Numba restored
+
+The user subsequently requested Numba back. `jax` now has **Numba 0.65.1,
+NumPy 2.4.6 and JAX 0.11.1**. The NumPy downgrade is required by this stable
+Numba release and satisfies PyTensor's Numba constraint. A compiled Numba
+calculation, PyTensor's NUMBA backend, PyMC import and JAX GPU calculation all
+passed. The sole remaining dependency-check conflict is GPflow requiring
+NumPy below 2. The default `py313` environment remains on NumPy 2.5.3 without
+Numba. The sections below describe the preceding upgrade and removal.
+
 The requested default environment is `~/.virtualenvs/py313`, standard CPython
 3.13.15. This was the latest 3.13 patch offered by the installed uv manager.
 `jax` remains a separate CPython 3.12.3 virtualenv. Neither uses Conda.

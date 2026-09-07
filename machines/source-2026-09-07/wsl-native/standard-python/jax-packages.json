@@ -394,12 +394,16 @@
     "version": "3.6.1"
   },
   {
+    "name": "numba",
+    "version": "0.65.1"
+  },
+  {
     "name": "numcodecs",
     "version": "0.16.5"
   },
   {
     "name": "numpy",
-    "version": "2.5.3"
+    "version": "2.4.6"
   },
   {
     "name": "numpyro",

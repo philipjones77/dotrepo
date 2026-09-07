@@ -25,10 +25,15 @@ preserves Ubuntu's color prompt, history append behavior, completion, and
 Miniforge activation. Machine-specific PATH rules and project data paths live in
 `~/.config/dotrepo/shell.local.sh`.
 
-The inspected JAX interpreters are Anaconda `envs/jax-win` on Windows and
-Miniforge `envs/jax` on WSL. Editor defaults use home-relative paths to those
-existing environments. Project workspace settings can select other interpreters;
-configuration installation does not create or upgrade scientific environments.
+Windows uses uv-managed standard CPython, with `~/.virtualenvs/py313` as the
+PowerShell and VS Code default and `~/.virtualenvs/jax-win` for the recorded
+scientific package set. The [Windows Python guide](../python/windows/README.md)
+provides exact recorded-version restoration and verification. Existing Conda
+environments on a recovery target are preserved separately until reviewed.
+WSL has its own native and scientific environments; changing the Windows Python
+default does not migrate or update them. Project workspace settings can select
+other interpreters. Configuration installation alone does not create or upgrade
+scientific environments.
 
 ## Apply and inspect
 

@@ -63,6 +63,11 @@ The source `jax-win` environment is inventoried separately and is not created by
 that helper. The [Python 3.15 release notice](https://blog.python.org/2026/09/python-3150-rc2/)
 identifies 3.15.0rc2 as a preview, not a final stable release.
 
+For exact recorded-version replication of all four Windows environments, use
+the later [Windows Python restore helper](../../python/windows/README.md).
+The [target Windows comparison](../../docs/windows-parity-2026-09-07.md) records
+the resulting interpreter, complete package-set and representative workload checks.
+
 ### JAX verification
 
 Windows py313 has JAX/jaxlib **0.11.1**, NumPy 2.5.3 and SciPy 1.18.1. A real

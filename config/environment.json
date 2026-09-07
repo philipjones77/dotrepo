@@ -13,7 +13,7 @@
   "optional_commands": ["node", "R", "matlab", "gh", "code"],
   "node_version_file": "node/.node-version",
   "python_environments": {
-    "windows": "python/windows/environment.yml",
+    "windows": "machines/source-2026-09-07/windows/standard-python/environments.json",
     "wsl": "python/wsl/environment.yml"
   },
   "wsl_profiles": {

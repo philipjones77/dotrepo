@@ -15,6 +15,15 @@ case $- in
   *i*)
     . "$DOTREPO/shared/shell/aliases.sh"
     . "$DOTREPO/shared/shell/functions.sh"
+    ;;
+esac
+if [ -f "$HOME/.config/dotrepo/shell.local.sh" ]; then
+  . "$HOME/.config/dotrepo/shell.local.sh"
+fi
+case $- in
+  *i*)
+    # Activation must save the finished machine PATH so deactivate (including
+    # switching with jaxenv) cannot restore retired paths or discard local tools.
     if [ -z "${VIRTUAL_ENV:-}" ] \
       && [ -f "$HOME/.virtualenvs/py313/bin/activate" ]; then
       . "$HOME/.virtualenvs/py313/bin/activate"
@@ -23,9 +32,6 @@ case $- in
     export PATH="$HOME/.local/bin:$PATH"
     ;;
 esac
-if [ -f "$HOME/.config/dotrepo/shell.local.sh" ]; then
-  . "$HOME/.config/dotrepo/shell.local.sh"
-fi
 if [ "${_DOTREPO_GDRIVE_STARTUP_STARTED:-0}" != 1 ] \
   && [ "${DOTREPO_AUTO_MOUNT_GOOGLE_DRIVE:-1}" != 0 ] \
   && [ -f "$HOME/.config/dotrepo/gdrive.enabled" ] \

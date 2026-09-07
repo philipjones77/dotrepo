@@ -1,5 +1,11 @@
 # Standard Python inventories
 
+Current managed environments: **py313**, **jax313**, and **jax314**. The former
+`jax` was migrated to Python 3.13.15 and permanently renamed `jax313`; its old
+package snapshot is historical. See the
+[migration and rename report](../../../../docs/wsl-jax-python313-2026-09-07.md).
+The paragraphs below describe earlier steps.
+
 `environments.json` lists currently installed environments on PhilipSecond.
 The `jax-native-*` and `matrix-compare-*` files are historical snapshots kept for
 reproducibility; the user removed those environments on September 7, 2026.

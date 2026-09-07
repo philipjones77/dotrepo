@@ -167,7 +167,15 @@
   },
   {
     "name": "jax",
-    "version": "0.11.1"
+    "version": "0.10.2"
+  },
+  {
+    "name": "jax-cuda12-pjrt",
+    "version": "0.10.2"
+  },
+  {
+    "name": "jax-cuda12-plugin",
+    "version": "0.10.2"
   },
   {
     "name": "jax-cuda13-pjrt",
@@ -179,7 +187,7 @@
   },
   {
     "name": "jaxlib",
-    "version": "0.11.1"
+    "version": "0.10.2"
   },
   {
     "name": "jaxtyping",
@@ -254,8 +262,16 @@
     "version": "13.6.1.10"
   },
   {
+    "name": "nvidia-cublas-cu12",
+    "version": "12.9.2.10"
+  },
+  {
     "name": "nvidia-cuda-cccl",
     "version": "13.3.3.4.1"
+  },
+  {
+    "name": "nvidia-cuda-cccl-cu12",
+    "version": "12.9.27"
   },
   {
     "name": "nvidia-cuda-crt",
@@ -266,16 +282,36 @@
     "version": "13.3.75"
   },
   {
+    "name": "nvidia-cuda-cupti-cu12",
+    "version": "12.9.79"
+  },
+  {
     "name": "nvidia-cuda-nvcc",
     "version": "13.3.73"
+  },
+  {
+    "name": "nvidia-cuda-nvcc-cu12",
+    "version": "12.9.86"
   },
   {
     "name": "nvidia-cuda-nvrtc",
     "version": "13.3.33"
   },
   {
+    "name": "nvidia-cuda-nvrtc-cu12",
+    "version": "12.9.86"
+  },
+  {
     "name": "nvidia-cuda-runtime",
     "version": "13.3.29"
+  },
+  {
+    "name": "nvidia-cuda-runtime-cu12",
+    "version": "12.9.79"
+  },
+  {
+    "name": "nvidia-cudnn-cu12",
+    "version": "9.25.1.1"
   },
   {
     "name": "nvidia-cudnn-cu13",
@@ -286,12 +322,28 @@
     "version": "12.3.0.29"
   },
   {
+    "name": "nvidia-cufft-cu12",
+    "version": "11.4.1.4"
+  },
+  {
     "name": "nvidia-cusolver",
     "version": "12.2.6.9"
   },
   {
+    "name": "nvidia-cusolver-cu12",
+    "version": "11.7.5.82"
+  },
+  {
     "name": "nvidia-cusparse",
     "version": "12.8.2.51"
+  },
+  {
+    "name": "nvidia-cusparse-cu12",
+    "version": "12.5.10.65"
+  },
+  {
+    "name": "nvidia-nccl-cu12",
+    "version": "2.31.2"
   },
   {
     "name": "nvidia-nccl-cu13",
@@ -300,6 +352,14 @@
   {
     "name": "nvidia-nvjitlink",
     "version": "13.3.33"
+  },
+  {
+    "name": "nvidia-nvjitlink-cu12",
+    "version": "12.9.86"
+  },
+  {
+    "name": "nvidia-nvshmem-cu12",
+    "version": "3.7.2"
   },
   {
     "name": "nvidia-nvshmem-cu13",

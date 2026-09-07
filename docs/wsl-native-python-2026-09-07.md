@@ -22,8 +22,8 @@ the scientific environment. In VS Code notebooks select
 **Python (JAX GPU, non-Conda)**. Existing workspaces can retain an explicit
 interpreter selection; select `~/.virtualenvs/jax-native/bin/python` there.
 
-The shared shell prefers `py313` when installed and preserves the old Conda
-startup fallback on machines that have not migrated yet. The shared VS Code
+The shared shell activates `py313` when installed and no longer falls back to
+Conda. The legacy WSL Conda recreation definition was removed. The shared VS Code
 default now points to `jax-native`; install that environment on another machine
 before applying the new editor default.
 

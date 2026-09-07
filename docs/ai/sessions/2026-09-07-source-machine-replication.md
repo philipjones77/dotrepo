@@ -1,5 +1,9 @@
 # Session Capsule: Source machine maintenance and target replication
 
+[WSL Conda retirement](../../wsl-conda-retirement-2026-09-07.md) records the
+user's explicit no-Conda target, the new non-Conda experiment launcher and the
+remaining active-job dependency. Do not launch new work with Miniforge.
+
 Latest software/structure inventory: [WSL matrix and operator comparisons](../../wsl-matrix-comparison-2026-09-07.md).
 
 Latest continuation: [native WSL Python and scientific tools](../../wsl-native-python-2026-09-07.md).

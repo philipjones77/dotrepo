@@ -1,5 +1,9 @@
 # dotrepo
 
+[WSL Conda retirement](docs/wsl-conda-retirement-2026-09-07.md): the final target
+is entirely non-Conda; automatic Conda startup and the WSL recreation recipe
+are removed. Two running source experiments still require the old installation.
+
 The [WSL matrix/operator comparison setup](docs/wsl-matrix-comparison-2026-09-07.md)
 records the latest source software audit, available numerical structures,
 comparison libraries and validation commands.
@@ -69,7 +73,7 @@ bash scripts/dotrepo.sh ssh
 bash scripts/dotrepo.sh doctor --network
 ```
 
-`install` applies configuration only. Add `-InstallTools` on Windows or `--install-tools` in WSL to install tracked VS Code extensions and global npm packages. Python environments are created separately using `python/windows/create-venv.ps1` or `bash python/wsl/create-venv.sh`; Conda definitions live beside them. R and MATLAB are inventoried, not automatically installed or licensed.
+`install` applies configuration only. Add `-InstallTools` on Windows or `--install-tools` in WSL to install tracked VS Code extensions and global npm packages. Python environments are created separately using `python/windows/create-venv.ps1` or `bash python/wsl/create-venv.sh`. WSL uses standard virtualenvs; its Conda recreation definition and automatic shell fallback have been removed. R and MATLAB are inventoried, not automatically installed or licensed.
 
 ## First setup
 

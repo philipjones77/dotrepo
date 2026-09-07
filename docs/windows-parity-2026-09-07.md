@@ -22,6 +22,9 @@ All four use uv-managed CPython, independent of Conda. Every recorded package
 name and version matches, with no extra or missing distributions. Windows JAX
 reports a CPU device. These checks do not make a claim about Windows CUDA JAX
 support, every scientific workload, or byte-identical original wheels.
+After Visual Studio, Office, .NET and CUDA installation, all four Python versions
+and package sets were checked again and still matched exactly. A fresh Windows
+PATH resolved `python` to the intended `py313` interpreter.
 
 The Windows user PATH, ignored local VS Code interpreter override and Cloud SDK
 interpreter now select `~/.virtualenvs/py313/Scripts/python.exe`, with backups.
@@ -84,13 +87,18 @@ has not been started: the installer-added login startup entry was backed up and
 removed while restoration of the original Docker disk remains deferred.
 
 .NET SDK 9.0.317 is installed, together with the Core, ASP.NET and Windows
-Desktop runtimes 8.0.30 and 9.0.19. Actual .NET and CUDA build checks remain.
-The CUDA 13.3.1 installer was downloaded, its published SHA-256 value
-matched, and its publisher signature was valid. CUDA installation
-selects the 42 reviewed toolkit subpackages with the official no-restart switches;
-driver and NVIDIA App packages are excluded. The NVIDIA driver was verified as
-616.56 before installation. TeX Live's native GPG verifier was restored and its repository
-signature check passed; the manager/package update is running.
+Desktop runtimes 8.0.30 and 9.0.19. A .NET 9 console program built and ran
+successfully, calculating the expected result 338350.
+
+CUDA 13.3.1 finished installing with exit code 0. The published installer
+SHA-256 matched and its NVIDIA publisher signature was valid. Installation
+selected 42 reviewed toolkit subpackages with the official no-restart switches;
+driver and NVIDIA App packages were excluded. The NVIDIA driver remained 616.56
+before and after installation. `nvcc` reports 13.3.73. A newly compiled CUDA
+program ran successfully on the RTX 4070 Laptop GPU and checked all 4097 output
+values; all 40 Visual Studio component IDs also remained registered.
+TeX Live's repository signature check passed and its manager was updated;
+the full 1661-package update is still running.
 
 PowerShell 7.6.5 and Google Cloud SDK 583.0.0 are working standalone installations,
 despite not appearing as ordinary WinGet installations. Node 24.20.0 matches
@@ -106,19 +114,30 @@ account activation remains unverified. The Microsoft 365 Copilot Store app also
 updated to the recorded 19.2609.33021.0.
 
 The Office installation subsequently replaced the updated per-user OneDrive
-with its older 23.038.0219.0001 machine-wide copy. Correction to the reviewed
-26.153.0809.0004 production release is queued after CUDA; the original disabled
-login-startup preference is being preserved. The earlier OneDrive verification
-describes its state before Office installed, not this intermediate state.
+with its older 23.038.0219.0001 machine-wide copy. The reviewed production
+installer subsequently corrected the machine-wide installation to
+26.153.0809.0004, returning exit code 0. The executable under
+`C:\Program Files\Microsoft OneDrive` has a valid Microsoft signature and the
+registered Store component now reports 26153.809.4.0. The original disabled
+login-startup preference was preserved. When repeating this recovery, check
+OneDrive again after Office deployment.
 
 The other computer's ASUS app suite also needs restoration. This target is an
 ROG Zephyrus M16 GU604VI: its ASUS System Control Interface 3.1.70.0 already
 matches the current model support download, and its Armoury Crate Control
-Interface 1.2.0.2 is newer than the listed 1.2.0.1. MyASUS, GlideX and Armoury
-Crate app restoration is in progress using the
+Interface 1.2.0.2 is newer than the listed 1.2.0.1. MyASUS 4.0.73.0 is installed
+and its Store signature and registration status verified. Its first Store
+installation failed with a canceled-call error; an ordinary retry completed.
+GlideX 4.2.1.0 and NVIDIA Control Panel 8.1.969.0 are also installed with healthy
+Store registrations. Armoury Crate 6.5.14.0 is installed; its official loader
+reported exit code 0. Its first-run ASUS privacy choice remains pending, so
+hardware-service readiness has not yet been verified. Restoration used the
 [GU604VI support page](https://www.asus.com/us/supportonly/gu604vi/helpdesk_download/).
 The source machine's AMD and ScreenPad components are hardware-specific and are
 not a reason to install those drivers or apps on this Intel laptop.
+Dolby Access 3.27.11070.0 and Realtek Audio Control 1.1.137.0 remain below the
+source inventory versions; the Store package manager offered no newer upgrade
+for either on this target. Their current registrations are healthy.
 See the [recovery report](recovery-2026-09-06.md) for previously restored apps,
 Drive, Norton, editor integration and GPU checks.
 
@@ -127,6 +146,11 @@ restoration is included after the Windows-only instruction. Docker's Windows
 installer requested the Windows WSL compatibility feature as a prerequisite;
 its engine has not been started. The original Docker disk remains preserved,
 with an explicit guard deferring its restoration.
+
+After installation and compiler checks, four owned installer downloads (CUDA,
+Docker Desktop, Rtools and Git) were removed from the private recovery folder,
+releasing 3.45 GiB of archive storage. Installed tools, package-manager caches,
+the retained Windows.old data and WSL disks were preserved.
 
 ## Repeating the TeX Live verifier repair
 

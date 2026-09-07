@@ -15,6 +15,9 @@ stable CUDA 13.3.1 recommendation. A later user-authorized
 [WSL environment cleanup](../docs/wsl-environment-cleanup-2026-09-07.md) retained
 only Miniforge `base` and `jax` on this target, with a passing JAX GPU check;
 Ubuntu upgrades and the Drive helper restart remain deferred.
+The later [Acrobat restoration](../docs/acrobat-restore-2026-09-07.md) installed
+the full 64-bit desktop app and its 26.002.21869 update, with component and PDF
+rendering checks passed; paid-account activation remains unverified.
 
 ## Repository Setup Standards
 

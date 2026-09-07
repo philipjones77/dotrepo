@@ -9,3 +9,5 @@ Docker.DockerDesktop
 # LaTeX toolchain; reviewed versions and target steps: docs/latex-toolchain.md.
 EclipseAdoptium.Temurin.21.JRE
 SumatraPDF.SumatraPDF
+# Licensed PDF editor; all-component install and activation: docs/acrobat-restore-2026-09-07.md.
+Adobe.Acrobat.Pro

@@ -1,5 +1,10 @@
 # Windows source matching — 2026-09-07
 
+Later app restoration: [full Adobe Acrobat](acrobat-restore-2026-09-07.md)
+26.002.21869 was installed at the user's request, matching the preserved
+Windows.old version. Component checks and actual PDF rendering passed;
+Adobe account activation remains unverified.
+
 This work applies to **PC-PHILIP-WINDO**, after its Windows 11 reinstall.
 The user requested the other computer's Windows Python environments and Windows
 software, and then explicitly left WSL unchanged for this follow-up.

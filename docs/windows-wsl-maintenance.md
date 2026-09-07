@@ -54,6 +54,14 @@ and VS Code host profiles use the actual Windows Documents location, including
 redirection. Installation does not change execution policy. Add `-InstallTools`
 only when the tracked extension/npm manifests have been reviewed for that host.
 
+The WSL bootstrap installs `~/.local/bin/code` from `wsl/code.sh`. It finds the
+current Windows user's VS Code installation and invokes its official Remote WSL
+launcher while keeping Linux tools first on PATH. Install Windows VS Code and
+its `ms-vscode-remote.remote-wsl` extension, then run `code --version` and
+`code ~/projects/dotrepo` from Bash. For a nonstandard installation, set
+`DOTREPO_WINDOWS_CODE_BIN` to its `/mnt/.../bin/code` path in the local shell
+override. Existing launchers are backed up before replacement.
+
 ## Windows editor paths on different hosts
 
 Use ignored `vscode/windows/settings.local.json` for host-specific editor paths,

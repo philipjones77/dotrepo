@@ -132,6 +132,33 @@ link_file "${repo_root}/git/gitconfig.wsl" "$HOME/.gitconfig"
 link_file "${repo_root}/ssh/config" "$HOME/.ssh/config"
 merge_vscode_settings "${repo_root}/vscode/wsl/settings.json" "$HOME/.vscode-server/data/Machine/settings.json"
 
+# Use the Windows client without importing Windows tool directories into PATH.
+# A copy has reliable executable permissions even from a Windows checkout.
+code_target="$HOME/.local/bin/code"
+if [ -f "$code_target" ] && [ ! -L "$code_target" ] \
+  && cmp -s "${repo_root}/wsl/code.sh" "$code_target"; then
+  chmod 755 "$code_target"
+  log "Already installed ${code_target}"
+else
+  backup_user_target "$code_target"
+  install -Dm755 "${repo_root}/wsl/code.sh" "$code_target"
+  log "Installed ${code_target}"
+fi
+ide_target="$HOME/.local/bin/antigravity-ide"
+if [ -f "$ide_target" ] && [ ! -L "$ide_target" ] \
+  && cmp -s "${repo_root}/wsl/antigravity-ide.sh" "$ide_target"; then
+  chmod 755 "$ide_target"
+  log "Already installed ${ide_target}"
+else
+  backup_user_target "$ide_target"
+  install -Dm755 "${repo_root}/wsl/antigravity-ide.sh" "$ide_target"
+  log "Installed ${ide_target}"
+fi
+case ":$PATH:" in
+  *":$HOME/.local/bin:"*) ;;
+  *) export PATH="$HOME/.local/bin:$PATH" ;;
+esac
+
 # Preserve existing distro-specific boot/network/user settings.
 if [ ! -f /etc/wsl.conf ]; then
   temp_config=$(mktemp)

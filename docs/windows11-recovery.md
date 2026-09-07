@@ -72,6 +72,12 @@ repairs from an earlier installation apply only when the same fault is observed;
 a Store pinning failure with a valid Microsoft certificate also warrants checking
 the installed App Installer version.
 
+Check Windows and Ubuntu clocks against an independent time source before
+diagnosing authentication failures. If Windows Time is stopped and the host
+clock is wrong, start that service and request `w32tm /resync /rediscover` in
+administrator PowerShell, then verify its source/status and the resulting time.
+Do not make a correctly synchronized guest match an incorrect host clock.
+
 ## Restore the existing Ubuntu disk
 
 In administrator PowerShell, install the runtime without creating another Linux
@@ -105,7 +111,32 @@ expected UID, project directories, scientific environments, GitHub SSH, one rclo
 Drive mount, and VS Code remote access. A successful Windows runtime installation
 does not by itself prove Ubuntu recovery.
 
+Use the Windows VS Code client with Remote WSL. The native bootstrap installs
+`~/.local/bin/code`, which discovers that client while keeping Linux tools first
+on PATH. Restore extensions separately on Windows and the WSL remote host, then
+test a real remote terminal, Python/Jupyter and PDF/image/Markdown viewers.
+See the [maintenance runbook](windows-wsl-maintenance.md) for the launcher and
+[persistent WSL Drive procedure](wsl-google-drive.md) for the optional Windows
+login anchor. A background Linux mount alone may disappear when WSL becomes idle.
+
 ## Finish and record
+
+Restore Norton from the existing subscription in [My Norton](https://my.norton.com/),
+using a fresh download and a valid Norton/Gen Digital executable signature.
+Run LiveUpdate until no updates remain, and record both the installed product
+version and the update result. A downloader's file version alone does not prove
+the installed protection is current. Norton documents the
+[account download procedure](https://support.norton.com/sp/en/us/norton-download-install/current/solutions/kb20090708112600EN).
+Restore separately licensed AntiTrack, Utilities Ultimate and Driver Updater
+only when the account includes them; do not start a new paid trial to recover an
+existing license. Complete required account and browser-extension setup.
+
+After Norton is active, repeat PowerShell 5/7, VS Code automation, GitHub SSH,
+Store, Conda/Node HTTPS and both Drive checks. Diagnose a reproduced block using
+the current protection history and certificate chain. Keep protection enabled
+and retain the conditional [certificate repair guidance](windows-wsl-maintenance.md#certificate-and-norton-repairs-only-for-matching-symptoms).
+Review utility cleanup and driver changes separately, preserving the recovered
+Windows.old application data and the GPU driver that passed computation tests.
 
 Restore recorded applications sequentially, accounting for both installer working
 space and any unfinished disk copy. Keep reboot requirements and disk-space
@@ -117,3 +148,11 @@ Retain Windows.old until the required application data has been recovered. Recor
 the recovered disk location, hashes in private logs, installed versions, tests,
 remaining sign-ins, and any reboot requirement in the repository's sanitized
 maintenance report. Reopen VS Code and terminals after environment changes.
+
+If space prevents the remaining installations, review the old Ubuntu VHD
+separately from the rest of Windows.old. Before deleting that rollback copy,
+verify its unchanged full hash against the copy receipt, the active registration
+in the durable location, original project history and environment/runtime checks,
+and obtain explicit approval for that exact file. Keep the other old application
+data and backups until their own recovery checks are complete. Recheck actual
+free space before resuming installers.

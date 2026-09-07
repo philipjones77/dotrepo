@@ -20,9 +20,14 @@ case "$action" in
     exit
     ;;
   stop)
+    # Wait for a pending start to finish before deciding whether to unmount.
+    exec 9>"$state_dir/gdrive.lock"
+    flock -w 40 9
     if mountpoint -q "$mount_dir"; then
       fusermount3 -u "$mount_dir"
     fi
+    flock -u 9
+    exec 9>&-
     exit
     ;;
   start|serve) ;;

@@ -29,7 +29,7 @@ if (Test-GoogleDriveMounted) {
 $RepoRoot = Split-Path (Split-Path $PSScriptRoot -Parent) -Parent
 $CanonicalScript = Join-Path $RepoRoot 'windows\google-drive.ps1'
 if ($Quiet) {
-    & $CanonicalScript 1>$null 6>$null
+    & $CanonicalScript -QuietIfMissing 1>$null 6>$null
 }
 else {
     & $CanonicalScript

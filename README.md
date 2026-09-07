@@ -146,6 +146,10 @@ replicate setup and repairs on another machine. The
 [2026-09-06 maintenance report](docs/maintenance-2026-09-06.md) records verified
 updates, disk savings, remaining checks and recovery information without private
 machine logs or credentials.
+For a Windows reinstall, start with [recovering the existing environment](docs/windows11-recovery.md)
+before creating a new Ubuntu distribution or removing Windows.old.
+The [Windows reinstall recovery report](docs/recovery-2026-09-06.md) records the
+target's restored files and tools, verification results, and remaining work.
 
 1. Edit the shared policy, platform configuration, or package definitions in this repo.
 2. Validate locally and run tests. Explain intentional Windows/WSL differences.

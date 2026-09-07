@@ -1,4 +1,4 @@
-param([switch]$Install)
+param([switch]$Install, [switch]$QuietIfMissing)
 $ErrorActionPreference = 'Stop'
 if ($Install) {
     $winget = Get-Command winget -ErrorAction SilentlyContinue
@@ -11,7 +11,10 @@ $roots = @((Join-Path $env:ProgramFiles 'Google\Drive File Stream'), (Join-Path 
 $exe = $roots | Where-Object { Test-Path -LiteralPath $_ } | ForEach-Object {
     Get-ChildItem -LiteralPath $_ -Filter GoogleDriveFS.exe -Recurse -ErrorAction SilentlyContinue
 } | Sort-Object LastWriteTime -Descending | Select-Object -First 1
-if (!$exe) { throw 'Google Drive desktop is missing. Run with -Install.' }
+if (!$exe) {
+    if ($QuietIfMissing) { return }
+    throw 'Google Drive desktop is missing. Run with -Install.'
+}
 if (!(Test-Path 'HKCU:\Software\Google\DriveFS')) {
     New-Item -Path 'HKCU:\Software\Google\DriveFS' | Out-Null
 }

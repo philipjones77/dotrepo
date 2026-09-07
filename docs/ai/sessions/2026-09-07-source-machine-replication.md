@@ -3,11 +3,14 @@
 Latest continuation: [native WSL Python and scientific tools](../../wsl-native-python-2026-09-07.md).
 The source now has tested standard CPython replacements (`py313`, `jax-native`),
 native Claude/Codex/Gemini/Google Cloud CLIs and updated R packages. Miniforge
-removal is deferred while scientific jobs still use it. The old `jax-wsl`
-duplicate was removed; the separate legacy statistics virtualenv is retained.
+base removal is deferred while scientific jobs still use it. The old Conda
+`jax` environment and `jax-wsl` duplicate were removed; the separate legacy
+statistics virtualenv is retained.
 Use that report and the `wsl-native` inventory before following historical
 Conda restore instructions below. FFTLog has been recovered as a local wheel;
 it still needs separate transfer when replicating to another machine.
+The subsequent [Linux MATLAB installation](../../matlab-wsl-2026-09-07.md)
+tracks the user's request for MATLAB and all toolboxes, including activation.
 
 Date: 2026-09-06–2026-09-07 (America/Chicago)
 Repo: dotrepo

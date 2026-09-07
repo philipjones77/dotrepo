@@ -1,3 +1,4 @@
+# Legacy Conda wrapper retained for migration. Prefer create-venv.sh (native uv).
 name: jax
 channels:
   - conda-forge

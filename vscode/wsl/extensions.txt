@@ -3,6 +3,7 @@ github.copilot-chat
 github.vscode-pull-request-github
 goessner.mdmath
 james-yu.latex-workshop
+mathworks.language-matlab
 ms-python.debugpy
 ms-python.python
 ms-python.vscode-pylance

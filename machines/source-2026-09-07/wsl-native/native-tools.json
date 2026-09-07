@@ -1,0 +1,49 @@
+{
+  "claude": {
+    "version": "2.1.263",
+    "login_status": "recognized",
+    "google_drive_mcp": "connected"
+  },
+  "codex": {
+    "version": "0.153.4",
+    "login_status": "recognized",
+    "extra_mcp_servers": 0
+  },
+  "gemini": {
+    "version": "0.58.0",
+    "login_status": "unverified",
+    "extensions": 0
+  },
+  "google_cloud_cli": {
+    "version": "583.0.0",
+    "login_status": "unverified"
+  },
+  "wolfram": {
+    "version": "14.3.0",
+    "kernel_calculation": "passed"
+  },
+  "R": {
+    "version": "4.6.1",
+    "visible_unique_packages": 280,
+    "package_load_failures": 0
+  },
+  "flint_native": {
+    "version": "3.0.1",
+    "compiled_arb_calculation": "passed"
+  },
+  "jax": {
+    "version": "0.10.2",
+    "python": "3.12.13",
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "driver": "616.56",
+    "environment_validation": "passed",
+    "jupyter_gpu_kernel": "passed",
+    "arbplusjax_gpu_tests": {
+      "passed": 12,
+      "failed": 1,
+      "failure": "Existing incomplete-gamma dynamic while-loop reverse differentiation"
+    },
+    "integralfunctionsjax_tests_passed": 14,
+    "toposmpljax_tests_passed": 6
+  }
+}

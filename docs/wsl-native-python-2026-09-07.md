@@ -74,8 +74,9 @@ constraint; scikit-sparse 0.5.0 was built against Ubuntu SuiteSparse.
 
 ## Cleanup boundaries and remaining work
 
-The unused duplicate `~/.virtualenvs/jax-wsl` was removed after inventory and
-process checks. Ubuntu's system Python is retained for operating-system tools.
+The unused duplicate `~/.virtualenvs/jax-wsl` and the old Conda
+`~/miniforge3/envs/jax` were removed after inventory, validation and process
+checks. Ubuntu's system Python is retained for operating-system tools.
 
 **Miniforge is not yet removed.** An active `data77` experiment used its base
 interpreter, then another experiment started from the same installation.
@@ -100,7 +101,7 @@ separately when cloning; the remote does not contain it or account credentials.
 Current shareable inventory is under
 [`machines/source-2026-09-07/wsl-native`](../machines/source-2026-09-07/wsl-native/).
 The earlier `wsl/` snapshot is historical. The new snapshot deliberately still
-records the retained Conda installations and the legacy virtualenv.
+records the retained Conda base installation and the legacy virtualenv.
 
 ## Reconstructing the standard environments
 
@@ -132,6 +133,12 @@ done
 Install the environments sequentially: simultaneous large CUDA downloads can
 time out waiting for uv's shared cache lock. The captured package JSON files
 record the final editable versions; requirements files cover ordinary packages.
+`bash python/wsl/create-venv.sh` is the maintained convenience installer for
+`jax-native`; it now uses this tested package set and the local scientific
+checkouts, rather than recreating the older `jax-wsl` environment.
+
+The follow-up [Linux MATLAB installation](matlab-wsl-2026-09-07.md) records
+MATLAB R2026a, its toolbox installation and the remaining activation step.
 
 ## Installation references
 

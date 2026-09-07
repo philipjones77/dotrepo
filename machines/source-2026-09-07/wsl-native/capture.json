@@ -1,19 +1,14 @@
 {
-  "captured_at": "2026-09-07T14:23:07.488804+00:00",
+  "captured_at": "2026-09-07T14:36:18.494056+00:00",
   "platform": "wsl",
   "counts": {
-    "apt_manual": 75,
-    "apt_installed": 1296,
+    "apt_manual": 147,
+    "apt_installed": 1342,
     "conda": [
       {
         "name": "base",
         "packages": 317,
         "manual_sources": 3
-      },
-      {
-        "name": "jax",
-        "packages": 444,
-        "manual_sources": 4
       }
     ],
     "venv": [
@@ -34,5 +29,5 @@
       }
     ]
   },
-  "coverage": "Current user and standard Conda installations; review manual sources and other project-local environments separately."
+  "coverage": "Current user, ~/.virtualenvs and standard Conda installations; review manual sources and other project-local environments separately."
 }

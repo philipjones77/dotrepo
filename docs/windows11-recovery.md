@@ -77,6 +77,10 @@ diagnosing authentication failures. If Windows Time is stopped and the host
 clock is wrong, start that service and request `w32tm /resync /rediscover` in
 administrator PowerShell, then verify its source/status and the resulting time.
 Do not make a correctly synchronized guest match an incorrect host clock.
+Set the display timezone separately. For U.S. Central with normal daylight-saving
+changes, use `Set-TimeZone -Id 'Central Standard Time'` on Windows and
+`sudo timedatectl set-timezone America/Chicago` in Ubuntu. Verify `Get-TimeZone`,
+`timedatectl` and UTC agreement afterward; a timezone change should not shift UTC.
 
 ## Restore the existing Ubuntu disk
 
@@ -130,6 +134,12 @@ the installed protection is current. Norton documents the
 Restore separately licensed AntiTrack, Utilities Ultimate and Driver Updater
 only when the account includes them; do not start a new paid trial to recover an
 existing license. Complete required account and browser-extension setup.
+Preserve a previous disabled automatic-cleaning preference in Utilities Ultimate:
+Settings > Auto-Clean > Automatic Cleaning should remain off during recovery.
+Closing its window alone may leave background cleanup active. Do not run its
+Old Windows Installations cleanup while Windows.old still contains recovery data.
+Driver Updater installation is separate from applying its proposed driver changes;
+review those against the actual hardware and the already-tested GPU driver.
 
 After Norton is active, repeat PowerShell 5/7, VS Code automation, GitHub SSH,
 Store, Conda/Node HTTPS and both Drive checks. Diagnose a reproduced block using

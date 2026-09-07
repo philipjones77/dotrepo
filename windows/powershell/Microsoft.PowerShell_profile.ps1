@@ -63,6 +63,16 @@ if ((Test-Path $standardActivation) -and -not $env:VIRTUAL_ENV) {
         while ([int]$env:CONDA_SHLVL -gt 0) { conda deactivate }
     }
     . $standardActivation
+} elseif (!(Test-Path $standardActivation) -and -not $env:VIRTUAL_ENV) {
+    # Recovery targets may retain Conda while the shared source uses CPython.
+    # Reuse an existing installation; never install or replace environments here.
+    $existingConda = @('anaconda3', 'miniconda3') |
+        ForEach-Object { Join-Path $HOME "$_\Scripts\conda.exe" } |
+        Where-Object { Test-Path -LiteralPath $_ } |
+        Select-Object -First 1
+    if ($existingConda) {
+        (& $existingConda 'shell.powershell' 'hook') | Out-String | Invoke-Expression
+    }
 }
 
 if (Get-Command fnm -ErrorAction SilentlyContinue) {

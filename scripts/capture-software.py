@@ -122,6 +122,22 @@ def extensions(folder):
     return [{'id': ident, 'version': version} for ident, version in sorted(found.items())]
 
 
+def standard_environments(output):
+    """Capture user virtualenvs on either OS without exporting local source URLs."""
+    result = []
+    for config in sorted((Path.home() / '.virtualenvs').glob('*/pyvenv.cfg')):
+        prefix = config.parent
+        interpreter = prefix / ('Scripts/python.exe' if os.name == 'nt' else 'bin/python')
+        if not interpreter.is_file():
+            continue
+        packages = json.loads(command([interpreter, '-m', 'pip', 'list', '--format=json']))
+        version = command([interpreter, '-c', 'import platform; print(platform.python_version())'])
+        save(output / 'standard-python' / f'{prefix.name}-packages.json', packages)
+        result.append({'name': prefix.name, 'python': version, 'packages': len(packages)})
+    save(output / 'standard-python/environments.json', result)
+    return result
+
+
 def windows(output):
     import winreg
     apps = []
@@ -167,17 +183,7 @@ def windows(output):
         for index, prefix in enumerate(json.loads(command([conda, 'env', 'list', '--json']))['envs']):
             name = 'base' if Path(prefix) == conda.parent.parent else Path(prefix).name
             envs.append(environment(Path(prefix), conda, output / 'conda', name))
-    venvs = []
-    for config in sorted((Path.home() / '.virtualenvs').glob('*/pyvenv.cfg')):
-        prefix = config.parent
-        interpreter = prefix / 'Scripts/python.exe'
-        if not interpreter.is_file():
-            continue
-        packages = json.loads(command([interpreter, '-m', 'pip', 'list', '--format=json']))
-        version = command([interpreter, '-c', 'import platform; print(platform.python_version())'])
-        save(output / 'standard-python' / f'{prefix.name}-packages.json', packages)
-        venvs.append({'name': prefix.name, 'python': version, 'packages': len(packages)})
-    save(output / 'standard-python/environments.json', venvs)
+    venvs = standard_environments(output)
     return {'desktop_records': len(unique), 'store_records': len(appx), 'conda': envs, 'venv': venvs}
 
 
@@ -205,7 +211,8 @@ def linux(output):
     if r:
         script = 'x<-installed.packages(); write.table(x[,c("Package","Version","Priority")],row.names=FALSE,quote=FALSE,sep="\\t",na="NA")'
         (output / 'r-packages.tsv').write_text(command([r, '--vanilla', '-e', script]) + '\n')
-    return {'apt_manual': len(manual), 'apt_installed': len(packages), 'conda': envs}
+    return {'apt_manual': len(manual), 'apt_installed': len(packages), 'conda': envs,
+            'venv': standard_environments(output)}
 
 
 def main():
@@ -217,7 +224,7 @@ def main():
     counts = windows(args.output) if args.platform == 'windows' else linux(args.output)
     save(args.output / 'capture.json', {'captured_at': datetime.now(timezone.utc).isoformat(),
          'platform': args.platform, 'counts': counts,
-         'coverage': 'Current user and standard Conda installations; review manual sources and other project-local environments separately.'})
+         'coverage': 'Current user, ~/.virtualenvs and standard Conda installations; review manual sources and other project-local environments separately.'})
     print(json.dumps(counts))
 
 

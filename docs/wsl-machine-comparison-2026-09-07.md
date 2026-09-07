@@ -1,5 +1,8 @@
 # WSL comparison between the two computers
 
+Later source changes are in the [native WSL update](wsl-native-python-2026-09-07.md).
+Its Python and application inventory supersedes this earlier source snapshot.
+
 Reviewed on 2026-09-07. **WSL on PhilipSecond is healthy; no reinstall or rebuild
 is indicated. It is not an exact copy of the other computer.**
 

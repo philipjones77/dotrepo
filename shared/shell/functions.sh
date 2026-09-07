@@ -6,6 +6,17 @@ venvpy() {
   python -m venv "${1:-.venv}"
 }
 
+jaxenv() {
+  if [ ! -f "$HOME/.virtualenvs/jax-native/bin/activate" ]; then
+    echo "JAX virtualenv is not installed: ~/.virtualenvs/jax-native" >&2
+    return 1
+  fi
+  if command -v conda >/dev/null 2>&1 && [ "${CONDA_SHLVL:-0}" != 0 ]; then
+    conda deactivate || return 1
+  fi
+  . "$HOME/.virtualenvs/jax-native/bin/activate"
+}
+
 extract() {
   if [ $# -ne 1 ] || [ ! -f "$1" ]; then
     echo "usage: extract <archive>" >&2

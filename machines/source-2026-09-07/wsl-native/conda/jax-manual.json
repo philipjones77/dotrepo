@@ -1,0 +1,31 @@
+[
+  {
+    "name": "IntegralFunctionsJAX",
+    "version": "0.2.0",
+    "source": "editable/local",
+    "repository": "git@github.com:philipjones77/IntegralFunctionsJAX.git",
+    "commit": "829dd58785f80f397c0724828d3a6c0b157f39dc",
+    "uncommitted_changes": false
+  },
+  {
+    "name": "TopoSMPLJAX",
+    "version": "2.0.0",
+    "source": "editable/local",
+    "repository": "git@github.com:philipjones77/TopoSmplJAX.git",
+    "commit": "488744fb256c364f235444c28edd4617d7550cb5",
+    "uncommitted_changes": false
+  },
+  {
+    "name": "arbPlusJAX",
+    "version": "1.1.0",
+    "source": "editable/local",
+    "repository": "git@github.com:philipjones77/arbPlusJAX.git",
+    "commit": "4592316f46a3a7dab7a9f599f786a4a6d37c26a2",
+    "uncommitted_changes": false
+  },
+  {
+    "name": "fftlog-lss",
+    "version": "0.1.2",
+    "source": "direct-url/vcs"
+  }
+]

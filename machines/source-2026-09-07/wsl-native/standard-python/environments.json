@@ -1,0 +1,17 @@
+[
+  {
+    "name": "jax",
+    "python": "3.12.3",
+    "packages": 179
+  },
+  {
+    "name": "jax-native",
+    "python": "3.12.13",
+    "packages": 293
+  },
+  {
+    "name": "py313",
+    "python": "3.13.15",
+    "packages": 139
+  }
+]

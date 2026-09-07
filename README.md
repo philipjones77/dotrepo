@@ -1,5 +1,9 @@
 # dotrepo
 
+The [native WSL Python and scientific-tool update](docs/wsl-native-python-2026-09-07.md)
+records the tested non-Conda JAX GPU environment, R update, native AI CLIs,
+and the remaining cleanup boundaries.
+
 The [latest source setup and inventory](machines/source-2026-09-07/README.md)
 includes standard Windows CPython 3.13/3.14/3.15, JAX, PowerShell, R/Rtools,
 TeX Live and SumatraPDF, with verification results and target instructions.

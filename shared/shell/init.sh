@@ -10,7 +10,11 @@ case $- in
   *i*)
     . "$DOTREPO/shared/shell/aliases.sh"
     . "$DOTREPO/shared/shell/functions.sh"
-    if [ "${_DOTREPO_CONDA_INITIALIZED:-0}" != 1 ] \
+    if [ -z "${VIRTUAL_ENV:-}" ] \
+      && [ -f "$HOME/.virtualenvs/py313/bin/activate" ]; then
+      . "$HOME/.virtualenvs/py313/bin/activate"
+    elif [ -z "${VIRTUAL_ENV:-}" ] \
+      && [ "${_DOTREPO_CONDA_INITIALIZED:-0}" != 1 ] \
       && [ -f "$HOME/miniforge3/etc/profile.d/conda.sh" ]; then
       . "$HOME/miniforge3/etc/profile.d/conda.sh"
       if [ "${CONDA_SHLVL:-0}" = 0 ]; then
@@ -18,7 +22,7 @@ case $- in
       fi
       _DOTREPO_CONDA_INITIALIZED=1
     fi
-    # Keep local wrappers (including the system-R wrapper) ahead of Conda.
+    # Keep local wrappers (including the system-R wrapper) ahead of environments.
     export PATH="$HOME/.local/bin:$PATH"
     ;;
 esac

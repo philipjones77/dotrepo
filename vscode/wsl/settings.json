@@ -19,8 +19,7 @@
     "security.allowedUNCHosts":  [
                                      "wsl.localhost"
                                  ],
-    "python.defaultInterpreterPath":  "${env:HOME}/miniforge3/envs/jax/bin/python",
-    "python.condaPath": "${env:HOME}/miniforge3/bin/conda",
+    "python.defaultInterpreterPath":  "${env:HOME}/.virtualenvs/jax-native/bin/python",
     "python.terminal.activateEnvironment":  true,
     "terminal.integrated.defaultProfile.linux": "bash"
 }

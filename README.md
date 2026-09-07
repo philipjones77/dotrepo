@@ -4,6 +4,8 @@ To reproduce the current source computer on the other machine, use the
 [Windows and WSL source inventory and target setup steps](machines/source-2026-09-06/README.md).
 The [September 7 session handoff](docs/ai/sessions/2026-09-07-source-machine-replication.md)
 records completed maintenance, verification results and remaining target work.
+The [source verification report](docs/source-verification-2026-09-07.md) records
+the latest app comparison, shell fixes and Python environment checks.
 
 This repository defines, installs, and checks the developer environment on Windows and WSL. It is the command center for shared configuration, platform differences, software inventories, and GitHub Actions validation.
 

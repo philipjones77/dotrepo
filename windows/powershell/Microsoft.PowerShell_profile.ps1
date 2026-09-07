@@ -2,6 +2,11 @@ $env:DOTREPO = Join-Path $HOME ".dotrepo"
 if (!$env:PROJECTS_HOME) { $env:PROJECTS_HOME = 'C:\dev' }
 Remove-Item Alias:R -ErrorAction SilentlyContinue
 
+$script:dotrepoCondaRoot = @('anaconda3', 'miniconda3') |
+    ForEach-Object { Join-Path $HOME $_ } |
+    Where-Object { Test-Path (Join-Path $_ 'Scripts\conda.exe') } |
+    Select-Object -First 1
+
 function Add-PathEntry {
     param([string]$Candidate)
 
@@ -20,9 +25,12 @@ function Add-PathEntry {
     (Join-Path $HOME ".local\nodejs\current"),
     (Join-Path $HOME "bin"),
     (Join-Path $env:LOCALAPPDATA "Programs\Microsoft VS Code\bin"),
-    (Join-Path $HOME "anaconda3\Scripts"),
-    (Join-Path $HOME "anaconda3\condabin")
+    (Join-Path $env:ProgramFiles "GitHub CLI")
 ) | ForEach-Object { Add-PathEntry $_ }
+if ($script:dotrepoCondaRoot) {
+    Add-PathEntry (Join-Path $script:dotrepoCondaRoot 'Scripts')
+    Add-PathEntry (Join-Path $script:dotrepoCondaRoot 'condabin')
+}
 
 if (Test-Path (Join-Path $HOME ".local\nodejs\current\node.exe")) {
     if (-not $env:NODE_USE_SYSTEM_CA) { $env:NODE_USE_SYSTEM_CA = "1" }
@@ -42,8 +50,8 @@ function mkcd {
 
 function venv-win {
     param([string]$Path = ".venv")
-    $pythonExe = Join-Path $HOME "anaconda3\python.exe"
-    if (Test-Path $pythonExe) {
+    if ($script:dotrepoCondaRoot) {
+        $pythonExe = Join-Path $script:dotrepoCondaRoot 'python.exe'
         & $pythonExe -m venv $Path
         return
     }
@@ -51,8 +59,8 @@ function venv-win {
     python -m venv $Path
 }
 
-$condaExe = Join-Path $HOME "anaconda3\Scripts\conda.exe"
-if (Test-Path $condaExe) {
+if ($script:dotrepoCondaRoot) {
+    $condaExe = Join-Path $script:dotrepoCondaRoot 'Scripts\conda.exe'
     (& $condaExe "shell.powershell" "hook") | Out-String | Invoke-Expression
     conda activate base
 }

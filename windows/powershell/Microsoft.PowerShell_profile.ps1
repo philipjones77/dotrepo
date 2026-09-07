@@ -84,3 +84,9 @@ $googleDriveMountScript = Join-Path $env:DOTREPO "cloud\google-drive\mount-windo
 if ($autoMountGoogleDrive -eq "1" -and (Test-Path -LiteralPath $googleDriveMountScript)) {
     & $googleDriveMountScript -Quiet -NoWait
 }
+
+# Dotrepo: consistent paste keys for interactive PowerShell hosts.
+if ($Host.Name -ne 'ServerRemoteHost' -and (Get-Module -ListAvailable PSReadLine)) {
+    Import-Module PSReadLine
+    Set-PSReadLineKeyHandler -Chord Ctrl+v,Ctrl+Shift+v,Shift+Insert -Function Paste
+}

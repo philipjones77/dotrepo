@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "key": "ctrl+v",
+    "when": "terminalFocus",
+    "command": "workbench.action.terminal.paste"
+  },
+  {
+    "key": "ctrl+shift+v",
+    "when": "terminalFocus",
+    "command": "workbench.action.terminal.paste"
+  },
+  {
+    "key": "shift+insert",
+    "when": "terminalFocus",
+    "command": "workbench.action.terminal.paste"
+  }
+]

@@ -26,6 +26,13 @@
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.automationProfile.windows": {
     "path": "${env:ProgramFiles}/PowerShell/7/pwsh.exe",
-    "args": ["-NoLogo"]
-  }
+    "args": [
+      "-NoLogo"
+    ]
+  },
+  "terminal.integrated.rightClickBehavior": "copyPaste",
+  "terminal.integrated.sendKeybindingsToShell": false,
+  "terminal.integrated.commandsToSkipShell": [
+    "workbench.action.terminal.paste"
+  ]
 }

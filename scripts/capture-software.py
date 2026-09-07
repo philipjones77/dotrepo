@@ -199,7 +199,7 @@ def linux(output):
     save(output / 'apt-installed.json', sorted(packages, key=lambda p: p['name']))
     (output / 'apt-holds.txt').write_text(command(['apt-mark', 'showhold']) + '\n')
     os_info = dict(line.split('=', 1) for line in Path('/etc/os-release').read_text().splitlines() if '=' in line)
-    save(output / 'distribution.json', {k: os_info[k].strip('"') for k in ('ID', 'VERSION_ID', 'VERSION_CODENAME')})
+    save(output / 'distribution.json', {k: os_info[k].strip('"') for k in ('ID', 'PRETTY_NAME', 'VERSION', 'VERSION_ID', 'VERSION_CODENAME')})
     save(output / 'vscode-extensions.json', extensions(Path.home() / '.vscode-server/extensions'))
     conda = next((p for p in (Path.home() / 'miniforge3/bin/conda', Path.home() / 'miniconda3/bin/conda') if p.is_file()), None)
     envs = []

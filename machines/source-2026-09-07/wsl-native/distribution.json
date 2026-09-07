@@ -1,5 +1,7 @@
 {
   "ID": "ubuntu",
+  "PRETTY_NAME": "Ubuntu 24.04.4 LTS",
+  "VERSION": "24.04.4 LTS (Noble Numbat)",
   "VERSION_ID": "24.04",
   "VERSION_CODENAME": "noble"
 }

@@ -10,6 +10,14 @@ for current source state. Use the [earlier target setup guide](../source-2026-09
 for the general procedure, with the changes below. The separate target still
 requires its own [recovery and verification](../../docs/recovery-2026-09-06.md).
 
+## WSL platform
+
+Source WSL platform: **Ubuntu 24.04.4 LTS (Noble Numbat)**, registered as
+`Ubuntu` and running under **WSL 2**. The chosen terminal is **Ubuntu Bash**,
+starting in `/home/phili`. Confirmed from `/etc/os-release` and
+`wsl --list --verbose` on September 7, 2026. The machine-readable distribution
+record is [wsl-native/distribution.json](wsl-native/distribution.json).
+
 ## Windows Python
 
 The default is now **standard CPython 3.13.15, independent of Anaconda**, managed

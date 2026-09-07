@@ -1,5 +1,23 @@
 # WSL Python library upgrade — PhilipSecond, September 7, 2026
 
+## GPflow runtime tests after the upgrade
+
+GPflow 2.11.0 with NumPy 2.5.3 and TensorFlow 2.21.0 passed two CPU runtime
+checks in `jax`, despite its declared `numpy<2` requirement:
+
+- Exact GPR on 16 sine observations: construction, finite automatic gradients,
+  SciPy optimization (success true), and finite predictive means/nonnegative
+  variances. Training loss decreased from 120.676984 to -48.341745.
+- Sparse variational GP on 24 observations with six inducing points:
+  TensorFlow-compiled loss, finite gradients, 30 Adam steps, and finite
+  predictive means/positive variances. Loss decreased from 40.075292 to
+  28.969559.
+
+GPU visibility was disabled for these tests. TensorFlow emitted an initialization
+message about no CUDA device; it did not prevent the CPU checks. No packages
+were changed. These representative runtime checks do not override GPflow's
+dependency metadata, establish full NumPy 2 support, or validate GPflow on GPU.
+
 ## Latest follow-up: Numba with NumPy 2.5.3
 
 The user requested testing Numba with NumPy 2.5.3. Stable Numba 0.67.0 supports

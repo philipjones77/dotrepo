@@ -12,3 +12,9 @@ records JAX 0.11.1 in both retained environments and their validation limits.
 Both use NumPy 2.5.3. `jax` now uses Numba 0.67.0 with updated PyTensor/PyMC;
 `py313` remains without Numba. This does not establish full other-computer
 package parity.
+
+`jax314` is the added standard Python 3.14.7 environment. Its 193 package
+versions match `jax`, excluding TensorFlow, TF-Keras and GPflow because the
+recorded TensorFlow build has no CPython 3.14 wheel. See the
+[jax314 report](../../../../docs/wsl-jax314-2026-09-07.md) for passing validation
+and final dependency-constrained maintenance decisions.

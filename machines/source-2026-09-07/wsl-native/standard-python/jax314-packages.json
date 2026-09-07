@@ -205,10 +205,6 @@
     "version": "1.7.4"
   },
   {
-    "name": "gpflow",
-    "version": "2.11.0"
-  },
-  {
     "name": "gpytorch",
     "version": "1.15.2"
   },
@@ -679,10 +675,6 @@
     "version": "0.10.0"
   },
   {
-    "name": "tensorflow",
-    "version": "2.21.0"
-  },
-  {
     "name": "tensorflow-probability",
     "version": "0.25.0"
   },
@@ -693,10 +685,6 @@
   {
     "name": "termcolor",
     "version": "3.3.0"
-  },
-  {
-    "name": "tf_keras",
-    "version": "2.21.0"
   },
   {
     "name": "tfp-nightly",

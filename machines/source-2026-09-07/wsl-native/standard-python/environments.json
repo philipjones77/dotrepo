@@ -5,6 +5,11 @@
     "packages": 196
   },
   {
+    "name": "jax314",
+    "python": "3.14.7",
+    "packages": 193
+  },
+  {
     "name": "py313",
     "python": "3.13.15",
     "packages": 139

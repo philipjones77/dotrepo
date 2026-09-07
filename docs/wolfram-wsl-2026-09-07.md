@@ -8,22 +8,29 @@ The Linux bundled installer passed its embedded checksum check and exited 0.
 - Documentation: `/usr/share/Wolfram/Documentation/15.0`
 - Previous working version: `/usr/local/Wolfram/Wolfram/14.3`
 
-**Activation remains required.** A direct 15.0.1 kernel launch found the existing
+**Activation and calculations are verified.** The user supplied a new key in
+a local Windows dialog that activated the WSL installation. Activation exited
+0, and a fresh 15.0.1 kernel passed symbolic integration and linear solve
+checks. No key or license contents were committed.
+
+Initially, a direct 15.0.1 kernel launch found the existing
 `~/.Wolfram/Licensing/mathpass` but rejected it with `Invalid password` and
 exit 62. The existing license file was preserved; its contents are not stored
-in this repository. Sign in to the new application's activation window using
-an account entitled to the new version, or use its supported activation flow.
+in this repository. The new key resolved that failure.
 
-The existing `/usr/local/bin` launchers continue to select working version 14.3
-until the new kernel passes activation and calculation checks. Launch the new
-application explicitly with:
+The `/usr/local/bin` kernel commands now select 15.0.1. WolframScript's saved
+`WOLFRAMSCRIPT_KERNELPATH` was also updated from 14.3 to 15.0 and its default
+invocation verified. Version 14.3 remains installed as a fallback.
+`mathematica`, `wolframnb` and `WolframNB` launch the new GUI with the WSL
+graphics settings below. A Mathematica 15.0 (Ubuntu) desktop entry was added.
+Launch the application explicitly with:
 
 ```bash
 QT_QPA_PLATFORM=xcb LIBGL_ALWAYS_SOFTWARE=1 \
   /usr/local/Wolfram/Wolfram/15.0/Executables/wolframnb
 ```
 
-After activation, verify the new kernel before updating default launchers:
+Recheck the new kernel:
 
 ```bash
 /usr/local/Wolfram/Wolfram/15.0/Executables/WolframKernel -noprompt \

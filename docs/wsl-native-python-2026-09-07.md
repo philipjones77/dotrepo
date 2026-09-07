@@ -66,7 +66,7 @@ constraint; scikit-sparse 0.5.0 was built against Ubuntu SuiteSparse.
   library and still appear in an unfiltered `old.packages()` listing.
 - Wolfram 14.3 Linux kernel returned its version and evaluated `2+2` to `4`.
   The [15.0.1 update](wolfram-wsl-2026-09-07.md) is now installed with local
-  documentation but requires activation; 14.3 remains the working default.
+  documentation, activated and tested; 15.0.1 is now the default.
   This verifies the existing licensed kernel, not a new GUI installation.
 - Native FLINT 3.0.1 development headers include Arb. A compiled C program
   linked FLINT/MPFR/GMP and computed a 128-bit pi enclosure successfully.

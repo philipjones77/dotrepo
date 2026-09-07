@@ -1,0 +1,396 @@
+{
+  "captured_at": "2026-09-07T22:45:34.871359+00:00",
+  "machine": "PhilipSecond",
+  "distribution": "Ubuntu",
+  "commands": {
+    "bash": {
+      "available_on_path": true,
+      "path": "/usr/bin/bash",
+      "resolved_path": "/usr/bin/bash",
+      "exit_code": 0,
+      "version_output": [
+        "GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)",
+        "Copyright (C) 2022 Free Software Foundation, Inc.",
+        "License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>",
+        ""
+      ]
+    },
+    "git": {
+      "available_on_path": true,
+      "path": "/usr/bin/git",
+      "resolved_path": "/usr/bin/git",
+      "exit_code": 0,
+      "version_output": [
+        "git version 2.43.0"
+      ]
+    },
+    "gh": {
+      "available_on_path": true,
+      "path": "/usr/bin/gh",
+      "resolved_path": "/usr/bin/gh",
+      "exit_code": 0,
+      "version_output": [
+        "gh version 2.100.0 (2026-09-03)",
+        "https://github.com/cli/cli/releases/tag/v2.100.0"
+      ]
+    },
+    "node": {
+      "available_on_path": true,
+      "path": "/home/phili/.local/bin/node",
+      "resolved_path": "/home/phili/.local/nodejs/node-v24.20.0-linux-x64/bin/node",
+      "exit_code": 0,
+      "version_output": [
+        "v24.20.0"
+      ]
+    },
+    "npm": {
+      "available_on_path": true,
+      "path": "/home/phili/.local/bin/npm",
+      "resolved_path": "/home/phili/.local/nodejs/node-v24.20.0-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "exit_code": 0,
+      "version_output": [
+        "12.0.2"
+      ]
+    },
+    "uv": {
+      "available_on_path": true,
+      "path": "/home/phili/.local/bin/uv",
+      "resolved_path": "/home/phili/.local/bin/uv",
+      "exit_code": 0,
+      "version_output": [
+        "uv 0.12.10 (x86_64-unknown-linux-gnu)"
+      ]
+    },
+    "rclone": {
+      "available_on_path": true,
+      "path": "/usr/bin/rclone",
+      "resolved_path": "/usr/bin/rclone",
+      "exit_code": 0,
+      "version_output": [
+        "rclone v1.60.1-DEV",
+        "- os/version: ubuntu 24.04 (64 bit)",
+        "- os/kernel: 6.18.33.2-microsoft-standard-WSL2 (x86_64)",
+        "- os/type: linux"
+      ]
+    },
+    "R": {
+      "available_on_path": true,
+      "path": "/home/phili/.local/bin/R",
+      "resolved_path": "/home/phili/.local/bin/R",
+      "exit_code": 0,
+      "version_output": [
+        "R version 4.6.1 (2026-06-24) -- \"Happy Hop\"",
+        "Copyright (C) 2026 The R Foundation for Statistical Computing",
+        "Platform: x86_64-pc-linux-gnu",
+        ""
+      ]
+    },
+    "Rscript": {
+      "available_on_path": true,
+      "path": "/home/phili/.local/bin/Rscript",
+      "resolved_path": "/home/phili/.local/bin/Rscript",
+      "exit_code": 0,
+      "version_output": [
+        "Rscript (R) version 4.6.1 (2026-06-24)"
+      ]
+    },
+    "pdflatex": {
+      "available_on_path": true,
+      "path": "/usr/bin/pdflatex",
+      "resolved_path": "/usr/bin/pdftex",
+      "exit_code": 0,
+      "version_output": [
+        "pdfTeX 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian)",
+        "kpathsea version 6.3.5",
+        "Copyright 2023 Han The Thanh (pdfTeX) et al.",
+        "There is NO warranty.  Redistribution of this software is"
+      ]
+    },
+    "xelatex": {
+      "available_on_path": true,
+      "path": "/usr/bin/xelatex",
+      "resolved_path": "/usr/bin/xetex",
+      "exit_code": 0,
+      "version_output": [
+        "XeTeX 3.141592653-2.6-0.999995 (TeX Live 2023/Debian)",
+        "kpathsea version 6.3.5",
+        "Copyright 2023 SIL International, Jonathan Kew and Khaled Hosny.",
+        "There is NO warranty.  Redistribution of this software is"
+      ]
+    },
+    "lualatex": {
+      "available_on_path": true,
+      "path": "/usr/bin/lualatex",
+      "resolved_path": "/usr/bin/luahbtex",
+      "exit_code": 0,
+      "version_output": [
+        "This is LuaHBTeX, Version 1.17.0 (TeX Live 2023/Debian)",
+        "Development id: 7581",
+        "",
+        "Execute  'luahbtex --credits'  for credits and version details."
+      ]
+    },
+    "biber": {
+      "available_on_path": true,
+      "path": "/usr/bin/biber",
+      "resolved_path": "/usr/bin/biber",
+      "exit_code": 0,
+      "version_output": [
+        "biber version: 2.19"
+      ]
+    },
+    "cmake": {
+      "available_on_path": true,
+      "path": "/usr/bin/cmake",
+      "resolved_path": "/usr/bin/cmake",
+      "exit_code": 0,
+      "version_output": [
+        "cmake version 3.28.3",
+        "",
+        "CMake suite maintained and supported by Kitware (kitware.com/cmake)."
+      ]
+    },
+    "gcc": {
+      "available_on_path": true,
+      "path": "/usr/bin/gcc",
+      "resolved_path": "/usr/bin/x86_64-linux-gnu-gcc-13",
+      "exit_code": 0,
+      "version_output": [
+        "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "Copyright (C) 2023 Free Software Foundation, Inc.",
+        "This is free software; see the source for copying conditions.  There is NO",
+        "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE."
+      ]
+    },
+    "g++": {
+      "available_on_path": true,
+      "path": "/usr/bin/g++",
+      "resolved_path": "/usr/bin/x86_64-linux-gnu-g++-13",
+      "exit_code": 0,
+      "version_output": [
+        "g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+        "Copyright (C) 2023 Free Software Foundation, Inc.",
+        "This is free software; see the source for copying conditions.  There is NO",
+        "warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE."
+      ]
+    },
+    "clang": {
+      "available_on_path": false
+    },
+    "rustc": {
+      "available_on_path": true,
+      "path": "/home/phili/.cargo/bin/rustc",
+      "resolved_path": "/home/phili/.cargo/bin/rustup",
+      "exit_code": 0,
+      "version_output": [
+        "rustc 1.94.1 (e408947bf 2026-03-25)"
+      ]
+    },
+    "cargo": {
+      "available_on_path": true,
+      "path": "/home/phili/.cargo/bin/cargo",
+      "resolved_path": "/home/phili/.cargo/bin/rustup",
+      "exit_code": 0,
+      "version_output": [
+        "cargo 1.94.1 (29ea6fb6a 2026-03-24)"
+      ]
+    },
+    "julia": {
+      "available_on_path": false
+    },
+    "octave": {
+      "available_on_path": false
+    },
+    "claude": {
+      "available_on_path": true,
+      "path": "/home/phili/.local/bin/claude",
+      "resolved_path": "/home/phili/.local/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe",
+      "exit_code": 0,
+      "version_output": [
+        "2.1.263 (Claude Code)"
+      ]
+    },
+    "codex": {
+      "available_on_path": true,
+      "path": "/home/phili/.local/bin/codex",
+      "resolved_path": "/home/phili/.local/lib/node_modules/@openai/codex/bin/codex.js",
+      "exit_code": 0,
+      "version_output": [
+        "codex-cli 0.153.4"
+      ]
+    },
+    "gemini": {
+      "available_on_path": true,
+      "path": "/home/phili/.local/bin/gemini",
+      "resolved_path": "/home/phili/.local/lib/node_modules/@google/gemini-cli/bundle/gemini.js",
+      "exit_code": 0,
+      "version_output": [
+        "0.58.0"
+      ]
+    },
+    "gcloud": {
+      "available_on_path": true,
+      "path": "/usr/bin/gcloud",
+      "resolved_path": "/usr/lib/google-cloud-sdk/bin/gcloud",
+      "exit_code": 0,
+      "version_output": [
+        "Google Cloud SDK 583.0.0",
+        "alpha 2026.08.31",
+        "beta 2026.08.31",
+        "bq 2.1.38"
+      ]
+    },
+    "wolframscript": {
+      "available_on_path": true,
+      "path": "/usr/local/bin/wolframscript",
+      "resolved_path": "/usr/local/Wolfram/Wolfram/15.0/SystemFiles/Kernel/Binaries/Linux-x86-64/wolframscript",
+      "exit_code": 0,
+      "version_output": [
+        "WolframScript 1.14.0 for Linux x86 (64-bit)"
+      ]
+    },
+    "pwsh": {
+      "available_on_path": true,
+      "path": "/usr/bin/pwsh",
+      "resolved_path": "/opt/microsoft/powershell/7/pwsh",
+      "exit_code": 0,
+      "version_output": [
+        "PowerShell 7.6.5"
+      ]
+    },
+    "pandoc": {
+      "available_on_path": false
+    },
+    "latexmk": {
+      "available_on_path": true,
+      "path": "/usr/bin/latexmk",
+      "resolved_path": "/usr/bin/latexmk",
+      "exit_code": 0,
+      "version_output": [
+        "Latexmk, John Collins, 31 Jan. 2024. Version 4.83"
+      ]
+    }
+  },
+  "matlab_installations": [
+    {
+      "path": "/home/phili/.local/opt/MATLAB/R2026a",
+      "version_info": {
+        "version": "26.1.0.3346908",
+        "release": "R2026a",
+        "description": "Update 5",
+        "date": "Aug 03 2026"
+      }
+    }
+  ],
+  "wolfram_installations": [
+    "/usr/local/Wolfram/Wolfram/14.3",
+    "/usr/local/Wolfram/Wolfram/15.0"
+  ],
+  "desktop_applications": [
+    {
+      "id": "R.desktop",
+      "name": "R",
+      "scope": "system"
+    },
+    {
+      "id": "byobu.desktop",
+      "name": "Byobu Terminal",
+      "scope": "system"
+    },
+    {
+      "id": "gv.desktop",
+      "name": "gv",
+      "scope": "system"
+    },
+    {
+      "id": "info.desktop",
+      "name": "TeXInfo",
+      "scope": "system"
+    },
+    {
+      "id": "io.snapcraft.SessionAgent.desktop",
+      "name": "Snapd User Session Agent",
+      "scope": "system"
+    },
+    {
+      "id": "openjdk-21-java.desktop",
+      "name": "OpenJDK Java 21 Runtime",
+      "scope": "system"
+    },
+    {
+      "id": "python3.12.desktop",
+      "name": "Python (v3.12)",
+      "scope": "system"
+    },
+    {
+      "id": "snap-handle-link.desktop",
+      "name": "Handler for snap:// URIs",
+      "scope": "system"
+    },
+    {
+      "id": "texdoctk.desktop",
+      "name": "TeXdoctk",
+      "scope": "system"
+    },
+    {
+      "id": "vim.desktop",
+      "name": "Vim",
+      "scope": "system"
+    },
+    {
+      "id": "wslview.desktop",
+      "name": "WSLView",
+      "scope": "system"
+    },
+    {
+      "id": "xpdf.desktop",
+      "name": "xpdf",
+      "scope": "system"
+    },
+    {
+      "id": "zutty.desktop",
+      "name": "Zutty",
+      "scope": "system"
+    },
+    {
+      "id": "matlab-r2026a.desktop",
+      "name": "MATLAB R2026a (Ubuntu)",
+      "scope": "user"
+    },
+    {
+      "id": "mw-matlab.desktop",
+      "name": "MATLAB",
+      "scope": "user"
+    },
+    {
+      "id": "mw-matlabconnector.desktop",
+      "name": "MATLAB Connector",
+      "scope": "user"
+    },
+    {
+      "id": "mw-simulink.desktop",
+      "name": "Simulink",
+      "scope": "user"
+    },
+    {
+      "id": "wolfram-15-wsl.desktop",
+      "name": "Mathematica 15.0 (Ubuntu)",
+      "scope": "user"
+    }
+  ],
+  "npm_global_packages": [
+    {
+      "name": "corepack",
+      "version": "0.36.0"
+    },
+    {
+      "name": "npm",
+      "version": "12.0.2"
+    }
+  ],
+  "snap": {
+    "exit_code": 0,
+    "installed": []
+  },
+  "coverage": "Read-only PATH/version checks, desktop entry names, MATLAB version metadata, Wolfram install directories, npm globals, Snap/Flatpak when present. APT, R packages, Python environments and VS Code extensions are captured separately. No licenses, credentials, or authentication state included."
+}

@@ -1,5 +1,9 @@
 # Source setup after Python, PowerShell, R and TeX changes
 
+The refreshed [WSL application inventory](wsl-native/APPLICATIONS.md) lists
+current applications, command-line tools, APT and R packages, Python environments
+and WSL VS Code extensions for this machine.
+
 The later [WSL machine comparison](../../docs/wsl-machine-comparison-2026-09-07.md)
 records live source checks against the other computer's recovered setup and
 identifies the remaining differences.

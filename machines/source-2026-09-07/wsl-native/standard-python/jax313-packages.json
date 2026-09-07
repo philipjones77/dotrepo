@@ -394,6 +394,10 @@
     "version": "3.6.1"
   },
   {
+    "name": "nodeenv",
+    "version": "1.10.0"
+  },
+  {
     "name": "numba",
     "version": "0.67.0"
   },
@@ -568,6 +572,10 @@
   {
     "name": "pyparsing",
     "version": "3.3.2"
+  },
+  {
+    "name": "pyright",
+    "version": "1.1.411"
   },
   {
     "name": "pytensor",

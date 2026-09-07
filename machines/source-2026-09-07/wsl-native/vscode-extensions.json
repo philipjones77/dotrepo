@@ -4,6 +4,10 @@
     "version": "2.1.263"
   },
   {
+    "id": "charliermarsh.ruff",
+    "version": "2026.78.0"
+  },
+  {
     "id": "davidanson.vscode-markdownlint",
     "version": "0.62.1"
   },

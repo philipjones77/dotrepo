@@ -1,5 +1,10 @@
 # PC-PHILIP-WINDO WSL environment cleanup — 2026-09-07
 
+**Superseded by a later request:** this report preserves the earlier cleanup
+state. The [WSL Python parity migration](wsl-python-parity-2026-09-07.md) records
+the subsequent standard CPython replacements and tracks their validation,
+cutover and Conda retirement. Consult that report for the later status.
+
 At the user's request, Ubuntu on **PC-PHILIP-WINDO** now retains only the
 **base** and **jax** Conda environments. Both are managed by the existing
 Miniforge installation. This is separate from the PhilipSecond source

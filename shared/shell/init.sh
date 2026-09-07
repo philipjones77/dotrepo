@@ -6,6 +6,11 @@ fi
 if [ -f "$HOME/.cargo/env" ]; then
   . "$HOME/.cargo/env"
 fi
+# Editors opened before Conda retirement can pass its prefix as VIRTUAL_ENV.
+# Clear that stale value before choosing the installed CPython default.
+case "${VIRTUAL_ENV:-}" in
+  "$HOME/miniforge3"|"$HOME/miniforge3/"*) unset VIRTUAL_ENV VIRTUAL_ENV_PROMPT ;;
+esac
 case $- in
   *i*)
     . "$DOTREPO/shared/shell/aliases.sh"

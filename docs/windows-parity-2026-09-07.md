@@ -46,8 +46,9 @@ were disabled and no broad Norton exclusions were added.
 The reviewed Windows app installations and compiler checks have completed.
 Armoury Crate's first-run choice and hardware-service verification, account
 activation checks and the deferred Docker work remain as described below.
-Windows App Runtime 1.5 updated to 1.5.9, and Defender intelligence
-KB2267602 1.459.95.0 installed successfully without requiring a reboot.
+Windows App Runtime 1.5 updated to 1.5.9. Defender intelligence KB2267602
+initially updated to 1.459.95.0, then to 1.459.99.0 during the afternoon refresh;
+both installations succeeded without requesting a reboot.
 All 73 recorded Windows R entries now match or exceed the source versions and
 pass a fresh native R check. `translations` is data, rather than a loadable
 namespace. `rdtools` 0.1.0 was restored from CRAN. Updated packages include
@@ -83,10 +84,17 @@ called successfully. This working installation was preserved; its missing
 uninstall registration was not fabricated.
 
 Git 2.55.0.windows.5 installed successfully; version and GitHub SSH push checks
-passed. Docker Desktop 4.89.0.238018 installed successfully and its Docker CLI
-reports 29.7.2. Its Windows prerequisite requires a later restart. The engine
-has not been started: the installer-added login startup entry was backed up and
+passed. Docker Desktop initially installed as 4.89.0.238018 and updated to
+4.90.0.238679 with installer exit code 0 at the afternoon refresh. Its Docker CLI
+still reports 29.7.2 and runs successfully. Its Windows prerequisite requires a
+later restart. The engine has not been started: the installer-added login
+startup entry was backed up and
 removed while restoration of the original Docker disk remains deferred.
+The update used the signed installer and SHA-256 from the reviewed
+[WinGet manifest](https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/d/Docker/DockerDesktop/4.90.0/Docker.DockerDesktop.installer.yaml).
+The disabled startup preference was preserved after installation; no Docker
+engine process or new Docker VHD was present afterward. Both original Docker
+VHDs retained their recorded sizes and modification timestamps.
 
 .NET SDK 9.0.317 is installed, together with the Core, ASP.NET and Windows
 Desktop runtimes 8.0.30 and 9.0.19. A .NET 9 console program built and ran
@@ -156,12 +164,33 @@ installer requested the Windows WSL compatibility feature as a prerequisite;
 its engine has not been started. The original Docker disk remains preserved,
 with an explicit guard deferring its restoration.
 
+At 15:18 CDT, a fresh WinGet check offered no further application upgrades;
+the Store check also offered none. The Windows Update scan offered only the
+Defender intelligence update applied above, with no quality, feature or driver
+updates. A fresh signed TeX Live check again reported no updates available.
+The existing CBS restart flag remains pending. Ubuntu's running session was
+not stopped or upgraded by this follow-up.
+
 After installation and compiler checks, four owned installer downloads (CUDA,
 Docker Desktop, Rtools and Git) were removed from the private recovery folder,
 releasing 3.45 GiB of archive storage. Installed tools, package-manager caches,
 the retained Windows.old data and WSL disks were preserved.
-The temporary installer keep-awake helper stopped after the final checks,
-restoring normal sleep behavior. The Google Drive mount anchor remains running.
+The completed 4.90 Docker installer download was also removed after verification,
+recovering another 0.56 GiB; approximately 99 GiB was then free on C:.
+The temporary installer keep-awake requests ended after the checks, restoring
+normal sleep behavior.
+
+The Windows-side Google Drive anchor was found to have exited at 15:03:46,
+before the afternoon update task began. Ubuntu was running and the Windows
+login entry still selected the existing PowerShell 7 Drive helper. The user
+explicitly chose to leave WSL alone when offered a helper restart. The mount
+itself was not retested during this follow-up.
+
+A subsequent read-only shell check confirmed GNU Bash 5.2.21 in Ubuntu 24.04.4
+LTS, with `/bin/bash` as the `phili` account's login shell. Windows Terminal's
+default profile is Ubuntu Bash. Git for Windows separately supplies Bash
+5.3.15; Windows VS Code's shared terminal and automation settings use PowerShell
+7 through `pwsh.exe`.
 
 ## Repeating the TeX Live verifier repair
 

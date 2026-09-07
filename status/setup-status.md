@@ -11,7 +11,10 @@ observations below are not current-version guarantees.
 For the restored PC-PHILIP-WINDO, use the current
 [Windows software report](../docs/windows-parity-2026-09-07.md) and
 [shell/CUDA decision record](../docs/shell-and-cuda-2026-09-07.md), including the
-explicit WSL deferral and the stable CUDA 13.3.1 recommendation.
+stable CUDA 13.3.1 recommendation. A later user-authorized
+[WSL environment cleanup](../docs/wsl-environment-cleanup-2026-09-07.md) retained
+only Miniforge `base` and `jax` on this target, with a passing JAX GPU check;
+Ubuntu upgrades and the Drive helper restart remain deferred.
 
 ## Repository Setup Standards
 

@@ -3,6 +3,9 @@
 This work applies to **PC-PHILIP-WINDO**, after its Windows 11 reinstall.
 The user requested the other computer's Windows Python environments and Windows
 software, and then explicitly left WSL unchanged for this follow-up.
+The later [WSL environment cleanup](wsl-environment-cleanup-2026-09-07.md)
+was separately authorized: it retained only this target's Miniforge `base`
+and `jax`, without changing the Windows Python environments recorded here.
 The Windows checkout fast-forwarded through source commit `4b6e060`; local terminal-link
 edits were preserved. An overlapping VS Code settings change was reconciled to
 retain the local `pwsh.exe` profiles and the incoming terminal paste settings.

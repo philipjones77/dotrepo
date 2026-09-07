@@ -76,6 +76,12 @@ startup and original Docker data restoration are also deferred; the existing
 Windows restart requirement remains. Armoury Crate first-run setup and account
 activation checks remain documented in the [recovery report](recovery-2026-09-06.md).
 
+After this Windows-only work, the user separately requested a
+[WSL environment cleanup](wsl-environment-cleanup-2026-09-07.md). Only Miniforge
+`base` and `jax` remain on this target, both with Python 3.12.12. A fresh
+JAX 0.11.1 JIT computation passed on `cuda:0` after the other seven environments
+were removed. Ubuntu upgrades and the Drive helper restart remain deferred.
+
 ## Repeat the Windows version checks
 
 Run these read-only commands in PowerShell:

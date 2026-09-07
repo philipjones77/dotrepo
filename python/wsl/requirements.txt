@@ -1,3 +1,3 @@
-# Tested ordinary packages for the native WSL JAX environment.
+# Tested ordinary packages for the default non-Conda WSL py313 environment.
 # Local editable projects and FFTLog are handled by create-venv.sh.
--r ../../machines/source-2026-09-07/wsl-native/standard-python/jax-native-requirements.txt
+-r ../../machines/source-2026-09-07/wsl-native/standard-python/py313-requirements.txt

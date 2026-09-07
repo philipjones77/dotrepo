@@ -6,4 +6,7 @@ reproducibility; the user removed those environments on September 7, 2026.
 Do not recreate them automatically. `jax` and `py313` remain installed.
 
 See the [current follow-up](../../../../docs/wsl-mounts-and-environments-2026-09-07.md)
-for validation limits and the pending other-computer JAX comparison.
+for the earlier removal history. The later
+[Python upgrade report](../../../../docs/wsl-python-upgrade-2026-09-07.md)
+records JAX 0.11.1 / NumPy 2.5.3 in both retained environments and their
+validation limits. This does not establish full other-computer package parity.

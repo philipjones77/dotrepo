@@ -1,7 +1,7 @@
 [
   {
     "name": "absl-py",
-    "version": "2.4.0"
+    "version": "2.5.0"
   },
   {
     "name": "aiofiles",
@@ -34,11 +34,11 @@
   },
   {
     "name": "blackjax",
-    "version": "1.5"
+    "version": "1.6.2"
   },
   {
     "name": "boltons",
-    "version": "26.1.0"
+    "version": "26.2.0"
   },
   {
     "name": "brotli",
@@ -98,11 +98,11 @@
   },
   {
     "name": "flax",
-    "version": "0.12.7"
+    "version": "0.12.9"
   },
   {
     "name": "fonttools",
-    "version": "4.63.0"
+    "version": "4.64.0"
   },
   {
     "name": "frozendict",
@@ -110,7 +110,7 @@
   },
   {
     "name": "fsspec",
-    "version": "2026.4.0"
+    "version": "2026.7.0"
   },
   {
     "name": "h11",
@@ -134,7 +134,7 @@
   },
   {
     "name": "humanize",
-    "version": "4.15.0"
+    "version": "4.16.0"
   },
   {
     "name": "hyperframe",
@@ -146,7 +146,7 @@
   },
   {
     "name": "imagesize",
-    "version": "2.0.0"
+    "version": "2.0.1"
   },
   {
     "name": "importlib_metadata",
@@ -167,23 +167,23 @@
   },
   {
     "name": "jax",
-    "version": "0.10.2"
+    "version": "0.11.1"
   },
   {
     "name": "jax-cuda13-pjrt",
-    "version": "0.10.2"
+    "version": "0.11.1"
   },
   {
     "name": "jax-cuda13-plugin",
-    "version": "0.10.2"
+    "version": "0.11.1"
   },
   {
     "name": "jaxlib",
-    "version": "0.10.2"
+    "version": "0.11.1"
   },
   {
     "name": "jaxtyping",
-    "version": "0.3.10"
+    "version": "0.3.11"
   },
   {
     "name": "Jinja2",
@@ -191,7 +191,7 @@
   },
   {
     "name": "kiwisolver",
-    "version": "1.5.0"
+    "version": "1.5.1"
   },
   {
     "name": "lineax",
@@ -207,11 +207,11 @@
   },
   {
     "name": "matplotlib",
-    "version": "3.10.9"
+    "version": "3.11.1"
   },
   {
     "name": "maturin",
-    "version": "1.13.3"
+    "version": "1.15.0"
   },
   {
     "name": "mdit-py-plugins",
@@ -223,7 +223,7 @@
   },
   {
     "name": "ml_dtypes",
-    "version": "0.5.4"
+    "version": "0.6.0"
   },
   {
     "name": "mpmath",
@@ -243,7 +243,7 @@
   },
   {
     "name": "numpy",
-    "version": "2.5.2"
+    "version": "2.5.3"
   },
   {
     "name": "numpyro",
@@ -251,63 +251,63 @@
   },
   {
     "name": "nvidia-cublas",
-    "version": "13.1.1.3"
+    "version": "13.6.1.10"
   },
   {
     "name": "nvidia-cuda-cccl",
-    "version": "13.3.3.3.1"
+    "version": "13.3.3.4.1"
   },
   {
     "name": "nvidia-cuda-crt",
-    "version": "13.3.33"
+    "version": "13.3.73"
   },
   {
     "name": "nvidia-cuda-cupti",
-    "version": "13.0.85"
+    "version": "13.3.75"
   },
   {
     "name": "nvidia-cuda-nvcc",
-    "version": "13.3.33"
+    "version": "13.3.73"
   },
   {
     "name": "nvidia-cuda-nvrtc",
-    "version": "13.0.88"
+    "version": "13.3.33"
   },
   {
     "name": "nvidia-cuda-runtime",
-    "version": "13.0.96"
+    "version": "13.3.29"
   },
   {
     "name": "nvidia-cudnn-cu13",
-    "version": "9.20.0.48"
+    "version": "9.25.1.1"
   },
   {
     "name": "nvidia-cufft",
-    "version": "12.0.0.61"
+    "version": "12.3.0.29"
   },
   {
     "name": "nvidia-cusolver",
-    "version": "12.0.4.66"
+    "version": "12.2.6.9"
   },
   {
     "name": "nvidia-cusparse",
-    "version": "12.6.3.3"
+    "version": "12.8.2.51"
   },
   {
     "name": "nvidia-nccl-cu13",
-    "version": "2.29.7"
+    "version": "2.31.2"
   },
   {
     "name": "nvidia-nvjitlink",
-    "version": "13.0.88"
+    "version": "13.3.33"
   },
   {
     "name": "nvidia-nvshmem-cu13",
-    "version": "3.4.5"
+    "version": "3.7.2"
   },
   {
     "name": "nvidia-nvvm",
-    "version": "13.3.33"
+    "version": "13.3.73"
   },
   {
     "name": "opt_einsum",
@@ -323,7 +323,7 @@
   },
   {
     "name": "orbax-checkpoint",
-    "version": "0.12.0"
+    "version": "0.12.4"
   },
   {
     "name": "packaging",
@@ -331,7 +331,7 @@
   },
   {
     "name": "pillow",
-    "version": "12.2.0"
+    "version": "12.3.0"
   },
   {
     "name": "pip",
@@ -339,7 +339,7 @@
   },
   {
     "name": "platformdirs",
-    "version": "4.11.6"
+    "version": "4.11.7"
   },
   {
     "name": "pluggy",
@@ -347,11 +347,11 @@
   },
   {
     "name": "prometheus_client",
-    "version": "0.25.0"
+    "version": "0.26.0"
   },
   {
     "name": "protobuf",
-    "version": "7.35.0"
+    "version": "7.36.1"
   },
   {
     "name": "psutil",
@@ -379,7 +379,7 @@
   },
   {
     "name": "Pygments",
-    "version": "2.20.0"
+    "version": "2.21.0"
   },
   {
     "name": "pyparsing",
@@ -387,7 +387,7 @@
   },
   {
     "name": "pypdf",
-    "version": "6.12.2"
+    "version": "6.18.0"
   },
   {
     "name": "pyproject_hooks",
@@ -399,7 +399,7 @@
   },
   {
     "name": "pytest",
-    "version": "9.0.3"
+    "version": "9.1.1"
   },
   {
     "name": "python-dateutil",
@@ -407,7 +407,7 @@
   },
   {
     "name": "python-flint",
-    "version": "0.8.0"
+    "version": "0.9.0"
   },
   {
     "name": "PyYAML",
@@ -427,7 +427,7 @@
   },
   {
     "name": "ruamel.yaml",
-    "version": "0.18.17"
+    "version": "0.19.1"
   },
   {
     "name": "ruamel.yaml.clib",
@@ -435,7 +435,7 @@
   },
   {
     "name": "ruff",
-    "version": "0.15.16"
+    "version": "0.16.6"
   },
   {
     "name": "scikit-sparse",
@@ -443,11 +443,11 @@
   },
   {
     "name": "scipy",
-    "version": "1.17.1"
+    "version": "1.18.1"
   },
   {
     "name": "scirs2",
-    "version": "0.5.0"
+    "version": "0.6.5"
   },
   {
     "name": "setuptools",
@@ -455,7 +455,7 @@
   },
   {
     "name": "simplejson",
-    "version": "4.1.1"
+    "version": "4.1.2"
   },
   {
     "name": "six",
@@ -503,7 +503,7 @@
   },
   {
     "name": "tensorstore",
-    "version": "0.1.84"
+    "version": "0.1.85"
   },
   {
     "name": "tomli",

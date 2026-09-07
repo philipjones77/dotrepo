@@ -1,5 +1,5 @@
 {
-  "captured_at": "2026-09-07T20:37:11.655980+00:00",
+  "captured_at": "2026-09-07T20:55:09.392847+00:00",
   "platform": "wsl",
   "counts": {
     "apt_manual": 156,
@@ -9,7 +9,7 @@
       {
         "name": "jax",
         "python": "3.12.3",
-        "packages": 179
+        "packages": 195
       },
       {
         "name": "py313",

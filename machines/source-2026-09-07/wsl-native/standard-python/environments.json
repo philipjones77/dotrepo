@@ -2,7 +2,7 @@
   {
     "name": "jax",
     "python": "3.12.3",
-    "packages": 179
+    "packages": 195
   },
   {
     "name": "py313",

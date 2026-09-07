@@ -1,19 +1,23 @@
 [
   {
     "name": "absl-py",
-    "version": "2.4.0"
+    "version": "2.5.0"
+  },
+  {
+    "name": "aiofiles",
+    "version": "25.1.0"
   },
   {
     "name": "alembic",
-    "version": "1.18.4"
+    "version": "1.19.2"
   },
   {
     "name": "anyio",
-    "version": "4.13.0"
+    "version": "4.15.1"
   },
   {
     "name": "apsw",
-    "version": "3.53.2.0"
+    "version": "3.53.4.0"
   },
   {
     "name": "apswutils",
@@ -21,28 +25,28 @@
   },
   {
     "name": "arbPlusJAX",
-    "version": "2.0.0",
+    "version": "2.2.0",
     "editable_project_location": "/home/phili/projects/arbPlusJAX"
   },
   {
     "name": "arro3-core",
-    "version": "0.8.0"
+    "version": "0.8.2"
   },
   {
     "name": "arviz",
-    "version": "1.1.0"
+    "version": "1.3.0"
   },
   {
     "name": "arviz-base",
-    "version": "1.1.0"
+    "version": "1.3.0"
   },
   {
     "name": "arviz-plots",
-    "version": "1.1.0"
+    "version": "1.3.1"
   },
   {
     "name": "arviz-stats",
-    "version": "1.1.0"
+    "version": "1.3.2"
   },
   {
     "name": "astunparse",
@@ -54,11 +58,11 @@
   },
   {
     "name": "beautifulsoup4",
-    "version": "4.14.3"
+    "version": "4.15.0"
   },
   {
     "name": "blackjax",
-    "version": "1.5"
+    "version": "1.6.2"
   },
   {
     "name": "cachetools",
@@ -66,15 +70,15 @@
   },
   {
     "name": "certifi",
-    "version": "2026.5.20"
+    "version": "2026.7.22"
   },
   {
     "name": "cffi",
-    "version": "2.0.0"
+    "version": "2.1.1"
   },
   {
     "name": "charset-normalizer",
-    "version": "3.4.7"
+    "version": "3.5.1"
   },
   {
     "name": "check-shapes",
@@ -82,7 +86,7 @@
   },
   {
     "name": "click",
-    "version": "8.4.1"
+    "version": "8.5.0"
   },
   {
     "name": "cloudpickle",
@@ -90,7 +94,7 @@
   },
   {
     "name": "colorlog",
-    "version": "6.10.1"
+    "version": "6.12.0"
   },
   {
     "name": "cons",
@@ -130,11 +134,15 @@
   },
   {
     "name": "dynamax",
-    "version": "1.0.1"
+    "version": "1.0.2"
   },
   {
     "name": "equinox",
     "version": "0.13.8"
+  },
+  {
+    "name": "etils",
+    "version": "1.14.0"
   },
   {
     "name": "etuples",
@@ -142,7 +150,7 @@
   },
   {
     "name": "fastcore",
-    "version": "1.13.2"
+    "version": "2.2.22"
   },
   {
     "name": "fastlite",
@@ -154,23 +162,31 @@
   },
   {
     "name": "filelock",
-    "version": "3.28.0"
+    "version": "3.32.5"
   },
   {
     "name": "flatbuffers",
     "version": "25.12.19"
   },
   {
+    "name": "flax",
+    "version": "0.12.9"
+  },
+  {
     "name": "flowMC",
-    "version": "0.6.0"
+    "version": "0.6.3"
   },
   {
     "name": "fonttools",
-    "version": "4.62.1"
+    "version": "4.64.0"
+  },
+  {
+    "name": "formulaic",
+    "version": "1.2.2"
   },
   {
     "name": "fsspec",
-    "version": "2026.3.0"
+    "version": "2026.7.0"
   },
   {
     "name": "gast",
@@ -186,7 +202,7 @@
   },
   {
     "name": "gpboost",
-    "version": "1.6.7"
+    "version": "1.7.4"
   },
   {
     "name": "gpflow",
@@ -198,11 +214,11 @@
   },
   {
     "name": "greenlet",
-    "version": "3.5.1"
+    "version": "3.5.5"
   },
   {
     "name": "grpcio",
-    "version": "1.81.0"
+    "version": "1.83.1"
   },
   {
     "name": "h11",
@@ -217,6 +233,10 @@
     "version": "1.0.9"
   },
   {
+    "name": "httpcore2",
+    "version": "2.12.0"
+  },
+  {
     "name": "httptools",
     "version": "0.8.0"
   },
@@ -225,8 +245,16 @@
     "version": "0.28.1"
   },
   {
+    "name": "httpx2",
+    "version": "2.12.0"
+  },
+  {
+    "name": "humanize",
+    "version": "4.16.0"
+  },
+  {
     "name": "idna",
-    "version": "3.18"
+    "version": "3.19"
   },
   {
     "name": "iniconfig",
@@ -236,6 +264,10 @@
     "name": "IntegralFunctionsJAX",
     "version": "0.2.0",
     "editable_project_location": "/home/phili/projects/IntegralFunctionsJAX"
+  },
+  {
+    "name": "interface_meta",
+    "version": "2.0.1"
   },
   {
     "name": "itsdangerous",
@@ -263,7 +295,7 @@
   },
   {
     "name": "jaxtyping",
-    "version": "0.3.10"
+    "version": "0.3.11"
   },
   {
     "name": "Jinja2",
@@ -271,15 +303,15 @@
   },
   {
     "name": "joblib",
-    "version": "1.5.3"
+    "version": "1.6.0"
   },
   {
     "name": "keras",
-    "version": "3.14.1"
+    "version": "3.15.1"
   },
   {
     "name": "kiwisolver",
-    "version": "1.5.0"
+    "version": "1.5.1"
   },
   {
     "name": "lark",
@@ -311,7 +343,7 @@
   },
   {
     "name": "Mako",
-    "version": "1.3.12"
+    "version": "1.4.1"
   },
   {
     "name": "markdown-it-py",
@@ -323,7 +355,7 @@
   },
   {
     "name": "matplotlib",
-    "version": "3.10.8"
+    "version": "3.11.1"
   },
   {
     "name": "mdurl",
@@ -335,11 +367,15 @@
   },
   {
     "name": "ml_dtypes",
-    "version": "0.5.4"
+    "version": "0.6.0"
   },
   {
     "name": "mpmath",
     "version": "1.3.0"
+  },
+  {
+    "name": "msgpack",
+    "version": "1.2.2"
   },
   {
     "name": "multipledispatch",
@@ -350,12 +386,12 @@
     "version": "0.1.0"
   },
   {
-    "name": "networkx",
-    "version": "3.6.1"
+    "name": "narwhals",
+    "version": "2.25.0"
   },
   {
-    "name": "numba",
-    "version": "0.65.1"
+    "name": "networkx",
+    "version": "3.6.1"
   },
   {
     "name": "numcodecs",
@@ -363,7 +399,7 @@
   },
   {
     "name": "numpy",
-    "version": "2.4.6"
+    "version": "2.5.3"
   },
   {
     "name": "numpyro",
@@ -399,7 +435,7 @@
   },
   {
     "name": "nvidia-cudnn-cu12",
-    "version": "9.21.1.3"
+    "version": "9.25.1.1"
   },
   {
     "name": "nvidia-cufft-cu12",
@@ -415,7 +451,7 @@
   },
   {
     "name": "nvidia-nccl-cu12",
-    "version": "2.30.4"
+    "version": "2.31.2"
   },
   {
     "name": "nvidia-nvjitlink-cu12",
@@ -423,7 +459,7 @@
   },
   {
     "name": "nvidia-nvshmem-cu12",
-    "version": "3.6.5"
+    "version": "3.7.2"
   },
   {
     "name": "oauthlib",
@@ -431,7 +467,7 @@
   },
   {
     "name": "obstore",
-    "version": "0.10.0"
+    "version": "0.11.1"
   },
   {
     "name": "opt_einsum",
@@ -447,11 +483,15 @@
   },
   {
     "name": "optree",
-    "version": "0.19.1"
+    "version": "0.20.0"
   },
   {
     "name": "optuna",
-    "version": "4.8.0"
+    "version": "5.0.0"
+  },
+  {
+    "name": "orbax-checkpoint",
+    "version": "0.12.4"
   },
   {
     "name": "oryx",
@@ -459,27 +499,27 @@
   },
   {
     "name": "packaging",
-    "version": "26.0"
+    "version": "26.3"
   },
   {
     "name": "pandas",
-    "version": "3.0.3"
+    "version": "3.0.5"
   },
   {
     "name": "patsy",
-    "version": "1.0.2"
+    "version": "1.0.3"
   },
   {
     "name": "pillow",
-    "version": "12.2.0"
+    "version": "12.3.0"
   },
   {
     "name": "pip",
-    "version": "26.0.1"
+    "version": "26.2.1"
   },
   {
     "name": "platformdirs",
-    "version": "4.10.0"
+    "version": "4.11.7"
   },
   {
     "name": "pluggy",
@@ -487,11 +527,15 @@
   },
   {
     "name": "progressbar2",
-    "version": "4.5.0"
+    "version": "4.6.0"
+  },
+  {
+    "name": "prometheus_client",
+    "version": "0.26.0"
   },
   {
     "name": "protobuf",
-    "version": "7.35.0"
+    "version": "7.36.1"
   },
   {
     "name": "psutil",
@@ -499,7 +543,7 @@
   },
   {
     "name": "pyarrow",
-    "version": "24.0.0"
+    "version": "25.0.1"
   },
   {
     "name": "pycparser",
@@ -511,7 +555,7 @@
   },
   {
     "name": "Pygments",
-    "version": "2.20.0"
+    "version": "2.21.0"
   },
   {
     "name": "pymc",
@@ -527,7 +571,7 @@
   },
   {
     "name": "pytest",
-    "version": "9.0.2"
+    "version": "9.1.1"
   },
   {
     "name": "python-dateutil",
@@ -535,11 +579,11 @@
   },
   {
     "name": "python-dotenv",
-    "version": "1.2.2"
+    "version": "1.2.3"
   },
   {
     "name": "python-fasthtml",
-    "version": "0.14.2"
+    "version": "0.14.13"
   },
   {
     "name": "python-multipart",
@@ -547,7 +591,7 @@
   },
   {
     "name": "python-utils",
-    "version": "3.9.1"
+    "version": "4.0.1"
   },
   {
     "name": "PyYAML",
@@ -580,11 +624,11 @@
   },
   {
     "name": "ruff",
-    "version": "0.15.16"
+    "version": "0.16.6"
   },
   {
     "name": "scikit-learn",
-    "version": "1.8.0"
+    "version": "1.9.0"
   },
   {
     "name": "scipy",
@@ -592,11 +636,15 @@
   },
   {
     "name": "scoringrules",
-    "version": "0.10.0"
+    "version": "0.11.0"
   },
   {
     "name": "setuptools",
     "version": "81.0.0"
+  },
+  {
+    "name": "simplejson",
+    "version": "4.1.2"
   },
   {
     "name": "six",
@@ -604,19 +652,19 @@
   },
   {
     "name": "soupsieve",
-    "version": "2.8.4"
+    "version": "2.9.2"
   },
   {
     "name": "SQLAlchemy",
-    "version": "2.0.50"
+    "version": "2.0.52"
   },
   {
     "name": "starlette",
-    "version": "1.2.1"
+    "version": "1.6.0"
   },
   {
     "name": "statsmodels",
-    "version": "0.14.6"
+    "version": "0.15.0"
   },
   {
     "name": "sympy",
@@ -633,6 +681,10 @@
   {
     "name": "tensorflow-probability",
     "version": "0.25.0"
+  },
+  {
+    "name": "tensorstore",
+    "version": "0.1.85"
   },
   {
     "name": "termcolor",
@@ -655,8 +707,8 @@
     "version": "1.1.0"
   },
   {
-    "name": "TopoSmplJAX",
-    "version": "1.0.0",
+    "name": "TopoSMPLJAX",
+    "version": "2.0.0",
     "editable_project_location": "/home/phili/projects/TopoSMPLJAX"
   },
   {
@@ -665,15 +717,23 @@
   },
   {
     "name": "tqdm",
-    "version": "4.67.3"
+    "version": "4.70.0"
+  },
+  {
+    "name": "treescope",
+    "version": "0.1.10"
+  },
+  {
+    "name": "truststore",
+    "version": "0.10.4"
   },
   {
     "name": "typing_extensions",
-    "version": "4.15.0"
+    "version": "4.16.0"
   },
   {
     "name": "tzlocal",
-    "version": "5.3.1"
+    "version": "5.4.4"
   },
   {
     "name": "urllib3",
@@ -681,7 +741,7 @@
   },
   {
     "name": "uvicorn",
-    "version": "0.49.0"
+    "version": "0.52.4"
   },
   {
     "name": "uvloop",
@@ -697,26 +757,30 @@
   },
   {
     "name": "websockets",
-    "version": "16.0"
+    "version": "17.1"
   },
   {
     "name": "wheel",
-    "version": "0.47.0"
+    "version": "0.48.0"
   },
   {
     "name": "wrapt",
-    "version": "2.2.1"
+    "version": "2.4.0"
   },
   {
     "name": "xarray",
-    "version": "2026.4.0"
+    "version": "2026.7.0"
   },
   {
     "name": "xarray-einstats",
-    "version": "0.10.0"
+    "version": "0.11.0"
   },
   {
     "name": "zarr",
-    "version": "3.2.1"
+    "version": "3.3.0"
+  },
+  {
+    "name": "zipp",
+    "version": "4.1.0"
   }
 ]

@@ -61,6 +61,23 @@ catalog for exact observed versions and installation ownership.
 
 ## Files Changed
 
+### Later source account and terminal follow-up
+
+At the user's request, `phili` is now the only personal Ubuntu account (UIDs
+1000–65533); root and required system/service accounts remain. The inactive
+`philip` login was removed after checking that it had no running processes or
+crontab. Its 1.9 GB home directory was preserved in place, with ownership
+transferred to `phili`; no home data was deleted. Account database backups are
+private and root-only. `/etc/wsl.conf` already selected `phili` as the default.
+
+All Ubuntu entries in the source's Windows Terminal settings now explicitly run
+`wsl.exe -d Ubuntu --user phili --cd ~ --exec bash --login`. The same command is
+tracked in `windows/terminal/settings.json` for the target. The shared Ubuntu
+Bash prompt remains `user@host:directory$` (colored in supported terminals).
+A new login-shell check returned user `phili` and directory `/home/phili`.
+Existing terminal tabs must be reopened to use the new launch configuration.
+The target's accounts must be inspected independently before any account removal.
+
 - `machines/source-2026-09-06/`: source manifests, application lists, target setup
   steps, manual/licensed installers and known reproduction gaps.
 - `scripts/capture-software.py`: shareable software capture, excluding credentials

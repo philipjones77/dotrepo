@@ -56,7 +56,7 @@
     "defaults": {},
     "list": [
       {
-        "commandline": "wsl.exe -d Ubuntu --cd ~ --exec bash --login",
+        "commandline": "wsl.exe -d Ubuntu --user phili --cd ~ --exec bash --login",
         "guid": "{477b0dd5-2331-4e8a-a5a5-47287f296431}",
         "hidden": false,
         "name": "Ubuntu Bash"
@@ -110,7 +110,7 @@
         "source": "VSDebugConsole"
       },
       {
-        "commandline": "wsl.exe -d Ubuntu --cd ~",
+        "commandline": "wsl.exe -d Ubuntu --user phili --cd ~ --exec bash --login",
         "guid": "{51855cb2-8cce-5362-8f54-464b92b32386}",
         "hidden": false,
         "name": "Ubuntu",
@@ -120,7 +120,8 @@
         "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
         "hidden": true,
         "name": "Ubuntu",
-        "source": "Windows.Terminal.Wsl"
+        "source": "Windows.Terminal.Wsl",
+        "commandline": "wsl.exe -d Ubuntu --user phili --cd ~ --exec bash --login"
       },
       {
         "guid": "{8ab8e6f6-35c6-5b46-8419-3e1568105476}",
@@ -143,7 +144,7 @@
         "startingDirectory": "C:\\Users\\phili"
       },
       {
-        "commandline": "wsl.exe -d Ubuntu --cd ~",
+        "commandline": "wsl.exe -d Ubuntu --user phili --cd ~ --exec bash --login",
         "guid": "{9b357e20-cddf-5b40-81fd-5ab785bc747a}",
         "hidden": false,
         "name": "Ubuntu",

@@ -1,5 +1,9 @@
 # Source setup after Python, PowerShell, R and TeX changes
 
+The later [WSL machine comparison](../../docs/wsl-machine-comparison-2026-09-07.md)
+records live source checks against the other computer's recovered setup and
+identifies the remaining differences.
+
 This is the newer inventory of **PhilipSecond, the source computer**, captured
 after the September 7 follow-up. It supersedes the September 6 package snapshot
 for current source state. Use the [earlier target setup guide](../source-2026-09-06/README.md)

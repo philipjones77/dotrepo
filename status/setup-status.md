@@ -8,6 +8,10 @@ they are sanitized before commit.
 Current maintenance evidence is in the
 [2026-09-06 report](../docs/maintenance-2026-09-06.md); historical version
 observations below are not current-version guarantees.
+For the restored PC-PHILIP-WINDO, use the current
+[Windows software report](../docs/windows-parity-2026-09-07.md) and
+[shell/CUDA decision record](../docs/shell-and-cuda-2026-09-07.md), including the
+explicit WSL deferral and the stable CUDA 13.3.1 recommendation.
 
 ## Repository Setup Standards
 

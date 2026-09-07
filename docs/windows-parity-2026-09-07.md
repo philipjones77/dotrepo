@@ -107,6 +107,11 @@ driver and NVIDIA App packages were excluded. The NVIDIA driver remained 616.56
 before and after installation. `nvcc` reports 13.3.73. A newly compiled CUDA
 program ran successfully on the RTX 4070 Laptop GPU and checked all 4097 output
 values; all 40 Visual Studio component IDs also remained registered.
+The [shell and CUDA version record](shell-and-cuda-2026-09-07.md) explains the
+driver's separate CUDA UMD 13.4 display and the recommendation to retain stable
+toolkit 13.3.1 while 13.4 is a Developer Preview. It also records the Windows/WSL
+compiler distinction and the verified Bash defaults.
+
 TeX Live 2026's manager and all 1661 package operations completed successfully,
 including format, font and ConTeXt cache rebuilds. At 12:53 CDT, actual
 pdfLaTeX, XeLaTeX and LuaLaTeX builds all passed with resolved Biber

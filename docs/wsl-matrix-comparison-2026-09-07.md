@@ -1,5 +1,10 @@
 # PhilipSecond WSL software and matrix/operator comparison setup
 
+Subsequent update: [Conda retirement is complete](wsl-conda-retirement-2026-09-07.md).
+The user authorized stopping the two Conda jobs; Miniforge is removed and
+post-removal standard-environment GPU checks passed. The audit chronology below
+describes why its removal was initially deferred.
+
 This report describes the source machine's Ubuntu 24.04 WSL installation.
 It does not establish parity with the other computer; the committed inventory
 is the source for reconstructing and checking that target.
@@ -68,7 +73,7 @@ a GPU calculation successfully. This does not change existing shell defaults.
 | `~/.virtualenvs/py313` | CPython 3.13.15; 139 packages; existing default and active experiments |
 | `~/.virtualenvs/jax-native` | CPython 3.12.13; 293 packages; established JAX/PyTorch, geometry and local scientific projects |
 | `~/.virtualenvs/jax` | CPython 3.12.3; 179 packages; legacy statistics environment with documented conflicts |
-| `~/miniforge3` | Retained Conda base, 317 packages; active experiment |
+| `~/miniforge3` | Removed after the user authorized stopping its two jobs |
 | `~/.local/lib/R/site-library` | User R libraries; 283 unique packages visible across R library paths |
 | `/usr/include` and `/usr/lib/x86_64-linux-gnu` | Distribution-managed native matrix libraries and headers |
 | `~/.local/opt/MATLAB/R2026a` | Licensed MATLAB and installed toolbox suite |
@@ -122,6 +127,12 @@ versions, structures and checks are committed; installers, caches, credentials
 and license files are excluded. The existing arbPlusJAX reverse-differentiation
 failure and legacy statistics environment conflicts remain as previously
 documented; no scientific project source was changed in this update.
+
+## Final Conda state
+
+The current inventory reports no Conda environments. References above to
+retaining Miniforge describe the earlier audit stage and are superseded by
+the completed retirement report. Standard virtualenvs remain installed.
 
 References: [SciPy LinearOperator](https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.LinearOperator.html),
 [PyLops](https://github.com/PyLops/pylops), [PyAMG](https://github.com/pyamg/pyamg).

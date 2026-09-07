@@ -1,11 +1,16 @@
 # Session Capsule: Source machine maintenance and target replication
 
+[WSL Conda retirement](../../wsl-conda-retirement-2026-09-07.md) records the
+user's explicit no-Conda target, the new non-Conda experiment launcher and the
+completed Miniforge removal after the user authorized stopping its two jobs.
+Do not launch new work with Miniforge; use standard virtualenvs.
+
 Latest software/structure inventory: [WSL matrix and operator comparisons](../../wsl-matrix-comparison-2026-09-07.md).
 
 Latest continuation: [native WSL Python and scientific tools](../../wsl-native-python-2026-09-07.md).
 The source now has tested standard CPython replacements (`py313`, `jax-native`),
 native Claude/Codex/Gemini/Google Cloud CLIs and updated R packages. Miniforge
-base removal is deferred while scientific jobs still use it. The old Conda
+base has been removed after stopping its jobs with user authorization. The old Conda
 `jax` environment and `jax-wsl` duplicate were removed; the separate legacy
 statistics virtualenv is retained.
 Use that report and the `wsl-native` inventory before following historical

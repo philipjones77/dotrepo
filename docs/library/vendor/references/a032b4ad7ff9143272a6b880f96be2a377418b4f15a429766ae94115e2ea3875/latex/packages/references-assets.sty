@@ -1,0 +1,27 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{references-assets}[2026/09/05 v1.1 Shared asset paths and glossary support]
+
+% Define this before loading the package when the asset archive is elsewhere:
+% \newcommand{\ReferencesAssetRoot}{../vendor/references-assets}
+\providecommand{\ReferencesAssetRoot}{.}
+
+% Abbreviation records mark contributing letters with \itag. The default is
+% intentionally typographically neutral; consumers can define their own style
+% before loading this package without changing shared database content.
+\providecommand{\itag}[1]{#1}
+
+\newcommand{\ReferencesAssetPath}[1]{\ReferencesAssetRoot/#1}
+\newcommand{\ReferencesBibliographyPath}[1]{%
+  \ReferencesAssetRoot/bibliography/#1.bib%
+}
+\newcommand{\ReferencesGlossaryPath}[1]{%
+  \ReferencesAssetRoot/glossaries/#1%
+}
+\newcommand{\ReferencesDefinitionPath}[1]{%
+  \ReferencesAssetRoot/definitions/#1.md%
+}
+\newcommand{\ReferencesNotationPath}[1]{%
+  \ReferencesAssetRoot/notation/#1.md%
+}
+
+\endinput

@@ -7,7 +7,8 @@ param(
 )
 $ErrorActionPreference = 'Stop'
 $wsl = Join-Path $env:SystemRoot 'System32\wsl.exe'
-$powershell = Join-Path $env:SystemRoot 'System32\WindowsPowerShell\v1.0\powershell.exe'
+# Resolve an absolute PowerShell 7 path for background and logon launches.
+$powershell = (Get-Command pwsh.exe -CommandType Application -ErrorAction Stop | Select-Object -First 1).Source
 $scriptPath = $PSCommandPath
 $runKey = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Run'
 $runName = "DotrepoWslGoogleDrive-$Distribution-$LinuxUser"

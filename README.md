@@ -19,6 +19,9 @@ and the remaining cleanup boundaries.
 The [Linux MATLAB setup](docs/matlab-wsl-2026-09-07.md) includes all 64 toolboxes;
 source activation and a fresh Linux MATLAB batch launch are verified.
 
+For the Windows/WSL shell policy and the PC-PHILIP-WINDO launcher audit, see
+[terminal links and PowerShell](docs/terminal-links-2026-09-07.md).
+
 The [latest source setup and inventory](machines/source-2026-09-07/README.md)
 includes standard Windows CPython 3.13/3.14/3.15, JAX, PowerShell, R/Rtools,
 TeX Live and SumatraPDF, with verification results and target instructions.
@@ -187,3 +190,8 @@ target's restored files and tools, verification results, and remaining work.
 Installed inventories are evidence, not desired-state lock files. The reviewed shared Node baseline is 24.20.0 LTS; scientific package definitions remain workload-specific baselines. Ubuntu APT updates do not update Conda, pip environments, extensions, Snap packages, or MATLAB. Upgrade each package manager deliberately and test the relevant workloads.
 
 Private keys, local overrides, raw machine reports, and inventory snapshots stay outside version control. Reviewed, sanitized maintenance summaries belong in `docs/`. No automatic cloud synchronization or background machine management is installed.
+
+## Shared Writing and Reference Assets
+
+Research writing uses the pinned [references handbook and asset release](/docs/standards/references.md).
+That guide records the release checksum, applicable writing scope, and verification/update commands.

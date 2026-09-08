@@ -24,8 +24,14 @@
   "python.defaultInterpreterPath": "${env:USERPROFILE}/.virtualenvs/py313/Scripts/python.exe",
   "python.terminal.activateEnvironment": true,
   "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "path": "pwsh.exe",
+      "args": ["-NoLogo"]
+    }
+  },
   "terminal.integrated.automationProfile.windows": {
-    "path": "${env:ProgramFiles}/PowerShell/7/pwsh.exe",
+    "path": "pwsh.exe",
     "args": [
       "-NoLogo"
     ]

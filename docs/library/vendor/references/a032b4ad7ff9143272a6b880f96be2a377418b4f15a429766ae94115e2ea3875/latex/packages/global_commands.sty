@@ -1,0 +1,49 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{global_commands}[2026/01/25 Global utilities + list types]
+
+% ============================================================
+% 1. INLINE ENUMERATIONS & ITEMIZATIONS
+% ============================================================
+\RequirePackage{enumitem}
+\RequirePackage{zref-clever}
+\newcommand\descitem[1]{\item{\bfseries #1}}
+
+\newlist{inlineenum}{enumerate*}{1}
+\setlist*[inlineenum]{mode=unboxed,label=(\arabic*)}
+
+\newlist{inlineitem}{itemize*}{1}
+\setlist*[inlineitem]{label=\textbullet}
+
+% ============================================================
+% 2. CUSTOM ENUMERATION TYPES (zref-compatible)
+% ============================================================
+
+% --- Roman numeral type list ---
+\zcsetup{
+  countertype = {typenumi = type}
+}
+\newlist{typenum}{enumerate}{1}
+\setlist[typenum,1]{label=\Roman*}
+
+% --- Alphabetical view list ---
+\zcsetup{
+  countertype = {viewnumi = view}
+}
+\newlist{viewnum}{enumerate}{1}
+\setlist[viewnum,1]{label=\Alph*, ref=\Alph*}
+
+% --- Language setup for zref-clever ---
+\zcLanguageSetup{english}{
+  type = view,
+    Name-sg = View,
+    name-sg = view,
+    Name-pl = Views,
+    name-pl = views,
+  type = type,
+    Name-sg = Type,
+    name-sg = type,
+    Name-pl = Types,
+    name-pl = types,
+}
+
+\endinput

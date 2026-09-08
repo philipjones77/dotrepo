@@ -1,0 +1,6 @@
+# Repository lint/format tools. Keep upgrades deliberate and rerun regression tests.
+# Runtime workflow dependencies remain in their own requirements files.
+ruff==0.16.6
+pymarkdownlnt==0.9.39
+mdformat==1.0.0
+mdformat-gfm==1.0.0

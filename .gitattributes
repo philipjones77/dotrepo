@@ -8,3 +8,5 @@
 *.md text eol=lf
 shared/shell/* text eol=lf
 wsl/home/* text eol=lf
+docs/library/vendor/** -text
+docs/library/releases/** -text

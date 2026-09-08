@@ -1,0 +1,515 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{preamble}[2026/08/22 Shared document preamble]
+\RequirePackage{iftex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lets get all the font loading overand done with here as most of it needs to 
+% to be in the correct order.  Also do spacing
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{epstopdf} % needed to hear to allow below lines to work
+
+
+\ifluatex 
+    \usepackage{fontspec}
+    \usepackage[math-style=ISO]{unicode-math}
+\setmainfont
+[    Extension = .otf,
+  UprightFont = *-Regular,
+      BoldFont = *-Bold,
+    ItalicFont = *-Italic,
+BoldItalicFont = *-BoldItalic,
+]
+{XITS}
+
+
+\setmathfont
+[    Extension = .otf,
+     BoldFont = XITSMath-Bold,
+]{XITSMath-Regular}
+
+%\setmathfont{Latin Modern Math}[version=LM]
+%\setmathfont{Stix Math}[version=Stix]
+%\setmathfont{XITS Math}[version=XITS]
+%\setmathfont{XITS Math}[StylisticSet=1,version=XITS1]
+%\setmathfont{Stix Two Math}[version=Stix2] % see http://stixfonts.org/
+%\setmathfont{Cambria Math}[version=Cambria]
+%\setmathfont{Asana Math}[version=Asana]
+%\setmathfont{Asana Math}[Alternate,version=AsanaAlt]
+%\setmathfont{TeX Gyre Pagella Math}[version=Pagella]
+%\setmathfont{TeX Gyre Termes Math}[version=Termes]
+%\setmathfont{TeX Gyre DejaVu Math}[version=DejaVu]
+%\setmathfont{Neo Euler}[version=Euler]
+%\setmathfont{Libertinus Math}[version=Libertinus]
+\else
+    \usepackage[utf8]{inputenc}
+    \usepackage[T2A,T1]{fontenc}
+    %\usepackage{times}
+    %\usepackage{lmodern}
+    %\usepackage{XCharter}
+
+    %\usepackage{CormorantGaramond}
+    %\usepackage{newpxtext}
+    %\usepackage{mathpazo}
+    %\usepackage{domitian}
+\fi
+\usepackage[english]{babel} % foreign languages
+\usepackage{mathtools}
+\mathtoolsset{showonlyrefs,showmanualtags}
+\usepackage{etoolbox} % Tool for Macro
+\usepackage{xpatch} %Entends Toolbox
+%\usepackage[mathbf=sym]{unicode-math} % corrects probelms with \mathbf for some characters.
+%\usepackage{amsmath}  % loaded by mathtools
+\usepackage{calc}
+\usepackage{fontawesome}
+
+\usepackage{dsfont}
+\usepackage{marvosym}
+\usepackage{bm} %after all fonts are loaded
+% package conflict, need to undefine conflicting commands
+\undef\Sun
+\undef\Lightning
+\usepackage[weather]{ifsym}
+
+\usepackage{siunitx}
+%\usepackage[Gray,squaren,thinqspace,thinspace]{SIunits} % causes probelms
+
+%\usepackage{amssymb}
+
+\usepackage{gensymb}
+\usepackage{physics} % allows norm symbol
+\usepackage{textcomp}
+\usepackage{upgreek}
+\usepackage{microtype}  % Fixed some overfill boxes
+
+
+\usepackage{setspace} % helps change spacing
+\usepackage[useregional]{datetime2}
+\DTMlangsetup[en-US]{ord=raise,monthyearsep={,\space}}
+\usepackage[normalem]{ulem}  %changes emphasize
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stuff that changes the template somehow.
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{geometry}
+% redoes headers
+\usepackage[autooneside=false,automark]{scrlayer-scrpage}
+
+
+%\xapptocmd{\appendix}{%
+%  \addtocontents{toc}{%
+%    \RedeclareSectionCommand[
+%      tocdynnumwidth,
+%      tocentrynumberformat=\tocappendixnumber
+%    ]{chapter}%
+%  }%
+%}{}{\PatchFailed}
+%\newcommand\tocappendixnumber[1]{\chapapp~#1}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% general utitlies for correct usage, importing files, comments etc
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[l2tabu,orthodox]{nag} %warnings for poor style
+\usepackage{graphicx} % import graphics
+\usepackage{import} %advanced file inputs
+\usepackage{pdfpages} % insert external pdfs
+\usepackage{pdfcomment}  % Allows comments in pdfs
+%\usepackage{showframe}  Uncomment to show frames
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% All the theorem commands
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[ntheorem]{empheq} % Need to be loaded before
+\usepackage[hyperref,framed,thmmarks,amsmath]{ntheorem}
+
+\usepackage{zref-clever} 
+\zcsetup{cap,noabbrev}
+\usepackage{zref-vario}
+
+\usepackage[inline,shortlabels]{enumitem}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Listings package needs to be below most of the otehr stuff
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\usepackage{algorithm}% http://ctan.org/pkg/algorithms
+\usepackage{algpseudocode}% http://ctan.org/pkg/algorithmicx
+\usepackage{listings} %% NEEDS to be before hyperref, cleveref and autonum
+% options for listings
+\lstset{
+upquote=true, % gives the upquote instead of the curly quote
+basicstyle=\footnotesize\ttfamily,
+%numbers=left,
+numberstyle=\tiny,
+%stepnumber=2,
+numbersep=5pt,
+tabsize=2,
+extendedchars=true,
+breaklines=true,
+keywordstyle=\color{red},
+frame=b,
+stringstyle=\color{white}\ttfamily,
+showspaces=false,
+showtabs=false,
+xleftmargin=17pt,
+framexleftmargin=17pt,
+framexrightmargin=5pt,
+framexbottommargin=4pt,
+%backgroundcolor=\color{lightgray},
+showstringspaces=false
+}
+\lstloadlanguages{% Check Documentation for further languages ...
+		%C
+		%C++
+		%XML
+		TeX
+		%Matlab
+ }
+%\usepackage[newfloat]{minted}
+%\makeatletter
+%\AddToHook{begindocument/before}{\@ifpackageloaded{minted}{\removefromtoclist[float]{lol}}{}}
+%\makeatother
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% color hpyerlinks etc
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{url}
+\usepackage{soul} %spacing and hypens for links
+\usepackage[table,svgnames,dvipsnames]{xcolor}
+\usepackage{hyperref}
+%\hypersetup{
+%  colorlinks = true,
+%  linkcolor =LightSkyBlue,
+%  anchorcolor = red,
+%  citecolor = blue,
+%  urlcolor = blue
+%}
+%\definecolor{solblue}{HTML}{268BD2}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage{tikz}
+%\usetikzlibrary{shapes.misc}
+%\newcommand\titlebar{%
+%\tikz[baseline,trim left=3.1cm,trim right=3cm] {
+%    \fill [cyan!25] (2.5cm,-1ex) rectangle (\textwidth+3.1cm,2.5ex);
+%    \node [
+%        fill=cyan!60!white,
+%        anchor= base east,
+%        rounded rectangle,
+%        minimum height=3.5ex] at (3cm,0) {
+%        \textbf{\thesection.}
+%    };
+%}%
+%}
+%\titleformat{\section}{\large}{\titlebar}{0.1cm}{}
+%%\renewcommand*{\thesection}{\arabic{section}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% glossaries extra 
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%https://tex.stackexchange.com/questions/287080/best-solution-for-acronyms-abbreviations-glossary-and-index
+%https://tex.stackexchange.com/questions/473744/manage-multiple-glossaries-in-one-bib-file
+%https://tex.stackexchange.com/questions/641933/define-plural-for-new-acronym
+%https://ctan.math.utah.edu/ctan/tex-archive/macros/latex/contrib/glossaries-extra/glossaries-extra-manual.html
+\usepackage[record,% using bib2gls
+index,% create 'index' glossary
+abbreviations,% create 'abbreviations' glossary
+symbols,
+postdot,% insert dot after descriptions
+%nostyles,%don't load predefined styles
+stylemods={tree,bookindex,longbooktabs},% load the 'tree' and 'bookindex' style packages
+style={tree},
+section=section,% set the default style to 'tree'
+]{glossaries-extra}
+\usepackage{glossaries-extra-stylemods}
+\usepackage{glossaries-prefix}
+\usepackage{glossary-longragged}
+\GlsXtrEnableInitialTagging{acronym,abbreviation}{\itag}
+\setabbreviationstyle{long-short-desc}
+
+
+\makeindex
+
+% Projects load only the glossary databases they use. The shared asset bundle
+% provides stable paths and references-assets.sty provides optional path helpers.
+
+\glsxtrnewglslike{idx.}{\idx}{\idxpl}{\Idx}{\Idxpl}
+
+\GlsXtrRecordCounter{chapter}
+%https://tex.stackexchange.com/questions/89107/glossary-per-chapter-or-section
+\newcommand{\printchapterglossary}[1][]{%
+  \printunsrtglossary*[nonumberlist,#1]{%
+    \renewcommand{\printunsrtglossaryhandler}[1]{%
+    \glsxtrfieldxifinlist{##1}{record.chapter}{\thechapter}
+    {\glsxtrunsrtdo{##1}}%
+    {}%
+   }%
+   \ifcsundef{theHchapter}%
+   {%
+     \setkeys{printgloss}{targetnameprefix={record.\csuse{thechapter}.}}%
+   }%
+   {%
+     \setkeys{printgloss}{targetnameprefix={record.\csuse{theHchapter}.}}%
+   }%
+  }%
+}
+
+\renewcommand*{\glsclearpage}{}
+
+
+% Customize glossary style to cite on first use for c-code category
+\glsdefpostlink{c-code}{%
+    \glsxtrifwasfirstuse{% true case
+        \glsxtrifhasfield{useri}{\glslabel}{\space%
+        % \glscurrentfieldvalue needs to be expanded
+        % before being passed to \cite.
+            (\expandafter\cite\expandafter{\glscurrentfieldvalue})}%
+        {}% false glsxtrifhasfield
+    }% end true glsxtrifwasfirstuse
+    {}%{<false>} glsxtrifwasfirstuse
+} % end glsdefpostlink
+
+% Customize glossary display style to include citation if present
+\glsdefpostdesc{c-code}{%
+    \glsxtrifhasfield{useri}{\glscurrententrylabel}{\space%
+    % \glscurrentfieldvalue needs to be expanded
+    % before being passed to \cite.
+        (See \expandafter\textcite\expandafter{\glscurrentfieldvalue})}%
+    {}% false glsxtrifhasfield
+    \glsxtrifhasfield{userii}{\glscurrententrylabel}{\space%
+    % \glscurrentfieldvalue needs to be expanded
+    % before being passed to \cite.
+        (See \expandafter\url\expandafter{\glscurrentfieldvalue})}%
+    {}% false glsxtrifhasfield
+}% end glsdefpostdesc
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% bibliography
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\let\c@author\relax
+\makeatother
+\usepackage[citestyle=authoryear,
+bibstyle=authoryear,
+giveninits=true,
+maxcitenames=1,
+sortcites,
+maxbibnames=99,
+url=false,
+eprint=false, 
+backend=biber,
+sorting=nyt,
+]{biblatex}
+
+
+% Projects load only the bibliography databases they use. Do not hard-code a
+% repository checkout path in this reusable package.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Listings package needs to be below most of the otehr stuff
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Floats captions etc
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% all the floating and other packages
+\setcapwidth[c]{.8\textwidth}
+\setcapindent{0pt}
+\addtokomafont{caption}{\centering}
+
+\usepackage[newcommands]{ragged2e}
+\setcaptionalignment{J}% <- added
+
+
+
+\usepackage{float}
+
+\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\usepackage{subcaption}
+\captionsetup[subfig]{format=hang}
+\usepackage{wrapfig}
+\usepackage{floatflt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\usepackage{afterpage}
+
+  
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Tables and matrices
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{ragged2e}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{siunitx}
+\usepackage{tabularx}
+\usepackage{tabulary}
+\usepackage{nicematrix}
+\usepackage{makecell}
+\usepackage{longtable}
+\usepackage{rotating} % Rotating columns on table
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Making picutres using tkiz ansd others
+%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.8}
+\usetikzlibrary{shapes,arrows,shadows,arrows.meta,positioning,calc,matrix,fit,shapes.symbols,3d,perspective,plotmarks}
+\usepgfplotslibrary{colorbrewer}
+\usepackage{pgfplotstable}
+\usepackage{pgfmath}
+\usetikzlibrary{quotes}
+\usetikzlibrary{external}
+\tikzexternalize 
+\tikzset{external/only named=true} %\tikzsetnextfilename{myfigure}% before \begin{tkiz}
+
+\usepackage[object=vectorian]{pgfornament} %%  http://altermundus.com/pages/tkz/ornament/index.html
+%\newcommand{\sectionline}[2]{%
+%	\nointerlineskip \vspace{.5\baselineskip}\hspace{\fill}
+%	{\color{#1}
+%		\resizebox{0.4\linewidth}{2ex}
+%		{{%
+%			{\begin{tikzpicture}
+%				\node  (C) at (0,0) {};
+%				\node (D) at (9,0) {};
+%				\path (C) to [ornament=#2] (D);
+%			\end{tikzpicture}}}}}%
+%	\hspace{\fill}
+%	\par\nointerlineskip \vspace{.5\baselineskip}
+%}
+%https://tex.stackexchange.com/questions/72692/highlight-an-equation-within-an-align-environment-with-color-option/
+\usepackage[customcolors,shade]{hf-tikz}
+
+
+
+
+
+
+
+\usepackage{scrhack}% added last to tidy up all other packages for Koma
+
+
+
+
+
+
+
+
+%% references and annotation, citations
+%\usepackage[small,bf,hang]{caption}        % captions
+%\usepackage{subcaption}                    % adds subfigure & subcaption
+%\usepackage{sidecap}                       % adds side captions
+% House typed-reference system: zref-clever; do not also load cleveref.
+%\usepackage{autonum}                       % only number referenced equations
+%\usepackage{cite}                          % well formed numeric citations
+%\usepackage{tikz}          % advanced vector graphics
+%\usepackage{pgfplots}      % data plotting
+%\usepackage{pgfplotstable} % table plotting
+%\usepackage{placeins}      % display floats in correct sections
+%\usepackage{graphicx}      % include external graphics
+%\usepackage{longtable}     % process long tables
+%
+
+%% ---------------------------------------------------------------
+%% Declare If Statements for Optional Pages
+%% ---------------------------------------------------------------
+%\newif\ifPageFigures 
+%\newif\ifPageTables
+%\newif\ifPageGlossaries
+%\newif\ifPageContents
+%\newif\ifPageCodeSnippets
+%\newif\ifPageEquations
+
+%% ---------------------------------------------------------------
+%% Set Default States for Optional Pages
+%% ---------------------------------------------------------------
+%\PageFiguresfalse 
+%\PageTablesfalse
+%\PageGlossariesfalse
+%\PageContentsfalse
+%\PageCodeSnippetsfalse
+%\PageEquationsfalse
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Draw fancy lines
+%% Usage example: \sectionline{DarkGreen}{88}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

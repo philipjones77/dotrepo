@@ -1,0 +1,608 @@
+{
+  "artifact": "references-assets",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "8fe722fe98d913253a7fdde7999daa8a24f1ac4136e1e28170ef253af20a2cdb",
+      "size": 4152,
+      "source": "assets/README.md"
+    },
+    {
+      "path": "bibliography/adhoc.bib",
+      "sha256": "736c0a7922fdbabe0c0cdffd8946c056b1fcbcfea756e76104ea6047c1e109ca",
+      "size": 25594,
+      "source": "bibliography/library/adhoc.bib"
+    },
+    {
+      "path": "bibliography/biostatistics.bib",
+      "sha256": "d7a51c6efcf0ff4aac6d48a571c9903f587f3a3fd1826bd8ef73954731c7e334",
+      "size": 45034,
+      "source": "bibliography/library/biostatistics.bib"
+    },
+    {
+      "path": "bibliography/computational.bib",
+      "sha256": "1a4a8c4e033a5f1acddbed22a9d3c4a19f19e7f81b1c70a7038e7cbd0467d6df",
+      "size": 150447,
+      "source": "bibliography/library/computational.bib"
+    },
+    {
+      "path": "bibliography/datasets.bib",
+      "sha256": "53e6c7e825928cc24da57402677a7c6a9cd24803dcf350be28302b60fdc657f9",
+      "size": 62032,
+      "source": "bibliography/library/datasets.bib"
+    },
+    {
+      "path": "bibliography/dictionary.bib",
+      "sha256": "598b151690534cbb7e1517f70e793509e9a66ab79a1c64906e2eca0dd313c4b3",
+      "size": 1602,
+      "source": "bibliography/library/dictionary.bib"
+    },
+    {
+      "path": "bibliography/encyclopedia.bib",
+      "sha256": "a230953b57f24cc23d03a7ffb2c65c6183a49d9a56b3da65906a39eba9f03c78",
+      "size": 954,
+      "source": "bibliography/library/encyclopedia.bib"
+    },
+    {
+      "path": "bibliography/general.bib",
+      "sha256": "9b8743edc8a7258b78f66ade1787e2101cb8f55e518f4874d54809626efad54d",
+      "size": 67040,
+      "source": "bibliography/library/general.bib"
+    },
+    {
+      "path": "bibliography/mathematics.bib",
+      "sha256": "a38ca43627359265bc46e490ce200a340a1048d0666ce0a0647ace36ce2c1146",
+      "size": 257637,
+      "source": "bibliography/library/mathematics.bib"
+    },
+    {
+      "path": "bibliography/online.bib",
+      "sha256": "f27909fb82d4b0b9619dc29520e513e62b8807b423289fda35642a4dd5758816",
+      "size": 15326,
+      "source": "bibliography/library/online.bib"
+    },
+    {
+      "path": "bibliography/probability.bib",
+      "sha256": "dbee72cfa469bcecb38ed841ac0fcf587d90e076fa60ee4f9adc32a4850ff862",
+      "size": 31563,
+      "source": "bibliography/library/probability.bib"
+    },
+    {
+      "path": "bibliography/random_fields.bib",
+      "sha256": "32d74b7e8f1d6d84f14f1cb6ace6f1912a283e2e5d07b18a47c926cb63f60333",
+      "size": 1199127,
+      "source": "bibliography/library/random_fields.bib"
+    },
+    {
+      "path": "bibliography/software.bib",
+      "sha256": "ef8c0e0bd01423fe5977b0364131fdf96fc547c1b579701de5b7fd480bc3f859",
+      "size": 275507,
+      "source": "bibliography/library/software.bib"
+    },
+    {
+      "path": "bibliography/statistics.bib",
+      "sha256": "d4ca23a64bccf906fe519b317b46e3ca90b2decab795e85ef236c6f58e0cb188",
+      "size": 101061,
+      "source": "bibliography/library/statistics.bib"
+    },
+    {
+      "path": "definitions/CT_asymptotic_objects.md",
+      "sha256": "d6d7cc5b9c974582ea4fed4f0f77b60a63d5d63640eec9bd39890d5ff7ea647c",
+      "size": 25319,
+      "source": "definitions/library/CT_asymptotic_objects.md"
+    },
+    {
+      "path": "definitions/CT_boundary_layer_objects.md",
+      "sha256": "58f8efc093d0a86760677946285b7985e78feb17a91bf853350ec964e07df40f",
+      "size": 6884,
+      "source": "definitions/library/CT_boundary_layer_objects.md"
+    },
+    {
+      "path": "definitions/CT_comp_ssmm_phase1_pattern.md",
+      "sha256": "5601d1b27bb3c75d4e0049a90bced6084ec4d8ac1f7094e2ef48d181d9118e2b",
+      "size": 17083,
+      "source": "definitions/library/CT_comp_ssmm_phase1_pattern.md"
+    },
+    {
+      "path": "definitions/CT_computation_plan_objects.md",
+      "sha256": "1c7bd6dbbc1ea21914616ee69b764d96fc93f9f5849592ef38f6372577bbf8b0",
+      "size": 3377,
+      "source": "definitions/library/CT_computation_plan_objects.md"
+    },
+    {
+      "path": "definitions/CT_constraint_set_objects.md",
+      "sha256": "e3ca647bd79076dc0833707429ada2b55606072b4d03b047f2613d701b5031be",
+      "size": 4668,
+      "source": "definitions/library/CT_constraint_set_objects.md"
+    },
+    {
+      "path": "definitions/CT_deterministic_random_structures_objects.md",
+      "sha256": "e6c7f4e72257a616468290d8791efa8f1a8e5cf430514d32d2c07f9f353857dd",
+      "size": 23813,
+      "source": "definitions/library/CT_deterministic_random_structures_objects.md"
+    },
+    {
+      "path": "definitions/CT_diagnostic_objects.md",
+      "sha256": "116ef1d2f6dd60e9c155301b39049e4e85f45b2fe357e622318761c801055eb9",
+      "size": 2924,
+      "source": "definitions/library/CT_diagnostic_objects.md"
+    },
+    {
+      "path": "definitions/CT_inference_bayesian_objects.md",
+      "sha256": "fea10709c481eb9def9b40d782dbeecf519effd8fe72e2847715f48bfa517757",
+      "size": 1678,
+      "source": "definitions/library/CT_inference_bayesian_objects.md"
+    },
+    {
+      "path": "definitions/CT_inference_common_objects.md",
+      "sha256": "87c10592854a397605ef09873a0180c53f459bb63511c34d2b312d55ee014500",
+      "size": 4193,
+      "source": "definitions/library/CT_inference_common_objects.md"
+    },
+    {
+      "path": "definitions/CT_inference_frequentist_objects.md",
+      "sha256": "82cc944fc07701d0b82a24f059683b33bdcce9415789df4462d034e27bcad6e1",
+      "size": 1203,
+      "source": "definitions/library/CT_inference_frequentist_objects.md"
+    },
+    {
+      "path": "definitions/CT_inference_pipeline_objects.md",
+      "sha256": "743f4a2b99d14535182c836f75266cf5c92b554fe9ae0a85c4ebd324ace6bdc6",
+      "size": 2272,
+      "source": "definitions/library/CT_inference_pipeline_objects.md"
+    },
+    {
+      "path": "definitions/CT_inference_run_plan_objects.md",
+      "sha256": "f516e2fd65c6bccc484c1f062f49a2756c63a618628aad5ae704b2a3a8eb5b48",
+      "size": 1554,
+      "source": "definitions/library/CT_inference_run_plan_objects.md"
+    },
+    {
+      "path": "definitions/CT_io_objects.md",
+      "sha256": "c32bd4e6256fede24d7b77f4d3f61fb06eb0ecc5e8ec98cf4e80b666a29ca4e9",
+      "size": 5427,
+      "source": "definitions/library/CT_io_objects.md"
+    },
+    {
+      "path": "definitions/CT_manifold_geometry_objects.md",
+      "sha256": "96b47866d822586e714f3a263fd16bc494e29c9a0ad9f0996971059e78dcaeb5",
+      "size": 33205,
+      "source": "definitions/library/CT_manifold_geometry_objects.md"
+    },
+    {
+      "path": "definitions/CT_model_structure_objects.md",
+      "sha256": "a5cd4f7d9ed06fb410525950c82840f27d88f127abdd5e1f5181a1484fd406b9",
+      "size": 22974,
+      "source": "definitions/library/CT_model_structure_objects.md"
+    },
+    {
+      "path": "definitions/CT_multivariate_kernel_objects.md",
+      "sha256": "8c75153a1b6f8d27ce55da1ab8e2a87feeac51bd6f4c8fc4594c4a952d8ce664",
+      "size": 10096,
+      "source": "definitions/library/CT_multivariate_kernel_objects.md"
+    },
+    {
+      "path": "definitions/CT_objective_objects.md",
+      "sha256": "2ffb8a8d7c3be02dff35a0651b882c9ae23428209007fbb68e3cc86c2d5a63cc",
+      "size": 2727,
+      "source": "definitions/library/CT_objective_objects.md"
+    },
+    {
+      "path": "definitions/CT_observation_structure_objects.md",
+      "sha256": "4f90f1bb5bb3417668b6e929596dfc37407e027169431c684e039e395a7b94b3",
+      "size": 24278,
+      "source": "definitions/library/CT_observation_structure_objects.md"
+    },
+    {
+      "path": "definitions/CT_one_input_kernel_objects.md",
+      "sha256": "f9391579c09cb302de617b802e14681ef0452abe81e7dca8e81abc58823b6e88",
+      "size": 139329,
+      "source": "definitions/library/CT_one_input_kernel_objects.md"
+    },
+    {
+      "path": "definitions/CT_operator_runtime_objects.md",
+      "sha256": "8f71b6cf143228052288b4bc1b259ca0d7cc2ee6a146443b2f043006bdeb8a98",
+      "size": 9988,
+      "source": "definitions/library/CT_operator_runtime_objects.md"
+    },
+    {
+      "path": "definitions/CT_optimization_parameterization_objects.md",
+      "sha256": "6abff15f97e17ec730dc06152218c597411d89b5096b65223ea6e5b50c7c9974",
+      "size": 4326,
+      "source": "definitions/library/CT_optimization_parameterization_objects.md"
+    },
+    {
+      "path": "definitions/CT_parameter_group_objects.md",
+      "sha256": "c82b25f68254e5d9da25602cc86953c5f30c291fcf436693629a69f245819a11",
+      "size": 21015,
+      "source": "definitions/library/CT_parameter_group_objects.md"
+    },
+    {
+      "path": "definitions/CT_pipeline_objects.md",
+      "sha256": "eb33262cdab3fb78a8b22338bbc502578c4069d10e7601ecc7bb1039e7f26d48",
+      "size": 2133,
+      "source": "definitions/library/CT_pipeline_objects.md"
+    },
+    {
+      "path": "definitions/CT_prediction_bayesian_objects.md",
+      "sha256": "70fc41ab8774edc10186041e02bad052f51a7fbca1c6be01063c323ed489aaca",
+      "size": 1049,
+      "source": "definitions/library/CT_prediction_bayesian_objects.md"
+    },
+    {
+      "path": "definitions/CT_prediction_common_objects.md",
+      "sha256": "4486e0130e407584a94eb07e98ab90b4cf92120a2d7848586cf630f58ef0088a",
+      "size": 2311,
+      "source": "definitions/library/CT_prediction_common_objects.md"
+    },
+    {
+      "path": "definitions/CT_prediction_frequentist_objects.md",
+      "sha256": "f6f3773555d00add402b9998ae1fafa52bd47b52cd4377539da6066f17e24daf",
+      "size": 966,
+      "source": "definitions/library/CT_prediction_frequentist_objects.md"
+    },
+    {
+      "path": "definitions/CT_prediction_pipeline_objects.md",
+      "sha256": "58a2095a0056147c99a1ab2e6bc24edb37364c562881df4c71c0e9317bd35071",
+      "size": 2053,
+      "source": "definitions/library/CT_prediction_pipeline_objects.md"
+    },
+    {
+      "path": "definitions/CT_prediction_run_plan_objects.md",
+      "sha256": "24fddc21be6df5d9ca5e151cfefeb4fd17c3892d650aac045b9514965f3b69c8",
+      "size": 1419,
+      "source": "definitions/library/CT_prediction_run_plan_objects.md"
+    },
+    {
+      "path": "definitions/CT_random_runtime_objects.md",
+      "sha256": "2cae62da8348ebba84cb802aba7ff8f3b02ae1a2e21ec5d895f20bc079d9ac97",
+      "size": 1674,
+      "source": "definitions/library/CT_random_runtime_objects.md"
+    },
+    {
+      "path": "definitions/CT_real_data_objects.md",
+      "sha256": "227cbf4d1e80006c3ca183c83ac9187df845d63c5739eddd936f5da7ba631a10",
+      "size": 12224,
+      "source": "definitions/library/CT_real_data_objects.md"
+    },
+    {
+      "path": "definitions/CT_representation_objects.md",
+      "sha256": "043f3b0c21197a76fea04f1362b1ae9564d66f3bf1f98372b2804d482bfaf959",
+      "size": 15355,
+      "source": "definitions/library/CT_representation_objects.md"
+    },
+    {
+      "path": "definitions/CT_simulation_analysis_pattern_objects.md",
+      "sha256": "6702293663ee4a101ee42f7e02f5a67d7b9f7b7771f4e266748b116e363e7cd2",
+      "size": 20847,
+      "source": "definitions/library/CT_simulation_analysis_pattern_objects.md"
+    },
+    {
+      "path": "definitions/CT_simulation_objects.md",
+      "sha256": "9654ae08d814bb3e0b9a164e98a8bd0f0df518c90c80572405434993b9feb7b2",
+      "size": 10325,
+      "source": "definitions/library/CT_simulation_objects.md"
+    },
+    {
+      "path": "definitions/CT_three_input_kernel_objects.md",
+      "sha256": "4af42ae5a39687e8ad0c25545c6c87ab3ff44a066e64d7b64e26d9f164917ec1",
+      "size": 1182,
+      "source": "definitions/library/CT_three_input_kernel_objects.md"
+    },
+    {
+      "path": "definitions/CT_two_input_kernel_objects.md",
+      "sha256": "226f2135185a47c8fefa8308dcfd58ca32b9e00bf1f091256cbd74d5b758e852",
+      "size": 196168,
+      "source": "definitions/library/CT_two_input_kernel_objects.md"
+    },
+    {
+      "path": "definitions/CT_visualization_objects.md",
+      "sha256": "f936d24a3bd7df239fa17ce2bae774195d3a6fb6bbf3f503ff16becff6233a7d",
+      "size": 6815,
+      "source": "definitions/library/CT_visualization_objects.md"
+    },
+    {
+      "path": "glossaries/abbreviations.bib",
+      "sha256": "a8a6db1500a025d18ff3d917dc15bb8d53320319468dba18fe2f1c7de712a856",
+      "size": 39550,
+      "source": "glossaries/library/abbreviations.bib"
+    },
+    {
+      "path": "glossaries/entries.bib",
+      "sha256": "a9f6b5391868e99e24a83fbf8dd3a41cb151722a488d7e70cf2b7421103686fc",
+      "size": 35015,
+      "source": "glossaries/library/entries.bib"
+    },
+    {
+      "path": "glossaries/entries_dictionary.bib",
+      "sha256": "4f68f04150c6c512292a348cdf6d8c55b2e2dddc173f136558542fbbced1c118",
+      "size": 810,
+      "source": "glossaries/library/entries_dictionary.bib"
+    },
+    {
+      "path": "glossaries/index.bib",
+      "sha256": "aab600ad0f16c6762181f6d528195e4348e43f72cbba6e70ce8dd01999bded36",
+      "size": 477,
+      "source": "glossaries/library/index.bib"
+    },
+    {
+      "path": "glossaries/symbols.bib",
+      "sha256": "c977c828ff18651a23c8d381e281b82d0c8076c84360088e1266a38e966a4e11",
+      "size": 5300,
+      "source": "glossaries/library/symbols.bib"
+    },
+    {
+      "path": "images/README.md",
+      "sha256": "be3e3dd8a4bd1fc71f84a9c04014e30807a69896eee84053a861c20fc3304ff0",
+      "size": 945,
+      "source": "images/library/README.md"
+    },
+    {
+      "path": "images/foxh.bib",
+      "sha256": "558fa0b9c3d89e320501186e66a27db2e4f1c9bcfadc1db55ec85077dc027451",
+      "size": 75,
+      "source": "images/library/foxh.bib"
+    },
+    {
+      "path": "images/hierarchical.bib",
+      "sha256": "d279a9cf2a295c98b805d67ee531f9b0e11ee9365b6c064ec63c70063de53716",
+      "size": 78,
+      "source": "images/library/hierarchical.bib"
+    },
+    {
+      "path": "images/jax.bib",
+      "sha256": "da197aff7a979c97c4b2135915e00a7e7ad5444f228f66caa131d03ccb0ea06e",
+      "size": 18812,
+      "source": "images/library/jax.bib"
+    },
+    {
+      "path": "images/matrices.bib",
+      "sha256": "692c56082fc04d6d3c99addefe129127981851a0106fdf8b0e75297a8ae8305e",
+      "size": 7985,
+      "source": "images/library/matrices.bib"
+    },
+    {
+      "path": "images/random_fields.bib",
+      "sha256": "6c603979a0dd032dc5a3dc95b2cad6c44f9bbf455a2e67dd599a0745ea0de768",
+      "size": 6607,
+      "source": "images/library/random_fields.bib"
+    },
+    {
+      "path": "images/topology.bib",
+      "sha256": "c0eb9781ed1777b31f42c949d52341afd2b088a5851799d52de82dbb24d00316",
+      "size": 89,
+      "source": "images/library/topology.bib"
+    },
+    {
+      "path": "latex/README.md",
+      "sha256": "b828d6700b8fd83e889c586ee03e9e287773730d05cbe8931c3c065525f6d376",
+      "size": 2326,
+      "source": "latex/README.md"
+    },
+    {
+      "path": "latex/packages/README.md",
+      "sha256": "767f6a9c5059a7ebfb103c386e0ce3f66d4f7cbc6cce7fde948c41fd71f26cca",
+      "size": 1244,
+      "source": "latex/packages/README.md"
+    },
+    {
+      "path": "latex/packages/global_commands.sty",
+      "sha256": "0629ea1ae712b4a63a2416c4bb39215ef1b25d8d52edff0c15dedeea0867d923",
+      "size": 1336,
+      "source": "latex/packages/global_commands.sty"
+    },
+    {
+      "path": "latex/packages/preamble.sty",
+      "sha256": "d9363175419d58a6f91b49cc7665ff009ad6fdfca341ecf5fff93af63cb5aeeb",
+      "size": 15393,
+      "source": "latex/packages/preamble.sty"
+    },
+    {
+      "path": "latex/packages/references-assets.sty",
+      "sha256": "624f69e004280e81949612c36c8bcecbfb420cbb7d59a4a19294a3565349b2b0",
+      "size": 979,
+      "source": "latex/packages/references-assets.sty"
+    },
+    {
+      "path": "latex/patterns/README.md",
+      "sha256": "18bf61a74d1c1eafb8107e33b39c3fdb37606a2e7afe337bfc46119e414692a0",
+      "size": 665,
+      "source": "latex/patterns/README.md"
+    },
+    {
+      "path": "latex/standards/README.md",
+      "sha256": "a04582eb683a7564cc1df34b3d85af77fd246c0ed90148f797716fb09ec39b70",
+      "size": 521,
+      "source": "latex/standards/README.md"
+    },
+    {
+      "path": "latex/tooling/README.md",
+      "sha256": "0e7e7e234927e7aaa552eead5eead75a4c4fdc978764d9bff699b41a7ddca1ae",
+      "size": 287,
+      "source": "latex/tooling/README.md"
+    },
+    {
+      "path": "notation/notation_objects.md",
+      "sha256": "09012bfb4740e7e11f8f1c90ce50fd9536dc82d14d1313be5866407c0535b6ac",
+      "size": 70989,
+      "source": "notation/library/notation_objects.md"
+    },
+    {
+      "path": "standards/README.md",
+      "sha256": "e37bb23c46ed0e6cf60dacaa3d3d46b0674634c25953b6aaf8669f44263d5ff6",
+      "size": 7611,
+      "source": "docs/standards/README.md"
+    },
+    {
+      "path": "standards/bibliography-key-migrations.csv",
+      "sha256": "df7f7b409b54a5ec6a3b8becd8775e15e792c0395492caa8f8edd249b377bb77",
+      "size": 4116,
+      "source": "docs/standards/bibliography-key-migrations.csv"
+    },
+    {
+      "path": "standards/bibliography.md",
+      "sha256": "91e6135720626e9034af8378c789fa6fecb7240636d5ff062df5f57b2ccdf4d8",
+      "size": 10805,
+      "source": "docs/standards/bibliography.md"
+    },
+    {
+      "path": "standards/compilation.md",
+      "sha256": "037241fffe18722484f13f3f9b438f35fdc39d74237f94fd5d192118bdb250fe",
+      "size": 4606,
+      "source": "docs/standards/compilation.md"
+    },
+    {
+      "path": "standards/documentation.md",
+      "sha256": "a7ac5364bfb080a1dae7e3560223c6b8ac0a84b44c341f20b3ee6173fc1f88d0",
+      "size": 2533,
+      "source": "docs/standards/documentation.md"
+    },
+    {
+      "path": "standards/github-publishing.md",
+      "sha256": "d371f932e5032ba7fca17a686152f585506c30b38b239ec8c4a3d23ca3bc56d8",
+      "size": 6082,
+      "source": "docs/standards/github-publishing.md"
+    },
+    {
+      "path": "standards/glossary-and-notation.md",
+      "sha256": "6bb520b79c74e7e4cf8c190611d21c23d4e876c8c4aba89f7871c0c09b90315b",
+      "size": 8467,
+      "source": "docs/standards/glossary-and-notation.md"
+    },
+    {
+      "path": "standards/images.md",
+      "sha256": "a497506db5d0c23775240e9e871b94c6d6633b2f4d6400414f6cc49f2f4accb8",
+      "size": 3883,
+      "source": "docs/standards/images.md"
+    },
+    {
+      "path": "standards/jax.md",
+      "sha256": "0e478f1a461468afe464e554191c1b8f3dc2b875ab0b3119544f048197370554",
+      "size": 5832,
+      "source": "docs/standards/jax.md"
+    },
+    {
+      "path": "standards/latex-macros.md",
+      "sha256": "7eddd61dedbd8c4761111434dc172e31a7dadd1e3cebbdcb505f15a8259ea1fe",
+      "size": 10473,
+      "source": "docs/standards/latex-macros.md"
+    },
+    {
+      "path": "standards/latex.md",
+      "sha256": "bb0098dfa19c9a33706c438ee1faa4c64400d5d6b0d4cf39d4c7fc794400f2f0",
+      "size": 41447,
+      "source": "docs/standards/latex.md"
+    },
+    {
+      "path": "standards/markdown.md",
+      "sha256": "4d20f012712bb9dec63455495c0a21229867b01f04cf337071782186c831c21d",
+      "size": 2679,
+      "source": "docs/standards/markdown.md"
+    },
+    {
+      "path": "standards/math-interchange.md",
+      "sha256": "b65f0f9c64c870d41a12770146de05cc8d5e4287b53880f54b05224cba7977c9",
+      "size": 7268,
+      "source": "docs/standards/math-interchange.md"
+    },
+    {
+      "path": "standards/python-analysis.md",
+      "sha256": "faee6cab54d342d41cfe464e417226027c0013b8c7a5faa7a842959a7398ad1f",
+      "size": 8019,
+      "source": "docs/standards/python-analysis.md"
+    },
+    {
+      "path": "standards/python.md",
+      "sha256": "6fab1b56cc956ad6599e66d70aeff0359e0f0c85bb1ce3f52e7174a03f238f2a",
+      "size": 5846,
+      "source": "docs/standards/python.md"
+    },
+    {
+      "path": "standards/repository-layout.md",
+      "sha256": "c584960e36e856e3bb66cbda52a4390a0cfacc04a9607468303be603a3ac5408",
+      "size": 4070,
+      "source": "docs/standards/repository-layout.md"
+    },
+    {
+      "path": "standards/source-code.md",
+      "sha256": "5e0220c293e64ecc6b09e7e1fffd2aeb726095c9fa112b1ffdc166624829d616",
+      "size": 1919,
+      "source": "docs/standards/source-code.md"
+    },
+    {
+      "path": "standards/tooling-assets.md",
+      "sha256": "173afad6a6c146fd4ad0752e6d0217c6dd447d4851f81923482d1de8a1f44b9c",
+      "size": 1790,
+      "source": "docs/standards/tooling-assets.md"
+    },
+    {
+      "path": "standards/tooling.md",
+      "sha256": "5f5dd9c93b68c82eef2090b7c31a08928d7aaefe43dff0155009a1865e39b0ab",
+      "size": 7846,
+      "source": "docs/standards/tooling.md"
+    },
+    {
+      "path": "standards/tooling/.editorconfig",
+      "sha256": "746e62a6d7bf9167086dc4c1ae2aefa3e935a5897d8467051a6b81c3b9119fed",
+      "size": 322,
+      "source": ".editorconfig"
+    },
+    {
+      "path": "standards/tooling/.mdformat.toml",
+      "sha256": "d2824f055ae17c496625bec9a6ce46309be5d3e5ea9a28cdd90f7b748e028550",
+      "size": 45,
+      "source": ".mdformat.toml"
+    },
+    {
+      "path": "standards/tooling/.pymarkdown.json",
+      "sha256": "ac9bf3c5b2a522dc951b4f6115267832af12617088029122c44bbad0e9904aa1",
+      "size": 155,
+      "source": ".pymarkdown.json"
+    },
+    {
+      "path": "standards/tooling/editor-settings.example.json",
+      "sha256": "7ee1c7ccaf6ef9bb791871508762acd5db57250acdc6b5c4b03756c9d455d145",
+      "size": 496,
+      "source": "tools/editor-settings.example.json"
+    },
+    {
+      "path": "standards/tooling/lint_repo.py",
+      "sha256": "0266640af4d8714d4617f4e34f50d9d6093670150fe538270a2572ef9eaa7176",
+      "size": 3170,
+      "source": "tools/lint_repo.py"
+    },
+    {
+      "path": "standards/tooling/pyproject.example.toml",
+      "sha256": "bda339cfa3ff9f47e73f355bec33f3189865f481ebab197eab6cac0ae0a10184",
+      "size": 1411,
+      "source": "pyproject.toml"
+    },
+    {
+      "path": "standards/tooling/requirements-dev.txt",
+      "sha256": "c29e70f9d52c8c81e35a9c644668abae04ea7bdd2c07634af12c9d9404a9fedd",
+      "size": 228,
+      "source": "tools/requirements-dev.txt"
+    },
+    {
+      "path": "standards/tooling/requirements-types.txt",
+      "sha256": "ae4670106407ce6444f730a225d2b8898745e63f61b78fafcc29f6f49e21bd81",
+      "size": 70,
+      "source": "tools/requirements-types.txt"
+    },
+    {
+      "path": "standards/validation.md",
+      "sha256": "5ea5c2cc5ec6af4a77c264eba653768c83324d7f98e08294802c9878bf7a0818",
+      "size": 5881,
+      "source": "docs/standards/validation.md"
+    },
+    {
+      "path": "standards/writing.md",
+      "sha256": "01124eac324c8a6bfb9c834f3718f49d31c52acf0a452c3a1a208bca87df17d0",
+      "size": 112648,
+      "source": "docs/standards/writing.md"
+    }
+  ],
+  "generated": "2026-09-07",
+  "layout": "structured",
+  "schema_version": 1
+}

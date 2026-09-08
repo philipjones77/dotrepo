@@ -1,0 +1,16 @@
+Package	Version
+gdb	15.1-1ubuntu1~24.04.1
+htop	3.3.0-4build1
+jq	1.7.1-3ubuntu0.24.04.2
+libarmadillo-dev	1:12.6.7+dfsg-1build2
+libeigen3-dev	3.4.0-4build0.1
+libfftw3-dev:amd64	3.3.10-1ubuntu3
+libflint-dev	3.0.1-3.1build1
+liblapacke-dev:amd64	3.12.0-3build1.1
+libmpfr-dev:amd64	4.2.1-1build1.1
+libopenblas-dev:amd64	0.3.26+ds-1ubuntu0.1
+libsuitesparse-dev:amd64	1:7.6.1+dfsg-1build1
+ninja-build	1.11.1-2
+ripgrep	14.1.0-1
+tree	2.1.1-2ubuntu3.24.04.2
+wslu	3.2.3-0ubuntu3

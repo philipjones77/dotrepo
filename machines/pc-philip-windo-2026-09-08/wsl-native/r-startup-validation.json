@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-09-08T04:44:35.979826-05:00",
+  "status": "passed",
+  "r_path": "/usr/bin/R",
+  "rscript_path": "/usr/bin/Rscript",
+  "r_version": "4.6.1",
+  "r_libs_user": "~/.local/lib/R/site-library",
+  "libraries": [
+    "/home/phili/.local/lib/R/site-library",
+    "/usr/local/lib/R/site-library",
+    "/usr/lib/R/site-library",
+    "/usr/lib/R/library",
+    "/home/phili/R/library",
+    "/home/phili/R/x86_64-pc-linux-gnu-library/4.6"
+  ],
+  "ordinary_r_and_rscript_agree": true,
+  "all_library_rows": 791,
+  "active_package_names": 490,
+  "source_names": 283,
+  "source_version_differences": {},
+  "preserved_standard_extra_names": 42,
+  "standard_extra_version_differences": {},
+  "fallback_only_active_names": 165,
+  "fallback_only_namespaces_tested": false,
+  "preserved_legacy_package_descriptions": 412,
+  "preserved_editor_package_descriptions": 42,
+  "fallback_description_errors": [],
+  "startup_files": [
+    {
+      "path": "/home/phili/.Renviron",
+      "before_sha256": "6045fa862cb35911eaeb8887e115734023b39a1aa68ef5f313ff3c74d8b59995",
+      "after_sha256": "9430410706133e70fbe7c90418a7d50b5d9030dab03370c8effbdc09615b893a",
+      "mode": "0o644"
+    },
+    {
+      "path": "/home/phili/.Rprofile",
+      "before_sha256": "f1aaf910a80c56a7a277859f9f90564728beb66d60bc47e15ac6ea0cf8d1be0f",
+      "after_sha256": "886905e162a96648fc761e2d258b56750b9a226ec949ce217d28fbde615f3298",
+      "mode": "0o644"
+    }
+  ],
+  "matrix_script": "scripts/check-r-matrices.R",
+  "matrix_script_sha256": "a8e783a8fb9a3425bd11c2cfacfe4d95b6647794fa0903598b44714f168dbc92",
+  "matrix_passed": true,
+  "owned_r_processes_remaining": false
+}

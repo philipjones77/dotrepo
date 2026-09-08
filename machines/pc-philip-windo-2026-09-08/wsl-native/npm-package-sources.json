@@ -1,0 +1,25 @@
+{
+  "node": "24.20.0",
+  "versions": {
+    "npm": "12.0.2",
+    "corepack": "0.36.0"
+  },
+  "downloads": {
+    "npm": {
+      "url": "https://registry.npmjs.org/npm/-/npm-12.0.2.tgz",
+      "bytes": 3045132,
+      "sha512_integrity": "sha512-uIXokLlBj6FpNUTQX1PmT5pz7BlIN9QlixX+zdaSNHsd0qUXsbDLr50xzY6Sw7cJVr0uzHKDOle0swmPW/p5Qw==",
+      "sha256": "5dbb86c71d07a1957f2e90734092dd6a58bdcd9ebc2d8d41ca1c6e6a21d364e1",
+      "integrity_verified": true,
+      "engine_check": "24.20.0 satisfies ^22.22.2 || ^24.15.0 || >=26.0.0"
+    },
+    "corepack": {
+      "url": "https://registry.npmjs.org/corepack/-/corepack-0.36.0.tgz",
+      "bytes": 127543,
+      "sha512_integrity": "sha512-SiiJsBhZqdBiPHTEl6OT3sASrRrKIcYTQMsVGXx6EE/gM8WFMwYjeIX8Tt8RiU4Iv2J6LbT8KpGfCOsBpRWB/w==",
+      "sha256": "9128cfe26aee0c99f4fc68c15c6b8b12309a68be0de2c012cdfea2a463cb722f",
+      "integrity_verified": true,
+      "engine_check": "24.20.0 satisfies ^22.22.2 || ^24.15.0 || >=26.0.0"
+    }
+  }
+}

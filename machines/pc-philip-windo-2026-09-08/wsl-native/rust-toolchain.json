@@ -1,0 +1,56 @@
+{
+  "verified_at": "2026-09-08T02:57:01.902678-05:00",
+  "toolchain": "1.94.1-x86_64-unknown-linux-gnu",
+  "rustup": "1.29.1",
+  "rustc": "1.94.1 (e408947bf 2026-03-25)",
+  "cargo": "1.94.1 (29ea6fb6a 2026-03-24)",
+  "installed_components": [
+    "rustc",
+    "cargo",
+    "rust-std"
+  ],
+  "startup_files_unchanged": true,
+  "downloads": {
+    "manifest": {
+      "url": "https://static.rust-lang.org/dist/channel-rust-1.94.1.toml",
+      "sha256": "cc2f04dfc883549d683c8cc2a9393f523a3dfbd931f5d5eaef00303cca64a60d",
+      "bytes": 845032,
+      "date": "2026-03-26"
+    },
+    "installer": {
+      "url": "https://static.rust-lang.org/rustup/dist/x86_64-unknown-linux-gnu/rustup-init",
+      "sha256": "dda7234360b7f578ca8b0ddcb80145646fa61a67c1720a5abc7051b35c9fcb71",
+      "bytes": 21113232
+    },
+    "components": {
+      "rustc": {
+        "version": "1.94.1 (e408947bf 2026-03-25)",
+        "url": "https://static.rust-lang.org/dist/2026-03-26/rustc-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+        "sha256": "0a6b16ca476461c6238f48efcb74a7aa08a3983e61adf587f208ba48504d87e1",
+        "archive_bytes": 78645148
+      },
+      "cargo": {
+        "version": "0.95.0 (29ea6fb6a 2026-03-24)",
+        "url": "https://static.rust-lang.org/dist/2026-03-26/cargo-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+        "sha256": "03595624775204f80ff3a67986f69c8918e4cd311877ced635108888013a1e39",
+        "archive_bytes": 10972128
+      },
+      "rust-std": {
+        "version": "1.94.1 (e408947bf 2026-03-25)",
+        "url": "https://static.rust-lang.org/dist/2026-03-26/rust-std-1.94.1-x86_64-unknown-linux-gnu.tar.xz",
+        "sha256": "74109ee2c19098f1d7122087dd338a8f643203b3ce678c9d58169db733e17a03",
+        "archive_bytes": 29846424
+      }
+    }
+  },
+  "unique_allocated_bytes": 618090496,
+  "smoke": {
+    "passed": true,
+    "exit_code": 0,
+    "jobs": 1,
+    "offline": true,
+    "native_elf": true,
+    "output": "native Rust smoke: sum=55",
+    "source_sha256": "3869cb413aaebe06ddb3bab52d1dc508b5c614be5804b1825b8bf451fb4fa15e"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "recorded_date": "2026-09-08",
+  "status": "completed_verified",
+  "target": {
+    "host": "PC-PHILIP-WINDO",
+    "distribution": "Ubuntu",
+    "release": "24.04",
+    "user": "phili"
+  },
+  "reference": {
+    "host": "PhilipSecond",
+    "snapshot": "machines/source-2026-09-07/wsl-native",
+    "commit": "68868db34c492f26514eccbf1473a07267882e0e"
+  },
+  "scope": {
+    "windows_changes": false,
+    "python_changes": false,
+    "matlab_installed": false,
+    "wolfram_installed": false,
+    "wsl_restarted": false,
+    "drive_restarted": false
+  },
+  "apt": {
+    "before_count": 1493,
+    "after_count": 1523,
+    "explicit_selections": 14,
+    "added": 30,
+    "upgraded": 0,
+    "removed": 0,
+    "dpkg_audit_passed": true,
+    "dependency_check_passed": true,
+    "pending_upgrades": 6,
+    "phased_pending_upgrades": 4,
+    "download_cache_after_approx_kib": 40,
+    "inventory": "apt-added.tsv"
+  },
+  "native_matrix_check": {
+    "source": "scripts/check-native-matrices.cpp",
+    "passed": true,
+    "libraries": [
+      "Eigen",
+      "Armadillo",
+      "LAPACKE"
+    ],
+    "agreement_tolerance": 1E-12
+  },
+  "latex": {
+    "profile_check_passed": true,
+    "latexindent": "3.23.6",
+    "chktex": "1.7.8",
+    "local_fonts_and_texmf_preserved": true,
+    "user_project_build_performed": false
+  },
+  "vscode": {
+    "server_version": "1.136.1",
+    "extension_added": "charliermarsh.ruff",
+    "extension_version": "2026.78.0",
+    "before_count": 34,
+    "after_count": 35,
+    "unrelated_extensions_unchanged": true,
+    "matlab_present": false
+  },
+  "node": {
+    "version": "24.20.0",
+    "npm": "12.0.2",
+    "corepack": "0.36.0",
+    "registry_integrity_verified": true,
+    "node_and_ai_tool_files_unchanged": true,
+    "inventory": "npm-package-sources.json"
+  },
+  "rust": {
+    "rustup": "1.29.1",
+    "rustc": "1.94.1",
+    "cargo": "1.94.1",
+    "profile": "minimal",
+    "offline_build_and_run_passed": true,
+    "inventory": "rust-toolchain.json"
+  },
+  "existing_tools": {
+    "git": "2.43.0",
+    "gh": "2.100.0",
+    "pwsh": "7.6.5",
+    "gcloud": "583.0.0",
+    "cmake": "3.28.3",
+    "uv": "0.12.10",
+    "rclone": "1.74.2",
+    "rclone_newer_than_reference": true,
+    "inventory": "existing-command-checks.json"
+  },
+  "python": {
+    "preserved_environments": [
+      "py313",
+      "jax313",
+      "jax314"
+    ],
+    "interactive_default": "py313",
+    "conda_present": false
+  },
+  "r": {
+    "status": "completed_verified",
+    "version": "4.6.1",
+    "source_package_count": 283,
+    "source_inventory_sha256": "6fe38d8b77d3927348b35abea21f386e95f6a2eb8ca07bbfc7df486ae9a8b6bc",
+    "completed_changes": 117,
+    "before_standard_unique_packages": 261,
+    "after_standard_unique_packages": 325,
+    "after_standard_rows": 337,
+    "preserved_standard_extra_packages": 42,
+    "source_namespaces_passed": 283,
+    "preserved_extra_namespaces_passed": 42,
+    "matrix_check_passed": true,
+    "spatial_checks_passed": 6,
+    "unchanged_package_description_hashes_passed": true,
+    "standard_validation_finished_at": "2026-09-08T09:38:28Z",
+    "standard_inventory": "r-standard-packages.tsv",
+    "validation": "r-validation.json",
+    "change_manifest": "r-package-changes.tsv",
+    "retained_archive_bytes": 147668960,
+    "backed_up_original_package_directories": 54,
+    "preserved_original_logical_bytes_including_stale_lock": 404678038,
+    "ordinary_startup": {
+      "validated_at": "2026-09-08T04:44:35.979826-05:00",
+      "source_versions_match": true,
+      "active_package_names": 490,
+      "all_library_rows": 791,
+      "fallback_only_active_names": 165,
+      "matrix_check_passed": true,
+      "libraries": [
+        "/home/phili/.local/lib/R/site-library",
+        "/usr/local/lib/R/site-library",
+        "/usr/lib/R/site-library",
+        "/usr/lib/R/library",
+        "/home/phili/R/library",
+        "/home/phili/R/x86_64-pc-linux-gnu-library/4.6"
+      ],
+      "inventory": "r-packages.tsv",
+      "active_inventory": "r-active-packages.tsv",
+      "validation": "r-startup-validation.json"
+    }
+  }
+}

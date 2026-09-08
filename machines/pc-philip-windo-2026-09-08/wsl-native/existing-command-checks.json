@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-09-08T02:50:56.135167-05:00",
+  "commands": {
+    "git": {
+      "path": "/usr/bin/git",
+      "resolved_path": "/usr/bin/git",
+      "version": "git version 2.43.0",
+      "source_version": "git version 2.43.0",
+      "source_match": true,
+      "exit_code": 0
+    },
+    "gh": {
+      "path": "/usr/bin/gh",
+      "resolved_path": "/usr/bin/gh",
+      "version": "gh version 2.100.0 (2026-09-03)",
+      "source_version": "gh version 2.100.0 (2026-09-03)",
+      "source_match": true,
+      "exit_code": 0
+    },
+    "pwsh": {
+      "path": "/usr/bin/pwsh",
+      "resolved_path": "/opt/microsoft/powershell/7/pwsh",
+      "version": "PowerShell 7.6.5",
+      "source_version": "PowerShell 7.6.5",
+      "source_match": true,
+      "exit_code": 0
+    },
+    "gcloud": {
+      "path": "/home/phili/google-cloud-sdk/bin/gcloud",
+      "resolved_path": "/home/phili/google-cloud-sdk/bin/gcloud",
+      "version": "Google Cloud SDK 583.0.0",
+      "source_version": "Google Cloud SDK 583.0.0",
+      "source_match": true,
+      "exit_code": 0
+    },
+    "cmake": {
+      "path": "/usr/bin/cmake",
+      "resolved_path": "/usr/bin/cmake",
+      "version": "cmake version 3.28.3",
+      "source_version": "cmake version 3.28.3",
+      "source_match": true,
+      "exit_code": 0
+    },
+    "uv": {
+      "path": "/home/phili/.local/bin/uv",
+      "resolved_path": "/home/phili/.local/bin/uv",
+      "version": "uv 0.12.10 (x86_64-unknown-linux-gnu)",
+      "source_version": "uv 0.12.10 (x86_64-unknown-linux-gnu)",
+      "source_match": true,
+      "exit_code": 0
+    },
+    "rclone": {
+      "path": "/usr/bin/rclone",
+      "resolved_path": "/usr/bin/rclone",
+      "version": "rclone v1.74.2",
+      "source_version": "rclone v1.60.1-DEV",
+      "source_match": false,
+      "exit_code": 0
+    }
+  }
+}

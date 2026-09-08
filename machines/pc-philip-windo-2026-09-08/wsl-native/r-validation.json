@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-09-08T09:38:28Z",
+  "scope": "all-source",
+  "source_sha256": "6fe38d8b77d3927348b35abea21f386e95f6a2eb8ca07bbfc7df486ae9a8b6bc",
+  "libraries": [
+    "/home/phili/.local/lib/R/site-library",
+    "/usr/local/lib/R/site-library",
+    "/usr/lib/R/site-library",
+    "/usr/lib/R/library"
+  ],
+  "r_version": "4.6.1",
+  "inventory_differences": [],
+  "preserved_extra_inventory_differences": [],
+  "unexpected_new_package_names": [],
+  "unchanged_description_hash_errors": [],
+  "namespace_exit_code": 0,
+  "namespace_errors": [],
+  "source_namespace_errors": [],
+  "preserved_extra_namespace_errors": [],
+  "source_namespaces_checked": 283,
+  "preserved_extra_namespaces_checked": 42,
+  "matrix_exit_code": 0,
+  "spatial_exit_code": 0,
+  "changed_package_success_count": 117,
+  "passed": true
+}

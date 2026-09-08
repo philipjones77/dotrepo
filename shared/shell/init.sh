@@ -13,6 +13,11 @@ case "${VIRTUAL_ENV:-}" in
 esac
 case $- in
   *i*)
+    # Plain wsl.exe inherits the Windows directory unless the shell resets it.
+    # Explicit bash -c commands keep their caller-selected working directory.
+    if [ -n "${WSL_DISTRO_NAME:-}" ] && [ -z "${BASH_EXECUTION_STRING:-}" ]; then
+      cd "$HOME" || return 1
+    fi
     . "$DOTREPO/shared/shell/aliases.sh"
     . "$DOTREPO/shared/shell/functions.sh"
     ;;

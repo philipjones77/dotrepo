@@ -27,6 +27,11 @@ Ubuntu Windows Terminal profiles explicitly launch with `--cd /home/phili`.
 WSL VS Code terminals use `terminal.integrated.cwd = ${env:HOME}`. This applies
 to new terminals; existing sessions keep their current directory.
 
+Interactive WSL shells also change to `$HOME` through `shared/shell/init.sh`,
+covering plain `wsl.exe` launches that inherit a Windows working directory.
+Noninteractive scripts and explicit Bash `-c` commands retain their working
+directory.
+
 ### Google Drive mount
 
 The source's rclone remote **`gdrive:`** is mounted at

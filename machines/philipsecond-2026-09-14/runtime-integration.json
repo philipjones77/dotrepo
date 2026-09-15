@@ -2,6 +2,7 @@
   "hostname": "PhilipSecond",
   "date": "2026-09-15",
   "environment": "py313",
+  "follow_up": "gpu-coexistence.json supersedes separate-process-only guidance: import PyTorch before TensorFlow; original failed-order results below remain valid.",
   "checks": [
     {
       "name": "JAX GPU then GPflow CPU then JAX GPU",
@@ -12,7 +13,7 @@
       "name": "PyTorch GPU initialized after JAX and TensorFlow",
       "status": "failed",
       "error": "CUDA initialization error 302",
-      "scope": "Three-framework initialization in one process is not validated"
+      "scope": "This TensorFlow-first order fails; PyTorch-first coexistence is validated in gpu-coexistence.json"
     },
     {
       "name": "PyTorch GPU in a fresh process",

@@ -1,0 +1,23 @@
+{
+  "hostname": "PhilipSecond",
+  "status": "passed",
+  "python": "3.13.15",
+  "torch": "2.14.0+cu130",
+  "jax": "0.11.1",
+  "tensorflow": "2.21.0",
+  "gpflow": "2.9.2",
+  "device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "import_order": [
+    "torch (CUDA initialized)",
+    "jax",
+    "tensorflow (CPU)",
+    "gpflow"
+  ],
+  "checks": [
+    "PyTorch GPU matmul, gradient and convolution before/after GPflow",
+    "JAX GPU JIT gradient before/after GPflow",
+    "GPflow CPU finite GPR loss"
+  ],
+  "gpflow_loss": 4.001735554913952,
+  "scope": "Small numerical checks; TensorFlow GPU and arbitrary import orders are not validated."
+}

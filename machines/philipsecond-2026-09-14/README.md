@@ -17,6 +17,7 @@ for scope, rollback paths and remaining differences.
 | [R spatial checks](r-m-tier-check.json), [RF77 R checks](rf77-r-check.json) | All 11 spatial/GP and four RF77 numerical probes passed |
 | [R source receipts](r-restoration-sources.json), [additional dependency](r-additional-dependency.json) | Archive hashes and Git source commits; V8 source and hash |
 | [Runtime integration](runtime-integration.json) | Framework coexistence scope and Wolfram reference checks |
+| [GPU coexistence follow-up](gpu-coexistence.json), [order probes](gpu-import-orders.json) | PyTorch/JAX GPU and GPflow CPU work in one process with PyTorch imported first |
 | [ExaGeoStat](exageostat-verification.json), [MRA](mra-verification.json), [native checks](native-checks.json) | CPU likelihood/prediction, native matrix libraries, FLINT/Boost and Octave |
 | [Target status](target-status.json) | Selected environment paths, software versions, repository commits and APT changes |
 | [APT inventory](apt-after.tsv), [source differences](apt-snapshot-differences.json) | 1,603 installed packages; unavailable source chatgpt package and two newer target versions |
@@ -28,8 +29,9 @@ for scope, rollback paths and remaining differences.
 Source archives/build logs and old environment backups remain private under
 `~/.local/state/dotrepo/replication-20260914`. Equal package versions do not mean
 identical editable source trees. No separate gpflow312 environment was created.
-GPflow uses CPU; PyTorch GPU passed in a separate process, but initializing it
-after JAX and TensorFlow in one process failed with CUDA error 302.
+GPflow uses CPU. TensorFlow-first initialization fails with CUDA error 302,
+but importing PyTorch first fixes the tested same-process workflows; see the
+follow-up receipt and the installation report's startup example.
 
 These are functional smoke checks and captured inventories, not a claim that
 every application feature or every possible numerical workload was validated.

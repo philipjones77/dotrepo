@@ -1,0 +1,22 @@
+[
+  {
+    "order": "jax,torch",
+    "exit_code": 0
+  },
+  {
+    "order": "tf,torch",
+    "exit_code": 1
+  },
+  {
+    "order": "torch,jax,tf,torch,jax",
+    "exit_code": 0
+  },
+  {
+    "order": "torchimport,jax,tf,torch",
+    "exit_code": 0
+  },
+  {
+    "order": "jax,torch,tf,torch,jax",
+    "exit_code": 0
+  }
+]

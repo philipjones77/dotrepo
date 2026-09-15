@@ -43,7 +43,38 @@ SMPL/SMPL-X probes passed. The reduced JAX environments retain the source's
 JAX GPU followed by GPflow CPU and another JAX GPU calculation passed in one
 process. Adding PyTorch GPU initialization after those frameworks failed with
 CUDA error 302. A fresh-process PyTorch 2.14.0+cu130 GPU calculation passed.
-Three-framework GPU coexistence is not established; GPflow was tested on CPU.
+Follow-up testing resolved this for the tested workloads by importing PyTorch
+before TensorFlow. JAX + PyTorch pass without TensorFlow; TensorFlow -> PyTorch
+fails even without JAX. PyTorch -> JAX -> TensorFlow/GPflow -> PyTorch -> JAX
+passes. Importing PyTorch first, without an initial CUDA calculation, also
+passes. This establishes an import-order dependency, not a need for a different
+PyTorch installation. The precise conflicting loader symbol was not isolated.
+
+In a fresh script or restarted notebook kernel, use:
+
+```python
+import os
+os.environ['XLA_PYTHON_CLIENT_PREALLOCATE'] = 'false'
+import torch
+torch.cuda.init()
+import jax
+import tensorflow as tf
+tf.config.set_visible_devices([], 'GPU')
+import gpflow
+```
+
+Do this before any indirect TensorFlow/GPflow imports. No global Python startup
+hook or package changes were applied. The committed
+[`check-gpu-framework-coexistence.py`](../scripts/check-gpu-framework-coexistence.py)
+passes GPU matrix multiplication, gradients and convolution in PyTorch, GPU
+JIT gradients in JAX, and a GPflow CPU fit, with both GPU frameworks checked
+again after the GPflow fit. The [receipt](../machines/philipsecond-2026-09-14/gpu-coexistence.json)
+supersedes the earlier separate-process-only guidance. TensorFlow GPU and
+arbitrary initialization orders remain outside this validation.
+
+NVIDIA documents error 302 as a shared-library symbol resolution failure in its
+[CUDA Driver API reference](https://docs.nvidia.com/cuda/cuda-driver-api/group__CUDA__TYPES.html).
+The local order tests, rather than the error number alone, establish the workaround.
 
 ## R restoration
 

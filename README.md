@@ -11,7 +11,10 @@ and [current PC-PHILIP-WINDOWS inventory](machines/pc-philip-windows-2026-09-14/
 The [repository audit](docs/repo-oracles-2026-09-14.md) extends the earlier
 [34-oracle results](docs/wsl-m-tier-oracles-2026-09-14.md); it records numerical
 checks and remaining upstream/adapter gaps. Delivery is through GitHub: the other
-machines pull these records and apply the setup. Target installation remains pending.
+machines pull these records and apply the setup. The September 15
+[PhilipSecond target results](machines/philipsecond-2026-09-14/README.md) record
+the five selected Python environments, all 516 source R versions, Julia/native
+checks and remaining application differences.
 
 [WSL Conda retirement](docs/wsl-conda-retirement-2026-09-07.md): the final target
 is now achieved: Conda startup, the recreation recipe and Miniforge are removed.

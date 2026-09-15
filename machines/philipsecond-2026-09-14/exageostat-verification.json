@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "executable": "~/.local/bin/exageostat-cpu",
+  "exit_code": 0,
+  "workload": "64-point Mat\u00e9rn exact CPU maximum likelihood and 8 held-out predictions",
+  "cores": 2,
+  "gpus": 0,
+  "seed": 42,
+  "metrics": {
+    "log_likelihood": -14.453839,
+    "mspe": 0.0209,
+    "iterations": 8.0
+  },
+  "scope": "Finite fit and prediction smoke test; no large-scale, GPU, MPI or low-rank validation."
+}

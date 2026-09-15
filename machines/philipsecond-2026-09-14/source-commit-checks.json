@@ -1,0 +1,30 @@
+[
+  {
+    "repository": "RandomFields77",
+    "branch": "main",
+    "source_commit": "7c44d474f35cf8dfc6bb9d2440e7b2525ad4d48a",
+    "included": true,
+    "error": ""
+  },
+  {
+    "repository": "data77",
+    "branch": "main",
+    "source_commit": "6e96b3616a25f3605308ff25ab6baeb63b56a7f6",
+    "included": true,
+    "error": ""
+  },
+  {
+    "repository": "IntegralFunctionsJAX",
+    "branch": "main",
+    "source_commit": "611ac9b595665fb8df204017bf9f0a69185776f8",
+    "included": true,
+    "error": ""
+  },
+  {
+    "repository": "TopoSMPLJAX",
+    "branch": "main",
+    "source_commit": "ab67c2e426f3a95f6b676c8aac72e6ed1bd4ded5",
+    "included": true,
+    "error": ""
+  }
+]

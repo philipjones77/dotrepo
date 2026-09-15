@@ -1,0 +1,14 @@
+[
+  {
+    "name": "BMGM",
+    "version": "0.1.1",
+    "commit": "d36093eb07d1192616c356404081f4b621b324c8",
+    "exit_code": 0
+  },
+  {
+    "name": "fasjem",
+    "version": "1.2.0",
+    "commit": "255cd3a10127b68f488bdcca2610c9ed41d39329",
+    "exit_code": 0
+  }
+]

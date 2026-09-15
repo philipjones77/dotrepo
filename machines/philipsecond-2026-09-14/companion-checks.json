@@ -1,0 +1,22 @@
+[
+  {
+    "name": "jax313-gpu",
+    "exit_code": 0
+  },
+  {
+    "name": "jax314-gpu",
+    "exit_code": 0
+  },
+  {
+    "name": "jax-oracles313-numerical",
+    "exit_code": 0
+  },
+  {
+    "name": "jax-oracles313-pygam",
+    "exit_code": 0
+  },
+  {
+    "name": "uqpy312-whittle",
+    "exit_code": 0
+  }
+]

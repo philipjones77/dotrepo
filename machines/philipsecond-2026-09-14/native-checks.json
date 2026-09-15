@@ -1,0 +1,7 @@
+{
+  "dpkg-audit.txt": "",
+  "apt-check.txt": "Reading package lists...\nBuilding dependency tree...\nReading state information...\n",
+  "flint-boost-check.log": "FLINT 3.4.0 interval arithmetic and Boost 1_90 gamma passed\n",
+  "native-matrix-check.log": "Eigen Armadillo LAPACKE equivalent solves passed\n",
+  "octave-check.log": "Octave solve passed\n"
+}

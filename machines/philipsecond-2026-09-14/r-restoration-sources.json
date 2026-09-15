@@ -1,0 +1,1167 @@
+{
+  "armspp": {
+    "version": "0.0.3",
+    "source": "https://cloud.r-project.org/src/contrib/armspp_0.0.3.tar.gz",
+    "sha256": "2a4af4d2be601107b4d74b36f243ef0e73235550c9d20ecf3e6ddfdef66a38fb"
+  },
+  "autoFRK": {
+    "version": "1.4.4",
+    "source": "https://cloud.r-project.org/src/contrib/autoFRK_1.4.4.tar.gz",
+    "sha256": "d2dc16ce8a86e47c3944291b4f0fe2b2417ab4873977fba379ce67102730b822"
+  },
+  "bain": {
+    "version": "0.2.12",
+    "source": "https://cloud.r-project.org/src/contrib/bain_0.2.12.tar.gz",
+    "sha256": "88bd1ce56eacdf3000d70200e953e7bdc4b23977c7a7e3bd3a2622049aa5d8b0"
+  },
+  "batchmeans": {
+    "version": "1.0-4",
+    "source": "https://cloud.r-project.org/src/contrib/batchmeans_1.0-4.tar.gz",
+    "sha256": "8694573009d9070a76007281407d3314da78902e122a9d8aec1f819d3bbe562c"
+  },
+  "bayesm": {
+    "version": "3.1-7",
+    "source": "https://cloud.r-project.org/src/contrib/bayesm_3.1-7.tar.gz",
+    "sha256": "d207debbb7c6a4e37ed2b45336df156e454f3a214d90d24e1bca8a2ba8704999"
+  },
+  "BDgraph": {
+    "version": "2.74",
+    "source": "https://cloud.r-project.org/src/contrib/BDgraph_2.74.tar.gz",
+    "sha256": "af78a936a8887c4e5521e35356700b903f466ee1796464a2361585efb07814aa"
+  },
+  "Bergm": {
+    "version": "5.0.7",
+    "source": "https://cloud.r-project.org/src/contrib/Bergm_5.0.7.tar.gz",
+    "sha256": "391aea0d052126ac3dff4d7eddde41329d4fdca46ba3791d9a6d486ce59a8d8f"
+  },
+  "berryFunctions": {
+    "version": "1.22.13",
+    "source": "https://cloud.r-project.org/src/contrib/berryFunctions_1.22.13.tar.gz",
+    "sha256": "a0f1d191622cc14c68e65100ed0e276975eb9960c8cdd4db18f18d167235df51"
+  },
+  "BFpack": {
+    "version": "1.6.1",
+    "source": "https://cloud.r-project.org/src/contrib/BFpack_1.6.1.tar.gz",
+    "sha256": "a273fbdd91ec8381dbeec63d880b1ce8d85371f2c3cfd24700104ed34c8ca1e3"
+  },
+  "BGGM": {
+    "version": "2.1.6",
+    "source": "https://cloud.r-project.org/src/contrib/BGGM_2.1.6.tar.gz",
+    "sha256": "83575cc71d23d0f310378a75c3e6f4307c34facbfb463921260c66f69796753f"
+  },
+  "bigD": {
+    "version": "0.3.1",
+    "source": "https://cloud.r-project.org/src/contrib/bigD_0.3.1.tar.gz",
+    "sha256": "86b1b0cf1849f6b1418c3178ab5d7b04682652375c6e90ebac636921de6088d1"
+  },
+  "BiocGenerics": {
+    "version": "0.58.1",
+    "source": "https://bioconductor.org/packages/3.23/bioc/src/contrib/BiocGenerics_0.58.1.tar.gz",
+    "sha256": "6911559f0b2b5a07081cd21b6738aa4c6048509b23425cc3ebafc0b4cb011a98"
+  },
+  "BiocManager": {
+    "version": "1.30.27",
+    "source": "https://cloud.r-project.org/src/contrib/BiocManager_1.30.27.tar.gz",
+    "sha256": "acbfdcf09602c8279085556ca54531c2ada0ac3c1775d54ce2c3b9a3dc03fbb5"
+  },
+  "BiocVersion": {
+    "version": "3.23.1",
+    "source": "https://bioconductor.org/packages/3.23/bioc/src/contrib/BiocVersion_3.23.1.tar.gz",
+    "sha256": "7a9fdd2f50e69facc752a8d8aede12cdc872d1fb59fea2355f3b499ace6864f4"
+  },
+  "bitops": {
+    "version": "1.0-9",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/bitops/bitops_1.0-9.tar.gz",
+    "sha256": "cff3a5b77b72bb3b8fde92b690d0f803466d218a3ead6b731ae7c77ac1740d08"
+  },
+  "BMGM": {
+    "version": "0.1.1",
+    "source": "https://github.com/mauroflorez/BMGM",
+    "commit": "d36093eb07d1192616c356404081f4b621b324c8"
+  },
+  "bnlearn": {
+    "version": "5.2.1",
+    "source": "https://cloud.r-project.org/src/contrib/bnlearn_5.2.1.tar.gz",
+    "sha256": "c61c05842a758a2c1f71521fbe37aa698838d986a5a9909fcf96b41f3e4c1ddd"
+  },
+  "bridgesampling": {
+    "version": "1.2-1",
+    "source": "https://cloud.r-project.org/src/contrib/bridgesampling_1.2-1.tar.gz",
+    "sha256": "e85f4fa1d1c226e485b5ffb71b83c6d80d7d6a1083795af3e526b9c87929e998"
+  },
+  "Brobdingnag": {
+    "version": "1.2-9",
+    "source": "https://cloud.r-project.org/src/contrib/Brobdingnag_1.2-9.tar.gz",
+    "sha256": "f9012d250bc2a0f47815d6a7c06df2d4ddf3d8bab2d3b75e8cdefd964d20e91e"
+  },
+  "camel": {
+    "version": "0.2.0",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/camel/camel_0.2.0.tar.gz",
+    "sha256": "640c51288b8b53cdd1089ceb382d9bee11edd935649a44e9fac948d472a4314f"
+  },
+  "CARBayes": {
+    "version": "6.1.1",
+    "source": "https://cloud.r-project.org/src/contrib/CARBayes_6.1.1.tar.gz",
+    "sha256": "b19e3a694a07d3e7c5ce58b640e6888b06669a6164f30a1cbc959cfb3cbdb881"
+  },
+  "CARBayesdata": {
+    "version": "3.0",
+    "source": "https://cloud.r-project.org/src/contrib/CARBayesdata_3.0.tar.gz",
+    "sha256": "a53ba5863ce3eaa3b83aed084937e4605ff63aa77adf182994546b10acc9a00e"
+  },
+  "CARBayesST": {
+    "version": "4.0",
+    "source": "https://cloud.r-project.org/src/contrib/CARBayesST_4.0.tar.gz",
+    "sha256": "c5fd23d5d4439ef8db98d51a35c6506150e1ed3239f348cef5cdd2fc49bf3d73"
+  },
+  "CircStats": {
+    "version": "0.2-7",
+    "source": "https://cloud.r-project.org/src/contrib/CircStats_0.2-7.tar.gz",
+    "sha256": "9f6dabe94c21cdc3c5330779e5a50a2cefb03cfc925a095bdc3ffa7af830e456"
+  },
+  "clarabel": {
+    "version": "0.11.3",
+    "source": "https://cloud.r-project.org/src/contrib/clarabel_0.11.3.tar.gz",
+    "sha256": "7e10551cbba54669865d5586e59906c70d0fb252afe2af3d6bd0418d194dedd3"
+  },
+  "compositions": {
+    "version": "2.0-9",
+    "source": "https://cloud.r-project.org/src/contrib/compositions_2.0-9.tar.gz",
+    "sha256": "eda5f23c1ca20d3df454881e3dc45db87a4f408be6cdef2aee51dbed0ae297ff"
+  },
+  "CompQuadForm": {
+    "version": "1.4.4",
+    "source": "https://cloud.r-project.org/src/contrib/CompQuadForm_1.4.4.tar.gz",
+    "sha256": "84af2087bf7cd6dfb7aa9468fd88939267559f46c0dc7bea9d010314f42fa143"
+  },
+  "config": {
+    "version": "0.3.2",
+    "source": "https://cloud.r-project.org/src/contrib/config_0.3.2.tar.gz",
+    "sha256": "7b5c21c2b86d5ba88d6e888bc614d5633f4fb5c0b50bb498a529c32ccf931065"
+  },
+  "corpcor": {
+    "version": "1.6.10",
+    "source": "https://cloud.r-project.org/src/contrib/corpcor_1.6.10.tar.gz",
+    "sha256": "71a04c503c93ec95ddde09abe8c7ddeb36175b7da76365a14b27066383e10e09"
+  },
+  "covr": {
+    "version": "3.6.5",
+    "source": "https://cloud.r-project.org/src/contrib/covr_3.6.5.tar.gz",
+    "sha256": "20d3a98c1d751c68115e0dacd9ac46d83a112bbadf1f46da7c9672afee7e8986"
+  },
+  "credentials": {
+    "version": "2.0.3",
+    "source": "https://cloud.r-project.org/src/contrib/credentials_2.0.3.tar.gz",
+    "sha256": "140043804b4cfcb5e174af3a188ce4cd1e17f7f6aeb777bbd4da21f6c73e013c"
+  },
+  "CVXR": {
+    "version": "1.9.2",
+    "source": "https://cloud.r-project.org/src/contrib/CVXR_1.9.2.tar.gz",
+    "sha256": "9ffd5d33658b21f6db523de606b8ac01953a2d831f76659817a15bf8892a2802"
+  },
+  "deepspat": {
+    "version": "0.3.2",
+    "source": "https://cloud.r-project.org/src/contrib/deepspat_0.3.2.tar.gz",
+    "sha256": "67f1d911f9f3216cf0ee3f79dbd47a8791470ca2ba35480cc923ca8163de91fe"
+  },
+  "devtools": {
+    "version": "2.5.2",
+    "source": "https://cloud.r-project.org/src/contrib/devtools_2.5.2.tar.gz",
+    "sha256": "f677dd7d527f0e2184818edfba9bb45668e2985b76b4f5517c7ad6cff42317a2"
+  },
+  "DiceDesign": {
+    "version": "1.10",
+    "source": "https://cloud.r-project.org/src/contrib/DiceDesign_1.10.tar.gz",
+    "sha256": "06543b207b8c1732bda575b9f60ca4ec004f896676e04200af8b222f8933c73d"
+  },
+  "diffviewer": {
+    "version": "0.1.2",
+    "source": "https://cloud.r-project.org/src/contrib/diffviewer_0.1.2.tar.gz",
+    "sha256": "af295b22bb09ce378211ee385741a65661bccba7939fc2a6ebef1d9858c58ce7"
+  },
+  "distributional": {
+    "version": "0.8.1",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/distributional/distributional_0.8.1.tar.gz",
+    "sha256": "99c3ebb5f9e9a1a65e292326f0a7d38cd2934e0b3a3fe35006bfa2408a6dae78"
+  },
+  "doParallel": {
+    "version": "1.0.17",
+    "source": "https://cloud.r-project.org/src/contrib/doParallel_1.0.17.tar.gz",
+    "sha256": "b96a25ad105a654d70c7b4ca27290dc9967bc47f4668b2763927a886b178abd7"
+  },
+  "downlit": {
+    "version": "0.4.5",
+    "source": "https://cloud.r-project.org/src/contrib/downlit_0.4.5.tar.gz",
+    "sha256": "b696ce388a804738b44eb1ceb0e3f0531b309ea91408f40a0cb43c63541b658b"
+  },
+  "DOYPAColors": {
+    "version": "0.0.2",
+    "source": "https://cloud.r-project.org/src/contrib/DOYPAColors_0.0.2.tar.gz",
+    "sha256": "b634b8cecae3b3f0830b8647896a9f1d5bcbe0ad5669062a6eaf18fcd9c25665"
+  },
+  "DT": {
+    "version": "0.34.0",
+    "source": "https://cloud.r-project.org/src/contrib/DT_0.34.0.tar.gz",
+    "sha256": "8862025ef26af65b53f072adb1d133c25c5f96a812e7ae0aa822baa71249f1f2"
+  },
+  "dtw": {
+    "version": "1.23-2",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/dtw/dtw_1.23-2.tar.gz",
+    "sha256": "ee9054a50693f460655d76bd89006945bcb90e6e875b00551b5ecc883d02edd9"
+  },
+  "EigenR": {
+    "version": "1.3.0",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/EigenR/EigenR_1.3.0.tar.gz",
+    "sha256": "941bd5e7023c72b01153e1376981429be37288e04cdea28164f4a74e2e1d421c"
+  },
+  "ergm": {
+    "version": "4.12.0",
+    "source": "https://cloud.r-project.org/src/contrib/ergm_4.12.0.tar.gz",
+    "sha256": "eb4aef2dd6fc0fe816f4e25962b13c26eaf6c71bc4c96df43fa090a5f9c363b5"
+  },
+  "fasjem": {
+    "version": "1.2.0",
+    "source": "https://github.com/QData/FASJEM",
+    "commit": "255cd3a10127b68f488bdcca2610c9ed41d39329"
+  },
+  "fdrtool": {
+    "version": "1.2.18",
+    "source": "https://cloud.r-project.org/src/contrib/fdrtool_1.2.18.tar.gz",
+    "sha256": "649966996bfaa71932eddfb8ab371187377d8b0212548305dd7b18664ae6baef"
+  },
+  "fftw": {
+    "version": "1.0-9",
+    "source": "https://cloud.r-project.org/src/contrib/fftw_1.0-9.tar.gz",
+    "sha256": "3ef4d87c17031d14ca071ec8ab4d052f3fcb2c1132544ccb192344e5a047f698"
+  },
+  "filehash": {
+    "version": "2.4-6",
+    "source": "https://cloud.r-project.org/src/contrib/filehash_2.4-6.tar.gz",
+    "sha256": "558b446ba354c6fa88f694e8d6d068f999d1e7b626164eb2aeacccbb0dee81b1"
+  },
+  "filehashSQLite": {
+    "version": "0.2-7",
+    "source": "https://cloud.r-project.org/src/contrib/filehashSQLite_0.2-7.tar.gz",
+    "sha256": "1d42a02c11914a8c72a76996d6afae2da84c268919eaa21c8a1f69abf44a36c8"
+  },
+  "filematrix": {
+    "version": "1.3",
+    "source": "https://cloud.r-project.org/src/contrib/filematrix_1.3.tar.gz",
+    "sha256": "0bf0c29bcab0d1bec7d80253899cc41581b2f0d2d236a7c1d25590f36c906aec"
+  },
+  "flare": {
+    "version": "1.8",
+    "source": "https://cloud.r-project.org/src/contrib/flare_1.8.tar.gz",
+    "sha256": "983b4dde484f9e509fe438133f96a372c7aae59e7d4cf0196cf9a496e516f1bd"
+  },
+  "foghorn": {
+    "version": "1.6.1",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/foghorn/foghorn_1.6.1.tar.gz",
+    "sha256": "e3f78ef56bd76e8f5da0e36408b9ee934d1edf7b6451ce4918ee0fc39f584cd8"
+  },
+  "forcats": {
+    "version": "1.0.1",
+    "source": "https://cloud.r-project.org/src/contrib/forcats_1.0.1.tar.gz",
+    "sha256": "1de46b83b7038a293e612775197b7ffe47bd079cd2385aa7c65e98171bbd3605"
+  },
+  "future": {
+    "version": "1.70.0",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/future/future_1.70.0.tar.gz",
+    "sha256": "0141056909ec2e9f8901ea611930d8a892ec83533855e965b819b694be999017"
+  },
+  "future.apply": {
+    "version": "1.20.2",
+    "source": "https://cloud.r-project.org/src/contrib/future.apply_1.20.2.tar.gz",
+    "sha256": "30d6b64c93a1c40fc1b07e21503fce811707fc30589145832ce0b8947ce74bdf"
+  },
+  "gelnet": {
+    "version": "1.2.1",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/gelnet/gelnet_1.2.1.tar.gz",
+    "sha256": "17c802c3069d2a0cf0e622340d25fa114aaa36dfb189852954b01797be6bcf83"
+  },
+  "geojsonsf": {
+    "version": "2.0.5",
+    "source": "https://cloud.r-project.org/src/contrib/geojsonsf_2.0.5.tar.gz",
+    "sha256": "8ca055f6b47d8ab16dc4eccc8663e129a734e580fc39edac830bbd43d76abb99"
+  },
+  "geometry": {
+    "version": "0.5.2",
+    "source": "https://cloud.r-project.org/src/contrib/geometry_0.5.2.tar.gz",
+    "sha256": "c83a1e17ada83112a10ed99d4ddb80e0f1fd1aa70989a4d805480780ed9b46a5"
+  },
+  "geoR": {
+    "version": "1.9-6",
+    "source": "https://cloud.r-project.org/src/contrib/geoR_1.9-6.tar.gz",
+    "sha256": "9baaf9180b5d7fabc25ad09c7b2bd0d3e629b6f07f144a1c3198b24e6b2f66b2"
+  },
+  "gert": {
+    "version": "2.3.1",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/gert/gert_2.3.1.tar.gz",
+    "sha256": "8b2a053a02826198ec29baf3e4b89bda313656d9d959def873bfa4be0c94d845"
+  },
+  "GGally": {
+    "version": "2.4.0",
+    "source": "https://cloud.r-project.org/src/contrib/GGally_2.4.0.tar.gz",
+    "sha256": "c8d458160e0c220bfeae49ceacd7762534a9ade7e75dfcd974c88c79aa8f7382"
+  },
+  "ggnewscale": {
+    "version": "0.5.2",
+    "source": "https://cloud.r-project.org/src/contrib/ggnewscale_0.5.2.tar.gz",
+    "sha256": "d765754060ea00a07c0fe9bb3e82e1f8b6acd18e2cbef084218c720a916358c8"
+  },
+  "ggOceanMaps": {
+    "version": "2.3.0",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/ggOceanMaps/ggOceanMaps_2.3.0.tar.gz",
+    "sha256": "8260e43ad174d1b3faba80a51e7066774d6d7aa83b0089d91dbbbfc3ea4e0d36"
+  },
+  "ggplot2movies": {
+    "version": "0.0.1",
+    "source": "https://cloud.r-project.org/src/contrib/ggplot2movies_0.0.1.tar.gz",
+    "sha256": "186da1d21c3ac58699eb7bf5602bdf19944fee0d4c647076a4ebb22e9b69f418"
+  },
+  "ggridges": {
+    "version": "0.5.7",
+    "source": "https://cloud.r-project.org/src/contrib/ggridges_0.5.7.tar.gz",
+    "sha256": "fcba89ffa3a31edfb3eeea249a78997150d9e01888dbe2015fec310709681133"
+  },
+  "ggstats": {
+    "version": "0.14.0",
+    "source": "https://cloud.r-project.org/src/contrib/ggstats_0.14.0.tar.gz",
+    "sha256": "adb1782b5b2e5067e7171409908eec7751eb0090086a22a9f2af219f9d747cd7"
+  },
+  "gh": {
+    "version": "1.6.0",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/gh/gh_1.6.0.tar.gz",
+    "sha256": "91d3e15fd10835ed0b9b74b3fefa6deb56c25553108e1e8aeaed733365ef3be4"
+  },
+  "GIGrvg": {
+    "version": "0.8",
+    "source": "https://cloud.r-project.org/src/contrib/GIGrvg_0.8.tar.gz",
+    "sha256": "34f3d1accf94278ad37ce3c84d6b11d4e7917552fdc3f79d56c1ecb135b4c026"
+  },
+  "glasso": {
+    "version": "1.11",
+    "source": "https://cloud.r-project.org/src/contrib/glasso_1.11.tar.gz",
+    "sha256": "4c37844b26f55985184a734e16b8fe880b192e3d2763614b0ab3f99b4530e30a"
+  },
+  "glmnet": {
+    "version": "5.0",
+    "source": "https://cloud.r-project.org/src/contrib/glmnet_5.0.tar.gz",
+    "sha256": "f0b23da6383a45d502cd138b64da6300422d9b8d7b2c4f14627d412cde79d2a0"
+  },
+  "globals": {
+    "version": "0.19.1",
+    "source": "https://cloud.r-project.org/src/contrib/globals_0.19.1.tar.gz",
+    "sha256": "b58d7ea423eb8772aa1be615d97722a6babf836360e01e533d176e108c216979"
+  },
+  "gmp": {
+    "version": "0.7-5.1",
+    "source": "https://cloud.r-project.org/src/contrib/gmp_0.7-5.1.tar.gz",
+    "sha256": "6e56d8373fd7a4148bac4ada5d3eee96f5033b76e5aaf1689db9ce7d9e3bdb69"
+  },
+  "GPArotation": {
+    "version": "2026.8-2",
+    "source": "https://cloud.r-project.org/src/contrib/GPArotation_2026.8-2.tar.gz",
+    "sha256": "db2d5d47cc976a90513835d829394b1113dfa610bbc7b77b791532559049104f"
+  },
+  "GPvecchia": {
+    "version": "0.1.8",
+    "source": "https://cloud.r-project.org/src/contrib/GPvecchia_0.1.8.tar.gz",
+    "sha256": "7e45265e1b20f94df7353065eaae4ebfd7f9112d9ec4d237e3b4a38b77b4807d"
+  },
+  "graph": {
+    "version": "1.90.0",
+    "source": "https://bioconductor.org/packages/3.23/bioc/src/contrib/graph_1.90.0.tar.gz",
+    "sha256": "de41cff51894e0e3029bfb0c47832e74fe324f2cd20f559cbeba05d391148de7"
+  },
+  "gRbase": {
+    "version": "2.0.3",
+    "source": "https://cloud.r-project.org/src/contrib/gRbase_2.0.3.tar.gz",
+    "sha256": "2ac60cbf683f1bebd3fbc50f3e71d76ff9e0b1daa441c397b0b7c43b326f1ba2"
+  },
+  "gsl": {
+    "version": "2.1-9",
+    "source": "https://cloud.r-project.org/src/contrib/gsl_2.1-9.tar.gz",
+    "sha256": "56dec6105a882c7d976765b879d0832b436f0371c174e34a3e37bc390c56ed80"
+  },
+  "gt": {
+    "version": "1.3.0",
+    "source": "https://cloud.r-project.org/src/contrib/gt_1.3.0.tar.gz",
+    "sha256": "10e730a7ffd1fd41147ecd7ec8abcd1c8037103ca9fe26d3bb8b1090d4323f5c"
+  },
+  "gtools": {
+    "version": "3.9.5",
+    "source": "https://cloud.r-project.org/src/contrib/gtools_3.9.5.tar.gz",
+    "sha256": "dee9b6c1152db1a5dc427d074b32bbbb738708683f17a95e0e95e4d79fdf174b"
+  },
+  "here": {
+    "version": "1.0.2",
+    "source": "https://cloud.r-project.org/src/contrib/here_1.0.2.tar.gz",
+    "sha256": "71980aa294314d6e032e680dfd2a59f792cab6f8d414cce03f2e823819190c3d"
+  },
+  "hetGP": {
+    "version": "1.1.9",
+    "source": "https://cloud.r-project.org/src/contrib/hetGP_1.1.9.tar.gz",
+    "sha256": "8ad38f4ee21b09041cff63ea1c511a6a00f15601f66489d13800f86e656b0f41"
+  },
+  "hexbin": {
+    "version": "1.28.5",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/hexbin/hexbin_1.28.5.tar.gz",
+    "sha256": "2ed087d6399f247d44e555b69d785b48362445c4c8c77330bbd57d282b49d3e6"
+  },
+  "highs": {
+    "version": "1.14.0-2",
+    "source": "https://cloud.r-project.org/src/contrib/highs_1.14.0-2.tar.gz",
+    "sha256": "b4a132451d15dc67cd61ac12a346cf3686dbbd03e23686bc6adc91f073049b68"
+  },
+  "httpuv": {
+    "version": "1.6.17",
+    "source": "https://cloud.r-project.org/src/contrib/httpuv_1.6.17.tar.gz",
+    "sha256": "d18506e13546b8bcd022446bb8344434cc786c2bbe8b3152909e1da42c1d6273"
+  },
+  "httr": {
+    "version": "1.4.8",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/httr/httr_1.4.8.tar.gz",
+    "sha256": "62acf6759814f0a2923d18904971e16e01d6147419ceb816dac02113fc3e09f8"
+  },
+  "httr2": {
+    "version": "1.2.2",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/httr2/httr2_1.2.2.tar.gz",
+    "sha256": "a5e7128fe26e083839d85c2969412c7fafaca6140b5601156c0c3472cc5c45e1"
+  },
+  "huge": {
+    "version": "2.0.1",
+    "source": "https://cloud.r-project.org/src/contrib/huge_2.0.1.tar.gz",
+    "sha256": "ca525f3d306a98520962d36d64d2dc3c08f7c1b387d44a2938a88c80ec76f133"
+  },
+  "hunspell": {
+    "version": "3.0.6",
+    "source": "https://cloud.r-project.org/src/contrib/hunspell_3.0.6.tar.gz",
+    "sha256": "4023df2eef4e081eac52efa1ecccc4b31f7941439ce276f4094b9d5a02787535"
+  },
+  "HypergeoMat": {
+    "version": "4.0.3",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/HypergeoMat/HypergeoMat_4.0.3.tar.gz",
+    "sha256": "ee1e5f7ca19fd8bf02065806fa2cd9707a00d4e83ce4b25a7233168fe29e8979"
+  },
+  "inline": {
+    "version": "0.3.21",
+    "source": "https://cloud.r-project.org/src/contrib/inline_0.3.21.tar.gz",
+    "sha256": "7ef9410a933a47f6a346bc8c0e55b62931379b464b92696aee9865ec6378bc98"
+  },
+  "insight": {
+    "version": "1.5.3",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/insight/insight_1.5.3.tar.gz",
+    "sha256": "a4a73f2737a74509d78d6cb922165386d3be301ed08e3f462270c40d06b5cc0f"
+  },
+  "jeek": {
+    "version": "1.1.1",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/jeek/jeek_1.1.1.tar.gz",
+    "sha256": "ef4481f6651222689a79d7e6818bb963a9c92c7d5566fcd113e7721e2298c096"
+  },
+  "JGL": {
+    "version": "2.3.2",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/JGL/JGL_2.3.2.tar.gz",
+    "sha256": "c2b7f32f19f4c2bdf4e3782ed2b727fc5ddc45681fd35605531376b581c85b7f"
+  },
+  "jose": {
+    "version": "2.0.0",
+    "source": "https://cloud.r-project.org/src/contrib/jose_2.0.0.tar.gz",
+    "sha256": "24d4e13cda736d0d16c52ed4672937c45b52771014ba427b1aef011976c0d5e2"
+  },
+  "jpeg": {
+    "version": "0.1-11",
+    "source": "https://cloud.r-project.org/src/contrib/jpeg_0.1-11.tar.gz",
+    "sha256": "2139efbd48fbcc590a401e40215573f4a214432536bc8967caa163a833b03729"
+  },
+  "juicyjuice": {
+    "version": "0.1.0",
+    "source": "https://cloud.r-project.org/src/contrib/juicyjuice_0.1.0.tar.gz",
+    "sha256": "64f5418b2a4794b47f0525baaf101beb4f1374ea22f38d7d604f5118bdb6e12a"
+  },
+  "JuliaConnectoR": {
+    "version": "1.1.5",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/JuliaConnectoR/JuliaConnectoR_1.1.5.tar.gz",
+    "sha256": "3bb7b0678bea56ee4ca9eabac6853d53774b43fe5e573b8154fe1dc626c78162"
+  },
+  "keras": {
+    "version": "2.16.1",
+    "source": "https://cloud.r-project.org/src/contrib/keras_2.16.1.tar.gz",
+    "sha256": "ef4556ccae23aa8101b1883436ef5385c9e0a64ae829d2f4149d93688dbd520a"
+  },
+  "laGP": {
+    "version": "1.5-10",
+    "source": "https://cloud.r-project.org/src/contrib/laGP_1.5-10.tar.gz",
+    "sha256": "9978607317bc07d64a2a1e9f9ed8f27caca16cc9c15f03b59cb5ec249f7aac59"
+  },
+  "LaplacesDemon": {
+    "version": "16.1.8",
+    "source": "https://cloud.r-project.org/src/contrib/LaplacesDemon_16.1.8.tar.gz",
+    "sha256": "64cc565589d242dcd59cf720df184f08e3ab3d8920dc947bdfd7f1ec52e54714"
+  },
+  "lavaan": {
+    "version": "0.7-2",
+    "source": "https://cloud.r-project.org/src/contrib/lavaan_0.7-2.tar.gz",
+    "sha256": "5e6497544beca09739a91da4f82e830d6baab367c51e002bbf62c58c3bd866e7"
+  },
+  "leafem": {
+    "version": "0.2.5",
+    "source": "https://cloud.r-project.org/src/contrib/leafem_0.2.5.tar.gz",
+    "sha256": "6cab254e0c987495b517e550fa22b20128218195a87e98822a7750297f705246"
+  },
+  "leafgl": {
+    "version": "0.2.4",
+    "source": "https://cloud.r-project.org/src/contrib/leafgl_0.2.4.tar.gz",
+    "sha256": "53c9813e8c3bb7a1918fe3bed758423b964f9faab66d87bf4c86be1865e260fe"
+  },
+  "leaflegend": {
+    "version": "1.2.8",
+    "source": "https://cloud.r-project.org/src/contrib/leaflegend_1.2.8.tar.gz",
+    "sha256": "6902a7aa9df4bbea7026225171e71105f1c8aac2ff43a0fcc42c03713cd505de"
+  },
+  "leaflet": {
+    "version": "2.2.3",
+    "source": "https://cloud.r-project.org/src/contrib/leaflet_2.2.3.tar.gz",
+    "sha256": "af9fe3979806745f366da9e9178379dbeb46d3a2b7f224f1fc1506a3eea51ad0"
+  },
+  "leafpop": {
+    "version": "0.1.0",
+    "source": "https://cloud.r-project.org/src/contrib/leafpop_0.1.0.tar.gz",
+    "sha256": "6e546886e1db4ad93a038de6d1e8331c0d686e96a0d3f0694e7575471f7d9db1"
+  },
+  "leafsync": {
+    "version": "0.1.0",
+    "source": "https://cloud.r-project.org/src/contrib/leafsync_0.1.0.tar.gz",
+    "sha256": "7d8fd8dbbbf66417cf32575f14c0fe68199762ecf1c036c7905c7c5ff859d75c"
+  },
+  "LearnBayes": {
+    "version": "2.15.2",
+    "source": "https://cloud.r-project.org/src/contrib/LearnBayes_2.15.2.tar.gz",
+    "sha256": "7ae3458c64b426b7a753bf0613dc1e6eebccddcadbea9e86687ab2312861d192"
+  },
+  "listenv": {
+    "version": "0.10.1",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/listenv/listenv_0.10.1.tar.gz",
+    "sha256": "c09aa855883247f41b9ea57039626f036bc001f0e88046d00db5b993dc5509aa"
+  },
+  "loggle": {
+    "version": "1.0",
+    "source": "pinned Git source + recorded R ABI patch",
+    "sha256": null
+  },
+  "logspline": {
+    "version": "2.1.22",
+    "source": "https://cloud.r-project.org/src/contrib/logspline_2.1.22.tar.gz",
+    "sha256": "773af7a2f12bce0eac30a036bd61bafd9a2b0eb083e377f4ef4e5518a463ed02"
+  },
+  "loo": {
+    "version": "2.10.1",
+    "source": "https://cloud.r-project.org/src/contrib/loo_2.10.1.tar.gz",
+    "sha256": "a4c7759ec0923f775fd7b5e4cf8341e7f7c3520d6b68d2d5b3af0aafc465b432"
+  },
+  "lpSolveAPI": {
+    "version": "5.5.2.0-17.15",
+    "source": "https://cloud.r-project.org/src/contrib/lpSolveAPI_5.5.2.0-17.15.tar.gz",
+    "sha256": "ff5003da340bdd976b0f6d7f94729b3e24af5197086905895f5b07ee0168bd56"
+  },
+  "lwgeom": {
+    "version": "0.2-16",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/lwgeom/lwgeom_0.2-16.tar.gz",
+    "sha256": "dade2e68a67f32ae74f84c3783a8ea220f17454b3ae060173a64c1f86ddef5e5"
+  },
+  "mapdata": {
+    "version": "2.3.1",
+    "source": "https://cloud.r-project.org/src/contrib/mapdata_2.3.1.tar.gz",
+    "sha256": "6021092e4241579322444d9663a1418aca6e7b774b363d1e00e9bae3102359d4"
+  },
+  "mapproj": {
+    "version": "1.2.12",
+    "source": "https://cloud.r-project.org/src/contrib/mapproj_1.2.12.tar.gz",
+    "sha256": "1210b12d17c9884935a49e8aa5b6963fe1ef67e74d9f7081ffdeb2a6d71d6077"
+  },
+  "maptiles": {
+    "version": "0.11.0",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/maptiles/maptiles_0.11.0.tar.gz",
+    "sha256": "b346eb5efba4a851aba1a4f7068651455ed74ab172246e6816a35fff501f1e4a"
+  },
+  "maptree": {
+    "version": "1.4-9",
+    "source": "https://cloud.r-project.org/src/contrib/maptree_1.4-9.tar.gz",
+    "sha256": "dddc188c6a137889624f4348a105891d4df4afe7785da536a21b725d4f93a6d6"
+  },
+  "mapview": {
+    "version": "2.11.4",
+    "source": "https://cloud.r-project.org/src/contrib/mapview_2.11.4.tar.gz",
+    "sha256": "61c44b7bcf2692a6d24015f0ddb98d20df307460a577cca1754c7c9447483069"
+  },
+  "marginaleffects": {
+    "version": "0.32.0",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/marginaleffects/marginaleffects_0.32.0.tar.gz",
+    "sha256": "9cdab8700277404e103ec548799a5c9d64c1b7bbcd6201faca467e7457b19088"
+  },
+  "matrixcalc": {
+    "version": "1.0-6",
+    "source": "https://cloud.r-project.org/src/contrib/matrixcalc_1.0-6.tar.gz",
+    "sha256": "0bc7d2f11f62d8b1969474defe27c924a243ccba0c856d585f317f6caa07f326"
+  },
+  "mcmc": {
+    "version": "0.9-8",
+    "source": "https://cloud.r-project.org/src/contrib/mcmc_0.9-8.tar.gz",
+    "sha256": "6a06440d4b58e8a7f122747d92046ff40da4bb58a20bf642228a648a0c826ea7"
+  },
+  "MCMCpack": {
+    "version": "1.7-1",
+    "source": "https://cloud.r-project.org/src/contrib/MCMCpack_1.7-1.tar.gz",
+    "sha256": "3b0b46746324197c38826cde06729f031311c3520d9d42815b7b356d29b58529"
+  },
+  "mco": {
+    "version": "1.17",
+    "source": "https://cloud.r-project.org/src/contrib/mco_1.17.tar.gz",
+    "sha256": "8288e99159a541855bd286baf586e61201e286dfd244080aef128871b1699ea2"
+  },
+  "metaBMA": {
+    "version": "0.6.9",
+    "source": "https://cloud.r-project.org/src/contrib/metaBMA_0.6.9.tar.gz",
+    "sha256": "c1e43fdc4c866a065c11bfa65b9f895256d0a11a19861c5212fbd4f82a6205f8"
+  },
+  "MetricGraph": {
+    "version": "1.6.0",
+    "source": "https://cloud.r-project.org/src/contrib/MetricGraph_1.6.0.tar.gz",
+    "sha256": "9d160f469f1ce6511ffb7d58abd4119e03cec95f37709285fe1cba33891b2d92"
+  },
+  "mgm": {
+    "version": "1.2-15",
+    "source": "https://cloud.r-project.org/src/contrib/mgm_1.2-15.tar.gz",
+    "sha256": "40746dc3fa1c3723607e9ed04f1a95d71a0acec80817b4a5efd94b0912900a04"
+  },
+  "micsr": {
+    "version": "0.1-5",
+    "source": "https://cloud.r-project.org/src/contrib/micsr_0.1-5.tar.gz",
+    "sha256": "e45541afcc181d3699a01b85f99339b7c466ff1c3c2c127e8f95a9779c200796"
+  },
+  "miniUI": {
+    "version": "0.1.2",
+    "source": "https://cloud.r-project.org/src/contrib/miniUI_0.1.2.tar.gz",
+    "sha256": "017a481f7584d385241720f568323b8636ddad385e7098ceff5c12ebf879c22f"
+  },
+  "mlogit": {
+    "version": "2.0-0",
+    "source": "https://cloud.r-project.org/src/contrib/mlogit_2.0-0.tar.gz",
+    "sha256": "0ae2768408f557fa6a4b09c56ca4d03fe1f580fb256ab9eecd9ee04b858a9475"
+  },
+  "multcomp": {
+    "version": "1.4-30",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/multcomp/multcomp_1.4-30.tar.gz",
+    "sha256": "4b24316f221784a8915a26e4b744d0299f1c4d3058c4c7e8faccc16333be495c"
+  },
+  "munsell": {
+    "version": "0.5.1",
+    "source": "https://cloud.r-project.org/src/contrib/munsell_0.5.1.tar.gz",
+    "sha256": "03a2fd9ac40766cded96dfe33b143d872d0aaa262a25482ce19161ca959429a6"
+  },
+  "mvnfast": {
+    "version": "0.2.8",
+    "source": "https://cloud.r-project.org/src/contrib/mvnfast_0.2.8.tar.gz",
+    "sha256": "8871e0ce54b87afc556fd94ca77c3db72dcbb8c245558287e0fe342e30eec9a0"
+  },
+  "network": {
+    "version": "1.20.0",
+    "source": "https://cloud.r-project.org/src/contrib/network_1.20.0.tar.gz",
+    "sha256": "55d956be5b4e0f56931fdf1f44ca66c7f1aaafd2b859a01901c2ff248cec851f"
+  },
+  "ngspatial": {
+    "version": "1.2-2",
+    "source": "https://cloud.r-project.org/src/contrib/ngspatial_1.2-2.tar.gz",
+    "sha256": "3fa79e45d3a502a58c1454593ec83dfc73144e92b34c14f617a6126557dd0d26"
+  },
+  "odbc": {
+    "version": "1.7.0",
+    "source": "https://cloud.r-project.org/src/contrib/odbc_1.7.0.tar.gz",
+    "sha256": "7eb4dc2056d85015af64c4bb4bf45c84cb29702f9b9860d631c622dd5e6f7d9e"
+  },
+  "osqp": {
+    "version": "1.0.0",
+    "source": "https://cloud.r-project.org/src/contrib/osqp_1.0.0.tar.gz",
+    "sha256": "8c0534a4b4944acd5398e9c3e61dd161586e9f05f4ac4a45e57cfe5f03a548c8"
+  },
+  "packrat": {
+    "version": "0.9.3",
+    "source": "https://cloud.r-project.org/src/contrib/packrat_0.9.3.tar.gz",
+    "sha256": "db73e62a5c536fd16b6549a61d0dd109eff4f94ac6236c52de53bde2230f81d6"
+  },
+  "parallelly": {
+    "version": "1.47.0",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/parallelly/parallelly_1.47.0.tar.gz",
+    "sha256": "88c0f4515c71dfe70c3b22f488daa55d4c410865e0885e2df71fb6e3877797c4"
+  },
+  "patchwork": {
+    "version": "1.3.2",
+    "source": "https://cloud.r-project.org/src/contrib/patchwork_1.3.2.tar.gz",
+    "sha256": "0ec469acfd69d1a4f1a6317c861e6bf000f768c2d5047e3aed6713df9afe27eb"
+  },
+  "pbivnorm": {
+    "version": "0.6.0",
+    "source": "https://cloud.r-project.org/src/contrib/pbivnorm_0.6.0.tar.gz",
+    "sha256": "07c37d507cb8f8d2d9ae51a9a6d44dfbebd8a53e93c242c4378eaddfb1cc5f16"
+  },
+  "pcaPP": {
+    "version": "2.0-5",
+    "source": "https://cloud.r-project.org/src/contrib/pcaPP_2.0-5.tar.gz",
+    "sha256": "674faed967016a19f9d927506d6b3f4fc7ff2b2ab5679b2368429ee2c61b7c10"
+  },
+  "pkgdown": {
+    "version": "2.2.0",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/pkgdown/pkgdown_2.2.0.tar.gz",
+    "sha256": "71956e320eedf9455c2be87f3c4ede161cef799f01b72744afdd917e6d9a191e"
+  },
+  "PKI": {
+    "version": "0.1-15",
+    "source": "https://cloud.r-project.org/src/contrib/PKI_0.1-15.tar.gz",
+    "sha256": "8d0d27054e45930a6e4ec9998ef111a4bde6c02c2c066ef0f1b15b7aeff1e7b0"
+  },
+  "posterior": {
+    "version": "1.7.0",
+    "source": "https://cloud.r-project.org/src/contrib/posterior_1.7.0.tar.gz",
+    "sha256": "430305bcceea4c09e04935e9b48ac1510fed88e89caded882846dc0d225780dc"
+  },
+  "pROC": {
+    "version": "1.19.0.1",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/pROC/pROC_1.19.0.1.tar.gz",
+    "sha256": "f161ed071a3c45192f0faf4ab37237f12bed9334e954e5e041ba98078c70e619"
+  },
+  "profvis": {
+    "version": "0.4.0",
+    "source": "https://cloud.r-project.org/src/contrib/profvis_0.4.0.tar.gz",
+    "sha256": "d2fdeb0e6021f4dfc7c0634bec818cd82a6baf8042b80a1818aae0caa6bf4cf4"
+  },
+  "psych": {
+    "version": "2.6.5",
+    "source": "https://cloud.r-project.org/src/contrib/psych_2.6.5.tar.gz",
+    "sha256": "9a70ebada6e49e2d4c2d1547133bc2d3ec904528dfd4b16239df8942c2eb2899"
+  },
+  "qgraph": {
+    "version": "1.10.1",
+    "source": "https://cloud.r-project.org/src/contrib/qgraph_1.10.1.tar.gz",
+    "sha256": "8b085c83a1e06524a15816f7f4a28ba5d5d8e168a034c359298d5d5219427ff1"
+  },
+  "QRM": {
+    "version": "0.4-35",
+    "source": "https://cloud.r-project.org/src/contrib/QRM_0.4-35.tar.gz",
+    "sha256": "327ff1acb478c0a47554c930ffd5c44ab9150e1617aea00b99f8b450c8956415"
+  },
+  "quadprog": {
+    "version": "1.5-8",
+    "source": "https://cloud.r-project.org/src/contrib/quadprog_1.5-8.tar.gz",
+    "sha256": "22128dd6b08d3516c44ff89276719ad4fe46b36b23fdd585274fa3a93e7a49cd"
+  },
+  "quarto": {
+    "version": "1.5.1",
+    "source": "https://cloud.r-project.org/src/contrib/quarto_1.5.1.tar.gz",
+    "sha256": "4c79dbcffc1786c660c9c5acb55ba1e63bcc59aeece14451acf96635c9673920"
+  },
+  "QuickJSR": {
+    "version": "1.11.0",
+    "source": "https://cloud.r-project.org/src/contrib/QuickJSR_1.11.0.tar.gz",
+    "sha256": "413e7a0e3d2e9cb1e8e931cafc458a1ad872281ddf821148efafbd2f5969fda8"
+  },
+  "ragg": {
+    "version": "1.5.2",
+    "source": "https://cloud.r-project.org/src/contrib/ragg_1.5.2.tar.gz",
+    "sha256": "1dad21034a403e84a835c90260a1d9d8dc43c8d100f7fe63dd01d5e928b28f16"
+  },
+  "rags2ridges": {
+    "version": "2.2.9",
+    "source": "https://cloud.r-project.org/src/contrib/rags2ridges_2.2.9.tar.gz",
+    "sha256": "476e6caad352179795765ab54a356a8a351346ab1c1db6d521bd573ec265aba6"
+  },
+  "RApiSerialize": {
+    "version": "0.1.4",
+    "source": "https://cloud.r-project.org/src/contrib/RApiSerialize_0.1.4.tar.gz",
+    "sha256": "26b974aca70f93a117253e010bb61f5fd315b36b1d045ab25cdfd417150d63c9"
+  },
+  "raster": {
+    "version": "3.6-32",
+    "source": "https://cloud.r-project.org/src/contrib/raster_3.6-32.tar.gz",
+    "sha256": "300aaaee8c9f31ab2edaed8d560dd993e2c691876d086097bb5b6a49700d0692"
+  },
+  "RBGL": {
+    "version": "1.88.0",
+    "source": "https://bioconductor.org/packages/3.23/bioc/src/contrib/RBGL_1.88.0.tar.gz",
+    "sha256": "f84ef80b375e7b27b7f80591722ca4ae843f513ee666a7bc59213a66b951be32"
+  },
+  "RcppDist": {
+    "version": "0.1.1.1",
+    "source": "https://cloud.r-project.org/src/contrib/RcppDist_0.1.1.1.tar.gz",
+    "sha256": "aefd99dd207b9b545cf6070078bb9dd7f4ba51049063f3324e9849c7131b09ae"
+  },
+  "RcppParallel": {
+    "version": "6.2.0",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/RcppParallel/RcppParallel_6.2.0.tar.gz",
+    "sha256": "3b6eaf73a696059552186292c79233916267f8e2b5c9a309519391d16c5a8bbe"
+  },
+  "RcppTOML": {
+    "version": "0.2.3",
+    "source": "https://cloud.r-project.org/src/contrib/RcppTOML_0.2.3.tar.gz",
+    "sha256": "2ed594253c562bef7065e67d791197f61b221e545206a1b3598d46868cf5926f"
+  },
+  "reactable": {
+    "version": "0.4.5",
+    "source": "https://cloud.r-project.org/src/contrib/reactable_0.4.5.tar.gz",
+    "sha256": "6bdd74fb37561de32500f7e855003ced9533f4e61f4026752c204f430c10cd36"
+  },
+  "reactR": {
+    "version": "0.6.1",
+    "source": "https://cloud.r-project.org/src/contrib/reactR_0.6.1.tar.gz",
+    "sha256": "9b690d7d4de54cbecca16deea9684f1d4aba91b2b280b38ea13c63eb5e57d892"
+  },
+  "remotes": {
+    "version": "2.5.0",
+    "source": "https://cloud.r-project.org/src/contrib/remotes_2.5.0.tar.gz",
+    "sha256": "4d663f1426cd88d42f4070f23d969305c575e0499ed1397be6607b0770d2850c"
+  },
+  "renv": {
+    "version": "1.2.3",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/renv/renv_1.2.3.tar.gz",
+    "sha256": "f462b55ace5436b6bed18e01ac1267649fc196ad8505f55c8546704eda104bfb"
+  },
+  "reshape": {
+    "version": "0.8.10",
+    "source": "https://cloud.r-project.org/src/contrib/reshape_0.8.10.tar.gz",
+    "sha256": "35ef6e8956520279f44d538c613ff9605bc594fed46133200d61937828fc6b64"
+  },
+  "reticulate": {
+    "version": "1.47.0",
+    "source": "https://cloud.r-project.org/src/contrib/reticulate_1.47.0.tar.gz",
+    "sha256": "5f566b8226b1c12cd4cf833b8c0750a414ca56fa4c5fe5d9a6f71b97147a7619"
+  },
+  "rgl": {
+    "version": "1.3.36",
+    "source": "https://cloud.r-project.org/src/contrib/rgl_1.3.36.tar.gz",
+    "sha256": "15570af26b4c3c62cc66d05dced8e7d6b7c363ded97450ae4eba97c6d7491547"
+  },
+  "Rglpk": {
+    "version": "0.6-5.1",
+    "source": "https://cloud.r-project.org/src/contrib/Rglpk_0.6-5.1.tar.gz",
+    "sha256": "e528b8c487e9dfef16ade3b834a17fc93cc898869978a5dd79bee2c5bf9cb6c9"
+  },
+  "rle": {
+    "version": "0.10.0",
+    "source": "https://cloud.r-project.org/src/contrib/rle_0.10.0.tar.gz",
+    "sha256": "191799a80f3a833dcad0ffe0e6ea73bfce3c1a7cd4c6e00839687a0e695834ab"
+  },
+  "rnaturalearth": {
+    "version": "1.2.0",
+    "source": "https://cloud.r-project.org/src/contrib/rnaturalearth_1.2.0.tar.gz",
+    "sha256": "36aa5f8d23a7854c221d9f49a753d79fe7c001c83ddf0fcb888477cc7fa287af"
+  },
+  "rnaturalearthdata": {
+    "version": "1.0.0",
+    "source": "https://cloud.r-project.org/src/contrib/rnaturalearthdata_1.0.0.tar.gz",
+    "sha256": "e1fefaf1ea575fe242402c933b531c90f0f18772f8efe47b97a221b7eefb1e4d"
+  },
+  "RPostgres": {
+    "version": "1.4.10",
+    "source": "https://cloud.r-project.org/src/contrib/RPostgres_1.4.10.tar.gz",
+    "sha256": "f73424438dbab7eb94e75b0732d62e7d25dd52040cac99b07b9c71f0a1fd03e9"
+  },
+  "rsconnect": {
+    "version": "1.8.0",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/rsconnect/rsconnect_1.8.0.tar.gz",
+    "sha256": "4dc571860a22183f66c0e8e100f5ca776c9b243b3b5d13ffdd1a0343531eec11"
+  },
+  "RSQLite": {
+    "version": "3.53.1",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/RSQLite/RSQLite_3.53.1.tar.gz",
+    "sha256": "0f73240f6d935ce80fa5199684ff8bc86b827590ae85dc2a9ec1cc6049a26b7a"
+  },
+  "rstan": {
+    "version": "2.32.7",
+    "source": "https://cloud.r-project.org/src/contrib/rstan_2.32.7.tar.gz",
+    "sha256": "5931cf77fb01672f962c203c49bb4508f86f55553cac97f58ff0c7a55b72174a"
+  },
+  "rstantools": {
+    "version": "2.7.1",
+    "source": "https://cloud.r-project.org/src/contrib/rstantools_2.7.1.tar.gz",
+    "sha256": "d8339de70d3b42c4fe77e53ba5a47a96abbffbcfe31619c608f67c44116b7d14"
+  },
+  "rticles": {
+    "version": "0.27",
+    "source": "https://cloud.r-project.org/src/contrib/rticles_0.27.tar.gz",
+    "sha256": "073a1fa60a0da87ec3e8172cd0883ec109a09f1d397a30266ea800c7fe46b1a8"
+  },
+  "rvest": {
+    "version": "1.0.5",
+    "source": "https://cloud.r-project.org/src/contrib/rvest_1.0.5.tar.gz",
+    "sha256": "1e7c34a0b4467887195b1cd66388919989e82ca096d08df283c675d87e53bc00"
+  },
+  "sandwich": {
+    "version": "3.1-1",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/sandwich/sandwich_3.1-1.tar.gz",
+    "sha256": "ece51efa4283a98b3b4b4b9317fce4928b227942115dd84452b481fd6e9d9119"
+  },
+  "satellite": {
+    "version": "1.0.6",
+    "source": "https://cloud.r-project.org/src/contrib/satellite_1.0.6.tar.gz",
+    "sha256": "4c79cd6949de0c198213151adc6c6a3d6b0b19312db235fc4d3aba82225f8cab"
+  },
+  "scs": {
+    "version": "3.2.7",
+    "source": "https://cloud.r-project.org/src/contrib/scs_3.2.7.tar.gz",
+    "sha256": "f84004f95365f713e22e78b9c5a0a05670f5c5d17640b3dfa6e7ed747479aaca"
+  },
+  "selectr": {
+    "version": "0.5-1",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/selectr/selectr_0.5-1.tar.gz",
+    "sha256": "e8a6f1f4cc8b91efdf8a69dd5344b112149b5c21973c7987db63be931267f165"
+  },
+  "servr": {
+    "version": "0.32",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/servr/servr_0.32.tar.gz",
+    "sha256": "672aca913087c5164020fe3e79bbfee47fbc4fedd5e2cc824ee91fb48ef03da6"
+  },
+  "sfsmisc": {
+    "version": "1.1-25",
+    "source": "https://cloud.r-project.org/src/contrib/sfsmisc_1.1-25.tar.gz",
+    "sha256": "65e66acf26bb0d7fa8852cae492359c13249ab875fd66351aa73823e46230906"
+  },
+  "shape": {
+    "version": "1.4.6.1",
+    "source": "https://cloud.r-project.org/src/contrib/shape_1.4.6.1.tar.gz",
+    "sha256": "43f9bd0f997fd6cf1838efd8b2509c9a6396513f4e54a20360481634affd22a4"
+  },
+  "shiny": {
+    "version": "1.13.0",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/shiny/shiny_1.13.0.tar.gz",
+    "sha256": "ff1e2ec23b39a5b9ac7eebdef541f3832f6de07256f6ddb11562daba7ba51951"
+  },
+  "SILGGM": {
+    "version": "1.0.0",
+    "source": "https://cloud.r-project.org/src/contrib/SILGGM_1.0.0.tar.gz",
+    "sha256": "a01e66f715b1ad7e6309c612c2e47c629cf11476e07f76a89e6e7df19e8e15d2"
+  },
+  "slam": {
+    "version": "0.1-56",
+    "source": "https://cloud.r-project.org/src/contrib/slam_0.1-56.tar.gz",
+    "sha256": "1a83e06ba3ad9b0b67a489b69fe6599a5b76fe5eac498f2ee68c1381e6daa682"
+  },
+  "sm": {
+    "version": "2.2-6.0",
+    "source": "https://cloud.r-project.org/src/contrib/sm_2.2-6.0.tar.gz",
+    "sha256": "27a6e3291a572c3d30f25982902ccde5299230061e5dc1a38fb52aaac2561d61"
+  },
+  "smoothr": {
+    "version": "1.3.0",
+    "source": "https://cloud.r-project.org/src/contrib/smoothr_1.3.0.tar.gz",
+    "sha256": "1e9cfa881507f85342e84c075bb47b5cc21aacb5e7fea89ee91d9807018ed9ce"
+  },
+  "sn": {
+    "version": "2.1.3",
+    "source": "https://cloud.r-project.org/src/contrib/sn_2.1.3.tar.gz",
+    "sha256": "144df1ad03d28acd06f1231dd6efa9638db930402818a380b5b0f08eee816218"
+  },
+  "sna": {
+    "version": "2.8",
+    "source": "https://cloud.r-project.org/src/contrib/sna_2.8.tar.gz",
+    "sha256": "f20adb8e505cd56ae9ed0d9675337b4fab15d5dbad1bff3562edd971872a994c"
+  },
+  "snow": {
+    "version": "0.4-4",
+    "source": "https://cloud.r-project.org/src/contrib/snow_0.4-4.tar.gz",
+    "sha256": "84587f46f222a96f3e2fde10ad6ec6ddbd878f4e917cd926d632f61a87db13c9"
+  },
+  "snowfall": {
+    "version": "1.84-6.3",
+    "source": "https://cloud.r-project.org/src/contrib/snowfall_1.84-6.3.tar.gz",
+    "sha256": "2641932b01041e34b7afb1261f649755b4c8d6560080e0e2ee549ffdf3b8b143"
+  },
+  "snowflakeauth": {
+    "version": "0.2.2",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/snowflakeauth/snowflakeauth_0.2.2.tar.gz",
+    "sha256": "0dc6c541b2ac2477244a4a003373a6482a89736e34779d9af566ff5bdae040e2"
+  },
+  "SpatialExtremes": {
+    "version": "2.1-0",
+    "source": "https://cloud.r-project.org/src/contrib/SpatialExtremes_2.1-0.tar.gz",
+    "sha256": "438694a02f4354ccd740675936cb409d9fd634e95d66357583e87b1d6ee73a7c"
+  },
+  "spatialreg": {
+    "version": "1.4-3",
+    "source": "https://cloud.r-project.org/src/contrib/spatialreg_1.4-3.tar.gz",
+    "sha256": "c9cd1ab29ef568c0349edcbfff04b99522b1b9b1d52c2a435d7dd0d06d328ce6"
+  },
+  "spatstat": {
+    "version": "3.6-1",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/spatstat/spatstat_3.6-1.tar.gz",
+    "sha256": "3a871dec9f10c96c514e84995ab5db4d569ac23c9cc691ea237d038e1bcac6ba"
+  },
+  "spatstat.explore": {
+    "version": "3.8-1",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/spatstat.explore/spatstat.explore_3.8-1.tar.gz",
+    "sha256": "dda4ec7f0263f2c0f16611e40300a5192f40d3625ee89b8f65af3c2e82f67d0d"
+  },
+  "spatstat.geom": {
+    "version": "3.8-1",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/spatstat.geom/spatstat.geom_3.8-1.tar.gz",
+    "sha256": "28a35d56c806aa62035bc4c67767178bc469834d2b8ef21f2317fad2ed7841b3"
+  },
+  "spatstat.linnet": {
+    "version": "3.5-1",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/spatstat.linnet/spatstat.linnet_3.5-1.tar.gz",
+    "sha256": "d200562dbb8ba39534e64c1e4c16b9faeaa8a715a345a7a1908f2cc4fd6c17a9"
+  },
+  "spatstat.model": {
+    "version": "3.7-1",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/spatstat.model/spatstat.model_3.7-1.tar.gz",
+    "sha256": "cf017ca3e66d68b13fc50477e50d4ccb5f096fd22ecdb1fd2615ce077e17f03e"
+  },
+  "spatstat.random": {
+    "version": "3.5-0",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/spatstat.random/spatstat.random_3.5-0.tar.gz",
+    "sha256": "b3830e142b64583083dc09c19a0b2691458289af40453f9501f038e1fa0d1ecd"
+  },
+  "spBayes": {
+    "version": "0.4-9",
+    "source": "https://cloud.r-project.org/src/contrib/spBayes_0.4-9.tar.gz",
+    "sha256": "3beccf2eaa9896278c6f2d19cf77c72157fbd50f84d8c85a2a86865757507131"
+  },
+  "spdep": {
+    "version": "1.4-2",
+    "source": "https://cloud.r-project.org/src/contrib/spdep_1.4-2.tar.gz",
+    "sha256": "8cd0892392b26e7e437f25e820c9ffb12ee1a07174613026153db05004093688"
+  },
+  "spelling": {
+    "version": "2.3.2",
+    "source": "https://cloud.r-project.org/src/contrib/spelling_2.3.2.tar.gz",
+    "sha256": "7571e54d7fd5e83f83948e6f7469abde94b379f5763862551ecc6e0ae4eb024b"
+  },
+  "ssgraph": {
+    "version": "1.16",
+    "source": "https://cloud.r-project.org/src/contrib/ssgraph_1.16.tar.gz",
+    "sha256": "b7d3fa6b2fb1619a2adff7bcae4987dceb853aaade21b86c94cb7df1a9e38791"
+  },
+  "stabs": {
+    "version": "0.7-1",
+    "source": "https://cloud.r-project.org/src/contrib/stabs_0.7-1.tar.gz",
+    "sha256": "8243bc10a95aba15ce6e33edbf34f8806015e52609f8a2f1cde1159e49f0e16b"
+  },
+  "StanHeaders": {
+    "version": "2.39.1",
+    "source": "https://cloud.r-project.org/src/contrib/StanHeaders_2.39.1.tar.gz",
+    "sha256": "db87db967b6c908d1bf841cc667c3298648b067b060c3395ebc288287eec206b"
+  },
+  "statnet.common": {
+    "version": "4.13.0",
+    "source": "https://cloud.r-project.org/src/contrib/statnet.common_4.13.0.tar.gz",
+    "sha256": "66787cbada206c85d884af5ffa234aedec9aa96634230380322a30c7951dd33f"
+  },
+  "stringfish": {
+    "version": "0.19.2",
+    "source": "https://cloud.r-project.org/src/contrib/stringfish_0.19.2.tar.gz",
+    "sha256": "424e9b2c69f5b7af74753e401cfaf9e9be08729dda99bdf0946ea53849e9aad0"
+  },
+  "svglite": {
+    "version": "2.2.2",
+    "source": "https://cloud.r-project.org/src/contrib/svglite_2.2.2.tar.gz",
+    "sha256": "5bf884ee031fbf3f5c60bcedc0532e4b77763e924a1508f584329aae9686187c"
+  },
+  "tensorflow": {
+    "version": "2.20.0",
+    "source": "https://cloud.r-project.org/src/contrib/tensorflow_2.20.0.tar.gz",
+    "sha256": "e63a87c5077bfbd1aa1f6d276dc625f30c4662ebd36d86726c30d2d5749b31c1"
+  },
+  "testthat": {
+    "version": "3.3.2",
+    "source": "https://cloud.r-project.org/src/contrib/testthat_3.3.2.tar.gz",
+    "sha256": "5d2e2fa2c3dcb523afb6898c02be9544c24c1c7e0789149c436fef768a409808"
+  },
+  "tfautograph": {
+    "version": "0.3.2",
+    "source": "https://cloud.r-project.org/src/contrib/tfautograph_0.3.2.tar.gz",
+    "sha256": "42821583679d32fa4abb4304b6831e8c3b4dce9468e1a3b570af7bf95ec0aa3a"
+  },
+  "tfprobability": {
+    "version": "0.15.2",
+    "source": "https://cloud.r-project.org/src/contrib/tfprobability_0.15.2.tar.gz",
+    "sha256": "9268e148396a4231aa11bee32ddd755e879abe243b84c3064e010db1d21bd46c"
+  },
+  "tfruns": {
+    "version": "1.5.4",
+    "source": "https://cloud.r-project.org/src/contrib/tfruns_1.5.4.tar.gz",
+    "sha256": "dd22af08aaf1af42e2ba3fba372d91e2f83639a3d73dc464e72c55e26f2a31d2"
+  },
+  "tgp": {
+    "version": "2.4-23",
+    "source": "https://cloud.r-project.org/src/contrib/tgp_2.4-23.tar.gz",
+    "sha256": "0dab9217da56a7a37867b089d18a7b6c6dacd1ea134322fe7bf5358f10138d1c"
+  },
+  "TH.data": {
+    "version": "1.1-5",
+    "source": "https://cloud.r-project.org/src/contrib/TH.data_1.1-5.tar.gz",
+    "sha256": "c4dc350a34c674e6c96ee74c100a071a37a2fe924026f0ca1eed0958138e2660"
+  },
+  "tidyterra": {
+    "version": "1.1.0",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/tidyterra/tidyterra_1.1.0.tar.gz",
+    "sha256": "0ba5821f2fc800be655be992d3fa576e110d3dfc4c76d87196e4410427c0c239"
+  },
+  "timeSeries": {
+    "version": "4052.112",
+    "source": "https://cloud.r-project.org/src/contrib/timeSeries_4052.112.tar.gz",
+    "sha256": "c4e50a669cfa34814a71e47bb93020442ec40694fc3f1c7bcd94edf2368c6993"
+  },
+  "tmap": {
+    "version": "4.3",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/tmap/tmap_4.3.tar.gz",
+    "sha256": "d4ba1d10cf483401fc7f45f4817b1ee58341f24d16b19ae72b709e41daad6c19"
+  },
+  "tmaptools": {
+    "version": "3.3",
+    "source": "https://cloud.r-project.org/src/contrib/tmaptools_3.3.tar.gz",
+    "sha256": "cadb9918a463ca7e4f4d13f964f9fde25436958a56dd9ec6a2be5f609c804c56"
+  },
+  "truncdist": {
+    "version": "1.0-2",
+    "source": "https://cloud.r-project.org/src/contrib/truncdist_1.0-2.tar.gz",
+    "sha256": "b848b68bdd983bd496fa7327632ffa8add8d2231229b8af5c8bc29d823e1300a"
+  },
+  "truncnorm": {
+    "version": "1.0-9",
+    "source": "https://cloud.r-project.org/src/contrib/truncnorm_1.0-9.tar.gz",
+    "sha256": "5156acc4d63243bf95326d6285b0ba3cdf710697d67c233a12ae56f3d87ec708"
+  },
+  "trust": {
+    "version": "0.1-9",
+    "source": "https://cloud.r-project.org/src/contrib/trust_0.1-9.tar.gz",
+    "sha256": "68d41390d6abd79461a972b424e8832272afdf0fd6e7fb57c379ae286919a1dd"
+  },
+  "usethis": {
+    "version": "3.2.1",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/usethis/usethis_3.2.1.tar.gz",
+    "sha256": "45bc39d35b0cc2ef7dfe03c488a05c0bac62b498a3d16f745b757e4fba772b77"
+  },
+  "vdiffr": {
+    "version": "1.0.9",
+    "source": "https://cloud.r-project.org/src/contrib/vdiffr_1.0.9.tar.gz",
+    "sha256": "8c4d013fc8ce0a207720290b6cdecbadea56a41f150eb7e5759cda49cb467118"
+  },
+  "verification": {
+    "version": "1.45",
+    "source": "https://cloud.r-project.org/src/contrib/verification_1.45.tar.gz",
+    "sha256": "96848084a70bf0e60c6b4554e054e60104764aef8753d674b58b726a35586d55"
+  },
+  "viridis": {
+    "version": "0.6.5",
+    "source": "https://cloud.r-project.org/src/contrib/viridis_0.6.5.tar.gz",
+    "sha256": "862b5cb6be115deea0207cdd3c8bb33de28552cfdc29900777512fd488d0005c"
+  },
+  "XMRF": {
+    "version": "1.0",
+    "source": "https://cloud.r-project.org/src/contrib/Archive/XMRF/XMRF_1.0.tar.gz",
+    "sha256": "8c8957db6a51812714c2e6c87b3d9863636a11e44be316ed6fcae9c96ef2de4a"
+  },
+  "zeallot": {
+    "version": "0.2.0",
+    "source": "https://cloud.r-project.org/src/contrib/zeallot_0.2.0.tar.gz",
+    "sha256": "7f6b97dbb7cd762f76f7319b3e2b38f3d4206fe625d363da1b5f96c928da92bb"
+  }
+}

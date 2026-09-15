@@ -1,0 +1,16 @@
+{
+  "ordinary_startup": true,
+  "source_matched": 516,
+  "active_count": 517,
+  "libraries": [
+    "~/.local/lib/R/replication-20260914",
+    "~/.local/lib/R/site-library",
+    "~/R/library",
+    "~/R/x86_64-pc-linux-gnu-library/4.6",
+    "/usr/local/lib/R/site-library",
+    "/usr/lib/R/site-library",
+    "/usr/lib/R/library"
+  ],
+  "R": "4.6.1",
+  "backup": "~/.local/state/dotrepo/replication-20260914/Renviron-before-promotion-20260915T083249"
+}

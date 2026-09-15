@@ -1,0 +1,36 @@
+{
+  "hostname": "PhilipSecond",
+  "date": "2026-09-15",
+  "environment": "py313",
+  "checks": [
+    {
+      "name": "JAX GPU then GPflow CPU then JAX GPU",
+      "status": "passed",
+      "workload": "JAX gradient, finite GPflow GPR training loss, subsequent JIT calculation"
+    },
+    {
+      "name": "PyTorch GPU initialized after JAX and TensorFlow",
+      "status": "failed",
+      "error": "CUDA initialization error 302",
+      "scope": "Three-framework initialization in one process is not validated"
+    },
+    {
+      "name": "PyTorch GPU in a fresh process",
+      "status": "passed",
+      "torch": "2.14.0+cu130",
+      "cuda": "13.0",
+      "device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+      "workload": "2x2 CUDA matrix multiplication agrees with the exact expected result"
+    },
+    {
+      "name": "MBConicHulls headless export",
+      "status": "passed",
+      "script": "machines/pc-philip-windows-2026-09-14/repo-oracles/ifj/check-mbconichulls-headless-export.wls"
+    },
+    {
+      "name": "PolyLogTools and HPL",
+      "status": "passed",
+      "script": "machines/pc-philip-windows-2026-09-14/repo-oracles/ifj/check-polylogtools.wls"
+    }
+  ]
+}

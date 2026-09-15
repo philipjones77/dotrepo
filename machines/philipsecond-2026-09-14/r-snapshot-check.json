@@ -1,0 +1,17 @@
+{
+  "R": "R version 4.6.1 (2026-06-24)",
+  "source_count": 516,
+  "target_count": 517,
+  "matched": 516,
+  "differences": [],
+  "extras": "V8",
+  "libraries": [
+    "~/.local/lib/R/replication-20260914",
+    "~/.local/lib/R/site-library",
+    "~/R/library",
+    "~/R/x86_64-pc-linux-gnu-library/4.6",
+    "/usr/local/lib/R/site-library",
+    "/usr/lib/R/site-library",
+    "/usr/lib/R/library"
+  ]
+}

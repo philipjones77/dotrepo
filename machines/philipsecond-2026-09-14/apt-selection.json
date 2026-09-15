@@ -1,0 +1,40 @@
+{
+  "install": [
+    "chktex=1.7.8-1",
+    "gdb=15.1-1ubuntu1~24.04.1",
+    "ginac-tools=1.8.7-1build2",
+    "google-cloud-cli-gke-gcloud-auth-plugin=583.0.0-0",
+    "google-cloud-cli-minikube=583.0.0-0",
+    "google-cloud-cli-skaffold=583.0.0-0",
+    "htop=3.3.0-4build1",
+    "jq=1.7.1-3ubuntu0.24.04.2",
+    "kubectl=1:583.0.0-0",
+    "libginac-dev=1.8.7-1build2",
+    "libgsl-dev=2.7.1+dfsg-6ubuntu2",
+    "libjq-dev=1.7.1-3ubuntu0.24.04.2",
+    "libnlopt-cxx-dev=2.7.1-5build2",
+    "libnode-dev=18.19.1+dfsg-6ubuntu5",
+    "libprotobuf-dev=3.21.12-8.2ubuntu0.3",
+    "libsecret-1-0=0.21.4-1build3",
+    "libstarpu-dev=1.4.3+dfsg-5build1",
+    "ninja-build=1.11.1-2",
+    "nlohmann-json3-dev=3.11.3-1",
+    "octave=8.4.0-1build5",
+    "octave-statistics=1.6.3-1ubuntu2",
+    "openjdk-21-jdk-headless=21.0.12+8-1~24.04",
+    "protobuf-compiler=3.21.12-8.2ubuntu0.3",
+    "ripgrep=14.1.0-1",
+    "synapse=0.2.99.4-4build2",
+    "texlive-extra-utils=2023.20240207-1",
+    "texlive-fonts-extra=2023.20240207-1",
+    "texlive-science=2023.20240207-1",
+    "tree=2.1.1-2ubuntu3.24.04.2"
+  ],
+  "unavailable": [
+    {
+      "name": "chatgpt",
+      "expected": "26.901.51231",
+      "available": ""
+    }
+  ]
+}

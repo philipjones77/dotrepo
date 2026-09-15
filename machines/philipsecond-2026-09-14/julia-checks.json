@@ -1,0 +1,37 @@
+[
+  {
+    "name": "FastGaussQuadrature",
+    "exit_code": 0,
+    "seconds": 47.27
+  },
+  {
+    "name": "Cuba",
+    "exit_code": 0,
+    "seconds": 6.61
+  },
+  {
+    "name": "Integrals",
+    "exit_code": 0,
+    "seconds": 217.71
+  },
+  {
+    "name": "TemporalGPs",
+    "exit_code": 0,
+    "seconds": 120.26
+  },
+  {
+    "name": "Vecchia",
+    "exit_code": 0,
+    "seconds": 11.43
+  },
+  {
+    "name": "MeijerG",
+    "exit_code": 0,
+    "seconds": 132.12
+  },
+  {
+    "name": "OILMMs",
+    "exit_code": 0,
+    "seconds": 69.36
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "CVXR": {
+    "package": "CVXR",
+    "version": "1.9.2",
+    "status": "passed",
+    "metrics": {
+      "probe": "Two-variable constrained convex quadratic; analytic solution (1,0)",
+      "solution": [
+        1,
+        6.227e-10
+      ]
+    }
+  },
+  "autoFRK": {
+    "package": "autoFRK",
+    "version": "1.4.4",
+    "status": "passed",
+    "metrics": {
+      "probe": "50-point spatial rank selection using RF77 reference harness data",
+      "basis_shape": [
+        50,
+        47
+      ]
+    }
+  },
+  "loggle": {
+    "package": "loggle",
+    "version": "1.0",
+    "status": "passed",
+    "metrics": {
+      "probe": "Three-variable, 40-timepoint local graphical lasso; likelihood, pseudo and space modes with model refitting; 3 SPD precision estimates per mode",
+      "checks": [
+        {
+          "mode": "likelihood",
+          "minimum_eigenvalues": [
+            0.7375,
+            0.748,
+            1.1209
+          ]
+        },
+        {
+          "mode": "pseudo",
+          "minimum_eigenvalues": [
+            0.7375,
+            0.7734,
+            1.1209
+          ]
+        },
+        {
+          "mode": "space",
+          "minimum_eigenvalues": [
+            0.7375,
+            0.7734,
+            1.1209
+          ]
+        }
+      ]
+    }
+  },
+  "deepspat": {
+    "package": "deepspat",
+    "version": "0.3.2",
+    "status": "passed",
+    "metrics": {
+      "package": "deepspat",
+      "version": "0.3.2",
+      "status": "passed",
+      "probe": "12-point nonstationary GP; two 4-basis axial-warp layers; 1 step per optimization phase",
+      "cost": 7,
+      "warped_shape": [
+        12,
+        2
+      ],
+      "tensorflow": "2.21.0",
+      "python": "py313",
+      "library": "active"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "juicyjuice": 0,
+  "gt": 0,
+  "V8": {
+    "version": "8.2.0",
+    "source": "https://cloud.r-project.org/src/contrib/V8_8.2.0.tar.gz",
+    "sha256": "72974b10eeb5cbfd9208c6b448195685e3e6b6e19bd1f6efb03293309c91a92b",
+    "reason": "Dependency of source-pinned juicyjuice; absent from source inventory"
+  }
+}

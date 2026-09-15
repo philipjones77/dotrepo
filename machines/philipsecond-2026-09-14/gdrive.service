@@ -1,0 +1,15 @@
+[Unit]
+Description=Google Drive mount using dotrepo settings
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Environment=PATH=%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=/usr/bin/bash %h/projects/dotrepo/wsl/mounts/gdrive.sh serve
+ExecStop=/usr/bin/bash %h/projects/dotrepo/wsl/mounts/gdrive.sh stop
+Restart=always
+RestartSec=10
+TimeoutStopSec=120
+
+[Install]
+WantedBy=default.target

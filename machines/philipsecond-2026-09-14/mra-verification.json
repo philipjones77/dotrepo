@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "training_count": 24,
+  "prediction_count": 4,
+  "checks": [
+    {
+      "levels": 2,
+      "knots_per_region": 4,
+      "log_likelihood": -10.2687,
+      "minimum_prediction_variance": 0.08436240519864657
+    },
+    {
+      "levels": 3,
+      "knots_per_region": 4,
+      "log_likelihood": -11.1238,
+      "minimum_prediction_variance": 0.08534819801571747
+    }
+  ]
+}

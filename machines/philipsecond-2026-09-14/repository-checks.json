@@ -1,0 +1,46 @@
+[
+  {
+    "name": "repo-fftlog-lss",
+    "exit_code": 0
+  },
+  {
+    "name": "repo-hankl",
+    "exit_code": 0
+  },
+  {
+    "name": "repo-finufft",
+    "exit_code": 0
+  },
+  {
+    "name": "repo-pynufft",
+    "exit_code": 0
+  },
+  {
+    "name": "repo-torchquad",
+    "exit_code": 0
+  },
+  {
+    "name": "repo-cubature",
+    "exit_code": 0
+  },
+  {
+    "name": "topo-gephi",
+    "exit_code": 0
+  },
+  {
+    "name": "topo-smpl",
+    "exit_code": 0
+  },
+  {
+    "name": "topo-smplx",
+    "exit_code": 0
+  },
+  {
+    "name": "repo-scoringrules",
+    "exit_code": 0
+  },
+  {
+    "name": "rf77-uqpy",
+    "exit_code": 0
+  }
+]

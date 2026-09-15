@@ -1,0 +1,409 @@
+{
+  "captured_at": "2026-09-15T13:35:24.053765+00:00",
+  "hostname": "PhilipSecond",
+  "python_selection": {
+    "py313": {
+      "path": "~/.virtualenvs/py313",
+      "target": "~/.local/share/dotrepo/environments/20260914/py313",
+      "version": "Python 3.13.15"
+    },
+    "jax313": {
+      "path": "~/.virtualenvs/jax313",
+      "target": "~/.local/share/dotrepo/environments/20260914/jax313",
+      "version": "Python 3.13.15"
+    },
+    "jax314": {
+      "path": "~/.virtualenvs/jax314",
+      "target": "~/.local/share/dotrepo/environments/20260914/jax314",
+      "version": "Python 3.14.7"
+    },
+    "jax-oracles313": {
+      "path": "~/.virtualenvs/jax-oracles313",
+      "target": "~/.local/share/dotrepo/environments/20260914/jax-oracles313",
+      "version": "Python 3.13.15"
+    },
+    "uqpy312": {
+      "path": "~/.virtualenvs/uqpy312",
+      "target": "~/.local/share/dotrepo/environments/20260914/uqpy312",
+      "version": "Python 3.12.3"
+    }
+  },
+  "repositories": {
+    "dotrepo": {
+      "commit": "0f68dd7f15fda140152ee49ca58f82f651e2e8a3",
+      "local_changes": true
+    },
+    "arbPlusJAX": {
+      "commit": "55ba617430303b3eb048c21148cd9b22bac2d797",
+      "local_changes": true
+    },
+    "IntegralFunctionsJAX": {
+      "commit": "611ac9b595665fb8df204017bf9f0a69185776f8",
+      "local_changes": false
+    },
+    "RandomFields77": {
+      "commit": "5715ca31bcc54a97db2f19276e56bd9c842d5d84",
+      "local_changes": false
+    },
+    "TopoSMPLJAX": {
+      "commit": "635565d045c1d847a374b345b8cccca0e2dcb391",
+      "local_changes": true
+    },
+    "data77": {
+      "commit": "274074d5926310e81aa5902af0e2ccfe1a8e3fbc",
+      "local_changes": true
+    }
+  },
+  "apps": {
+    "uv": {
+      "exit_code": 0,
+      "version": "uv 0.12.10 (x86_64-unknown-linux-gnu)"
+    },
+    "node": {
+      "exit_code": 0,
+      "version": "v24.20.0"
+    },
+    "npm": {
+      "exit_code": 0,
+      "version": "12.0.2"
+    },
+    "corepack": {
+      "exit_code": 0,
+      "version": "0.36.0"
+    },
+    "rust": {
+      "exit_code": 0,
+      "version": "rustc 1.94.1 (e408947bf 2026-03-25)"
+    },
+    "rclone": {
+      "exit_code": 0,
+      "version": "rclone v1.74.2"
+    },
+    "R": {
+      "exit_code": 0,
+      "version": "R version 4.6.1 (2026-06-24) -- \"Happy Hop\""
+    },
+    "octave": {
+      "exit_code": 0,
+      "version": "GNU Octave, version 8.4.0"
+    },
+    "java": {
+      "exit_code": 0,
+      "version": "openjdk version \"21.0.12\" 2026-07-21"
+    },
+    "glpk": {
+      "exit_code": 0,
+      "version": "GLPSOL--GLPK LP/MIP Solver 5.0"
+    },
+    "powershell": {
+      "exit_code": 0,
+      "version": "PowerShell 7.6.5"
+    },
+    "claude": {
+      "exit_code": 0,
+      "version": "2.1.263 (Claude Code)"
+    },
+    "codex": {
+      "exit_code": 0,
+      "version": "codex-cli 0.153.4"
+    },
+    "gemini": {
+      "exit_code": 0,
+      "version": "0.58.0"
+    }
+  },
+  "notes": [
+    "gpflow312 excluded by user",
+    "Five environment names selected after authorized WSL restart",
+    "TensorFlow/GPflow CPU validated; PyTorch GPU validated in a separate process"
+  ],
+  "platform": {
+    "kernel": "6.18.33.2-microsoft-standard-WSL2",
+    "os_release": "PRETTY_NAME=\"Ubuntu 24.04.4 LTS\"\nNAME=\"Ubuntu\"\nVERSION_ID=\"24.04\"\nVERSION=\"24.04.4 LTS (Noble Numbat)\"\nVERSION_CODENAME=noble\nID=ubuntu\nID_LIKE=debian\nHOME_URL=\"https://www.ubuntu.com/\"\nSUPPORT_URL=\"https://help.ubuntu.com/\"\nBUG_REPORT_URL=\"https://bugs.launchpad.net/ubuntu/\"\nPRIVACY_POLICY_URL=\"https://www.ubuntu.com/legal/terms-and-policies/privacy-policy\"\nUBUNTU_CODENAME=noble\nLOGO=ubuntu-logo\n",
+    "bash": "GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)"
+  },
+  "mounts": {
+    "~/mnt/gdrive": {
+      "filesystems": [
+        {
+          "target": "~/mnt/gdrive",
+          "source": "gdrive:",
+          "fstype": "fuse.rclone",
+          "options": "rw,nosuid,nodev,relatime,user_id=1001,group_id=1001"
+        }
+      ]
+    },
+    "/mnt/g": {
+      "filesystems": [
+        {
+          "target": "/mnt/g",
+          "source": "G:",
+          "fstype": "9p",
+          "options": "rw,relatime,aname=drvfs;path=G:;uid=1001;gid=1001;symlinkroot=/mnt/,cache=0x5,access=client,msize=65536,trans=fd,rfd=3,wfd=3"
+        }
+      ]
+    }
+  },
+  "gdrive_service": {
+    "enabled": "enabled",
+    "active": "active",
+    "linger": "yes"
+  },
+  "apt": {
+    "installed_count": 1603,
+    "added": {
+      "aglfn": "1.7+git20191031.4036a9c-2",
+      "chktex": "1.7.8-1",
+      "cm-super": "0.3.4-17",
+      "cm-super-minimal": "0.3.4-17",
+      "doc-base": "0.11.2",
+      "epstool": "3.09-4build1",
+      "fonts-adf-accanthis": "0.20190904-2",
+      "fonts-adf-berenis": "0.20190904-2",
+      "fonts-adf-gillius": "0.20190904-2",
+      "fonts-adf-universalis": "0.20190904-2",
+      "fonts-cabin": "1.5-3",
+      "fonts-cantarell": "0.303.1-1",
+      "fonts-clear-sans": "1.00-2",
+      "fonts-comfortaa": "3.001-3",
+      "fonts-comic-neue": "2.51-4",
+      "fonts-croscore": "20201225-2",
+      "fonts-crosextra-caladea": "20200211-2",
+      "fonts-crosextra-carlito": "20230309-2",
+      "fonts-ebgaramond-extra": "0.016+git20210310.42d4f9f2-1",
+      "fonts-font-awesome": "5.0.10+really4.7.0~dfsg-4.1",
+      "fonts-freefont-otf": "20211204+svn4273-2",
+      "fonts-freefont-ttf": "20211204+svn4273-2",
+      "fonts-gfs-artemisia": "1.1-6",
+      "fonts-gfs-baskerville": "1.1-6",
+      "fonts-gfs-complutum": "1.1-7",
+      "fonts-gfs-didot": "1.1-7",
+      "fonts-gfs-neohellenic": "1.1-7",
+      "fonts-gfs-olga": "1.1-6",
+      "fonts-gfs-porson": "1.1-7",
+      "fonts-gfs-solomos": "1.1-6",
+      "fonts-go": "0~20170330-2",
+      "fonts-inter": "4.0+ds-1",
+      "fonts-linuxlibertine": "5.3.0-6",
+      "fonts-lobster": "2.0-2.1",
+      "fonts-lobstertwo": "2.0-2.1",
+      "fonts-mathjax": "2.7.9+dfsg-1",
+      "fonts-noto-color-emoji": "2.047-0ubuntu0.24.04.1",
+      "fonts-noto-core": "20201225-2",
+      "fonts-oflb-asana-math": "000.907-7build1",
+      "fonts-open-sans": "1.11-2",
+      "fonts-paratype": "20181108-3",
+      "fonts-roboto-slab": "1.100263+20170512-2",
+      "fonts-roboto-unhinted": "2:0~20170802-3",
+      "fonts-sil-andika": "6.200-1",
+      "fonts-sil-charis": "6.200-1",
+      "fonts-sil-gentium": "20081126:1.03-4",
+      "fonts-sil-gentium-basic": "1.102-1.1",
+      "fonts-sil-gentiumplus": "6.200-1",
+      "fonts-sil-gentiumplus-compact": "5.000-4",
+      "fonts-stix": "1.1.1-5",
+      "gdb": "15.1-1ubuntu1~24.04.1",
+      "ginac-tools": "1.8.7-1build2",
+      "glpk-utils": "5.0-1build2",
+      "gnuplot-data": "6.0.0+dfsg1-1ubuntu3",
+      "gnuplot-qt": "6.0.0+dfsg1-1ubuntu3",
+      "google-cloud-cli-gke-gcloud-auth-plugin": "583.0.0-0",
+      "google-cloud-cli-minikube": "583.0.0-0",
+      "google-cloud-cli-skaffold": "583.0.0-0",
+      "htop": "3.3.0-4build1",
+      "jq": "1.7.1-3ubuntu0.24.04.2",
+      "kubectl": "1:583.0.0-0",
+      "libbabeltrace1": "1.5.11-3build3",
+      "libcares2": "1.27.0-1.0ubuntu1",
+      "libcln-dev": "1.3.7-1",
+      "libcln6": "1.3.7-1",
+      "libcombblas2.0.0t64": "2.0.0-3.1build2",
+      "libdbus-glib-1-2": "0.112-3build2",
+      "libdebuginfod-common": "0.190-1.1ubuntu0.1",
+      "libdebuginfod1t64": "0.190-1.1ubuntu0.1",
+      "libdee-1.0-4": "1.2.7+17.10.20170616-7build5",
+      "libdouble-conversion3": "3.3.0-1build1",
+      "libemf1": "1.0.13-7build1",
+      "libevdev2": "1.13.1+dfsg-1build1",
+      "libfftw3-mpi3": "3.3.10-1ubuntu3",
+      "libfile-homedir-perl": "1.006-2",
+      "libfile-which-perl": "1.27-2",
+      "libfltk-gl1.3t64": "1.3.8-6.1build2",
+      "libfltk1.3t64": "1.3.8-6.1build2",
+      "libfxt2t64": "0.3.13-4.1build1",
+      "libgee-0.8-2": "0.20.6-1build2",
+      "libginac-dev": "1.8.7-1build2",
+      "libginac11": "1.8.7-1build2",
+      "libgl-dev": "1.7.0-1build1",
+      "libgl2ps1.4": "1.4.2+dfsg1-2build1",
+      "libglpk-dev": "5.0-1build2",
+      "libglpk40": "5.0-1build2",
+      "libglx-dev": "1.7.0-1build1",
+      "libgraphicsmagick++-q16-12t64": "1.4+really1.3.42-1.1build3",
+      "libgraphicsmagick-q16-3t64": "1.4+really1.3.42-1.1build3",
+      "libgsl-dev": "2.7.1+dfsg-6ubuntu2",
+      "libgsl27": "2.7.1+dfsg-6ubuntu2",
+      "libgslcblas0": "2.7.1+dfsg-6ubuntu2",
+      "libgudev-1.0-0": "1:238-5ubuntu1",
+      "libhdf5-openmpi-103-1t64": "1.10.10+repack-3.1ubuntu4",
+      "libhwy1t64": "1.0.7-8.1build1",
+      "libhypre-2.28.0": "2.28.0-8build2",
+      "libinput-bin": "1.25.0-1ubuntu3.7",
+      "libinput10": "1.25.0-1ubuntu3.7",
+      "libipt2": "2.0.6-1build1",
+      "libjack-jackd2-0": "1.9.21~dfsg-3ubuntu3",
+      "libjq-dev": "1.7.1-3ubuntu0.24.04.2",
+      "libjq1": "1.7.1-3ubuntu0.24.04.2",
+      "libjs-bootstrap5": "5.3.1+dfsg-1",
+      "libjs-mathjax": "2.7.9+dfsg-1",
+      "libjs-popper.js": "1.16.1+ds-6",
+      "libjs-sizzle": "2.3.10+ds+~2.3.6-1",
+      "libjson-glib-1.0-0": "1.8.0-2build2",
+      "libjson-glib-1.0-common": "1.8.0-2build2",
+      "libjxl0.7": "0.7.0-10.2ubuntu6.1",
+      "libkeybinder-3.0-0": "0.3.2-1.1build2",
+      "liblua5.4-0": "5.4.6-3build2",
+      "libmd4c0": "0.4.8-1build1",
+      "libmetis5": "5.1.0.dfsg-7build3",
+      "libmtdev1t64": "1.1.6-1.1build1",
+      "libmumps-5.6t64": "5.6.2-2.1build2",
+      "libnl-genl-3-200": "3.7.0-0.3build1.1",
+      "libnlopt-cxx-dev": "2.7.1-5build2",
+      "libnlopt-cxx0": "2.7.1-5build2",
+      "libnlopt-dev": "2.7.1-5build2",
+      "libnlopt0": "2.7.1-5build2",
+      "libnode-dev": "18.19.1+dfsg-6ubuntu5",
+      "libnode109": "18.19.1+dfsg-6ubuntu5",
+      "libnotify4": "0.8.3-1build2",
+      "libonig5": "6.9.9-1build1",
+      "libpapi-dev": "7.1.0-5build1",
+      "libpapi7.1t64": "7.1.0-5build1",
+      "libpetsc-real3.19t64": "3.19.6+dfsg1-2.2ubuntu2",
+      "libpfm4": "4.13.0+git32-g0d4ed0e-1ubuntu0.1",
+      "libplot2c2": "2.6-14build3",
+      "libportaudio2": "19.6.0-1.2build3",
+      "libprotobuf-dev": "3.21.12-8.2ubuntu0.3",
+      "libprotobuf-lite32t64": "3.21.12-8.2ubuntu0.3",
+      "libprotobuf32t64": "3.21.12-8.2ubuntu0.3",
+      "libprotoc32t64": "3.21.12-8.2ubuntu0.3",
+      "libpstoedit0t64": "4.00-1.1build2",
+      "libptscotch-7.0": "7.0.4-1ubuntu2",
+      "libqrupdate1": "1.1.2-4build1",
+      "libqscintilla2-qt5-15": "2.14.1+dfsg-1build3",
+      "libqscintilla2-qt5-l10n": "2.14.1+dfsg-1build3",
+      "libqt5core5t64": "5.15.13+dfsg-1ubuntu1",
+      "libqt5dbus5t64": "5.15.13+dfsg-1ubuntu1",
+      "libqt5gui5t64": "5.15.13+dfsg-1ubuntu1",
+      "libqt5help5": "5.15.13-1",
+      "libqt5network5t64": "5.15.13+dfsg-1ubuntu1",
+      "libqt5printsupport5t64": "5.15.13+dfsg-1ubuntu1",
+      "libqt5qml5": "5.15.13+dfsg-1ubuntu0.1",
+      "libqt5qmlmodels5": "5.15.13+dfsg-1ubuntu0.1",
+      "libqt5quick5": "5.15.13+dfsg-1ubuntu0.1",
+      "libqt5sql5-sqlite": "5.15.13+dfsg-1ubuntu1",
+      "libqt5sql5t64": "5.15.13+dfsg-1ubuntu1",
+      "libqt5svg5": "5.15.13-1",
+      "libqt5waylandclient5": "5.15.13-1",
+      "libqt5waylandcompositor5": "5.15.13-1",
+      "libqt5widgets5t64": "5.15.13+dfsg-1ubuntu1",
+      "libqt5xml5t64": "5.15.13+dfsg-1ubuntu1",
+      "libsamplerate0": "0.2.2-4build1",
+      "libscalapack-openmpi2.2": "2.2.1-3.1ubuntu1",
+      "libscotch-7.0": "7.0.4-1ubuntu2",
+      "libsde1t64": "7.1.0-5build1",
+      "libsecret-1-0": "0.21.4-1build3",
+      "libsecret-common": "0.21.4-1build3",
+      "libsocl-1.4-1t64": "1.4.3+dfsg-5build1",
+      "libsource-highlight-common": "3.1.9-4.3build1",
+      "libsource-highlight4t64": "3.1.9-4.3build1",
+      "libstarpu-1.4-4t64": "1.4.3+dfsg-5build1",
+      "libstarpu-dev": "1.4.3+dfsg-5build1",
+      "libstarpu-openmp-llvm-1.4-1t64": "1.4.3+dfsg-5build1",
+      "libstarpufft-1.4-1t64": "1.4.3+dfsg-5build1",
+      "libstarpumpi-1.4-3t64": "1.4.3+dfsg-5build1",
+      "libstarpurm-1.4-1t64": "1.4.3+dfsg-5build1",
+      "libsundials-ida6": "6.4.1+dfsg1-3build4",
+      "libsundials-nvecparallel-petsc6": "6.4.1+dfsg1-3build4",
+      "libsundials-sunlinsol3": "6.4.1+dfsg1-3build4",
+      "libsundials-sunmatrix4": "6.4.1+dfsg1-3build4",
+      "libsuperlu-dist8": "8.2.1+dfsg1-1build2",
+      "libtelepathy-glib0t64": "0.24.2-0.2ubuntu3",
+      "libtext-unidecode-perl": "1.30-3",
+      "libtrilinos-amesos-13.2": "13.2.0-5build2",
+      "libtrilinos-aztecoo-13.2": "13.2.0-5build2",
+      "libtrilinos-epetra-13.2": "13.2.0-5build2",
+      "libtrilinos-epetraext-13.2": "13.2.0-5build2",
+      "libtrilinos-galeri-13.2": "13.2.0-5build2",
+      "libtrilinos-ifpack-13.2": "13.2.0-5build2",
+      "libtrilinos-kokkos-13.2": "13.2.0-5build2",
+      "libtrilinos-ml-13.2": "13.2.0-5build2",
+      "libtrilinos-teuchos-13.2": "13.2.0-5build2",
+      "libtrilinos-trilinosss-13.2": "13.2.0-5build2",
+      "libtrilinos-triutils-13.2": "13.2.0-5build2",
+      "libtrilinos-zoltan-13.2": "13.2.0-5build2",
+      "libuuid-perl": "0.31-1build3",
+      "libwacom-common": "2.10.0-2",
+      "libwacom9": "2.10.0-2",
+      "libwayland-server0": "1.22.0-2.1build1",
+      "libwmflite-0.2-7": "0.2.13-1.1build3",
+      "libwxbase3.2-1t64": "3.2.4+dfsg-4build1",
+      "libwxgtk3.2-1t64": "3.2.4+dfsg-4build1",
+      "libxapian30": "1.4.22-1build1",
+      "libxcb-xinerama0": "1.15-1ubuntu2",
+      "libxcb-xinput0": "1.15-1ubuntu2",
+      "libyaml-tiny-perl": "1.74-1",
+      "libzeitgeist-2.0-0": "1.0.4-5ubuntu5",
+      "libzip4t64": "1.7.3-1.1ubuntu2",
+      "ninja-build": "1.11.1-2",
+      "nlohmann-json3-dev": "3.11.3-1",
+      "node-acorn": "8.8.1+ds+~cs25.17.7-2",
+      "node-busboy": "1.6.0+~cs2.6.0-2",
+      "node-cjs-module-lexer": "1.2.3+dfsg-1",
+      "node-jquery": "3.6.1+dfsg+~3.5.14-1",
+      "node-undici": "5.26.3+dfsg1+~cs23.10.12-2",
+      "node-xtend": "4.0.2-3",
+      "nodejs": "18.19.1+dfsg-6ubuntu5",
+      "nodejs-doc": "18.19.1+dfsg-6ubuntu5",
+      "ocl-icd-opencl-dev": "2.3.2-1build1",
+      "octave": "8.4.0-1build5",
+      "octave-common": "8.4.0-1build5",
+      "octave-doc": "8.4.0-1build5",
+      "octave-statistics": "1.6.3-1ubuntu2",
+      "octave-statistics-common": "1.6.3-1ubuntu2",
+      "opencl-c-headers": "3.0~2023.12.14-1",
+      "opencl-clhpp-headers": "3.0~2023.12.14-1ubuntu1",
+      "opencl-headers": "3.0~2023.12.14-1",
+      "openjdk-21-jdk-headless": "21.0.12+8-1~24.04",
+      "pfb2t1c2pfb": "0.3-11build1",
+      "protobuf-compiler": "3.21.12-8.2ubuntu0.3",
+      "pstoedit": "4.00-1.1build2",
+      "qt5-gtk-platformtheme": "5.15.13+dfsg-1ubuntu1",
+      "qttranslations5-l10n": "5.15.13-1",
+      "qtwayland5": "5.15.13-1",
+      "ripgrep": "14.1.0-1",
+      "synapse": "0.2.99.4-4build2",
+      "texinfo": "7.1-3build2",
+      "texinfo-lib": "7.1-3build2",
+      "texlive-extra-utils": "2023.20240207-1",
+      "texlive-fonts-extra": "2023.20240207-1",
+      "texlive-fonts-extra-links": "2023.20240207-1",
+      "texlive-lang-greek": "2023.20240207-1",
+      "texlive-science": "2023.20240207-1",
+      "tree": "2.1.1-2ubuntu3.24.04.2",
+      "zeitgeist": "1.0.4-5ubuntu5",
+      "zeitgeist-core": "1.0.4-5ubuntu5",
+      "zeitgeist-datahub": "1.0.4-5ubuntu5"
+    },
+    "changed": {
+      "python3-distupgrade": [
+        "1:24.04.28",
+        "1:24.04.29"
+      ],
+      "ubuntu-release-upgrader-core": [
+        "1:24.04.28",
+        "1:24.04.29"
+      ]
+    },
+    "removed": []
+  }
+}

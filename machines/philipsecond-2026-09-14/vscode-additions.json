@@ -1,0 +1,14 @@
+[
+  {
+    "id": "doonfrs.wsl-reveal-explorer",
+    "version": "1.3.2",
+    "exit_code": 0,
+    "output": "Installing extensions...\nInstalling extension 'doonfrs.wsl-reveal-explorer' v1.3.2...\nExtension 'doonfrs.wsl-reveal-explorer' v1.3.2 was successfully installed.\n(node:35960) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.\n(Use `node --trace-deprecation ...` to show where the warning was created)\n"
+  },
+  {
+    "id": "tomoki1207.pdf",
+    "version": "1.2.2",
+    "exit_code": 0,
+    "output": "Installing extensions...\nInstalling extension 'tomoki1207.pdf' v1.2.2...\nExtension 'tomoki1207.pdf' v1.2.2 was successfully installed.\n(node:36441) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.\n(Use `node --trace-deprecation ...` to show where the warning was created)\n"
+  }
+]

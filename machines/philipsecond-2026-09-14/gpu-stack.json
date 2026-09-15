@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-09-15T03:54:50.810656+00:00",
+  "hostname": "PhilipSecond",
+  "platform": {
+    "system": "Linux",
+    "release": "6.18.33.2-microsoft-standard-WSL2",
+    "machine": "x86_64"
+  },
+  "python": {
+    "version": "3.13.15",
+    "executable": "~/.local/share/dotrepo/environments/20260914/py313/bin/python"
+  },
+  "packages": {
+    "cuda-bindings": "13.4.1",
+    "cuda-pathfinder": "1.8.1",
+    "cuda-toolkit": "13.0.3.0",
+    "flax": "0.12.9",
+    "jax": "0.11.1",
+    "jax-cuda13-pjrt": "0.11.1",
+    "jax-cuda13-plugin": "0.11.1",
+    "jaxlib": "0.11.1",
+    "numpy": "2.5.3",
+    "nvidia-cublas": "13.1.1.3",
+    "nvidia-cuda-cccl": "13.3.4.2.1",
+    "nvidia-cuda-crt": "13.4.59",
+    "nvidia-cuda-cupti": "13.0.85",
+    "nvidia-cuda-nvcc": "13.4.59",
+    "nvidia-cuda-nvrtc": "13.0.88",
+    "nvidia-cuda-runtime": "13.0.96",
+    "nvidia-cudnn-cu13": "9.24.0.43",
+    "nvidia-cufft": "12.0.0.61",
+    "nvidia-cufile": "1.15.1.6",
+    "nvidia-curand": "10.4.0.35",
+    "nvidia-cusolver": "12.0.4.66",
+    "nvidia-cusparse": "12.6.3.3",
+    "nvidia-cusparselt-cu13": "0.8.1",
+    "nvidia-nccl-cu13": "2.30.7",
+    "nvidia-nvjitlink": "13.4.52",
+    "nvidia-nvshmem-cu13": "3.4.5",
+    "nvidia-nvtx": "13.0.85",
+    "nvidia-nvvm": "13.4.59",
+    "scipy": "1.18.1",
+    "torch": "2.14.0",
+    "triton": "3.8.0"
+  },
+  "driver": {
+    "available": true,
+    "gpus": [
+      {
+        "name": "NVIDIA GeForce RTX 5070 Laptop GPU",
+        "driver_version": "616.56",
+        "compute_capability": "12.0"
+      }
+    ],
+    "cuda_capability": "13.4",
+    "cuda_capability_meaning": "Driver-reported CUDA capability; not the installed runtime or compiler version."
+  },
+  "compiler": {
+    "nvcc": {
+      "on_path": false,
+      "executables": [
+        {
+          "path": "~/.local/share/dotrepo/environments/20260914/py313/lib/python3.13/site-packages/nvidia/cu13/bin/nvcc",
+          "release": "13.4",
+          "version": "13.4.59"
+        }
+      ]
+    },
+    "ptxas": {
+      "on_path": false,
+      "executables": [
+        {
+          "path": "~/.local/share/dotrepo/environments/20260914/py313/lib/python3.13/site-packages/nvidia/cu13/bin/ptxas",
+          "release": "13.4",
+          "version": "13.4.59"
+        }
+      ]
+    }
+  },
+  "runtime": {
+    "status": "passed",
+    "device_kind": "NVIDIA GeForce RTX 5070 Laptop GPU",
+    "device_platform": "gpu",
+    "shape": [
+      4,
+      4
+    ],
+    "dtype": "float64",
+    "calculation": "JIT value and gradient of sum((A @ A.T)**2), compared with NumPy and analytic gradient",
+    "value_absolute_error": 0.0,
+    "gradient_max_absolute_error": 0.0,
+    "cuda_versions": {
+      "cuda_runtime": 13000,
+      "cuda_driver": 13040,
+      "cudnn": 92400,
+      "cublas": 130101,
+      "cufft": 12000,
+      "cupti": 130001,
+      "cusparse": 12603
+    },
+    "cuda_versions_encoding": "Native integer API versions; CUDA 13000 means 13.0, cuDNN 92400 means 9.24.0.",
+    "torch": {
+      "build_cuda": "13.0",
+      "cuda_available": true,
+      "cudnn_runtime": 92400
+    },
+    "scope": "JAX GPU computation; PyTorch CUDA availability and library versions, without a PyTorch workload."
+  },
+  "failures": [],
+  "comparison": {
+    "status": "matched",
+    "differences": [],
+    "driver_version_required": true,
+    "runtime_compared": true
+  },
+  "status": "passed"
+}

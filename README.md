@@ -1,15 +1,15 @@
 # dotrepo
 
-**September 14 cross-machine update:** the other machine needs the current
-`py313` scientific and numerical oracle packages, plus a review of its WSL
-installations. The [requested oracle checklist](config/m-tier-oracles.json)
-covers 22 Python packages, 11 R packages and ExaGeoStat. Start with the
+**September 14 cross-machine update:** reproduce the IFJ, RF77, TopoSmplJAX
+and data77 oracle setup, including exact JAX/CUDA versions and WSL installations.
+The source now has **338 py313 packages, 516 active R packages, 1,559 Ubuntu
+packages**, compatibility Python environments and two Julia runtimes. Start with the
 [handoff and target steps](docs/ai/sessions/2026-09-14-python-oracle-wsl-handoff.md)
 and [current PC-PHILIP-WINDOWS inventory](machines/pc-philip-windows-2026-09-14/README.md).
-All 34 oracles are installed and smoke-tested locally; the
-[complete result table](docs/wsl-m-tier-oracles-2026-09-14.md) includes the checks.
-These records include the reduced JAX environments' oracle gaps and supersede
-older package counts for this machine. Target installation remains pending.
+The [repository audit](docs/repo-oracles-2026-09-14.md) extends the earlier
+[34-oracle results](docs/wsl-m-tier-oracles-2026-09-14.md); it records numerical
+checks and remaining upstream/adapter gaps. Delivery is through GitHub: the other
+machines pull these records and apply the setup. Target installation remains pending.
 
 [WSL Conda retirement](docs/wsl-conda-retirement-2026-09-07.md): the final target
 is now achieved: Conda startup, the recreation recipe and Miniforge are removed.
@@ -87,7 +87,7 @@ bash scripts/dotrepo.sh ssh
 bash scripts/dotrepo.sh doctor --network
 ```
 
-`install` applies configuration only. Add `-InstallTools` on Windows or `--install-tools` in WSL to install tracked VS Code extensions and global npm packages. Python environments are created separately using `python/windows/create-venv.ps1` or `bash python/wsl/create-venv.sh`. WSL uses standard virtualenvs; its Conda recreation definition and automatic shell fallback have been removed. R and MATLAB are inventoried, not automatically installed or licensed.
+`install` applies configuration only. Add `-InstallTools` on Windows or `--install-tools` in WSL to install tracked VS Code extensions and global npm packages. Python environments are created separately using `python/windows/create-venv.ps1` or `bash python/wsl/create-venv.sh "$HOME/.virtualenvs/py313-candidate"`. The WSL script requires a new directory and restores the September 14 pins; read the handoff for native prerequisites and companion environments. WSL uses standard virtualenvs; its Conda recreation definition and automatic shell fallback have been removed. R and MATLAB are inventoried, not automatically installed or licensed.
 
 ## First setup
 

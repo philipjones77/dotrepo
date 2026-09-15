@@ -18,6 +18,7 @@ fuse3
 gdb
 gfortran
 gh
+ginac-tools
 git-lfs
 gnupg
 google-cloud-cli
@@ -45,6 +46,7 @@ libfreetype-dev
 libfribidi-dev
 libgdal-dev
 libgeos-dev
+libginac-dev
 libgmp-dev
 libgsl-dev
 libharfbuzz-dev
@@ -75,6 +77,7 @@ ninja-build
 nlohmann-json3-dev
 octave
 octave-statistics
+openjdk-21-jdk-headless
 packages-microsoft-prod
 pkg-config
 powershell
@@ -91,6 +94,7 @@ texlive-latex-extra
 texlive-luatex
 texlive-science
 texlive-xetex
+topcom
 tree
 ubuntu-minimal
 ubuntu-wsl

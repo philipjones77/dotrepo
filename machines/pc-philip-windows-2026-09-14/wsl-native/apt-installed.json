@@ -395,6 +395,11 @@
     "architecture": "amd64"
   },
   {
+    "name": "doc-base",
+    "version": "0.11.2",
+    "architecture": "all"
+  },
+  {
     "name": "dpkg",
     "version": "1.22.6ubuntu6.6",
     "architecture": "amd64"
@@ -862,6 +867,11 @@
   {
     "name": "ghostscript",
     "version": "10.02.1~dfsg1-0ubuntu7.8",
+    "architecture": "amd64"
+  },
+  {
+    "name": "ginac-tools",
+    "version": "1.8.7-1build2",
     "architecture": "amd64"
   },
   {
@@ -2085,6 +2095,11 @@
     "architecture": "amd64"
   },
   {
+    "name": "libcdd0t64:amd64",
+    "version": "094m-1.1build1",
+    "architecture": "amd64"
+  },
+  {
     "name": "libcfitsio-dev:amd64",
     "version": "4.3.1-1.1build2",
     "architecture": "amd64"
@@ -2142,6 +2157,16 @@
   {
     "name": "libclass-xsaccessor-perl",
     "version": "1.19-4build4",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcln-dev",
+    "version": "1.3.7-1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libcln6:amd64",
+    "version": "1.3.7-1",
     "architecture": "amd64"
   },
   {
@@ -2967,6 +2992,16 @@
   {
     "name": "libgif7:amd64",
     "version": "5.2.2-1ubuntu1.2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libginac-dev",
+    "version": "1.8.7-1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libginac11",
+    "version": "1.8.7-1build2",
     "architecture": "amd64"
   },
   {
@@ -4715,6 +4750,11 @@
     "architecture": "all"
   },
   {
+    "name": "libqsopt-ex2t64",
+    "version": "2.5.10.3-2.1build1",
+    "architecture": "amd64"
+  },
+  {
     "name": "libqt5core5t64:amd64",
     "version": "5.15.13+dfsg-1ubuntu1",
     "architecture": "amd64"
@@ -5445,6 +5485,11 @@
     "architecture": "all"
   },
   {
+    "name": "libtopcom0t64:amd64",
+    "version": "1.1.2+ds-1.1build2",
+    "architecture": "amd64"
+  },
+  {
     "name": "libtrilinos-amesos-13.2:amd64",
     "version": "13.2.0-5build2",
     "architecture": "amd64"
@@ -5602,6 +5647,11 @@
   {
     "name": "libutempter0:amd64",
     "version": "1.2.1-3build1",
+    "architecture": "amd64"
+  },
+  {
+    "name": "libuuid-perl",
+    "version": "0.31-1build3",
     "architecture": "amd64"
   },
   {
@@ -6418,6 +6468,11 @@
     "name": "opencl-headers",
     "version": "3.0~2023.12.14-1",
     "architecture": "all"
+  },
+  {
+    "name": "openjdk-21-jdk-headless:amd64",
+    "version": "21.0.12+8-1~24.04",
+    "architecture": "amd64"
   },
   {
     "name": "openjdk-21-jre-headless:amd64",
@@ -7448,6 +7503,16 @@
     "name": "tmux",
     "version": "3.4-1ubuntu0.1",
     "architecture": "amd64"
+  },
+  {
+    "name": "topcom",
+    "version": "1.1.2+ds-1.1build2",
+    "architecture": "amd64"
+  },
+  {
+    "name": "topcom-examples",
+    "version": "1.1.2+ds-1.1build2",
+    "architecture": "all"
   },
   {
     "name": "tree",

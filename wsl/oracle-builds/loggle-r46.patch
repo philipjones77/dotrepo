@@ -1,0 +1,69 @@
+diff --git a/src/loggle_admm.c b/src/loggle_admm.c
+index 86dade3..a233bb0 100644
+--- a/src/loggle_admm.c
++++ b/src/loggle_admm.c
+@@ -245,7 +245,7 @@ void ADMM_local_glasso(double *Corr, double *Z, double *U, int *P, int *Len, dou
+ 			}
+ 			
+ 			F77_CALL(dsyevr)("V", "A", "L", P, A, P, &vl, &vu, &il, &iu, &abstol, &num, eig_val, eig_vec, P, isuppz, 
+-				work, &lwork, iwork, &liwork, &info);
++				work, &lwork, iwork, &liwork, &info FCONE FCONE FCONE);
+ 			
+ 			for(j=0; j<p; j++){
+ 				eig_val[j] = (-eig_val[j] + sqrt(pow(eig_val[j], 2) + 4*rho))/(2*rho);
+@@ -253,7 +253,7 @@ void ADMM_local_glasso(double *Corr, double *Z, double *U, int *P, int *Len, dou
+ 					eig_vec[p*j+k] *= sqrt(eig_val[j]);
+ 				}
+ 			}
+-			F77_CALL(dsyrk)("L", "N", P, P, &one, eig_vec, P, &zero, (Omega+p*p*i), P);
++			F77_CALL(dsyrk)("L", "N", P, P, &one, eig_vec, P, &zero, (Omega+p*p*i), P FCONE FCONE);
+ 			for(j=0; j<p; j++){
+ 				Omega_ij = Omega+p*p*i+p*j, Z_ij = Z+p*p*i+p*j, U_ij = U+p*p*i+p*j;
+ 				for(k=j; k<p; k++){
+@@ -378,7 +378,7 @@ void ADMM_pseudo_glasso(double *Corr, double *Z, double *U, int *P, int *Len, do
+ 			Corr[p*p*i+p*j+j] += rho;
+ 		}
+ 		//upper triangular in Corr is used in Givens rotation, lower triangular in Corr stores original information
+-		F77_CALL(dpotrf)("L", P, (Corr+p*p*i), P, &info); 
++		F77_CALL(dpotrf)("L", P, (Corr+p*p*i), P, &info FCONE);
+ 	}
+ 
+ 	//ADMM iteration
+@@ -398,8 +398,8 @@ void ADMM_pseudo_glasso(double *Corr, double *Z, double *U, int *P, int *Len, do
+ 				for(k=j; k<p_1; k++){
+ 					C[k] = rho*(Z_ij[k] - U_ij[k]) + Corr_i[p*(k+1)+j];
+ 				}
+-				F77_CALL(dtrsv)("L", "N", "N", &p_1, Chol_ij, &p_1, C, &one);
+-				F77_CALL(dtrsv)("L", "T", "N", &p_1, Chol_ij, &p_1, C, &one);
++				F77_CALL(dtrsv)("L", "N", "N", &p_1, Chol_ij, &p_1, C, &one FCONE FCONE FCONE);
++				F77_CALL(dtrsv)("L", "T", "N", &p_1, Chol_ij, &p_1, C, &one FCONE FCONE FCONE);
+ 				for(k=0; k<p_1; k++){
+ 					Omega_ij[k] = C[k];
+ 					U_ij[k] += alpha*C[k] + (1-alpha)*Z_ij[k];
+@@ -525,7 +525,7 @@ void ADMM_SPACE_rho(double *Corr, double *d, double *Z, double *U, int *P, int *
+ 			}
+ 			Chol[p*p*i+p*j+j] += rho;
+ 		}
+-		F77_CALL(dpotrf)("L", P, (Chol+p*p*i), P, &info);
++		F77_CALL(dpotrf)("L", P, (Chol+p*p*i), P, &info FCONE);
+ 	}
+ 
+ 	//ADMM iteration
+@@ -544,8 +544,8 @@ void ADMM_SPACE_rho(double *Corr, double *d, double *Z, double *U, int *P, int *
+ 				for(k=j; k<p_1; k++){
+ 					C[k] = rho*(Z_ij[k] - U_ij[k]) + Corr_ij[k+1]*sqrt(d[p*i+j]*d[p*i+k+1]);
+ 				}
+-				F77_CALL(dtrsv)("L", "N", "N", &p_1, Chol_ij, &p_1, C, &one);
+-				F77_CALL(dtrsv)("L", "T", "N", &p_1, Chol_ij, &p_1, C, &one);
++				F77_CALL(dtrsv)("L", "N", "N", &p_1, Chol_ij, &p_1, C, &one FCONE FCONE FCONE);
++				F77_CALL(dtrsv)("L", "T", "N", &p_1, Chol_ij, &p_1, C, &one FCONE FCONE FCONE);
+ 				for(k=0; k<p_1; k++){
+ 					Omega_ij[k] = C[k];
+ 					U_ij[k] += alpha*C[k] + (1-alpha)*Z_ij[k];
+@@ -713,4 +713,4 @@ void Givens_rotation(double *U, double *Chol, int *P, int *J){
+ 			U_k[m+p_1] = s*temp_1 + c*temp_2;
+ 		}
+ 	}
+-}
+\ No newline at end of file
++}

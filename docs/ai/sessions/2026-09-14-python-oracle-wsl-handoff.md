@@ -1,214 +1,189 @@
-# Handoff: update the other machine's Python, oracle packages and WSL tools
+# Handoff: replicate the Python, oracle and WSL setup through GitHub
 
-Date: 2026-09-14 (America/Chicago)
+Date: 2026-09-14 (America/Chicago). Repository: dotrepo, branch `main`.
+Inspected host: **PC-PHILIP-WINDOWS**, Ubuntu 24.04.4 under WSL 2.
 
-Repository: dotrepo, branch `main`
+## Requested outcome and delivery
 
-Inspected machine: **PC-PHILIP-WINDOWS**, Windows with Ubuntu 24.04.4 on WSL 2
+The user requested the same oracle setup for **IntegralFunctionsJAX (IFJ),
+RandomFields77 (RF77), TopoSmplJAX and data77** on the other machines, including
+GPflow in **py313**, R and Julia packages, exact JAX/CUDA versions, and the other
+WSL installations. IFJ was pulled again to audit its additional references.
+The earlier [34-oracle checklist](../../../config/m-tier-oracles.json) is part
+of this broader request. Its bibliography Added/Reused labels are citation status.
 
-## Requested work and delivery
+**Delivery is commit/push to GitHub, followed by pull and installation on each
+target.** Pulling dotrepo delivers inventories, configuration and recipes; it
+does not install software by itself. This session changed the source host only.
+The other machine was previously called PhilipSecond; verify its current
+hostname. Preserve machine-local edits and running jobs. Follow the
+[session methodology](../../ai-session-methodology.md) when recording target work.
 
-The user requested committing and pushing the installed numerical oracle package
-inventory, and telling the other machine to update `py313`, its oracle packages
-and other WSL installations. The other computer was previously called
-**PhilipSecond**; verify its hostname before proceeding. This session inspected
-PC-PHILIP-WINDOWS only. Target installation and target verification remain pending.
+## Current source of truth
 
-The user subsequently supplied a complete **34-oracle checklist** and requested
-installing anything missing locally in `py313`, R or WSL. The
-[machine-readable checklist](../../../config/m-tier-oracles.json) preserves the
-exact package names and supplied citation identifiers. The bibliography's
-Added/Reused labels do not describe package installation status.
+Use the [September 14 machine capsule](../../../machines/pc-philip-windows-2026-09-14/README.md)
+and [four-repository audit](../../repo-oracles-2026-09-14.md). These supersede
+earlier totals, including the intermediate 325-Python/498-R M-tier stage.
 
-**Completed locally:** all 22 Python oracles in `py313`, all 11 R oracles and
-native ExaGeoStat passed functional smoke checks. The
-[complete results and replication notes](../../wsl-m-tier-oracles-2026-09-14.md)
-record each version and check. Final counts are 325 Python packages in `py313`,
-498 active R packages and 1,546 APT packages. The other machine still needs to
-pull and apply this setup.
-
-This repository is the cross-machine communication channel, following the
-[session methodology](../../ai-session-methodology.md). Pull `main` in both
-Windows and native WSL checkouts on the other machine and read this handoff.
-There is no configured remote provisioning endpoint or automatic delivery to a
-running session on that machine. The new `AGENTS.md` link makes this handoff
-discoverable when work resumes after pulling.
-
-## Current source of package evidence
-
-Use [the September 14 inventory](../../../machines/pc-philip-windows-2026-09-14/README.md).
-It records the current installation on this computer, including changes since
-the older September 7/8 reports. Versions here are observed versions, not claims
-about the newest available releases.
-
-`py313` uses **CPython 3.13.15**, **NumPy 2.5.3**, **SciPy 1.18.1**,
-**JAX 0.11.1 with CUDA 13**, and **PyTorch 2.14.0**. Before the GPflow follow-up,
-its inventory grew from 154 to 262 unique packages: 123 additions, 19 version
-changes and 15 removals. Use the captured requirements and manual-source records
-for the complete set. Adding GPflow and its dependencies below brought that
-inventory to **283 packages** before the full 34-oracle installation pass.
-The complete Python oracle pass brought `py313` to **325 packages**. Keep the
-resolved **Flax 0.12.9** and
-**scikit-sparse 0.4.16** versions in view when resolving dependencies; a blanket
-upgrade would discard those compatibility choices. GPJax required the Flax
-0.12.8 to 0.12.9 change to make Flax NNX work with the existing JAX 0.11.1.
-
-The oracle and comparison packages now include:
-
-| Area | Packages observed in `py313` |
+| Environment or installation | Captured state |
 | --- | --- |
-| Exact and high precision | python-flint 0.9.0, mpmath 1.3.0, SymPy 1.14.0 |
-| Optimization | CVXPY 1.9.2, Clarabel 0.11.1, HiGHS 1.15.1, OSQP 1.1.3, SCS 3.3.1 |
-| Gaussian processes | GPy 1.14.2, GPyTorch 1.15.2, GPBoost 1.7.4 |
-| Geometry and transport | geomstats 2.8.0, geoopt 0.5.1, geometric-kernels 0.4.1, POT 0.9.7.post1, ott-jax 0.5.2 |
-| Meshes and sparse operators | scikit-fem 12.0.2, libigl 2.6.3, robust-laplacian 1.1.0, sparseDiffPy 0.3.0, scikit-sparse 0.4.16 |
-| R integration | rpy2 3.6.7 and the native R library |
+| `py313` | CPython 3.13.15; **338** distributions: 333 ordinary pins, four editable projects and one local GS-LVMOGP wheel |
+| `gpflow312` | CPython 3.12.3; 52 packages; GPflow 2.11.1 / TensorFlow 2.18.1 / NumPy 1.26.4 |
+| `jax313` / `jax314` | CPython 3.13.15 / 3.14.7; 104 packages each; reduced coverage, missing python-flint and diffrax |
+| `jax-oracles313` | CPython 3.13.15; 51 packages; JAX 0.6.2 / Flax 0.10.7 / TFP 0.25.0 / SciPy 1.16.3 for Dynamax, BayesNF and PyGAM |
+| `uqpy312` | CPython 3.12.3; 44 packages; NumPy 1.26.4 / CPU PyTorch 2.2.2+cpu for UQpy and Debiased Spatial Whittle |
+| R | 4.6.1; **516 active packages** with ordinary startup; 72 with `--vanilla` |
+| Julia | 1.13.0 with `@repo-oracles`; 1.10.12 with `@repo-oracles-oilmm` |
+| Ubuntu APT | **1,559 installed packages**, 104 manual selections, no holds |
 
-`jax313` and `jax314` currently have 104 unique packages each, with CPython
-3.13.15 and 3.14.7 respectively. Their metadata dependencies pass, but both lack
-`python-flint` and `diffrax`. The arbPlusJAX presence checker fails their Arb
-certification requirement: five test files would otherwise skip. Treat these
-as functional gaps to resolve for workloads needing those backends. Do not
-recreate the reduced environments as if they supplied the full oracle stack.
+All six Python environments pass dependency checks. This follow-up added
+13 packages to main py313 and 18 to R; every previous 325 Python and 498 R
+package version was preserved. The smaller JAX environments remain incomplete
+for Arb certification despite clean dependency metadata.
 
-## GPflow added to `py313`
+### Exact main Python and GPU versions
 
-The user clarified that GPflow should be installed in **`py313`**. This was
-completed locally with the following tested combination:
+Main py313 retains NumPy **2.5.3**, SciPy **1.18.1**, JAX/jaxlib/CUDA 13
+plugin/PJRT **0.11.1**, Flax **0.12.9**, and PyTorch **2.14.0**.
+The [GPU receipt](../../../machines/pc-philip-windows-2026-09-14/gpu-stack.json)
+records all 31 selected core/GPU pins, compiler versions and loaded libraries.
 
-| Package | Installed version |
+- NVIDIA Windows driver: **616.56**; source GPU: RTX 4070 Laptop, SM 8.9.
+- Driver-reported CUDA capability: **13.4**.
+- Loaded CUDA runtime API: **13.0**; runtime distribution: **13.0.96**.
+- Loaded cuDNN API: **9.24.0**; distribution: **9.24.0.43**.
+- Bundled `nvcc` and `ptxas`: **13.4.59**, inside py313's `nvidia/cu13/bin`.
+  They are absent from the inspected WSL PATH; the executables are installed.
+
+These identify different components. Follow the
+[GPU replication guide](../../repo-oracles-gpu-2026-09-14.md), including Windows
+driver and target hardware requirements. Preserve exact NVIDIA dependency pins;
+installing only `jax[cuda13]` permits a different resolution. The guide links
+official JAX/NVIDIA instructions, including using the Windows driver from WSL.
+JAX GPU calculations and gradients passed; GPflow checks used CPU.
+
+### GPflow compatibility choice
+
+Main py313 uses **GPflow 2.9.2, TensorFlow 2.21.0, TensorFlow Probability 0.25.0,
+tf-keras 2.21.0 and setuptools 80.9.0**. GPflow 2.11.1 declares NumPy below 2
+and cannot use the retained py313 stack. GPflow 2.9.2 needs `pkg_resources`,
+supplied by the setuptools pin. Preserve GPJax 0.13.6, Flax 0.12.9 and
+scikit-sparse 0.4.16 as well. Exact GPR, SVGP, natural-gradient and prediction
+checks passed, as did JAX GPU -> GPflow CPU -> JAX GPU in one process.
+The [M-tier runbook](../../wsl-m-tier-oracles-2026-09-14.md) records the package
+metadata rationale, source links and checks for all 34 original oracles.
+
+## Repository source changes to pull
+
+| Repository | Published state needed for this audit |
 | --- | --- |
-| GPflow | 2.9.2 |
-| TensorFlow | 2.21.0 |
-| TensorFlow Probability | 0.25.0 |
-| tf-keras | 2.21.0 |
-| setuptools | 80.9.0 |
+| IntegralFunctionsJAX | Fast-forwarded to `611ac9b595665fb8df204017bf9f0a69185776f8`; no local tracked edits made |
+| RandomFields77 | [`7c44d474f35cf8dfc6bb9d2440e7b2525ad4d48a`](https://github.com/philipjones77/RandomFields77/commit/7c44d474f35cf8dfc6bb9d2440e7b2525ad4d48a): compatible GPflow availability and current observation-noise accessor |
+| data77 | [`6e96b3616a25f3605308ff25ab6baeb63b56a7f6`](https://github.com/philipjones77/data77/commit/6e96b3616a25f3605308ff25ab6baeb63b56a7f6): seven oracle import-order fixes and environment initialization fix |
+| TopoSmplJAX | Audited `ab67c2e426f3a95f6b676c8aac72e6ed1bd4ded5`; no source edits |
 
-GPflow 2.11.1, the current PyPI release at inspection, declares `numpy<2`.
-Its binary-only resolution fails on this CPython 3.13 environment. GPflow 2.9.2
-resolves with the existing NumPy 2.5.3, but imports `pkg_resources`, which is
-absent from setuptools 84.0.0. Pinning setuptools 80.9.0 supplies that module.
-See the [release metadata](https://pypi.org/pypi/gpflow/2.11.1/json) and
-[upstream NumPy 2 support discussion](https://github.com/GPflow/GPflow/issues/2119).
-This is a locally tested compatibility combination; it is not an upstream
-support guarantee for every GPflow feature or a reason to upgrade these pins blindly.
+Main py313 also includes editable arbPlusJAX. Its identity and all editable
+commits are in the manual-source manifest. Source-host local edits and untracked
+assets remain outside these commits. The pre-existing RF77 kernel registry edit
+was preserved. Matching package versions or Git commits alone do not reproduce
+those local trees; reconcile them through each repository's own workflow.
 
-The installation added 21 distributions and changed only one existing version:
-setuptools 84.0.0 to 80.9.0. A local backup of the original setuptools payload
-and before manifests was retained. NumPy, SciPy, JAX and PyTorch versions stayed
-unchanged. `gpflow312` remains available with GPflow 2.11.1, TensorFlow 2.18.1
-and NumPy 1.26.4.
+## WSL installations and build recipes
 
-The staged candidate and installed `py313` both passed exact GPR optimization,
-compiled SVGP training with tf-keras Adam, natural-gradient training, finite
-gradient checks and prediction checks. The installed package dependency check
-passed. A same-process check ran JAX GPU solves/gradients, GPflow CPU regression,
-then another JAX GPU solve successfully. **GPflow was validated on CPU; its
-TensorFlow GPU libraries are unavailable in this setup.** JAX GPU availability
-does not establish TensorFlow/GPflow GPU availability.
+| Component | Evidence and reproduction instructions |
+| --- | --- |
+| All six Python environments | `wsl-native/standard-python/` in the machine capsule; [companion guide](../../repo-oracles-companions-2026-09-14.md) |
+| Main py313 | [Candidate installer](../../../python/wsl/create-venv.sh), ordinary pins and manual-source manifest |
+| All R packages | `wsl-native/r-active-packages.tsv`; [RF77 guide](../../repo-oracles-rf77-2026-09-14.md) includes loggle's R ABI patch and checks |
+| Julia and Mathematica references | [IFJ/Julia guide](../../repo-oracles-ifj-2026-09-14.md), both Julia Project/Manifest pairs, verified archives, MeijerG, quadrature and GP references, MBConicHulls, PolyLogTools/HPL, TOPCOM and GiNaC |
+| Native ExaGeoStat | [Pinned CPU build](../../exageostat-wsl-2026-09-14.md); private StarPU 1.3.10 and Chameleon 1.1.0; `~/.local/bin/exageostat-cpu` |
+| Native MRA and GS-LVMOGP | [RF77 build recipes](../../repo-oracles-rf77-2026-09-14.md), compatibility patches, hashes and wheel builder |
+| Gephi, SMPL family, Gmsh and geometry | [Topo guide](../../repo-oracles-topo-2026-09-14.md); Gephi Toolkit 0.10.1, Java 21; existing private model caches |
+| Ubuntu packages | Complete `apt-installed.json`, `apt-manual.txt` and holds in the capsule; FLINT, GMP/MPFR, GSL, Eigen, Armadillo, OpenBLAS, LAPACKE, SuiteSparse, FFTW and OpenMPI development libraries |
+| User-local FLINT/Boost | FLINT 3.4.0 and Boost 1.90.0 under `~/.local/opt/arbplusjax_refs`; arbPlusJAX `benchmarks/source_reference_env.sh` and pinned build instructions |
+| Remaining software | [Native summary](../../../machines/pc-philip-windows-2026-09-14/native-summary.json), [September 8 WSL runbook](../../wsl-software-parity-2026-09-08.md), [LaTeX setup](../../latex-toolchain.md), [MATLAB setup](../../matlab-wsl-2026-09-07.md) |
 
-Receipts: [installation changes](../../../machines/pc-philip-windows-2026-09-14/gpflow-install.json),
-[GPflow checks](../../../machines/pc-philip-windows-2026-09-14/gpflow-validation.json),
-and [JAX coexistence](../../../machines/pc-philip-windows-2026-09-14/gpflow-jax-coexistence.json).
-On a reconciled target, preserve its before inventory and inspect the transaction
-before applying these explicit pins:
+R's ordinary startup selects `~/.local/lib/R/site-library`. Compare that library
+as well as distribution packages; vanilla startup misses most oracles. Use exact
+recorded R versions and official source archives when current repositories have
+moved on. Build missing packages in a separate library first. The deepspat check
+selects existing py313 through `RETICULATE_PYTHON`.
 
-```bash
-uv pip install --dry-run --python "$HOME/.virtualenvs/py313/bin/python" \
-  gpflow==2.9.2 tensorflow==2.21.0 tensorflow-probability==0.25.0 \
-  tf-keras==2.21.0 setuptools==80.9.0
-# Apply the reviewed plan, preserving the target's other required package pins.
-```
+Other observed tools include Octave 8.4.0, GLPK 5.0, Node 24.20.0, npm 12.0.2,
+Corepack 0.36.0, Rust/Cargo 1.94.1, uv 0.12.10, PowerShell 7.6.5, rclone 1.74.2,
+and 35 WSL VS Code extensions. PETSc/SLEPc 3.25.5/3.25.1 sources exist,
+but no configured build or usable libraries were established.
 
-Run the committed model check using the target interpreter after installation:
-
-```bash
-CUDA_VISIBLE_DEVICES=-1 JAX_PLATFORMS=cpu \
-  OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 \
-  "$HOME/.virtualenvs/py313/bin/python" -I -B scripts/check-gpflow-environment.py
-uv pip check --python "$HOME/.virtualenvs/py313/bin/python"
-```
-
-## Other WSL installations to compare
-
-- **APT before the full oracle pass:** 1,523 installed packages, 97 manual
-  selections and no holds. Compare
-  the full inventory and manual selections with the target before installing.
-  Relevant libraries include FLINT, GMP/MPFR, GSL, Eigen, Armadillo, OpenBLAS,
-  LAPACKE, SuiteSparse/CHOLMOD, FFTW and OpenMPI. The
-  [September 8 runbook](../../wsl-software-parity-2026-09-08.md) covers previously
-  added development, LaTeX, R and editor tools.
-- **User-local reference builds:** FLINT 3.4.0 and Boost 1.90.0 under
-  `~/.local/opt/arbplusjax_refs`, separate from APT's FLINT 3.0.1 and Boost 1.83.
-  Review `benchmarks/source_reference_env.sh` in arbPlusJAX and its build
-  instructions to select the intended reference libraries on the target.
-  Source archives are retained locally and require separate transfer or retrieval.
-- **PETSc/SLEPc:** source checkouts identify 3.25.5/3.25.1; no configured headers,
-  built shared libraries or pkg-config files were found in those checkouts.
-  Source presence alone does not satisfy an oracle installation requirement.
-- **R/Octave:** R 4.6.1, Octave 8.4.0 and GLPK 5.0. Compare ordinary R startup
-  and active user libraries as well as distribution packages; `--vanilla` skips
-  user startup and therefore sees a smaller package set: before the full oracle
-  pass there were 72 vanilla packages versus 490 active packages through ordinary
-  startup. Use the final capture summary for post-installation counts.
-- **Development tools:** Node 24.20.0, npm 12.0.2, Corepack 0.36.0,
-  Rust/Cargo 1.94.1, uv 0.12.10, PowerShell 7.6.5 and rclone 1.74.2.
-  The inventory also records 35 active WSL VS Code extensions.
-- **WSL itself and other distributions:** enumerate each registered WSL
-  distribution on the target. Compare its WSL version, Ubuntu updates, Snap
-  packages, native tools and user environments independently. Only one Ubuntu
-  distribution was registered on the inspected computer. Preserve hardware,
-  licensing, mounts and existing WSL memory/swap choices.
+Enumerate every WSL distribution on each target and capture its state. Only
+Ubuntu was registered on this host. The [WSL capture tools](../../../wsl/README.md)
+record Windows/WSL versions, repositories, services, toolchains and environments
+in a private snapshot. Preserve machine-specific mounts, memory/swap settings,
+credentials and licensed assets. Public manifests exclude those private payloads,
+backup environments and temporary staging directories.
 
 ## Target execution order
 
-1. Inspect hostname, `git status` and remotes in both native checkouts; preserve
-   local edits, then pull `main` with `git pull --ff-only` where possible.
-2. Capture before inventories and check running Python/R jobs. Keep rollback
-   records before replacing any package or environment.
-3. Compare APT manual selections and installed versions. Refresh the target's
-   own signed indexes, simulate proposed installs/upgrades with `--no-remove`,
-   then apply compatible changes. Use its existing Ubuntu release and repositories.
-4. Reconcile `py313` against this inventory in a separate candidate environment
-   first. Restore the four editable repositories from their manual manifests,
-   including separately preserved source changes. Install the reviewed ordinary
-   pins, then validate and switch only when the target's workloads pass.
-   The older `python/wsl/create-venv.sh` still references the September 7 baseline;
-   it does not implement this complete reconstruction.
-5. Check oracle availability in every environment that needs certification.
-   Handle the missing FLINT/diffrax packages in the reduced JAX environments
-   explicitly. Check native reference library lookup, R startup, Octave,
-   LaTeX/editor tools and any additional WSL distributions.
-6. Run dependency checks and real numerical workloads, then capture after
-   inventories. Record actual target results and remaining gaps in a new capsule,
-   commit and push the authorized updates.
+1. Verify hostname, remotes, branches and `git status` in Windows and native WSL.
+   Preserve local changes and pull `main` with `git pull --ff-only` where applicable.
+   Pull the four scientific repositories too.
+2. Capture the target before state and inspect active Python/R/Julia/GPU jobs.
+   Compare Windows driver, WSL release, APT sources and exact inventories.
+3. Install missing native prerequisites using the target's signed repositories.
+   Simulate APT transactions with `--no-remove`; compare exact versions and
+   manual selections. Record unavailable pins instead of silently substituting
+   newer packages. Keep hardware-specific configuration.
+4. Restore editable checkouts, then create a **new** main candidate:
 
-## Verification in this session
+   ```bash
+   cd "$HOME/projects/dotrepo"
+   bash python/wsl/create-venv.sh "$HOME/.virtualenvs/py313-candidate"
+   ```
 
-All four active Python environments passed dependency checks. `jax313` and
-`jax314` have no `pip` module, so their checks used `uv pip check --python`.
-Package metadata was captured without installing pip or changing those environments.
+   The script requires CPython 3.13.15, resolves 333 ordinary pins with four
+   editable sources, rebuilds and verifies GS-LVMOGP, checks all 338 versions
+   and dependencies, and runs exact GPU/driver comparison. It refuses an
+   existing destination and leaves activation to the target run.
+   `PROJECTS_HOME` may select a different native checkout root. Reconcile
+   source commits and local changes before selecting this candidate.
+5. Restore other Python environments from their own manifests, including the
+   CPU PyTorch source in the companion guide. Restore R, both Julia projects,
+   native builds, Gephi and other WSL tools using the linked recipes. Keep
+   companions' different JAX/NumPy pins. Missing reduced-environment Arb backends
+   require a workload decision; main py313 already has those oracles.
+6. Run committed numerical probes and repository checks. The WSL shell hook
+   `wsl/repo-oracle-env.sh` selects existing local oracle paths and preserves
+   explicit overrides. It starts no runtime. Check a fresh shell after applying
+   the recipes; retain private licensed assets on each machine.
+7. Select validated environments when target jobs can use them, capture after
+   inventories and GPU receipts, then commit/push actual results and remaining
+   differences. A source-host check is not a target result.
 
-`py313` passed CPU checks for SciPy and CHOLMOD solves, FLINT Arb enclosures,
-high-precision mpmath, and CVXPY solves with Clarabel, OSQP, SCS and HiGHS.
-Its arbPlusJAX backend-presence check passed; optional backends remain absent.
-The [oracle receipt](../../../machines/pc-philip-windows-2026-09-14/oracle-checks.json)
-records the scope and JAX gaps. The numerical CPU checks passed again after the
-GPflow installation.
-The native Eigen/Armadillo/LAPACKE comparison, R matrix checks and an Octave
-linear solve passed. `dpkg --audit` and the root APT dependency check passed.
-These are focused checks, not complete project or target-machine validation.
+## Validation scope and remaining gaps
 
-## Resume prompt for the other machine
+The original 34 oracles passed focused numerical checks. The broader audit adds
+IFJ FFTLog/integration tests, RF77 UQpy/GS-LVMOGP/GPflow/R/MRA checks, Topo geometry,
+Gephi/SMPL checks, data77 imports and small GP fits, and Julia checks. Results are
+in the linked runbooks and `repo-oracles/` receipts. The candidate installation
+transaction was dry-run successfully against the installed stack; a fresh full
+338-package reconstruction has not been tested here.
+
+Remaining documented limits include unavailable `JuliaStats/GraphicalModels.jl`,
+MeijerG's incorrect default shifted-Bessel reduction (explicit Slater passed),
+RF77 Whittle/BayesNF in-process gates that cannot see companions, and RF77 MRA's
+incompatible reference protocol. IFJ has planned or caller-registered adapters
+and a trained-artifact requirement. Topo's recorded geomstats skips/expected
+failure remain. GPflow is CPU-validated; TensorFlow GPU availability is not
+established by the working JAX GPU stack.
+
+## Resume prompt for each other machine
 
 ```text
-Continue dotrepo on the other computer. Pull main in Windows and native WSL,
-preserving local changes, then read the September 14 Python/oracle/WSL handoff
-and machines/pc-philip-windows-2026-09-14/README.md. Verify the hostname.
-Update py313 and numerical oracle coverage against the captured inventory;
-review the GPflow compatibility outcome in this handoff before installing it.
-Compare other WSL installs, native libraries, R/Octave, development tools and
-editor extensions. Preserve active jobs, rollback records, local source edits,
-credentials and licensed software. Check missing FLINT/diffrax in JAX envs.
-Validate actual workloads and publish the target's resulting inventory and gaps.
+Pull dotrepo main in Windows and native WSL, preserving local changes, then read
+docs/ai/sessions/2026-09-14-python-oracle-wsl-handoff.md and the September 14 machine
+capsule. Verify hostname. Reproduce the IFJ, RF77, TopoSmplJAX and data77 oracle
+setup, including py313's exact JAX/CUDA/driver versions, all six Python envs,
+R, both Julia environments, native builds and the other WSL installs. Pull the
+documented scientific repo fixes. Use candidate environments and preserve active
+jobs/local assets. Apply the recorded pins and recipes, run numerical and exact
+GPU checks, then commit/push this machine's after inventory and remaining gaps.
 ```

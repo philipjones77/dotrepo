@@ -1,0 +1,129 @@
+{
+  "captured_at_utc": "2026-09-15T02:54:40.428587+00:00",
+  "installation": {
+    "version": "1.13.0",
+    "url": "https://julialang-s3.julialang.org/bin/linux/x64/1.13/julia-1.13.0-linux-x86_64.tar.gz",
+    "sha256": "8975da61c128a5e5ded3e719e868da8c8781deb7ad7913d37fb99be02a81904b",
+    "size": 302893995,
+    "triplet": "x86_64-linux-gnu"
+  },
+  "oilmm_installation": {
+    "version": "1.10.12",
+    "url": "https://julialang-s3.julialang.org/bin/linux/x64/1.10/julia-1.10.12-linux-x86_64.tar.gz",
+    "sha256": "b0c50dfe349d76ffc8580d24e0c0be623988a6d91ed57ad8b73c0137fd27bc0d",
+    "size": 175321447,
+    "triplet": "x86_64-linux-gnu",
+    "scope": "OILMMs 0.2.5 requires FillArrays 0.11/0.12, whose registered compatibility excludes Julia >1.10."
+  },
+  "smokes": [
+    {
+      "package": "MeijerG",
+      "returncode": 0,
+      "seconds": 17.88,
+      "bessel_expected": 0.4386412609686546,
+      "bessel_float64_value": 1.462137536562182,
+      "bigfloat_identity_precision_bits": 192,
+      "default_shifted_bessel_error": 1.0234962755935275,
+      "default_shifted_bessel_status": "failed_independent_identity",
+      "limitation": "Default shifted Bessel reduction uses wrong exponent sign and fails identity; BigFloat Bessel unsupported by SpecialFunctions; explicit Slater path and two192-bit elementary identities pass",
+      "scope": "tiny CPU reference operation; no repository model or benchmark workload",
+      "slater_bessel_error": 1.27675647831893e-15,
+      "slater_bessel_value": 0.43864126096865586,
+      "status": "pass_with_upstream_limitations",
+      "values": [
+        0.7408182206817179,
+        0.591715976331361
+      ],
+      "version": "0.1.1"
+    },
+    {
+      "package": "FastGaussQuadrature",
+      "returncode": 0,
+      "seconds": 1.51,
+      "integral": 0.6666666666666665,
+      "scope": "tiny CPU reference operation; no repository model or benchmark workload",
+      "status": "pass",
+      "version": "1.3.0"
+    },
+    {
+      "package": "Integrals",
+      "returncode": 0,
+      "seconds": 163.26,
+      "integral": 0.3333333333333333,
+      "scope": "tiny CPU reference operation; no repository model or benchmark workload",
+      "status": "pass",
+      "version": "5.5.2"
+    },
+    {
+      "package": "Cuba",
+      "returncode": 0,
+      "seconds": 1.64,
+      "integral": 0.24999999999999994,
+      "scope": "tiny CPU reference operation; no repository model or benchmark workload",
+      "status": "pass",
+      "version": "2.3.0"
+    },
+    {
+      "package": "TemporalGPs",
+      "returncode": 0,
+      "seconds": 39.27,
+      "dense_error": 2.220446049250313e-16,
+      "logpdf": -1.985474571905921,
+      "scope": "tiny CPU reference operation; no repository model or benchmark workload",
+      "status": "pass",
+      "version": "0.7.3"
+    },
+    {
+      "package": "Vecchia",
+      "returncode": 0,
+      "seconds": 4.14,
+      "negative_loglikelihood": -1.1719922549756545,
+      "scope": "tiny CPU reference operation; no repository model or benchmark workload",
+      "status": "pass",
+      "version": "0.13.3"
+    },
+    {
+      "logpdf": -6.249107677022384,
+      "package": "OILMMs",
+      "scope": "tiny CPU reference operation; no repository model or benchmark workload",
+      "status": "pass",
+      "version": "0.2.5"
+    }
+  ],
+  "unavailable": [
+    {
+      "package": "GraphicalModels.jl",
+      "source": "https://github.com/JuliaStats/GraphicalModels.jl",
+      "status": "cited_source_unavailable",
+      "detail": "Cited GitHub repository returns404; absent from General registry. Historical unmaintained namesake not substituted."
+    }
+  ],
+  "environments": [
+    {
+      "name": "@repo-oracles",
+      "julia_version": "1.13.0",
+      "direct_packages": {
+        "AbstractGPs": "0.5.24",
+        "Cuba": "2.3.0",
+        "FastGaussQuadrature": "1.3.0",
+        "Integrals": "5.5.2",
+        "KernelFunctions": "0.10.67",
+        "MeijerG": "0.1.1",
+        "StaticArrays": "1.9.20",
+        "TemporalGPs": "0.7.3",
+        "Vecchia": "0.13.3"
+      },
+      "manifest_entries": 178
+    },
+    {
+      "name": "@repo-oracles-oilmm",
+      "julia_version": "1.10.12",
+      "direct_packages": {
+        "AbstractGPs": "0.5.24",
+        "KernelFunctions": "0.10.67",
+        "OILMMs": "0.2.5"
+      },
+      "manifest_entries": 69
+    }
+  ]
+}

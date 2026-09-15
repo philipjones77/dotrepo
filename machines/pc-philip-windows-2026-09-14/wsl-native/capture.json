@@ -1,11 +1,11 @@
 {
-  "captured_at": "2026-09-15T01:52:28.629713+00:00",
+  "captured_at": "2026-09-15T02:43:40.743585+00:00",
   "platform": "wsl",
   "machine": "PC-PHILIP-WINDOWS",
   "distribution": "Ubuntu",
   "counts": {
-    "apt_manual": 100,
-    "apt_installed": 1546,
+    "apt_manual": 104,
+    "apt_installed": 1559,
     "conda": [],
     "venv": [
       {
@@ -27,10 +27,10 @@
       {
         "name": "py313",
         "python": "3.13.15",
-        "packages": 325,
-        "index_requirements": 321,
-        "manual_sources": 4,
-        "metadata_records": 328,
+        "packages": 338,
+        "index_requirements": 333,
+        "manual_sources": 5,
+        "metadata_records": 341,
         "duplicate_discoveries": [
           {
             "name": "arbplusjax",
@@ -144,20 +144,52 @@
           ],
           "scope": "Presence of python-flint and diffrax is tracked separately from declared dependency consistency; this does not certify functional oracle coverage."
         }
+      },
+      {
+        "name": "jax-oracles313",
+        "python": "3.13.15",
+        "packages": 51,
+        "index_requirements": 51,
+        "manual_sources": 0,
+        "metadata_records": 51,
+        "duplicate_discoveries": [],
+        "pip_installed": false,
+        "dependency_check": {
+          "tool": "uv pip check --python",
+          "exit_code": 0,
+          "status": "passed",
+          "raw_diagnostics_exported": false
+        }
+      },
+      {
+        "name": "uqpy312",
+        "python": "3.12.3",
+        "packages": 44,
+        "index_requirements": 44,
+        "manual_sources": 0,
+        "metadata_records": 44,
+        "duplicate_discoveries": [],
+        "pip_installed": false,
+        "dependency_check": {
+          "tool": "uv pip check --python",
+          "exit_code": 0,
+          "status": "passed",
+          "raw_diagnostics_exported": false
+        }
       }
     ],
     "r_packages": 72,
-    "r_active_packages": 498,
+    "r_active_packages": 516,
     "vscode_extensions": 35,
     "apt_holds": 0
   },
-  "coverage": "Installed APT packages, APT manual selections and holds, R packages from both vanilla and ordinary startup, VS Code Server extensions, standard Conda installations, and explicit active Python environments gpflow312, py313, jax313, jax314. Backup environments ending in .old and project-local environments are excluded.",
+  "coverage": "Installed APT packages, APT manual selections and holds, R packages from both vanilla and ordinary startup, VS Code Server extensions, standard Conda installations, and explicit active Python environments gpflow312, py313, jax313, jax314, jax-oracles313, uqpy312. Backup environments ending in .old and private staging environments are excluded.",
   "r_capture": {
     "r-packages.tsv": "Rscript --vanilla inventory; startup-defined user libraries may be absent.",
     "r-active-packages.tsv": {
-      "captured_at": "2026-09-15T01:52:28.614869+00:00",
-      "packages": 498,
-      "metadata_records": 799,
+      "captured_at": "2026-09-15T02:43:40.676036+00:00",
+      "packages": 516,
+      "metadata_records": 817,
       "startup": "Ordinary Rscript startup from a fresh interactive Bash shell with Drive automount disabled",
       "columns": [
         "Package",

@@ -1,0 +1,586 @@
+{
+  "date": "2026-09-14",
+  "repository": "IntegralFunctionsJAX",
+  "git": {
+    "before": "a35fef0e344d101507108fe014b3e086637951d1",
+    "after": "611ac9b595665fb8df204017bf9f0a69185776f8",
+    "method": "fetch origin then merge --ff-only origin/main",
+    "tracked_user_changes_before": 0,
+    "untracked_status_entries_before": 8,
+    "untracked_status_entries_after": 5,
+    "identical_untracked_collisions_preserved": 3
+  },
+  "interpreter": "Ubuntu WSL py313 / Python3.13.15",
+  "scope": "Availability audit plus small CPU oracle operations; no full suite, contour benchmark, model training, GPU workload or trained artifact validation.",
+  "pytest": {
+    "status": "pass",
+    "count": 29,
+    "node_selection": [
+      "tests/test_oracle_strategy.py",
+      "tests/test_gpl_oracles.py",
+      "tests/test_mbconichulls_oracles.py",
+      "tests/test_parity_quadax.py::test_adaptive_gauss_kronrod_agrees_with_quadax[gaussian]",
+      "tests/test_parity_quadax.py::test_quadax_lane_is_actually_running",
+      "tests/test_rational_brasil.py::test_all_nine_degrees_ship",
+      "tests/test_rational_brasil.py::test_table_file_integrity_is_checksummed",
+      "tests/test_rational_brasil.py::test_poles_are_negative_and_residues_positive"
+    ],
+    "limitations": [
+      "MBConicHulls pytest cases exercise injected adapter payloads; external native runtime is a separate check."
+    ]
+  },
+  "accuracy_adapters": [
+    {
+      "backend": "mpmath",
+      "z": 0.3,
+      "scope": "three scalar reference-adapter calls; no model, contour or benchmark workloads",
+      "checks": [
+        {
+          "case": "elementary_exp",
+          "status": "pass",
+          "value": [
+            0.7408182206817179,
+            0.0
+          ],
+          "absolute_error": 0.0
+        },
+        {
+          "case": "rational_power",
+          "status": "pass",
+          "value": [
+            0.6186262933434697,
+            0.0
+          ],
+          "absolute_error": 1.1102230246251565e-16
+        },
+        {
+          "case": "meijerg_besselk",
+          "status": "pass",
+          "value": [
+            0.4386412609686546,
+            0.0
+          ],
+          "absolute_error": 0.0
+        }
+      ]
+    },
+    {
+      "backend": "flint",
+      "z": 0.3,
+      "scope": "three scalar reference-adapter calls; no model, contour or benchmark workloads",
+      "checks": [
+        {
+          "case": "elementary_exp",
+          "status": "pass",
+          "value": [
+            0.7408182206817179,
+            0.0
+          ],
+          "absolute_error": 0.0
+        },
+        {
+          "case": "rational_power",
+          "status": "pass",
+          "value": [
+            0.6186262933434697,
+            0.0
+          ],
+          "absolute_error": 1.1102230246251565e-16
+        },
+        {
+          "case": "meijerg_besselk",
+          "status": "pass",
+          "value": [
+            0.4386412609686546,
+            0.0
+          ],
+          "absolute_error": 0.0
+        }
+      ]
+    },
+    {
+      "backend": "scirs2",
+      "z": 0.3,
+      "scope": "three scalar reference-adapter calls; no model, contour or benchmark workloads",
+      "checks": [
+        {
+          "case": "elementary_exp",
+          "status": "unsupported",
+          "reason": "Current IFJ SciRS2 adapter only supports gamma-based rational-power for these standard rungs; no scalar exp/Fox-H or general-order kv binding."
+        },
+        {
+          "case": "rational_power",
+          "status": "pass",
+          "value": [
+            0.6186262933434711,
+            0.0
+          ],
+          "absolute_error": 1.4432899320127035e-15
+        },
+        {
+          "case": "meijerg_besselk",
+          "status": "unsupported",
+          "reason": "Current IFJ SciRS2 adapter only supports gamma-based rational-power for these standard rungs; no scalar exp/Fox-H or general-order kv binding."
+        }
+      ]
+    }
+  ],
+  "wolfram": {
+    "initial_available_probe": false,
+    "status": "pass",
+    "values": [
+      24.0,
+      0.7651976865579666,
+      0.7408182206817179
+    ],
+    "seconds": 38.27622206399974
+  },
+  "mbconichulls": {
+    "source": "https://github.com/SumitBanikGit/MBConicHulls",
+    "revision": "7d75915ba3c2e5f92f89b1cfa2ee4db5fcf1cee8",
+    "runtime_status": "pass",
+    "files": {
+      "MBConicHulls.wl": "e303fdc67c1db3f0b40745079926d7a8b8822c4d7d1b68a1e01a4d14f9500179",
+      "MultivariateResidues.m": "822d9cb53c8df3c9ffa5c0e2082a12e57156120a58df04cf6f6350befd18526c",
+      "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986"
+    },
+    "conic_smoke": {
+      "status": "pass",
+      "operation": "MBRep and degenerate conic-hull resolution (upstream quick solve path)",
+      "representation_length": 2,
+      "triangulation_length": 12,
+      "auxiliary_kernels": 1
+    },
+    "topcom_smoke": {
+      "status": "pass",
+      "operation": "MBRep and TOPCOM TriangulateMB",
+      "representation_length": 2,
+      "triangulation_length": 14,
+      "auxiliary_kernels": 1
+    },
+    "wrapper_scope": "Bound auxiliary kernels to one and serial defaults; headless FindTriangulations temporary files use current directory and explicit Text exports. Scientific source unchanged."
+  },
+  "julia": {
+    "environment": "@repo-oracles",
+    "results": [
+      {
+        "package": "MeijerG",
+        "returncode": 0,
+        "seconds": 17.88,
+        "bessel_expected": 0.4386412609686546,
+        "bessel_float64_value": 1.462137536562182,
+        "bigfloat_identity_precision_bits": 192,
+        "default_shifted_bessel_error": 1.0234962755935275,
+        "default_shifted_bessel_status": "failed_independent_identity",
+        "limitation": "Default shifted Bessel reduction uses wrong exponent sign and fails identity; BigFloat Bessel unsupported by SpecialFunctions; explicit Slater path and two192-bit elementary identities pass",
+        "scope": "tiny CPU reference operation; no repository model or benchmark workload",
+        "slater_bessel_error": 1.27675647831893e-15,
+        "slater_bessel_value": 0.43864126096865586,
+        "status": "pass_with_upstream_limitations",
+        "values": [
+          0.7408182206817179,
+          0.591715976331361
+        ],
+        "version": "0.1.1"
+      },
+      {
+        "package": "FastGaussQuadrature",
+        "returncode": 0,
+        "seconds": 1.51,
+        "integral": 0.6666666666666665,
+        "scope": "tiny CPU reference operation; no repository model or benchmark workload",
+        "status": "pass",
+        "version": "1.3.0"
+      },
+      {
+        "package": "Integrals",
+        "returncode": 0,
+        "seconds": 163.26,
+        "integral": 0.3333333333333333,
+        "scope": "tiny CPU reference operation; no repository model or benchmark workload",
+        "status": "pass",
+        "version": "5.5.2"
+      },
+      {
+        "package": "Cuba",
+        "returncode": 0,
+        "seconds": 1.64,
+        "integral": 0.24999999999999994,
+        "scope": "tiny CPU reference operation; no repository model or benchmark workload",
+        "status": "pass",
+        "version": "2.3.0"
+      },
+      {
+        "package": "TemporalGPs",
+        "returncode": 0,
+        "seconds": 39.27,
+        "dense_error": 2.220446049250313e-16,
+        "logpdf": -1.985474571905921,
+        "scope": "tiny CPU reference operation; no repository model or benchmark workload",
+        "status": "pass",
+        "version": "0.7.3"
+      },
+      {
+        "package": "Vecchia",
+        "returncode": 0,
+        "seconds": 4.14,
+        "negative_loglikelihood": -1.1719922549756545,
+        "scope": "tiny CPU reference operation; no repository model or benchmark workload",
+        "status": "pass",
+        "version": "0.13.3"
+      }
+    ]
+  },
+  "integration_boundaries": [
+    {
+      "backend": "boost_math",
+      "status": "future_harness",
+      "detail": "Registry moduleboost_math is absent; native Boost1.90 headers exist. Registry describes a future external harness. No availability override set."
+    },
+    {
+      "backend": "polylogtools_ginac",
+      "status": "caller_registration_required",
+      "detail": "PolyLogTools/HPL/GiNaC installed; actual Ginsh Li2 passes. IFJ GPL adapter still expects a caller-registered evaluator; installing source is distinct from registering that evaluator."
+    },
+    {
+      "backend": "neural_contour_artifact",
+      "status": "external_trained_artifact_required",
+      "detail": "No supplied trained artifact. Policy prohibits using this experimental backend as the sole correctness oracle."
+    }
+  ],
+  "new_quadrature_references": {
+    "actual_runtime_requirements_added": [
+      "fftlog-lss",
+      "hankl"
+    ],
+    "citation_only_backends": [
+      "Cuba",
+      "torchquad",
+      "Steven Johnson cubature",
+      "FastGaussQuadrature.jl",
+      "Integrals.jl"
+    ],
+    "installed_julia_references": [
+      "FastGaussQuadrature",
+      "Integrals",
+      "Cuba"
+    ],
+    "installed_python_comparisons": [
+      "torchquad",
+      "cubature",
+      "finufft",
+      "pynufft"
+    ]
+  },
+  "configuration": "Shared WSL shell setup sources ~/.local/opt/repo-oracles/ifj-env.sh when installed. Explicit user variables are preserved; sourcing starts no process.",
+  "captured_at_utc": "2026-09-15T02:54:40.108322+00:00",
+  "polylogtools": {
+    "version": "1.4",
+    "source": "https://gitlab.com/pltteam/plt.git",
+    "revision": "e0284d0cba0299f6d584094a053d3e890d13aebe",
+    "smoke": {
+      "status": "pass",
+      "operation": "PolyLogTools Ginsh Li2 and HPL against Wolfram PolyLog",
+      "value": 0.3662132299770635,
+      "hpl_value": 0.3662132299770635,
+      "absolute_error": 0.0,
+      "limitation": "legacy LiNumericalValueFromGiNaC C++ emitter uses removed GiNaC lst constructors; Ginsh interface is used"
+    },
+    "load_warnings": "Modern Wolfram Combinatorica symbol shadowing/protected names; tested Ginsh and HPL Li2 operation passes."
+  },
+  "hpl": {
+    "version": "2.0",
+    "source": "https://www.physik.uzh.ch/data/HPL/HPL-2.0.tar.gz",
+    "sha256": "ca965edb320c735f31433daf11b099ef11d2fbd1a8108b11293d18a6674136ee"
+  },
+  "native_packages": {
+    "ginac-tools": "1.8.7-1build2",
+    "libginac-dev": "1.8.7-1build2",
+    "topcom": "1.1.2+ds-1.1build2"
+  },
+  "availability_after": {
+    "backends": [
+      {
+        "name": "in_tree",
+        "category": "internal",
+        "available": true,
+        "reason": "in_tree",
+        "checks": {},
+        "version": null
+      },
+      {
+        "name": "mpmath",
+        "category": "python",
+        "available": true,
+        "reason": "available",
+        "checks": {
+          "package:mpmath": true
+        },
+        "version": "mpmath=1.3.0"
+      },
+      {
+        "name": "scipy",
+        "category": "python",
+        "available": true,
+        "reason": "available",
+        "checks": {
+          "package:scipy": true
+        },
+        "version": "scipy=1.18.1"
+      },
+      {
+        "name": "sympy",
+        "category": "python",
+        "available": true,
+        "reason": "available",
+        "checks": {
+          "package:sympy": true
+        },
+        "version": "sympy=1.14.0"
+      },
+      {
+        "name": "arbplusjax",
+        "category": "python",
+        "available": true,
+        "reason": "available",
+        "checks": {
+          "package:arbplusjax": true
+        },
+        "version": "arbplusjax=2.2.0"
+      },
+      {
+        "name": "python_flint",
+        "category": "python",
+        "available": true,
+        "reason": "available",
+        "checks": {
+          "package:flint": true
+        },
+        "version": "flint=0.9.0"
+      },
+      {
+        "name": "mathematica",
+        "category": "external-cli",
+        "available": true,
+        "reason": "available",
+        "checks": {
+          "command:wolframscript": true
+        },
+        "version": null
+      },
+      {
+        "name": "mbconichulls_mathematica",
+        "category": "external-cli",
+        "available": true,
+        "reason": "wolframscript and MBConicHulls sources available",
+        "checks": {
+          "command:wolframscript": true,
+          "env:IFJ_MBCONICHULLS_WL": true,
+          "env:IFJ_MULTIVARIATE_RESIDUES_M": true,
+          "path:mbconichulls_path": true,
+          "path:multivariate_residues_path": true
+        },
+        "version": null
+      },
+      {
+        "name": "boost_math",
+        "category": "native",
+        "available": false,
+        "reason": "missing package:boost_math",
+        "checks": {
+          "package:boost_math": false
+        },
+        "version": null
+      },
+      {
+        "name": "meijerg_jl",
+        "category": "external-cli",
+        "available": true,
+        "reason": "available",
+        "checks": {
+          "command:julia": true
+        },
+        "version": null
+      },
+      {
+        "name": "polylogtools_ginac",
+        "category": "external-cli",
+        "available": false,
+        "reason": "missing env:IFJ_POLYLOGTOOLS_AVAILABLE, env:IFJ_GINAC_AVAILABLE",
+        "checks": {
+          "env:IFJ_POLYLOGTOOLS_AVAILABLE": false,
+          "env:IFJ_GINAC_AVAILABLE": false
+        },
+        "version": null
+      },
+      {
+        "name": "neural_contour_artifact",
+        "category": "experiment",
+        "available": false,
+        "reason": "missing env:IFJ_NEURAL_CONTOUR_ARTIFACT",
+        "checks": {
+          "env:IFJ_NEURAL_CONTOUR_ARTIFACT": false
+        },
+        "version": null
+      }
+    ],
+    "capability_statuses": [
+      {
+        "name": "scalar_special_functions",
+        "production_surface": "_arb_bridge and public scalar wrappers",
+        "ci_lane": "default plus oracle",
+        "status": "ready",
+        "reason": "primary oracle route available",
+        "ready_primary_backends": [
+          "in_tree",
+          "arbplusjax"
+        ],
+        "ready_comparison_backends": [
+          "mpmath",
+          "scipy",
+          "python_flint",
+          "mathematica"
+        ],
+        "missing_primary_backends": [],
+        "missing_comparison_backends": [
+          "boost_math"
+        ],
+        "default_ready": true,
+        "oracle_ready": true
+      },
+      {
+        "name": "scalar_foxh_meijerg",
+        "production_surface": "foxh_contour, foxh_auto, residue helpers",
+        "ci_lane": "oracle",
+        "status": "ready",
+        "reason": "primary oracle route available",
+        "ready_primary_backends": [
+          "in_tree",
+          "mpmath"
+        ],
+        "ready_comparison_backends": [
+          "mathematica",
+          "meijerg_jl",
+          "arbplusjax"
+        ],
+        "missing_primary_backends": [],
+        "missing_comparison_backends": [],
+        "default_ready": false,
+        "oracle_ready": true
+      },
+      {
+        "name": "mb_pole_geometry",
+        "production_surface": "mbconichulls.jax_mb, foxh.pole_maps",
+        "ci_lane": "default smoke plus oracle",
+        "status": "ready",
+        "reason": "primary oracle route available",
+        "ready_primary_backends": [
+          "in_tree",
+          "mbconichulls_mathematica"
+        ],
+        "ready_comparison_backends": [
+          "mathematica"
+        ],
+        "missing_primary_backends": [],
+        "missing_comparison_backends": [],
+        "default_ready": true,
+        "oracle_ready": true
+      },
+      {
+        "name": "mb_triangulation_series",
+        "production_surface": "mb_continue_to_limit_value and future series-route selectors",
+        "ci_lane": "oracle",
+        "status": "ready",
+        "reason": "primary oracle route available",
+        "ready_primary_backends": [
+          "mbconichulls_mathematica"
+        ],
+        "ready_comparison_backends": [
+          "in_tree",
+          "mpmath"
+        ],
+        "missing_primary_backends": [],
+        "missing_comparison_backends": [],
+        "default_ready": false,
+        "oracle_ready": true
+      },
+      {
+        "name": "mb_polygamma_epsilon",
+        "production_surface": "mb_parameter_expansion and future polygamma residue lanes",
+        "ci_lane": "oracle",
+        "status": "ready",
+        "reason": "primary oracle route available",
+        "ready_primary_backends": [
+          "mbconichulls_mathematica",
+          "arbplusjax"
+        ],
+        "ready_comparison_backends": [
+          "mpmath",
+          "mathematica"
+        ],
+        "missing_primary_backends": [],
+        "missing_comparison_backends": [],
+        "default_ready": false,
+        "oracle_ready": true
+      },
+      {
+        "name": "gpl_phase_space",
+        "production_surface": "evaluate_gpl, evaluate_gpl_expression, registered GPL backends",
+        "ci_lane": "oracle",
+        "status": "ready",
+        "reason": "primary oracle route available",
+        "ready_primary_backends": [
+          "in_tree",
+          "mpmath"
+        ],
+        "ready_comparison_backends": [
+          "mathematica"
+        ],
+        "missing_primary_backends": [],
+        "missing_comparison_backends": [
+          "polylogtools_ginac"
+        ],
+        "default_ready": false,
+        "oracle_ready": true
+      },
+      {
+        "name": "matrix_sphere_positivity",
+        "production_surface": "PSDReport-producing Fox-H/matrix/sphere helpers",
+        "ci_lane": "default plus oracle",
+        "status": "ready",
+        "reason": "primary oracle route available",
+        "ready_primary_backends": [
+          "in_tree",
+          "arbplusjax"
+        ],
+        "ready_comparison_backends": [
+          "mpmath",
+          "mathematica",
+          "python_flint"
+        ],
+        "missing_primary_backends": [],
+        "missing_comparison_backends": [],
+        "default_ready": true,
+        "oracle_ready": true
+      },
+      {
+        "name": "learned_contour_policy",
+        "production_surface": "future contour-policy experiments",
+        "ci_lane": "benchmark",
+        "status": "inspect",
+        "reason": "comparison route available; primary oracle route missing",
+        "ready_primary_backends": [],
+        "ready_comparison_backends": [
+          "in_tree",
+          "mbconichulls_mathematica"
+        ],
+        "missing_primary_backends": [
+          "neural_contour_artifact"
+        ],
+        "missing_comparison_backends": [],
+        "default_ready": false,
+        "oracle_ready": false
+      }
+    ]
+  }
+}

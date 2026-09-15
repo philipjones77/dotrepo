@@ -1,0 +1,28 @@
+{
+  "repository": "RandomFields77",
+  "commit": "7c44d474f",
+  "status": "passed",
+  "environment": "py313",
+  "runtime": "CPU",
+  "suite": "tests/tests_continuous/test_w02_gpflow_irregular_oracle.py",
+  "passed": 5,
+  "deselected": 1,
+  "deselected_test": "test_gpflow_irregular_oracle_fits_lengthscale_back_to_truth",
+  "deselected_reason": "Bounded installation verification omitted the 200-step optimization test.",
+  "checks": [
+    "Finite GPflow likelihood and 80 training posterior moments",
+    "Requested observation noise variance 0.03 reaches GPflow",
+    "40 held-out predictions with positive standard deviations",
+    "Kappa-to-lengthscale adapter mapping",
+    "Availability invokes the installed GPflow stack",
+    "Unsupported kernel rejected"
+  ],
+  "repository_changes": [
+    "Probe actual GPflow and TensorFlow imports without excluding NumPy 2",
+    "Read observation noise through the current RF77 variance accessor",
+    "Update the existing test fixture to current ObservationSpec noise_params"
+  ],
+  "runner_notes": "Used --noconftest, empty addopts and no cacheprovider; scratch output paths; CPU thread limits. This avoids repository runtime pruning and observability writes.",
+  "duration_seconds": 56.32,
+  "diff_whitespace_check": "passed"
+}

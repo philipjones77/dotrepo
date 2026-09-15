@@ -2,6 +2,11 @@
 
 Machine: **PC-PHILIP-WINDOWS**, Ubuntu 24.04.4 under WSL 2.
 
+This is the earlier 34-oracle installation stage. The subsequent
+[four-repository audit](repo-oracles-2026-09-14.md) extends coverage and brings
+the final inventory to 338 py313 packages, 516 active R packages and 1,559
+Ubuntu packages. Counts below describe this earlier stage.
+
 **All 34 requested oracles are installed and passed functional smoke checks:**
 22 in `py313`, 11 in R, and native ExaGeoStat.
 

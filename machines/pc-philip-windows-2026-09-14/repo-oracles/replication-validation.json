@@ -1,0 +1,47 @@
+{
+  "captured_at": "2026-09-15T02:59:37.987198+00:00",
+  "machine": "PC-PHILIP-WINDOWS",
+  "main_python_resolution": {
+    "tool": "uv pip install --dry-run --reinstall",
+    "ordinary_pins": 333,
+    "editable_sources": 4,
+    "resolved_packages": 337,
+    "returncode": 0,
+    "status": "passed",
+    "local_wrapper": "GS-LVMOGP separately rebuilt and verified by pinned source hashes"
+  },
+  "main_exact_metadata_check": {
+    "packages": 338,
+    "status": "passed"
+  },
+  "candidate_preflight": {
+    "status": "passed",
+    "cases": [
+      "missing argument",
+      "missing uv",
+      "missing editable checkouts",
+      "existing environment",
+      "existing dangling symlink",
+      "isolation from inherited Python settings"
+    ]
+  },
+  "shell_checks": {
+    "status": "passed",
+    "shells": [
+      "Bash",
+      "dash",
+      "Zsh"
+    ],
+    "scope": "source-only oracle defaults, explicit overrides and shell syntax"
+  },
+  "repository_checks": {
+    "validation": "passed",
+    "unit_tests": 24,
+    "unit_tests_status": "passed"
+  },
+  "limits": [
+    "No fresh complete environment was installed by the replay validation.",
+    "Target machines remain to be installed and verified.",
+    "Editable source content must be reconciled separately."
+  ]
+}

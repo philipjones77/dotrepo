@@ -1,0 +1,13 @@
+diff --git a/serial_MRA/src/class_approximation.cpp b/serial_MRA/src/class_approximation.cpp
+index 1c11072..2dd65d5 100644
+--- a/serial_MRA/src/class_approximation.cpp
++++ b/serial_MRA/src/class_approximation.cpp
+@@ -162,7 +162,7 @@ void Approximation::aggregate_w_and_A(vec &w, mat &A, double *tempMemory, const
+     {
+         if(firstChild)
+         {
+-            w = wTilde[jChild].unsafe_col(jLevel);
++            w = wTilde[jChild].col(jLevel);
+             A = ATilde[jChild].slice(indexA);
+             firstChild = false;
+         }

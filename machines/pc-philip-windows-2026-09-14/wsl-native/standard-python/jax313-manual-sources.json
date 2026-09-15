@@ -12,7 +12,7 @@
     "version": "0.2.0",
     "source": "editable/local",
     "repository": "git@github.com:philipjones77/IntegralFunctionsJAX.git",
-    "commit": "a35fef0e344d101507108fe014b3e086637951d1",
+    "commit": "611ac9b595665fb8df204017bf9f0a69185776f8",
     "uncommitted_changes": true
   },
   {
@@ -20,8 +20,8 @@
     "version": "0.0.0",
     "source": "editable/local",
     "repository": "git@github.com:philipjones77/RandomFields77.git",
-    "commit": "d7b3bd26ef387f1dcdf3e585e3df90e4ff566869",
-    "uncommitted_changes": false
+    "commit": "7c44d474f35cf8dfc6bb9d2440e7b2525ad4d48a",
+    "uncommitted_changes": true
   },
   {
     "name": "TopoSMPLJAX",

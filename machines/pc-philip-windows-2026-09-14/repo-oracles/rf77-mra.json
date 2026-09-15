@@ -1,0 +1,42 @@
+{
+  "build": {
+    "upstream": "https://github.com/hhuang90/MRA_For_NCAR_Technical_Note",
+    "commit": "438ef95ea30b68bb3750814faa5b3e5e6a78c64b",
+    "implementation": "serial_MRA",
+    "build": "g++ -std=c++11 -O2, one make job; compatibility header maps MKL calls to OpenBLAS CBLAS and column-major LAPACKE",
+    "source_compatibility_patch": "One assignment uses col() instead of unsafe_col() to restore an owned work-vector copy with modern Armadillo; numerical formulas unchanged",
+    "binary_sha256": "55019a16cd046ebb1fc36bc13ac0dbfe89646edcb36ef58fab0f1af4c4ed25b6",
+    "binary": "~/.local/opt/mra-serial-20260914/bin/MRA",
+    "compatibility_header_sha256": "2967903aa2e7858263693bd9e4332abf5dca5a93de2c5ebe4b10f1b73fe4e08b",
+    "launcher": "~/.local/bin/mra-serial",
+    "source_patch": "wsl/oracle-builds/mra-armadillo-copy.patch",
+    "source_patch_sha256": "2227303d8057dbd08350bcee3d5097c54c8af76e5d3eccc03b3197c4f9eee7d7",
+    "compatibility_header": "wsl/oracle-builds/mra-openblas-mkl.h"
+  },
+  "validation": {
+    "status": "passed",
+    "training_count": 24,
+    "prediction_count": 4,
+    "checks": [
+      {
+        "levels": 2,
+        "knots_per_region": 4,
+        "log_likelihood": -10.2687,
+        "minimum_prediction_variance": 0.08436240519864668
+      },
+      {
+        "levels": 3,
+        "knots_per_region": 4,
+        "log_likelihood": -11.1238,
+        "minimum_prediction_variance": 0.08534819801571747
+      }
+    ]
+  },
+  "dynamic_link_check": "ldd -r passed; no missing libraries or unresolved symbols",
+  "adapter_status": "RF77 protocol mismatch remains; standalone installed executable was invoked from py313",
+  "adapter_mismatches": [
+    "RF77 uses PREDICTION_LOCATION_FILE_NAME; upstream expects PREDICTION_LOCATION_FILE",
+    "RF77 expects separate mean/variance files; upstream emits one count-prefixed x/y/mean/variance file",
+    "RF77 defaults to optimization mode, which does not itself write predictions"
+  ]
+}

@@ -10,3 +10,5 @@ shared/shell/* text eol=lf
 wsl/home/* text eol=lf
 docs/library/vendor/** -text
 docs/library/releases/** -text
+# Preserve upstream context whitespace in recorded source patches.
+wsl/oracle-builds/*.patch -whitespace

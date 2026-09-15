@@ -25,6 +25,9 @@ esac
 if [ -f "$HOME/.config/dotrepo/shell.local.sh" ]; then
   . "$HOME/.config/dotrepo/shell.local.sh"
 fi
+if [ -n "${WSL_DISTRO_NAME:-}" ] && [ -f "$DOTREPO/wsl/repo-oracle-env.sh" ]; then
+  . "$DOTREPO/wsl/repo-oracle-env.sh"
+fi
 case $- in
   *i*)
     # Activation must save the finished machine PATH so deactivate (including

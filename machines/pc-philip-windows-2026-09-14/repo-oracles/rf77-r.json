@@ -1,0 +1,473 @@
+{
+  "hostname": "PC-PHILIP-WINDOWS",
+  "environment": "Ubuntu WSL, ordinary R startup",
+  "status": "passed",
+  "transaction": {
+    "before_count": 498,
+    "expected_after_count": 516,
+    "replaced_packages": [],
+    "added_packages": [
+      {
+        "package": "CVXR",
+        "version": "1.9.2"
+      },
+      {
+        "package": "SpatialExtremes",
+        "version": "2.1-0"
+      },
+      {
+        "package": "autoFRK",
+        "version": "1.4.4"
+      },
+      {
+        "package": "clarabel",
+        "version": "0.11.3"
+      },
+      {
+        "package": "config",
+        "version": "0.3.2"
+      },
+      {
+        "package": "deepspat",
+        "version": "0.3.2"
+      },
+      {
+        "package": "filehash",
+        "version": "2.4-6"
+      },
+      {
+        "package": "filehashSQLite",
+        "version": "0.2-7"
+      },
+      {
+        "package": "filematrix",
+        "version": "1.3"
+      },
+      {
+        "package": "here",
+        "version": "1.0.2"
+      },
+      {
+        "package": "keras",
+        "version": "2.16.1"
+      },
+      {
+        "package": "loggle",
+        "version": "1.0"
+      },
+      {
+        "package": "reticulate",
+        "version": "1.47.0"
+      },
+      {
+        "package": "tensorflow",
+        "version": "2.20.0"
+      },
+      {
+        "package": "tfautograph",
+        "version": "0.3.2"
+      },
+      {
+        "package": "tfprobability",
+        "version": "0.15.2"
+      },
+      {
+        "package": "tfruns",
+        "version": "1.5.4"
+      },
+      {
+        "package": "zeallot",
+        "version": "0.2.0"
+      }
+    ],
+    "rollback": "Remove only these newly added package directories from the user R library; previous 498 package versions were untouched.",
+    "after_count": 516,
+    "status": "installed"
+  },
+  "availability": {
+    "invoked_from": "py313",
+    "packages": [
+      {
+        "package": "LatticeKrig",
+        "loadable": true,
+        "version": "9.4.1"
+      },
+      {
+        "package": "jsonlite",
+        "loadable": true,
+        "version": "2.0.0"
+      },
+      {
+        "package": "KFAS",
+        "loadable": true,
+        "version": "1.6.0"
+      },
+      {
+        "package": "FRK",
+        "loadable": true,
+        "version": "2.3.2"
+      },
+      {
+        "package": "sp",
+        "loadable": true,
+        "version": "2.2.3"
+      },
+      {
+        "package": "INLA",
+        "loadable": true,
+        "version": "25.10.19"
+      },
+      {
+        "package": "inlabru",
+        "loadable": true,
+        "version": "2.15.0"
+      },
+      {
+        "package": "sf",
+        "loadable": true,
+        "version": "1.1.2"
+      },
+      {
+        "package": "fmesher",
+        "loadable": true,
+        "version": "0.8.0"
+      },
+      {
+        "package": "rSPDE",
+        "loadable": true,
+        "version": "2.6.0"
+      },
+      {
+        "package": "spectralGP",
+        "loadable": true,
+        "version": "1.3.4"
+      },
+      {
+        "package": "mgcv",
+        "loadable": true,
+        "version": "1.9.4"
+      },
+      {
+        "package": "gstat",
+        "loadable": true,
+        "version": "2.1.6"
+      },
+      {
+        "package": "INLAspacetime",
+        "loadable": true,
+        "version": "0.1.14"
+      },
+      {
+        "package": "Matrix",
+        "loadable": true,
+        "version": "1.7.6"
+      },
+      {
+        "package": "rags2ridges",
+        "loadable": true,
+        "version": "2.2.9"
+      },
+      {
+        "package": "huge",
+        "loadable": true,
+        "version": "2.0.1"
+      },
+      {
+        "package": "mgm",
+        "loadable": true,
+        "version": "1.2.15"
+      },
+      {
+        "package": "bnlearn",
+        "loadable": true,
+        "version": "5.2.1"
+      },
+      {
+        "package": "SILGGM",
+        "loadable": true,
+        "version": "1.0.0"
+      },
+      {
+        "package": "BDgraph",
+        "loadable": true,
+        "version": "2.74"
+      },
+      {
+        "package": "XMRF",
+        "loadable": true,
+        "version": "1.0"
+      },
+      {
+        "package": "glmnet",
+        "loadable": true,
+        "version": "5.0"
+      },
+      {
+        "package": "jeek",
+        "loadable": true,
+        "version": "1.1.1"
+      },
+      {
+        "package": "flare",
+        "loadable": true,
+        "version": "1.8"
+      },
+      {
+        "package": "fasjem",
+        "loadable": true,
+        "version": "1.2.0"
+      },
+      {
+        "package": "BMGM",
+        "loadable": true,
+        "version": "0.1.1"
+      },
+      {
+        "package": "JGL",
+        "loadable": true,
+        "version": "2.3.2"
+      },
+      {
+        "package": "glasso",
+        "loadable": true,
+        "version": "1.11"
+      },
+      {
+        "package": "ssgraph",
+        "loadable": true,
+        "version": "1.16"
+      },
+      {
+        "package": "BGGM",
+        "loadable": true,
+        "version": "2.1.6"
+      },
+      {
+        "package": "Rcpp",
+        "loadable": true,
+        "version": "1.1.2"
+      },
+      {
+        "package": "BH",
+        "loadable": true,
+        "version": "1.90.0.1"
+      },
+      {
+        "package": "withr",
+        "loadable": true,
+        "version": "3.0.3"
+      },
+      {
+        "package": "CARBayes",
+        "loadable": true,
+        "version": "6.1.1"
+      },
+      {
+        "package": "CARBayesST",
+        "loadable": true,
+        "version": "4.0"
+      },
+      {
+        "package": "stabs",
+        "loadable": true,
+        "version": "0.7.1"
+      },
+      {
+        "package": "ngspatial",
+        "loadable": true,
+        "version": "1.2.2"
+      },
+      {
+        "package": "quadprog",
+        "loadable": true,
+        "version": "1.5.8"
+      },
+      {
+        "package": "MASS",
+        "loadable": true,
+        "version": "7.3.66"
+      },
+      {
+        "package": "gelnet",
+        "loadable": true,
+        "version": "1.2.1"
+      },
+      {
+        "package": "pracma",
+        "loadable": true,
+        "version": "2.4.6"
+      },
+      {
+        "package": "deepspat",
+        "loadable": true,
+        "version": "0.3.2"
+      },
+      {
+        "package": "autoFRK",
+        "loadable": true,
+        "version": "1.4.4"
+      },
+      {
+        "package": "GpGp",
+        "loadable": true,
+        "version": "1.0.0"
+      },
+      {
+        "package": "fields",
+        "loadable": true,
+        "version": "17.3"
+      },
+      {
+        "package": "CVXR",
+        "loadable": true,
+        "version": "1.9.2"
+      },
+      {
+        "package": "loggle",
+        "loadable": true,
+        "version": "1.0"
+      },
+      {
+        "package": "spatialreg",
+        "loadable": true,
+        "version": "1.4.3"
+      },
+      {
+        "package": "spdep",
+        "loadable": true,
+        "version": "1.4.2"
+      },
+      {
+        "package": "spam",
+        "loadable": true,
+        "version": "2.11.4"
+      },
+      {
+        "package": "igraph",
+        "loadable": true,
+        "version": "2.3.3"
+      },
+      {
+        "package": "Rglpk",
+        "loadable": true,
+        "version": "0.6.5.1"
+      },
+      {
+        "package": "rstan",
+        "loadable": true,
+        "version": "2.32.7"
+      },
+      {
+        "package": "RcppArmadillo",
+        "loadable": true,
+        "version": "15.4.2.1"
+      },
+      {
+        "package": "RcppDist",
+        "loadable": true,
+        "version": "0.1.1.1"
+      },
+      {
+        "package": "graph",
+        "loadable": true,
+        "version": "1.90.0"
+      },
+      {
+        "package": "RBGL",
+        "loadable": true,
+        "version": "1.88.0"
+      },
+      {
+        "package": "camel",
+        "loadable": true,
+        "version": "0.2.0"
+      }
+    ]
+  },
+  "functional_checks": {
+    "CVXR": {
+      "package": "CVXR",
+      "version": "1.9.2",
+      "status": "passed",
+      "metrics": {
+        "probe": "Two-variable constrained convex quadratic; analytic solution (1,0)",
+        "solution": [
+          1,
+          6.227e-10
+        ]
+      }
+    },
+    "autoFRK": {
+      "package": "autoFRK",
+      "version": "1.4.4",
+      "status": "passed",
+      "metrics": {
+        "probe": "50-point spatial rank selection using RF77 reference harness data",
+        "basis_shape": [
+          50,
+          47
+        ]
+      }
+    },
+    "loggle": {
+      "package": "loggle",
+      "version": "1.0",
+      "status": "passed",
+      "metrics": {
+        "probe": "Three-variable, 40-timepoint local graphical lasso; likelihood, pseudo and space modes with model refitting; 3 SPD precision estimates per mode",
+        "checks": [
+          {
+            "mode": "likelihood",
+            "minimum_eigenvalues": [
+              0.7375,
+              0.748,
+              1.1209
+            ]
+          },
+          {
+            "mode": "pseudo",
+            "minimum_eigenvalues": [
+              0.7375,
+              0.7734,
+              1.1209
+            ]
+          },
+          {
+            "mode": "space",
+            "minimum_eigenvalues": [
+              0.7375,
+              0.7734,
+              1.1209
+            ]
+          }
+        ]
+      }
+    },
+    "deepspat": {
+      "package": "deepspat",
+      "version": "0.3.2",
+      "status": "passed",
+      "probe": "12-point nonstationary GP; two 4-basis axial-warp layers; 1 step per optimization phase",
+      "cost": 7,
+      "warped_shape": [
+        12,
+        2
+      ],
+      "tensorflow": "2.21.0",
+      "python": "py313",
+      "library": "active"
+    }
+  },
+  "portable_checker": {
+    "script": "scripts/check-rf77-r-oracles.R",
+    "all_four_packages_passed": true
+  },
+  "loggle_source": {
+    "url": "https://github.com/jlyang1990/loggle",
+    "commit": "bf3cf9052f1fb762ac07f1ffd899f5ed7137cf55",
+    "version": "1.0",
+    "compatibility_patch": "wsl/oracle-builds/loggle-r46.patch",
+    "patch_sha256": "fd0c87a3bdb731951d8c398acc874f93d20f6fcb70ec51eca7e0abd6276fd766",
+    "change": "Append R FCONE arguments to eight BLAS/LAPACK calls; numerical formulas unchanged"
+  }
+}

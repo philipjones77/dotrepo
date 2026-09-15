@@ -1,0 +1,69 @@
+{
+  "project": "data77",
+  "commit": "6e96b3616a25f3605308ff25ab6baeb63b56a7f6",
+  "pushed": true,
+  "environment": "py313",
+  "import_fixes": {
+    "future_import_order": 7,
+    "os_initialization_order": 1,
+    "status": "all seven oracle modules import",
+    "rerun": "fit_gpytorch_comparison was rerun successfully after fixing its dependency os initialization order"
+  },
+  "checks": [
+    {
+      "name": "GPyTorch exact fit",
+      "status": "passed",
+      "details": {
+        "nll": 24.533778422547158,
+        "n_iters": 3,
+        "n_obs": 24,
+        "rmse_gp_in_sample": 0.21191851690993632
+      }
+    },
+    {
+      "name": "GPBoost Vecchia fit",
+      "status": "passed",
+      "details": {
+        "nll": 10.880422461243391,
+        "n_iters": 3,
+        "n_obs": 24,
+        "rmse_gp_in_sample": 0.18426011513124282
+      }
+    },
+    {
+      "name": "Pyro variational fit",
+      "status": "passed",
+      "details": {
+        "optimization_steps": 3,
+        "finite_posterior_draws": true,
+        "losses": [
+          46.35100600324252,
+          43.75492941239369,
+          40.00029265116137
+        ]
+      }
+    },
+    {
+      "name": "scikit-learn held-out prediction",
+      "status": "passed",
+      "details": {
+        "tier": "sklearn_oracle",
+        "n_train": 24,
+        "n_test": 6,
+        "fit_s": 0.27,
+        "predict_s": 0.0,
+        "nll": -3.4930774236720517,
+        "kernel": "0.21**2 * Matern(length_scale=0.0258, nu=1.5) + WhiteKernel(noise_level=1.45e-06)",
+        "rmse": 0.4136155641773492,
+        "crps": 0.26241502761821434,
+        "log_score": 1.3321206066095426,
+        "coverage_90": 0.5
+      }
+    }
+  ],
+  "other_checks": [
+    "Ruff F404 passed for seven oracle modules",
+    "git diff --check passed"
+  ],
+  "data": "synthetic small inputs only; production datasets and licensed assets excluded"
+}

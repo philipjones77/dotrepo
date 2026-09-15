@@ -1,0 +1,54 @@
+{
+  "hostname": "PC-PHILIP-WINDOWS",
+  "platform": "Ubuntu WSL",
+  "version": "0.10.1",
+  "artifact": "~/.local/share/gephi/gephi-toolkit-0.10.1-all.jar",
+  "project_symlink": "~/projects/TopoSmplJAX/vendor/gephi/gephi-toolkit-0.10.1-all.jar",
+  "sha256": "3e4f5fd6c7d1d75c1e0bfbeae42cc58a1d22ae7c5d793a498e6c5842f22bf027",
+  "known_limit": "PDF/SVG/GEXF export works; .gephi project save is the existing expected-failure contract.",
+  "status": "installed",
+  "url": "https://repo.maven.apache.org/maven2/org/gephi/gephi-toolkit/0.10.1/gephi-toolkit-0.10.1-all.jar",
+  "published_sha1_verified": true,
+  "file": "~/.local/share/gephi/gephi-toolkit-0.10.1-all.jar",
+  "repo_link": "~/projects/TopoSmplJAX/vendor/gephi/gephi-toolkit-0.10.1-all.jar",
+  "source_files_changed": false,
+  "native_packages": {
+    "openjdk-21-jdk-headless": "21.0.12+8-1~24.04",
+    "topcom": "1.1.2+ds-1.1build2",
+    "libginac-dev": "1.8.7-1build2",
+    "ginac-tools": "1.8.7-1build2"
+  },
+  "native_transaction": {
+    "new_packages": 13,
+    "upgraded": 0,
+    "removed": 0,
+    "added_package_names": [
+      "doc-base",
+      "ginac-tools",
+      "libcdd0t64",
+      "libcln-dev",
+      "libcln6",
+      "libginac-dev",
+      "libginac11",
+      "libqsopt-ex2t64",
+      "libtopcom0t64",
+      "libuuid-perl",
+      "openjdk-21-jdk-headless",
+      "topcom",
+      "topcom-examples"
+    ]
+  },
+  "checks": {
+    "passed": 5,
+    "skipped_or_xfailed": [],
+    "failed": [],
+    "test_names": [
+      "test_gephi_sees_the_graph_we_sent",
+      "test_the_layout_ran",
+      "test_it_exports_pdf_svg_and_gexf",
+      "test_the_exported_gexf_carries_the_layout_gephi_computed",
+      "test_saving_a_gephi_project_does_not_work_and_is_reported_as_such"
+    ]
+  },
+  "recipe": "docs/repo-oracles-topo-2026-09-14.md"
+}

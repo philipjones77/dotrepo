@@ -1,0 +1,41 @@
+{
+  "source": {
+    "upstream": "https://github.com/XiaoyuJiang17/GS-LVMOGP",
+    "commit": "541d49aaf0191a705441109371e5650c5a1c88c3",
+    "distribution": "gs-lvmogp-oracle",
+    "version": "0.0.0+541d49aaf019",
+    "packaging": "Local wheel; scientific modules unchanged",
+    "source_sha256": {
+      "LVMOGP.py": "ae090cd5f114f2adafd11c6848debeba99fbd21ece6756d16615e3c2d2df1875",
+      "IndepMOGP.py": "e6f754a2de5e9ee18cc58b0afa9020af66f6335c5b90b9b7735a0ce539c1535a",
+      "LICENSE": "2ec2c41369b4d6de07351b569302c24722892830fd041de7e8fd840ade22af82",
+      "README.md": "f3a2ae35b2f0b8c3013c90642a8369811b61de423bde53c946057bd1661c054b"
+    },
+    "wheel_sha256": "7a4223b8d0f7f57c4d96d02e701d6292d4f61276085fadb9bfac874a3b1b4d63",
+    "wheel": "~/.local/state/dotrepo/rf77-oracles-20260914/wheels/gs_lvmogp_oracle-0.0.0+541d49aaf019-py3-none-any.whl"
+  },
+  "validation": {
+    "status": "passed",
+    "distribution": "0.0.0+541d49aaf019",
+    "torch": "2.14.0",
+    "gpytorch": "1.15.2",
+    "probe": "Existing RF77 sparse GS-LVMOGP adapter: 8 rows, 2 outputs, 1 training epoch, 2 held-out locations",
+    "elbo": -22.066455970668986,
+    "training_shape": [
+      8,
+      2
+    ],
+    "prediction_shape": [
+      2,
+      2
+    ],
+    "runtime_s": 14.424720871999966,
+    "environment": "main py313"
+  },
+  "rebuild": {
+    "helper": "scripts/build-gs-lvmogp-wheel.py",
+    "tested": true,
+    "wheel_member_sha256_matches": true,
+    "note": "The source receipt wheel hash identifies the originally installed archive; rebuilt wheel metadata timestamps may differ."
+  }
+}

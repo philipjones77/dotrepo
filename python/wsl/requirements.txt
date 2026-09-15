@@ -1,3 +1,3 @@
-# Tested ordinary packages for the default non-Conda WSL py313 environment.
-# Local editable projects and FFTLog are handled by create-venv.sh.
--r ../../machines/source-2026-09-07/wsl-native/standard-python/py313-requirements.txt
+# Recorded ordinary packages, including the exact JAX/CUDA/NVIDIA stack.
+# Four editable projects and GS-LVMOGP are handled by create-venv.sh.
+-r ../../machines/pc-philip-windows-2026-09-14/wsl-native/standard-python/py313-requirements.txt

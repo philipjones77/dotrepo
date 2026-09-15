@@ -1,0 +1,177 @@
+{
+  "captured_at": "2026-09-15T01:52:28.629713+00:00",
+  "platform": "wsl",
+  "machine": "PC-PHILIP-WINDOWS",
+  "distribution": "Ubuntu",
+  "counts": {
+    "apt_manual": 100,
+    "apt_installed": 1546,
+    "conda": [],
+    "venv": [
+      {
+        "name": "gpflow312",
+        "python": "3.12.3",
+        "packages": 52,
+        "index_requirements": 52,
+        "manual_sources": 0,
+        "metadata_records": 52,
+        "duplicate_discoveries": [],
+        "pip_installed": true,
+        "dependency_check": {
+          "tool": "pip check",
+          "exit_code": 0,
+          "status": "passed",
+          "raw_diagnostics_exported": false
+        }
+      },
+      {
+        "name": "py313",
+        "python": "3.13.15",
+        "packages": 325,
+        "index_requirements": 321,
+        "manual_sources": 4,
+        "metadata_records": 328,
+        "duplicate_discoveries": [
+          {
+            "name": "arbplusjax",
+            "selected_version": "2.2.0",
+            "duplicate_version": "2.2.0",
+            "versions_agree": true
+          },
+          {
+            "name": "integralfunctionsjax",
+            "selected_version": "0.2.0",
+            "duplicate_version": "0.2.0",
+            "versions_agree": true
+          },
+          {
+            "name": "toposmpljax",
+            "selected_version": "2.0.0",
+            "duplicate_version": "2.0.0",
+            "versions_agree": true
+          }
+        ],
+        "pip_installed": true,
+        "dependency_check": {
+          "tool": "pip check",
+          "exit_code": 0,
+          "status": "passed",
+          "raw_diagnostics_exported": false
+        }
+      },
+      {
+        "name": "jax313",
+        "python": "3.13.15",
+        "packages": 104,
+        "index_requirements": 100,
+        "manual_sources": 4,
+        "metadata_records": 107,
+        "duplicate_discoveries": [
+          {
+            "name": "arbplusjax",
+            "selected_version": "2.2.0",
+            "duplicate_version": "2.2.0",
+            "versions_agree": true
+          },
+          {
+            "name": "integralfunctionsjax",
+            "selected_version": "0.2.0",
+            "duplicate_version": "0.2.0",
+            "versions_agree": true
+          },
+          {
+            "name": "toposmpljax",
+            "selected_version": "2.0.0",
+            "duplicate_version": "2.0.0",
+            "versions_agree": true
+          }
+        ],
+        "pip_installed": false,
+        "dependency_check": {
+          "tool": "uv pip check --python",
+          "exit_code": 0,
+          "status": "passed",
+          "raw_diagnostics_exported": false
+        },
+        "oracle_package_coverage": {
+          "status": "incomplete",
+          "missing_packages": [
+            "python-flint",
+            "diffrax"
+          ],
+          "scope": "Presence of python-flint and diffrax is tracked separately from declared dependency consistency; this does not certify functional oracle coverage."
+        }
+      },
+      {
+        "name": "jax314",
+        "python": "3.14.7",
+        "packages": 104,
+        "index_requirements": 100,
+        "manual_sources": 4,
+        "metadata_records": 107,
+        "duplicate_discoveries": [
+          {
+            "name": "arbplusjax",
+            "selected_version": "2.2.0",
+            "duplicate_version": "2.2.0",
+            "versions_agree": true
+          },
+          {
+            "name": "integralfunctionsjax",
+            "selected_version": "0.2.0",
+            "duplicate_version": "0.2.0",
+            "versions_agree": true
+          },
+          {
+            "name": "toposmpljax",
+            "selected_version": "2.0.0",
+            "duplicate_version": "2.0.0",
+            "versions_agree": true
+          }
+        ],
+        "pip_installed": false,
+        "dependency_check": {
+          "tool": "uv pip check --python",
+          "exit_code": 0,
+          "status": "passed",
+          "raw_diagnostics_exported": false
+        },
+        "oracle_package_coverage": {
+          "status": "incomplete",
+          "missing_packages": [
+            "python-flint",
+            "diffrax"
+          ],
+          "scope": "Presence of python-flint and diffrax is tracked separately from declared dependency consistency; this does not certify functional oracle coverage."
+        }
+      }
+    ],
+    "r_packages": 72,
+    "r_active_packages": 498,
+    "vscode_extensions": 35,
+    "apt_holds": 0
+  },
+  "coverage": "Installed APT packages, APT manual selections and holds, R packages from both vanilla and ordinary startup, VS Code Server extensions, standard Conda installations, and explicit active Python environments gpflow312, py313, jax313, jax314. Backup environments ending in .old and project-local environments are excluded.",
+  "r_capture": {
+    "r-packages.tsv": "Rscript --vanilla inventory; startup-defined user libraries may be absent.",
+    "r-active-packages.tsv": {
+      "captured_at": "2026-09-15T01:52:28.614869+00:00",
+      "packages": 498,
+      "metadata_records": 799,
+      "startup": "Ordinary Rscript startup from a fresh interactive Bash shell with Drive automount disabled",
+      "columns": [
+        "Package",
+        "Version",
+        "Priority"
+      ],
+      "duplicates": "First package discovered in the active library search order is retained"
+    }
+  },
+  "python_capture": "importlib.metadata from each active interpreter; canonical-name deduplication keeps the first discovered version and records duplicate discoveries. Requirements contain exact index pins and exclude direct-source packages; manual source manifests retain only approved GitHub identities and Git state.",
+  "limitations": [
+    "An installed-package snapshot does not identify available updates or configure APT repositories.",
+    "Dependency checks report metadata consistency and do not execute package functionality.",
+    "jax313 and jax314 have fewer observed packages than the earlier snapshot. Their dependency checks do not establish oracle readiness; missing python-flint and diffrax packages leave functional gaps. The comparison is not an uninstall or restore plan.",
+    "Dirty source checkouts cannot be reproduced from the recorded commit alone."
+  ]
+}

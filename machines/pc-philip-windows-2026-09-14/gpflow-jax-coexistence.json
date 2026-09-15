@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "JAX GPU float64 solve/gradient, GPflow CPU GPR in the same process, then another JAX GPU solve",
+  "versions": {
+    "jax": "0.11.1",
+    "jaxlib": "0.11.1",
+    "flax": "0.12.9",
+    "gpflow": "2.9.2",
+    "tensorflow": "2.21.0",
+    "numpy": "2.5.3",
+    "setuptools": "80.9.0"
+  }
+}

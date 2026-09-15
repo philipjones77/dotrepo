@@ -1,5 +1,12 @@
 # Agent Instructions
 
+## Current Cross-Machine Handoff
+
+For Python, numerical oracle packages, and WSL replication, read
+[the September 14 handoff](docs/ai/sessions/2026-09-14-python-oracle-wsl-handoff.md)
+first. It records the current PC-PHILIP-WINDOWS inventory and the work requested
+on the other machine. Verify the hostname and preserve machine-local changes.
+
 ## Shared Writing and Reference Assets
 
 Before drafting or reviewing research prose, read

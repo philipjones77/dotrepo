@@ -1,0 +1,66 @@
+{
+  "started_at": "2026-09-15T01:40:03.610868+00:00",
+  "python": "3.13.15",
+  "scope": "CPU smoke checks only; no GPU or full project regression validation.",
+  "checks": {
+    "imports": {
+      "passed": true
+    },
+    "gpr": {
+      "passed": true,
+      "loss_before": 9.079885014916615,
+      "loss_after": -23.245898782550903,
+      "optimizer_success": true,
+      "iterations": 35,
+      "predictions": {
+        "shape": [
+          12,
+          1
+        ],
+        "minimum_variance": 5.452117284310276e-07
+      }
+    },
+    "svgp_adam": {
+      "passed": true,
+      "compiled_training": true,
+      "steps": 20,
+      "loss_before": 36.88016464766258,
+      "loss_after": 11.341047843442306,
+      "predictions": {
+        "shape": [
+          12,
+          1
+        ],
+        "minimum_variance": 0.026234978031412656
+      }
+    },
+    "natural_gradient": {
+      "passed": true,
+      "steps": 1,
+      "loss_before": 36.88016464766258,
+      "loss_after": 15.9337973414589,
+      "predictions": {
+        "shape": [
+          12,
+          1
+        ],
+        "minimum_variance": 0.21588151940236935
+      }
+    }
+  },
+  "passed": true,
+  "versions": {
+    "gpflow": "2.9.2",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "tensorflow": "2.21.0",
+    "tensorflow-probability": "0.25.0",
+    "tf-keras": "2.21.0",
+    "setuptools": "80.9.0"
+  },
+  "visible_gpus": [],
+  "finished_at": "2026-09-15T01:40:17.291956+00:00",
+  "machine": "PC-PHILIP-WINDOWS",
+  "platform": "wsl",
+  "environment": "py313"
+}

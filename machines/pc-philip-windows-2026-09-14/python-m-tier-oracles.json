@@ -1,0 +1,657 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-09-15T01:52:15.263021+00:00",
+  "local_date": "2026-09-14",
+  "local_date_timezone": "America/Chicago",
+  "checklist": "config/m-tier-oracles.json",
+  "citation_identity_note": "Paper and software keys are copied from the supplied checklist; this audit does not verify bibliography metadata.",
+  "environment": {
+    "name": "py313",
+    "platform": "Ubuntu WSL",
+    "python": "3.13.15",
+    "before_packages": 283,
+    "after_packages": 325
+  },
+  "coverage": {
+    "requested": 22,
+    "already_present": 11,
+    "installed_requested": 11,
+    "functional_checks_passed": 22,
+    "missing": []
+  },
+  "installation": {
+    "manager": "uv pip",
+    "source": "PyPI",
+    "added": {
+      "algebra": "1.2.1",
+      "backends-matrix": "1.3.0",
+      "botorch": "0.18.1",
+      "celerite2": "0.3.3",
+      "dask": "2026.8.0",
+      "emcee": "3.1.6",
+      "emukit": "0.5.1",
+      "fdm": "0.5.0",
+      "george": "0.4.4",
+      "gpjax": "0.13.6",
+      "gstools": "1.7.0",
+      "gstools-cython": "1.2.0",
+      "hankel": "1.2.2",
+      "imageio": "2.37.4",
+      "jenn": "2.1.0",
+      "jsonpointer": "3.1.1",
+      "jsonschema": "4.26.0",
+      "jsonschema-specifications": "2025.9.1",
+      "locket": "1.0.0",
+      "meshio": "5.3.5",
+      "mlkernels": "0.4.0",
+      "mypy-extensions": "1.1.0",
+      "ninja": "1.13.2",
+      "orjson": "3.12.0",
+      "partd": "1.4.2",
+      "pooch": "1.9.0",
+      "pydoe": "1.5.0",
+      "pyevtk": "1.7.0",
+      "pykrige": "1.7.3",
+      "pyre-extensions": "0.0.32",
+      "python-slugify": "9.0.0",
+      "referencing": "0.37.0",
+      "rpds-py": "2026.6.3",
+      "scikit-gstat": "1.0.23",
+      "smt": "2.15.0",
+      "stheno": "1.4.2",
+      "text-unidecode": "1.3",
+      "toolz": "1.1.0",
+      "typing-inspect": "0.9.0",
+      "varz": "0.8.1",
+      "verde": "1.9.0",
+      "wbml": "0.4.2"
+    },
+    "changed": {
+      "flax": {
+        "before": "0.12.8",
+        "after": "0.12.9"
+      }
+    },
+    "removed": [],
+    "all_other_preexisting_versions_preserved": true,
+    "before_versions_checked_immediately_before_promotion": true,
+    "staged_overlay_validation": true,
+    "isolated_source_builds": [
+      {
+        "name": "algebra",
+        "version": "1.2.1",
+        "build_constraint": "setuptools==80.9.0",
+        "reason": "The published release has no usable wheel; its source distribution built successfully."
+      }
+    ],
+    "rollback": {
+      "before_inventory_retained_locally": true,
+      "original_flax_payload_retained_locally": true,
+      "original_flax_files_hashed": 209,
+      "original_flax_archive_sha256": "dc7e7af17a8fd3b68a56714d92fe7e5faae83bf90e03836408101636c47ecc9f"
+    }
+  },
+  "compatibility": {
+    "gpjax": "0.13.6",
+    "flax": "0.12.9",
+    "jax": "0.11.1",
+    "jaxlib": "0.11.1",
+    "gpflow": "2.9.2",
+    "setuptools": "80.9.0",
+    "tensorflow": "2.21.0",
+    "tensorflow-probability": "0.25.0",
+    "tf-keras": "2.21.0",
+    "explanation": "GPJax 0.13.6 initially failed because preexisting Flax 0.12.8 referenced jax.experimental.hijax.MutableHiType, absent in JAX 0.11.1. Upgrading only Flax to 0.12.9 resolved this; its published requirement is JAX >=0.11.1. GPJax 0.18.0 requires JAX <0.11, so the compatible 0.13.6 release was selected. No package dependency metadata was overridden or modified.",
+    "sources": [
+      "https://pypi.org/pypi/gpjax/0.13.6/json",
+      "https://pypi.org/pypi/gpjax/0.18.0/json",
+      "https://pypi.org/pypi/flax/0.12.9/json"
+    ]
+  },
+  "validation": {
+    "script": "check-m-tier-python.py",
+    "execution": "Each package probe ran in a fresh interpreter selected from active py313, with no staged overlay, using at most two concurrent processes.",
+    "device": "CPU",
+    "maximum_training_rows_per_probe": 12,
+    "thread_environment": {
+      "CUDA_VISIBLE_DEVICES": "-1",
+      "JAX_PLATFORMS": "cpu",
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "TF_NUM_INTRAOP_THREADS": "1",
+      "TF_NUM_INTEROP_THREADS": "1"
+    },
+    "pip_check": {
+      "passed": true,
+      "stdout": "No broken requirements found.",
+      "phase": "After active installation"
+    },
+    "flax_linen_and_nnx": {
+      "passed": true,
+      "flax": "0.12.9",
+      "jax": "0.11.1",
+      "device": "CPU",
+      "linen_loss": 1.6448369533731908,
+      "nnx_loss": 2.2280068565628754,
+      "scope": "Two-input dense-layer values and parameter gradients through Flax Linen and NNX"
+    },
+    "gpflow_full_staged_recheck": {
+      "passed": true,
+      "versions": {
+        "gpflow": "2.9.2",
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "tensorflow": "2.21.0",
+        "tensorflow-probability": "0.25.0",
+        "tf-keras": "2.21.0",
+        "setuptools": "80.9.0"
+      },
+      "checks": {
+        "imports": {
+          "passed": true
+        },
+        "gpr": {
+          "passed": true,
+          "loss_before": 9.079885014916615,
+          "loss_after": -23.245898782550903,
+          "optimizer_success": true,
+          "iterations": 35,
+          "predictions": {
+            "shape": [
+              12,
+              1
+            ],
+            "minimum_variance": 5.452117284310276e-07
+          }
+        },
+        "svgp_adam": {
+          "passed": true,
+          "compiled_training": true,
+          "steps": 20,
+          "loss_before": 36.88016464766258,
+          "loss_after": 11.341047843442306,
+          "predictions": {
+            "shape": [
+              12,
+              1
+            ],
+            "minimum_variance": 0.026234978031412656
+          }
+        },
+        "natural_gradient": {
+          "passed": true,
+          "steps": 1,
+          "loss_before": 36.88016464766258,
+          "loss_after": 15.9337973414589,
+          "predictions": {
+            "shape": [
+              12,
+              1
+            ],
+            "minimum_variance": 0.21588151940236935
+          }
+        }
+      },
+      "scope": "Full small GPflow GPR optimization, SVGP Adam and natural-gradient checks rerun with the final staged package set before promotion; active GPflow also passed the final package probe."
+    },
+    "limits": [
+      "Small functional smoke checks establish import and selected runtime functionality, not complete library compatibility or full application regressions.",
+      "No GPU workloads, production-scale workloads, cross-library accuracy benchmark, or sampler convergence assessment was performed in this audit.",
+      "Prediction variance checks allow roundoff down to -1e-8; PyKrige returned a minimum around -4.3e-15 at observed locations."
+    ]
+  },
+  "results": [
+    {
+      "name": "scikit-learn",
+      "install_name": "scikit-learn",
+      "paper_key": "Pedregosa2011",
+      "software_key": "Pedregosa2011_software",
+      "version": "1.9.0",
+      "change": "already_present_at_start_of_this_audit",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:50:32.098267+00:00",
+        "passed": true,
+        "details": {
+          "operation": "12-point Gaussian-process regression fit and prediction",
+          "prediction_count": 12,
+          "minimum_variance": 0.0033081619483998903
+        },
+        "finished_at": "2026-09-15T01:50:33.977692+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "gpytorch",
+      "install_name": "gpytorch",
+      "paper_key": "Gardner2018",
+      "software_key": "Gardner2018_GPyTorch_software",
+      "version": "1.15.2",
+      "change": "already_present_at_start_of_this_audit",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:50:32.097552+00:00",
+        "passed": true,
+        "details": {
+          "operation": "Exact GP marginal likelihood, gradients, and posterior prediction",
+          "loss": 1.0860292061267083,
+          "prediction_count": 12,
+          "minimum_variance": 0.7607249267777798
+        },
+        "finished_at": "2026-09-15T01:50:37.254738+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "linear_operator",
+      "install_name": "linear_operator",
+      "paper_key": "linearoperator2026",
+      "software_key": "linearoperator2026_software",
+      "version": "0.6.1",
+      "change": "already_present_at_start_of_this_audit",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:50:34.507823+00:00",
+        "passed": true,
+        "details": {
+          "operation": "2-by-2 positive-definite linear operator solve",
+          "solution": [
+            0.09090909090909091,
+            0.6363636363636364
+          ]
+        },
+        "finished_at": "2026-09-15T01:50:36.466513+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "gpboost",
+      "install_name": "gpboost",
+      "paper_key": "Sigrist2022b",
+      "software_key": "Sigrist2022_software",
+      "version": "1.7.4",
+      "change": "already_present_at_start_of_this_audit",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:50:37.111951+00:00",
+        "passed": true,
+        "details": {
+          "operation": "12-point native GP covariance fit and posterior prediction",
+          "prediction_count": 12,
+          "minimum_variance": 8.055780654461461e-08
+        },
+        "finished_at": "2026-09-15T01:50:39.138478+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "pymc",
+      "install_name": "pymc",
+      "paper_key": "pymc2026",
+      "software_key": "pymc2026_software",
+      "version": "6.3.1",
+      "change": "already_present_at_start_of_this_audit",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:50:38.207067+00:00",
+        "passed": true,
+        "details": {
+          "operation": "Compile and evaluate 12-point GP marginal log likelihood",
+          "log_probability": 3.0031573955322806
+        },
+        "finished_at": "2026-09-15T01:50:41.175872+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "numpyro",
+      "install_name": "numpyro",
+      "paper_key": "Phan2019",
+      "software_key": "Phan2019_software",
+      "version": "0.21.0",
+      "change": "already_present_at_start_of_this_audit",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:50:39.773813+00:00",
+        "passed": true,
+        "details": {
+          "operation": "12-point GP model joint log density and amplitude gradient",
+          "log_probability": 2.0845422167874363,
+          "gradient": -1.3009599206281557
+        },
+        "finished_at": "2026-09-15T01:50:43.799080+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "blackjax",
+      "install_name": "blackjax",
+      "paper_key": "blackjax2026",
+      "software_key": "blackjax2026_software",
+      "version": "1.6.2",
+      "change": "already_present_at_start_of_this_audit",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:50:41.950492+00:00",
+        "passed": true,
+        "details": {
+          "operation": "Three CPU HMC transitions for a two-dimensional Gaussian",
+          "final_position": [
+            0.2845111874862646,
+            -0.13606237702428955
+          ],
+          "convergence_assessed": false
+        },
+        "finished_at": "2026-09-15T01:50:45.258164+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "pyro-ppl",
+      "install_name": "pyro-ppl",
+      "paper_key": "pyro2026",
+      "software_key": "pyro2026_software",
+      "version": "1.9.1",
+      "change": "already_present_at_start_of_this_audit",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:50:44.361408+00:00",
+        "passed": true,
+        "details": {
+          "operation": "12-point Pyro GP regression posterior",
+          "prediction_count": 12,
+          "minimum_variance": 0.011166430394741522
+        },
+        "finished_at": "2026-09-15T01:50:46.472534+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "gpflow",
+      "install_name": "gpflow",
+      "paper_key": "Matthews2017",
+      "software_key": "Wilk2020_software",
+      "version": "2.9.2",
+      "change": "already_present_at_start_of_this_audit",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:50:45.778411+00:00",
+        "passed": true,
+        "details": {
+          "operation": "12-point GP marginal likelihood, gradients, and posterior prediction",
+          "loss": 11.490631109956617,
+          "prediction_count": 12,
+          "minimum_variance": 0.01116633655186472
+        },
+        "finished_at": "2026-09-15T01:51:06.123799+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "gpjax",
+      "install_name": "gpjax",
+      "paper_key": "Pinder2022",
+      "software_key": "Pinder2022_GPJax_software",
+      "version": "0.13.6",
+      "change": "installed",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:50:47.173053+00:00",
+        "passed": true,
+        "details": {
+          "operation": "12-point GPJax marginal likelihood and conditioned posterior",
+          "log_probability": -14.709021553338449,
+          "prediction_count": 12,
+          "minimum_variance": 0.08555495089314555
+        },
+        "finished_at": "2026-09-15T01:50:52.060208+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "stheno",
+      "install_name": "stheno",
+      "paper_key": "stheno2024",
+      "software_key": "stheno2024_software",
+      "version": "1.4.2",
+      "change": "installed",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:50:52.770015+00:00",
+        "passed": true,
+        "details": {
+          "operation": "12-point Stheno conditioning and credible bounds",
+          "prediction_count": 12
+        },
+        "finished_at": "2026-09-15T01:50:54.023922+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "tinygp",
+      "install_name": "tinygp",
+      "paper_key": "tinygp2026",
+      "software_key": "tinygp2026_software",
+      "version": "0.3.1",
+      "change": "already_present_at_start_of_this_audit",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:50:54.529728+00:00",
+        "passed": true,
+        "details": {
+          "operation": "12-point tinygp conditioning and log probability",
+          "log_probability": 3.003480749992096,
+          "prediction_count": 12,
+          "minimum_variance": 0.003308176849561084
+        },
+        "finished_at": "2026-09-15T01:50:59.447501+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "GPy",
+      "install_name": "GPy",
+      "paper_key": "Sheffieldmlnd",
+      "software_key": "gpy_software",
+      "version": "1.14.2",
+      "change": "already_present_at_start_of_this_audit",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:51:00.086622+00:00",
+        "passed": true,
+        "details": {
+          "operation": "12-point GPy GP regression posterior",
+          "prediction_count": 12,
+          "minimum_variance": 0.11116633749029384
+        },
+        "finished_at": "2026-09-15T01:51:01.857403+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "celerite2",
+      "install_name": "celerite2",
+      "paper_key": "celerite22026",
+      "software_key": "celerite22026_software",
+      "version": "0.3.3",
+      "change": "installed",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:51:02.342906+00:00",
+        "passed": true,
+        "details": {
+          "operation": "12-point semiseparable GP likelihood and posterior",
+          "log_probability": -4.772522887585271,
+          "prediction_count": 12,
+          "minimum_variance": 0.008961891620100304
+        },
+        "finished_at": "2026-09-15T01:51:02.402581+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "george",
+      "install_name": "george",
+      "paper_key": "george2026",
+      "software_key": "george2026_software",
+      "version": "0.4.4",
+      "change": "installed",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:51:02.656837+00:00",
+        "passed": true,
+        "details": {
+          "operation": "12-point george GP likelihood and posterior",
+          "log_probability": -18.374686108920713,
+          "prediction_count": 12,
+          "minimum_variance": 0.0021300299475841555
+        },
+        "finished_at": "2026-09-15T01:51:03.051524+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "PyKrige",
+      "install_name": "PyKrige",
+      "paper_key": "pykrige2025",
+      "software_key": "pykrige2025_software",
+      "version": "1.7.3",
+      "change": "installed",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:51:03.318302+00:00",
+        "passed": true,
+        "details": {
+          "operation": "Two-dimensional ordinary kriging at three locations",
+          "prediction_count": 3,
+          "minimum_variance": -4.281097704816841e-15
+        },
+        "finished_at": "2026-09-15T01:51:04.632218+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "scikit-gstat",
+      "install_name": "scikit-gstat",
+      "paper_key": "scikitgstat2026",
+      "software_key": "scikitgstat2026_software",
+      "version": "1.0.23",
+      "change": "installed",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:51:04.909221+00:00",
+        "passed": true,
+        "details": {
+          "operation": "Fit and evaluate empirical exponential variogram",
+          "parameters": [
+            2.1445487347225027,
+            0.9743685204622934,
+            0.0
+          ]
+        },
+        "finished_at": "2026-09-15T01:51:07.819782+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "gstools",
+      "install_name": "gstools",
+      "paper_key": "Muller2024",
+      "software_key": "Muller2022_GSTools_software",
+      "version": "1.7.0",
+      "change": "installed",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:51:07.929203+00:00",
+        "passed": true,
+        "details": {
+          "operation": "Two-dimensional simple kriging at three locations",
+          "prediction_count": 3,
+          "minimum_variance": 0.0
+        },
+        "finished_at": "2026-09-15T01:51:09.043143+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "verde",
+      "install_name": "verde",
+      "paper_key": "verde2026",
+      "software_key": "verde2026_software",
+      "version": "1.9.0",
+      "change": "installed",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:51:08.455363+00:00",
+        "passed": true,
+        "details": {
+          "operation": "Damped two-dimensional spline fit and prediction",
+          "prediction_count": 3
+        },
+        "finished_at": "2026-09-15T01:51:11.388897+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "botorch",
+      "install_name": "botorch",
+      "paper_key": "botorch2026",
+      "software_key": "botorch2026_software",
+      "version": "0.18.1",
+      "change": "installed",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:51:09.343293+00:00",
+        "passed": true,
+        "details": {
+          "operation": "12-point BoTorch SingleTaskGP conditioned posterior",
+          "prediction_count": 12,
+          "minimum_variance": 0.0018449046138619613
+        },
+        "finished_at": "2026-09-15T01:51:11.843063+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "emukit",
+      "install_name": "emukit",
+      "paper_key": "emukit2026",
+      "software_key": "emukit2026_software",
+      "version": "0.5.1",
+      "change": "installed",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:51:11.984245+00:00",
+        "passed": true,
+        "details": {
+          "operation": "12-point GPy GP regression posterior through Emukit wrapper",
+          "prediction_count": 12,
+          "minimum_variance": 0.11116633749029384
+        },
+        "finished_at": "2026-09-15T01:51:13.326824+00:00",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "smt",
+      "install_name": "smt",
+      "paper_key": "smt2026",
+      "software_key": "smt2026_software",
+      "version": "2.15.0",
+      "change": "installed",
+      "import_passed": true,
+      "functional_check": {
+        "started_at": "2026-09-15T01:51:12.598705+00:00",
+        "passed": true,
+        "details": {
+          "operation": "12-point SMT kriging surrogate training and prediction",
+          "prediction_count": 12,
+          "minimum_variance": 1.5362379256525577e-13
+        },
+        "finished_at": "2026-09-15T01:51:15.895861+00:00",
+        "exit_code": 0
+      }
+    }
+  ]
+}

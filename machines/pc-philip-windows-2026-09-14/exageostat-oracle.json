@@ -1,0 +1,170 @@
+{
+  "date": "2026-09-14",
+  "hostname": "PC-PHILIP-WINDOWS",
+  "distribution": "Ubuntu (WSL 2)",
+  "oracle": "ExaGeoStat",
+  "implementation": "ExaGeoStatCPP",
+  "version": "2.0.0",
+  "before": "No native installation or R package found in the audited locations.",
+  "status": "installed_and_numerically_verified",
+  "source": {
+    "url": "https://github.com/ecrc/ExaGeoStatCPP",
+    "commit": "bd9240a1da5b163f060f310286b37c660785759c",
+    "tracked_source_changes": "",
+    "retained_checkout": "~/.local/state/dotrepo/m-tier-oracles-20260914/exageostat/ExaGeoStatCPP"
+  },
+  "install_prefix": "~/.local/opt/exageostat-cpp-20260914",
+  "launcher": "~/.local/bin/exageostat-cpu",
+  "environment_script": "~/.local/opt/exageostat-cpp-20260914/environment.sh",
+  "shared_library": "~/.local/opt/exageostat-cpp-20260914/EXAGEOSTATCPP/lib/libExaGeoStatCPP.so.2.0.0",
+  "shared_library_sha256": "558f674edf71a4fc53735b6a07a338b30065be49e67530d0c9c0e10eb9371d05",
+  "build": {
+    "type": "Release",
+    "runtime": "StarPU",
+    "CUDA": false,
+    "MPI": false,
+    "HiCMA": false,
+    "R_interface": false,
+    "upstream_examples": true,
+    "upstream_tests": false,
+    "compiler_jobs": "2 initially; 4 after other installers finished",
+    "compiler": "13.3.0",
+    "cmake": "cmake version 3.28.3"
+  },
+  "dependencies": {
+    "StarPU": {
+      "version": "1.3.10",
+      "scope": "user-local",
+      "url": "https://files.inria.fr/starpu/starpu-1.3.10/starpu-1.3.10.tar.gz",
+      "sha256": "757cd9a54f53751d37364965ac36102461a85df3a50b776447ac0acc0e1e2612"
+    },
+    "Chameleon": {
+      "version": "1.1.0",
+      "scope": "user-local static library",
+      "url": "https://gitlab.inria.fr/solverstack/chameleon",
+      "commit": "4db899ca30d29927018d83964b9b6d517269abe1",
+      "submodules": [
+        "37bce4cbc6b44869ec837c914b731794ad9f360c cmake_modules/morse_cmake (37bce4c)",
+        " 7e4e2ec56069dae3b40e2afdc0174bec368609d8 doc/orgmode/org-html-themes (v1.0.2-5-g7e4e2ec)",
+        " aa6617c4780f00018477320e129bbd26a425b85e hqr (aa6617c)"
+      ]
+    },
+    "BLAS++": {
+      "version": "2023.01.00",
+      "scope": "user-local",
+      "url": "https://github.com/icl-utk-edu/blaspp",
+      "commit": "e6a87207af24783270026e476c77d47e1ae3dcc0"
+    },
+    "system_pkg_config_versions": {
+      "GSL": "2.7.1",
+      "hwloc": "2.10.0",
+      "NLopt": "2.7.1",
+      "nlohmann_json": "3.11.3",
+      "OpenBLAS": "0.3.26"
+    }
+  },
+  "apt_transaction": {
+    "requested": [
+      "libstarpu-dev",
+      "libnlopt-cxx-dev",
+      "nlohmann-json3-dev"
+    ],
+    "new_packages": {
+      "libfxt2t64:amd64": "0.3.13-4.1build1",
+      "libgl-dev:amd64": "1.7.0-1build1",
+      "libglx-dev:amd64": "1.7.0-1build1",
+      "libnlopt-cxx-dev:amd64": "2.7.1-5build2",
+      "libnlopt-cxx0:amd64": "2.7.1-5build2",
+      "libnlopt-dev:amd64": "2.7.1-5build2",
+      "libnlopt0:amd64": "2.7.1-5build2",
+      "libpapi-dev:amd64": "7.1.0-5build1",
+      "libpapi7.1t64:amd64": "7.1.0-5build1",
+      "libpfm4:amd64": "4.13.0+git32-g0d4ed0e-1ubuntu0.1",
+      "libsde1t64:amd64": "7.1.0-5build1",
+      "libsocl-1.4-1t64:amd64": "1.4.3+dfsg-5build1",
+      "libstarpu-1.4-4t64:amd64": "1.4.3+dfsg-5build1",
+      "libstarpu-dev": "1.4.3+dfsg-5build1",
+      "libstarpu-openmp-llvm-1.4-1t64:amd64": "1.4.3+dfsg-5build1",
+      "libstarpufft-1.4-1t64:amd64": "1.4.3+dfsg-5build1",
+      "libstarpumpi-1.4-3t64:amd64": "1.4.3+dfsg-5build1",
+      "libstarpurm-1.4-1t64:amd64": "1.4.3+dfsg-5build1",
+      "nlohmann-json3-dev": "3.11.3-1",
+      "ocl-icd-opencl-dev:amd64": "2.3.2-1build1",
+      "opencl-c-headers": "3.0~2023.12.14-1",
+      "opencl-clhpp-headers": "3.0~2023.12.14-1ubuntu1",
+      "opencl-headers": "3.0~2023.12.14-1"
+    },
+    "changed_packages": {},
+    "removed_packages": [],
+    "simulation": "23 new packages, 0 upgraded, 0 removed",
+    "log": "~/.local/state/dotrepo/m-tier-oracles-20260914/exageostat/apt-install.log"
+  },
+  "compatibility": [
+    "Chameleon 1.1.0 fails to compile against system StarPU 1.4.3 because pointer_is_inside was removed. The build instead uses upstream-requested StarPU 1.3.10 in this prefix.",
+    "Chameleon probes starpumpi-1.3.pc before starpu-1.3.pc even with MPI disabled. Ubuntu aliases the first to StarPU 1.4; a build-only pkg-config directory hides system StarPU metadata while retaining other system .pc files.",
+    "ExaGeoStatCPP source is unchanged. The installed ExaGeoStatCPP.pc prefix was corrected to the nested EXAGEOSTATCPP directory; original metadata was preserved.",
+    "Upstream embeds configuration and kernel-header paths from the source checkout, so retain the checkout and dependency source directories.",
+    "Current upstream CPU configuration validation requires a data path; the numerical check uses a generated CSV dataset."
+  ],
+  "validation": {
+    "status": "passed",
+    "executable": "~/.local/bin/exageostat-cpu",
+    "exit_code": 0,
+    "workload": "64-point Mat\u00e9rn exact CPU maximum likelihood and 8 held-out predictions",
+    "cores": 2,
+    "gpus": 0,
+    "seed": 42,
+    "metrics": {
+      "log_likelihood": -14.453839,
+      "mspe": 0.0209,
+      "iterations": 8.0
+    },
+    "scope": "Finite fit and prediction smoke test; no large-scale, GPU, MPI or low-rank validation."
+  },
+  "dynamic_link_check": {
+    "status": "passed",
+    "unresolved_symbols": false,
+    "missing_libraries": false,
+    "libraries": [
+      "linux-vdso.so.1",
+      "liblapacke.so.3 => /lib/x86_64-linux-gnu/liblapacke.so.3",
+      "libnlopt.so.0 => /lib/x86_64-linux-gnu/libnlopt.so.0",
+      "libgsl.so.27 => /lib/x86_64-linux-gnu/libgsl.so.27",
+      "libstarpu-1.3.so.9 => ~/.local/opt/exageostat-cpp-20260914/STARPU/lib/libstarpu-1.3.so.9",
+      "libopenblas.so.0 => /lib/x86_64-linux-gnu/libopenblas.so.0",
+      "libm.so.6 => /lib/x86_64-linux-gnu/libm.so.6",
+      "libstdc++.so.6 => /lib/x86_64-linux-gnu/libstdc++.so.6",
+      "libgcc_s.so.1 => /lib/x86_64-linux-gnu/libgcc_s.so.1",
+      "libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6",
+      "libblas.so.3 => /lib/x86_64-linux-gnu/libblas.so.3",
+      "liblapack.so.3 => /lib/x86_64-linux-gnu/liblapack.so.3",
+      "libtmglib.so.3 => /lib/x86_64-linux-gnu/libtmglib.so.3",
+      "/lib64/ld-linux-x86-64.so.2",
+      "libgslcblas.so.0 => /lib/x86_64-linux-gnu/libgslcblas.so.0",
+      "libhwloc.so.15 => /lib/x86_64-linux-gnu/libhwloc.so.15",
+      "libgfortran.so.5 => /lib/x86_64-linux-gnu/libgfortran.so.5",
+      "libudev.so.1 => /lib/x86_64-linux-gnu/libudev.so.1",
+      "libcap.so.2 => /lib/x86_64-linux-gnu/libcap.so.2"
+    ]
+  },
+  "recheck_command": "python3 scripts/check-exageostat-environment.py",
+  "limitations": [
+    "CPU exact backend validated only; GPU, MPI, HiCMA low-rank and R bindings are not installed by this native build.",
+    "Small finite workload smoke test, not exhaustive numerical certification or performance validation."
+  ],
+  "rollback_and_logs": {
+    "directory": "~/.local/state/dotrepo/m-tier-oracles-20260914/exageostat",
+    "apt_before": [
+      "dpkg-before.tsv",
+      "apt-manual-before.txt"
+    ],
+    "build_logs": [
+      "configure.log",
+      "starpu-build.log",
+      "chameleon-system-starpu-failed.log",
+      "chameleon-build.log",
+      "exageostat-build.log"
+    ],
+    "metadata_backup": "ExaGeoStatCPP.pc.before-prefix-fix"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "checked_date": "2026-09-14",
+  "date_timezone": "America/Chicago",
+  "distribution": "Ubuntu",
+  "phase": "Before the GPflow installation in py313",
+  "evidence": "Recorded from the successful command outputs observed during this session; exact per-check timestamps were not retained.",
+  "scope": "Small deterministic CPU numerical checks and Python module-discovery checks. No GPU, GP model workload, sampler convergence, project regression suite, or comprehensive oracle certification was tested here.",
+  "cpu_numerical_smoke": {
+    "environment": "py313",
+    "python": "3.13.15",
+    "passed": true,
+    "exit_code": 0,
+    "execution": {
+      "CUDA_VISIBLE_DEVICES": "-1",
+      "JAX_PLATFORMS": "cpu",
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "PYTHONDONTWRITEBYTECODE": "1"
+    },
+    "versions": {
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "scikit-sparse": "0.4.16",
+      "python-flint": "0.9.0",
+      "mpmath": "1.3.0",
+      "cvxpy": "1.9.2",
+      "clarabel": "0.11.1",
+      "osqp": "1.1.3",
+      "scs": "3.3.1",
+      "highspy": "1.15.1"
+    },
+    "checks": {
+      "scipy_dense_solve": {
+        "passed": true,
+        "matrix": [
+          [
+            4.0,
+            1.0
+          ],
+          [
+            1.0,
+            3.0
+          ]
+        ],
+        "right_hand_side": [
+          1.0,
+          2.0
+        ],
+        "expected_solution": [
+          0.09090909090909091,
+          0.6363636363636364
+        ],
+        "comparison": "numpy.allclose with its default tolerances"
+      },
+      "cholmod_sparse_solve": {
+        "passed": true,
+        "input": "The same matrix in CSC sparse storage",
+        "comparison": "CHOLMOD Cholesky solve against the same expected solution using numpy.allclose"
+      },
+      "flint_arb_enclosure": {
+        "passed": true,
+        "comparison": "The product of the Arb sqrt(2) enclosure with itself contains 2"
+      },
+      "mpmath": {
+        "passed": true,
+        "decimal_precision": 50,
+        "comparison": "abs(sqrt(2)**2 - 2) < 1e-45"
+      },
+      "cvxpy_least_squares": {
+        "passed": true,
+        "problem": "Minimize sum_squares(A @ x - b) for the same two-variable system",
+        "comparison": "Each solver reports optimal and its solution matches the expected solution using numpy.allclose with atol=1e-5",
+        "solvers": {
+          "CLARABEL": "passed",
+          "OSQP": "passed",
+          "SCS": "passed",
+          "HIGHS": "passed"
+        }
+      }
+    }
+  },
+  "arbplusjax_backend_presence": {
+    "checker": "tools/check_oracle_backends_present.py --check in the local arbPlusJAX checkout",
+    "method": "The checker scans test importorskip calls and uses importlib.util.find_spec; this establishes module discoverability, not successful imports or numerical correctness.",
+    "certifying_modules": [
+      "flint",
+      "mpmath",
+      "scipy"
+    ],
+    "declared_backend_count": 18,
+    "results": [
+      {
+        "environment": "py313",
+        "python": "3.13.15",
+        "exit_code": 0,
+        "passed": true,
+        "present_backend_count": 14,
+        "missing_certifying_modules": [],
+        "missing_other_modules": [
+          "bokeh",
+          "hypergeomat_ref",
+          "matfree",
+          "plotly"
+        ]
+      },
+      {
+        "environment": "jax313",
+        "python": "3.13.15",
+        "exit_code": 1,
+        "passed": false,
+        "present_backend_count": 11,
+        "missing_certifying_modules": [
+          "flint"
+        ],
+        "missing_other_modules": [
+          "benchmarks",
+          "bokeh",
+          "diffrax",
+          "hypergeomat_ref",
+          "matfree",
+          "plotly"
+        ]
+      },
+      {
+        "environment": "jax314",
+        "python": "3.14.7",
+        "exit_code": 1,
+        "passed": false,
+        "present_backend_count": 11,
+        "missing_certifying_modules": [
+          "flint"
+        ],
+        "missing_other_modules": [
+          "benchmarks",
+          "bokeh",
+          "diffrax",
+          "hypergeomat_ref",
+          "matfree",
+          "plotly"
+        ]
+      }
+    ],
+    "missing_distribution": "python-flint in jax313 and jax314",
+    "affected_test_files": [
+      "tests/test_ball_arithmetic.py",
+      "tests/test_ball_functions.py",
+      "tests/test_ball_inverse_functions.py",
+      "tests/test_interval_mode_containment.py",
+      "tests/test_python_flint_interval_oracle_sweep.py"
+    ],
+    "impact": "The five listed Arb verification files would skip when their importorskip guards cannot find flint. The numerical smoke above ran in py313 only."
+  },
+  "post_gpflow_numerical_rerun": {
+    "environment": "py313",
+    "passed": true,
+    "exit_code": 0,
+    "checks": [
+      "SciPy dense solve",
+      "CHOLMOD sparse solve",
+      "FLINT Arb enclosure",
+      "mpmath 50-digit arithmetic",
+      "CVXPY CLARABEL",
+      "CVXPY OSQP",
+      "CVXPY SCS",
+      "CVXPY HIGHS"
+    ],
+    "scope": "Same numerical calculations after installing GPflow; backend-presence counts above were not rerun."
+  }
+}

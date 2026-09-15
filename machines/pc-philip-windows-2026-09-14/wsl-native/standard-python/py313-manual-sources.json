@@ -1,0 +1,34 @@
+[
+  {
+    "name": "arbPlusJAX",
+    "version": "2.2.0",
+    "source": "editable/local",
+    "repository": "git@github.com:philipjones77/arbPlusJAX.git",
+    "commit": "f18cdcfd0bd7f287bb922c5cb9aa2c73baa23504",
+    "uncommitted_changes": true
+  },
+  {
+    "name": "IntegralFunctionsJAX",
+    "version": "0.2.0",
+    "source": "editable/local",
+    "repository": "git@github.com:philipjones77/IntegralFunctionsJAX.git",
+    "commit": "a35fef0e344d101507108fe014b3e086637951d1",
+    "uncommitted_changes": true
+  },
+  {
+    "name": "randomfields77",
+    "version": "0.0.0",
+    "source": "editable/local",
+    "repository": "git@github.com:philipjones77/RandomFields77.git",
+    "commit": "d7b3bd26ef387f1dcdf3e585e3df90e4ff566869",
+    "uncommitted_changes": false
+  },
+  {
+    "name": "TopoSMPLJAX",
+    "version": "2.0.0",
+    "source": "editable/local",
+    "repository": "git@github.com:philipjones77/TopoSmplJAX.git",
+    "commit": "ab67c2e426f3a95f6b676c8aac72e6ed1bd4ded5",
+    "uncommitted_changes": true
+  }
+]

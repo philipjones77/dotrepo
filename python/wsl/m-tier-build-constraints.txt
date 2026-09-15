@@ -1,0 +1,3 @@
+# Build-time constraint used for the algebra 1.2.1 source distribution.
+# Runtime package versions are recorded in the current machine inventory.
+setuptools==80.9.0

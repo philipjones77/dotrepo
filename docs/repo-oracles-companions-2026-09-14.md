@@ -8,15 +8,18 @@ and preserve the target's current environments and checkout changes.
 | --- | --- | --- | --- |
 | `jax-oracles313` | 3.13.15 | 51 | JAX/jaxlib 0.6.2, Flax 0.10.7, TFP 0.25.0, SciPy 1.16.3; Dynamax 1.0.1, BayesNF 0.1.3, PyGAM 0.12.0 |
 | `uqpy312` | 3.12.3 | 44 | NumPy 1.26.4, PyTorch 2.2.2+cpu, setuptools 80.9.0; UQpy 4.2.1, Debiased Spatial Whittle 2.2.0 |
-| `gpflow312` | 3.12.3 | 52 | GPflow 2.11.1, TensorFlow 2.18.1, tf-keras 2.18.0, NumPy 1.26.4 |
 | `jax313` / `jax314` | 3.13.15 / 3.14.7 | 104 each | Reduced JAX 0.11.1 / CUDA 13 snapshots with four editable scientific repos |
+
+GPflow remains in main `py313` as version 2.9.2 with TensorFlow 2.21.0. The
+separate `gpflow312` environment was retired at the user's request. Do not
+recreate it as part of the current setup; earlier receipts remain historical.
 
 The complete pins and source records are in
 [standard-python](../machines/pc-philip-windows-2026-09-14/wsl-native/standard-python/).
-All five inventories matched their existing environments exactly. Fresh
-dependency resolution using `uv pip install --dry-run --reinstall` succeeded
-for 51, 44, 52, 104 and 104 packages respectively; no packages were installed
-or replaced during these replay checks.
+All four remaining companion inventories matched their existing environments
+exactly in the recorded audit. Dependency resolution using
+`uv pip install --dry-run --reinstall` succeeded for 51, 44, 104 and 104 packages
+respectively; no packages were installed or replaced during those replay checks.
 
 ## Create new candidates
 
@@ -71,14 +74,13 @@ PY
 restore_candidate jax-oracles313 3.13.15
 torch_cpu='https://download-r2.pytorch.org/whl/cpu/torch-2.2.2%2Bcpu-cp312-cp312-linux_x86_64.whl#sha256=431a747b5a880cf8e1fb6d58db6bfafa6768cbec76517d046854537c03323edf'
 restore_candidate uqpy312 3.12.3 "torch @ $torch_cpu"
-restore_candidate gpflow312 3.12.3
 ```
 
 The Torch URL and SHA256 were verified against the
 [official PyTorch CPU wheel index](https://download.pytorch.org/whl/cpu/torch/).
 It selects only the CPython 3.12 Linux x86-64 CPU Torch wheel. All other packages
 continue to resolve against PyPI with their complete snapshot pins. The first
-three environments have no manual-source packages. Do not add `--seed` to the
+two environments have no manual-source packages. Do not add `--seed` to the
 creation commands: the snapshots already specify any pip/setuptools packages
 they contain.
 
@@ -87,8 +89,7 @@ they contain.
 The portable JAX check runs an eight-step state-space likelihood and a two-epoch
 BayesNF fit/prediction; the Whittle check evaluates a 4-by-4 spatial likelihood.
 Both helpers and the PyGAM fit passed in the existing companion environments.
-The GPflow312 check also passed exact GPR, SVGP training and natural-gradient
-training. Use the candidate interpreters for the corresponding checks:
+Use the candidate interpreters for the corresponding checks:
 
 ```bash
 export CUDA_VISIBLE_DEVICES=-1 JAX_PLATFORMS=cpu
@@ -96,7 +97,6 @@ export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
 "$candidate_root/jax-oracles313/bin/python" -I -B scripts/check-jax-oracle-companion.py
 "$candidate_root/jax-oracles313/bin/python" -I -B scripts/check-repo-python-oracles.py pygam
 "$candidate_root/uqpy312/bin/python" -I -B scripts/check-whittle-oracle-companion.py
-"$candidate_root/gpflow312/bin/python" -I -B scripts/check-gpflow-environment.py
 ```
 
 For RF77's existing UQpy subprocess bridge, point the main `py313` test runner
@@ -139,11 +139,30 @@ target's actual NVIDIA driver separately.
 
 ## Integration limits
 
-The companion stacks preserve dependencies incompatible with main `py313`:
-UQpy and Whittle need NumPy 1; PyGAM needs the older SciPy range; the captured
-Dynamax/BayesNF stack needs its older JAX/TFP combination. Do not merge these
-pins into the main environment. `gpflow312` is also a separate snapshot;
-main `py313` intentionally uses GPflow 2.9.2 with TensorFlow 2.21.0 instead.
+Fresh [UQpy/Whittle main-stack probes](../machines/pc-philip-windows-2026-09-14/repo-oracles/uqpy-companion-main-compatibility.json)
+passed three actual RF77 DirectPOD worker comparisons and the 4-by-4 Whittle
+likelihood using main NumPy 2.5.3, SciPy 1.18.1 and PyTorch 2.14.0. The probes
+temporarily exposed missing pure-Python packages from the companion in isolated
+processes; no CPython 3.12 extensions were loaded. Published dependency pins
+remain unsatisfied, so these results establish success for the tested workflows,
+not a supported complete installation in main py313. The packages remain installed
+in `uqpy312`; retire that environment only after a deliberate, validated migration.
+
+The companion stacks preserve dependencies outside main `py313`'s retained pins:
+UQpy and Whittle declare NumPy 1 requirements; PyGAM declares the older SciPy
+range; the captured Dynamax/BayesNF stack needs its older JAX/TFP combination. Do not merge these
+pins into the main environment. Main `py313` uses GPflow 2.9.2 with
+TensorFlow 2.21.0.
+
+Fresh [main-stack runtime probes](../machines/pc-philip-windows-2026-09-14/repo-oracles/jax-companion-main-compatibility.json)
+confirmed that Dynamax 1.0.1 and BayesNF 0.1.3 fail during import: TFP 0.25.0
+accesses `jax.interpreters.xla.pytype_aval_mappings`, which main JAX 0.11.1 lacks.
+PyGAM 0.12.0 **passed** a 30-point spline fit using main SciPy 1.18.1, with
+maximum error `0.0298893`. Its declared `scipy<1.17,>=1.11.1` requirement is still
+unsatisfied; this check found a dependency constraint conflict, not a PyGAM
+runtime failure. The probes supplied missing packages from the companion at
+the end of `sys.path`, verified the main numerical-library versions and origins,
+and left both environments unchanged. The bounded fit does not test every PyGAM API.
 
 RF77 supports the `RF77_UQPY_PYTHON` subprocess setting. Its Whittle and BayesNF
 gates currently import in-process, so companion installation does not make

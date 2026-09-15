@@ -9,7 +9,9 @@ adapter are recorded separately.
 Final inventories contain **338 main Python packages, 516 active R packages
 and 1,559 Ubuntu packages**. This follow-up added 13 main Python packages and
 18 R packages without changing any of the previous 325 Python or 498 R package
-versions. All six active Python environments pass dependency checks.
+versions. The five remaining active Python environments passed dependency checks
+in the recorded audit. GPflow remains in `py313`; the separate `gpflow312`
+environment was retired at the user's request and is no longer a replication target.
 
 ## Environments
 
@@ -18,11 +20,12 @@ versions. All six active Python environments pass dependency checks.
 | `~/.virtualenvs/py313` | Shared CPython 3.13.15; existing NumPy 2.5.3, SciPy 1.18.1, JAX 0.11.1, Flax 0.12.9 and GPflow 2.9.2 retained. |
 | `~/.virtualenvs/jax-oracles313` | CPython 3.13.15, JAX 0.6.2, Flax 0.10.7, TFP 0.25.0 and SciPy 1.16.3 for Dynamax 1.0.1, BayesNF 0.1.3 and PyGAM 0.12.0. |
 | `~/.virtualenvs/uqpy312` | CPython 3.12.3, NumPy 1.26.4, CPU PyTorch 2.2.2 and setuptools 80.9.0 for UQpy 4.2.1 and Debiased Spatial Whittle 2.2.0. |
+| `~/.virtualenvs/jax313` / `~/.virtualenvs/jax314` | Reduced CPython 3.13.15 / 3.14.7 JAX environments; 104 packages each, missing python-flint and diffrax. |
 | Ordinary R startup | Existing configured R user library plus added R oracle packages. |
 | User-local Julia | Julia 1.13.0 for `@repo-oracles`, and Julia 1.10.12 for `@repo-oracles-oilmm`; Julia packages use their own environments. |
 
-Some published dependencies cannot share the retained main stack. UQpy pins
-NumPy 1.26.4 and PyTorch 2.2; Whittle requires NumPy below 2; PyGAM requires
+Some published dependency specifications conflict with the retained main stack. UQpy pins
+NumPy 1.26.4 and PyTorch 2.2; Whittle declares NumPy below 2; PyGAM declares
 SciPy below 1.17. Dynamax 1.0.1 and BayesNF fail with the main environment's
 JAX because stable TFP accesses a removed JAX API. Dynamax 1.0.2 instead
 requires `tfp-nightly`, which shares module files with GPflow's stable TFP.
@@ -30,6 +33,22 @@ The companion environments avoid conflicting installations. See the official
 [Dynamax dependencies](https://github.com/probml/dynamax/blob/main/pyproject.toml),
 [UQpy release](https://pypi.org/project/UQpy/), and
 [PyGAM release](https://pypi.org/project/pygam/).
+
+Fresh [UQpy/Whittle probes](../machines/pc-philip-windows-2026-09-14/repo-oracles/uqpy-companion-main-compatibility.json)
+passed the actual RF77 DirectPOD worker and Whittle likelihood on main py313's
+NumPy/SciPy/PyTorch stack, using temporarily exposed companion Python packages.
+Their separation therefore reflects declared dependency conflicts, not demonstrated
+runtime failure in these workflows. They have not been migrated into main py313,
+and `uqpy312` remains their installed environment.
+
+Fresh [main-stack runtime probes](../machines/pc-philip-windows-2026-09-14/repo-oracles/jax-companion-main-compatibility.json)
+confirmed the Dynamax 1.0.1 and BayesNF 0.1.3 import failures with JAX 0.11.1
+and TFP 0.25.0. PyGAM 0.12.0's bounded spline fit **passed** with main SciPy
+1.18.1 (maximum error `0.0298893`), despite its unsatisfied declared SciPy range.
+PyGAM's companion placement therefore reflects the package constraint, not a
+demonstrated runtime failure in that fit. These probes used the main numerical
+libraries and loaded only missing packages from the companion; neither
+environment was modified.
 
 ## Additional packages in the main py313 environment
 

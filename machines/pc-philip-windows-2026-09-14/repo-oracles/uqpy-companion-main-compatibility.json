@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "captured_date": "2026-09-14",
+  "hostname": "PC-PHILIP-WINDOWS",
+  "platform": "Ubuntu WSL",
+  "purpose": "Test whether the uqpy312 oracles actually fail on the retained main py313 numerical stack before deciding whether the companion can be retired.",
+  "conclusion": "Both tested workflows pass on main py313 despite conflicts with published dependency requirements. These results do not establish full upstream compatibility or a dependency-clean installation in main py313.",
+  "method": {
+    "interpreter": "~/.virtualenvs/py313/bin/python -I -B",
+    "missing_package_source": "~/.virtualenvs/uqpy312/lib/python3.12/site-packages appended after all main interpreter import paths",
+    "core_preload": "Imported NumPy, SciPy, PyTorch, Matplotlib and scikit-learn before appending the companion path; asserted their module origins are inside main py313.",
+    "extension_guard": "Meta-path guard rejected any attempt to load a compiled Python extension from the companion; no companion extension loaded.",
+    "isolation": "GPU visibility disabled; JAX CPU selected; OMP, OpenBLAS and MKL threads limited to one; each probe had a 60-second timeout; bytecode writes disabled.",
+    "changes": "No package installation, environment removal, scientific source patch or persistent import-path modification."
+  },
+  "checks": {
+    "uqpy": {
+      "target": "uqpy",
+      "python": "3.13.15",
+      "executable": "~/.virtualenvs/py313/bin/python",
+      "core_before_oracle_import": {
+        "numpy": {
+          "version": "2.5.3",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/numpy/__init__.py"
+        },
+        "scipy": {
+          "version": "1.18.1",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/scipy/__init__.py"
+        },
+        "torch": {
+          "version": "2.14.0+cu130",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/torch/__init__.py"
+        },
+        "matplotlib": {
+          "version": "3.11.1",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/matplotlib/__init__.py"
+        },
+        "scikit-learn": {
+          "version": "1.9.0",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/sklearn/__init__.py"
+        }
+      },
+      "oracle_version": "4.2.1",
+      "declared_requirements": [
+        "numpy ==1.26.4",
+        "scipy >=1.6.0",
+        "matplotlib ==3.8.4",
+        "scikit-learn ==1.4.2",
+        "fire ==0.6.0",
+        "beartype ==0.18.5",
+        "torch ~=2.2.2",
+        "torchinfo ~=1.8.0",
+        "pytest ==8.2.0 ; extra == 'dev'",
+        "pytest-cov ==5.0.0 ; extra == 'dev'",
+        "pylint ==3.1.0 ; extra == 'dev'",
+        "pytest-azurepipelines ==1.0.5 ; extra == 'dev'",
+        "wheel ==0.43.0 ; extra == 'dev'",
+        "twine ==5.0.0 ; extra == 'dev'",
+        "sphinx-autodoc-typehints ==1.23.0 ; extra == 'dev'",
+        "sphinx-rtd-theme ==1.2.0 ; extra == 'dev'",
+        "sphinx-gallery ==0.13.0 ; extra == 'dev'",
+        "sphinxcontrib-bibtex ==2.5.0 ; extra == 'dev'",
+        "Sphinx ==6.1.3 ; extra == 'dev'"
+      ],
+      "unsatisfied_declared_requirements": [
+        {
+          "requirement": "numpy ==1.26.4",
+          "selected_version": "2.5.3"
+        },
+        {
+          "requirement": "matplotlib ==3.8.4",
+          "selected_version": "3.11.1"
+        },
+        {
+          "requirement": "scikit-learn ==1.4.2",
+          "selected_version": "1.9.0"
+        },
+        {
+          "requirement": "beartype ==0.18.5",
+          "selected_version": "0.22.9"
+        },
+        {
+          "requirement": "torch ~=2.2.2",
+          "selected_version": "2.14.0"
+        }
+      ],
+      "oracle_origin": "~/.virtualenvs/uqpy312/lib/python3.12/site-packages/UQpy/__init__.py",
+      "checks": [
+        {
+          "case": "random_spd",
+          "dimension": 12,
+          "retained_eigenpairs": 12,
+          "max_eigenvalue_absolute_error": 1.4210854715202004E-14,
+          "max_subspace_angle": 1.3393791900522873E-15
+        },
+        {
+          "case": "random_spd",
+          "dimension": 10,
+          "retained_eigenpairs": 4,
+          "max_eigenvalue_absolute_error": 9.71445146547012E-16,
+          "max_subspace_angle": 1.5040395675586723E-15
+        },
+        {
+          "case": "rf77_matern_three_half",
+          "dimension": 24,
+          "retained_eigenpairs": 24,
+          "max_eigenvalue_absolute_error": 4.085620730620576E-14,
+          "max_subspace_angle": 1.1054234806536725E-15
+        }
+      ],
+      "status": "passed_limited_runtime_check",
+      "companion_modules_loaded": [
+        "UQpy"
+      ],
+      "companion_extensions_loaded": []
+    },
+    "debiased_spatial_whittle": {
+      "target": "whittle",
+      "python": "3.13.15",
+      "executable": "~/.virtualenvs/py313/bin/python",
+      "core_before_oracle_import": {
+        "numpy": {
+          "version": "2.5.3",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/numpy/__init__.py"
+        },
+        "scipy": {
+          "version": "1.18.1",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/scipy/__init__.py"
+        },
+        "torch": {
+          "version": "2.14.0+cu130",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/torch/__init__.py"
+        },
+        "matplotlib": {
+          "version": "3.11.1",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/matplotlib/__init__.py"
+        },
+        "scikit-learn": {
+          "version": "1.9.0",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/sklearn/__init__.py"
+        }
+      },
+      "oracle_version": "2.2.0",
+      "declared_requirements": [
+        "autograd (>=1.5,<2.0)",
+        "cupy-cuda11x ; extra == \"gpu11\"",
+        "cupy-cuda12x (>=13.0.0,<14.0.0) ; extra == \"gpu12\"",
+        "matplotlib (>=3.7.0,<4.0.0)",
+        "numpy (>=1.21.5,<2.0.0)",
+        "param (>=2.1.1,<3.0.0)",
+        "progressbar2 (>=4.2.0,<5.0.0)",
+        "pytest-cov (>=6.2.1,<7.0.0)",
+        "scipy (>=1.7.3,<2.0.0)",
+        "seaborn (>=0.12.2,<0.13.0)",
+        "torch (==2.2.2) ; extra == \"gpu12\" or extra == \"gpu11\""
+      ],
+      "unsatisfied_declared_requirements": [
+        {
+          "requirement": "numpy (>=1.21.5,<2.0.0)",
+          "selected_version": "2.5.3"
+        },
+        {
+          "requirement": "seaborn (>=0.12.2,<0.13.0)",
+          "selected_version": "0.13.2"
+        }
+      ],
+      "oracle_origin": "~/.virtualenvs/uqpy312/lib/python3.12/site-packages/debiased_spatial_whittle/__init__.py",
+      "checks": {
+        "grid": [
+          4,
+          4
+        ],
+        "negative_log_likelihood": 0.3846677891571325,
+        "expected_periodogram_min": 0.23303401861302542,
+        "matches_companion_reference_atol": 1E-10
+      },
+      "status": "passed_limited_runtime_check",
+      "companion_modules_loaded": [
+        "debiased_spatial_whittle",
+        "param",
+        "progressbar",
+        "python_utils"
+      ],
+      "companion_extensions_loaded": []
+    }
+  },
+  "uqpy_scope": {
+    "source": "RandomFields77/src/src_continuous/randomfields77_continuous/inference/_uqpy_pod_worker.py",
+    "repository_commit": "7c44d474f35cf8dfc6bb9d2440e7b2525ad4d48a",
+    "execution": "Executed the actual worker with runpy for three input cases. Compared its eigenvalues against scipy.linalg.eigh at rtol=1e-8 and atol=1e-8 and its eigenvectors with scipy.linalg.subspace_angles below 1e-4.",
+    "cases": [
+      "12x12 random SPD covariance, seed 7, complete eigenbasis",
+      "10x10 random SPD covariance, seed 3, four smallest eigenpairs",
+      "24-point covariance from the actual RF77 matern_three_half kernel, lengthscale 0.28, sigma 1.0, nugget 1e-6"
+    ],
+    "limitation": "Tests the worker and these numerical cases; does not test every UQpy feature or change the RF77 subprocess interpreter setting."
+  },
+  "whittle_scope": {
+    "source": "scripts/check-whittle-oracle-companion.py",
+    "execution": "Repeated its 4x4 Matérn-3/2 likelihood and positive expected-periodogram calculation on main core libraries, and checked the likelihood against the recorded companion reference at absolute tolerance 1e-10.",
+    "limitation": "Tests one standalone CPU likelihood calculation; does not validate RF77 W01 integration, optimizers, missing-data cases, GPU backends or all package features."
+  },
+  "environment_decision": "uqpy312 retained by this probe. Removing it before arranging a supported main installation or replacement would remove the installed UQpy/DSW source and the current RF77 UQpy subprocess target."
+}

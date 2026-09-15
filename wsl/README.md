@@ -2,11 +2,12 @@
 
 For the current cross-machine request, start with the
 [September 14 oracle and WSL handoff](../docs/ai/sessions/2026-09-14-python-oracle-wsl-handoff.md).
-It links exact Python/JAX/CUDA pins, all six active Python environments, R and
+It links exact Python/JAX/CUDA pins, all five active Python environments, R and
 Julia inventories, native build recipes, and the Ubuntu package list. GitHub
 pulls deliver the configuration and recipes; each target must apply and verify
 the installations. The capture/export tools below serve separate comparison
-and backup needs.
+and backup needs. GPflow remains in `py313`; the separate `gpflow312` environment
+was retired at the user's request and is no longer part of the target setup.
 
 From Windows PowerShell in this repository:
 

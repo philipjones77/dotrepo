@@ -1,21 +1,5 @@
 [
   {
-    "name": "gpflow312",
-    "python": "3.12.3",
-    "packages": 52,
-    "index_requirements": 52,
-    "manual_sources": 0,
-    "metadata_records": 52,
-    "duplicate_discoveries": [],
-    "pip_installed": true,
-    "dependency_check": {
-      "tool": "pip check",
-      "exit_code": 0,
-      "status": "passed",
-      "raw_diagnostics_exported": false
-    }
-  },
-  {
     "name": "py313",
     "python": "3.13.15",
     "packages": 338,

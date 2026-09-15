@@ -28,7 +28,6 @@ earlier totals, including the intermediate 325-Python/498-R M-tier stage.
 | Environment or installation | Captured state |
 | --- | --- |
 | `py313` | CPython 3.13.15; **338** distributions: 333 ordinary pins, four editable projects and one local GS-LVMOGP wheel |
-| `gpflow312` | CPython 3.12.3; 52 packages; GPflow 2.11.1 / TensorFlow 2.18.1 / NumPy 1.26.4 |
 | `jax313` / `jax314` | CPython 3.13.15 / 3.14.7; 104 packages each; reduced coverage, missing python-flint and diffrax |
 | `jax-oracles313` | CPython 3.13.15; 51 packages; JAX 0.6.2 / Flax 0.10.7 / TFP 0.25.0 / SciPy 1.16.3 for Dynamax, BayesNF and PyGAM |
 | `uqpy312` | CPython 3.12.3; 44 packages; NumPy 1.26.4 / CPU PyTorch 2.2.2+cpu for UQpy and Debiased Spatial Whittle |
@@ -36,10 +35,21 @@ earlier totals, including the intermediate 325-Python/498-R M-tier stage.
 | Julia | 1.13.0 with `@repo-oracles`; 1.10.12 with `@repo-oracles-oilmm` |
 | Ubuntu APT | **1,559 installed packages**, 104 manual selections, no holds |
 
-All six Python environments pass dependency checks. This follow-up added
+The five remaining Python environments passed dependency checks in the recorded
+audit. The separate `gpflow312` environment was
+[retired at the user's request](../../../machines/pc-philip-windows-2026-09-14/repo-oracles/gpflow312-retirement.json);
+GPflow remains in main `py313`. Do not recreate `gpflow312` on target machines.
+Earlier GPflow312 receipts describe its historical state; its former pins and
+source inventory remain in Git history. This follow-up added
 13 packages to main py313 and 18 to R; every previous 325 Python and 498 R
 package version was preserved. The smaller JAX environments remain incomplete
 for Arb certification despite clean dependency metadata.
+
+The later [compatibility probes](../../repo-oracles-companions-2026-09-14.md#integration-limits)
+distinguish actual runtime failures from declared version conflicts. Dynamax and
+BayesNF fail with main JAX/TFP. PyGAM, UQpy DirectPOD and Whittle pass their limited
+main-stack probes despite incompatible published dependency pins. The latter
+packages still reside in their companions; removal requires a separate migration.
 
 ### Exact main Python and GPU versions
 
@@ -92,7 +102,7 @@ those local trees; reconcile them through each repository's own workflow.
 
 | Component | Evidence and reproduction instructions |
 | --- | --- |
-| All six Python environments | `wsl-native/standard-python/` in the machine capsule; [companion guide](../../repo-oracles-companions-2026-09-14.md) |
+| All five active Python environments | `wsl-native/standard-python/` in the machine capsule; [companion guide](../../repo-oracles-companions-2026-09-14.md) |
 | Main py313 | [Candidate installer](../../../python/wsl/create-venv.sh), ordinary pins and manual-source manifest |
 | All R packages | `wsl-native/r-active-packages.tsv`; [RF77 guide](../../repo-oracles-rf77-2026-09-14.md) includes loggle's R ABI patch and checks |
 | Julia and Mathematica references | [IFJ/Julia guide](../../repo-oracles-ifj-2026-09-14.md), both Julia Project/Manifest pairs, verified archives, MeijerG, quadrature and GP references, MBConicHulls, PolyLogTools/HPL, TOPCOM and GiNaC |
@@ -145,11 +155,15 @@ backup environments and temporary staging directories.
    existing destination and leaves activation to the target run.
    `PROJECTS_HOME` may select a different native checkout root. Reconcile
    source commits and local changes before selecting this candidate.
-5. Restore other Python environments from their own manifests, including the
-   CPU PyTorch source in the companion guide. Restore R, both Julia projects,
+5. Restore the four remaining companion Python environments from their own
+   manifests, including the CPU PyTorch source in the companion guide. Restore R, both Julia projects,
    native builds, Gephi and other WSL tools using the linked recipes. Keep
    companions' different JAX/NumPy pins. Missing reduced-environment Arb backends
    require a workload decision; main py313 already has those oracles.
+   Retire any old `gpflow312` environment only after confirming that no active
+   jobs use it and that the selected `py313` passes
+   `scripts/check-gpflow-environment.py`. Verify the exact environment path
+   before removing it. Retain `uqpy312`, which serves different oracle packages.
 6. Run committed numerical probes and repository checks. The WSL shell hook
    `wsl/repo-oracle-env.sh` selects existing local oracle paths and preserves
    explicit overrides. It starts no runtime. Check a fresh shell after applying
@@ -181,9 +195,11 @@ established by the working JAX GPU stack.
 Pull dotrepo main in Windows and native WSL, preserving local changes, then read
 docs/ai/sessions/2026-09-14-python-oracle-wsl-handoff.md and the September 14 machine
 capsule. Verify hostname. Reproduce the IFJ, RF77, TopoSmplJAX and data77 oracle
-setup, including py313's exact JAX/CUDA/driver versions, all six Python envs,
+setup, including py313's exact JAX/CUDA/driver versions, all five active Python envs,
 R, both Julia environments, native builds and the other WSL installs. Pull the
 documented scientific repo fixes. Use candidate environments and preserve active
-jobs/local assets. Apply the recorded pins and recipes, run numerical and exact
+jobs/local assets. GPflow stays in py313; retire any old gpflow312 environment
+after checking that it has no active jobs and that py313's GPflow checks pass.
+Apply the recorded pins and recipes, run numerical and exact
 GPU checks, then commit/push this machine's after inventory and remaining gaps.
 ```

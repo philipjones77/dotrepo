@@ -1,0 +1,248 @@
+{
+  "captured_at": "2026-09-14T22:50:22.916258-05:00",
+  "machine": "PC-PHILIP-WINDOWS",
+  "platform": "Ubuntu WSL",
+  "main_environment": "py313",
+  "python": "3.13.15",
+  "method": "Separate main Python -I -B subprocesses, timeout 60 seconds each. Main NumPy, SciPy, JAX and TFP imported and exact versions/origins asserted before appending companion site-packages to the END of sys.path. No package installation or edits.",
+  "settings": {
+    "CUDA_VISIBLE_DEVICES": "-1",
+    "JAX_PLATFORMS": "cpu",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "TF_NUM_INTEROP_THREADS": "1",
+    "TF_NUM_INTRAOP_THREADS": "1",
+    "XLA_PYTHON_CLIENT_PREALLOCATE": "false",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "checks": [
+    {
+      "package": "dynamax",
+      "main_runtime": {
+        "numpy": {
+          "version": "2.5.3",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/numpy/__init__.py"
+        },
+        "scipy": {
+          "version": "1.18.1",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/scipy/__init__.py"
+        },
+        "jax": {
+          "version": "0.11.1",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/jax/__init__.py"
+        },
+        "tensorflow_probability": {
+          "version": "0.25.0",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/__init__.py"
+        }
+      },
+      "operation": "Import LinearGaussianSSM; then eight-step sampled marginal likelihood if import succeeds",
+      "version": "1.0.1",
+      "oracle_origin": "~/.virtualenvs/jax-oracles313/lib/python3.13/site-packages/dynamax/__init__.py",
+      "declared_dependencies": [
+        {
+          "requirement": "jax>=0.3.15",
+          "active": true,
+          "selected_version": "0.11.1",
+          "satisfied": true
+        },
+        {
+          "requirement": "jaxlib",
+          "active": true,
+          "selected_version": "0.11.1",
+          "satisfied": true
+        },
+        {
+          "requirement": "fastprogress",
+          "active": true,
+          "selected_version": "1.0.3",
+          "satisfied": true
+        },
+        {
+          "requirement": "optax",
+          "active": true,
+          "selected_version": "0.2.8",
+          "satisfied": true
+        },
+        {
+          "requirement": "tensorflow_probability",
+          "active": true,
+          "selected_version": "0.25.0",
+          "satisfied": true
+        },
+        {
+          "requirement": "scikit-learn",
+          "active": true,
+          "selected_version": "1.9.0",
+          "satisfied": true
+        },
+        {
+          "requirement": "jaxtyping",
+          "active": true,
+          "selected_version": "0.3.11",
+          "satisfied": true
+        },
+        {
+          "requirement": "typing-extensions",
+          "active": true,
+          "selected_version": "4.16.0",
+          "satisfied": true
+        },
+        {
+          "requirement": "numpy",
+          "active": true,
+          "selected_version": "2.5.3",
+          "satisfied": true
+        }
+      ],
+      "runtime_status": "failed",
+      "error_type": "AttributeError",
+      "error": "module 'jax.interpreters.xla' has no attribute 'pytype_aval_mappings'",
+      "traceback": "Traceback (most recent call last):\n  File \"<string>\", line 55, in <module>\n    from dynamax.linear_gaussian_ssm import LinearGaussianSSM\n  File \"~/.virtualenvs/jax-oracles313/lib/python3.13/site-packages/dynamax/linear_gaussian_ssm/__init__.py\", line 1, in <module>\n    from dynamax.linear_gaussian_ssm.inference import ParamsLGSSM\n  File \"~/.virtualenvs/jax-oracles313/lib/python3.13/site-packages/dynamax/linear_gaussian_ssm/inference.py\", line 14, in <module>\n    from dynamax.parameters import ParameterProperties\n  File \"~/.virtualenvs/jax-oracles313/lib/python3.13/site-packages/dynamax/parameters.py\", line 7, in <module>\n    import tensorflow_probability.substrates.jax.bijectors as tfb\n  File \"~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/substrates/jax/__init__.py\", line 42, in <module>\n    from tensorflow_probability.substrates.jax import bijectors\n  File \"~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/substrates/jax/bijectors/__init__.py\", line 19, in <module>\n    from tensorflow_probability.substrates.jax.bijectors.absolute_value import AbsoluteValue\n  File \"~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/substrates/jax/bijectors/absolute_value.py\", line 17, in <module>\n    from tensorflow_probability.python.internal.backend.jax.compat import v2 as tf\n  File \"~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/python/internal/backend/jax/__init__.py\", line 19, in <module>\n    from tensorflow_probability.python.internal.backend.jax import compat\n  File \"~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/python/internal/backend/jax/compat.py\", line 17, in <module>\n    from tensorflow_probability.python.internal.backend.jax import v1\n  File \"~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/python/internal/backend/jax/v1.py\", line 23, in <module>\n    from tensorflow_probability.python.internal.backend.jax import linalg_impl\n  File \"~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/python/internal/backend/jax/linalg_impl.py\", line 23, in <module>\n    from tensorflow_probability.python.internal.backend.jax import ops\n  File \"~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/python/internal/backend/jax/ops.py\", line 681, in <module>\n    jax.interpreters.xla.pytype_aval_mappings[onp.ndarray])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'jax.interpreters.xla' has no attribute 'pytype_aval_mappings'\n",
+      "companion_module_roots_loaded": [
+        "dynamax"
+      ],
+      "process_exit_code": 0,
+      "declared_dependency_status": "satisfied"
+    },
+    {
+      "package": "bayesnf",
+      "main_runtime": {
+        "numpy": {
+          "version": "2.5.3",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/numpy/__init__.py"
+        },
+        "scipy": {
+          "version": "1.18.1",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/scipy/__init__.py"
+        },
+        "jax": {
+          "version": "0.11.1",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/jax/__init__.py"
+        },
+        "tensorflow_probability": {
+          "version": "0.25.0",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/__init__.py"
+        }
+      },
+      "operation": "Import BayesianNeuralFieldMAP and bayesnf.spatiotemporal; then two-epoch MAP fit and prediction if import succeeds",
+      "version": "0.1.3",
+      "oracle_origin": "~/.virtualenvs/jax-oracles313/lib/python3.13/site-packages/bayesnf/__init__.py",
+      "declared_dependencies": [
+        {
+          "requirement": "flax",
+          "active": true,
+          "selected_version": "0.12.9",
+          "satisfied": true
+        },
+        {
+          "requirement": "jax>=0.4.6",
+          "active": true,
+          "selected_version": "0.11.1",
+          "satisfied": true
+        },
+        {
+          "requirement": "jaxtyping",
+          "active": true,
+          "selected_version": "0.3.11",
+          "satisfied": true
+        },
+        {
+          "requirement": "numpy",
+          "active": true,
+          "selected_version": "2.5.3",
+          "satisfied": true
+        },
+        {
+          "requirement": "optax",
+          "active": true,
+          "selected_version": "0.2.8",
+          "satisfied": true
+        },
+        {
+          "requirement": "pandas",
+          "active": true,
+          "selected_version": "3.0.5",
+          "satisfied": true
+        },
+        {
+          "requirement": "tensorflow-probability[jax]>=0.19.0",
+          "active": true,
+          "selected_version": "0.25.0",
+          "satisfied": true
+        }
+      ],
+      "runtime_status": "failed",
+      "error_type": "AttributeError",
+      "error": "module 'jax.interpreters.xla' has no attribute 'pytype_aval_mappings'",
+      "traceback": "Traceback (most recent call last):\n  File \"<string>\", line 65, in <module>\n    from bayesnf import BayesianNeuralFieldMAP\n  File \"~/.virtualenvs/jax-oracles313/lib/python3.13/site-packages/bayesnf/__init__.py\", line 21, in <module>\n    from .spatiotemporal import BayesianNeuralFieldMAP\n  File \"~/.virtualenvs/jax-oracles313/lib/python3.13/site-packages/bayesnf/spatiotemporal.py\", line 23, in <module>\n    import tensorflow_probability.substrates.jax as tfp\n  File \"~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/substrates/jax/__init__.py\", line 42, in <module>\n    from tensorflow_probability.substrates.jax import bijectors\n  File \"~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/substrates/jax/bijectors/__init__.py\", line 19, in <module>\n    from tensorflow_probability.substrates.jax.bijectors.absolute_value import AbsoluteValue\n  File \"~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/substrates/jax/bijectors/absolute_value.py\", line 17, in <module>\n    from tensorflow_probability.python.internal.backend.jax.compat import v2 as tf\n  File \"~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/python/internal/backend/jax/__init__.py\", line 19, in <module>\n    from tensorflow_probability.python.internal.backend.jax import compat\n  File \"~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/python/internal/backend/jax/compat.py\", line 17, in <module>\n    from tensorflow_probability.python.internal.backend.jax import v1\n  File \"~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/python/internal/backend/jax/v1.py\", line 23, in <module>\n    from tensorflow_probability.python.internal.backend.jax import linalg_impl\n  File \"~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/python/internal/backend/jax/linalg_impl.py\", line 23, in <module>\n    from tensorflow_probability.python.internal.backend.jax import ops\n  File \"~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/python/internal/backend/jax/ops.py\", line 681, in <module>\n    jax.interpreters.xla.pytype_aval_mappings[onp.ndarray])\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'jax.interpreters.xla' has no attribute 'pytype_aval_mappings'\n",
+      "companion_module_roots_loaded": [],
+      "process_exit_code": 0,
+      "declared_dependency_status": "satisfied"
+    },
+    {
+      "package": "pygam",
+      "main_runtime": {
+        "numpy": {
+          "version": "2.5.3",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/numpy/__init__.py"
+        },
+        "scipy": {
+          "version": "1.18.1",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/scipy/__init__.py"
+        },
+        "jax": {
+          "version": "0.11.1",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/jax/__init__.py"
+        },
+        "tensorflow_probability": {
+          "version": "0.25.0",
+          "origin": "~/.virtualenvs/py313/lib/python3.13/site-packages/tensorflow_probability/__init__.py"
+        }
+      },
+      "operation": "Fit LinearGAM with five splines to 30 sin(x) values and predict the training grid",
+      "version": "0.12.0",
+      "oracle_origin": "~/.virtualenvs/jax-oracles313/lib/python3.13/site-packages/pygam/__init__.py",
+      "declared_dependencies": [
+        {
+          "requirement": "numpy>=1.5.0",
+          "active": true,
+          "selected_version": "2.5.3",
+          "satisfied": true
+        },
+        {
+          "requirement": "progressbar2<5,>=4.2.0",
+          "active": true,
+          "selected_version": "4.6.0",
+          "satisfied": true
+        },
+        {
+          "requirement": "scipy<1.17,>=1.11.1",
+          "active": true,
+          "selected_version": "1.18.1",
+          "satisfied": false
+        }
+      ],
+      "numerical_result": {
+        "maximum_error": 0.029889304845073794,
+        "acceptance_threshold": 0.1
+      },
+      "runtime_status": "passed",
+      "companion_module_roots_loaded": [
+        "progressbar",
+        "pygam",
+        "python_utils"
+      ],
+      "process_exit_code": 0,
+      "declared_dependency_status": "unsatisfied"
+    }
+  ],
+  "interpretation": {
+    "dynamax": "Dynamax 1.0.1 fails importing its LGSSM implementation because main TFP 0.25.0 accesses the removed JAX pytype_aval_mappings API; the numerical likelihood was not reached.",
+    "bayesnf": "BayesNF 0.1.3 fails importing spatiotemporal because main TFP 0.25.0 accesses the removed JAX pytype_aval_mappings API; training and prediction were not reached.",
+    "pygam": "PyGAM 0.12.0 passed this bounded spline fit with main SciPy 1.18.1. Its published scipy<1.17,>=1.11.1 requirement remains unsatisfied. This is a declared dependency conflict, not a demonstrated runtime failure in this test; the check does not establish all PyGAM functionality.",
+    "installation_scope": "Only missing reference packages/dependencies were made readable from the companion site-packages. Main packages and both environments were left unchanged. Inactive dev/doc/test extras are omitted from the published receipt."
+  }
+}

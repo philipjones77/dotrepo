@@ -3,7 +3,9 @@
 **September 14 cross-machine update:** reproduce the IFJ, RF77, TopoSmplJAX
 and data77 oracle setup, including exact JAX/CUDA versions and WSL installations.
 The source now has **338 py313 packages, 516 active R packages, 1,559 Ubuntu
-packages**, compatibility Python environments and two Julia runtimes. Start with the
+packages**, five active Python environments and two Julia runtimes. GPflow remains
+in `py313`; the separate `gpflow312` environment was retired at the user's request.
+Start with the
 [handoff and target steps](docs/ai/sessions/2026-09-14-python-oracle-wsl-handoff.md)
 and [current PC-PHILIP-WINDOWS inventory](machines/pc-philip-windows-2026-09-14/README.md).
 The [repository audit](docs/repo-oracles-2026-09-14.md) extends the earlier

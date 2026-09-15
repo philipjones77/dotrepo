@@ -9,22 +9,6 @@
     "conda": [],
     "venv": [
       {
-        "name": "gpflow312",
-        "python": "3.12.3",
-        "packages": 52,
-        "index_requirements": 52,
-        "manual_sources": 0,
-        "metadata_records": 52,
-        "duplicate_discoveries": [],
-        "pip_installed": true,
-        "dependency_check": {
-          "tool": "pip check",
-          "exit_code": 0,
-          "status": "passed",
-          "raw_diagnostics_exported": false
-        }
-      },
-      {
         "name": "py313",
         "python": "3.13.15",
         "packages": 338,
@@ -183,7 +167,7 @@
     "vscode_extensions": 35,
     "apt_holds": 0
   },
-  "coverage": "Installed APT packages, APT manual selections and holds, R packages from both vanilla and ordinary startup, VS Code Server extensions, standard Conda installations, and explicit active Python environments gpflow312, py313, jax313, jax314, jax-oracles313, uqpy312. Backup environments ending in .old and private staging environments are excluded.",
+  "coverage": "Installed APT packages, APT manual selections and holds, R packages from both vanilla and ordinary startup, VS Code Server extensions, standard Conda installations, and explicit active Python environments py313, jax313, jax314, jax-oracles313, uqpy312. Backup environments ending in .old and private staging environments are excluded.",
   "r_capture": {
     "r-packages.tsv": "Rscript --vanilla inventory; startup-defined user libraries may be absent.",
     "r-active-packages.tsv": {
@@ -205,5 +189,13 @@
     "Dependency checks report metadata consistency and do not execute package functionality.",
     "jax313 and jax314 have fewer observed packages than the earlier snapshot. Their dependency checks do not establish oracle readiness; missing python-flint and diffrax packages leave functional gaps. The comparison is not an uninstall or restore plan.",
     "Dirty source checkouts cannot be reproduced from the recorded commit alone."
+  ],
+  "python_inventory_updated_at": "2026-09-15T03:46:58.685196+00:00",
+  "retired_python_environments": [
+    {
+      "name": "gpflow312",
+      "removed_at": "2026-09-15T03:46:58.685196+00:00",
+      "receipt": "../repo-oracles/gpflow312-retirement.json"
+    }
   ]
 }

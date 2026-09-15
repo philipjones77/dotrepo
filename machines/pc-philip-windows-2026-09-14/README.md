@@ -5,8 +5,13 @@ reports shortened the hostname to PC-PHILIP-WINDO. Other machines have not
 been inspected or changed in this session.
 
 The final source inventory contains **338 py313 packages, 516 active R packages,
-1,559 APT packages**, six Python environments and two Julia oracle environments.
-All six Python dependency checks pass. Read the
+1,559 APT packages**, five active Python environments and two Julia oracle environments.
+The five remaining Python environments passed dependency checks in the recorded
+audit. GPflow remains in `py313`; the separate `gpflow312` environment was retired
+at the user's request; see the [retirement receipt](repo-oracles/gpflow312-retirement.json).
+Earlier GPflow312 receipts describe its historical state. Its former package pins
+and source inventory remain available in Git history.
+Read the
 [cross-machine handoff](../../docs/ai/sessions/2026-09-14-python-oracle-wsl-handoff.md)
 for exact reproduction steps after pulling GitHub.
 
@@ -43,6 +48,9 @@ for exact reproduction steps after pulling GitHub.
 - [Native summary](native-summary.json): observed tools and reference builds;
   later additions are recorded by the repository receipts below.
 - [Expanded Python checks](repo-oracles/python.json) and [data77](repo-oracles/data77.json).
+- Fresh main-stack checks for [Dynamax/BayesNF/PyGAM](repo-oracles/jax-companion-main-compatibility.json)
+  and [UQpy/Whittle](repo-oracles/uqpy-companion-main-compatibility.json) distinguish
+  runtime failures from dependency constraints without changing installed packages.
 - [Replication checks](repo-oracles/replication-validation.json): main resolver
   dry run, candidate preflight, shell compatibility and repository validation.
 - `repo-oracles/`: IFJ/Julia, RF77, Topo, Gephi and companion receipts, with

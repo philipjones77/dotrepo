@@ -1,0 +1,40 @@
+{
+  "hostname": "PhilipSecond",
+  "captured_at": "2026-09-16T01:40:34.076810+00:00",
+  "claude": {
+    "windows": {
+      "defaultMode": "bypassPermissions",
+      "sandbox": false,
+      "remoteControlAtStartup": true
+    },
+    "wsl": {
+      "defaultMode": "bypassPermissions",
+      "sandbox": false,
+      "remoteControlAtStartup": true
+    },
+    "desktop_bypass_option_enabled": true
+  },
+  "codex": {
+    "windows": {
+      "approval_policy": "never",
+      "sandbox_mode": "danger-full-access"
+    },
+    "wsl": {
+      "approval_policy": "never",
+      "sandbox_mode": "danger-full-access"
+    }
+  },
+  "antigravity": {
+    "autoExecutionPolicy": 3,
+    "artifactReviewMode": 2,
+    "enableTerminalSandbox": false,
+    "nonWorkspaceFileAccessPolicy": "AGENT_SETTING_POLICY_ALLOW",
+    "remoteControlEnabled": true,
+    "telemetry_plugin_enabled": false
+  },
+  "remote_validation": {
+    "claude": "Auto-connect configured; WSL CLI remote-control eligibility/help succeeded; existing sessions need /remote-control",
+    "antigravity": "Setting enabled; second-device connection not tested",
+    "codex": "WSL CLI connected; persistent dotrepo-codex-remote-host.service enabled. Native Windows CLI failed with Job Object / socket privacy errors; Windows task disabled. iPhone pairing untested."
+  }
+}

@@ -7,6 +7,11 @@ For Python, numerical oracle packages, and WSL replication, read
 first. It records the current PC-PHILIP-WINDOWS inventory and the work requested
 on the other machine. Verify the hostname and preserve machine-local changes.
 
+For PhilipSecond AI permissions and remote connections, read the
+[September 15 AI access handoff](docs/ai/sessions/2026-09-15-philipsecond-ai-access-remote.md).
+It distinguishes verified WSL connectivity from desktop settings and pending
+phone pairing. Do not replicate authentication or pairing data between machines.
+
 ## Shared Writing and Reference Assets
 
 Before drafting or reviewing research prose, read

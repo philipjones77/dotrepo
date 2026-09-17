@@ -12,6 +12,9 @@ For PhilipSecond AI permissions and remote connections, read the
 It distinguishes verified WSL connectivity from desktop settings and pending
 phone pairing. Do not replicate authentication or pairing data between machines.
 
+The [September 16 PC-PHILIP-WINDOWS settings handoff](docs/ai/sessions/2026-09-16-pc-philip-windows-ai-settings.md)
+records the corresponding settings applied here and the verified WSL remote host.
+
 ## Shared Writing and Reference Assets
 
 Before drafting or reviewing research prose, read

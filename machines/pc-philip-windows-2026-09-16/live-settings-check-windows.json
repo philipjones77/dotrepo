@@ -1,0 +1,25 @@
+{
+  "captured_at": "2026-09-17T00:38:03.239323+00:00",
+  "platform": "windows",
+  "checks": {
+    "codex_approval_policy": true,
+    "codex_sandbox_mode": true,
+    "claude_default_mode": true,
+    "claude_sandbox_disabled": true,
+    "claude_unsandboxed_commands": true,
+    "claude_remote_control_startup": true,
+    "antigravity_autoExecutionPolicy": true,
+    "antigravity_artifactReviewMode": true,
+    "antigravity_enableTerminalSandbox": true,
+    "antigravity_allowAgentAccessNonWorkspaceFiles": true,
+    "antigravity_nonWorkspaceFileAccessPolicy": true,
+    "antigravity_allowCascadeAccessGitignoreFiles": true,
+    "antigravity_allowAgentAccessGitignoreFiles": true,
+    "antigravity_sandboxAllowNetwork": true,
+    "antigravity_internetAccessPolicy": true,
+    "antigravity_secureModeEnabled": true,
+    "antigravity_remoteControlEnabled": true
+  },
+  "passed": true,
+  "scope": "Fresh read of selected persisted preferences; not a desktop UI or second-device connection test."
+}

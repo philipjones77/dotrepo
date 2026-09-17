@@ -1,0 +1,23 @@
+{
+  "machine": "PC-PHILIP-WINDOWS",
+  "platform": "wsl",
+  "captured_at": "2026-09-17T00:33:38.396990+00:00",
+  "configuration": "~/.codex/config.toml",
+  "before": {
+    "approval_policy": null,
+    "sandbox_mode": null
+  },
+  "after": {
+    "approval_policy": "never",
+    "sandbox_mode": "danger-full-access"
+  },
+  "changed": true,
+  "unrelated_settings_preserved": true,
+  "private_backup_created": true,
+  "scope": "User configuration for new local Codex sessions; existing session overrides are not changed.",
+  "cli_configuration_parse_check": {
+    "command": "codex features list",
+    "exit_code": 0
+  },
+  "cli_version": "0.153.4"
+}

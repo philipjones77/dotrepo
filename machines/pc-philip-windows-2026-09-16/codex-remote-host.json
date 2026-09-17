@@ -1,0 +1,21 @@
+{
+  "machine": "PC-PHILIP-WINDOWS",
+  "captured_at": "2026-09-17T00:35:19.308989+00:00",
+  "platform": "wsl",
+  "cli_version": "0.153.4",
+  "service": "dotrepo-codex-remote-host.service",
+  "service_properties": {
+    "NRestarts": "0",
+    "ExecMainStatus": "0",
+    "ActiveState": "active",
+    "SubState": "running",
+    "UnitFileState": "enabled"
+  },
+  "connection_status": "connected",
+  "server_name_matches_hostname": true,
+  "timed_out": false,
+  "existing_local_sign_in_used": true,
+  "credentials_or_pairing_data_copied": false,
+  "phone_pairing_tested": false,
+  "scope": "Persistent WSL CLI host connected; WSL and Windows must remain running. Desktop phone pairing is separate and untested."
+}

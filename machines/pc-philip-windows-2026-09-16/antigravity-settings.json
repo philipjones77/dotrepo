@@ -1,0 +1,89 @@
+{
+  "hostname": "PC-PHILIP-WINDOWS",
+  "captured_at": "2026-09-17T00:37:07.793681+00:00",
+  "source_handoff": "docs/ai/sessions/2026-09-15-philipsecond-ai-access-remote.md",
+  "scope": "Antigravity local Windows and WSL settings",
+  "installed_desktop_version": "2.12.2",
+  "windows": {
+    "platform": "windows",
+    "config_path": "~/.gemini/config/config.json",
+    "existing_config_preserved": false,
+    "selected_user_settings": {
+      "autoExecutionPolicy": 3,
+      "artifactReviewMode": 2,
+      "enableTerminalSandbox": false,
+      "allowAgentAccessNonWorkspaceFiles": true,
+      "nonWorkspaceFileAccessPolicy": "AGENT_SETTING_POLICY_ALLOW",
+      "allowCascadeAccessGitignoreFiles": true,
+      "allowAgentAccessGitignoreFiles": true,
+      "sandboxAllowNetwork": true,
+      "internetAccessPolicy": "AGENT_SETTING_POLICY_ALLOW",
+      "secureModeEnabled": false,
+      "remoteControlEnabled": true
+    },
+    "machine_nickname_preserved": true,
+    "existing_machine_nickname_present": false,
+    "project_files_preserved": 0,
+    "telemetry_plugin_enabled": false,
+    "telemetry_plugin_payload_present": false,
+    "unrelated_settings_preserved": true,
+    "private_backup_created": true,
+    "readback_verified": true,
+    "installed_protobuf_schema_validated": true,
+    "app_launched_or_restarted": false,
+    "authentication_or_pairing_data_changed": false,
+    "remote_connection_tested": false
+  },
+  "wsl": {
+    "platform": "wsl",
+    "config_path": "~/.gemini/config/config.json",
+    "existing_config_preserved": true,
+    "selected_user_settings": {
+      "autoExecutionPolicy": 3,
+      "artifactReviewMode": 2,
+      "enableTerminalSandbox": false,
+      "allowAgentAccessNonWorkspaceFiles": true,
+      "nonWorkspaceFileAccessPolicy": "AGENT_SETTING_POLICY_ALLOW",
+      "allowCascadeAccessGitignoreFiles": true,
+      "allowAgentAccessGitignoreFiles": true,
+      "sandboxAllowNetwork": true,
+      "internetAccessPolicy": "AGENT_SETTING_POLICY_ALLOW",
+      "secureModeEnabled": false,
+      "remoteControlEnabled": true,
+      "permissionPreset": "AGENT_PERMISSION_PRESET_TURBO"
+    },
+    "machine_nickname_preserved": true,
+    "existing_machine_nickname_present": true,
+    "project_files_preserved": 2,
+    "telemetry_plugin_enabled": false,
+    "telemetry_plugin_payload_present": false,
+    "unrelated_settings_preserved": true,
+    "private_backup_created": true,
+    "readback_verified": true,
+    "installed_protobuf_schema_validated": true,
+    "app_launched_or_restarted": false,
+    "authentication_or_pairing_data_changed": false,
+    "remote_connection_tested": false
+  },
+  "windows_ide": {
+    "uses_same_default_gemini_config_directory": true,
+    "installed_language_server_selected_protobuf_fields_validated": true,
+    "separate_ide_profile_settings_modified": false,
+    "application_ui_readback_performed": false
+  },
+  "validation": [
+    "Selected JSON fields and enum values parsed using protobuf descriptors extracted read-only from the installed Windows Hub, Windows IDE, and native WSL Hub language servers.",
+    "Saved configurations reread; selected values match, unrelated existing fields and the existing WSL machine nickname preserved.",
+    "Both existing WSL project files are unchanged and contain no project setting overrides.",
+    "Telemetry plugin is explicitly disabled in both registrations; no installed plugin payload needed moving."
+  ],
+  "limitations": [
+    "Applications were not launched or restarted. New application processes load the saved settings.",
+    "Remote-control setting enabled; no second-device connection or phone pairing tested.",
+    "Windows had no existing config.json or machine nickname; no nickname, authentication, or pairing state was copied from another platform."
+  ],
+  "sources": [
+    "https://antigravity.google/docs/agent-settings",
+    "https://antigravity.google/docs/remote-control/"
+  ]
+}

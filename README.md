@@ -1,5 +1,10 @@
 # dotrepo
 
+**September 16 AI settings:** PC-PHILIP-WINDOWS now follows the other machine's
+local AI access and remote-control setup. See the
+[settings handoff](docs/ai/sessions/2026-09-16-pc-philip-windows-ai-settings.md)
+for applied preferences, verification and remaining phone-pairing steps.
+
 **September 14 cross-machine update:** reproduce the IFJ, RF77, TopoSmplJAX
 and data77 oracle setup, including exact JAX/CUDA versions and WSL installations.
 The source now has **338 py313 packages, 516 active R packages, 1,559 Ubuntu

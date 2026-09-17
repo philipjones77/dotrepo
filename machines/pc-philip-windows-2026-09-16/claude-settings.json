@@ -1,0 +1,61 @@
+{
+  "hostname": "PC-PHILIP-WINDOWS",
+  "captured_at": "2026-09-17T00:35:11.588306+00:00",
+  "source_handoff": "docs/ai/sessions/2026-09-15-philipsecond-ai-access-remote.md",
+  "code": {
+    "windows": {
+      "settings_file": "~/.claude/settings.json",
+      "permissions.defaultMode": "bypassPermissions",
+      "sandbox.enabled": false,
+      "sandbox.allowUnsandboxedCommands": true,
+      "remoteControlAtStartup": true,
+      "unrelated_settings_preserved": true,
+      "json_readback": "passed",
+      "private_backup": "~/.local/state/dotrepo/claude-access-20260917T003511Z/settings.json"
+    },
+    "wsl": {
+      "settings_file": "~/.claude/settings.json",
+      "permissions.defaultMode": "bypassPermissions",
+      "sandbox.enabled": false,
+      "sandbox.allowUnsandboxedCommands": true,
+      "remoteControlAtStartup": true,
+      "unrelated_settings_preserved": true,
+      "json_readback": "passed",
+      "private_backup": "~/.local/state/dotrepo/claude-access-20260917T003511Z/settings.json"
+    }
+  },
+  "desktop": {
+    "installed_app_version": "1.49585.0",
+    "settings_file": "%APPDATA%/Claude/claude_desktop_config.json",
+    "existing_account_bypass_option_enabled": true,
+    "preference": "preferences.bypassPermissionsOptInByAccount[existing local account]",
+    "validation": "Installed app preference schema accepts an account-to-boolean map; JSON readback passed.",
+    "runtime_status": "Desktop app was not running; preference loads on next launch. In-app toggle not visually checked.",
+    "other_accounts_and_preferences_preserved": true,
+    "private_backup": "~/.local/state/dotrepo/claude-access-20260917T003511Z/claude_desktop_config.json",
+    "existing_account_checked_against_config_journal": true
+  },
+  "validation": {
+    "wsl_cli_version": "2.1.263",
+    "windows_desktop_bundled_cli_version": "2.1.260",
+    "windows_active_vscode_extension_version": "2.1.270",
+    "runtime_schema_verified": [
+      "permissions.defaultMode",
+      "sandbox.enabled",
+      "sandbox.allowUnsandboxedCommands",
+      "remoteControlAtStartup",
+      "preferences.bypassPermissionsOptInByAccount"
+    ],
+    "remote_control": "Native WSL CLI remote-control help accepted; auto-connect configured. No new remote session or second-device connection was created for this check.",
+    "credentials_and_pairing_copied": false,
+    "active_sessions_restarted": false,
+    "dotrepo_project_overrides": "No Claude project settings or local project settings present in either Windows or native Ubuntu checkout.",
+    "managed_files": "No managed-settings.json present at the documented Windows and Ubuntu system paths inspected; account-delivered policies were not changed.",
+    "help_process": "Help text completed; its retained background process was terminated after inspection. No interactive Claude process was stopped."
+  },
+  "sources": [
+    "https://code.claude.com/docs/en/settings",
+    "https://code.claude.com/docs/en/remote-control",
+    "https://code.claude.com/docs/en/desktop"
+  ]
+}

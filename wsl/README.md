@@ -9,6 +9,11 @@ the installations. The capture/export tools below serve separate comparison
 and backup needs. GPflow remains in `py313`; the separate `gpflow312` environment
 was retired at the user's request and is no longer part of the target setup.
 
+The subsequent [September 19 JAX update](../docs/ai/sessions/2026-09-19-jax-update.md)
+raises the three modern source environments to JAX 0.11.2. Read it after the
+baseline handoff for the legacy companion exception, CPU checks, existing GPU
+access failure and pending installation on the other machine.
+
 From Windows PowerShell in this repository:
 
 ```powershell

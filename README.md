@@ -1,5 +1,11 @@
 # dotrepo
 
+**September 19 JAX update:** `py313`, `jax313` and `jax314` on PC-PHILIP-WINDOWS
+now use JAX **0.11.2**. CPU and dependency checks passed. The
+[JAX handoff](docs/ai/sessions/2026-09-19-jax-update.md) records the legacy oracle
+exception, existing GPU access failure, target-machine status and update steps
+to apply after the September 14 baseline.
+
 **September 16 AI settings:** PC-PHILIP-WINDOWS now follows the other machine's
 local AI access and remote-control setup. See the
 [settings handoff](docs/ai/sessions/2026-09-16-pc-philip-windows-ai-settings.md)
@@ -98,6 +104,10 @@ bash scripts/dotrepo.sh doctor --network
 ```
 
 `install` applies configuration only. Add `-InstallTools` on Windows or `--install-tools` in WSL to install tracked VS Code extensions and global npm packages. Python environments are created separately using `python/windows/create-venv.ps1` or `bash python/wsl/create-venv.sh "$HOME/.virtualenvs/py313-candidate"`. The WSL script requires a new directory and restores the September 14 pins; read the handoff for native prerequisites and companion environments. WSL uses standard virtualenvs; its Conda recreation definition and automatic shell fallback have been removed. R and MATLAB are inventoried, not automatically installed or licensed.
+
+After validating that historical WSL baseline, follow the
+[September 19 JAX update](docs/ai/sessions/2026-09-19-jax-update.md#apply-after-the-september-14-baseline)
+for the newer JAX packages in the modern environments.
 
 ## First setup
 

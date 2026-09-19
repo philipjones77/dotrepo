@@ -1,0 +1,344 @@
+{
+  "date": "2026-09-19",
+  "captured_at": "2026-09-19T20:10:14.047917+00:00",
+  "hostname": "PC-PHILIP-WINDOWS",
+  "distribution": "Ubuntu",
+  "ubuntu_version": "24.04.4",
+  "registered_distributions": [
+    "Ubuntu"
+  ],
+  "latest_stable_jax": "0.11.2",
+  "version_source": "https://pypi.org/project/jax/0.11.2/",
+  "scope_status": "Three modern environments upgraded; legacy compatibility decision and other machine pending",
+  "updated_environments": [
+    {
+      "environment": "py313",
+      "package_count": 338,
+      "only_expected_changes": true,
+      "changes": {
+        "jax": {
+          "before": "0.11.1",
+          "after": "0.11.2"
+        },
+        "jax-cuda13-pjrt": {
+          "before": "0.11.1",
+          "after": "0.11.2"
+        },
+        "jax-cuda13-plugin": {
+          "before": "0.11.1",
+          "after": "0.11.2"
+        },
+        "jaxlib": {
+          "before": "0.11.1",
+          "after": "0.11.2"
+        }
+      },
+      "python": "3.13.15",
+      "dependency_check_passed": true,
+      "unrelated_package_names_and_versions_unchanged": true,
+      "cpu_numerical_checks": {
+        "python": "3.13.15",
+        "environment": "py313",
+        "platform": "cpu",
+        "status": "passed",
+        "versions": {
+          "jax": "0.11.2",
+          "jaxlib": "0.11.2",
+          "jax-cuda13-plugin": "0.11.2",
+          "jax-cuda13-pjrt": "0.11.2",
+          "flax": "0.12.9",
+          "optax": "0.2.8",
+          "equinox": "0.13.8",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "jit_value_error": 0.0,
+        "gradient_max_error": 3.552713678800501e-15,
+        "linear_solve": true,
+        "fft_roundtrip": true,
+        "flax_dense": true,
+        "optax_update": true,
+        "equinox_jit": true
+      },
+      "gpu_numerical_checks": "blocked_by_preexisting_host_gpu_access_failure"
+    },
+    {
+      "environment": "jax313",
+      "package_count": 104,
+      "only_expected_changes": true,
+      "changes": {
+        "jax": {
+          "before": "0.11.1",
+          "after": "0.11.2"
+        },
+        "jax-cuda13-pjrt": {
+          "before": "0.11.1",
+          "after": "0.11.2"
+        },
+        "jax-cuda13-plugin": {
+          "before": "0.11.1",
+          "after": "0.11.2"
+        },
+        "jaxlib": {
+          "before": "0.11.1",
+          "after": "0.11.2"
+        }
+      },
+      "python": "3.13.15",
+      "dependency_check_passed": true,
+      "unrelated_package_names_and_versions_unchanged": true,
+      "cpu_numerical_checks": {
+        "python": "3.13.15",
+        "environment": "jax313",
+        "platform": "cpu",
+        "status": "passed",
+        "versions": {
+          "jax": "0.11.2",
+          "jaxlib": "0.11.2",
+          "jax-cuda13-plugin": "0.11.2",
+          "jax-cuda13-pjrt": "0.11.2",
+          "flax": "0.12.9",
+          "optax": "0.2.8",
+          "equinox": "0.13.8",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "jit_value_error": 0.0,
+        "gradient_max_error": 3.552713678800501e-15,
+        "linear_solve": true,
+        "fft_roundtrip": true,
+        "flax_dense": true,
+        "optax_update": true,
+        "equinox_jit": true
+      },
+      "gpu_numerical_checks": "blocked_by_preexisting_host_gpu_access_failure"
+    },
+    {
+      "environment": "jax314",
+      "package_count": 104,
+      "only_expected_changes": true,
+      "changes": {
+        "jax": {
+          "before": "0.11.1",
+          "after": "0.11.2"
+        },
+        "jax-cuda13-pjrt": {
+          "before": "0.11.1",
+          "after": "0.11.2"
+        },
+        "jax-cuda13-plugin": {
+          "before": "0.11.1",
+          "after": "0.11.2"
+        },
+        "jaxlib": {
+          "before": "0.11.1",
+          "after": "0.11.2"
+        }
+      },
+      "python": "3.14.7",
+      "dependency_check_passed": true,
+      "unrelated_package_names_and_versions_unchanged": true,
+      "cpu_numerical_checks": {
+        "python": "3.14.7",
+        "environment": "jax314",
+        "platform": "cpu",
+        "status": "passed",
+        "versions": {
+          "jax": "0.11.2",
+          "jaxlib": "0.11.2",
+          "jax-cuda13-plugin": "0.11.2",
+          "jax-cuda13-pjrt": "0.11.2",
+          "flax": "0.12.9",
+          "optax": "0.2.8",
+          "equinox": "0.13.8",
+          "numpy": "2.5.3",
+          "scipy": "1.18.1"
+        },
+        "jit_value_error": 0.0,
+        "gradient_max_error": 3.552713678800501e-15,
+        "linear_solve": true,
+        "fft_roundtrip": true,
+        "flax_dense": true,
+        "optax_update": true,
+        "equinox_jit": true
+      },
+      "gpu_numerical_checks": "blocked_by_preexisting_host_gpu_access_failure"
+    }
+  ],
+  "legacy_companion": {
+    "environment": "jax-oracles313",
+    "jax": "0.6.2",
+    "jaxlib": "0.6.2",
+    "status": "retained_pending_compatibility_decision",
+    "package_count": 51,
+    "all_package_versions_unchanged": true,
+    "dependency_check_passed": true,
+    "oracle_workloads": [
+      {
+        "name": "Dynamax state-space likelihood",
+        "status": "passed",
+        "details": {
+          "log_probability": -12.187799453735352,
+          "steps": 8
+        }
+      },
+      {
+        "name": "BayesNF MAP fit and prediction",
+        "status": "passed",
+        "details": {
+          "training_epochs": 2,
+          "prediction_shapes": [
+            [
+              1,
+              1,
+              8
+            ],
+            [
+              8
+            ]
+          ]
+        }
+      }
+    ],
+    "upgrade_candidates": [
+      {
+        "name": "stable-tfp",
+        "promoted": false,
+        "cpu_only": true,
+        "changes_from_active_companion": {
+          "jax": {
+            "before": "0.6.2",
+            "candidate": "0.11.2"
+          },
+          "jaxlib": {
+            "before": "0.6.2",
+            "candidate": "0.11.2"
+          }
+        },
+        "dependency_check_passed": true,
+        "dependency_issue": null,
+        "oracle_workloads": [
+          {
+            "name": "Dynamax state-space likelihood",
+            "status": "failed",
+            "error": "module 'jax.interpreters.xla' has no attribute 'pytype_aval_mappings'"
+          },
+          {
+            "name": "BayesNF MAP fit and prediction",
+            "status": "failed",
+            "error": "module 'jax.interpreters.xla' has no attribute 'pytype_aval_mappings'"
+          }
+        ]
+      },
+      {
+        "name": "modern-tfp",
+        "promoted": false,
+        "cpu_only": true,
+        "changes_from_active_companion": {
+          "dynamax": {
+            "before": "1.0.1",
+            "candidate": "1.0.2"
+          },
+          "flax": {
+            "before": "0.10.7",
+            "candidate": "0.12.9"
+          },
+          "jax": {
+            "before": "0.6.2",
+            "candidate": "0.11.2"
+          },
+          "jaxlib": {
+            "before": "0.6.2",
+            "candidate": "0.11.2"
+          },
+          "tensorflow-probability": {
+            "before": "0.25.0",
+            "candidate": null
+          },
+          "tfp-nightly": {
+            "before": null,
+            "candidate": "0.26.0.dev20260919"
+          }
+        },
+        "dependency_check_passed": false,
+        "dependency_issue": "BayesNF requires tensorflow-probability[jax]>=0.19.0; tfp-nightly does not satisfy that distribution name",
+        "oracle_workloads": [
+          {
+            "name": "Dynamax state-space likelihood",
+            "status": "passed",
+            "details": {
+              "log_probability": -12.187799453735352,
+              "steps": 8
+            }
+          },
+          {
+            "name": "BayesNF MAP fit and prediction",
+            "status": "passed",
+            "details": {
+              "training_epochs": 2,
+              "prediction_shapes": [
+                [
+                  1,
+                  1,
+                  8
+                ],
+                [
+                  8
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "other_active_environment": {
+    "name": "uqpy312",
+    "python": "3.12.3",
+    "package_count": 44,
+    "jax_installed": false,
+    "modified": false
+  },
+  "excluded_from_active_upgrade": [
+    "Historical .old environments",
+    "Archived environments",
+    "Temporary candidate environments",
+    "System and managed base interpreters without JAX"
+  ],
+  "gpu_baseline_before_update": {
+    "jax": "0.11.1",
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "windows_driver": "616.56",
+    "windows_driver_cim": "32.0.16.1656",
+    "windows_pnp_status": "OK",
+    "windows_nvidia_smi_error": "Failed to initialize NVML: GPU access blocked by the operating system",
+    "wsl_nvidia_smi_error": "Failed to initialize NVML: N/A",
+    "jax_gpu_initialization_error": "cuInit(0) failed: Unknown CUDA error 100",
+    "wsl_kernel_gpu_adapter_error": -22,
+    "wsl_dev_dxg_present": true,
+    "status": "GPU unavailable before JAX package changes; CPU checks do not validate GPU execution"
+  },
+  "other_machine": {
+    "name": "PhilipSecond",
+    "status": "pending",
+    "reason": "No reachable existing remote connection found in this session; hostname resolution failed",
+    "installed_versions_verified": false
+  },
+  "rollback": {
+    "saved_version": "0.11.1",
+    "packages": [
+      "jax",
+      "jaxlib",
+      "jax-cuda13-plugin",
+      "jax-cuda13-pjrt"
+    ],
+    "wheel_abis": [
+      "cp313",
+      "cp314"
+    ],
+    "performed": false
+  },
+  "private_state": "~/.local/state/dotrepo/jax-upgrade-2026-09-19",
+  "running_jobs_stopped": false,
+  "driver_reset_or_wsl_shutdown_or_reboot": false
+}

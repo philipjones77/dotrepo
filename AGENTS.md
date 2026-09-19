@@ -23,6 +23,11 @@ The [September 19 MATLAB handoff](docs/ai/sessions/2026-09-19-matlab-wsl-install
 records the subsequent native Ubuntu installation on PC-PHILIP-WINDOWS, including
 the toolbox inventory and activation status.
 
+The [September 19 JAX handoff](docs/ai/sessions/2026-09-19-jax-update.md)
+records JAX 0.11.2 in the three modern WSL environments, the retained legacy
+oracle companion, the pre-existing GPU access failure and pending target work.
+Apply it after restoring the September 14 baseline; keep historical pins intact.
+
 ## Shared Writing and Reference Assets
 
 Before drafting or reviewing research prose, read

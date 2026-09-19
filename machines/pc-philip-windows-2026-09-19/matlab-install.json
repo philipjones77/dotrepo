@@ -105,12 +105,27 @@
     "MATLAB R2026a (Ubuntu)"
   ],
   "activation": {
-    "status": "pending_user_sign_in",
+    "status": "verified_by_native_matlab_runtime",
     "initial_runtime_error": "MathWorks Licensing Error 1: no local MATLAB license",
-    "activation_window_opened": true
+    "activation_window_opened": true,
+    "matlab_license_test_passed": true
   },
   "runtime_validation": {
-    "status": "pending_activation"
+    "status": "passed",
+    "validated_on": "2026-09-19",
+    "exit_code": 0,
+    "version": "26.1.0.3346908 (R2026a) Update 5",
+    "release": "2026a",
+    "license_test_passed": true,
+    "arithmetic_passed": true,
+    "matrix_solve_passed": true,
+    "fft_roundtrip_passed": true,
+    "runtime_product_count": 67,
+    "nonfatal_startup_warning": "Unable to locate a personal folder for $documents/MATLAB",
+    "individual_toolbox_workloads_exhaustively_tested": false,
+    "fresh_followup_startup_passed": true,
+    "fresh_followup_required_sign_in": false,
+    "successful_batch_launches": 2
   },
   "wsl_connection_recovery": {
     "error": "Wsl/Service/0x8007274c",

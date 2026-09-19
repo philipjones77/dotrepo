@@ -71,14 +71,24 @@ were not changed.
 
 The initial batch launch returned MathWorks Licensing Error 1 because no
 local MATLAB license was available. The WSLg **MathWorks Product Activation**
-window was opened for this machine's own sign-in. Activation and runtime
-verification are pending the user's completion of that flow. The prepared
-runtime checks cover the MATLAB license, arithmetic, a matrix solve, an FFT
-roundtrip and the runtime product inventory.
+window was opened for this machine's own sign-in. Subsequent runtime testing
+on September 19 succeeded: the native Linux batch process exited **0**, and
+`license('test','MATLAB')`, arithmetic, a matrix solve and an FFT roundtrip
+all passed. The running version was **26.1.0.3346908 (R2026a) Update 5**;
+`ver` reported **67 products**, matching the installed inventory. Individual
+toolbox workloads and entitlements were not exhaustively tested.
+A second fresh MATLAB process also exited **0** and passed the same checks
+without another sign-in window or request, confirming that authentication
+persisted for a subsequent launch.
+
+The user reported a blank sign-in window during testing. A retry completed
+successfully without a renderer repair or credential reset. MATLAB emitted
+the nonfatal warning `Unable to locate a personal folder for $documents/MATLAB`;
+the warning did not prevent the numerical checks from passing.
 
 Private logs, credentials, license files, installer payloads and MATLAB
-binaries remain outside Git. Installation evidence is distinct from a
-successful licensed MATLAB launch.
+binaries remain outside Git. Both installation and a licensed MATLAB runtime
+have now been verified on this machine.
 
 ## WSL connection recovery
 

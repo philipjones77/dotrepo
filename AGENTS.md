@@ -15,6 +15,10 @@ phone pairing. Do not replicate authentication or pairing data between machines.
 The [September 16 PC-PHILIP-WINDOWS settings handoff](docs/ai/sessions/2026-09-16-pc-philip-windows-ai-settings.md)
 records the corresponding settings applied here and the verified WSL remote host.
 
+The [September 19 PowerShell handoff](docs/ai/sessions/2026-09-19-powershell-update.md)
+records PowerShell 7.6.6 on PC-PHILIP-WINDOWS and the pending PhilipSecond update.
+Verify each machine directly; pulling the record does not install the update.
+
 ## Shared Writing and Reference Assets
 
 Before drafting or reviewing research prose, read

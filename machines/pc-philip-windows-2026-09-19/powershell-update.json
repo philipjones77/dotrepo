@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-19",
+  "hostname": "PC-PHILIP-WINDOWS",
+  "windows_computer_name": "PC-PHILIP-WINDO",
+  "windows": {
+    "before": "7.6.5",
+    "after": "7.6.6",
+    "method": "Official Microsoft x64 ZIP; existing current junction",
+    "archive_sha256": "02FE458BE20493FBDF43F61EA20610B811EE6C738AB1676C61B9CFCD1A33C860",
+    "authenticode_status": "Valid",
+    "authenticode_publisher": "Microsoft Corporation",
+    "normal_profile_startup_passed": true,
+    "pipeline_and_json_checks_passed": true,
+    "profile_files_unchanged": 6,
+    "previous_installation_retained": true,
+    "preexisting_suppressed_profile_error": "fnm command discovery; reproduced with both versions",
+    "os_managed_windows_powershell": "5.1.26100.9444"
+  },
+  "wsl": {
+    "registered_distributions": ["Ubuntu"],
+    "distribution": "Ubuntu",
+    "before_package": "7.6.5-1.deb",
+    "after_package": "7.6.6-1.deb",
+    "source": "https://packages.microsoft.com/ubuntu/24.04/prod",
+    "runtime": ".NET 10.0.12",
+    "fresh_normal_user_startup_passed": true,
+    "pipeline_and_json_checks_passed": true,
+    "only_changed_package": "powershell",
+    "manual_package_selections_preserved": true,
+    "unrelated_package_versions_preserved": true
+  },
+  "other_machine": {
+    "name": "PhilipSecond",
+    "status": "pending",
+    "reason": "No reachable existing remote connection found; hostname resolution failed",
+    "installed_versions_verified": false
+  },
+  "running_sessions_terminated": false,
+  "reboot_performed": false
+}

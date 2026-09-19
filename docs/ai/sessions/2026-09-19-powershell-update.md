@@ -46,6 +46,9 @@ Private download, inventory and validation records remain under
 
 ## MATLAB in WSL
 
+This inspection preceded the later same-day installation. See the
+[MATLAB handoff](2026-09-19-matlab-wsl-install.md) for its current status.
+
 The user also asked whether MATLAB is installed in WSL. This machine's Ubuntu
 has no working `matlab` command or installation in the standard locations checked.
 An older `~/MATLAB` directory identifies R2026a in `ProductData.json`, but lacks

@@ -19,6 +19,10 @@ The [September 19 PowerShell handoff](docs/ai/sessions/2026-09-19-powershell-upd
 records PowerShell 7.6.6 on PC-PHILIP-WINDOWS and the pending PhilipSecond update.
 Verify each machine directly; pulling the record does not install the update.
 
+The [September 19 MATLAB handoff](docs/ai/sessions/2026-09-19-matlab-wsl-install.md)
+records the subsequent native Ubuntu installation on PC-PHILIP-WINDOWS, including
+the toolbox inventory and activation status.
+
 ## Shared Writing and Reference Assets
 
 Before drafting or reviewing research prose, read

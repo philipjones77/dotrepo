@@ -1,0 +1,57 @@
+{
+  "hostname": "PhilipSecond",
+  "source_commit": "596805f",
+  "captured_at": "20260919T223724Z",
+  "checks": {
+    "windows_claude": {
+      "changed": false,
+      "changed_keys": [],
+      "readback": "passed"
+    },
+    "windows_antigravity": {
+      "changed": false,
+      "changed_keys": [],
+      "readback": "passed"
+    },
+    "windows_codex": {
+      "changed": false,
+      "approval_policy": "never",
+      "sandbox_mode": "danger-full-access",
+      "readback": "passed"
+    },
+    "wsl_claude": {
+      "changed": true,
+      "changed_keys": [
+        "permissions.defaultMode"
+      ],
+      "readback": "passed"
+    },
+    "wsl_antigravity": {
+      "changed": true,
+      "changed_keys": [
+        "userSettings.artifactReviewMode",
+        "userSettings.autoExecutionPolicy",
+        "userSettings.allowAgentAccessNonWorkspaceFiles",
+        "userSettings.allowCascadeAccessGitignoreFiles",
+        "userSettings.allowAgentAccessGitignoreFiles",
+        "userSettings.sandboxAllowNetwork",
+        "userSettings.internetAccessPolicy",
+        "userSettings.secureModeEnabled",
+        "userSettings.remoteControlEnabled",
+        "userSettings.permissionPreset",
+        "plugins"
+      ],
+      "readback": "passed"
+    },
+    "wsl_codex": {
+      "changed": false,
+      "approval_policy": "never",
+      "sandbox_mode": "danger-full-access",
+      "readback": "passed"
+    }
+  },
+  "remote_service": {
+    "is-active": "active",
+    "is-enabled": "enabled"
+  }
+}

@@ -100,11 +100,32 @@ $managedLines = @(
 $utf8 = [System.Text.UTF8Encoding]::new($false)
 [System.IO.File]::WriteAllLines($configPath, [string[]]($managedLines + $retainedLines.ToArray()), $utf8)
 
-# Generate missing HOST keys locally; existing host keys are preserved by -A.
+# Generate missing HOST keys locally; existing host keys and their ACLs are
+# preserved by -A. Restrict only keys created in this run so the LocalSystem
+# service can use them without retaining access for the elevated caller.
+$existingHostPrivateKeys = @(
+    Get-ChildItem -LiteralPath $sshDirectory -Filter 'ssh_host_*_key' -File -ErrorAction SilentlyContinue |
+        ForEach-Object Name
+)
 & (Join-Path $sshProgramDirectory 'ssh-keygen.exe') -A
 if ($LASTEXITCODE -ne 0) {
     Copy-Item -LiteralPath (Join-Path $backupDirectory 'sshd_config') -Destination $configPath -Force
     throw 'Host-key creation failed; original sshd_config restored.'
+}
+$newHostPrivateKeys = @(
+    Get-ChildItem -LiteralPath $sshDirectory -Filter 'ssh_host_*_key' -File |
+        Where-Object Name -notin $existingHostPrivateKeys
+)
+foreach ($hostPrivateKey in $newHostPrivateKeys) {
+    $hostKeyAcl = [System.Security.AccessControl.FileSecurity]::new()
+    $hostKeyAcl.SetAccessRuleProtection($true, $false)
+    $hostKeyAcl.SetOwner([System.Security.Principal.SecurityIdentifier]::new('S-1-5-32-544'))
+    foreach ($sid in @('S-1-5-18', 'S-1-5-32-544')) {
+        $identity = [System.Security.Principal.SecurityIdentifier]::new($sid)
+        $access = [System.Security.AccessControl.FileSystemAccessRule]::new($identity, 'FullControl', 'Allow')
+        $hostKeyAcl.AddAccessRule($access)
+    }
+    Set-Acl -LiteralPath $hostPrivateKey.FullName -AclObject $hostKeyAcl
 }
 & $sshd -t -f $configPath
 if ($LASTEXITCODE -ne 0) {

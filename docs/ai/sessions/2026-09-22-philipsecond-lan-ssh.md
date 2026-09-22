@@ -40,8 +40,15 @@ their ACLs.
 
 The server result does not establish a connection from PC-PHILIP-WINDOWS.
 Verify the fingerprint from that computer before accepting it. PhilipSecond's
-reverse-direction client key, peer authorization on PC-PHILIP-WINDOWS, private
-aliases, and end-to-end Windows/WSL commands remain pending.
+reverse-direction client key now exists locally, and its public half is in the
+[PhilipSecond machine capsule](../../../machines/philipsecond-2026-09-22/README.md).
+Peer authorization on PC-PHILIP-WINDOWS, private aliases, and end-to-end
+Windows/WSL commands remain pending because that PC's TCP port 22 was not open.
+
+Both PCs are on the same main eero home network. No router port forwarding is
+needed or wanted. Use the Windows hostname `PC-PHILIP-WINDOWS` (which resolves
+locally, with `.local` available as a fallback) rather than committing a LAN
+address. Do not place either PC on the guest network for this workflow.
 
 ## One-time server setup on each PC
 
@@ -151,10 +158,11 @@ $privateAcl.AddAccessRule([System.Security.AccessControl.FileSystemAccessRule]::
 Set-Acl -LiteralPath $lanKey -AclObject $privateAcl
 ```
 
-Copy **only** `$lanKey.pub` into an appropriately named target machine capsule,
-for example `machines/philipsecond-2026-09-22/lan-client-ed25519.pub`, then commit
-and push that public file and the sanitized target receipt. Pull them on
-PC-PHILIP-WINDOWS and authorize the public file here using the same elevated
+PhilipSecond's key was created for unattended LAN use, restricted locally, and
+only its public half was added at
+`machines/philipsecond-2026-09-22/lan-client-ed25519.pub`. Its fingerprint is
+`SHA256:61KYYjTl7UhvtAhY7divT7laH+nc7fUC43Ha1tb5VZ0`. Pull it on
+PC-PHILIP-WINDOWS and authorize that public file there using the same elevated
 helper with `-AdministratorPublicKeyFile`. Never commit a private key or copy
 it between computers.
 [OpenSSH key commands](https://man.openbsd.org/ssh-keygen).

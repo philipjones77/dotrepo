@@ -1,0 +1,81 @@
+{
+  "date": "2026-09-22",
+  "timezone": "America/Chicago",
+  "machine": "PC-PHILIP-WINDOWS",
+  "scope": "Google Antigravity extension in VS Code Remote WSL / Ubuntu",
+  "finding": {
+    "persistence": "Existing executable persisted; most retained September 20-21 activations skipped download.",
+    "redundant_download": "September 21 16:06 activation failed agy --version and downloaded the same 1.2.7 release; a subsequent activation reused it.",
+    "failure_cause": "Unconfirmed: source has a five-second version probe timeout, but log omitted exit code and signal."
+  },
+  "wsl": {
+    "extension_id": "google.google-antigravity",
+    "extension_before": "1.2.0",
+    "extension_after": "1.4.0",
+    "backend_before": "1.2.7",
+    "backend_after": "1.2.8",
+    "backend_version_exit_code": 0,
+    "backend_sha256": "c20434f0b9278196498069dac5a0a2e72bc0b5f8aebdf17c5d535b5369b76f67",
+    "installation_methods": [
+      "VS Code server CLI --install-extension google.google-antigravity@1.4.0 --force",
+      "Official agy update; verification successful"
+    ],
+    "active_window_reload": "Required to activate extension 1.4.0; not performed during repair"
+  },
+  "windows": {
+    "extension_version": "1.4.0",
+    "backend_version": "1.2.7",
+    "changed": false,
+    "evidence": "Existing extension log recorded successful backend reuse."
+  },
+  "verification": {
+    "method": "Two fresh Node processes evaluating the installed extension 1.4.0 original binary_downloader module with the real installed Linux binary and official production manifest.",
+    "guards": "Only official manifest reads and the exact backend --version invocation allowed; backend downloads and writes blocked.",
+    "extension_module_sha256": "6f5c898c66b8a0d1c0506303af478b691ca06d587f459c3bb325de4ff4fc8387",
+    "state_source": "Windows VS Code User/globalStorage/state.vscdb; corresponding WSL state database absent",
+    "release_channel": "production",
+    "manifest_url": "https://antigravity-cli-auto-updater-974169037036.us-central1.run.app/manifests/linux_amd64.json",
+    "manifest_version": "1.2.8",
+    "runs": [
+      {
+        "result": "REUSED",
+        "exit_code": 0,
+        "seconds": 2.283,
+        "version_probe_ms": 202,
+        "manifest_requests": 1,
+        "blocked_operations": []
+      },
+      {
+        "result": "REUSED",
+        "exit_code": 0,
+        "seconds": 2.671,
+        "version_probe_ms": 180,
+        "manifest_requests": 1,
+        "blocked_operations": []
+      }
+    ],
+    "decision": "Installed binary is valid (actual version 1.2.8 >= target 1.2.8). Skipping download.",
+    "limits": [
+      "Acquisition decision tested in isolation with fresh in-memory caches.",
+      "No full VS Code window restart, WSL cold boot or Windows reboot test.",
+      "The extension retains its five-second version subprocess timeout."
+    ]
+  },
+  "private_rollback": {
+    "wsl_directory": "~/.local/state/dotrepo/antigravity-vscode-startup-2026-09-22/",
+    "files": [
+      "google.google-antigravity-1.2.0.tar.gz",
+      "agy-1.2.7"
+    ],
+    "used": false
+  },
+  "notes": [
+    "No vendor source patches or update disabling.",
+    "Authentication and pairing data were not copied or changed.",
+    "PhilipSecond requires independent inventory, current official release checks, installation and validation."
+  ],
+  "philipsecond": {
+    "updated_by_this_receipt": false,
+    "status": "Independent verification and update pending; no target installation claim."
+  }
+}

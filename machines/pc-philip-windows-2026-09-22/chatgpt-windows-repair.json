@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-22",
+  "machine": "PC-PHILIP-WINDOWS",
+  "package": "OpenAI.Codex",
+  "before": "26.915.4065.0",
+  "after": "26.915.4065.0",
+  "package_status": "Ok",
+  "installer_source": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-x64.msix",
+  "installer_signature": "Valid",
+  "installer_sha256": "FB4745F5378C8A4122F74643A3C7C1000DA5F4B184F0D9DC9FAF275C79AC73A4",
+  "graphics_caches_rebuilt": [
+    "GPUPersistentCache",
+    "GrShaderCache",
+    "ShaderCache",
+    "Default\\GPUCache",
+    "Default\\DawnGraphiteCache",
+    "Default\\DawnWebGPUCache"
+  ],
+  "profile_reset": false,
+  "authentication_transferred": false,
+  "post_relaunch": {
+    "fresh_processes": 10,
+    "all_processes_report_responding": true,
+    "graphics_caches_recreated": 6,
+    "diagnostic_session_status": "ok",
+    "diagnostic_session_errors": 0,
+    "observed_new_gpu_crash": false,
+    "limits": "Fresh desktop logs were buffered; intermittent freezes require observation during normal use."
+  },
+  "other_machine": "No repair or update performed; independent inventory and release check required."
+}

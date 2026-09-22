@@ -2,6 +2,15 @@
 
 ## Current Cross-Machine Handoff
 
+For the latest Antigravity startup repair, read the
+[September 22 VS Code handoff](docs/ai/sessions/2026-09-22-antigravity-vscode-startup.md).
+For bidirectional Windows/WSL access on the home network, follow the
+[September 22 LAN SSH setup](docs/ai/sessions/2026-09-22-philipsecond-lan-ssh.md).
+The [September 22 ChatGPT Windows repair](docs/ai/sessions/2026-09-22-chatgpt-windows-repair.md)
+records the local reinstall, preserved profile, and remaining stability checks.
+Use GitHub push/pull for repository changes and verify software on each machine
+independently. SSH private keys and app sign-in data stay on their own machines.
+
 For Python, numerical oracle packages, and WSL replication, read
 [the September 14 handoff](docs/ai/sessions/2026-09-14-python-oracle-wsl-handoff.md)
 first. It records the current PC-PHILIP-WINDOWS inventory and the work requested

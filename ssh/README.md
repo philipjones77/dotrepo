@@ -8,6 +8,8 @@ The shared Git configuration rewrites GitHub HTTPS Git URLs to SSH. Existing exp
 
 Store extra host aliases or identity-file overrides in `~/.ssh/config.local`, and personal Git name/email overrides in `~/.gitconfig.local`. Use a separate alias and key for a different GitHub account. The tracked `github-personal` alias uses this platform's default GitHub key.
 
-Passphrase keys can be loaded into a native SSH agent with `ssh-add ~/.ssh/id_ed25519_github`. Agent setup depends on the OS/session; the scripts do not enable system services or remove passphrases automatically.
+Passphrase keys can be loaded into a native SSH agent with `ssh-add ~/.ssh/id_ed25519_github`. Agent setup depends on the OS/session; the key-generation scripts do not enable system services or remove passphrases automatically.
+
+For direct access between the Windows PCs, use the [two-way LAN SSH handoff](../docs/ai/sessions/2026-09-22-philipsecond-lan-ssh.md). Its administrative `enable-lan-server.ps1` helper sets up a key-only Windows server with a Private-network firewall rule. Each PC retains its own private client key; exchange only public keys through the machine capsules. GitHub push/pull remains the repository synchronization workflow.
 
 References: [GitHub SSH setup](https://docs.github.com/en/authentication/connecting-to-github-with-ssh), [GitHub host fingerprints](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/githubs-ssh-key-fingerprints).

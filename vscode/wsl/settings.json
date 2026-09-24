@@ -27,5 +27,20 @@
   "terminal.integrated.commandsToSkipShell": [
     "workbench.action.terminal.paste"
   ],
-  "terminal.integrated.cwd": "${env:HOME}"
+  "terminal.integrated.cwd": "${env:HOME}",
+  "python.analysis.indexing": false,
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.analysis.exclude": [
+    "**/.git",
+    "**/.venv",
+    "**/node_modules",
+    "**/__pycache__",
+    "**/build",
+    "**/dist",
+    "**/outputs",
+    "**/results",
+    "**/benchmarks/out*",
+    "**/.pytest_cache",
+    "**/.mypy_cache"
+  ]
 }

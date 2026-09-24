@@ -115,6 +115,46 @@ left for the owner to run.
 4. Review the remaining `%TEMP%` contents (about 6 GB) before deleting them.
 5. Reload the WSL VS Code windows so they pick up the discovery settings.
 
+## Follow-up: crashes at 20:34 and 20:36
+
+WSL crashed twice more after test discovery and CUDA were removed. This time
+the kernel OOM killer ran instead of only reporting page allocation failures.
+Both times it killed PID 4407, a VS Code server Node process (`MainThread`) with
+3.86 GB resident and 28.5 GB virtual memory. Pylance's foreground and
+background analysis both logged PID 4069, so the killed process was not
+Pylance. The retained logs do not identify it; a second extension host is
+possible. The user observed Pylance at 2.2 GB in the same period, with about
+7,000 source files across the five-folder workspace.
+
+`.wslconfig` had been raised before the second crash, but the WSL utility VM
+(`vmmemWSL` PID 26828) had not restarted, so the old 6 GB limit remained. A
+`wsl --shutdown` applied the new limits.
+
+Changes applied:
+
+| Change | Location |
+| --- | --- |
+| `memory=8GB`, `swap=8GB` (previous file saved as `.wslconfig.bak-20260923`) | `%USERPROFILE%\.wslconfig` |
+| `python.analysis.indexing: false`, `diagnosticMode: openFilesOnly`, build/cache `exclude` list | Windows VS Code user settings, WSL `~/.vscode-server/data/Machine/settings.json`, and this repo's `vscode/windows/settings.json` and `vscode/wsl/settings.json` |
+| `diagnosticMode` changed from `workspace` to `openFilesOnly` | `TopoSmplJAX/TopoSMPLJAX.code-workspace` (that commit also removes the four sibling folders from the workspace; this edit was already in the working tree) |
+| Memory logger: top eight processes by RSS every 30 s, labelled by VS Code role or extension | `wsl/memlog.sh` installed as `~/.local/bin/dotrepo-memlog`; `wsl/dotrepo-memlog.service` enabled as a systemd user service; logs in `~/.local/state/dotrepo/memlog/` (seven days kept) |
+
+After the restart and reconnection, WSL showed 7.8 GB of memory and 8 GB of
+swap. Usage held at about 2.6–2.9 GB, with the extension host near 760 MB,
+Pylance at 540–700 MB and the Claude Code process near 300 MB.
+
+If WSL crashes again, read the last entries of the previous day's or current
+memlog to identify the growing process:
+`tail -n 60 ~/.local/state/dotrepo/memlog/$(date +%F).log`
+
+To install the logger on another machine:
+
+```bash
+tr -d '\r' < wsl/memlog.sh > ~/.local/bin/dotrepo-memlog && chmod +x ~/.local/bin/dotrepo-memlog
+tr -d '\r' < wsl/dotrepo-memlog.service > ~/.config/systemd/user/dotrepo-memlog.service
+systemctl --user daemon-reload && systemctl --user enable --now dotrepo-memlog.service
+```
+
 ## Other observations
 
 - On 2026-09-22 at 18:32, Windows bugchecked with `0x10E`
@@ -123,8 +163,8 @@ left for the owner to run.
   `LiveKernelEvent` Windows Error Reporting entries on 9/23 appear to be
   resubmissions; no other Kernel-Power 41 events occurred. Consider updating
   the NVIDIA driver.
-- Raising `.wslconfig` to `memory=8GB` would add headroom. Windows had 3.1 GB
-  free of 15.6 GB when checked, so larger values are risky.
+- Windows had 2.6–3.1 GB of physical memory free of 15.6 GB when checked, so
+  do not raise the WSL memory limit above 8 GB.
 - Two `rclone mount` processes for the same Google Drive remote were running
   after boot. This did not cause the disconnects; check whether the duplicate
   is intentional.

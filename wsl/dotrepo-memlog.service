@@ -1,0 +1,11 @@
+[Unit]
+Description=Log WSL memory and largest processes for crash diagnosis
+
+[Service]
+ExecStart=%h/.local/bin/dotrepo-memlog
+Restart=always
+RestartSec=10
+Nice=10
+
+[Install]
+WantedBy=default.target

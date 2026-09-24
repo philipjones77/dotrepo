@@ -27,7 +27,9 @@
   "terminal.integrated.profiles.windows": {
     "PowerShell": {
       "path": "pwsh.exe",
-      "args": ["-NoLogo"]
+      "args": [
+        "-NoLogo"
+      ]
     }
   },
   "terminal.integrated.automationProfile.windows": {
@@ -40,5 +42,20 @@
   "terminal.integrated.sendKeybindingsToShell": false,
   "terminal.integrated.commandsToSkipShell": [
     "workbench.action.terminal.paste"
+  ],
+  "python.analysis.indexing": false,
+  "python.analysis.diagnosticMode": "openFilesOnly",
+  "python.analysis.exclude": [
+    "**/.git",
+    "**/.venv",
+    "**/node_modules",
+    "**/__pycache__",
+    "**/build",
+    "**/dist",
+    "**/outputs",
+    "**/results",
+    "**/benchmarks/out*",
+    "**/.pytest_cache",
+    "**/.mypy_cache"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "workbench.editorAssociations": {
-    "*.pdf": "pdf.preview",
+    "*.pdf": "dotrepo.sumatraPdf",
     "*.png": "imagePreview.previewEditor",
     "*.jpg": "imagePreview.previewEditor",
     "*.jpe": "imagePreview.previewEditor",

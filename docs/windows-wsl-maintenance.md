@@ -311,9 +311,15 @@ normally manages server installation. [VS Code CLI documentation](https://code.v
 
 Bootstrap merges explicit PDF/image/Markdown preview associations from
 `vscode/windows/settings.json` and `vscode/wsl/settings.json`. Markdown diffs
-remain text; source links retain text editing and line selection. Install the
-existing `tomoki1207.pdf` viewer on the Windows UI side. Images and Markdown use
-built-in viewers. Use **Reopen Editor With** to select another view for one file.
+remain text; source links retain text editing and line selection. LaTeX Workshop
+handles PDFs through its `latex-workshop-pdf-hook` editor. Disable or uninstall
+`tomoki1207.pdf` (vscode-pdf) wherever it is installed to avoid competing PDF
+viewers. Images and Markdown use built-in viewers. Use **Reopen Editor With** to
+select another view for one file.
+
+The [September 20 viewer handoff](ai/sessions/2026-09-20-latex-pdf-viewer.md)
+records the Windows and WSL fix on PC-PHILIP-WINDOWS. Bootstrap does not uninstall
+extensions removed from its lists; existing installations need explicit cleanup.
 
 The known Codex/Claude extension builds forced ordinary links through a text-only
 opening API. The repository's guarded repair is temporary and applies only to

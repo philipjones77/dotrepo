@@ -214,6 +214,21 @@ function Install-VSCodeExtensions {
     }
 }
 
+function Install-PdfPreference {
+    # This repository-owned integration is part of editor configuration, not a
+    # Marketplace download, so ordinary bootstrap must install/update it too.
+    param([string]$SourceRoot = $RepoRoot)
+    $codeCmd = Join-Path $env:LOCALAPPDATA "Programs\Microsoft VS Code\bin\code.cmd"
+    if (-not (Test-Path -LiteralPath $codeCmd)) {
+        Write-Log "Skipping SumatraPDF integration; Windows VS Code was not found"
+        return
+    }
+    $pwshCommand = Get-Command pwsh.exe -CommandType Application -ErrorAction SilentlyContinue
+    if (-not $pwshCommand) { throw 'PowerShell 7 is required to install the SumatraPDF integration.' }
+    & $pwshCommand.Source -NoProfile -File (Join-Path $SourceRoot 'windows\install-pdf-preference.ps1') -CodeCommand $codeCmd
+    if ($LASTEXITCODE -ne 0) { throw 'SumatraPDF integration installation failed.' }
+}
+
 $PowerShellProfilePaths = @(Get-PowerShellProfilePaths)
 $GitConfigTarget = Join-Path $HOME ".gitconfig"
 $SshDir = Join-Path $HOME ".ssh"
@@ -255,6 +270,8 @@ if (Test-Path (Join-Path $RepoRoot "node\install-globals.ps1")) {
     & (Join-Path $RepoRoot "node\install-globals.ps1")
 }
 }
+
+Install-PdfPreference
 
 Write-Log "Windows bootstrap complete"
 Write-Log "Next steps:"

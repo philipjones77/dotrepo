@@ -1,0 +1,20 @@
+{
+  "name": "sumatra-pdf",
+  "displayName": "SumatraPDF for repository PDFs",
+  "description": "Open local and WSL PDF tabs from any VS Code chat in SumatraPDF.",
+  "version": "1.0.0",
+  "publisher": "dotrepo",
+  "engines": { "vscode": "^1.85.0" },
+  "main": "./extension.js",
+  "extensionKind": ["ui"],
+  "activationEvents": ["onStartupFinished"],
+  "contributes": {
+    "commands": [{ "command": "dotrepo.openPdfInSumatra", "title": "PDF: Open in SumatraPDF" }],
+    "customEditors": [{
+      "viewType": "dotrepo.sumatraPdf",
+      "displayName": "SumatraPDF",
+      "selector": [{ "filenamePattern": "*.pdf" }],
+      "priority": "default"
+    }]
+  }
+}

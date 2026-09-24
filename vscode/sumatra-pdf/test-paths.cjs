@@ -1,0 +1,10 @@
+'use strict';
+const assert = require('node:assert/strict');
+const { windowsPdfPath } = require('./pdf-path');
+assert.equal(windowsPdfPath({scheme: 'file', path: '/C:/My papers/a.pdf', fsPath: 'C:\\My papers\\a.pdf'}), 'C:\\My papers\\a.pdf');
+assert.equal(windowsPdfPath({scheme: 'vscode-remote', authority: 'wsl+Ubuntu', path: '/home/phili/a.pdf'}), '\\\\wsl.localhost\\Ubuntu\\home\\phili\\a.pdf');
+assert.equal(windowsPdfPath({scheme: 'vscode-remote', authority: 'wsl+Ubuntu', path: '/mnt/c/My papers/a.PDF'}), 'c:\\My papers\\a.PDF');
+assert.equal(windowsPdfPath({scheme: 'vscode-remote', authority: 'ssh-remote+server', path: '/home/phili/a.pdf'}), undefined);
+assert.equal(windowsPdfPath({scheme: 'https', path: '/a.pdf'}), undefined);
+assert.equal(windowsPdfPath({scheme: 'file', path: '/C:/a.txt', fsPath: 'C:\\a.txt'}), undefined);
+console.log('PDF path routing checks passed.');

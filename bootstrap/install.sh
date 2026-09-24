@@ -174,6 +174,8 @@ if [ -f "${repo_root}/node/install-globals.sh" ]; then
 fi
 fi
 
+bash "${repo_root}/wsl/install-pdf-preference.sh"
+
 log "WSL bootstrap complete"
 log "Next steps:"
 log "  1. Restart the shell so ~/.bashrc and ~/.profile reload"

@@ -79,7 +79,6 @@ sourcery.sourcery
 streetsidesoftware.code-spell-checker
 tamasfe.even-better-toml
 thebarkman.vscode-djaneiro
-tomoki1207.pdf
 trabpukcip.wolf
 twxs.cmake
 ultrabytesoftwares.markdown-tree

@@ -103,7 +103,7 @@ bash scripts/dotrepo.sh ssh
 bash scripts/dotrepo.sh doctor --network
 ```
 
-`install` applies configuration only. Add `-InstallTools` on Windows or `--install-tools` in WSL to install tracked VS Code extensions and global npm packages. Python environments are created separately using `python/windows/create-venv.ps1` or `bash python/wsl/create-venv.sh "$HOME/.virtualenvs/py313-candidate"`. The WSL script requires a new directory and restores the September 14 pins; read the handoff for native prerequisites and companion environments. WSL uses standard virtualenvs; its Conda recreation definition and automatic shell fallback have been removed. R and MATLAB are inventoried, not automatically installed or licensed.
+`install` applies configuration, including the bundled local SumatraPDF routing extension when Windows VS Code is present. Add `-InstallTools` on Windows or `--install-tools` in WSL to install tracked Marketplace extensions and global npm packages. Python environments are created separately using `python/windows/create-venv.ps1` or `bash python/wsl/create-venv.sh "$HOME/.virtualenvs/py313-candidate"`. The WSL script requires a new directory and restores the September 14 pins; read the handoff for native prerequisites and companion environments. WSL uses standard virtualenvs; its Conda recreation definition and automatic shell fallback have been removed. R and MATLAB are inventoried, not automatically installed or licensed.
 
 After validating that historical WSL baseline, follow the
 [September 19 JAX update](docs/ai/sessions/2026-09-19-jax-update.md#apply-after-the-september-14-baseline)

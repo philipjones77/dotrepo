@@ -1,10 +1,21 @@
 #Requires -Version 5.1
 #Requires -RunAsAdministrator
+<#
+.SYNOPSIS
+Configure a Windows OpenSSH server for public-key LAN access.
+.PARAMETER OpenSSHDirectory
+Use an already-installed official MSI server instead of installing the Windows
+capability. Supply its absolute installation directory; the registered sshd
+service must use that directory's sshd.exe.
+.EXAMPLE
+.\ssh\enable-lan-server.ps1 -OpenSSHDirectory 'C:\Program Files\OpenSSH' -AdministratorPublicKeyFile .\machines\philipsecond-2026-09-22\lan-client-ed25519.pub
+#>
 [CmdletBinding()]
 param(
     [string]$PeerIPv4,
     [string[]]$AdministratorPublicKey = @(),
-    [string[]]$AdministratorPublicKeyFile = @()
+    [string[]]$AdministratorPublicKeyFile = @(),
+    [string]$OpenSSHDirectory
 )
 
 $ErrorActionPreference = 'Stop'
@@ -32,15 +43,40 @@ if (!(Get-NetConnectionProfile | Where-Object NetworkCategory -eq 'Private')) {
     throw 'No Private network is active. Mark the verified home LAN Private before running this script.'
 }
 
-$capability = Get-WindowsCapability -Online -Name 'OpenSSH.Server~~~~0.0.1.0'
 $restartNeeded = $false
-if ($capability.State -ne 'Installed') {
-    $installation = Add-WindowsCapability -Online -Name 'OpenSSH.Server~~~~0.0.1.0'
-    $restartNeeded = [bool]$installation.RestartNeeded
+if ($PSBoundParameters.ContainsKey('OpenSSHDirectory')) {
+    if ($OpenSSHDirectory -notmatch '^(?:[A-Za-z]:[\\/]|\\\\[^\\/]+[\\/][^\\/]+(?:[\\/]|$))' -or
+        !(Test-Path -LiteralPath $OpenSSHDirectory -PathType Container)) {
+        throw '-OpenSSHDirectory must be an absolute, existing filesystem directory.'
+    }
+    $sshProgramDirectory = (Get-Item -LiteralPath $OpenSSHDirectory).FullName
+    foreach ($requiredFile in @('sshd.exe', 'ssh-keygen.exe', 'sshd_config_default')) {
+        if (!(Test-Path -LiteralPath (Join-Path $sshProgramDirectory $requiredFile) -PathType Leaf)) {
+            throw "The OpenSSH installation is missing $requiredFile in $sshProgramDirectory."
+        }
+    }
+    $sshService = Get-CimInstance -ClassName Win32_Service -Filter "Name = 'sshd'"
+    if (!$sshService) { throw 'Install the OpenSSH MSI server before supplying -OpenSSHDirectory.' }
+    $serviceCommand = [Environment]::ExpandEnvironmentVariables($sshService.PathName.Trim())
+    if ($serviceCommand -match '^"([^"]+)"(?:\s|$)' -or $serviceCommand -match '^(.+?\.exe)(?:\s|$)') {
+        $serviceExecutable = [System.IO.Path]::GetFullPath($Matches[1])
+    } else {
+        throw 'Could not identify the executable registered for the sshd service.'
+    }
+    $expectedExecutable = [System.IO.Path]::GetFullPath((Join-Path $sshProgramDirectory 'sshd.exe'))
+    if (![string]::Equals($serviceExecutable, $expectedExecutable, [StringComparison]::OrdinalIgnoreCase)) {
+        throw "The sshd service executable does not match -OpenSSHDirectory: $serviceExecutable"
+    }
+} else {
+    $sshProgramDirectory = Join-Path $env:WINDIR 'System32\OpenSSH'
+    $capability = Get-WindowsCapability -Online -Name 'OpenSSH.Server~~~~0.0.1.0'
+    if ($capability.State -ne 'Installed') {
+        $installation = Add-WindowsCapability -Online -Name 'OpenSSH.Server~~~~0.0.1.0'
+        $restartNeeded = [bool]$installation.RestartNeeded
+    }
 }
 
 $sshDirectory = Join-Path $env:ProgramData 'ssh'
-$sshProgramDirectory = Join-Path $env:WINDIR 'System32\OpenSSH'
 $sshd = Join-Path $sshProgramDirectory 'sshd.exe'
 $configPath = Join-Path $sshDirectory 'sshd_config'
 $keyPath = Join-Path $sshDirectory 'administrators_authorized_keys'

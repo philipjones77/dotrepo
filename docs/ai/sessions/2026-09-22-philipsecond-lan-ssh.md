@@ -11,10 +11,70 @@ Initial inspection on PC-PHILIP-WINDOWS found OpenSSH Client installed,
 OpenSSH Server absent, and Wi-Fi using the Private profile. Its Windows
 computer name is `PC-PHILIP-WINDO`; the longer DNS name is
 `PC-PHILIP-WINDOWS`. The local shell was not elevated, so server installation
-requires a Windows administrator prompt. PhilipSecond's server setup was
-completed later on September 22 as recorded below. Direct peer connectivity
-has not yet been verified. LAN addresses stay in local SSH configuration
-rather than this repository.
+requires a Windows administrator prompt. Both servers and direct peer
+connectivity were subsequently verified on September 22 as recorded below.
+LAN addresses stay in local SSH configuration rather than this repository.
+
+## PC-PHILIP-WINDOWS completion and bidirectional checks
+
+The Windows checkout was fast-forwarded to `9036bda`, preserving and privately
+backing up all pre-existing PDF-viewer changes. The Windows optional-component
+installation stalled during Windows Update acquisition. Normal PowerShell
+Ctrl+C requested cooperative cancellation; DISM closed its sessions and CBS
+reported `CBS_E_CANCEL`, with no reboot or repair required.
+
+The official Microsoft **Win32-OpenSSH 10.0.0.0p2-Preview** MSI was then installed
+with `ADDLOCAL=Server`. Its GitHub asset SHA-256 and valid Microsoft Corporation
+signature were checked before installation; the installed `sshd.exe` signature
+also passed. This PC uses `C:\Program Files\OpenSSH`, while PhilipSecond retains
+its independently verified Windows optional-component installation. The
+[MSI installation workflow](https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH-Using-MSI)
+is separate from Windows capability servicing.
+
+Use the helper's explicit existing-installation option when maintaining this PC:
+
+```powershell
+.\ssh\enable-lan-server.ps1 -OpenSSHDirectory 'C:\Program Files\OpenSSH' -AdministratorPublicKeyFile .\machines\philipsecond-2026-09-22\lan-client-ed25519.pub
+```
+
+The service is Automatic and running. Effective administrator-login settings
+require public-key authentication, disable passwords, and select the shared
+administrator authorized-keys file. Its ACL allows only SYSTEM and
+Administrators. Both the MSI-created rule and `OpenSSH-Server-In-TCP` permit
+TCP 22 only on the Private profile from `LocalSubnet`. A temporary blocking
+rule covered MSI installation and was removed after configuration validation.
+No router forwarding was configured. This PC's ED25519 host fingerprint is:
+
+```text
+SHA256:XqZeOCzwHwas2qgbszCJpda//5ycSOUT5SWeG7YD6ZY
+```
+
+Both server fingerprints were verified before adding their public host keys
+to each client's `known_hosts`. Batch-mode, strict-host-checking logins passed
+in both directions using private aliases `philipsecond-lan` on this PC and
+`pc-philip-lan` on PhilipSecond. Each direction returned the correct Windows
+hostname/login, executed Ubuntu WSL commands, and read Windows and Ubuntu
+repository status. Windows and WSL GitHub access also passed on both PCs using
+each environment's own credentials. Private client keys stayed on their
+originating machines, and agent forwarding remains disabled.
+
+PhilipSecond's Windows SSH session initially rejected the `.dotrepo` junction
+as an untrusted mount point. Its backed-up, machine-local Git include now uses
+`C:/dev/dotrepo/git/gitconfig.shared`; a `.gitconfig.local` override points to
+`C:/dev/dotrepo/git/gitignore_global`. This restored Git commands without
+changing tracked configuration or Windows mitigations. Its WSL local edits
+were preserved. No remote checkout was pulled or pushed during this setup.
+
+On PC-PHILIP-WINDOWS, a GitHub request from an inbound SSH session authenticated
+with the Windows OpenSSH 9.5 client but stalled after `git-upload-pack`.
+The identical request passed with Git-for-Windows SSH 10.5. The backed-up local
+`.gitconfig.local` now selects `'C:/Program Files/Git/usr/bin/ssh.exe'` through
+`core.sshCommand`; the default Git command then returned the current `main`
+reference from the reverse SSH connection. Authentication files were preserved.
+
+The [sanitized receipt](../../../machines/pc-philip-windows-2026-09-22/lan-ssh.json)
+records versions, fingerprints, and checks. Install logs, configuration backups,
+and the cancelled-install diagnostic logs remain in private local state.
 
 ## PhilipSecond server result
 
@@ -43,7 +103,8 @@ Verify the fingerprint from that computer before accepting it. PhilipSecond's
 reverse-direction client key now exists locally, and its public half is in the
 [PhilipSecond machine capsule](../../../machines/philipsecond-2026-09-22/README.md).
 Peer authorization on PC-PHILIP-WINDOWS, private aliases, and end-to-end
-Windows/WSL commands remain pending because that PC's TCP port 22 was not open.
+Windows/WSL commands were initially pending because that PC's TCP port 22 was
+not open; they passed during the subsequent completion recorded above.
 
 Both PCs are on the same main eero home network. No router port forwarding is
 needed or wanted. Use the Windows hostname `PC-PHILIP-WINDOWS` (which resolves

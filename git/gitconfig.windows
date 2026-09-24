@@ -17,3 +17,5 @@
     keepBackup = false
 [include]
     path = ~/.gitconfig.local
+[safe]
+	directory = %(prefix)///wsl.localhost/Ubuntu/home/phili/projects/arbPlusJAX

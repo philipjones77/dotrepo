@@ -99,3 +99,54 @@ Official release evidence used by the WSL acquisition check:
 [production Linux manifest](https://antigravity-cli-auto-updater-974169037036.us-central1.run.app/manifests/linux_amd64.json).
 The extension is published as
 [`google.google-antigravity`](https://marketplace.visualstudio.com/items?itemName=Google.google-antigravity).
+
+## Follow-up: Windows backend download at 14:34
+
+A later report of another download was traced to the Windows VS Code extension.
+The acquisition log was created at **14:34:12** and completed at **14:34:47**
+on September 22. Its parent VS Code session directory is named `20260922T130500`;
+that directory name is not the download's start time.
+
+This activation found a valid Windows backend **1.2.7**, fetched the current
+**1.2.8** release, verified its SHA-512 checksum and installed it successfully.
+The earlier morning repair had updated the WSL backend only, as shown above.
+This later Windows download was a version upgrade; its log does not show a
+failed executable probe or a repeat download of the same version.
+
+The current Windows executable is `%USERPROFILE%\.gemini\bin\agy.exe` and
+returns **1.2.8**. Its SHA-256 is
+`33b180ab735eeac0bc43bf2ae9cb9538596916521dedc50b5b161849d7e0adc0`.
+Windows and WSL retain separate binaries for their respective platforms.
+
+The local WSL activation at **14:25** loaded extension **1.4.0**, recognized
+backend **1.2.8** and continued with that existing binary when the manifest
+request exceeded its three-second budget. This provides an actual extension
+activation check after the morning repair. A subsequent fresh, guarded Linux
+probe also returned `REUSED`, logged `Skipping download`, and attempted no
+backend downloads or writes; its version probe took 523 ms and its total
+acquisition check took 4.882 seconds.
+
+No vendor source patch, reinstall, update-disable setting, authentication
+change or forced application reload was applied during this follow-up.
+
+PhilipSecond was independently inspected over the existing LAN SSH connection.
+Its Windows and WSL extensions both report **1.4.0**, and both installed backends
+report **1.2.8**. Its WSL activation at **07:29** upgraded **1.2.7** to **1.2.8**;
+the later **12:57** activation explicitly logged `Skipping download` for **1.2.8**.
+The peer's retained Windows activation logs do not establish current reuse,
+although executing its installed Windows backend confirms **1.2.8**. No software
+or settings on PhilipSecond were changed during this inspection.
+
+Two subsequent fresh Windows Node processes evaluated the original installed
+extension downloader with the real **1.2.8** executable and production Windows
+manifest. Both logged `Installed binary is valid (actual version 1.2.8 >= target
+1.2.8). Skipping download.` They completed in 2.386 and 2.194 seconds, with
+version subprocesses taking 283 and 159 ms respectively. Each fetched one
+manifest; neither attempted a backend download, write or installation progress
+notification. The installed binary's SHA-256 remained unchanged.
+
+The Windows probes and sanitized results are private local evidence under
+`%LOCALAPPDATA%\dotrepo\antigravity-startup-check-20260922-143904\`.
+The saved state fragment contains only the production release-channel marker.
+The guarded probe tests acquisition decisions; it does not restart the full
+editor or prove that every possible transient startup failure is eliminated.

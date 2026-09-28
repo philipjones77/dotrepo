@@ -17,3 +17,5 @@
     keepBackup = false
 [include]
     path = ~/.gitconfig.local
+[credential]
+	helper = cache

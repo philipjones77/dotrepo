@@ -6,6 +6,10 @@ For WSL disconnects and VS Code window reloads, read the
 [September 23 WSL memory handoff](docs/ai/sessions/2026-09-23-wsl-memory-disconnects.md).
 It covers automatic pytest discovery, the backed-out CUDA install and pending disk cleanup.
 
+For the recurring Codex "could not start its user interface" error, read the
+[October 10 Codex startup handoff](docs/ai/sessions/2026-10-10-codex-ui-startup-timeout.md)
+and install the startup guard on each machine.
+
 For the latest Antigravity startup repair, read the
 [September 22 VS Code handoff](docs/ai/sessions/2026-09-22-antigravity-vscode-startup.md).
 For bidirectional Windows/WSL access on the home network, follow the

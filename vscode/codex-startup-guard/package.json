@@ -1,0 +1,24 @@
+{
+  "name": "codex-startup-guard",
+  "displayName": "Codex startup guard",
+  "description": "Detect the Codex 'could not start its user interface' startup timeout and offer a one-click recovery.",
+  "version": "1.0.0",
+  "publisher": "dotrepo",
+  "engines": { "vscode": "^1.85.0" },
+  "main": "./extension.js",
+  "extensionKind": ["workspace", "ui"],
+  "activationEvents": ["onStartupFinished"],
+  "contributes": {
+    "configuration": {
+      "title": "Codex Startup Guard",
+      "properties": {
+        "dotrepo.codexStartupGuard.recovery": {
+          "type": "string",
+          "enum": ["prompt", "restartExtensionHost", "off"],
+          "default": "prompt",
+          "description": "What to do when Codex reports renderer_ready_timeout: ask, restart the extension host automatically (at most once per 10 minutes), or do nothing."
+        }
+      }
+    }
+  }
+}

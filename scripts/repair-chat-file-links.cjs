@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 'use strict';
-// Temporary repair for two verified extension releases; never patch unknown builds.
+// Temporary repair for verified extension releases; never patch unknown builds.
 const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
@@ -41,12 +41,21 @@ function normalizeLinkPath(value, platform, distribution) {
 }
 const viewerPattern = /\.(?:pdf|png|jpe?g|jpe|bmp|gif|ico|webp|avif|svg)$/i;
 const specs = [
+  { id: 'openai.chatgpt', version: '26.1021.22027', relative: 'out/extension.js',
+    original: 'a9cc6736cd2c2d22f6cf43fc5763d5f8a873e4f741f522b44a600b1926f4e627',
+    repaired: ['b3fdded438e81708d26a3fac538df82074e676a316fbe4362c72e0c866928d5f'] },
   { id: 'openai.chatgpt', version: '26.901.22334', relative: 'out/extension.js',
     original: 'e8d3bb57b73a1fd316fd557859aec56e540b48de3489012d1952fa4a2e371208',
     repaired: ['a22e9fc0538d46f947eb9b721b43b9dd61708ca5d55d00dab4d08c25baf69cd2', '163fd5c7ead3aa966da1d213df838ab257a0806206212bf7022e2ec9b5de5d7c'] },
+  { id: 'anthropic.claude-code', version: '2.1.310', relative: 'extension.js',
+    original: '2dbe0f8f45fe9126f3f6a00302961f61910fb59eb6a291a3aef791380f30d086',
+    repaired: ['b416be1cedca4830d15b29c2a07ed3ef416dc809052d4a0abf8b97f35489ff99'] },
   { id: 'anthropic.claude-code', version: '2.1.263', relative: 'extension.js',
     original: '0eb46198cbb1ae18578de0f7b28ba8903ac0fd4a5d213eeb7c7973f11d9bffb7',
     repaired: ['fb85f7941c4c9319352337147cb48113e50538d26bd9a3ba74e1fdb2d27d8f98', 'ff23091f2f867caa09e6997bbdceebca28c67f815ff18267da03e687394c4280'] },
+  { id: 'google.google-antigravity', version: '1.9.0', relative: 'extension.js',
+    original: 'f77a37c4bd66612f4ed26d9e80ce3969af543f853e2cc113ca466e7f8b6aa880',
+    repaired: ['c75569ae2a30b35b0b9699e0adeb80606a9f855adac1e22847107852ca14d3ab'] },
 ];
 const sha = content => crypto.createHash('sha256').update(content).digest('hex');
 function replaceOnce(text, before, after) {
@@ -56,12 +65,33 @@ function replaceOnce(text, before, after) {
 function repairReplacements(spec, distribution) {
   const marker = '/* dotrepo-file-links-v1:' + distribution + ' */';
   const normalize = '(' + marker + normalizeLinkPath.toString() + ')';
+  if (spec.id === 'openai.chatgpt' && spec.version === '26.1021.22027') {
+    return [[
+      'p=process.platform==="win32"?ol(l):l,m=Array.from(eo.workspace.workspaceFolders??[])',
+      'p=' + normalize + '(l,process.platform,' + JSON.stringify(distribution) + '),m=Array.from(eo.workspace.workspaceFolders??[])'], [
+      'if(s)return await eo.commands.executeCommand("revealFileInOS",v),!0;let y=await eo.workspace.openTextDocument(v),w=new eo.Position',
+      'if(s)return await eo.commands.executeCommand("revealFileInOS",v),!0;if(u==null||' + viewerPattern + '.test(v.path))return await eo.commands.executeCommand("vscode.open",v,{preview:!1}),!0;let y=await eo.workspace.openTextDocument(v),w=new eo.Position']];
+  }
   if (spec.id === 'openai.chatgpt') {
     return [[
       'p=process.platform==="win32"?Sc(u):u,m=Array.from(Rn.workspace.workspaceFolders??[])',
       'p=' + normalize + '(u,process.platform,' + JSON.stringify(distribution) + '),m=Array.from(Rn.workspace.workspaceFolders??[])'], [
       'if(s)return await Rn.commands.executeCommand("revealFileInOS",b),!0;let v=await Rn.workspace.openTextDocument(b),w=new Rn.Position',
       'if(s)return await Rn.commands.executeCommand("revealFileInOS",b),!0;if(c==null||' + viewerPattern + '.test(b.path))return await Rn.commands.executeCommand("vscode.open",b,{preview:!1}),!0;let v=await Rn.workspace.openTextDocument(b),w=new Rn.Position']];
+  }
+  if (spec.id === 'anthropic.claude-code' && spec.version === '2.1.310') {
+    return [[
+      'async openFile($,J,Q){let X=D1.workspace.workspaceFolders??[]',
+      'async openFile($,J,Q){$=' + normalize + '($,process.platform,' + JSON.stringify(distribution) + ');let X=D1.workspace.workspaceFolders??[]'], [
+      'let K=Q?.pinned?{preview:!1}:void 0;D1.window.showTextDocument(z,K).then((V)=>{if(J?.searchText)',
+      'let K=Q?.pinned?{preview:!1}:void 0;if((!J?.searchText&&!J?.startLine&&!J?.endLine)||' + viewerPattern + '.test(W))return D1.commands.executeCommand("vscode.open",z,K);D1.window.showTextDocument(z,K).then((V)=>{if(J?.searchText)']];
+  }
+  if (spec.id === 'google.google-antigravity' && spec.version === '1.9.0') {
+    return [[
+      'function cJ(a){a=typeof a==="string"?a.startsWith("/")?n.Uri.file(a):n.Uri.parse(a):typeof a.with==="function"?a:n.Uri.parse(a.toString());',
+      'function cJ(a){if(typeof a==="string"&&!a.includes("://"))a=' + normalize + '(a,process.platform,' + JSON.stringify(distribution) + ');a=typeof a==="string"?a.startsWith("/")?n.Uri.file(a):n.Uri.parse(a):typeof a.with==="function"?a:n.Uri.parse(a.toString());'], [
+      'try{K=b(await c(n.workspace.openTextDocument(H)))}catch(M){b();if(H.toString()===v.toString())throw M;K=b(await c(n.workspace.openTextDocument(v)))}d={preview:!0};',
+      'if(' + viewerPattern + '.test(H.path))return b(await c(n.commands.executeCommand("vscode.open",H,{preview:!1}))),{};try{K=b(await c(n.workspace.openTextDocument(H)))}catch(M){b();if(H.toString()===v.toString())throw M;K=b(await c(n.workspace.openTextDocument(v)))}d={preview:!0};']];
   }
   return [[
     'async openFile($,J){let Q=K6.isAbsolute($)?$:K6.join(this.cwd,$);',
@@ -103,8 +133,11 @@ if (selfTest) {
   for (const ext of ['pdf', 'png', 'jpeg', 'gif', 'svg', 'avif']) assert(viewerPattern.test('sample.' + ext));
   for (const ext of ['js', 'py', 'ps1', 'sh', 'exe']) assert(!viewerPattern.test('sample.' + ext));
   const fixtures = [
+    'async function fixture(){let p=process.platform==="win32"?ol(l):l,m=Array.from(eo.workspace.workspaceFolders??[]);if(s)return await eo.commands.executeCommand("revealFileInOS",v),!0;let y=await eo.workspace.openTextDocument(v),w=new eo.Position();}',
     'async function fixture(){let p=process.platform==="win32"?Sc(u):u,m=Array.from(Rn.workspace.workspaceFolders??[]);if(s)return await Rn.commands.executeCommand("revealFileInOS",b),!0;let v=await Rn.workspace.openTextDocument(b),w=new Rn.Position();}',
+    'class Fixture{async openFile($,J,Q){let X=D1.workspace.workspaceFolders??[];let K=Q?.pinned?{preview:!1}:void 0;D1.window.showTextDocument(z,K).then((V)=>{if(J?.searchText){}});}}',
     'class Fixture{async openFile($,J){let Q=K6.isAbsolute($)?$:K6.join(this.cwd,$);let X;try{}catch{}S$.window.showTextDocument(X).then((z)=>{if(J?.searchText){}});}}',
+    'function cJ(a){a=typeof a==="string"?a.startsWith("/")?n.Uri.file(a):n.Uri.parse(a):typeof a.with==="function"?a:n.Uri.parse(a.toString());return a;}class Agy{async openFile(a){try{K=b(await c(n.workspace.openTextDocument(H)))}catch(M){b();if(H.toString()===v.toString())throw M;K=b(await c(n.workspace.openTextDocument(v)))}d={preview:!0};}}',
   ];
   specs.forEach((spec, index) => {
     const fixture = fixtures[index];
@@ -126,18 +159,20 @@ extensionsDir = path.resolve(extensionsDir || path.join(os.homedir(), process.pl
 const entries = fs.readdirSync(extensionsDir, {withFileTypes: true});
 const report = { mode: apply ? 'apply' : 'check', extensionsDir, wslDistribution: distro, results: [] };
 const planned = [];
-for (const spec of specs) {
-  const matches = entries.filter(entry => entry.isDirectory() && entry.name.toLowerCase().startsWith(spec.id + '-')).map(entry => {
+const extensionIds = [...new Set(specs.map(spec => spec.id))];
+for (const id of extensionIds) {
+  const matches = entries.filter(entry => entry.isDirectory() && entry.name.toLowerCase().startsWith(id + '-')).map(entry => {
     const directory = path.join(extensionsDir, entry.name);
     return {directory, manifest: JSON.parse(fs.readFileSync(path.join(directory, 'package.json'), 'utf8'))};
   }).sort((a, b) => b.manifest.version.localeCompare(a.manifest.version, undefined, {numeric: true}));
-  if (!matches.length) { report.results.push({id: spec.id, status: 'not-installed'}); continue; }
+  if (!matches.length) { report.results.push({id, status: 'not-installed'}); continue; }
   const {directory, manifest} = matches[0];
+  const spec = specs.find(candidate => candidate.id === id && candidate.version === manifest.version) || specs.find(candidate => candidate.id === id);
   const target = path.join(directory, spec.relative);
   assert(fs.realpathSync(target).startsWith(fs.realpathSync(directory) + path.sep), 'Extension file escapes its directory.');
   const original = fs.readFileSync(target, 'utf8');
   const digest = sha(original);
-  const result = {id: spec.id, version: manifest.version, target, beforeSha256: digest};
+  const result = {id, version: manifest.version, target, beforeSha256: digest};
   if (manifest.version !== spec.version) result.status = 'unsupported-version-review-required';
   else if (isRecognizedRepair(original, spec, distro, digest)) result.status = 'already-repaired';
   else if (digest !== spec.original) result.status = 'unknown-build-review-required';

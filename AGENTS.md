@@ -45,6 +45,10 @@ records JAX 0.11.2 in the three modern WSL environments, the retained legacy
 oracle companion, the pre-existing GPU access failure and pending target work.
 Apply it after restoring the September 14 baseline; keep historical pins intact.
 
+The [November 4 Python 3.14 / JAX 0.12 handoff](docs/ai/sessions/2026-11-04-python-314-jax-0-12-update.md)
+records PhilipSecond's move to `py314` (primary), `jax314` and `jax315` on JAX 0.12.0.1, what stayed on
+`py313`, and the rollback. PC-PHILIP-WINDOWS is pending.
+
 ## Shared Writing and Reference Assets
 
 Before drafting or reviewing research prose, read

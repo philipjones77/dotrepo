@@ -1,0 +1,6 @@
+quadax: unpinned to resolve (was 0.3.0)
+tensorflow: unpinned to resolve (was 2.21.0)
+tf-keras: unpinned to resolve (was 2.21.0)
+gpflow: unpinned to resolve (was 2.9.2)
+h5py: unpinned to resolve (was 3.14.0)
+networkit: 11.2.1 has no wheel for this Python and its source build fails; binary-only, newer version

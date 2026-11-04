@@ -1,0 +1,1 @@
+pyarrow: 25.0.1 has no wheel for this Python and its source build fails; binary-only, newer version

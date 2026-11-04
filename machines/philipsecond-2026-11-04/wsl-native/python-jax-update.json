@@ -1,0 +1,63 @@
+{
+ "host": "PhilipSecond",
+ "date": "2026-11-04",
+ "decision": "owner: JAX 0.12.0.1 on the latest Python 3.14 in every environment; py313 becomes py314, the primary test environment; environments py314, jax314, jax315",
+ "environments": {
+  "py314": {
+   "python": "3.14.10",
+   "packages": 349,
+   "path": "~/.local/share/dotrepo/environments/20261104/py314",
+   "link": "~/.virtualenvs/py314"
+  },
+  "jax314": {
+   "python": "3.14.10",
+   "packages": 107,
+   "path": "~/.local/share/dotrepo/environments/20261104/jax314",
+   "link": "~/.virtualenvs/jax314"
+  },
+  "jax315": {
+   "python": "3.15.2",
+   "packages": 103,
+   "path": "~/.local/share/dotrepo/environments/20261104/jax315",
+   "link": "~/.virtualenvs/jax315"
+  }
+ },
+ "jax": "jax, jaxlib, jax-cuda13-plugin, jax-cuda13-pjrt 0.12.0.1",
+ "forced_changes": {
+  "py314": [
+   "quadax 0.3.0 -> 0.3.1 (0.3.0 requires jax<0.12)",
+   "h5py 3.14.0 -> 3.15.1 (no cp314 wheel)",
+   "networkit 11.2.1 -> 11.2.2 (no cp314 wheel; source build fails)",
+   "backports-zstd removed (zstd is in the 3.14 stdlib)",
+   "removed: tensorflow (2.22.0rc0 only for 3.14), tf-keras, keras-nightly, gpflow, tensorflow-probability, gs-lvmogp-oracle (GPflow and TFP fail at import; TFP's JAX substrate calls the removed jax.interpreters.xla.pytype_aval_mappings)",
+   "removed: asdex (pinned commit da130b0 declares jax<0.12)"
+  ],
+  "jax314": [
+   "quadax 0.3.0 -> 0.3.1"
+  ],
+  "jax315": [
+   "quadax 0.3.0 -> 0.3.1",
+   "pyarrow -> first version with a cp315 wheel",
+   "excluded: flax, orbax-checkpoint, tensorstore (no cp315 wheel) and therefore RandomFields77 (hard flax dependency)"
+  ]
+ },
+ "checks": "uv pip check clean in all three; validate.py CPU checks: JIT error 0, gradient 1.1e-16, solve 5.6e-17, FFT 2.8e-16, Hessian finite; flax dense and optax step in py314/jax314; all repositories import",
+ "retained": [
+  "py313 (TensorFlow/GPflow/GS-LVMOGP oracles; data77 Bayesian launcher; R reticulate)",
+  "jax313",
+  "jax-oracles313",
+  "uqpy312",
+  "20260914/jax314 (the previous jax314, Python 3.14.7, JAX 0.11.1)"
+ ],
+ "switched": [
+  "~/.virtualenvs/py314, jax314, jax315 links",
+  "shared/shell/init.sh activates py314",
+  "shared/shell/functions.sh jaxenv -> jax314",
+  "vscode/wsl/settings.json and the live ~/.vscode-server/data/Machine/settings.json -> py314"
+ ],
+ "pending": [
+  "PC-PHILIP-WINDOWS: not reachable from this session; not updated",
+  "Windows-side environments (python/windows/*.ps1): not changed",
+  "GPU validation: CPU only"
+ ]
+}

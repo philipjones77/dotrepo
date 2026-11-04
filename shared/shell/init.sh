@@ -33,8 +33,8 @@ case $- in
     # Activation must save the finished machine PATH so deactivate (including
     # switching with jaxenv) cannot restore retired paths or discard local tools.
     if [ -z "${VIRTUAL_ENV:-}" ] \
-      && [ -f "$HOME/.virtualenvs/py313/bin/activate" ]; then
-      . "$HOME/.virtualenvs/py313/bin/activate"
+      && [ -f "$HOME/.virtualenvs/py314/bin/activate" ]; then
+      . "$HOME/.virtualenvs/py314/bin/activate"
     fi
     # Keep local wrappers (including the system-R wrapper) ahead of environments.
     export PATH="$HOME/.local/bin:$PATH"

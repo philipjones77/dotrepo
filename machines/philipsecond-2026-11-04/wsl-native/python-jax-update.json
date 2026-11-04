@@ -11,13 +11,13 @@
   },
   "jax314": {
    "python": "3.14.10",
-   "packages": 107,
+   "packages": 145,
    "path": "~/.local/share/dotrepo/environments/20261104/jax314",
    "link": "~/.virtualenvs/jax314"
   },
   "jax315": {
    "python": "3.15.2",
-   "packages": 103,
+   "packages": 107,
    "path": "~/.local/share/dotrepo/environments/20261104/jax315",
    "link": "~/.virtualenvs/jax315"
   }
@@ -33,15 +33,18 @@
    "removed: asdex (pinned commit da130b0 declares jax<0.12)"
   ],
   "jax314": [
-   "quadax 0.3.0 -> 0.3.1"
+   "quadax 0.3.0 -> 0.3.1",
+   "added for the repositories' tests: meshio, pymeshfix, robust_laplacian, pyvista, viser (binary wheels, under the lock)"
   ],
   "jax315": [
    "quadax 0.3.0 -> 0.3.1",
    "pyarrow -> first version with a cp315 wheel",
-   "excluded: flax, orbax-checkpoint, tensorstore (no cp315 wheel) and therefore RandomFields77 (hard flax dependency)"
+   "excluded: flax, orbax-checkpoint, tensorstore (no cp315 wheel) and therefore RandomFields77 (hard flax dependency)",
+   "added: meshio",
+   "not installable on 3.15: robust_laplacian, viser (no wheel), pymeshfix (metadata requires <3.15), pyvista (needs vtk, no 3.15 wheel)"
   ]
  },
- "checks": "uv pip check clean in all three; validate.py CPU checks: JIT error 0, gradient 1.1e-16, solve 5.6e-17, FFT 2.8e-16, Hessian finite; flax dense and optax step in py314/jax314; all repositories import",
+ "checks": "uv pip check clean in all three; validate.py CPU checks: JIT error 0, gradient 1.1e-16, solve 5.6e-17, FFT 2.8e-16, Hessian finite; flax dense and optax step in py314/jax314; all repositories import; TopoSMPLJAX contract lane: py314 216/216 swept, CPU tier certified (one baselined arbPlusJAX eigsh forward-mode Hessian regression on JAX 0.12); jax315 216 swept, reds only from the four missing 3.15 wheels and two known items",
  "retained": [
   "py313 (TensorFlow/GPflow/GS-LVMOGP oracles; data77 Bayesian launcher; R reticulate)",
   "jax313",

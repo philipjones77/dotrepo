@@ -47,6 +47,14 @@ Forced changes:
 error 0, gradient error 1.1e-16, solve residual 5.6e-17, FFT round trip 2.8e-16 and a finite Hessian in each.
 Flax and Optax steps pass in `py314` and `jax314`, and every repository imports. GPU was not tested.
 
+## After the switch: test packages and the contract lanes
+
+`jax314` gained `meshio`, `pymeshfix`, `robust_laplacian`, `pyvista` and `viser`, which TopoSMPLJAX's tests
+need. On `jax315` only `meshio` installs. `robust_laplacian` and `viser` have no 3.15 wheel, `pymeshfix`'s
+metadata excludes 3.15, and `pyvista` needs VTK, which has none. TopoSMPLJAX's contract lane ran on `py314`:
+216 files, with one red baselined, an arbPlusJAX eigsh forward-mode Hessian that lost accuracy on JAX 0.12. On
+`jax315` its only reds came from those missing wheels and two known items.
+
 ## What was switched, and how to roll back
 
 - `~/.virtualenvs/py314`, `jax314`, `jax315` now point at the new directories. The previous `jax314` (3.14.7,

@@ -339,6 +339,18 @@ node scripts/repair-chat-file-links.cjs --check --wsl-distro Ubuntu
 node scripts/repair-chat-file-links.cjs --apply --wsl-distro Ubuntu
 ```
 
+Codex also gives its sidebar webview a fixed 30 s to start, which its unbundled
+webview misses under load. Extend that deadline on the Windows and WSL bundles
+in one run (the WSL server is reached through `\wsl.localhost`):
+
+```powershell
+node .\scripts\extend-codex-webview-timeout.cjs --check
+node .\scripts\extend-codex-webview-timeout.cjs --apply
+```
+
+Re-run it after each Codex update and reload windows; the link repair above
+hashes bundles with this edit normalised away, so the order does not matter.
+
 Check mode is the default. The native OS selects `.vscode/extensions` or
 `.vscode-server/extensions`; `--extensions-dir <path>` overrides that choice.
 `--wsl-distro` selects path translation, not remote execution. Apply mode backs

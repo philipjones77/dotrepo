@@ -1,7 +1,20 @@
 # dotrepo
 
-**September 19 JAX update:** `py313`, `jax313` and `jax314` on PC-PHILIP-WINDOWS
-now use JAX **0.11.2**. CPU and dependency checks passed. The
+**November 8 WSL baseline:** `py314` is the general default, `jax314` is production,
+and `jax315` is Python 3.15 research. Old environments are retained. See the
+[hardware-aware target handoff](docs/ai/sessions/2026-11-08-wsl-environments-hardware-aware-handoff.md)
+for current package coverage, GPU selection, actual compatibility exceptions,
+validation and the cleaned home layout. Pulling this repo does not install the
+environments. The target should use newer compatible releases where available.
+
+**November 7 Windows baseline:** Windows repositories and tools use `py314`
+(CPython **3.14.10**, JAX/jaxlib **0.12.0.1**, native Windows CPU). PowerShell
+**7.6.9** is the user shell. See the [Windows Python setup](python/windows/README.md)
+for current pins, named environments and historical recovery instructions.
+The November 8 handoff above describes the separate WSL migration.
+
+**Historical September 19 JAX update:** `py313`, `jax313` and `jax314` on PC-PHILIP-WINDOWS
+then used JAX **0.11.2**. CPU and dependency checks passed. The
 [JAX handoff](docs/ai/sessions/2026-09-19-jax-update.md) records the legacy oracle
 exception, existing GPU access failure, target-machine status and update steps
 to apply after the September 14 baseline.
@@ -49,9 +62,11 @@ source activation and a fresh Linux MATLAB batch launch are verified.
 For the Windows/WSL shell policy and the PC-PHILIP-WINDO launcher audit, see
 [terminal links and PowerShell](docs/terminal-links-2026-09-07.md).
 
-The [latest source setup and inventory](machines/source-2026-09-07/README.md)
+The [September 7 source setup and inventory](machines/source-2026-09-07/README.md)
 includes standard Windows CPython 3.13/3.14/3.15, JAX, PowerShell, R/Rtools,
 TeX Live and SumatraPDF, with verification results and target instructions.
+The current setup keeps R and its development tools in WSL; do not reinstall
+native Windows R, Rtools, RStudio or Radian from that historical inventory.
 
 To reproduce the current source computer on the other machine, use the
 [Windows and WSL source inventory and target setup steps](machines/source-2026-09-06/README.md).

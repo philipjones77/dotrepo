@@ -193,7 +193,8 @@ def main():
     if name == "bib2gls" and IS_WINDOWS:
         parser.error("The user TEXMF Bib2Gls override is for Linux/WSL only")
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M%S-%f")
-    backups = Path.home() / ".dotrepo-backups" / f"latex-{stamp}" / name
+    backup_root = Path.home() / (".dotrepo-backups" if IS_WINDOWS else ".local/state/dotrepo/backups")
+    backups = backup_root / f"latex-{stamp}" / name
     with tempfile.TemporaryDirectory(prefix="dotrepo-latex-") as temporary:
         files = read_asset(options.archive, name) if options.archive else fetch_asset(name, Path(temporary))
         install(name, files, backups)

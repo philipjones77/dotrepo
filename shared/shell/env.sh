@@ -10,7 +10,7 @@ prepend_path() {
   esac
 }
 
-for path_dir in "$HOME/.local/bin" "$HOME/bin" "$HOME/.cargo/bin"; do
+for path_dir in "$HOME/.local/bin" "$HOME/bin" "$HOME/.cargo/bin" "$HOME/.elan/bin"; do
   if [ -d "$path_dir" ]; then
     prepend_path "$path_dir"
   fi

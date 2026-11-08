@@ -2,6 +2,12 @@
 
 ## Current Cross-Machine Handoff
 
+For the current Windows/WSL Python defaults and home-directory layout, read the
+[November 8 hardware-aware handoff](docs/ai/sessions/2026-11-08-wsl-environments-hardware-aware-handoff.md)
+first. Create `py314`, `jax314` and `jax315` without deleting old environments;
+select current packages and a GPU backend for the target hardware. Source-machine
+versions and successful probes are not proof of target-machine compatibility.
+
 For the Codex "could not start its user interface" deadline fix and the
 PhilipSecond LAN SSH/VNC re-check, read the
 [November 7 PhilipSecond handoff](docs/ai/sessions/2026-11-07-philipsecond-codex-webview-lan-desktop.md)

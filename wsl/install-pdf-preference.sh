@@ -11,7 +11,7 @@ import sys
 
 repo = Path(sys.argv[1])
 home = Path.home()
-backup = home / '.dotrepo-backups' / (datetime.datetime.now().strftime('%Y%m%d-%H%M%S') + '-sumatra-pdf')
+backup = home / '.local/state/dotrepo/backups' / (datetime.datetime.now().strftime('%Y%m%d-%H%M%S') + '-sumatra-pdf')
 backup.mkdir(parents=True, exist_ok=True)
 def preserve(path):
     if path.exists():

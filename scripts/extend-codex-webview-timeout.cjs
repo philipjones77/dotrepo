@@ -106,7 +106,8 @@ for (const directory of dirs) {
 }
 if (apply && report.results.some(item => /review-required$/.test(item.status))) throw new Error(JSON.stringify(report, null, 2));
 if (apply && planned.length) {
-  const backup = path.join(os.homedir(), '.dotrepo-backups', new Date().toISOString().replace(/[:.]/g, '-') + '-codex-webview-timeout');
+  const backupRoot = process.platform === 'linux' ? '.local/state/dotrepo/backups' : '.dotrepo-backups';
+  const backup = path.join(os.homedir(), backupRoot, new Date().toISOString().replace(/[:.]/g, '-') + '-codex-webview-timeout');
   fs.mkdirSync(backup, { recursive: true });
   report.backup = backup;
   for (const item of planned) {

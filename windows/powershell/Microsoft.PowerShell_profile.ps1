@@ -48,8 +48,8 @@ function mkcd {
 }
 
 function venv-win {
-    param([string]$Path = ".venv")
-    $standardPython = Join-Path $HOME '.virtualenvs\py313\Scripts\python.exe'
+    param([string]$Path = ".venv-py314")
+    $standardPython = Join-Path $HOME '.virtualenvs\py314\Scripts\python.exe'
     if (Test-Path $standardPython) {
         & $standardPython -m venv $Path
         return
@@ -57,8 +57,9 @@ function venv-win {
     python -m venv $Path
 }
 
-$standardActivation = Join-Path $HOME '.virtualenvs\py313\Scripts\Activate.ps1'
-if ((Test-Path $standardActivation) -and -not $env:VIRTUAL_ENV) {
+$standardActivation = Join-Path $HOME '.virtualenvs\py314\Scripts\Activate.ps1'
+$previousStandard = Join-Path $HOME '.virtualenvs\py313'
+if ((Test-Path $standardActivation) -and (-not $env:VIRTUAL_ENV -or $env:VIRTUAL_ENV.TrimEnd('\', '/') -eq $previousStandard)) {
     if (Get-Command conda -ErrorAction SilentlyContinue) {
         while ([int]$env:CONDA_SHLVL -gt 0) { conda deactivate }
     }
@@ -73,6 +74,10 @@ if ((Test-Path $standardActivation) -and -not $env:VIRTUAL_ENV) {
     if ($existingConda) {
         (& $existingConda 'shell.powershell' 'hook') | Out-String | Invoke-Expression
     }
+}
+
+if ($env:CLOUDSDK_PYTHON -eq (Join-Path $previousStandard 'Scripts\python.exe')) {
+    $env:CLOUDSDK_PYTHON = Join-Path $HOME '.virtualenvs\py314\Scripts\python.exe'
 }
 
 if (Get-Command fnm -ErrorAction SilentlyContinue) {

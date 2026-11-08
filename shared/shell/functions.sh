@@ -7,14 +7,21 @@ venvpy() {
 }
 
 jaxenv() {
-  if [ ! -f "$HOME/.virtualenvs/jax313/bin/activate" ]; then
-    echo "Python virtualenv is not installed: ~/.virtualenvs/jax313" >&2
+  case "${1:-314}" in
+    313|314|315) ;;
+    *) echo 'usage: jaxenv [313|314|315]' >&2; return 1 ;;
+  esac
+  if [ ! -f "$HOME/.virtualenvs/jax${1:-314}/bin/activate" ]; then
+    echo "Python virtualenv is not installed: ~/.virtualenvs/jax${1:-314}" >&2
     return 1
   fi
   if command -v conda >/dev/null 2>&1 && [ "${CONDA_SHLVL:-0}" != 0 ]; then
     conda deactivate || return 1
   fi
-  . "$HOME/.virtualenvs/jax313/bin/activate"
+  . "$HOME/.virtualenvs/jax${1:-314}/bin/activate"
+  export UV_PYTHON="$VIRTUAL_ENV/bin/python"
+  export IFJ_PYTHON="$VIRTUAL_ENV/bin/python"
+  export ARBPLUSJAX_PYTHON="$VIRTUAL_ENV/bin/python"
 }
 
 extract() {

@@ -101,7 +101,9 @@ try {
         if ($tunnel.HasExited) {
             throw "SSH could not open the desktop tunnel to $peerAlias. $($sshErrors.GetAwaiter().GetResult().Trim()) Try: ssh $peerAlias hostname"
         }
-        $ownedListener = Get-NetTCPConnection -LocalAddress 127.0.0.1 -LocalPort $localPort -State Listen -ErrorAction SilentlyContinue |
+        # Some Windows TCP providers report a working listener's State as 0.
+        # Check the bound endpoint and SSH owner, then require the RFB greeting.
+        $ownedListener = Get-NetTCPConnection -LocalAddress 127.0.0.1 -LocalPort $localPort -RemotePort 0 -ErrorAction SilentlyContinue |
             Where-Object OwningProcess -eq $tunnel.Id
         $ready = $ownedListener -and (Test-DesktopRfbGreeting -Port $localPort)
         if (-not $ready) { Start-Sleep -Milliseconds 200 }

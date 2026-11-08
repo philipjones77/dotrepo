@@ -48,10 +48,20 @@ try:
     import tensorflow_probability as tfp
     from gpflow.keras import tf_keras
 
-    report["versions"] = {
-        name: metadata.version(name)
-        for name in ("gpflow", "numpy", "scipy", "tensorflow", "tensorflow-probability", "tf-keras", "setuptools")
-    }
+    report["versions"] = {}
+    for candidates in (
+        ("gpflow",), ("numpy",), ("scipy",),
+        ("tensorflow", "tf-nightly"),
+        ("tensorflow-probability", "tfp-nightly"),
+        ("tf-keras", "tf-keras-nightly"), ("setuptools",),
+    ):
+        for name in candidates:
+            try:
+                report["versions"][name] = metadata.version(name)
+                break
+            except metadata.PackageNotFoundError:
+                if name == candidates[-1]:
+                    raise
     assert not tf.config.get_visible_devices("GPU")
     report["visible_gpus"] = []
     report["checks"]["imports"] = {"passed": True}

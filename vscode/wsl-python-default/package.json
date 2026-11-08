@@ -1,0 +1,12 @@
+{
+  "name": "wsl-python-default",
+  "displayName": "WSL Python environment defaults",
+  "description": "Select py314 for general WSL work and jax314 for scientific library workspaces.",
+  "version": "1.0.0",
+  "publisher": "dotrepo",
+  "engines": { "vscode": "^1.95.0" },
+  "main": "./extension.js",
+  "extensionKind": ["workspace"],
+  "extensionDependencies": ["ms-python.python"],
+  "activationEvents": ["onStartupFinished"]
+}

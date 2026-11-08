@@ -42,5 +42,8 @@
     "**/benchmarks/out*",
     "**/.pytest_cache",
     "**/.mypy_cache"
-  ]
+  ],
+  "extensions.autoCheckUpdates": true,
+  "extensions.autoUpdate": true,
+  "files.saveConflictResolution": "askUser"
 }

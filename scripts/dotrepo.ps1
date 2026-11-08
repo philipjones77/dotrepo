@@ -9,7 +9,7 @@ param(
 )
 $ErrorActionPreference = 'Stop'
 $repoRoot = Split-Path $PSScriptRoot -Parent
-$pythonCommand = Join-Path $repoRoot '.venv-windows/Scripts/python.exe'
+$pythonCommand = Join-Path $HOME '.virtualenvs/py314/Scripts/python.exe'
 if (!(Test-Path -LiteralPath $pythonCommand)) { $pythonCommand = 'python' }
 $failed = $false
 foreach ($target in $(if ($Platform -eq 'all') { @('windows','wsl') } else { @($Platform) })) {
@@ -41,7 +41,7 @@ foreach ($target in $(if ($Platform -eq 'all') { @('windows','wsl') } else { @($
             if (!$linuxRoot) {
                 $linuxHome = & wsl.exe -d $Distribution --exec printenv HOME
                 if ($LASTEXITCODE -ne 0) { throw 'Cannot resolve the WSL user home.' }
-                $linuxRoot = $linuxHome.Trim() + '/projects/dotrepo'
+                $linuxRoot = $linuxHome.Trim() + '/.dotrepo'
             }
             & wsl.exe -d $Distribution --exec test -f "$linuxRoot/scripts/dotrepo.sh"
             if ($LASTEXITCODE -ne 0) { throw "Native WSL management checkout is missing or outdated: $linuxRoot. Clone/update dotrepo there, or pass -WslRepoPath explicitly." }

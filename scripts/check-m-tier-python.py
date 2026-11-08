@@ -160,12 +160,20 @@ def probe(name):
         mean, variance = model.predict_f(x)
         return {"operation": "12-point GP marginal likelihood, gradients, and posterior prediction", "loss": float(loss), **predictions(mean.numpy(), variance.numpy())}
     if name == "gpjax":
+        import inspect
+
         jax, jnp = jax_cpu()
         import gpjax as gp
 
         data = gp.Dataset(X=jnp.asarray(x), y=jnp.asarray(y[:, None]))
         prior = gp.gps.Prior(mean_function=gp.mean_functions.Zero(), kernel=gp.kernels.RBF())
-        posterior = prior * gp.likelihoods.Gaussian(num_datapoints=len(x))
+        # GPJax 1.0 obtains the observation count from the conditioning data.
+        likelihood_args = (
+            {"num_datapoints": len(x)}
+            if "num_datapoints" in inspect.signature(gp.likelihoods.Gaussian).parameters
+            else {}
+        )
+        posterior = prior * gp.likelihoods.Gaussian(**likelihood_args)
         loss = float(gp.objectives.conjugate_mll(posterior, data))
         assert math.isfinite(loss)
         distribution = posterior.predict(jnp.asarray(x), train_data=data)

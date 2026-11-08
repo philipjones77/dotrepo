@@ -27,7 +27,7 @@ if ($LASTEXITCODE -ne 0) { throw 'Cannot resolve snapshot path inside WSL.' }
 if (!$LinuxRepoPath) {
     $linuxHome = & wsl.exe -d $Distribution --exec printenv HOME
     if ($LASTEXITCODE -ne 0) { throw 'Cannot resolve WSL home.' }
-    $LinuxRepoPath = $linuxHome.Trim() + '/projects/dotrepo'
+    $LinuxRepoPath = $linuxHome.Trim() + '/.dotrepo'
 }
 $collectorPath = $LinuxRepoPath.TrimEnd('/') + '/wsl/capture-status.sh'
 & wsl.exe -d $Distribution --exec test -f $collectorPath

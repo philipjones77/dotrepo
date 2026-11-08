@@ -25,6 +25,9 @@ esac
 if [ -f "$HOME/.config/dotrepo/shell.local.sh" ]; then
   . "$HOME/.config/dotrepo/shell.local.sh"
 fi
+if [ -n "${WSL_DISTRO_NAME:-}" ] && [ -f "$DOTREPO/wsl/python-defaults.sh" ]; then
+  . "$DOTREPO/wsl/python-defaults.sh"
+fi
 if [ -n "${WSL_DISTRO_NAME:-}" ] && [ -f "$DOTREPO/wsl/repo-oracle-env.sh" ]; then
   . "$DOTREPO/wsl/repo-oracle-env.sh"
 fi

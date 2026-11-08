@@ -21,7 +21,7 @@
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
   "lldb.suppressUpdateNotifications": true,
   "explorer.confirmDelete": false,
-  "python.defaultInterpreterPath": "${env:USERPROFILE}/.virtualenvs/py313/Scripts/python.exe",
+  "python.defaultInterpreterPath": "${env:USERPROFILE}/.virtualenvs/py314/Scripts/python.exe",
   "python.terminal.activateEnvironment": true,
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.profiles.windows": {

@@ -21,8 +21,8 @@ fi
 # mra-serial is usable standalone; RF77's binary protocol is not compatible yet.
 # Keep RF77_MRA_BINARY an explicit caller choice until that bridge is reconciled.
 
-if [ -x "$HOME/.virtualenvs/py313/bin/python" ]; then
-  export RETICULATE_PYTHON="${RETICULATE_PYTHON:-$HOME/.virtualenvs/py313/bin/python}"
+if [ -x "$HOME/.virtualenvs/py314/bin/python" ]; then
+  export RETICULATE_PYTHON="${RETICULATE_PYTHON:-$HOME/.virtualenvs/py314/bin/python}"
 fi
 
 if [ -d "$HOME/.cache/toposmpljax/private_data/models/validated" ]; then

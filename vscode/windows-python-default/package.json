@@ -1,0 +1,12 @@
+{
+  "name": "windows-python-default",
+  "displayName": "Windows Python 3.14 migration",
+  "description": "Apply the configured Python 3.14 interpreter once per native Windows repository.",
+  "version": "1.0.1",
+  "publisher": "dotrepo",
+  "engines": { "vscode": "^1.95.0" },
+  "main": "./extension.js",
+  "extensionKind": ["workspace"],
+  "extensionDependencies": ["ms-python.python"],
+  "activationEvents": ["onStartupFinished"]
+}

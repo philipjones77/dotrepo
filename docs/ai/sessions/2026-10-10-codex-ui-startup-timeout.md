@@ -12,7 +12,7 @@ WSL remote windows, shortly after a window opens or reloads.
 
 `Codex.log` records the same error each time:
 
-```
+```text
 [CodexWebviewProvider] Webview renderer did not become ready elapsedMs=30010
 reason=renderer_ready_timeout role=sidebar timeoutMs=30000
 ```
@@ -64,6 +64,27 @@ the next occurrence.
   1.141 and fail to load on 1.140).
 - WSL has `memory=8GB`; about 5.3 GB was in use during the check (see the
   [September 23 WSL memory handoff](2026-09-23-wsl-memory-disconnects.md)).
+
+## Extension cleanup (PC-PHILIP-WINDOWS)
+
+Windows VS Code went from 92 to 45 extensions; WSL from 36 to 34. Before/after
+lists are in `~/.dotrepo-backups/20261010-072756-vscode-extensions/`.
+
+- Removed: `demystifying-javascript.python-extensions-pack` and most of its
+  members (Sourcery, Mintlify, AREPL, LiveCode, Wolf, Test Explorer trio,
+  Python Indent/Type Hint/snippets/Resource Monitor, Dash); duplicate or
+  superseded tools (`mathematic.vscode-latex`, `goessner.mdmath`, `twxs.cmake`,
+  `tomoki1207.pdf`, two JSON viewers, Matlab Code Run, two extra WSL path
+  helpers); Docker and Dev Containers (Windows and WSL); Windows C/C++, CMake,
+  Makefile, CodeLLDB, rust-analyzer and Nsight; Windows Jupyter, Data Wrangler,
+  Colab and R (the WSL copies remain).
+- Kept Lean 4 by choice; Remote-WSL/SSH, Python, LaTeX Workshop, Markdown and
+  the AI extensions unchanged.
+- Five hidden old Codex/Claude Code copies (2 GB) were deleted. Uninstalled
+  folders are marked obsolete and VS Code deletes them on the next restart.
+- Caution: `code --uninstall-extension <pack>` also uninstalls the pack's
+  members. Removing `vscode-remote-extensionpack` took Remote-WSL and
+  Remote-SSH with it; they were reinstalled at the same versions.
 
 ## Update 2026-11-07
 

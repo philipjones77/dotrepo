@@ -1,0 +1,4326 @@
+{
+  "purpose": "Observed source versions, not a target lockfile. Refresh versions and choose GPU packages for target hardware.",
+  "date": "2026-11-08",
+  "environments": {
+    "py314": {
+      "python": "3.14.10",
+      "packages": [
+        {
+          "name": "absl-py",
+          "version": "2.5.1",
+          "local_source": false
+        },
+        {
+          "name": "accessible-pygments",
+          "version": "0.0.5",
+          "local_source": false
+        },
+        {
+          "name": "aiofiles",
+          "version": "25.1.0",
+          "local_source": false
+        },
+        {
+          "name": "alabaster",
+          "version": "1.0.0",
+          "local_source": false
+        },
+        {
+          "name": "alembic",
+          "version": "1.20.1",
+          "local_source": false
+        },
+        {
+          "name": "algebra",
+          "version": "1.2.1",
+          "local_source": false
+        },
+        {
+          "name": "annotated-types",
+          "version": "0.8.0",
+          "local_source": false
+        },
+        {
+          "name": "anyio",
+          "version": "4.16.0",
+          "local_source": false
+        },
+        {
+          "name": "arbPlusJAX",
+          "version": "2.6.0",
+          "local_source": false
+        },
+        {
+          "name": "argon2-cffi",
+          "version": "25.1.0",
+          "local_source": false
+        },
+        {
+          "name": "argon2-cffi-bindings",
+          "version": "26.1.0",
+          "local_source": false
+        },
+        {
+          "name": "arviz",
+          "version": "1.3.0",
+          "local_source": false
+        },
+        {
+          "name": "arviz-base",
+          "version": "1.3.1",
+          "local_source": false
+        },
+        {
+          "name": "arviz-plots",
+          "version": "1.3.2",
+          "local_source": false
+        },
+        {
+          "name": "arviz-stats",
+          "version": "1.3.3",
+          "local_source": false
+        },
+        {
+          "name": "astropy",
+          "version": "8.0.2",
+          "local_source": false
+        },
+        {
+          "name": "astropy-iers-data",
+          "version": "0.2026.11.2.0.34.55",
+          "local_source": false
+        },
+        {
+          "name": "asttokens",
+          "version": "3.0.2",
+          "local_source": false
+        },
+        {
+          "name": "astunparse",
+          "version": "1.6.3",
+          "local_source": false
+        },
+        {
+          "name": "async-lru",
+          "version": "2.4.0",
+          "local_source": false
+        },
+        {
+          "name": "attrs",
+          "version": "26.1.0",
+          "local_source": false
+        },
+        {
+          "name": "autograd",
+          "version": "1.9.1",
+          "local_source": false
+        },
+        {
+          "name": "autoray",
+          "version": "0.11.0",
+          "local_source": false
+        },
+        {
+          "name": "babel",
+          "version": "2.18.0",
+          "local_source": false
+        },
+        {
+          "name": "backends",
+          "version": "1.9.0",
+          "local_source": false
+        },
+        {
+          "name": "backends-matrix",
+          "version": "1.3.0",
+          "local_source": false
+        },
+        {
+          "name": "bayesnf",
+          "version": "0.1.3",
+          "local_source": false
+        },
+        {
+          "name": "bayex",
+          "version": "0.3.0",
+          "local_source": false
+        },
+        {
+          "name": "beartype",
+          "version": "0.23.1",
+          "local_source": false
+        },
+        {
+          "name": "beautifulsoup4",
+          "version": "4.15.0",
+          "local_source": false
+        },
+        {
+          "name": "better_optimize",
+          "version": "0.5.1",
+          "local_source": false
+        },
+        {
+          "name": "blackjax",
+          "version": "1.7.1",
+          "local_source": false
+        },
+        {
+          "name": "bleach",
+          "version": "6.4.0",
+          "local_source": false
+        },
+        {
+          "name": "bokeh",
+          "version": "3.10.2",
+          "local_source": false
+        },
+        {
+          "name": "boltons",
+          "version": "26.2.0",
+          "local_source": false
+        },
+        {
+          "name": "botorch",
+          "version": "0.18.1",
+          "local_source": false
+        },
+        {
+          "name": "boule",
+          "version": "0.7.0",
+          "local_source": false
+        },
+        {
+          "name": "brotli",
+          "version": "1.2.1",
+          "local_source": false
+        },
+        {
+          "name": "build",
+          "version": "1.6.1",
+          "local_source": false
+        },
+        {
+          "name": "cached-property",
+          "version": "2.0.1",
+          "local_source": false
+        },
+        {
+          "name": "cachetools",
+          "version": "8.0.0",
+          "local_source": false
+        },
+        {
+          "name": "causal-learn",
+          "version": "0.1.4.8",
+          "local_source": false
+        },
+        {
+          "name": "celerite2",
+          "version": "0.3.3",
+          "local_source": false
+        },
+        {
+          "name": "certifi",
+          "version": "2026.10.23",
+          "local_source": false
+        },
+        {
+          "name": "cffi",
+          "version": "2.1.1",
+          "local_source": false
+        },
+        {
+          "name": "cftime",
+          "version": "1.6.6.1",
+          "local_source": false
+        },
+        {
+          "name": "charset-normalizer",
+          "version": "3.5.2",
+          "local_source": false
+        },
+        {
+          "name": "check-shapes",
+          "version": "1.1.1",
+          "local_source": false
+        },
+        {
+          "name": "clarabel",
+          "version": "0.11.1",
+          "local_source": false
+        },
+        {
+          "name": "click",
+          "version": "8.5.1",
+          "local_source": false
+        },
+        {
+          "name": "cloudpickle",
+          "version": "3.1.2",
+          "local_source": false
+        },
+        {
+          "name": "colorama",
+          "version": "0.4.6",
+          "local_source": false
+        },
+        {
+          "name": "colorlog",
+          "version": "6.12.0",
+          "local_source": false
+        },
+        {
+          "name": "comm",
+          "version": "0.2.3",
+          "local_source": false
+        },
+        {
+          "name": "contourpy",
+          "version": "1.4.0",
+          "local_source": false
+        },
+        {
+          "name": "coverage",
+          "version": "7.17.2",
+          "local_source": false
+        },
+        {
+          "name": "cubature",
+          "version": "0.18.8",
+          "local_source": false
+        },
+        {
+          "name": "cuda-bindings",
+          "version": "13.5.0",
+          "local_source": false
+        },
+        {
+          "name": "cuda-core",
+          "version": "1.2.2",
+          "local_source": false
+        },
+        {
+          "name": "cuda-pathfinder",
+          "version": "1.8.6",
+          "local_source": false
+        },
+        {
+          "name": "cuda-toolkit",
+          "version": "13.5.0",
+          "local_source": false
+        },
+        {
+          "name": "cupy-cuda13x",
+          "version": "14.2.0",
+          "local_source": false
+        },
+        {
+          "name": "cutensor-cu13",
+          "version": "2.8.1",
+          "local_source": false
+        },
+        {
+          "name": "cvxpy",
+          "version": "1.9.3",
+          "local_source": false
+        },
+        {
+          "name": "cycler",
+          "version": "0.12.1",
+          "local_source": false
+        },
+        {
+          "name": "Cython",
+          "version": "3.3.1",
+          "local_source": false
+        },
+        {
+          "name": "dask",
+          "version": "2026.8.0",
+          "local_source": false
+        },
+        {
+          "name": "debiased-spatial-whittle",
+          "version": "2.2.0",
+          "local_source": false
+        },
+        {
+          "name": "debugpy",
+          "version": "1.8.22",
+          "local_source": false
+        },
+        {
+          "name": "decorator",
+          "version": "5.3.1",
+          "local_source": false
+        },
+        {
+          "name": "defusedxml",
+          "version": "0.7.1",
+          "local_source": false
+        },
+        {
+          "name": "Deprecated",
+          "version": "3.0.1",
+          "local_source": false
+        },
+        {
+          "name": "diffrax",
+          "version": "0.7.2",
+          "local_source": false
+        },
+        {
+          "name": "distro",
+          "version": "1.9.0",
+          "local_source": false
+        },
+        {
+          "name": "dlib",
+          "version": "20.0.1",
+          "local_source": true
+        },
+        {
+          "name": "dm-tree",
+          "version": "0.1.10",
+          "local_source": false
+        },
+        {
+          "name": "docutils",
+          "version": "0.23",
+          "local_source": false
+        },
+        {
+          "name": "dropstackframe",
+          "version": "0.1.1",
+          "local_source": false
+        },
+        {
+          "name": "dynamax",
+          "version": "1.0.3",
+          "local_source": false
+        },
+        {
+          "name": "einops",
+          "version": "0.8.2",
+          "local_source": false
+        },
+        {
+          "name": "emcee",
+          "version": "3.1.6",
+          "local_source": false
+        },
+        {
+          "name": "emukit",
+          "version": "0.5.1",
+          "local_source": false
+        },
+        {
+          "name": "equinox",
+          "version": "0.13.8",
+          "local_source": false
+        },
+        {
+          "name": "esda",
+          "version": "2.10.0",
+          "local_source": false
+        },
+        {
+          "name": "etils",
+          "version": "1.15.0",
+          "local_source": false
+        },
+        {
+          "name": "executing",
+          "version": "2.3.0",
+          "local_source": false
+        },
+        {
+          "name": "fastcore",
+          "version": "2.2.39",
+          "local_source": false
+        },
+        {
+          "name": "fastjsonschema",
+          "version": "2.22.3",
+          "local_source": false
+        },
+        {
+          "name": "fastprogress",
+          "version": "1.1.6",
+          "local_source": false
+        },
+        {
+          "name": "fdm",
+          "version": "0.5.0",
+          "local_source": false
+        },
+        {
+          "name": "fftlog-lss",
+          "version": "0.1.2",
+          "local_source": false
+        },
+        {
+          "name": "filelock",
+          "version": "4.2.9",
+          "local_source": false
+        },
+        {
+          "name": "finufft",
+          "version": "2.5.1",
+          "local_source": false
+        },
+        {
+          "name": "fire",
+          "version": "0.7.1",
+          "local_source": false
+        },
+        {
+          "name": "flatbuffers",
+          "version": "25.12.19",
+          "local_source": false
+        },
+        {
+          "name": "flax",
+          "version": "0.12.12",
+          "local_source": false
+        },
+        {
+          "name": "fonttools",
+          "version": "4.68.0",
+          "local_source": false
+        },
+        {
+          "name": "formulaic",
+          "version": "1.2.2",
+          "local_source": false
+        },
+        {
+          "name": "frozendict",
+          "version": "2.5.1",
+          "local_source": false
+        },
+        {
+          "name": "fsspec",
+          "version": "2026.9.0",
+          "local_source": false
+        },
+        {
+          "name": "gast",
+          "version": "0.7.0",
+          "local_source": false
+        },
+        {
+          "name": "geometric_kernels",
+          "version": "1.0.1",
+          "local_source": false
+        },
+        {
+          "name": "geomstats",
+          "version": "2.8.0",
+          "local_source": false
+        },
+        {
+          "name": "geoopt",
+          "version": "0.5.1",
+          "local_source": false
+        },
+        {
+          "name": "geopandas",
+          "version": "1.2.0",
+          "local_source": false
+        },
+        {
+          "name": "george",
+          "version": "0.4.4",
+          "local_source": false
+        },
+        {
+          "name": "gglasso",
+          "version": "0.3.1",
+          "local_source": false
+        },
+        {
+          "name": "gmsh",
+          "version": "4.15.2",
+          "local_source": false
+        },
+        {
+          "name": "google-pasta",
+          "version": "0.2.0",
+          "local_source": false
+        },
+        {
+          "name": "gpboost",
+          "version": "1.8.0",
+          "local_source": false
+        },
+        {
+          "name": "gpflow",
+          "version": "2.11.2",
+          "local_source": false
+        },
+        {
+          "name": "gpjax",
+          "version": "1.0.0",
+          "local_source": false
+        },
+        {
+          "name": "gpy",
+          "version": "1.15.0",
+          "local_source": false
+        },
+        {
+          "name": "gpytorch",
+          "version": "1.15.2",
+          "local_source": false
+        },
+        {
+          "name": "GraphRicciCurvature",
+          "version": "0.6.1",
+          "local_source": false
+        },
+        {
+          "name": "graphviz",
+          "version": "0.21",
+          "local_source": false
+        },
+        {
+          "name": "greenlet",
+          "version": "3.5.6",
+          "local_source": false
+        },
+        {
+          "name": "grpcio",
+          "version": "1.85.1",
+          "local_source": false
+        },
+        {
+          "name": "gs-lvmogp-oracle",
+          "version": "0.0.0+541d49aaf019",
+          "local_source": true
+        },
+        {
+          "name": "gstools",
+          "version": "1.7.0",
+          "local_source": false
+        },
+        {
+          "name": "gstools_cython",
+          "version": "1.2.0",
+          "local_source": false
+        },
+        {
+          "name": "h11",
+          "version": "0.16.0",
+          "local_source": false
+        },
+        {
+          "name": "h2",
+          "version": "4.4.1",
+          "local_source": false
+        },
+        {
+          "name": "h5py",
+          "version": "3.16.0",
+          "local_source": false
+        },
+        {
+          "name": "hankel",
+          "version": "1.2.2",
+          "local_source": false
+        },
+        {
+          "name": "hankl",
+          "version": "1.1.0",
+          "local_source": false
+        },
+        {
+          "name": "healpy",
+          "version": "1.20.1",
+          "local_source": false
+        },
+        {
+          "name": "hf-xet",
+          "version": "1.8.0",
+          "local_source": false
+        },
+        {
+          "name": "highspy",
+          "version": "1.15.1",
+          "local_source": false
+        },
+        {
+          "name": "hpack",
+          "version": "4.2.0",
+          "local_source": false
+        },
+        {
+          "name": "httpcore",
+          "version": "1.0.9",
+          "local_source": false
+        },
+        {
+          "name": "httpcore2",
+          "version": "2.16.0",
+          "local_source": false
+        },
+        {
+          "name": "httpx",
+          "version": "0.28.1",
+          "local_source": false
+        },
+        {
+          "name": "httpx2",
+          "version": "2.16.0",
+          "local_source": false
+        },
+        {
+          "name": "huggingface_hub",
+          "version": "2.4.0",
+          "local_source": false
+        },
+        {
+          "name": "humanize",
+          "version": "4.16.0",
+          "local_source": false
+        },
+        {
+          "name": "hyperframe",
+          "version": "6.1.0",
+          "local_source": false
+        },
+        {
+          "name": "idna",
+          "version": "3.20",
+          "local_source": false
+        },
+        {
+          "name": "ImageIO",
+          "version": "2.38.1",
+          "local_source": false
+        },
+        {
+          "name": "imagesize",
+          "version": "2.0.1",
+          "local_source": false
+        },
+        {
+          "name": "importlib_metadata",
+          "version": "10.1.0",
+          "local_source": false
+        },
+        {
+          "name": "iniconfig",
+          "version": "2.3.1",
+          "local_source": false
+        },
+        {
+          "name": "installer",
+          "version": "1.1.0",
+          "local_source": false
+        },
+        {
+          "name": "IntegralFunctionsJAX",
+          "version": "0.2.0",
+          "local_source": false
+        },
+        {
+          "name": "interface_meta",
+          "version": "2.0.1",
+          "local_source": false
+        },
+        {
+          "name": "ipss",
+          "version": "1.1.13",
+          "local_source": false
+        },
+        {
+          "name": "ipykernel",
+          "version": "7.4.0",
+          "local_source": false
+        },
+        {
+          "name": "ipython",
+          "version": "9.18.1",
+          "local_source": false
+        },
+        {
+          "name": "ipython_pygments_lexers",
+          "version": "1.1.1",
+          "local_source": false
+        },
+        {
+          "name": "isal",
+          "version": "1.9.1",
+          "local_source": false
+        },
+        {
+          "name": "itsdangerous",
+          "version": "2.2.0",
+          "local_source": false
+        },
+        {
+          "name": "jax",
+          "version": "0.12.0.1",
+          "local_source": false
+        },
+        {
+          "name": "jax-cuda13-pjrt",
+          "version": "0.12.0.1",
+          "local_source": false
+        },
+        {
+          "name": "jax-cuda13-plugin",
+          "version": "0.12.0.1",
+          "local_source": false
+        },
+        {
+          "name": "jaxlib",
+          "version": "0.12.0.1",
+          "local_source": false
+        },
+        {
+          "name": "jaxopt",
+          "version": "0.8.5",
+          "local_source": false
+        },
+        {
+          "name": "jaxtyping",
+          "version": "0.3.11",
+          "local_source": false
+        },
+        {
+          "name": "jedi",
+          "version": "0.20.1",
+          "local_source": false
+        },
+        {
+          "name": "jenn",
+          "version": "2.1.1",
+          "local_source": false
+        },
+        {
+          "name": "Jinja2",
+          "version": "3.1.6",
+          "local_source": false
+        },
+        {
+          "name": "joblib",
+          "version": "1.6.0",
+          "local_source": false
+        },
+        {
+          "name": "json5",
+          "version": "0.17.3",
+          "local_source": false
+        },
+        {
+          "name": "jsonpointer",
+          "version": "3.10",
+          "local_source": false
+        },
+        {
+          "name": "jsonschema",
+          "version": "4.26.0",
+          "local_source": false
+        },
+        {
+          "name": "jsonschema-specifications",
+          "version": "2025.9.1",
+          "local_source": false
+        },
+        {
+          "name": "jupyter_builder",
+          "version": "1.2.4",
+          "local_source": false
+        },
+        {
+          "name": "jupyter-cache",
+          "version": "1.0.1",
+          "local_source": false
+        },
+        {
+          "name": "jupyter_client",
+          "version": "8.10.0",
+          "local_source": false
+        },
+        {
+          "name": "jupyter_core",
+          "version": "5.9.1",
+          "local_source": false
+        },
+        {
+          "name": "jupyter-events",
+          "version": "0.12.1",
+          "local_source": false
+        },
+        {
+          "name": "jupyter-lsp",
+          "version": "2.3.1",
+          "local_source": false
+        },
+        {
+          "name": "jupyter_server",
+          "version": "2.21.1",
+          "local_source": false
+        },
+        {
+          "name": "jupyter_server_terminals",
+          "version": "0.5.4",
+          "local_source": false
+        },
+        {
+          "name": "jupyterlab",
+          "version": "4.6.6",
+          "local_source": false
+        },
+        {
+          "name": "jupyterlab_pygments",
+          "version": "0.3.0",
+          "local_source": false
+        },
+        {
+          "name": "jupyterlab_server",
+          "version": "2.28.1",
+          "local_source": false
+        },
+        {
+          "name": "keras-nightly",
+          "version": "3.16.0.dev2026110803",
+          "local_source": false
+        },
+        {
+          "name": "kiwisolver",
+          "version": "1.5.1",
+          "local_source": false
+        },
+        {
+          "name": "lark",
+          "version": "1.3.1",
+          "local_source": false
+        },
+        {
+          "name": "lazy-loader",
+          "version": "0.6",
+          "local_source": false
+        },
+        {
+          "name": "libclang",
+          "version": "18.1.1",
+          "local_source": false
+        },
+        {
+          "name": "libigl",
+          "version": "2.6.3",
+          "local_source": false
+        },
+        {
+          "name": "libpysal",
+          "version": "4.15.1",
+          "local_source": false
+        },
+        {
+          "name": "linear_operator",
+          "version": "0.6.1",
+          "local_source": false
+        },
+        {
+          "name": "lineax",
+          "version": "0.1.1",
+          "local_source": false
+        },
+        {
+          "name": "llvmlite",
+          "version": "0.50.0",
+          "local_source": false
+        },
+        {
+          "name": "localgraph",
+          "version": "0.1.5",
+          "local_source": false
+        },
+        {
+          "name": "locket",
+          "version": "1.0.0",
+          "local_source": false
+        },
+        {
+          "name": "loguru",
+          "version": "0.7.3",
+          "local_source": false
+        },
+        {
+          "name": "Mako",
+          "version": "1.4.3",
+          "local_source": false
+        },
+        {
+          "name": "markdown-it-py",
+          "version": "4.2.0",
+          "local_source": false
+        },
+        {
+          "name": "MarkupSafe",
+          "version": "3.0.4",
+          "local_source": false
+        },
+        {
+          "name": "matfree",
+          "version": "0.6.3",
+          "local_source": false
+        },
+        {
+          "name": "matplotlib",
+          "version": "3.11.2",
+          "local_source": false
+        },
+        {
+          "name": "matplotlib-inline",
+          "version": "0.2.2",
+          "local_source": false
+        },
+        {
+          "name": "maturin",
+          "version": "1.16.0",
+          "local_source": false
+        },
+        {
+          "name": "mdit-py-plugins",
+          "version": "0.6.1",
+          "local_source": false
+        },
+        {
+          "name": "mdurl",
+          "version": "0.1.2",
+          "local_source": false
+        },
+        {
+          "name": "meshio",
+          "version": "5.3.5",
+          "local_source": false
+        },
+        {
+          "name": "mistune",
+          "version": "3.4.0",
+          "local_source": false
+        },
+        {
+          "name": "ml_dtypes",
+          "version": "0.6.0",
+          "local_source": false
+        },
+        {
+          "name": "mlkernels",
+          "version": "0.4.0",
+          "local_source": false
+        },
+        {
+          "name": "momentchi2",
+          "version": "0.1.8",
+          "local_source": false
+        },
+        {
+          "name": "more-itertools",
+          "version": "11.2.1",
+          "local_source": false
+        },
+        {
+          "name": "mpmath",
+          "version": "1.4.1",
+          "local_source": false
+        },
+        {
+          "name": "msgpack",
+          "version": "1.2.4",
+          "local_source": false
+        },
+        {
+          "name": "multipledispatch",
+          "version": "1.0.0",
+          "local_source": false
+        },
+        {
+          "name": "mypy_extensions",
+          "version": "1.2.0",
+          "local_source": false
+        },
+        {
+          "name": "myst-nb",
+          "version": "1.4.0",
+          "local_source": false
+        },
+        {
+          "name": "myst-parser",
+          "version": "5.1.0",
+          "local_source": false
+        },
+        {
+          "name": "namex",
+          "version": "0.1.0",
+          "local_source": false
+        },
+        {
+          "name": "narwhals",
+          "version": "2.28.0",
+          "local_source": false
+        },
+        {
+          "name": "nbclient",
+          "version": "0.11.0",
+          "local_source": false
+        },
+        {
+          "name": "nbconvert",
+          "version": "7.17.2",
+          "local_source": false
+        },
+        {
+          "name": "nbformat",
+          "version": "5.11.1",
+          "local_source": false
+        },
+        {
+          "name": "nest-asyncio2",
+          "version": "1.7.4",
+          "local_source": false
+        },
+        {
+          "name": "netCDF4",
+          "version": "1.7.5.1.post1",
+          "local_source": false
+        },
+        {
+          "name": "networkit",
+          "version": "11.3",
+          "local_source": false
+        },
+        {
+          "name": "networkx",
+          "version": "3.7",
+          "local_source": false
+        },
+        {
+          "name": "ninja",
+          "version": "1.13.2",
+          "local_source": false
+        },
+        {
+          "name": "nodeenv",
+          "version": "1.12.0",
+          "local_source": false
+        },
+        {
+          "name": "notebook_shim",
+          "version": "0.2.4",
+          "local_source": false
+        },
+        {
+          "name": "numba",
+          "version": "0.68.1",
+          "local_source": false
+        },
+        {
+          "name": "numpy",
+          "version": "2.5.4",
+          "local_source": false
+        },
+        {
+          "name": "numpyro",
+          "version": "0.22.0",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cublas",
+          "version": "13.10.0.20",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-cccl",
+          "version": "13.3.5.0.6",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-crt",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-culibos",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-cuobjdump",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-cupti",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-cuxxfilt",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-nvcc",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-nvdisasm",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-nvrtc",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-opencl",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-profiler-api",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-runtime",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-sanitizer-api",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-tileiras",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cudnn-cu13",
+          "version": "9.28.1.4",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cudss-cu13",
+          "version": "0.8.0.10",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cufft",
+          "version": "12.5.0.14",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cufile",
+          "version": "1.20.0.107",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-curand",
+          "version": "10.4.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cusolver",
+          "version": "12.4.1.2",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cusparse",
+          "version": "12.9.4.2",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cusparselt-cu13",
+          "version": "0.8.1",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nccl-cu13",
+          "version": "2.32.3",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-npp",
+          "version": "13.2.0.93",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvfatbin",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvjitlink",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvjpeg",
+          "version": "13.3.2.43",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvml-dev",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvptxcompiler",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvshmem-cu13",
+          "version": "3.8.0",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvtx",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvvm",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvmath-python",
+          "version": "1.0.0",
+          "local_source": false
+        },
+        {
+          "name": "oauthlib",
+          "version": "4.0.1",
+          "local_source": false
+        },
+        {
+          "name": "opt_einsum",
+          "version": "3.4.0",
+          "local_source": false
+        },
+        {
+          "name": "optax",
+          "version": "0.2.8",
+          "local_source": false
+        },
+        {
+          "name": "optimistix",
+          "version": "0.1.0",
+          "local_source": false
+        },
+        {
+          "name": "optree",
+          "version": "0.20.0",
+          "local_source": false
+        },
+        {
+          "name": "optuna",
+          "version": "5.0.0",
+          "local_source": false
+        },
+        {
+          "name": "orbax-checkpoint",
+          "version": "0.12.9",
+          "local_source": false
+        },
+        {
+          "name": "orjson",
+          "version": "3.13.0",
+          "local_source": false
+        },
+        {
+          "name": "osqp",
+          "version": "1.1.3",
+          "local_source": false
+        },
+        {
+          "name": "ott-jax",
+          "version": "0.6.0",
+          "local_source": false
+        },
+        {
+          "name": "packaging",
+          "version": "26.3",
+          "local_source": false
+        },
+        {
+          "name": "pandas",
+          "version": "3.1.1",
+          "local_source": false
+        },
+        {
+          "name": "pandocfilters",
+          "version": "1.5.1",
+          "local_source": false
+        },
+        {
+          "name": "param",
+          "version": "2.4.2",
+          "local_source": false
+        },
+        {
+          "name": "paramax",
+          "version": "0.0.5",
+          "local_source": false
+        },
+        {
+          "name": "paramz",
+          "version": "0.10.0",
+          "local_source": false
+        },
+        {
+          "name": "parso",
+          "version": "0.8.7",
+          "local_source": false
+        },
+        {
+          "name": "partd",
+          "version": "1.4.2",
+          "local_source": false
+        },
+        {
+          "name": "patsy",
+          "version": "1.0.3",
+          "local_source": false
+        },
+        {
+          "name": "petsc4py",
+          "version": "3.25.5",
+          "local_source": false
+        },
+        {
+          "name": "pexpect",
+          "version": "4.9.0",
+          "local_source": false
+        },
+        {
+          "name": "pgmpy",
+          "version": "1.1.2",
+          "local_source": false
+        },
+        {
+          "name": "pillow",
+          "version": "13.0.0",
+          "local_source": false
+        },
+        {
+          "name": "pip",
+          "version": "26.3",
+          "local_source": false
+        },
+        {
+          "name": "platformdirs",
+          "version": "4.14.5",
+          "local_source": false
+        },
+        {
+          "name": "plotly",
+          "version": "7.1.0",
+          "local_source": false
+        },
+        {
+          "name": "pluggy",
+          "version": "1.7.0",
+          "local_source": false
+        },
+        {
+          "name": "plum-dispatch",
+          "version": "2.10.1",
+          "local_source": false
+        },
+        {
+          "name": "pooch",
+          "version": "1.9.0",
+          "local_source": false
+        },
+        {
+          "name": "POT",
+          "version": "0.9.7.post1",
+          "local_source": false
+        },
+        {
+          "name": "potpourri3d",
+          "version": "1.4.0",
+          "local_source": false
+        },
+        {
+          "name": "progressbar2",
+          "version": "4.7.0",
+          "local_source": false
+        },
+        {
+          "name": "prometheus_client",
+          "version": "0.26.0",
+          "local_source": false
+        },
+        {
+          "name": "prompt_toolkit",
+          "version": "3.0.53",
+          "local_source": false
+        },
+        {
+          "name": "protobuf",
+          "version": "7.36.2",
+          "local_source": false
+        },
+        {
+          "name": "psutil",
+          "version": "7.2.2",
+          "local_source": false
+        },
+        {
+          "name": "ptyprocess",
+          "version": "0.7.0",
+          "local_source": false
+        },
+        {
+          "name": "pure_eval",
+          "version": "0.2.4",
+          "local_source": false
+        },
+        {
+          "name": "Py-BOBYQA",
+          "version": "1.5.0",
+          "local_source": false
+        },
+        {
+          "name": "py-rattler",
+          "version": "0.28.1",
+          "local_source": false
+        },
+        {
+          "name": "py-spy",
+          "version": "0.4.3",
+          "local_source": false
+        },
+        {
+          "name": "pyarrow",
+          "version": "26.0.1",
+          "local_source": false
+        },
+        {
+          "name": "pybind11",
+          "version": "3.1.0",
+          "local_source": false
+        },
+        {
+          "name": "pycosat",
+          "version": "0.6.6",
+          "local_source": false
+        },
+        {
+          "name": "pycparser",
+          "version": "3.12",
+          "local_source": false
+        },
+        {
+          "name": "pydantic",
+          "version": "2.14.3",
+          "local_source": false
+        },
+        {
+          "name": "pydantic_core",
+          "version": "2.50.4",
+          "local_source": false
+        },
+        {
+          "name": "pydata-sphinx-theme",
+          "version": "0.24.0",
+          "local_source": false
+        },
+        {
+          "name": "pydoe",
+          "version": "1.6.0",
+          "local_source": false
+        },
+        {
+          "name": "pydot",
+          "version": "4.0.1",
+          "local_source": false
+        },
+        {
+          "name": "pyerfa",
+          "version": "2.0.1.5",
+          "local_source": false
+        },
+        {
+          "name": "pyevtk",
+          "version": "1.7.0",
+          "local_source": false
+        },
+        {
+          "name": "pyfmaps",
+          "version": "1.3.1",
+          "local_source": false
+        },
+        {
+          "name": "pygam",
+          "version": "0.12.0",
+          "local_source": false
+        },
+        {
+          "name": "Pygments",
+          "version": "2.21.0",
+          "local_source": false
+        },
+        {
+          "name": "PyGSP",
+          "version": "0.6.1",
+          "local_source": false
+        },
+        {
+          "name": "PyKrige",
+          "version": "1.7.3",
+          "local_source": false
+        },
+        {
+          "name": "pymc",
+          "version": "6.4.0",
+          "local_source": false
+        },
+        {
+          "name": "pynufft",
+          "version": "2025.2.1",
+          "local_source": false
+        },
+        {
+          "name": "pyogrio",
+          "version": "0.13.0",
+          "local_source": false
+        },
+        {
+          "name": "pyparsing",
+          "version": "3.3.3",
+          "local_source": false
+        },
+        {
+          "name": "pypdf",
+          "version": "7.0.0",
+          "local_source": false
+        },
+        {
+          "name": "pyproj",
+          "version": "3.8.0",
+          "local_source": false
+        },
+        {
+          "name": "pyproject_hooks",
+          "version": "1.3.3",
+          "local_source": false
+        },
+        {
+          "name": "pyre-extensions",
+          "version": "0.0.32",
+          "local_source": false
+        },
+        {
+          "name": "pyright",
+          "version": "1.1.414",
+          "local_source": false
+        },
+        {
+          "name": "pyro-api",
+          "version": "0.1.2",
+          "local_source": false
+        },
+        {
+          "name": "pyro-ppl",
+          "version": "1.9.2",
+          "local_source": false
+        },
+        {
+          "name": "pyshtools",
+          "version": "4.14.1",
+          "local_source": false
+        },
+        {
+          "name": "PySocks",
+          "version": "1.7.1",
+          "local_source": false
+        },
+        {
+          "name": "pytensor",
+          "version": "3.3.8",
+          "local_source": false
+        },
+        {
+          "name": "pytest",
+          "version": "9.2.0",
+          "local_source": false
+        },
+        {
+          "name": "pytest-cov",
+          "version": "7.1.0",
+          "local_source": false
+        },
+        {
+          "name": "python-dateutil",
+          "version": "4.0.0",
+          "local_source": false
+        },
+        {
+          "name": "python-fasthtml",
+          "version": "0.14.20",
+          "local_source": false
+        },
+        {
+          "name": "python-flint",
+          "version": "0.9.0",
+          "local_source": false
+        },
+        {
+          "name": "python-json-logger",
+          "version": "4.2.0",
+          "local_source": false
+        },
+        {
+          "name": "python-louvain",
+          "version": "0.16",
+          "local_source": false
+        },
+        {
+          "name": "python-multipart",
+          "version": "0.0.33",
+          "local_source": false
+        },
+        {
+          "name": "python-slugify",
+          "version": "9.1.3",
+          "local_source": false
+        },
+        {
+          "name": "python-utils",
+          "version": "4.2.0",
+          "local_source": false
+        },
+        {
+          "name": "PyYAML",
+          "version": "6.0.3",
+          "local_source": false
+        },
+        {
+          "name": "pyzmq",
+          "version": "27.3.0",
+          "local_source": false
+        },
+        {
+          "name": "qdldl",
+          "version": "0.1.9.post1",
+          "local_source": false
+        },
+        {
+          "name": "qmcpy",
+          "version": "2.4",
+          "local_source": false
+        },
+        {
+          "name": "qmctoolscl",
+          "version": "1.2.4",
+          "local_source": false
+        },
+        {
+          "name": "quadax",
+          "version": "0.3.1",
+          "local_source": false
+        },
+        {
+          "name": "radian",
+          "version": "0.7.1",
+          "local_source": false
+        },
+        {
+          "name": "randomfields77",
+          "version": "2026.10.2",
+          "local_source": true
+        },
+        {
+          "name": "rchitect",
+          "version": "0.5.2",
+          "local_source": false
+        },
+        {
+          "name": "referencing",
+          "version": "0.37.0",
+          "local_source": false
+        },
+        {
+          "name": "regain",
+          "version": "0.4.1",
+          "local_source": false
+        },
+        {
+          "name": "requests",
+          "version": "2.34.2",
+          "local_source": false
+        },
+        {
+          "name": "rfc3339-validator",
+          "version": "0.1.4",
+          "local_source": false
+        },
+        {
+          "name": "rfc3986-validator",
+          "version": "0.1.1",
+          "local_source": false
+        },
+        {
+          "name": "rich",
+          "version": "15.0.0",
+          "local_source": false
+        },
+        {
+          "name": "robust_laplacian",
+          "version": "1.1.0",
+          "local_source": false
+        },
+        {
+          "name": "roman-numerals",
+          "version": "4.1.0",
+          "local_source": false
+        },
+        {
+          "name": "rpds-py",
+          "version": "2026.9.1",
+          "local_source": false
+        },
+        {
+          "name": "rpy2",
+          "version": "3.6.9",
+          "local_source": false
+        },
+        {
+          "name": "rpy2-rinterface",
+          "version": "3.6.7",
+          "local_source": false
+        },
+        {
+          "name": "rpy2-robjects",
+          "version": "3.6.6",
+          "local_source": false
+        },
+        {
+          "name": "ruamel.yaml",
+          "version": "0.19.1",
+          "local_source": false
+        },
+        {
+          "name": "ruamel.yaml.clib",
+          "version": "0.2.15",
+          "local_source": false
+        },
+        {
+          "name": "ruff",
+          "version": "0.17.4",
+          "local_source": false
+        },
+        {
+          "name": "scikit-base",
+          "version": "1.2.0",
+          "local_source": false
+        },
+        {
+          "name": "scikit-fem",
+          "version": "12.0.2",
+          "local_source": false
+        },
+        {
+          "name": "scikit-gstat",
+          "version": "1.0.27",
+          "local_source": false
+        },
+        {
+          "name": "scikit-learn",
+          "version": "1.9.1",
+          "local_source": false
+        },
+        {
+          "name": "scikit-sparse",
+          "version": "0.5.0",
+          "local_source": false
+        },
+        {
+          "name": "scipy",
+          "version": "1.18.1",
+          "local_source": false
+        },
+        {
+          "name": "scirs2",
+          "version": "0.6.5",
+          "local_source": false
+        },
+        {
+          "name": "scoringrules",
+          "version": "0.11.0",
+          "local_source": false
+        },
+        {
+          "name": "scs",
+          "version": "3.3.1",
+          "local_source": false
+        },
+        {
+          "name": "seaborn",
+          "version": "0.13.2",
+          "local_source": false
+        },
+        {
+          "name": "Send2Trash",
+          "version": "2.1.0",
+          "local_source": false
+        },
+        {
+          "name": "setuptools",
+          "version": "80.9.0",
+          "local_source": false
+        },
+        {
+          "name": "shapely",
+          "version": "2.2.0",
+          "local_source": false
+        },
+        {
+          "name": "simplejson",
+          "version": "4.2.0",
+          "local_source": false
+        },
+        {
+          "name": "six",
+          "version": "1.17.0",
+          "local_source": false
+        },
+        {
+          "name": "slepc4py",
+          "version": "3.25.1",
+          "local_source": false
+        },
+        {
+          "name": "smplx",
+          "version": "0.1.28",
+          "local_source": false
+        },
+        {
+          "name": "smt",
+          "version": "2.15.1",
+          "local_source": false
+        },
+        {
+          "name": "sniffio",
+          "version": "1.3.1",
+          "local_source": false
+        },
+        {
+          "name": "snowballstemmer",
+          "version": "3.1.1",
+          "local_source": false
+        },
+        {
+          "name": "soupsieve",
+          "version": "4.0.1",
+          "local_source": false
+        },
+        {
+          "name": "sparsediffpy",
+          "version": "0.8.0",
+          "local_source": false
+        },
+        {
+          "name": "spherical-harmonics-basis",
+          "version": "0.0.4",
+          "local_source": false
+        },
+        {
+          "name": "Sphinx",
+          "version": "9.2.0",
+          "local_source": false
+        },
+        {
+          "name": "sphinx-autodoc-typehints",
+          "version": "3.17.5",
+          "local_source": false
+        },
+        {
+          "name": "sphinx-book-theme",
+          "version": "1.4.0",
+          "local_source": false
+        },
+        {
+          "name": "sphinx-copybutton",
+          "version": "0.5.2",
+          "local_source": false
+        },
+        {
+          "name": "sphinx_design",
+          "version": "0.7.0",
+          "local_source": false
+        },
+        {
+          "name": "sphinxcontrib-applehelp",
+          "version": "2.0.0",
+          "local_source": false
+        },
+        {
+          "name": "sphinxcontrib-devhelp",
+          "version": "2.0.0",
+          "local_source": false
+        },
+        {
+          "name": "sphinxcontrib-htmlhelp",
+          "version": "2.1.0",
+          "local_source": false
+        },
+        {
+          "name": "sphinxcontrib-jsmath",
+          "version": "2.0.0",
+          "local_source": false
+        },
+        {
+          "name": "sphinxcontrib-qthelp",
+          "version": "2.0.0",
+          "local_source": false
+        },
+        {
+          "name": "sphinxcontrib-serializinghtml",
+          "version": "2.0.0",
+          "local_source": false
+        },
+        {
+          "name": "SQLAlchemy",
+          "version": "2.1.8",
+          "local_source": false
+        },
+        {
+          "name": "stack-data",
+          "version": "0.6.3",
+          "local_source": false
+        },
+        {
+          "name": "starlette",
+          "version": "1.10.0",
+          "local_source": false
+        },
+        {
+          "name": "statsmodels",
+          "version": "0.15.0",
+          "local_source": false
+        },
+        {
+          "name": "stheno",
+          "version": "1.4.2",
+          "local_source": false
+        },
+        {
+          "name": "sympy",
+          "version": "1.14.0",
+          "local_source": false
+        },
+        {
+          "name": "tabulate",
+          "version": "0.10.0",
+          "local_source": false
+        },
+        {
+          "name": "tensorstore",
+          "version": "0.1.86",
+          "local_source": false
+        },
+        {
+          "name": "termcolor",
+          "version": "3.3.0",
+          "local_source": false
+        },
+        {
+          "name": "terminado",
+          "version": "0.18.1",
+          "local_source": false
+        },
+        {
+          "name": "text-unidecode",
+          "version": "1.3",
+          "local_source": false
+        },
+        {
+          "name": "tf_keras",
+          "version": "2.21.0",
+          "local_source": false
+        },
+        {
+          "name": "tf_nightly",
+          "version": "2.23.0.dev20261107",
+          "local_source": false
+        },
+        {
+          "name": "tfp-nightly",
+          "version": "0.26.0.dev20261108",
+          "local_source": false
+        },
+        {
+          "name": "threadpoolctl",
+          "version": "3.8.0",
+          "local_source": false
+        },
+        {
+          "name": "tinycss2",
+          "version": "1.5.1",
+          "local_source": false
+        },
+        {
+          "name": "tinygp",
+          "version": "0.3.1",
+          "local_source": false
+        },
+        {
+          "name": "tomli",
+          "version": "2.5.0",
+          "local_source": false
+        },
+        {
+          "name": "tomli_w",
+          "version": "1.2.0",
+          "local_source": false
+        },
+        {
+          "name": "toolz",
+          "version": "1.2.0",
+          "local_source": false
+        },
+        {
+          "name": "TopoNetX",
+          "version": "0.4.0",
+          "local_source": false
+        },
+        {
+          "name": "TopoSMPLJAX",
+          "version": "2.8.0",
+          "local_source": false
+        },
+        {
+          "name": "torch",
+          "version": "2.15.0",
+          "local_source": false
+        },
+        {
+          "name": "torchinfo",
+          "version": "1.8.0",
+          "local_source": false
+        },
+        {
+          "name": "torchquad",
+          "version": "0.6.0",
+          "local_source": false
+        },
+        {
+          "name": "tornado",
+          "version": "6.6",
+          "local_source": false
+        },
+        {
+          "name": "tqdm",
+          "version": "4.70.1",
+          "local_source": false
+        },
+        {
+          "name": "traceax",
+          "version": "1.0.2",
+          "local_source": false
+        },
+        {
+          "name": "traitlets",
+          "version": "5.16.1",
+          "local_source": false
+        },
+        {
+          "name": "treescope",
+          "version": "0.1.10",
+          "local_source": false
+        },
+        {
+          "name": "trimesh",
+          "version": "5.2.0",
+          "local_source": false
+        },
+        {
+          "name": "triton",
+          "version": "3.9.0",
+          "local_source": false
+        },
+        {
+          "name": "truststore",
+          "version": "0.10.5",
+          "local_source": false
+        },
+        {
+          "name": "typing_extensions",
+          "version": "4.16.0",
+          "local_source": false
+        },
+        {
+          "name": "typing-inspect",
+          "version": "0.9.0",
+          "local_source": false
+        },
+        {
+          "name": "typing-inspection",
+          "version": "0.4.5",
+          "local_source": false
+        },
+        {
+          "name": "tzdata",
+          "version": "2026.6",
+          "local_source": false
+        },
+        {
+          "name": "tzlocal",
+          "version": "5.4.5",
+          "local_source": false
+        },
+        {
+          "name": "unearth",
+          "version": "0.19.0",
+          "local_source": false
+        },
+        {
+          "name": "UQpy",
+          "version": "4.2.1",
+          "local_source": false
+        },
+        {
+          "name": "urllib3",
+          "version": "2.8.0",
+          "local_source": false
+        },
+        {
+          "name": "uvicorn",
+          "version": "0.54.0",
+          "local_source": false
+        },
+        {
+          "name": "uvloop",
+          "version": "0.23.0",
+          "local_source": false
+        },
+        {
+          "name": "varz",
+          "version": "0.8.1",
+          "local_source": false
+        },
+        {
+          "name": "verde",
+          "version": "1.9.0",
+          "local_source": false
+        },
+        {
+          "name": "wadler_lindig",
+          "version": "0.1.8",
+          "local_source": false
+        },
+        {
+          "name": "wbml",
+          "version": "0.4.2",
+          "local_source": false
+        },
+        {
+          "name": "wcwidth",
+          "version": "0.9.4",
+          "local_source": false
+        },
+        {
+          "name": "webencodings",
+          "version": "0.6.1",
+          "local_source": false
+        },
+        {
+          "name": "websocket-client",
+          "version": "1.9.2",
+          "local_source": false
+        },
+        {
+          "name": "wheel",
+          "version": "0.48.0",
+          "local_source": false
+        },
+        {
+          "name": "wrapt",
+          "version": "2.5.2",
+          "local_source": false
+        },
+        {
+          "name": "xarray",
+          "version": "2026.9.0",
+          "local_source": false
+        },
+        {
+          "name": "xarray-einstats",
+          "version": "0.11.0",
+          "local_source": false
+        },
+        {
+          "name": "xgboost",
+          "version": "3.4.1",
+          "local_source": false
+        },
+        {
+          "name": "xgi",
+          "version": "1.0.0",
+          "local_source": false
+        },
+        {
+          "name": "xopen",
+          "version": "2.1.0",
+          "local_source": false
+        },
+        {
+          "name": "xyzservices",
+          "version": "2026.9.1",
+          "local_source": false
+        },
+        {
+          "name": "zipp",
+          "version": "4.1.2",
+          "local_source": false
+        },
+        {
+          "name": "zlib-ng",
+          "version": "1.1.0",
+          "local_source": false
+        }
+      ]
+    },
+    "jax314": {
+      "python": "3.14.10",
+      "packages": [
+        {
+          "name": "absl-py",
+          "version": "2.5.1",
+          "local_source": false
+        },
+        {
+          "name": "aiofiles",
+          "version": "25.1.0",
+          "local_source": false
+        },
+        {
+          "name": "anyio",
+          "version": "4.16.0",
+          "local_source": false
+        },
+        {
+          "name": "arbPlusJAX",
+          "version": "2.6.0",
+          "local_source": false
+        },
+        {
+          "name": "argon2-cffi",
+          "version": "25.1.0",
+          "local_source": false
+        },
+        {
+          "name": "argon2-cffi-bindings",
+          "version": "26.1.0",
+          "local_source": false
+        },
+        {
+          "name": "arviz",
+          "version": "1.3.0",
+          "local_source": false
+        },
+        {
+          "name": "arviz-base",
+          "version": "1.3.1",
+          "local_source": false
+        },
+        {
+          "name": "arviz-plots",
+          "version": "1.3.2",
+          "local_source": false
+        },
+        {
+          "name": "arviz-stats",
+          "version": "1.3.3",
+          "local_source": false
+        },
+        {
+          "name": "asttokens",
+          "version": "3.0.2",
+          "local_source": false
+        },
+        {
+          "name": "async-lru",
+          "version": "2.4.0",
+          "local_source": false
+        },
+        {
+          "name": "attrs",
+          "version": "26.1.0",
+          "local_source": false
+        },
+        {
+          "name": "babel",
+          "version": "2.18.0",
+          "local_source": false
+        },
+        {
+          "name": "bayex",
+          "version": "0.3.0",
+          "local_source": false
+        },
+        {
+          "name": "beartype",
+          "version": "0.23.1",
+          "local_source": false
+        },
+        {
+          "name": "beautifulsoup4",
+          "version": "4.15.0",
+          "local_source": false
+        },
+        {
+          "name": "blackjax",
+          "version": "1.7.1",
+          "local_source": false
+        },
+        {
+          "name": "bleach",
+          "version": "6.4.0",
+          "local_source": false
+        },
+        {
+          "name": "build",
+          "version": "1.6.1",
+          "local_source": false
+        },
+        {
+          "name": "certifi",
+          "version": "2026.10.23",
+          "local_source": false
+        },
+        {
+          "name": "cffi",
+          "version": "2.1.1",
+          "local_source": false
+        },
+        {
+          "name": "charset-normalizer",
+          "version": "3.5.2",
+          "local_source": false
+        },
+        {
+          "name": "comm",
+          "version": "0.2.3",
+          "local_source": false
+        },
+        {
+          "name": "contourpy",
+          "version": "1.4.0",
+          "local_source": false
+        },
+        {
+          "name": "coverage",
+          "version": "7.17.2",
+          "local_source": false
+        },
+        {
+          "name": "cuda-bindings",
+          "version": "13.5.0",
+          "local_source": false
+        },
+        {
+          "name": "cuda-pathfinder",
+          "version": "1.8.6",
+          "local_source": false
+        },
+        {
+          "name": "cuda-toolkit",
+          "version": "13.5.0",
+          "local_source": false
+        },
+        {
+          "name": "cycler",
+          "version": "0.12.1",
+          "local_source": false
+        },
+        {
+          "name": "debugpy",
+          "version": "1.8.22",
+          "local_source": false
+        },
+        {
+          "name": "defusedxml",
+          "version": "0.7.1",
+          "local_source": false
+        },
+        {
+          "name": "diffrax",
+          "version": "0.7.2",
+          "local_source": false
+        },
+        {
+          "name": "equinox",
+          "version": "0.13.8",
+          "local_source": false
+        },
+        {
+          "name": "etils",
+          "version": "1.15.0",
+          "local_source": false
+        },
+        {
+          "name": "executing",
+          "version": "2.3.0",
+          "local_source": false
+        },
+        {
+          "name": "fastjsonschema",
+          "version": "2.22.3",
+          "local_source": false
+        },
+        {
+          "name": "fftlog-lss",
+          "version": "0.1.2",
+          "local_source": false
+        },
+        {
+          "name": "flax",
+          "version": "0.12.12",
+          "local_source": false
+        },
+        {
+          "name": "fonttools",
+          "version": "4.68.0",
+          "local_source": false
+        },
+        {
+          "name": "fsspec",
+          "version": "2026.9.0",
+          "local_source": false
+        },
+        {
+          "name": "gmsh",
+          "version": "4.15.2",
+          "local_source": false
+        },
+        {
+          "name": "h11",
+          "version": "0.16.0",
+          "local_source": false
+        },
+        {
+          "name": "h5py",
+          "version": "3.16.0",
+          "local_source": false
+        },
+        {
+          "name": "httpcore",
+          "version": "1.0.9",
+          "local_source": false
+        },
+        {
+          "name": "httpx",
+          "version": "0.28.1",
+          "local_source": false
+        },
+        {
+          "name": "humanize",
+          "version": "4.16.0",
+          "local_source": false
+        },
+        {
+          "name": "idna",
+          "version": "3.20",
+          "local_source": false
+        },
+        {
+          "name": "iniconfig",
+          "version": "2.3.1",
+          "local_source": false
+        },
+        {
+          "name": "IntegralFunctionsJAX",
+          "version": "0.2.0",
+          "local_source": false
+        },
+        {
+          "name": "ipykernel",
+          "version": "7.4.0",
+          "local_source": false
+        },
+        {
+          "name": "ipython",
+          "version": "9.18.1",
+          "local_source": false
+        },
+        {
+          "name": "ipython_pygments_lexers",
+          "version": "1.1.1",
+          "local_source": false
+        },
+        {
+          "name": "jax",
+          "version": "0.12.0.1",
+          "local_source": false
+        },
+        {
+          "name": "jax-cuda13-pjrt",
+          "version": "0.12.0.1",
+          "local_source": false
+        },
+        {
+          "name": "jax-cuda13-plugin",
+          "version": "0.12.0.1",
+          "local_source": false
+        },
+        {
+          "name": "jaxlib",
+          "version": "0.12.0.1",
+          "local_source": false
+        },
+        {
+          "name": "jaxtyping",
+          "version": "0.3.11",
+          "local_source": false
+        },
+        {
+          "name": "jedi",
+          "version": "0.20.1",
+          "local_source": false
+        },
+        {
+          "name": "Jinja2",
+          "version": "3.1.6",
+          "local_source": false
+        },
+        {
+          "name": "json5",
+          "version": "0.17.3",
+          "local_source": false
+        },
+        {
+          "name": "jsonschema",
+          "version": "4.26.0",
+          "local_source": false
+        },
+        {
+          "name": "jsonschema-specifications",
+          "version": "2025.9.1",
+          "local_source": false
+        },
+        {
+          "name": "jupyter_builder",
+          "version": "1.2.4",
+          "local_source": false
+        },
+        {
+          "name": "jupyter_client",
+          "version": "8.10.0",
+          "local_source": false
+        },
+        {
+          "name": "jupyter_core",
+          "version": "5.9.1",
+          "local_source": false
+        },
+        {
+          "name": "jupyter-events",
+          "version": "0.12.1",
+          "local_source": false
+        },
+        {
+          "name": "jupyter-lsp",
+          "version": "2.3.1",
+          "local_source": false
+        },
+        {
+          "name": "jupyter_server",
+          "version": "2.21.1",
+          "local_source": false
+        },
+        {
+          "name": "jupyter_server_terminals",
+          "version": "0.5.4",
+          "local_source": false
+        },
+        {
+          "name": "jupyterlab",
+          "version": "4.6.6",
+          "local_source": false
+        },
+        {
+          "name": "jupyterlab_pygments",
+          "version": "0.3.0",
+          "local_source": false
+        },
+        {
+          "name": "jupyterlab_server",
+          "version": "2.28.1",
+          "local_source": false
+        },
+        {
+          "name": "kiwisolver",
+          "version": "1.5.1",
+          "local_source": false
+        },
+        {
+          "name": "lazy-loader",
+          "version": "0.6",
+          "local_source": false
+        },
+        {
+          "name": "lineax",
+          "version": "0.1.1",
+          "local_source": false
+        },
+        {
+          "name": "markdown-it-py",
+          "version": "4.2.0",
+          "local_source": false
+        },
+        {
+          "name": "MarkupSafe",
+          "version": "3.0.4",
+          "local_source": false
+        },
+        {
+          "name": "matplotlib",
+          "version": "3.11.2",
+          "local_source": false
+        },
+        {
+          "name": "matplotlib-inline",
+          "version": "0.2.2",
+          "local_source": false
+        },
+        {
+          "name": "mdurl",
+          "version": "0.1.2",
+          "local_source": false
+        },
+        {
+          "name": "mistune",
+          "version": "3.4.0",
+          "local_source": false
+        },
+        {
+          "name": "ml_dtypes",
+          "version": "0.6.0",
+          "local_source": false
+        },
+        {
+          "name": "mpmath",
+          "version": "1.4.1",
+          "local_source": false
+        },
+        {
+          "name": "msgpack",
+          "version": "1.2.4",
+          "local_source": false
+        },
+        {
+          "name": "multipledispatch",
+          "version": "1.0.0",
+          "local_source": false
+        },
+        {
+          "name": "nbclient",
+          "version": "0.11.0",
+          "local_source": false
+        },
+        {
+          "name": "nbconvert",
+          "version": "7.17.2",
+          "local_source": false
+        },
+        {
+          "name": "nbformat",
+          "version": "5.11.1",
+          "local_source": false
+        },
+        {
+          "name": "nest-asyncio2",
+          "version": "1.7.4",
+          "local_source": false
+        },
+        {
+          "name": "networkx",
+          "version": "3.7",
+          "local_source": false
+        },
+        {
+          "name": "notebook_shim",
+          "version": "0.2.4",
+          "local_source": false
+        },
+        {
+          "name": "numpy",
+          "version": "2.5.4",
+          "local_source": false
+        },
+        {
+          "name": "numpyro",
+          "version": "0.22.0",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cublas",
+          "version": "13.10.0.20",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-cccl",
+          "version": "13.3.5.0.6",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-crt",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-culibos",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-cuobjdump",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-cupti",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-cuxxfilt",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-nvcc",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-nvdisasm",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-nvrtc",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-opencl",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-profiler-api",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-runtime",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-sanitizer-api",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-tileiras",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cudnn-cu13",
+          "version": "9.28.1.4",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cufft",
+          "version": "12.5.0.14",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cufile",
+          "version": "1.20.0.107",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-curand",
+          "version": "10.4.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cusolver",
+          "version": "12.4.1.2",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cusparse",
+          "version": "12.9.4.2",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nccl-cu13",
+          "version": "2.32.3",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-npp",
+          "version": "13.2.0.93",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvfatbin",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvjitlink",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvjpeg",
+          "version": "13.3.2.43",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvml-dev",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvptxcompiler",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvshmem-cu13",
+          "version": "3.8.0",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvtx",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvvm",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "opt_einsum",
+          "version": "3.4.0",
+          "local_source": false
+        },
+        {
+          "name": "optax",
+          "version": "0.2.8",
+          "local_source": false
+        },
+        {
+          "name": "optimistix",
+          "version": "0.1.0",
+          "local_source": false
+        },
+        {
+          "name": "orbax-checkpoint",
+          "version": "0.12.9",
+          "local_source": false
+        },
+        {
+          "name": "packaging",
+          "version": "26.3",
+          "local_source": false
+        },
+        {
+          "name": "pandas",
+          "version": "3.1.1",
+          "local_source": false
+        },
+        {
+          "name": "pandocfilters",
+          "version": "1.5.1",
+          "local_source": false
+        },
+        {
+          "name": "parso",
+          "version": "0.8.7",
+          "local_source": false
+        },
+        {
+          "name": "pexpect",
+          "version": "4.9.0",
+          "local_source": false
+        },
+        {
+          "name": "pillow",
+          "version": "13.0.0",
+          "local_source": false
+        },
+        {
+          "name": "pip",
+          "version": "26.3",
+          "local_source": false
+        },
+        {
+          "name": "platformdirs",
+          "version": "4.14.5",
+          "local_source": false
+        },
+        {
+          "name": "pluggy",
+          "version": "1.7.0",
+          "local_source": false
+        },
+        {
+          "name": "prometheus_client",
+          "version": "0.26.0",
+          "local_source": false
+        },
+        {
+          "name": "prompt_toolkit",
+          "version": "3.0.53",
+          "local_source": false
+        },
+        {
+          "name": "protobuf",
+          "version": "7.36.2",
+          "local_source": false
+        },
+        {
+          "name": "psutil",
+          "version": "7.2.2",
+          "local_source": false
+        },
+        {
+          "name": "ptyprocess",
+          "version": "0.7.0",
+          "local_source": false
+        },
+        {
+          "name": "pure_eval",
+          "version": "0.2.4",
+          "local_source": false
+        },
+        {
+          "name": "Py-BOBYQA",
+          "version": "1.5.0",
+          "local_source": false
+        },
+        {
+          "name": "pyarrow",
+          "version": "26.0.1",
+          "local_source": false
+        },
+        {
+          "name": "pycparser",
+          "version": "3.12",
+          "local_source": false
+        },
+        {
+          "name": "Pygments",
+          "version": "2.21.0",
+          "local_source": false
+        },
+        {
+          "name": "pyparsing",
+          "version": "3.3.3",
+          "local_source": false
+        },
+        {
+          "name": "pypdf",
+          "version": "7.0.0",
+          "local_source": false
+        },
+        {
+          "name": "pyproject_hooks",
+          "version": "1.3.3",
+          "local_source": false
+        },
+        {
+          "name": "pytest",
+          "version": "9.2.0",
+          "local_source": false
+        },
+        {
+          "name": "pytest-cov",
+          "version": "7.1.0",
+          "local_source": false
+        },
+        {
+          "name": "python-dateutil",
+          "version": "4.0.0",
+          "local_source": false
+        },
+        {
+          "name": "python-flint",
+          "version": "0.9.0",
+          "local_source": false
+        },
+        {
+          "name": "python-json-logger",
+          "version": "4.2.0",
+          "local_source": false
+        },
+        {
+          "name": "PyYAML",
+          "version": "6.0.3",
+          "local_source": false
+        },
+        {
+          "name": "pyzmq",
+          "version": "27.3.0",
+          "local_source": false
+        },
+        {
+          "name": "quadax",
+          "version": "0.3.1",
+          "local_source": false
+        },
+        {
+          "name": "radian",
+          "version": "0.7.1",
+          "local_source": false
+        },
+        {
+          "name": "randomfields77",
+          "version": "2026.10.2",
+          "local_source": true
+        },
+        {
+          "name": "rchitect",
+          "version": "0.5.2",
+          "local_source": false
+        },
+        {
+          "name": "referencing",
+          "version": "0.37.0",
+          "local_source": false
+        },
+        {
+          "name": "requests",
+          "version": "2.34.2",
+          "local_source": false
+        },
+        {
+          "name": "rfc3339-validator",
+          "version": "0.1.4",
+          "local_source": false
+        },
+        {
+          "name": "rfc3986-validator",
+          "version": "0.1.1",
+          "local_source": false
+        },
+        {
+          "name": "rich",
+          "version": "15.0.0",
+          "local_source": false
+        },
+        {
+          "name": "rpds-py",
+          "version": "2026.9.1",
+          "local_source": false
+        },
+        {
+          "name": "rpy2",
+          "version": "3.6.9",
+          "local_source": false
+        },
+        {
+          "name": "rpy2-rinterface",
+          "version": "3.6.7",
+          "local_source": false
+        },
+        {
+          "name": "rpy2-robjects",
+          "version": "3.6.6",
+          "local_source": false
+        },
+        {
+          "name": "ruff",
+          "version": "0.17.4",
+          "local_source": false
+        },
+        {
+          "name": "scipy",
+          "version": "1.18.1",
+          "local_source": false
+        },
+        {
+          "name": "Send2Trash",
+          "version": "2.1.0",
+          "local_source": false
+        },
+        {
+          "name": "setuptools",
+          "version": "84.2.1",
+          "local_source": false
+        },
+        {
+          "name": "simplejson",
+          "version": "4.2.0",
+          "local_source": false
+        },
+        {
+          "name": "six",
+          "version": "1.17.0",
+          "local_source": false
+        },
+        {
+          "name": "soupsieve",
+          "version": "4.0.1",
+          "local_source": false
+        },
+        {
+          "name": "stack-data",
+          "version": "0.6.3",
+          "local_source": false
+        },
+        {
+          "name": "sympy",
+          "version": "1.14.0",
+          "local_source": false
+        },
+        {
+          "name": "tensorstore",
+          "version": "0.1.86",
+          "local_source": false
+        },
+        {
+          "name": "terminado",
+          "version": "0.18.1",
+          "local_source": false
+        },
+        {
+          "name": "threadpoolctl",
+          "version": "3.8.0",
+          "local_source": false
+        },
+        {
+          "name": "TopoSMPLJAX",
+          "version": "2.8.0",
+          "local_source": false
+        },
+        {
+          "name": "tornado",
+          "version": "6.6",
+          "local_source": false
+        },
+        {
+          "name": "tqdm",
+          "version": "4.70.1",
+          "local_source": false
+        },
+        {
+          "name": "traitlets",
+          "version": "5.16.1",
+          "local_source": false
+        },
+        {
+          "name": "treescope",
+          "version": "0.1.10",
+          "local_source": false
+        },
+        {
+          "name": "trimesh",
+          "version": "5.2.0",
+          "local_source": false
+        },
+        {
+          "name": "typing_extensions",
+          "version": "4.16.0",
+          "local_source": false
+        },
+        {
+          "name": "tzdata",
+          "version": "2026.6",
+          "local_source": false
+        },
+        {
+          "name": "tzlocal",
+          "version": "5.4.5",
+          "local_source": false
+        },
+        {
+          "name": "urllib3",
+          "version": "2.8.0",
+          "local_source": false
+        },
+        {
+          "name": "uvloop",
+          "version": "0.23.0",
+          "local_source": false
+        },
+        {
+          "name": "wadler_lindig",
+          "version": "0.1.8",
+          "local_source": false
+        },
+        {
+          "name": "wcwidth",
+          "version": "0.9.4",
+          "local_source": false
+        },
+        {
+          "name": "webencodings",
+          "version": "0.6.1",
+          "local_source": false
+        },
+        {
+          "name": "websocket-client",
+          "version": "1.9.2",
+          "local_source": false
+        },
+        {
+          "name": "wheel",
+          "version": "0.48.0",
+          "local_source": false
+        },
+        {
+          "name": "xarray",
+          "version": "2026.9.0",
+          "local_source": false
+        },
+        {
+          "name": "xarray-einstats",
+          "version": "0.11.0",
+          "local_source": false
+        },
+        {
+          "name": "zipp",
+          "version": "4.1.2",
+          "local_source": false
+        }
+      ]
+    },
+    "jax315": {
+      "python": "3.15.2",
+      "packages": [
+        {
+          "name": "absl-py",
+          "version": "2.5.1",
+          "local_source": false
+        },
+        {
+          "name": "aiofiles",
+          "version": "25.1.0",
+          "local_source": false
+        },
+        {
+          "name": "anyio",
+          "version": "4.16.0",
+          "local_source": false
+        },
+        {
+          "name": "arbPlusJAX",
+          "version": "2.6.0",
+          "local_source": false
+        },
+        {
+          "name": "argon2-cffi",
+          "version": "25.1.0",
+          "local_source": false
+        },
+        {
+          "name": "argon2-cffi-bindings",
+          "version": "26.1.0",
+          "local_source": false
+        },
+        {
+          "name": "arviz",
+          "version": "1.3.0",
+          "local_source": false
+        },
+        {
+          "name": "arviz-base",
+          "version": "1.3.1",
+          "local_source": false
+        },
+        {
+          "name": "arviz-plots",
+          "version": "1.3.2",
+          "local_source": false
+        },
+        {
+          "name": "arviz-stats",
+          "version": "1.3.3",
+          "local_source": false
+        },
+        {
+          "name": "asttokens",
+          "version": "3.0.2",
+          "local_source": false
+        },
+        {
+          "name": "async-lru",
+          "version": "2.4.0",
+          "local_source": false
+        },
+        {
+          "name": "attrs",
+          "version": "26.1.0",
+          "local_source": false
+        },
+        {
+          "name": "babel",
+          "version": "2.18.0",
+          "local_source": false
+        },
+        {
+          "name": "bayex",
+          "version": "0.3.0",
+          "local_source": false
+        },
+        {
+          "name": "beartype",
+          "version": "0.23.1",
+          "local_source": false
+        },
+        {
+          "name": "beautifulsoup4",
+          "version": "4.15.0",
+          "local_source": false
+        },
+        {
+          "name": "blackjax",
+          "version": "1.7.1",
+          "local_source": false
+        },
+        {
+          "name": "bleach",
+          "version": "6.4.0",
+          "local_source": false
+        },
+        {
+          "name": "build",
+          "version": "1.6.1",
+          "local_source": false
+        },
+        {
+          "name": "certifi",
+          "version": "2026.10.23",
+          "local_source": false
+        },
+        {
+          "name": "cffi",
+          "version": "2.1.1",
+          "local_source": false
+        },
+        {
+          "name": "charset-normalizer",
+          "version": "3.5.2",
+          "local_source": false
+        },
+        {
+          "name": "comm",
+          "version": "0.2.3",
+          "local_source": false
+        },
+        {
+          "name": "contourpy",
+          "version": "1.4.0",
+          "local_source": false
+        },
+        {
+          "name": "coverage",
+          "version": "7.17.2",
+          "local_source": false
+        },
+        {
+          "name": "cuda-bindings",
+          "version": "13.5.0",
+          "local_source": false
+        },
+        {
+          "name": "cuda-pathfinder",
+          "version": "1.8.6",
+          "local_source": false
+        },
+        {
+          "name": "cuda-toolkit",
+          "version": "13.5.0",
+          "local_source": false
+        },
+        {
+          "name": "cycler",
+          "version": "0.12.1",
+          "local_source": false
+        },
+        {
+          "name": "debugpy",
+          "version": "1.8.22",
+          "local_source": false
+        },
+        {
+          "name": "defusedxml",
+          "version": "0.7.1",
+          "local_source": false
+        },
+        {
+          "name": "diffrax",
+          "version": "0.7.2",
+          "local_source": false
+        },
+        {
+          "name": "equinox",
+          "version": "0.13.8",
+          "local_source": false
+        },
+        {
+          "name": "etils",
+          "version": "1.15.0",
+          "local_source": false
+        },
+        {
+          "name": "executing",
+          "version": "2.3.0",
+          "local_source": false
+        },
+        {
+          "name": "fastjsonschema",
+          "version": "2.22.3",
+          "local_source": false
+        },
+        {
+          "name": "fftlog-lss",
+          "version": "0.1.2",
+          "local_source": false
+        },
+        {
+          "name": "flax",
+          "version": "0.12.12",
+          "local_source": false
+        },
+        {
+          "name": "fonttools",
+          "version": "4.68.0",
+          "local_source": false
+        },
+        {
+          "name": "fsspec",
+          "version": "2026.9.0",
+          "local_source": false
+        },
+        {
+          "name": "gmsh",
+          "version": "4.15.2",
+          "local_source": false
+        },
+        {
+          "name": "h11",
+          "version": "0.16.0",
+          "local_source": false
+        },
+        {
+          "name": "h5py",
+          "version": "3.16.0",
+          "local_source": false
+        },
+        {
+          "name": "httpcore",
+          "version": "1.0.9",
+          "local_source": false
+        },
+        {
+          "name": "httpx",
+          "version": "0.28.1",
+          "local_source": false
+        },
+        {
+          "name": "humanize",
+          "version": "4.16.0",
+          "local_source": false
+        },
+        {
+          "name": "idna",
+          "version": "3.20",
+          "local_source": false
+        },
+        {
+          "name": "iniconfig",
+          "version": "2.3.1",
+          "local_source": false
+        },
+        {
+          "name": "IntegralFunctionsJAX",
+          "version": "0.2.0",
+          "local_source": false
+        },
+        {
+          "name": "ipykernel",
+          "version": "7.4.0",
+          "local_source": false
+        },
+        {
+          "name": "ipython",
+          "version": "9.18.1",
+          "local_source": false
+        },
+        {
+          "name": "ipython_pygments_lexers",
+          "version": "1.1.1",
+          "local_source": false
+        },
+        {
+          "name": "jax",
+          "version": "0.12.0.1",
+          "local_source": false
+        },
+        {
+          "name": "jax-cuda13-pjrt",
+          "version": "0.12.0.1",
+          "local_source": false
+        },
+        {
+          "name": "jax-cuda13-plugin",
+          "version": "0.12.0.1",
+          "local_source": false
+        },
+        {
+          "name": "jaxlib",
+          "version": "0.12.0.1",
+          "local_source": false
+        },
+        {
+          "name": "jaxtyping",
+          "version": "0.3.11",
+          "local_source": false
+        },
+        {
+          "name": "jedi",
+          "version": "0.20.1",
+          "local_source": false
+        },
+        {
+          "name": "Jinja2",
+          "version": "3.1.6",
+          "local_source": false
+        },
+        {
+          "name": "json5",
+          "version": "0.17.3",
+          "local_source": false
+        },
+        {
+          "name": "jsonschema",
+          "version": "4.26.0",
+          "local_source": false
+        },
+        {
+          "name": "jsonschema-specifications",
+          "version": "2025.9.1",
+          "local_source": false
+        },
+        {
+          "name": "jupyter_builder",
+          "version": "1.2.4",
+          "local_source": false
+        },
+        {
+          "name": "jupyter_client",
+          "version": "8.10.0",
+          "local_source": false
+        },
+        {
+          "name": "jupyter_core",
+          "version": "5.9.1",
+          "local_source": false
+        },
+        {
+          "name": "jupyter-events",
+          "version": "0.12.1",
+          "local_source": false
+        },
+        {
+          "name": "jupyter-lsp",
+          "version": "2.3.1",
+          "local_source": false
+        },
+        {
+          "name": "jupyter_server",
+          "version": "2.21.1",
+          "local_source": false
+        },
+        {
+          "name": "jupyter_server_terminals",
+          "version": "0.5.4",
+          "local_source": false
+        },
+        {
+          "name": "jupyterlab",
+          "version": "4.6.6",
+          "local_source": false
+        },
+        {
+          "name": "jupyterlab_pygments",
+          "version": "0.3.0",
+          "local_source": false
+        },
+        {
+          "name": "jupyterlab_server",
+          "version": "2.28.1",
+          "local_source": false
+        },
+        {
+          "name": "kiwisolver",
+          "version": "1.5.1",
+          "local_source": false
+        },
+        {
+          "name": "lazy-loader",
+          "version": "0.6",
+          "local_source": false
+        },
+        {
+          "name": "lineax",
+          "version": "0.1.1",
+          "local_source": false
+        },
+        {
+          "name": "markdown-it-py",
+          "version": "4.2.0",
+          "local_source": false
+        },
+        {
+          "name": "MarkupSafe",
+          "version": "3.0.4",
+          "local_source": false
+        },
+        {
+          "name": "matplotlib",
+          "version": "3.11.2",
+          "local_source": false
+        },
+        {
+          "name": "matplotlib-inline",
+          "version": "0.2.2",
+          "local_source": false
+        },
+        {
+          "name": "mdurl",
+          "version": "0.1.2",
+          "local_source": false
+        },
+        {
+          "name": "mistune",
+          "version": "3.4.0",
+          "local_source": false
+        },
+        {
+          "name": "ml_dtypes",
+          "version": "0.6.0",
+          "local_source": false
+        },
+        {
+          "name": "mpmath",
+          "version": "1.4.1",
+          "local_source": false
+        },
+        {
+          "name": "msgpack",
+          "version": "1.2.4",
+          "local_source": false
+        },
+        {
+          "name": "multipledispatch",
+          "version": "1.0.0",
+          "local_source": false
+        },
+        {
+          "name": "nbclient",
+          "version": "0.11.0",
+          "local_source": false
+        },
+        {
+          "name": "nbconvert",
+          "version": "7.17.2",
+          "local_source": false
+        },
+        {
+          "name": "nbformat",
+          "version": "5.11.1",
+          "local_source": false
+        },
+        {
+          "name": "nest-asyncio2",
+          "version": "1.7.4",
+          "local_source": false
+        },
+        {
+          "name": "networkx",
+          "version": "3.7",
+          "local_source": false
+        },
+        {
+          "name": "notebook_shim",
+          "version": "0.2.4",
+          "local_source": false
+        },
+        {
+          "name": "numpy",
+          "version": "2.5.4",
+          "local_source": false
+        },
+        {
+          "name": "numpyro",
+          "version": "0.22.0",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cublas",
+          "version": "13.10.0.20",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-cccl",
+          "version": "13.3.5.0.6",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-crt",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-culibos",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-cuobjdump",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-cupti",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-cuxxfilt",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-nvcc",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-nvdisasm",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-nvrtc",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-opencl",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-profiler-api",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-runtime",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-sanitizer-api",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cuda-tileiras",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cudnn-cu13",
+          "version": "9.28.1.4",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cufft",
+          "version": "12.5.0.14",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cufile",
+          "version": "1.20.0.107",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-curand",
+          "version": "10.4.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cusolver",
+          "version": "12.4.1.2",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-cusparse",
+          "version": "12.9.4.2",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nccl-cu13",
+          "version": "2.32.3",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-npp",
+          "version": "13.2.0.93",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvfatbin",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvjitlink",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvjpeg",
+          "version": "13.3.2.43",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvml-dev",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvptxcompiler",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvshmem-cu13",
+          "version": "3.8.0",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvtx",
+          "version": "13.5.25",
+          "local_source": false
+        },
+        {
+          "name": "nvidia-nvvm",
+          "version": "13.5.37",
+          "local_source": false
+        },
+        {
+          "name": "opt_einsum",
+          "version": "3.4.0",
+          "local_source": false
+        },
+        {
+          "name": "optax",
+          "version": "0.2.8",
+          "local_source": false
+        },
+        {
+          "name": "optimistix",
+          "version": "0.1.0",
+          "local_source": false
+        },
+        {
+          "name": "orbax-checkpoint",
+          "version": "0.12.9",
+          "local_source": false
+        },
+        {
+          "name": "packaging",
+          "version": "26.3",
+          "local_source": false
+        },
+        {
+          "name": "pandas",
+          "version": "3.1.1",
+          "local_source": false
+        },
+        {
+          "name": "pandocfilters",
+          "version": "1.5.1",
+          "local_source": false
+        },
+        {
+          "name": "parso",
+          "version": "0.8.7",
+          "local_source": false
+        },
+        {
+          "name": "pexpect",
+          "version": "4.9.0",
+          "local_source": false
+        },
+        {
+          "name": "pillow",
+          "version": "13.0.0",
+          "local_source": false
+        },
+        {
+          "name": "pip",
+          "version": "26.3",
+          "local_source": false
+        },
+        {
+          "name": "platformdirs",
+          "version": "4.14.5",
+          "local_source": false
+        },
+        {
+          "name": "pluggy",
+          "version": "1.7.0",
+          "local_source": false
+        },
+        {
+          "name": "prometheus_client",
+          "version": "0.26.0",
+          "local_source": false
+        },
+        {
+          "name": "prompt_toolkit",
+          "version": "3.0.53",
+          "local_source": false
+        },
+        {
+          "name": "protobuf",
+          "version": "7.36.2",
+          "local_source": false
+        },
+        {
+          "name": "psutil",
+          "version": "7.2.2",
+          "local_source": false
+        },
+        {
+          "name": "ptyprocess",
+          "version": "0.7.0",
+          "local_source": false
+        },
+        {
+          "name": "pure_eval",
+          "version": "0.2.4",
+          "local_source": false
+        },
+        {
+          "name": "Py-BOBYQA",
+          "version": "1.5.0",
+          "local_source": false
+        },
+        {
+          "name": "pyarrow",
+          "version": "26.0.1",
+          "local_source": false
+        },
+        {
+          "name": "pycparser",
+          "version": "3.12",
+          "local_source": false
+        },
+        {
+          "name": "Pygments",
+          "version": "2.21.0",
+          "local_source": false
+        },
+        {
+          "name": "pyparsing",
+          "version": "3.3.3",
+          "local_source": false
+        },
+        {
+          "name": "pypdf",
+          "version": "7.0.0",
+          "local_source": false
+        },
+        {
+          "name": "pyproject_hooks",
+          "version": "1.3.3",
+          "local_source": false
+        },
+        {
+          "name": "pytest",
+          "version": "9.2.0",
+          "local_source": false
+        },
+        {
+          "name": "pytest-cov",
+          "version": "7.1.0",
+          "local_source": false
+        },
+        {
+          "name": "python-dateutil",
+          "version": "4.0.0",
+          "local_source": false
+        },
+        {
+          "name": "python-flint",
+          "version": "0.9.0",
+          "local_source": false
+        },
+        {
+          "name": "python-json-logger",
+          "version": "4.2.0",
+          "local_source": false
+        },
+        {
+          "name": "PyYAML",
+          "version": "6.0.3",
+          "local_source": false
+        },
+        {
+          "name": "pyzmq",
+          "version": "27.3.0",
+          "local_source": false
+        },
+        {
+          "name": "quadax",
+          "version": "0.3.1",
+          "local_source": false
+        },
+        {
+          "name": "radian",
+          "version": "0.7.1",
+          "local_source": false
+        },
+        {
+          "name": "randomfields77",
+          "version": "2026.10.2",
+          "local_source": true
+        },
+        {
+          "name": "rchitect",
+          "version": "0.5.2",
+          "local_source": false
+        },
+        {
+          "name": "referencing",
+          "version": "0.37.0",
+          "local_source": false
+        },
+        {
+          "name": "requests",
+          "version": "2.34.2",
+          "local_source": false
+        },
+        {
+          "name": "rfc3339-validator",
+          "version": "0.1.4",
+          "local_source": false
+        },
+        {
+          "name": "rfc3986-validator",
+          "version": "0.1.1",
+          "local_source": false
+        },
+        {
+          "name": "rich",
+          "version": "15.0.0",
+          "local_source": false
+        },
+        {
+          "name": "rpds-py",
+          "version": "2026.9.1",
+          "local_source": false
+        },
+        {
+          "name": "rpy2",
+          "version": "3.6.9",
+          "local_source": false
+        },
+        {
+          "name": "rpy2-rinterface",
+          "version": "3.6.7",
+          "local_source": false
+        },
+        {
+          "name": "rpy2-robjects",
+          "version": "3.6.6",
+          "local_source": false
+        },
+        {
+          "name": "ruff",
+          "version": "0.17.4",
+          "local_source": false
+        },
+        {
+          "name": "scipy",
+          "version": "1.18.1",
+          "local_source": false
+        },
+        {
+          "name": "Send2Trash",
+          "version": "2.1.0",
+          "local_source": false
+        },
+        {
+          "name": "setuptools",
+          "version": "84.2.1",
+          "local_source": false
+        },
+        {
+          "name": "simplejson",
+          "version": "4.2.0",
+          "local_source": false
+        },
+        {
+          "name": "six",
+          "version": "1.17.0",
+          "local_source": false
+        },
+        {
+          "name": "soupsieve",
+          "version": "4.0.1",
+          "local_source": false
+        },
+        {
+          "name": "stack-data",
+          "version": "0.6.3",
+          "local_source": false
+        },
+        {
+          "name": "sympy",
+          "version": "1.14.0",
+          "local_source": false
+        },
+        {
+          "name": "terminado",
+          "version": "0.18.1",
+          "local_source": false
+        },
+        {
+          "name": "threadpoolctl",
+          "version": "3.8.0",
+          "local_source": false
+        },
+        {
+          "name": "TopoSMPLJAX",
+          "version": "2.8.0",
+          "local_source": false
+        },
+        {
+          "name": "tornado",
+          "version": "6.6",
+          "local_source": false
+        },
+        {
+          "name": "tqdm",
+          "version": "4.70.1",
+          "local_source": false
+        },
+        {
+          "name": "traitlets",
+          "version": "5.16.1",
+          "local_source": false
+        },
+        {
+          "name": "treescope",
+          "version": "0.1.10",
+          "local_source": false
+        },
+        {
+          "name": "trimesh",
+          "version": "5.2.0",
+          "local_source": false
+        },
+        {
+          "name": "typing_extensions",
+          "version": "4.16.0",
+          "local_source": false
+        },
+        {
+          "name": "tzdata",
+          "version": "2026.6",
+          "local_source": false
+        },
+        {
+          "name": "tzlocal",
+          "version": "5.4.5",
+          "local_source": false
+        },
+        {
+          "name": "urllib3",
+          "version": "2.8.0",
+          "local_source": false
+        },
+        {
+          "name": "uvloop",
+          "version": "0.23.0",
+          "local_source": false
+        },
+        {
+          "name": "wadler_lindig",
+          "version": "0.1.8",
+          "local_source": false
+        },
+        {
+          "name": "wcwidth",
+          "version": "0.9.4",
+          "local_source": false
+        },
+        {
+          "name": "webencodings",
+          "version": "0.6.1",
+          "local_source": false
+        },
+        {
+          "name": "websocket-client",
+          "version": "1.9.2",
+          "local_source": false
+        },
+        {
+          "name": "wheel",
+          "version": "0.48.0",
+          "local_source": false
+        },
+        {
+          "name": "xarray",
+          "version": "2026.9.0",
+          "local_source": false
+        },
+        {
+          "name": "xarray-einstats",
+          "version": "0.11.0",
+          "local_source": false
+        },
+        {
+          "name": "zipp",
+          "version": "4.1.2",
+          "local_source": false
+        }
+      ]
+    }
+  }
+}

@@ -192,7 +192,8 @@ for (const id of extensionIds) {
 // Complete every preflight before touching either extension.
 if (apply && report.results.some(item => /review-required$/.test(item.status))) throw new Error(JSON.stringify(report, null, 2));
 if (apply && planned.length) {
-  const backup = path.join(os.homedir(), '.dotrepo-backups', new Date().toISOString().replace(/[:.]/g, '-') + '-chat-file-links');
+  const backupRoot = process.platform === 'linux' ? '.local/state/dotrepo/backups' : '.dotrepo-backups';
+  const backup = path.join(os.homedir(), backupRoot, new Date().toISOString().replace(/[:.]/g, '-') + '-chat-file-links');
   fs.mkdirSync(backup, {recursive: true});
   report.backup = backup;
   for (const item of planned) {

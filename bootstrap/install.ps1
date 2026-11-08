@@ -223,7 +223,7 @@ function Install-PdfPreference {
         Write-Log "Skipping SumatraPDF integration; Windows VS Code was not found"
         return
     }
-    $pwshCommand = Get-Command pwsh.exe -CommandType Application -ErrorAction SilentlyContinue
+    $pwshCommand = Get-Command pwsh.exe -CommandType Application -ErrorAction SilentlyContinue | Select-Object -First 1
     if (-not $pwshCommand) { throw 'PowerShell 7 is required to install the SumatraPDF integration.' }
     & $pwshCommand.Source -NoProfile -File (Join-Path $SourceRoot 'windows\install-pdf-preference.ps1') -CodeCommand $codeCmd
     if ($LASTEXITCODE -ne 0) { throw 'SumatraPDF integration installation failed.' }

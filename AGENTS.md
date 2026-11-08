@@ -2,6 +2,12 @@
 
 ## Current Cross-Machine Handoff
 
+On PhilipSecond, read the
+[November 8 PhilipSecond Windows upgrade pass](docs/ai/sessions/2026-11-08-philipsecond-windows-upgrade.md)
+before continuing: it records the reconciled checkouts, the GPU code 43 reboot
+requirement, the applied Windows py314 baseline and the elevated commands and
+WSL steps still pending there.
+
 For the current Windows/WSL Python defaults and home-directory layout, read the
 [November 8 hardware-aware handoff](docs/ai/sessions/2026-11-08-wsl-environments-hardware-aware-handoff.md)
 first. Create `py314`, `jax314` and `jax315` without deleting old environments;

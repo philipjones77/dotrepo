@@ -57,7 +57,11 @@ const specs = [
     original: 'f77a37c4bd66612f4ed26d9e80ce3969af543f853e2cc113ca466e7f8b6aa880',
     repaired: ['c75569ae2a30b35b0b9699e0adeb80606a9f855adac1e22847107852ca14d3ab'] },
 ];
-const sha = content => crypto.createHash('sha256').update(content).digest('hex');
+// scripts/extend-codex-webview-timeout.cjs edits the same Codex bundle (its renderer-ready
+// deadline). Hash the bundle as if that exact edit were absent so both repairs coexist.
+const TIMEOUT_EDIT = /timeoutMs:(\d+(?:e\d+)?)\}\)\},\1\)/g;
+const canonical = content => content.replace(TIMEOUT_EDIT, 'timeoutMs:3e4})},3e4)');
+const sha = content => crypto.createHash('sha256').update(canonical(content)).digest('hex');
 function replaceOnce(text, before, after) {
   assert.equal(text.split(before).length - 1, 1, 'Expected exactly one known implementation fragment.');
   return text.replace(before, () => after);
@@ -149,6 +153,9 @@ if (selfTest) {
       assert(!isRecognizedRepair(patched.replace('vscode.open', 'unexpected.open'), fixtureSpec, distribution), 'A retained marker must not authenticate a corrupted repair.');
       assert(!isRecognizedRepair('/* dotrepo-file-links-v1:' + distribution + ' */' + fixture, fixtureSpec, distribution), 'A marker alone is not a repair.');
       assert(!isRecognizedRepair(patched, fixtureSpec, 'AnotherDistro'), 'A repair for another distribution must be refused.');
+      const withTimeout = patched + ';K2.start=function(){this.timeout=setTimeout(()=>{this.onTimeout({timeoutMs:18e4})},18e4)}';
+      const timeoutSpec = {...fixtureSpec, original: sha(fixture + ';K2.start=function(){this.timeout=setTimeout(()=>{this.onTimeout({timeoutMs:3e4})},3e4)}')};
+      assert(isRecognizedRepair(withTimeout, timeoutSpec, distribution), 'The renderer-ready timeout extension must stay hash-neutral.');
     }
   });
   console.log('Path, viewer routing, and repair integrity self-tests passed.');

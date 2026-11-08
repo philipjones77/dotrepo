@@ -65,6 +65,15 @@ the next occurrence.
 - WSL has `memory=8GB`; about 5.3 GB was in use during the check (see the
   [September 23 WSL memory handoff](2026-09-23-wsl-memory-disconnects.md)).
 
+## Update 2026-11-07
+
+Measured on PhilipSecond in an isolated profile holding only Codex, the webview
+needs about 14 s to become ready even without contention, so the 30 s deadline
+itself is the problem. `scripts/extend-codex-webview-timeout.cjs` now raises it
+to 180 s; see the
+[November 7 handoff](2026-11-07-philipsecond-codex-webview-lan-desktop.md).
+The guard remains the fallback.
+
 ## PhilipSecond
 
 Pull, then run `pwsh -File windows\install-codex-startup-guard.ps1` and reload

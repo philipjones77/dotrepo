@@ -18,6 +18,11 @@ only a new extension host (or window reload) rebuilds it.
 Seen on Windows and in WSL remote windows across Codex 26.930.x and
 26.1007.21434 (see `docs/ai/sessions/2026-10-10-codex-ui-startup-timeout.md`).
 
+Measured on 2026-11-07 (PhilipSecond, isolated profile with only Codex), the
+webview needs ~14 s to become ready even without contention. The primary fix is
+therefore `scripts/extend-codex-webview-timeout.cjs`, which raises Codex's
+deadline to 180 s; this guard remains the fallback.
+
 ## Behaviour
 
 The guard runs in the same extension host as Codex (`extensionKind`

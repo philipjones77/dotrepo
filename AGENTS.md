@@ -2,6 +2,11 @@
 
 ## Current Cross-Machine Handoff
 
+For the Codex "could not start its user interface" deadline fix and the
+PhilipSecond LAN SSH/VNC re-check, read the
+[November 7 PhilipSecond handoff](docs/ai/sessions/2026-11-07-philipsecond-codex-webview-lan-desktop.md)
+and run `scripts/extend-codex-webview-timeout.cjs` after each Codex update.
+
 For WSL disconnects and VS Code window reloads, read the
 [September 23 WSL memory handoff](docs/ai/sessions/2026-09-23-wsl-memory-disconnects.md).
 It covers automatic pytest discovery, the backed-out CUDA install and pending disk cleanup.

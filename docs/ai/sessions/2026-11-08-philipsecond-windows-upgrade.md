@@ -138,3 +138,80 @@ GPU state above. Still to do, in this order:
    them, not to remove them. WSL R is 4.6.1 with 764 packages.
 
 No reboot, WSL shutdown or environment deletion was performed in this session.
+
+## 2026-11-09: reboot result, WSL phase and home tidy-up
+
+The reboot on 2026-11-08 17:05 cleared code 43: Windows `nvidia-smi` and the WSL copy
+both report the RTX 5070 (621.14, SM 12.0, 8151 MiB) and `/dev/dxg` is present.
+`ssh/harden-lan-firewall.ps1` had been run (Preview rule `LocalSubnet`, TightVNC rule
+disabled). ChatGPT desktop was upgraded; the other winget upgrades, CUDA 13.5 and the
+Windows R/Rtools removal were still pending at the end of this pass (see below).
+
+### WSL environments (target results)
+
+The 2026-11-04 session had already built the three environments on CPython 3.14.10 /
+3.15.2 with JAX 0.12.0.1 and the `jax[cuda13]` plugin; only the GPU was missing.
+This pass added the toolkit, the missing ecosystem packages and kernels:
+
+| Environment | Python | Added | `check-python-core.py --require-gpu` | `uv pip check` |
+| --- | --- | --- | --- | --- |
+| py314 | 3.14.10 | `cuda-toolkit[all]` 13.5.0, `cuda-bindings` 13.5, ipykernel | passed (NumPy/SciPy, JAX GPU, Flax+Diffrax) | 1 metadata exception: torch 2.14.0+cu130 pins `cuda-toolkit==13.0.3`; torch matmul on the GPU passed with 13.5 |
+| jax314 | 3.14.10 | flax, diffrax, orbax-checkpoint, ipykernel | passed; Orbax save/restore passed | clean |
+| jax315 | 3.15.2 | diffrax, ipykernel, flax installed `--no-deps` plus msgpack/optax/rich/pyyaml/treescope | passed (Flax layers, Diffrax) | 2 expected: flax wants orbax-checkpoint and tensorstore, which do not build on 3.15 |
+
+`check-gpu-stack.py` in py314: status passed, CUDA runtime and driver 13050, cuDNN 9.24,
+PyTorch CUDA available. `nvcc` from the pip toolkit is 13.5 (`cuda_13.5.r13.5`).
+Jupyter kernels `py314`, `jax314`, `jax315` are registered. Before/after freezes,
+pip-check records and probe JSON are in `~/.local/state/dotrepo/env-refresh-2026-11-09/`.
+WSL `uv` was a bare release binary without self-update; it was reinstalled through the
+official installer (no rc-file edits) and is 0.13.7; `uv cache prune` freed 6.1 GiB.
+
+Fresh shells select `py314` (`DOTREPO=~/.dotrepo`, `UV_PYTHON`/`RETICULATE_PYTHON`
+on py314, `IFJ_PYTHON`/`ARBPLUSJAX_PYTHON` on jax314, `CUDA_HOME` on the pip cu13
+toolkit). `dotrepo.wsl-python-default` 1.0.0 was installed through the WSL
+`code-server`. Both doctors (`scripts/dotrepo.ps1 -Action doctor`, `scripts/dotrepo.sh
+doctor`) pass; machine-local keys live in the untracked `settings.local.json` files
+(WSL: MATLAB path plus `matlab.interrupt` in `commandsToSkipShell`; Windows: py314
+interpreter, stable `pwsh` alias, SumatraPDF viewer).
+
+### Home layout (now matches PC-PHILIP-WINDOWS)
+
+- `~/projects`: `IntegralFunctionsJAX`, `RandomFields77`, `TopoSmplJAX`, `arbPlusJAX`,
+  `data77` only.
+- `~/.local/src`: `dotrepo` (canonical; `~/.dotrepo` and the `.bashrc`, `.profile`,
+  `.zshrc`, `.gitconfig`, `.ssh/config` links repointed), `references`, `thesis`,
+  `scirs` (local modification preserved), `scirs2_compare`,
+  `ARSIA_BasisFunctionModels_code`, `lean` (Mathlib sandbox).
+- `~/.local/share/research-archive/bundles-2026-11-02`: the former `~/projects/_bundles`.
+- `dotrepo-gdrive.service` and `~/.local/bin/data77-bayesian` now reference `~/.dotrepo`;
+  the rclone mount at `~/mnt/gdrive` was stuck after the restart and was remounted.
+- `/home/philip` (no matching user; a 1.9 GB April clone) was deleted after archiving its
+  `.ssh`, Codex config and history to `~/.local/state/dotrepo/backups/`.
+- Lean 4: `wsl/install-lean.sh` ran to completion; `lean-maintain.sh check` passes all
+  12 checks (elan 4.2.4, Lean 4.35.0, Mathlib sandbox on v4.36.0-rc2, MCP server,
+  Claude and Codex plugins, leanblueprint).
+- Receipts: `~/.local/state/dotrepo/home-cleanup-2026-11-09/`.
+
+Windows `C:\dev` gained copies of the other PC's non-repository folders
+`.codex-handoffs` and `diagrams-and-figures`.
+
+### Still pending (user actions)
+
+Deletions were refused by the agent's permission classifier and need a human shell:
+
+```bash
+# WSL: stale installer and extracted build archives whose products are installed
+rm -f  ~/Downloads/Wolfram_15.0.1_LIN_Bndl.sh                      # 7.8 GB; Wolfram 15 is in /usr/local/Wolfram
+rm -rf ~/.local/state/dotrepo/replication-20260914/{boost_1_90_0,boost_1_90_0.tar.gz,flint-3.4.0,julia-1.13.0.tar.gz,julia-1.10.12.tar.gz,rclone-v1.74.2-linux-amd64.zip}
+rm -rf ~/.gemini/tmp                                                 # 1.2 GB, nothing newer than a week
+rmdir  ~/Wolfram
+```
+
+Kept on purpose: `replication-20260914/previous-environments` (20 GB) and
+`jax-python313/jax-python312-backup-*` (9.2 GB) are old environment copies; the
+project caches under `~/.cache` (randomfields77 36 GB, rf77 JAX cache 23 GB,
+toposmpljax 16 GB) are research state. Windows R and Rtools are to be removed
+(elevated): `winget uninstall --id RProject.R --exact` and
+`winget uninstall --id RProject.Rtools --exact`, then delete the machine variable
+`RTOOLS45_HOME` and `%LOCALAPPDATA%\R`. `%USERPROFILE%\OneDrive\Documents\R` holds
+14 GB of Windows R libraries and was left for a decision.

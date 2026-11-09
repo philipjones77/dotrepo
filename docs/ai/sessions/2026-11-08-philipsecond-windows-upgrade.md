@@ -215,3 +215,20 @@ toposmpljax 16 GB) are research state. Windows R and Rtools are to be removed
 `winget uninstall --id RProject.Rtools --exact`, then delete the machine variable
 `RTOOLS45_HOME` and `%LOCALAPPDATA%\R`. `%USERPROFILE%\OneDrive\Documents\R` holds
 14 GB of Windows R libraries and was left for a decision.
+
+### VS Code extension review applied (2026-11-09)
+
+Following [the extension review](2026-11-08-vscode-extension-review.md): Windows went
+from 51 to 35 extensions and the WSL server from 37 to 34, both matching the tracked
+manifests apart from the local `dotrepo.*` extensions and `openai.codex-audio`, which
+ships with Codex. WSL gained `mathworks.language-matlab` and `ms-python.vscode-pylance`;
+the C++ pack wrapper was removed and `cpptools`, `cmake-tools` and `cpp-devtools`
+reinstalled individually. Both hosts report `No extension to update`. The three new
+settings (`extensions.autoCheckUpdates`, `extensions.autoUpdate`,
+`files.saveConflictResolution`) were merged by the bootstraps. Codex stayed at
+26.1021.22027 and the 180 s deadline is still in place on both bundles. Inventories:
+`~/.local/state/dotrepo/vscode-audit-2026-11-09/` on both hosts (`*-before.txt`,
+`*-after.txt`). `bootstrap/install.sh` must be invoked through the real checkout path
+(`~/.local/src/dotrepo`), not `~/.dotrepo`; its settings merge now also applies
+`vscode/wsl/settings.local.json`, matching the Windows bootstrap and the doctor.
+Reload the VS Code windows when convenient to unload the removed extensions.

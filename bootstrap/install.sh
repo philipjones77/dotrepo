@@ -67,6 +67,14 @@ current = json.loads(target.read_text(encoding='utf-8-sig')) if target.exists() 
 tracked = json.loads(source.read_text(encoding='utf-8-sig'))
 if not isinstance(current, dict) or not isinstance(tracked, dict):
     raise ValueError('VS Code settings must be JSON objects')
+# Machine-local overrides live beside the tracked file (settings.local.json),
+# as the Windows bootstrap and scripts/doctor.py already expect.
+local = source.with_suffix('.local.json')
+if local.is_file():
+    override = json.loads(local.read_text(encoding='utf-8-sig'))
+    if not isinstance(override, dict):
+        raise ValueError('VS Code local settings must be a JSON object')
+    merge(tracked, override)
 print(json.dumps(merge(current, tracked), indent=2))
 PY
   then
